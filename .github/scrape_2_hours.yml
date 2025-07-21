@@ -29,13 +29,13 @@ jobs:
       run: pip install jupyter lxml pandas requests beautifulsoup4 html5lib
     - name: Scraping today's Globe and Mail data
       run: jupyter nbconvert --to notebook --execute "00-GlobeAndMail-scrape.ipynb" --stdout
-     - name: Scraping today's CBC data
+    - name: Scraping today's CBC data
       run: jupyter nbconvert --to notebook --execute "01-CBC-Scrape.ipynb" --stdout
-     - name: Scraping today's CTV News data
+    - name: Scraping today's CTV News data
       run: jupyter nbconvert --to notebook --execute "02-CTV-Scrape.ipynb" --stdout
-     - name: Scraping today's Global News data
+    - name: Scraping today's Global News data
       run: jupyter nbconvert --to notebook --execute "03-GlobalNews-Scrape.ipynb" --stdout
-     - name: Scraping today's CBC News data
+    - name: Scraping today's National Post data
       run: jupyter nbconvert --to notebook --execute "04-NationalPost-Scrape.ipynb" --stdout
     - name: Commit and push any changes
       run: |-
