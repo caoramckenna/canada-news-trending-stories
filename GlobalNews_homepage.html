@@ -184,7 +184,8 @@
         }
     </script>
     	<!-- Meta Tags -->
-	<meta charset="UTF-8">
+	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"75660ba8f4",applicationID:"418684855"};;/*! For license information please see nr-loader-rum-1.293.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let o in a)if(void 0!==e[o])try{if(null===e[o]){r[o]=null;continue}Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):"object"==typeof e[o]&&"object"==typeof t[o]?r[o]=i(e[o],t[o]):r[o]=e[o]}catch(e){r[o]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},555:(e,t,r)=>{"use strict";r.d(t,{D:()=>s,f:()=>o});var n=r(384),i=r(122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function o(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const s=e=>(0,i.a)(e,a)},324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>a,xv:()=>n});const n="1.293.0",i="PROD",a="CDN"},154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>c,RI:()=>i,WN:()=>d,bv:()=>a,gm:()=>o,mw:()=>s,sb:()=>u});var n=r(863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),s=Boolean("hidden"===o?.document?.visibilityState),c=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),u=c&&"undefined"==typeof SharedWorker,d=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)())},241:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(154);const i="newrelic";function a(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>u,Ze:()=>f,x3:()=>d});var n=r(241),i=r(836),a=r(606),o=r(860),s=r(646);const c={};function u(e,t){const r={staged:!1,priority:o.P3[t]||0};l(e),c[e].get(t)||c[e].set(t,r)}function d(e,t){e&&c[e]&&(c[e].get(t)&&c[e].delete(t),p(e,t,!1),c[e].size&&g(e))}function l(e){if(!e)throw new Error("agentIdentifier required");c[e]||(c[e]=new Map)}function f(e="",t="feature",r=!1){if(l(e),!e||!c[e].get(t)||r)return p(e,t);c[e].get(t).staged=!0,g(e)}function g(e){const t=Array.from(c[e]);t.every((([e,t])=>t.staged))&&(t.sort(((e,t)=>e[1].priority-t[1].priority)),t.forEach((([t])=>{c[e].delete(t),p(e,t)})))}function p(e,t,r=!0){const o=e?i.ee.get(e):i.ee,c=a.i.handlers;if(!o.aborted&&o.backlog&&c){if((0,n.W)({agentIdentifier:e,type:"lifecycle",name:"drain",feature:t}),r){const e=o.backlog[t],r=c[t];if(r){for(let t=0;e&&t<e.length;++t)m(e[t],r);Object.entries(r).forEach((([e,t])=>{Object.values(t||{}).forEach((t=>{t[0]?.on&&t[0]?.context()instanceof s.y&&t[0].on(e,t[1])}))}))}}o.isolatedBacklog||delete c[t],o.backlog[t]=null,o.emit("drain-"+t,[])}}function m(e,t){var r=e[1];Object.values(t[r]||{}).forEach((t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}}))}},836:(e,t,r)=>{"use strict";r.d(t,{P:()=>s,ee:()=>c});var n=r(384),i=r(990),a=r(646),o=r(607);const s="nr@context:".concat(o.W),c=function e(t,r){var n={},o={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);for(var s=g(n),u=m(e),d=u.length,l=0;l<d;l++)u[l].apply(s,r);var p=v()[o[e]];p&&p.push([f,e,r,s]);return s},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach((([e,n])=>{o[n]=t,t in r||(r[t]=[])}))},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach((e=>{delete f.backlog[e]}))},isBuffering:function(e){return!!v()[o[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,s,(()=>new a.y(s))):new a.y(s)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c)},646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},606:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(908);a.on=o;var i=a.handlers={};function a(e,t,r,a){o(a||n.d,i,e,t,r)}function o(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var o=t[a]=t[a]||{};(o[r]=o[r]||[]).push([e,i])}},878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(566).bz)()},566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>s,bz:()=>o});var n=r(154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?a(t,r++).toString(16):"y"===e?(3&a()|8).toString(16):e)).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const o=[];for(var s=0;s<e;s++)o.push(a(r,i++).toString(16));return o.join("")}},614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>o,H3:()=>n,g:()=>u,iL:()=>c,tS:()=>s,uh:()=>i,wk:()=>a});const n="NRBA",i="SESSION",a=144e5,o=18e5,s={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({agentIdentifier:null,drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},701:(e,t,r)=>{"use strict";r.d(t,{B:()=>a,t:()=>o});var n=r(241);const i=new Set,a={};function o(e,t){const r=t.agentIdentifier;a[r]??={},e&&"object"==typeof e&&(i.has(r)||(t.ee.emit("rumresp",[e]),a[r]=e,i.add(r),(0,n.W)({agentIdentifier:r,loaded:!0,drained:!0,type:"lifecycle",name:"load",feature:void 0,data:e})))}},990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout((()=>{i=clearTimeout(i)}),t)),n||(clearTimeout(i),i=setTimeout((()=>{e.apply(this,r)}),t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>a,Qr:()=>s,sB:()=>o});var n=r(878);function i(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(i())return e();(0,n.sp)("load",e,t)}function o(e){if(i())return e();(0,n.DD)("DOMContentLoaded",e)}function s(e){if(i())return e();(0,n.sp)("popstate",e)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>a,US:()=>u,Zm:()=>o,bQ:()=>c,dV:()=>s,pV:()=>d});var n=r(154),i=r(863);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function o(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function s(){let e=o();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket}),e}function c(e,t){let r=o();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function u(e,t){o()[e]=t}function d(){return function(){let e=o();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=o();const t=e.init||{};e.init={...t}}(),s(),function(){let e=o();const t=e.loader_config||{};e.loader_config={...t}}(),o()}},843:(e,t,r)=>{"use strict";r.d(t,{u:()=>i});var n=r(878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},773:(e,t,r)=>{"use strict";r.d(t,{z_:()=>a,XG:()=>s,TZ:()=>n,rs:()=>i,xV:()=>o});r(154),r(566),r(384);const n=r(860).K7.metrics,i="sm",a="cm",o="storeSupportabilityMetrics",s="storeEventMetrics"},630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},234:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(836),i=r(687);class a{constructor(e,t){this.agentIdentifier=e,this.ee=n.ee.get(e),this.featureName=t,this.blocked=!1}deregisterDrain(){(0,i.x3)(this.agentIdentifier,this.featureName)}}},741:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e){return this.#e(i.Dl,e)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(){return this.#e(i.dT)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}}},261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>u,BL:()=>s,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>h,Pl:()=>n,Tb:()=>l,U2:()=>a,V1:()=>k,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>o,nb:()=>m,o5:()=>d});const n="api-",i="addPageAction",a="addToTrace",o="addRelease",s="finished",c="interaction",u="log",d="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",m="setApplicationVersion",h="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",k="measure"},163:(e,t,r)=>{"use strict";r.d(t,{j:()=>E});var n=r(384),i=r(741);var a=r(555);r(860).K7.genericEvents;const o="experimental.marks",s="experimental.measures",c="experimental.resources",u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(614),l=r(944),f=r(122);const g="[data-nr-mask]",p=e=>(0,f.a)(e,(()=>{const e={feature_flags:[],experimental:{marks:!1,measures:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{allow_registered_children:!0,duplicate_registered_data:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{get capture_marks(){return e.feature_flags.includes(o)||e.experimental.marks},set capture_marks(t){e.experimental.marks=t},get capture_measures(){return e.feature_flags.includes(s)||e.experimental.measures},set capture_measures(t){e.experimental.measures=t},capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:d.wk,inactiveMs:d.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(g):""===t||null===t?e.mask_selector=g:(0,l.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},spa:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var m=r(154),h=r(324);let v=0;const b={buildEnv:h.F3,distMethod:h.Xs,version:h.xv,originTime:m.WN},y={appMetadata:{},customTransaction:void 0,denyList:void 0,disabled:!1,entityManager:void 0,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,get harvestCount(){return++v}},_=e=>{const t=(0,f.a)(e,y),r=Object.keys(b).reduce(((e,t)=>(e[t]={value:b[t],writable:!1,configurable:!0,enumerable:!0},e)),{});return Object.defineProperties(t,r)};var w=r(701);const x=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var k=r(836),A=r(241);const S={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},T=e=>(0,f.a)(e,S),R=new Set;function E(e,t={},r,o){let{init:s,info:c,loader_config:u,runtime:d={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();s=e.init,c=e.info,u=e.loader_config}e.init=p(s||{}),e.loader_config=T(u||{}),c.jsAttributes??={},m.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,a.D)(c);const f=e.init,g=[c.beacon,c.errorBeacon];R.has(e.agentIdentifier)||(f.proxy.assets&&(x(f.proxy.assets),g.push(f.proxy.assets)),f.proxy.beacon&&g.push(f.proxy.beacon),function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach((r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let a=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return a?a(...t):n})}))}(e),(0,n.US)("activatedFeatures",w.B),e.runSoftNavOverSpa&&=!0===f.soft_navigations.enabled&&f.feature_flags.includes("soft_nav")),d.denyList=[...f.ajax.deny_list||[],...f.ajax.block_internal?g:[]],d.ptid=e.agentIdentifier,d.loaderType=r,e.runtime=_(d),R.has(e.agentIdentifier)||(e.ee=k.ee.get(e.agentIdentifier),e.exposed=l,(0,A.W)({agentIdentifier:e.agentIdentifier,drained:!!w.B?.[e.agentIdentifier],type:"lifecycle",name:"initialize",feature:void 0,data:e.config})),R.add(e.agentIdentifier)}},374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>d,K7:()=>c,P3:()=>u,XX:()=>i,Yy:()=>s,df:()=>a,qY:()=>n,v4:()=>o});const n="events",i="jserrors",a="browser/blobs",o="rum",s="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},u={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.spa]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.softNav]:8,[c.sessionReplay]:9,[c.logging]:10,[c.genericEvents]:11},d={[c.pageViewEvent]:o,[c.pageViewTiming]:n,[c.ajax]:n,[c.spa]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:a,[c.sessionReplay]:a,[c.logging]:s,[c.genericEvents]:"ins"}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var a=n[e]={exports:{}};return r[e](a,a.exports,i),a.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>"nr-rum-1.293.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.293.0.PROD:",i.l=(r,n,a,o)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==a)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+a){s=l;break}}if(!s){c=!0;var f={296:"sha512-M1viQxU/Sd10c/wA0iJyMGykq7mUO4/cNh2pUlWVWSRdp2RUo2Lmen9N19KuzHKjUln7vOC7HGbkzvGvRT/yQg=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+a),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[o]&&(s.integrity=f[o])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var a=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=a);var o=i.p+i.u(t),s=new Error;i.l(o,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var a=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+a+": "+o+")",s.name="ChunkLoadError",s.type=a,s.request=o,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,a,[o,s,c]=r,u=0;if(o.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<o.length;u++)a=o[u],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},r=self["webpackChunk:NRBA-1.293.0.PROD"]=self["webpackChunk:NRBA-1.293.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(374);var e=i(566),t=i(741);class r extends t.W{agentIdentifier=(0,e.LA)(16)}var n=i(860);const a=Object.values(n.K7);var o=i(163);var s=i(908),c=i(863),u=i(261),d=i(241),l=i(944),f=i(701),g=i(773);function p(e,t,i,a){const o=a||i;!o||o[e]&&o[e]!==r.prototype[e]||(o[e]=function(){(0,s.p)(g.xV,["API/"+e+"/called"],void 0,n.K7.metrics,i.ee),(0,d.W)({agentIdentifier:i.agentIdentifier,drained:!!f.B?.[i.agentIdentifier],type:"data",name:"api",feature:u.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,l.R)(23,e)}})}function m(e,t,r,n,i){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(i||null===r)&&(0,s.p)(u.Pl+n,[(0,c.t)(),t,r],void 0,"session",e.ee)}var h=i(687),v=i(234),b=i(289),y=i(154),_=i(384);const w=e=>y.RI&&!0===e?.privacy.cookies_enabled;function x(e){return!!(0,_.dV)().o.MO&&w(e)&&!0===e?.session_trace.enabled}var k=i(389);class A extends v.W{constructor(e,t){super(e.agentIdentifier,t),this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise(((t,r)=>{this.ee.on("manual-start-all",(0,k.J)((()=>{(0,h.Ak)(e.agentIdentifier,this.featureName),t()})))})):(0,h.Ak)(e.agentIdentifier,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;let a;this.onAggregateImported=new Promise((e=>{a=e}));const o=async()=>{let o;await this.deferred;try{if(w(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,663));o=t(e)}}catch(e){(0,l.R)(20,e),this.ee.emit("internal-error",[e]),this.featureName===n.K7.sessionReplay&&this.abortHandler?.()}try{if(!this.#t(this.featureName,o,e.init))return(0,h.Ze)(this.agentIdentifier,this.featureName),void a(!1);const{Aggregate:n}=await t();this.featAggregate=new n(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),a(!0)}catch(e){(0,l.R)(34,e),this.abortHandler?.(),(0,h.Ze)(this.agentIdentifier,this.featureName,!0),a(!1),this.ee&&this.ee.abort()}};y.RI?(0,b.GG)((()=>o()),!0):o()}#t(e,t,r){switch(e){case n.K7.sessionReplay:return x(r)&&!!t;case n.K7.sessionTrace:return!!t;default:return!0}}}var S=i(630),T=i(614);class R extends A{static featureName=S.T;constructor(e){var t;super(e,S.T),this.setupInspectionEvents(e.agentIdentifier),t=e,p(u.Fw,(function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,s.p)(u.Pl+u.Fw,[(0,c.t)()],void 0,void 0,t.ee))}),t),this.ee.on("api-send-rum",((e,t)=>(0,s.p)("send-rum",[e,t],void 0,this.featureName,this.ee))),this.importAggregator(e,(()=>i.e(296).then(i.bind(i,108))))}setupInspectionEvents(e){const t=(t,r)=>{t&&(0,d.W)({agentIdentifier:e,timeStamp:t.timeStamp,loaded:"complete"===t.target.readyState,type:"window",name:r,data:t.target.location+""})};(0,b.sB)((e=>{t(e,"DOMContentLoaded")})),(0,b.GG)((e=>{t(e,"load")})),(0,b.Qr)((e=>{t(e,"navigate")})),this.ee.on(T.tS.UPDATE,((t,r)=>{(0,d.W)({agentIdentifier:e,type:"lifecycle",name:"session",data:r})}))}}var E=i(843),N=i(878),j=i(782);class I extends A{static featureName=j.T;constructor(e){super(e,j.T),y.RI&&((0,E.u)((()=>(0,s.p)("docHidden",[(0,c.t)()],void 0,j.T,this.ee)),!0),(0,N.sp)("pagehide",(()=>(0,s.p)("winPagehide",[(0,c.t)()],void 0,j.T,this.ee))),this.importAggregator(e,(()=>i.e(296).then(i.bind(i,350)))))}}class O extends A{static featureName=g.TZ;constructor(e){super(e,g.TZ),y.RI&&document.addEventListener("securitypolicyviolation",(e=>{(0,s.p)(g.xV,["Generic/CSPViolation/Detected"],void 0,this.featureName,this.ee)})),this.importAggregator(e,(()=>i.e(296).then(i.bind(i,373))))}}new class extends r{constructor(e){var t;(super(),y.gm)?(this.features={},(0,_.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(R),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===n.K7.softNav)),(0,o.j)(this,e,e.loaderType||"agent"),t=this,p(u.cD,(function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return m(t,e,r,u.cD,n);(0,l.R)(40,typeof r)}else(0,l.R)(39,typeof e)}),t),function(e){p(u.Dl,(function(t){if("string"==typeof t||null===t)return m(e,"enduser.id",t,u.Dl,!0);(0,l.R)(41,typeof t)}),e)}(this),function(e){p(u.nb,(function(t){if("string"==typeof t||null===t)return m(e,"application.version",t,u.nb,!1);(0,l.R)(42,typeof t)}),e)}(this),function(e){p(u.d3,(function(){e.ee.emit("manual-start-all")}),e)}(this),this.run()):(0,l.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return a.forEach((r=>{t[r]=!!e[r]?.enabled})),t}(this.init),t=[...this.desiredFeatures];t.sort(((e,t)=>n.P3[e.featureName]-n.P3[t.featureName])),t.forEach((t=>{if(!e[t.featureName]&&t.featureName!==n.K7.pageViewEvent)return;if(this.runSoftNavOverSpa&&t.featureName===n.K7.spa)return;if(!this.runSoftNavOverSpa&&t.featureName===n.K7.softNav)return;const r=function(e){switch(e){case n.K7.ajax:return[n.K7.jserrors];case n.K7.sessionTrace:return[n.K7.ajax,n.K7.pageViewEvent];case n.K7.sessionReplay:return[n.K7.sessionTrace];case n.K7.pageViewTiming:return[n.K7.pageViewEvent];default:return[]}}(t.featureName).filter((e=>!(e in this.features)));r.length>0&&(0,l.R)(36,{targetFeature:t.featureName,missingDependencies:r}),this.features[t.featureName]=new t(this)}))}catch(e){(0,l.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,_.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}({features:[R,I,O],loaderType:"lite"})})()})();</script>
 	<meta name="theme-color" content="#231F20">
 
 			<meta name="msvalidate.01" content="9E5C74811CA48CCCC61A2CF3C0A1BA6A">
@@ -509,7 +510,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 
 				
 
-				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"23","weatherprec":6.86,"weathercode":"26","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
+				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"23","weatherprec":1.78,"weathercode":"26","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
 		</script>
 			<script>
 				// Load the APS JavaScript Library
@@ -1536,10 +1537,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay=""
 						data-displayinline-featured="false"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_11303348_688321081ad16"
+			data-displayinline-player-id="miniplayer_11303348_688339ff6d23b"
 			data-displayinline-video-id="11303348"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/11303348/#autoplay&#038;stickyiframe=miniplayer_11303348_688321081ad16"
+    		data-displayinline="https://globalnews.ca/video/embed/11303348/#autoplay&#038;stickyiframe=miniplayer_11303348_688339ff6d23b"
     									data-displayinline-container="stories-1-0"
 										data-displayinline-sticky="true"
 						    		>
@@ -1573,7 +1574,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 									Michael McLeod, Carter Hart, Alex Formenton, Dillon Dubé and Cal Foote were found not guilty of all charges, but the NHL says they are ineligible to play as it reviews the ruling.									</div>
 																<div class="c-posts__about c-posts__about--multiple">
 																		<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">7 hours</div>
+																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">9 hours</div>
 																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 																	</div>
 														</a>
@@ -1624,7 +1625,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			</div>
 								<div class="c-posts__about c-posts__about--multiple">
 																<div class="c-posts__info c-posts__info--highlight">Economy</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">12 hours</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jul 24</div>
 																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">6 min read</div>
 															</div>
 						</div>
@@ -1689,7 +1690,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Trending</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">9 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">11 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
 									</div>
@@ -1740,7 +1741,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">8 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">10 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
 														</div>
 									</div>
@@ -1907,7 +1908,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">11 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jul 24</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
 														</div>
 									</div>
@@ -1965,7 +1966,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>U.S. News</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">8 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">9 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 														</div>
 									</div>
@@ -1973,6 +1974,35 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    is-hidden"
 	data-container-id="stories-item-11"
+	data-post-id="11303845"
+	data-slide-index=""
+	data-caption="Miners trapped underground at B.C. mine rescued, more than 60 hours after cave-in"
+		data-ad-fallback=false>
+		<a class="c-posts__inner" href="https://globalnews.ca/news/11303845/miners-trapped-underground-bc-mine-rescued/"  >
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/07/d27b8f2cb41deb0ccbf8760c5957fbe1d49eb8a0dd76f7ab55c21f33076ffcee_9e6521.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=496 data-ratio=0.67									loading="lazy"
+								width="720" height="496" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/07/d27b8f2cb41deb0ccbf8760c5957fbe1d49eb8a0dd76f7ab55c21f33076ffcee_9e6521.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/07/d27b8f2cb41deb0ccbf8760c5957fbe1d49eb8a0dd76f7ab55c21f33076ffcee_9e6521.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/07/d27b8f2cb41deb0ccbf8760c5957fbe1d49eb8a0dd76f7ab55c21f33076ffcee_9e6521.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Miners trapped underground at B.C. mine rescued, more than 60 hours after cave-in" data-title>Miners trapped underground at B.C. mine rescued, more than 60 hours after cave-in</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">20 mins</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    is-hidden"
+	data-container-id="stories-item-12"
 	data-post-id="11303329"
 	data-slide-index=""
 	data-caption="LeBlanc &#8216;encouraged&#8217; after latest U.S. talks as Trump tariff deadline looms"
@@ -1994,36 +2024,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">8 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    is-hidden"
-	data-container-id="stories-item-12"
-	data-post-id="11303287"
-	data-slide-index=""
-	data-caption="New Arctic ambassador will play key role in defending sovereignty: Anand"
-		data-ad-fallback=false>
-		<a class="c-posts__inner" href="https://globalnews.ca/news/11303287/canada-arctic-ambassador-anand-sovereignty/"  >
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2024/06/20240624140640-e99ae707dcb5e303d0821c39b6f095b8754a987e723006fc1efa1e5673cc0b66.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="470" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2024/06/20240624140640-e99ae707dcb5e303d0821c39b6f095b8754a987e723006fc1efa1e5673cc0b66.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2024/06/20240624140640-e99ae707dcb5e303d0821c39b6f095b8754a987e723006fc1efa1e5673cc0b66.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2024/06/20240624140640-e99ae707dcb5e303d0821c39b6f095b8754a987e723006fc1efa1e5673cc0b66.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="New Arctic ambassador will play key role in defending sovereignty: Anand" data-title>New Arctic ambassador will play key role in defending sovereignty: Anand</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">8 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">9 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
@@ -2140,7 +2141,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Wrestling legend Hulk Hogan dead at 71" data-title>Wrestling legend Hulk Hogan dead at 71</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">5,123</span>
+							<span class="c-posts__info c-posts__info--highlight">6,397</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2167,7 +2168,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="U.S. steelmakers say Trump&#8217;s tariffs &#8216;working,&#8217; want Canada to follow suit" data-title>U.S. steelmakers say Trump&#8217;s tariffs &#8216;working,&#8217; want Canada to follow suit</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">3,692</span>
+							<span class="c-posts__info c-posts__info--highlight">4,760</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2194,7 +2195,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Canada is facing a nationwide shortage of these prescription painkillers" data-title>Canada is facing a nationwide shortage of these prescription painkillers</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,475</span>
+							<span class="c-posts__info c-posts__info--highlight">3,122</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2221,7 +2222,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="NHL says world junior players acquitted of sex assault ‘ineligible’ to play" data-title>NHL says world junior players acquitted of sex assault ‘ineligible’ to play</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,240</span>
+							<span class="c-posts__info c-posts__info--highlight">2,761</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2248,7 +2249,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="White House slams &#8216;South Park&#8217; for satirical depiction of Donald Trump" data-title>White House slams &#8216;South Park&#8217; for satirical depiction of Donald Trump</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">1,185</span>
+							<span class="c-posts__info c-posts__info--highlight">1,531</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2312,8 +2313,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<input type="hidden" id="s_brand" name="s_brand" value="gn" />
 				<input type="hidden" id="s_gn_daily_national" name="s_gn_daily_national" value="100" data-newsletter-inline-code />
 				<input type="hidden" id="s_collector" name="s_collector" value="" />
-				<input type="hidden" id="s_create_date" name="s_create_date" value="2025-07-25 06:15:36" />
-				<input type="hidden" id="s_last_modified" name="s_last_modified" value="2025-07-25 06:15:36" />
+				<input type="hidden" id="s_create_date" name="s_create_date" value="2025-07-25 08:02:07" />
+				<input type="hidden" id="s_last_modified" name="s_last_modified" value="2025-07-25 08:02:07" />
 			</fieldset>
 			<label for="ns-region-home-email-input" class="sr-only">Sign up for National newsletter</label>
 			<input id="ns-region-home-email-input" type="text" class="c-newsletterSignup__input" placeholder="Email address" data-newsletter-inline-email />
@@ -2356,7 +2357,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Wrestling legend Hulk Hogan dead at 71" data-title>Wrestling legend Hulk Hogan dead at 71</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">5,123</span>
+							<span class="c-posts__info c-posts__info--highlight">6,397</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2383,7 +2384,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="U.S. steelmakers say Trump&#8217;s tariffs &#8216;working,&#8217; want Canada to follow suit" data-title>U.S. steelmakers say Trump&#8217;s tariffs &#8216;working,&#8217; want Canada to follow suit</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">3,692</span>
+							<span class="c-posts__info c-posts__info--highlight">4,760</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2410,7 +2411,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Canada is facing a nationwide shortage of these prescription painkillers" data-title>Canada is facing a nationwide shortage of these prescription painkillers</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,475</span>
+							<span class="c-posts__info c-posts__info--highlight">3,122</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2437,7 +2438,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="NHL says world junior players acquitted of sex assault ‘ineligible’ to play" data-title>NHL says world junior players acquitted of sex assault ‘ineligible’ to play</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,240</span>
+							<span class="c-posts__info c-posts__info--highlight">2,761</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2464,7 +2465,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="White House slams &#8216;South Park&#8217; for satirical depiction of Donald Trump" data-title>White House slams &#8216;South Park&#8217; for satirical depiction of Donald Trump</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">1,185</span>
+							<span class="c-posts__info c-posts__info--highlight">1,531</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2658,8 +2659,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-miniplayer"
 			data-displayinline-video-id="11303348"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11303348,11302684,11291915,11295678,11302455,11301111/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F8rytchnwti-nsbus2joa%2FWEB_WORLD_JR_HOCKEY_TRIAL_DECISION_OSHEA_STILL.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
-    		    			data-displayinline-playlist="11303348,11302684,11291915,11295678,11302455,11301111"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11303348,11291915,11302684,11240789,9012795,11303571/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F8rytchnwti-nsbus2joa%2FWEB_WORLD_JR_HOCKEY_TRIAL_DECISION_OSHEA_STILL.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
+    		    			data-displayinline-playlist="11303348,11291915,11302684,11240789,9012795,11303571"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
@@ -2726,8 +2727,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11303348"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11303348,11302684,11291915,11295678,11302455,11301111/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11303348,11302684,11291915,11295678,11302455,11301111"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11303348,11291915,11302684,11240789,9012795,11303571/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11303348,11291915,11302684,11240789,9012795,11303571"
 			data-video-carousel-label="News"
 			data-video-carousel-content="Five members of Canada’s 2018 world junior hockey team accused of sexual assault have all been found not guilty, an Ontario judge has ruled. Sean O’Shea has the story."
 			>
@@ -2748,40 +2749,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Wrestling legend Hulk Hogan dead at 71" data-slide-index="1">
-	<a href="https://globalnews.ca/video/11302684/wrestling-legend-hulk-hogan-dead-at-71/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11302684"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11302684,11291915,11295678,11302455,11301111,11303348/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11302684,11291915,11295678,11302455,11301111,11303348"
-			data-video-carousel-label="Entertainment"
-			data-video-carousel-content="Wrestling legend Hulk Hogan has died at age 71. Hogan, born Terry Gene Bollea, was found dead in his Florida home on Thursday morning. In Clearwater, authorities responded to a call Thursday morning about a cardiac arrest. Hogan was pronounced dead at a hospital, the Clearwater Police Department said in a statement on Facebook."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/2vmsl3vxxj-bwljbzsu3u/THU_HOGAN_SITE_THUMB_240725.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Wrestling legend Hulk Hogan dead at 71</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Carney unveils new steel tariffs, support for Canada&#8217;s industry" data-slide-index="2">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Carney unveils new steel tariffs, support for Canada&#8217;s industry" data-slide-index="1">
 	<a href="https://globalnews.ca/video/11291915/carney-unveils-new-steel-tariffs-support-for-canadas-industry/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11291915"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11291915,11295678,11302455,11301111,11303348,11302684/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11291915,11295678,11302455,11301111,11303348,11302684"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11291915,11302684,11240789,9012795,11303571,11303348/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11291915,11302684,11240789,9012795,11303571,11303348"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="Prime Minister Mark Carney is taking steps he says will strengthen Canada&#039;s steel industry, which directly employs more than 23,000 people. Mackenzie Gray looks at the measures meant to offset U.S. tariffs, and what business leaders want Carney to do."
 			>
@@ -2802,19 +2776,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Trump sues Wall Street Journal for $10B over article tying him to Jeffrey Epstein" data-slide-index="3">
-	<a href="https://globalnews.ca/video/11295678/trump-sues-wall-street-journal-for-10b-over-article-tying-him-to-jeffrey-epstein/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Wrestling legend Hulk Hogan dead at 71" data-slide-index="2">
+	<a href="https://globalnews.ca/video/11302684/wrestling-legend-hulk-hogan-dead-at-71/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11295678"
+					data-video-id="11302684"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11295678,11302455,11301111,11303348,11302684,11291915/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11295678,11302455,11301111,11303348,11302684,11291915"
-			data-video-carousel-label="Politics"
-			data-video-carousel-content="A multi-billion-dollar legal battle is playing out in the wake of a bombshell report detailing U.S. President Donald Trump&#039;s alleged ties to a convicted sex offender. The Republican leader now going after the Wall Street Journal, claiming the publication libelled him in a report saying that Trump gave Jeffrey Epstein, the late, disgraced billionaire, a birthday note that included crude drawings and cryptic messages. Candice Cole reports.
-"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11302684,11240789,9012795,11303571,11303348,11291915/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11302684,11240789,9012795,11303571,11303348,11291915"
+			data-video-carousel-label="Entertainment"
+			data-video-carousel-content="Wrestling legend Hulk Hogan has died at age 71. Hogan, born Terry Gene Bollea, was found dead in his Florida home on Thursday morning. In Clearwater, authorities responded to a call Thursday morning about a cardiac arrest. Hogan was pronounced dead at a hospital, the Clearwater Police Department said in a statement on Facebook."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/g7pbyc858g-ridoq0m9g9/TRUMP_WSJ_EPSTEIN_LAWSUIT_VMS.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/2vmsl3vxxj-bwljbzsu3u/THU_HOGAN_SITE_THUMB_240725.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -2823,25 +2796,79 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>
 		<div class="l-videoCarousel__details c-posts__details">
 							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Politics</div>
+					<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Trump sues Wall Street Journal for $10B over article tying him to Jeffrey Epstein</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Wrestling legend Hulk Hogan dead at 71</span></div>
 					</div>
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Three dead in Maple Ridge police incident" data-slide-index="4">
-	<a href="https://globalnews.ca/video/11302455/three-dead-in-maple-ridge-police-incident/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="High-profile world junior sexual assault trial wraps after 8 weeks" data-slide-index="3">
+	<a href="https://globalnews.ca/video/11240789/high-profile-world-junior-sexual-assault-trial-wraps-after-8-weeks/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11302455"
+					data-video-id="11240789"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11302455,11301111,11303348,11302684,11291915,11295678/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11302455,11301111,11303348,11302684,11291915,11295678"
-			data-video-carousel-label="Crime"
-			data-video-carousel-content="Three people are dead in Maple Ridge on Thursday after a police incident overnight. Details are still being verified but the Independent Investigations Office of B.C. is investigating. "
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11240789,9012795,11303571,11303348,11291915,11302684/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11240789,9012795,11303571,11303348,11291915,11302684"
+			data-video-carousel-label="Canada"
+			data-video-carousel-content="After eight weeks, the high-profile sexual assault trial of five former Canadian world junior hockey players has wrapped up. Sean O’Shea reports."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/g8zn4spcly-z1ukfdvu41/maple-ridge-iio.png?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/a1qh8qqw0e-h2c75x5wmq/still_online_WORLD_JRS_HOCKEY_TRIAL_JUNE_13.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">High-profile world junior sexual assault trial wraps after 8 weeks</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Global News Hour at 6 BC: July 24" data-slide-index="4">
+	<a href="https://globalnews.ca/video/9012795/global-news-hour-at-6-bc-july-24/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="9012795"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/9012795,11303571,11303348,11291915,11302684,11240789/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="9012795,11303571,11303348,11291915,11302684,11240789"
+			data-video-carousel-label="News"
+			data-video-carousel-content="An IHIT investigation is underway in Whistler for a brazen public shooting. Reaction to internet stock images released for two suspects who allegedly helped a B.C. inmate escape a facility. An exclusive look at the vestments and mitre made for the Papal visit."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/p5jzaxyqde-pcopzlxieb/Global_News_Hour_Thumbnail_DO_NOT_DELETE!.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">News</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Global News Hour at 6 BC: July 24</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="City of Edmonton peace officer charged with impersonating police, sexual assault" data-slide-index="5">
+	<a href="https://globalnews.ca/video/11303571/city-of-edmonton-peace-officer-charged-with-impersonating-police-sexual-assault/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11303571"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11303571,11303348,11291915,11302684,11240789,9012795/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11303571,11303348,11291915,11302684,11240789,9012795"
+			data-video-carousel-label="Crime"
+			data-video-carousel-content="Edmonton peace officer Kyle Edmund Boozan is accused of impersonating a city cop, using that guise to obtain a key to a woman&#039;s home, breaking in and sexually assaulting her earlier this year. Sarah Ryan reports."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/us4ntw79qe-72lnxn389t/V2_6P_PEACE_OFFICER_SEX.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -2852,34 +2879,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							<div class="l-videoCarousel__info">
 					<div class="c-posts__info c-posts__info--highlight">Crime</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Three dead in Maple Ridge police incident</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="University of Idaho killer Bryan Kohberger handed 4 consecutive life sentences" data-slide-index="5">
-	<a href="https://globalnews.ca/video/11301111/university-of-idaho-killer-bryan-kohberger-handed-4-consecutive-life-sentences/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11301111"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11301111,11303348,11302684,11291915,11295678,11302455/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11301111,11303348,11302684,11291915,11295678,11302455"
-			data-video-carousel-label="Crime"
-			data-video-carousel-content="Bryan Kohberger, the masked man who snuck into a rental home near the University of Idaho campus and stabbed four students to death in late 2022, has been handed four consecutive life sentences. The families of Kaylee Goncalves and Madison Mogen, two victims in the 2022 University of Idaho murders, gave emotional statements outside court after Bryan Kohberger was sentenced on Wednesday.  Kohberger received four consecutive life sentences for murder, and 10 additional years for burglary.  Loved ones criticized the plea agreement process, saying it denied them full justice and meaningful input. &quot;We have him where he belongs,&quot; said Kaylee’s father, while Maddie’s stepfather said the sentence ensures “this evil will never again terrorize a family.”"
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/dkbankwzhc-04y0yjf3fn/KILLER_VMS.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Crime</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">University of Idaho killer Bryan Kohberger handed 4 consecutive life sentences</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">City of Edmonton peace officer charged with impersonating police, sexual assault</span></div>
 					</div>
 	</a>
 </li>
@@ -2917,17 +2917,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11302684"
+			data-displayinline-player-id="home-miniplayer_11291915"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11302684,11291915,11295678,11302455,11301111/#autoplay&#038;stickyiframe=home-miniplayer_11302684"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11291915,11302684,11240789,9012795,11303571/#autoplay&#038;stickyiframe=home-miniplayer_11291915"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/2vmsl3vxxj-bwljbzsu3u/THU_HOGAN_SITE_THUMB_240725.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/mytlpbh8rp-275bt96mp1/250716-MACKENZIE.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Wrestling legend Hulk Hogan dead at 71'"
+					alt="Click to play video 'Carney unveils new steel tariffs, support for Canada&#8217;s industry'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -2936,11 +2936,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11302684/wrestling-legend-hulk-hogan-dead-at-71/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11291915/carney-unveils-new-steel-tariffs-support-for-canadas-industry/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Wrestling legend Hulk Hogan dead at 71</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Carney unveils new steel tariffs, support for Canada&#8217;s industry</span></div>
 		</a>
 	</div>
 </li>
@@ -2971,17 +2971,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11291915"
+			data-displayinline-player-id="home-miniplayer_11302684"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11291915,11295678,11302455,11301111,11302684/#autoplay&#038;stickyiframe=home-miniplayer_11291915"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11302684,11240789,9012795,11303571,11291915/#autoplay&#038;stickyiframe=home-miniplayer_11302684"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/mytlpbh8rp-275bt96mp1/250716-MACKENZIE.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/2vmsl3vxxj-bwljbzsu3u/THU_HOGAN_SITE_THUMB_240725.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Carney unveils new steel tariffs, support for Canada&#8217;s industry'"
+					alt="Click to play video 'Wrestling legend Hulk Hogan dead at 71'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -2990,11 +2990,43 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11291915/carney-unveils-new-steel-tariffs-support-for-canadas-industry/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11302684/wrestling-legend-hulk-hogan-dead-at-71/" class="c-posts__details">
+				<div class="c-posts__about">
+					<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
+				</div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Wrestling legend Hulk Hogan dead at 71</span></div>
+		</a>
+	</div>
+</li>
+
+<li class="c-posts__item">
+	<div class="c-posts__inner">
+		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
+			data-displayinline-type="video"
+			data-displayinline-player-id="home-miniplayer_11240789"
+			data-displayinline-ratio="16:9"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11240789,9012795,11303571,11291915,11302684/#autoplay&#038;stickyiframe=home-miniplayer_11240789"
+			data-displayinline-sticky="true"
+			data-displayinline-expand="true">
+			<div class="c-video__placeholder">
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/a1qh8qqw0e-h2c75x5wmq/still_online_WORLD_JRS_HOCKEY_TRIAL_JUNE_13.jpg?w=384&#038;quality=70&#038;strip=all"
+					width="236"
+					height="133"
+					class="c-posts__thumbnail c-video__image"
+					alt="Click to play video 'High-profile world junior sexual assault trial wraps after 8 weeks'"
+					loading="lazy" />
+				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+			</div>
+		</a>
+		<a href="https://globalnews.ca/video/11240789/high-profile-world-junior-sexual-assault-trial-wraps-after-8-weeks/" class="c-posts__details">
 				<div class="c-posts__about">
 					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Carney unveils new steel tariffs, support for Canada&#8217;s industry</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">High-profile world junior sexual assault trial wraps after 8 weeks</span></div>
 		</a>
 	</div>
 </li>
@@ -3003,17 +3035,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11295678"
+			data-displayinline-player-id="home-miniplayer_9012795"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11295678,11302455,11301111,11302684,11291915/#autoplay&#038;stickyiframe=home-miniplayer_11295678"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/9012795,11303571,11291915,11302684,11240789/#autoplay&#038;stickyiframe=home-miniplayer_9012795"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/g7pbyc858g-ridoq0m9g9/TRUMP_WSJ_EPSTEIN_LAWSUIT_VMS.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/p5jzaxyqde-pcopzlxieb/Global_News_Hour_Thumbnail_DO_NOT_DELETE!.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Trump sues Wall Street Journal for $10B over article tying him to Jeffrey Epstein'"
+					alt="Click to play video 'Global News Hour at 6 BC: July 24'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3022,43 +3054,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11295678/trump-sues-wall-street-journal-for-10b-over-article-tying-him-to-jeffrey-epstein/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/9012795/global-news-hour-at-6-bc-july-24/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Politics</div>
+					<div class="c-posts__info c-posts__info--highlight">News</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Trump sues Wall Street Journal for $10B over article tying him to Jeffrey Epstein</span></div>
-		</a>
-	</div>
-</li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11302455"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11302455,11301111,11302684,11291915,11295678/#autoplay&#038;stickyiframe=home-miniplayer_11302455"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/g8zn4spcly-z1ukfdvu41/maple-ridge-iio.png?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Three dead in Maple Ridge police incident'"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/11302455/three-dead-in-maple-ridge-police-incident/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Crime</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Three dead in Maple Ridge police incident</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Global News Hour at 6 BC: July 24</span></div>
 		</a>
 	</div>
 </li>
@@ -3161,7 +3161,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						Canada-U.S. Trade Minister Dominic LeBlanc also suggested a new economic and security arrangement with the U.S. may not materialize in time for the Aug. 1 deadline.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
 															<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																						<div class="c-posts__info">8 hours</div>
+																						<div class="c-posts__info">9 hours</div>
 													</div>
 					</div>
 					
@@ -3171,34 +3171,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								width="720" height="482" alt="" 
 												srcset='' sizes=''
 								data-srcset="https://globalnews.ca/wp-content/uploads/2025/07/b07356542bbf90aedf46c28e0dc44ad09e23668558049c5da87d934ed1c42f1e_d4f706.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/07/b07356542bbf90aedf46c28e0dc44ad09e23668558049c5da87d934ed1c42f1e_d4f706.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/07/b07356542bbf90aedf46c28e0dc44ad09e23668558049c5da87d934ed1c42f1e_d4f706.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11300640"
-				data-sophi-feature=latest-news			>
-								<a class="c-posts__inner" href="https://globalnews.ca/news/11300640/canada-supply-management-trump-trade-talks/">
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Why Canada’s supply management is a sticking point for Trump in trade talks" data-title>Why Canada’s supply management is a sticking point for Trump in trade talks</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						The issue of supply management for dairy farmers might end up being an issue both sides are unwilling to move on. Most Canadian politicians seem staunchly in support of the policy.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																						<div class="c-posts__info">Jul 24</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/07/QUE-DAIRY-FARMING.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=491 data-ratio=0.67									loading="lazy"
-								width="720" height="491" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/07/QUE-DAIRY-FARMING.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/07/QUE-DAIRY-FARMING.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/07/QUE-DAIRY-FARMING.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -3260,6 +3232,34 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11303845"
+				data-sophi-feature=latest-news			>
+								<a class="c-posts__inner" href="https://globalnews.ca/news/11303845/miners-trapped-underground-bc-mine-rescued/">
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Miners trapped underground at B.C. mine rescued, more than 60 hours after cave-in" data-title>Miners trapped underground at B.C. mine rescued, more than 60 hours after cave-in</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						&quot;We are relieved to share that all three individuals are safe, and in good health and spirits,&quot; Newmont officials said early Friday morning. 						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Canada</div>
+																						<div class="c-posts__info">20 mins</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/07/d27b8f2cb41deb0ccbf8760c5957fbe1d49eb8a0dd76f7ab55c21f33076ffcee_9e6521.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=496 data-ratio=0.67									loading="lazy"
+								width="720" height="496" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/07/d27b8f2cb41deb0ccbf8760c5957fbe1d49eb8a0dd76f7ab55c21f33076ffcee_9e6521.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/07/d27b8f2cb41deb0ccbf8760c5957fbe1d49eb8a0dd76f7ab55c21f33076ffcee_9e6521.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/07/d27b8f2cb41deb0ccbf8760c5957fbe1d49eb8a0dd76f7ab55c21f33076ffcee_9e6521.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
 				data-post-id="11303161"
 				data-sophi-feature=latest-news			>
 								<a class="c-posts__inner" href="https://globalnews.ca/news/11303161/trump-foreign-aid-public-broadcasting-funding-cuts/">
@@ -3273,7 +3273,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						The bulk of the spending being clawed back is for foreign assistance programs, which the White House argued would incentivize other nations to step up.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
 															<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
-																						<div class="c-posts__info">8 hours</div>
+																						<div class="c-posts__info">10 hours</div>
 													</div>
 					</div>
 					
@@ -3301,7 +3301,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						French President Emmanuel Macron said in a post on X that he will formalize the decision at the United Nations General Assembly in September. 						</div>
 						<div class="c-posts__about c-posts__about--multiple">
 															<div class="c-posts__info c-posts__info--highlight">World</div>
-																						<div class="c-posts__info">10 hours</div>
+																						<div class="c-posts__info">Jul 24</div>
 													</div>
 					</div>
 					
@@ -3316,29 +3316,29 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11301849"
+				data-post-id="11300640"
 				data-sophi-feature=latest-news			>
-								<a class="c-posts__inner" href="https://globalnews.ca/news/11301849/thailand-cambodia-border-dispute-clashes/">
+								<a class="c-posts__inner" href="https://globalnews.ca/news/11300640/canada-supply-management-trump-trade-talks/">
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Thailand-Cambodia border dispute escalates, leaving at least 14 dead" data-title>Thailand-Cambodia border dispute escalates, leaving at least 14 dead</span>
+					<span class="c-posts__headlineText" title="Why Canada’s supply management is a sticking point for Trump in trade talks" data-title>Why Canada’s supply management is a sticking point for Trump in trade talks</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						The trigger for the clashes was a mine explosion along the border on Wednesday that wounded five Thai soldiers and led to the expulsion of Cambodia&#039;s ambassador. 						</div>
+						The issue of supply management for dairy farmers might end up being an issue both sides are unwilling to move on. Most Canadian politicians seem staunchly in support of the policy.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">World</div>
+															<div class="c-posts__info c-posts__info--highlight">Canada</div>
 																						<div class="c-posts__info">Jul 24</div>
 													</div>
 					</div>
 					
-		<div class="c-posts__media "  >
+		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/07/a5fc84a711c81b96699f803f53b5709b97906c490967f838728d0f378b7563bb_bbd410.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/07/QUE-DAIRY-FARMING.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=491 data-ratio=0.67									loading="lazy"
+								width="720" height="491" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/07/a5fc84a711c81b96699f803f53b5709b97906c490967f838728d0f378b7563bb_bbd410.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/07/a5fc84a711c81b96699f803f53b5709b97906c490967f838728d0f378b7563bb_bbd410.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/07/a5fc84a711c81b96699f803f53b5709b97906c490967f838728d0f378b7563bb_bbd410.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/07/QUE-DAIRY-FARMING.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/07/QUE-DAIRY-FARMING.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/07/QUE-DAIRY-FARMING.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -3419,8 +3419,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-playlist-miniplayer"
 			data-displayinline-video-id="11303348"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11303348,11302684,11291915,11295678,11302455/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F8rytchnwti-nsbus2joa%2FWEB_WORLD_JR_HOCKEY_TRIAL_DECISION_OSHEA_STILL.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
-    		    			data-displayinline-playlist="11303348,11302684,11291915,11295678,11302455"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11303348,11291915,11302684,11240789,9012795/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F8rytchnwti-nsbus2joa%2FWEB_WORLD_JR_HOCKEY_TRIAL_DECISION_OSHEA_STILL.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
+    		    			data-displayinline-playlist="11303348,11291915,11302684,11240789,9012795"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
@@ -3466,7 +3466,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="News"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11303348,11302684,11291915,11295678,11302455/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11303348,11291915,11302684,11240789,9012795/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">World junior trial: Players found not guilty in high-profile sex assault case</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -3487,34 +3487,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="2"
 	>
-	<a href="https://globalnews.ca/video/11302684/wrestling-legend-hulk-hogan-dead-at-71/"
-		title="Wrestling legend Hulk Hogan dead at 71"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11302684"
-		data-video-label="Entertainment"
-		data-video-player-id="home-playlist-miniplayer"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11302684,11291915,11295678,11302455/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Wrestling legend Hulk Hogan dead at 71</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Entertainment					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/2vmsl3vxxj-bwljbzsu3u/THU_HOGAN_SITE_THUMB_240725.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="3"
-	>
 	<a href="https://globalnews.ca/video/11291915/carney-unveils-new-steel-tariffs-support-for-canadas-industry/"
 		title="Carney unveils new steel tariffs, support for Canada&#8217;s industry"
 		class="l-playlist__link c-posts__inner c-videoPlay"
@@ -3522,7 +3494,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11291915,11295678,11302455,11302684/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11291915,11302684,11240789,9012795/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Carney unveils new steel tariffs, support for Canada&#8217;s industry</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -3541,25 +3513,53 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 <li class="c-posts__item l-playlist__item"
-			data-playlist-index="4"
+			data-playlist-index="3"
 	>
-	<a href="https://globalnews.ca/video/11295678/trump-sues-wall-street-journal-for-10b-over-article-tying-him-to-jeffrey-epstein/"
-		title="Trump sues Wall Street Journal for $10B over article tying him to Jeffrey Epstein"
+	<a href="https://globalnews.ca/video/11302684/wrestling-legend-hulk-hogan-dead-at-71/"
+		title="Wrestling legend Hulk Hogan dead at 71"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11295678"
-		data-video-label="Politics"
+		data-video-id="11302684"
+		data-video-label="Entertainment"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11295678,11302455,11302684,11291915/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11302684,11240789,9012795,11291915/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Trump sues Wall Street Journal for $10B over article tying him to Jeffrey Epstein</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Wrestling legend Hulk Hogan dead at 71</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Politics					</div>
+						Entertainment					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/g7pbyc858g-ridoq0m9g9/TRUMP_WSJ_EPSTEIN_LAWSUIT_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/2vmsl3vxxj-bwljbzsu3u/THU_HOGAN_SITE_THUMB_240725.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="4"
+	>
+	<a href="https://globalnews.ca/video/11240789/high-profile-world-junior-sexual-assault-trial-wraps-after-8-weeks/"
+		title="High-profile world junior sexual assault trial wraps after 8 weeks"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11240789"
+		data-video-label="Canada"
+		data-video-player-id="home-playlist-miniplayer"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11240789,9012795,11291915,11302684/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">High-profile world junior sexual assault trial wraps after 8 weeks</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						Canada					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/a1qh8qqw0e-h2c75x5wmq/still_online_WORLD_JRS_HOCKEY_TRIAL_JUNE_13.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -3571,23 +3571,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="5"
 	>
-	<a href="https://globalnews.ca/video/11302455/three-dead-in-maple-ridge-police-incident/"
-		title="Three dead in Maple Ridge police incident"
+	<a href="https://globalnews.ca/video/9012795/global-news-hour-at-6-bc-july-24/"
+		title="Global News Hour at 6 BC: July 24"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11302455"
-		data-video-label="Crime"
+		data-video-id="9012795"
+		data-video-label="News"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11302455,11302684,11291915,11295678/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/9012795,11291915,11302684,11240789/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Three dead in Maple Ridge police incident</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Global News Hour at 6 BC: July 24</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Crime					</div>
+						News					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/g8zn4spcly-z1ukfdvu41/maple-ridge-iio.png?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/p5jzaxyqde-pcopzlxieb/Global_News_Hour_Thumbnail_DO_NOT_DELETE!.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -4040,6 +4040,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-24"
+	data-post-id="11301849"
+	data-slide-index=""
+	data-caption="Thailand-Cambodia border dispute escalates, leaving at least 14 dead"
+		>
+		<a class="c-posts__inner" href="https://globalnews.ca/news/11301849/thailand-cambodia-border-dispute-clashes/"  >
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/07/a5fc84a711c81b96699f803f53b5709b97906c490967f838728d0f378b7563bb_bbd410.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/07/a5fc84a711c81b96699f803f53b5709b97906c490967f838728d0f378b7563bb_bbd410.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/07/a5fc84a711c81b96699f803f53b5709b97906c490967f838728d0f378b7563bb_bbd410.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/07/a5fc84a711c81b96699f803f53b5709b97906c490967f838728d0f378b7563bb_bbd410.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Thailand-Cambodia border dispute escalates, leaving at least 14 dead" data-title>Thailand-Cambodia border dispute escalates, leaving at least 14 dead</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >Jul 24</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-25"
 	data-post-id="11301399"
 	data-slide-index=""
 	data-caption="Vancouver woman pleads for help for family in Gaza"
@@ -4056,33 +4083,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="Vancouver woman pleads for help for family in Gaza" data-title>Vancouver woman pleads for help for family in Gaza</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Jul 23</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-25"
-	data-post-id="11300418"
-	data-slide-index=""
-	data-caption="France&#8217;s Macron sues U.S. media personality for claiming his wife is a man"
-		>
-		<a class="c-posts__inner" href="https://globalnews.ca/news/11300418/french-president-emmanuel-macron-sues-candace-owens-defamation/"  >
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/07/macron-owens.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
-								width="720" height="504" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/07/macron-owens.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/07/macron-owens.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/07/macron-owens.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="France&#8217;s Macron sues U.S. media personality for claiming his wife is a man" data-title>France&#8217;s Macron sues U.S. media personality for claiming his wife is a man</span>
 			</div>
 	
 						
@@ -4195,7 +4195,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >3 hours</div>
+																<div class="c-posts__info" data-date >5 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -4222,7 +4222,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >6 hours</div>
+																<div class="c-posts__info" data-date >8 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -4249,7 +4249,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >6 hours</div>
+																<div class="c-posts__info" data-date >8 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -4336,7 +4336,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >6 hours</div>
+																<div class="c-posts__info" data-date >7 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -4363,7 +4363,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >6 hours</div>
+																<div class="c-posts__info" data-date >8 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -4390,7 +4390,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >7 hours</div>
+																<div class="c-posts__info" data-date >8 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -4639,7 +4639,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >6 hours</div>
+																<div class="c-posts__info" data-date >8 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -4666,7 +4666,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >10 hours</div>
+																<div class="c-posts__info" data-date >Jul 24</div>
 																			</div>
 									</div>
 		</a>
@@ -4693,7 +4693,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >11 hours</div>
+																<div class="c-posts__info" data-date >Jul 24</div>
 																			</div>
 									</div>
 		</a>
@@ -4921,7 +4921,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >7 hours</div>
+																<div class="c-posts__info" data-date >8 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5224,7 +5224,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >6 hours</div>
+																<div class="c-posts__info" data-date >8 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5574,7 +5574,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 </script>
 		<!-- Adobe Analytics code version: JS-2.6.0. -->
 		<script type="text/javascript">
-			var gnPageData = {"context_data":{"hourofday":"2","dayofweek":"Friday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
+			var gnPageData = {"context_data":{"hourofday":"4","dayofweek":"Friday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
 		</script>
 				<!-- End Adobe Analytics code -->
 			<script>
@@ -5625,5 +5625,5 @@ _stq.push([ "clickTrackerInit", "176892389", "0" ]);
 
 		<div class="l-dynamicElement"></div>
 
-			</body>
+			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75660ba8f4","applicationID":"418684855","transactionName":"Z1BWZxdTWkAHVExRXF4adVARW1tdSV9XVVY=","queueTime":0,"applicationTime":436,"atts":"SxdBEV9JSR9EVhoCSE1I","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
