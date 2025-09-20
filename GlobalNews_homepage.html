@@ -184,7 +184,8 @@
         }
     </script>
     	<!-- Meta Tags -->
-	<meta charset="UTF-8">
+	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"75660ba8f4",applicationID:"418684855"};;/*! For license information please see nr-loader-rum-1.297.1.min.js.LICENSE.txt */
+(()=>{var e,t,r={122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let s in a)if(void 0!==e[s])try{if(null===e[s]){r[s]=null;continue}Array.isArray(e[s])&&Array.isArray(t[s])?r[s]=Array.from(new Set([...e[s],...t[s]])):"object"==typeof e[s]&&"object"==typeof t[s]?r[s]=i(e[s],t[s]):r[s]=e[s]}catch(e){r[s]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},555:(e,t,r)=>{"use strict";r.d(t,{D:()=>o,f:()=>s});var n=r(384),i=r(122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function s(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const o=e=>(0,i.a)(e,a)},699:(e,t,r)=>{"use strict";r.d(t,{It:()=>i,No:()=>n,qh:()=>s,uh:()=>a});const n=16e3,i=1e6,a="NR_CONTAINER_AGENT",s="SESSION_ERROR"},324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>a,xv:()=>n});const n="1.297.1",i="PROD",a="CDN"},154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>c,RI:()=>i,WN:()=>d,bv:()=>a,gm:()=>s,mw:()=>o,sb:()=>u});var n=r(863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),s=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===s?.document?.visibilityState),c=/iPad|iPhone|iPod/.test(s.navigator?.userAgent),u=c&&"undefined"==typeof SharedWorker,d=((()=>{const e=s.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)())},241:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(154);const i="newrelic";function a(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>u,Ze:()=>f,x3:()=>d});var n=r(241),i=r(836),a=r(606),s=r(860),o=r(646);const c={};function u(e,t){const r={staged:!1,priority:s.P3[t]||0};l(e),c[e].get(t)||c[e].set(t,r)}function d(e,t){e&&c[e]&&(c[e].get(t)&&c[e].delete(t),p(e,t,!1),c[e].size&&g(e))}function l(e){if(!e)throw new Error("agentIdentifier required");c[e]||(c[e]=new Map)}function f(e="",t="feature",r=!1){if(l(e),!e||!c[e].get(t)||r)return p(e,t);c[e].get(t).staged=!0,g(e)}function g(e){const t=Array.from(c[e]);t.every((([e,t])=>t.staged))&&(t.sort(((e,t)=>e[1].priority-t[1].priority)),t.forEach((([t])=>{c[e].delete(t),p(e,t)})))}function p(e,t,r=!0){const s=e?i.ee.get(e):i.ee,c=a.i.handlers;if(!s.aborted&&s.backlog&&c){if((0,n.W)({agentIdentifier:e,type:"lifecycle",name:"drain",feature:t}),r){const e=s.backlog[t],r=c[t];if(r){for(let t=0;e&&t<e.length;++t)m(e[t],r);Object.entries(r).forEach((([e,t])=>{Object.values(t||{}).forEach((t=>{t[0]?.on&&t[0]?.context()instanceof o.y&&t[0].on(e,t[1])}))}))}}s.isolatedBacklog||delete c[t],s.backlog[t]=null,s.emit("drain-"+t,[])}}function m(e,t){var r=e[1];Object.values(t[r]||{}).forEach((t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}}))}},836:(e,t,r)=>{"use strict";r.d(t,{P:()=>o,ee:()=>c});var n=r(384),i=r(990),a=r(646),s=r(607);const o="nr@context:".concat(s.W),c=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var o=g(n);m(e).forEach((e=>{e.apply(o,r)}));var u=v()[s[e]];u&&u.push([f,e,r,o]);return o},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach((([e,n])=>{s[n]=t,t in r||(r[t]=[])}))},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach((e=>{delete f.backlog[e]}))},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,o,(()=>new a.y(o))):new a.y(o)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c)},646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},606:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(908);a.on=s;var i=a.handlers={};function a(e,t,r,a){s(a||n.d,i,e,t,r)}function s(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var s=t[a]=t[a]||{};(s[r]=s[r]||[]).push([e,i])}},878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(566).bz)()},566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>o,bz:()=>s});var n=r(154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function s(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?a(t,r++).toString(16):"y"===e?(3&a()|8).toString(16):e)).join("")}function o(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const s=[];for(var o=0;o<e;o++)s.push(a(r,i++).toString(16));return s.join("")}},614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>s,H3:()=>n,g:()=>u,iL:()=>c,tS:()=>o,uh:()=>i,wk:()=>a});const n="NRBA",i="SESSION",a=144e5,s=18e5,o={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({agentIdentifier:null,drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},701:(e,t,r)=>{"use strict";r.d(t,{B:()=>a,t:()=>s});var n=r(241);const i=new Set,a={};function s(e,t){const r=t.agentIdentifier;a[r]??={},e&&"object"==typeof e&&(i.has(r)||(t.ee.emit("rumresp",[e]),a[r]=e,i.add(r),(0,n.W)({agentIdentifier:r,loaded:!0,drained:!0,type:"lifecycle",name:"load",feature:void 0,data:e})))}},990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout((()=>{i=clearTimeout(i)}),t)),n||(clearTimeout(i),i=setTimeout((()=>{e.apply(this,r)}),t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},910:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every((e=>{if(i.has(e))return i.get(e);const t="function"==typeof e&&e.toString().includes("[native code]");return t||(0,n.R)(64,e?.name||e?.toString()),i.set(e,t),t}))}},289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>a,Qr:()=>o,sB:()=>s});var n=r(878);function i(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(i())return e();(0,n.sp)("load",e,t)}function s(e){if(i())return e();(0,n.DD)("DOMContentLoaded",e)}function o(e){if(i())return e();(0,n.sp)("popstate",e)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>s,US:()=>d,Zm:()=>o,bQ:()=>u,dV:()=>c,pV:()=>l});var n=r(154),i=r(863),a=r(910);const s={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function o(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function c(){let e=o();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,a.i)(...Object.values(e.o))),e}function u(e,t){let r=o();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function d(e,t){o()[e]=t}function l(){return function(){let e=o();const t=e.info||{};e.info={beacon:s.beacon,errorBeacon:s.errorBeacon,...t}}(),function(){let e=o();const t=e.init||{};e.init={...t}}(),c(),function(){let e=o();const t=e.loader_config||{};e.loader_config={...t}}(),o()}},843:(e,t,r)=>{"use strict";r.d(t,{u:()=>i});var n=r(878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},773:(e,t,r)=>{"use strict";r.d(t,{z_:()=>a,XG:()=>o,TZ:()=>n,rs:()=>i,xV:()=>s});r(154),r(566),r(384);const n=r(860).K7.metrics,i="sm",a="cm",s="storeSupportabilityMetrics",o="storeEventMetrics"},630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},234:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(836),i=r(687);class a{constructor(e,t){this.agentIdentifier=e,this.ee=n.ee.get(e),this.featureName=t,this.blocked=!1}deregisterDrain(){(0,i.x3)(this.agentIdentifier,this.featureName)}}},741:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e){return this.#e(i.Dl,e)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(){return this.#e(i.dT)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}}},261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>u,BL:()=>o,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>h,Pl:()=>n,Tb:()=>l,U2:()=>a,V1:()=>k,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>s,nb:()=>m,o5:()=>d});const n="api-",i="addPageAction",a="addToTrace",s="addRelease",o="finished",c="interaction",u="log",d="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",m="setApplicationVersion",h="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",k="measure"},163:(e,t,r)=>{"use strict";r.d(t,{j:()=>E});var n=r(384),i=r(741);var a=r(555);r(860).K7.genericEvents;const s="experimental.marks",o="experimental.measures",c="experimental.resources",u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(614),l=r(944),f=r(122);const g="[data-nr-mask]",p=e=>(0,f.a)(e,(()=>{const e={feature_flags:[],experimental:{marks:!1,measures:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{allow_registered_children:!0,duplicate_registered_data:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{get capture_marks(){return e.feature_flags.includes(s)||e.experimental.marks},set capture_marks(t){e.experimental.marks=t},get capture_measures(){return e.feature_flags.includes(o)||e.experimental.measures},set capture_measures(t){e.experimental.measures=t},capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:d.wk,inactiveMs:d.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(g):""===t||null===t?e.mask_selector=g:(0,l.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},spa:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var m=r(154),h=r(324);let v=0;const b={buildEnv:h.F3,distMethod:h.Xs,version:h.xv,originTime:m.WN},y={appMetadata:{},customTransaction:void 0,denyList:void 0,disabled:!1,entityManager:void 0,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,jsAttributesMetadata:{bytes:0},get harvestCount(){return++v}},_=e=>{const t=(0,f.a)(e,y),r=Object.keys(b).reduce(((e,t)=>(e[t]={value:b[t],writable:!1,configurable:!0,enumerable:!0},e)),{});return Object.defineProperties(t,r)};var w=r(701);const x=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var k=r(836),S=r(241);const A={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},R=e=>(0,f.a)(e,A),T=new Set;function E(e,t={},r,s){let{init:o,info:c,loader_config:u,runtime:d={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();o=e.init,c=e.info,u=e.loader_config}e.init=p(o||{}),e.loader_config=R(u||{}),c.jsAttributes??={},m.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,a.D)(c);const f=e.init,g=[c.beacon,c.errorBeacon];T.has(e.agentIdentifier)||(f.proxy.assets&&(x(f.proxy.assets),g.push(f.proxy.assets)),f.proxy.beacon&&g.push(f.proxy.beacon),function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach((r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let a=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return a?a(...t):n})}))}(e),(0,n.US)("activatedFeatures",w.B),e.runSoftNavOverSpa&&=!0===f.soft_navigations.enabled&&f.feature_flags.includes("soft_nav")),d.denyList=[...f.ajax.deny_list||[],...f.ajax.block_internal?g:[]],d.ptid=e.agentIdentifier,d.loaderType=r,e.runtime=_(d),T.has(e.agentIdentifier)||(e.ee=k.ee.get(e.agentIdentifier),e.exposed=l,(0,S.W)({agentIdentifier:e.agentIdentifier,drained:!!w.B?.[e.agentIdentifier],type:"lifecycle",name:"initialize",feature:void 0,data:e.config})),T.add(e.agentIdentifier)}},374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>d,K7:()=>c,P3:()=>u,XX:()=>i,Yy:()=>o,df:()=>a,qY:()=>n,v4:()=>s});const n="events",i="jserrors",a="browser/blobs",s="rum",o="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},u={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.spa]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.softNav]:8,[c.sessionReplay]:9,[c.logging]:10,[c.genericEvents]:11},d={[c.pageViewEvent]:s,[c.pageViewTiming]:n,[c.ajax]:n,[c.spa]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:a,[c.sessionReplay]:a,[c.logging]:o,[c.genericEvents]:"ins"}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var a=n[e]={exports:{}};return r[e](a,a.exports,i),a.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>"nr-rum-1.297.1.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.297.1.PROD:",i.l=(r,n,a,s)=>{if(e[r])e[r].push(n);else{var o,c;if(void 0!==a)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+a){o=l;break}}if(!o){c=!0;var f={296:"sha512-Fubvo9EKy43y8aCZB26sUoVtR4Q7ZrXSJ5QdbgfmFfWc9xtzcDYgy0ygUhmq3a8Q3LPvS3HuEvMNA2W8ccogkg=="};(o=document.createElement("script")).charset="utf-8",o.timeout=120,i.nc&&o.setAttribute("nonce",i.nc),o.setAttribute("data-webpack",t+a),o.src=r,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),f[s]&&(o.integrity=f[s])}e[r]=[n];var g=(t,n)=>{o.onerror=o.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],o.parentNode&&o.parentNode.removeChild(o),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=g.bind(null,o.onerror),o.onload=g.bind(null,o.onload),c&&document.head.appendChild(o)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var a=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=a);var s=i.p+i.u(t),o=new Error;i.l(s,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var a=r&&("load"===r.type?"missing":r.type),s=r&&r.target&&r.target.src;o.message="Loading chunk "+t+" failed.\n("+a+": "+s+")",o.name="ChunkLoadError",o.type=a,o.request=s,n[1](o)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,a,[s,o,c]=r,u=0;if(s.some((t=>0!==e[t]))){for(n in o)i.o(o,n)&&(i.m[n]=o[n]);if(c)c(i)}for(t&&t(r);u<s.length;u++)a=s[u],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},r=self["webpackChunk:NRBA-1.297.1.PROD"]=self["webpackChunk:NRBA-1.297.1.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(374);var e=i(566),t=i(741);class r extends t.W{agentIdentifier=(0,e.LA)(16)}var n=i(860);const a=Object.values(n.K7);var s=i(163);var o=i(908),c=i(863),u=i(261),d=i(241),l=i(944),f=i(701),g=i(773);function p(e,t,i,a){const s=a||i;!s||s[e]&&s[e]!==r.prototype[e]||(s[e]=function(){(0,o.p)(g.xV,["API/"+e+"/called"],void 0,n.K7.metrics,i.ee),(0,d.W)({agentIdentifier:i.agentIdentifier,drained:!!f.B?.[i.agentIdentifier],type:"data",name:"api",feature:u.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,l.R)(23,e)}})}function m(e,t,r,n,i){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(i||null===r)&&(0,o.p)(u.Pl+n,[(0,c.t)(),t,r],void 0,"session",e.ee)}var h=i(687),v=i(234),b=i(289),y=i(154),_=i(384);const w=e=>y.RI&&!0===e?.privacy.cookies_enabled;function x(e){return!!(0,_.dV)().o.MO&&w(e)&&!0===e?.session_trace.enabled}var k=i(389),S=i(699);class A extends v.W{constructor(e,t){super(e.agentIdentifier,t),this.agentRef=e,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise(((t,r)=>{this.ee.on("manual-start-all",(0,k.J)((()=>{(0,h.Ak)(e.agentIdentifier,this.featureName),t()})))})):(0,h.Ak)(e.agentIdentifier,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;let n;this.onAggregateImported=new Promise((e=>{n=e}));const a=async()=>{let a;await this.deferred;try{if(w(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,305));a=t(e)}}catch(e){(0,l.R)(20,e),this.ee.emit("internal-error",[e]),(0,o.p)(S.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#t(this.featureName,a,e.init))return(0,h.Ze)(this.agentIdentifier,this.featureName),void n(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),n(!0)}catch(e){(0,l.R)(34,e),this.abortHandler?.(),(0,h.Ze)(this.agentIdentifier,this.featureName,!0),n(!1),this.ee&&this.ee.abort()}};y.RI?(0,b.GG)((()=>a()),!0):a()}#t(e,t,r){if(this.blocked)return!1;switch(e){case n.K7.sessionReplay:return x(r)&&!!t;case n.K7.sessionTrace:return!!t;default:return!0}}}var R=i(630),T=i(614);class E extends A{static featureName=R.T;constructor(e){var t;super(e,R.T),this.setupInspectionEvents(e.agentIdentifier),t=e,p(u.Fw,(function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,o.p)(u.Pl+u.Fw,[(0,c.t)()],void 0,void 0,t.ee))}),t),this.ee.on("api-send-rum",((e,t)=>(0,o.p)("send-rum",[e,t],void 0,this.featureName,this.ee))),this.importAggregator(e,(()=>i.e(296).then(i.bind(i,108))))}setupInspectionEvents(e){const t=(t,r)=>{t&&(0,d.W)({agentIdentifier:e,timeStamp:t.timeStamp,loaded:"complete"===t.target.readyState,type:"window",name:r,data:t.target.location+""})};(0,b.sB)((e=>{t(e,"DOMContentLoaded")})),(0,b.GG)((e=>{t(e,"load")})),(0,b.Qr)((e=>{t(e,"navigate")})),this.ee.on(T.tS.UPDATE,((t,r)=>{(0,d.W)({agentIdentifier:e,type:"lifecycle",name:"session",data:r})}))}}var N=i(843),I=i(878),j=i(782);class O extends A{static featureName=j.T;constructor(e){super(e,j.T),y.RI&&((0,N.u)((()=>(0,o.p)("docHidden",[(0,c.t)()],void 0,j.T,this.ee)),!0),(0,I.sp)("pagehide",(()=>(0,o.p)("winPagehide",[(0,c.t)()],void 0,j.T,this.ee))),this.importAggregator(e,(()=>i.e(296).then(i.bind(i,350)))))}}class P extends A{static featureName=g.TZ;constructor(e){super(e,g.TZ),y.RI&&document.addEventListener("securitypolicyviolation",(e=>{(0,o.p)(g.xV,["Generic/CSPViolation/Detected"],void 0,this.featureName,this.ee)})),this.importAggregator(e,(()=>i.e(296).then(i.bind(i,373))))}}new class extends r{constructor(e){var t;(super(),y.gm)?(this.features={},(0,_.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(E),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===n.K7.softNav)),(0,s.j)(this,e,e.loaderType||"agent"),t=this,p(u.cD,(function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return m(t,e,r,u.cD,n);(0,l.R)(40,typeof r)}else(0,l.R)(39,typeof e)}),t),function(e){p(u.Dl,(function(t){if("string"==typeof t||null===t)return m(e,"enduser.id",t,u.Dl,!0);(0,l.R)(41,typeof t)}),e)}(this),function(e){p(u.nb,(function(t){if("string"==typeof t||null===t)return m(e,"application.version",t,u.nb,!1);(0,l.R)(42,typeof t)}),e)}(this),function(e){p(u.d3,(function(){e.ee.emit("manual-start-all")}),e)}(this),this.run()):(0,l.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return a.forEach((r=>{t[r]=!!e[r]?.enabled})),t}(this.init),t=[...this.desiredFeatures];t.sort(((e,t)=>n.P3[e.featureName]-n.P3[t.featureName])),t.forEach((t=>{if(!e[t.featureName]&&t.featureName!==n.K7.pageViewEvent)return;if(this.runSoftNavOverSpa&&t.featureName===n.K7.spa)return;if(!this.runSoftNavOverSpa&&t.featureName===n.K7.softNav)return;const r=function(e){switch(e){case n.K7.ajax:return[n.K7.jserrors];case n.K7.sessionTrace:return[n.K7.ajax,n.K7.pageViewEvent];case n.K7.sessionReplay:return[n.K7.sessionTrace];case n.K7.pageViewTiming:return[n.K7.pageViewEvent];default:return[]}}(t.featureName).filter((e=>!(e in this.features)));r.length>0&&(0,l.R)(36,{targetFeature:t.featureName,missingDependencies:r}),this.features[t.featureName]=new t(this)}))}catch(e){(0,l.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,_.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}({features:[E,O,P],loaderType:"lite"})})()})();</script>
 	<meta name="theme-color" content="#231F20">
 
 			<meta name="msvalidate.01" content="9E5C74811CA48CCCC61A2CF3C0A1BA6A">
@@ -433,7 +434,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <script type="text/javascript" defer="defer" src="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/js/vendor~article~interactive.bundle.js?ver=EtlvMdw9IsWMpafTxYnPkA79Tpw%3D" id="vendor~article~interactive-js"></script>
 <script type="text/javascript" defer="defer" src="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/js/article.bundle.js?ver=Iao63WnvHCectkB8vhujoG1DdS8%3D" id="gn-article-js"></script>
 <link rel="https://api.w.org/" href="https://globalnews.ca/wp-json/" />	<style>img#wpstats{display:none}</style>
-		<script type="application/ld+json" class="wp-parsely-metadata">{"@context":"https:\/\/schema.org","@type":"WebPage","headline":"Global News","url":"https:\/\/globalnews.ca","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/globalnews.ca\/"},"thumbnailUrl":"https:\/\/globalnews.ca\/wp-content\/uploads\/2025\/09\/SET-GFX-LANGLEY-PITBULL-RELEASE.jpg?quality=65&strip=all&w=150","image":{"@type":"ImageObject","url":"https:\/\/globalnews.ca\/wp-content\/uploads\/2025\/09\/SET-GFX-LANGLEY-PITBULL-RELEASE.jpg?quality=65&strip=all"},"articleSection":"Canada","author":[{"@type":"Person","name":"Amy Judd"},{"@type":"Person","name":"Paul Johnson"}],"creator":["Amy Judd","Paul Johnson"],"publisher":{"@type":"Organization","name":"Global News","logo":""},"keywords":["dog bites","langley dogs"],"dateCreated":"2025-09-20T16:06:55Z","datePublished":"2025-09-20T16:06:55Z","dateModified":"2025-09-20T16:06:55Z"}</script>	<link rel="apple-touch-icon" href="https://globalnews.ca/wp-content/themes/shaw-globalnews/_img/pwa/news_square-144.png" />
+		<script type="application/ld+json" class="wp-parsely-metadata">{"@context":"https:\/\/schema.org","@type":"WebPage","headline":"Global News","url":"https:\/\/globalnews.ca","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/globalnews.ca\/"},"thumbnailUrl":"https:\/\/globalnews.ca\/wp-content\/uploads\/2025\/09\/199d4f93d6316eb12d99f9c385ae2a813776dae5a291b123c3438c6a9ee8beeb_b5190f.jpg?quality=65&strip=all&w=150","image":{"@type":"ImageObject","url":"https:\/\/globalnews.ca\/wp-content\/uploads\/2025\/09\/199d4f93d6316eb12d99f9c385ae2a813776dae5a291b123c3438c6a9ee8beeb_b5190f.jpg?quality=65&strip=all"},"articleSection":"Tech","author":[{"@type":"Person","name":"globalnewsdigital"}],"creator":["globalnewsdigital"],"publisher":{"@type":"Organization","name":"Global News","logo":""},"keywords":["donald trump","tiktok"],"dateCreated":"2025-09-20T18:08:40Z","datePublished":"2025-09-20T18:08:40Z","dateModified":"2025-09-20T18:11:48Z"}</script>	<link rel="apple-touch-icon" href="https://globalnews.ca/wp-content/themes/shaw-globalnews/_img/pwa/news_square-144.png" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="default" />
 	<!-- iPhone 12 mini, 11 pro, X, Xs (1125px x 2436px) -->
 	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" href="https://globalnews.ca/wp-content/themes/shaw-globalnews/_img/pwa/ios/launch-1125x2436.png">
@@ -491,7 +492,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 
 				
 
-				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"16","weatherprec":"x","weathercode":"28","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
+				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"16","weatherprec":"x","weathercode":"30","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
 		</script>
 			<script>
 				// Load the APS JavaScript Library
@@ -1543,10 +1544,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay=""
 						data-displayinline-featured="false"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_11434644_68ced15b220ca"
+			data-displayinline-player-id="miniplayer_11434644_68ceef7e4a82d"
 			data-displayinline-video-id="11434644"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/11434644/#autoplay&#038;stickyiframe=miniplayer_11434644_68ced15b220ca"
+    		data-displayinline="https://globalnews.ca/video/embed/11434644/#autoplay&#038;stickyiframe=miniplayer_11434644_68ceef7e4a82d"
     									data-displayinline-container="stories-1-0"
 										data-displayinline-sticky="true"
 						    		>
@@ -1580,7 +1581,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 									According to the Bank of Canada’s research, 60 per cent of all Canadian mortgages will be up for renewal in 2025 and 2026. What does the most recent rate cut mean for you?									</div>
 																<div class="c-posts__about c-posts__about--multiple">
 																		<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">7 hours</div>
+																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">9 hours</div>
 																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 																	</div>
 														</a>
@@ -1659,6 +1660,37 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=12			data-parent-id=home-topStories						data-sophi-feature=top-stories		>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-1"
+	data-post-id="11438228"
+	data-slide-index=""
+	data-caption="Grammy-winning songwriter Brett James dies in plane crash"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11438228/brett-james-songwriter-dead-plane-crash/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				src=https://globalnews.ca/wp-content/uploads/2025/09/brett-james-dead.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67								width="720" height="504" alt="" 
+											srcset="https://globalnews.ca/wp-content/uploads/2025/09/brett-james-dead.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/brett-james-dead.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/brett-james-dead.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Grammy-winning songwriter Brett James dies in plane crash" data-title>Grammy-winning songwriter Brett James dies in plane crash</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Entertainment</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">3 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-2"
 	data-post-id="11435470"
 	data-slide-index=""
 	data-caption="Canadians aren’t mad at America anymore. We’re hurt, suspicious, and moving on"
@@ -1666,13 +1698,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11435470/canadians-arent-mad-at-america-anymore-were-hurt-suspicious-and-moving-on/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				src=https://globalnews.ca/wp-content/uploads/2025/09/Trump-Carney-counter-tariffs.jpg?quality=65&#038;strip=all&#038;w=720												width="720" height="480" alt="" 
-											srcset="https://globalnews.ca/wp-content/uploads/2025/09/Trump-Carney-counter-tariffs.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/Trump-Carney-counter-tariffs.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/Trump-Carney-counter-tariffs.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"						/>
+				data-src=https://globalnews.ca/wp-content/uploads/2025/09/Trump-Carney-counter-tariffs.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/Trump-Carney-counter-tariffs.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/Trump-Carney-counter-tariffs.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/Trump-Carney-counter-tariffs.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
@@ -1682,40 +1716,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Commentary</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">7 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-2"
-	data-post-id="11438263"
-	data-slide-index=""
-	data-caption="Luigi Mangione’s lawyers want death penalty case dismissed"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11438263/luigi-mangione-lawyers-want-death-penalty-case-dismissed/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/09/6e4cf002fd6ea803ba93d03bf4cc31119aa2c22bd857acef582e31960e6ac90c.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="479" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/6e4cf002fd6ea803ba93d03bf4cc31119aa2c22bd857acef582e31960e6ac90c.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/6e4cf002fd6ea803ba93d03bf4cc31119aa2c22bd857acef582e31960e6ac90c.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/6e4cf002fd6ea803ba93d03bf4cc31119aa2c22bd857acef582e31960e6ac90c.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Luigi Mangione’s lawyers want death penalty case dismissed" data-title>Luigi Mangione’s lawyers want death penalty case dismissed</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Trending</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">58 mins</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">9 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
@@ -1745,33 +1746,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-3"
-	data-post-id="11436677"
+	data-post-id="11438214"
 	data-slide-index=""
-	data-caption="Police find remains thought to be Travis Decker, accused of killing 3 kids"
+	data-caption="Pennsylvania detectives killed in an ambush remembered for saving lives"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11436677/travis-decker-remains-believed-located-police/"
+		href="https://globalnews.ca/news/11438214/pennsylvania-detectives-killed-remembered-for-saving-lives/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/09/travis-decker-mugshot.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/09/pennsylvania-detectives-killed.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
 								width="720" height="504" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/travis-decker-mugshot.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/travis-decker-mugshot.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/travis-decker-mugshot.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/pennsylvania-detectives-killed.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/pennsylvania-detectives-killed.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/pennsylvania-detectives-killed.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Police find remains thought to be Travis Decker, accused of killing 3 kids" data-title>Police find remains thought to be Travis Decker, accused of killing 3 kids</span>
+					<span class="c-posts__headlineText" title="Pennsylvania detectives killed in an ambush remembered for saving lives" data-title>Pennsylvania detectives killed in an ambush remembered for saving lives</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>U.S. News</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Sep 19</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">5 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1803,7 +1804,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">4 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">6 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
@@ -1811,66 +1812,66 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-5"
-	data-post-id="11438214"
+	data-post-id="11438263"
 	data-slide-index=""
-	data-caption="Pennsylvania detectives killed in an ambush remembered for saving lives"
+	data-caption="Luigi Mangione’s lawyers want death penalty case dismissed"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11438214/pennsylvania-detectives-killed-remembered-for-saving-lives/"
+		href="https://globalnews.ca/news/11438263/luigi-mangione-lawyers-want-death-penalty-case-dismissed/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
 			>
 			
-		<div class="c-posts__media  c-imageContainer"  >
+		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/09/pennsylvania-detectives-killed.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
-								width="720" height="504" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/09/6e4cf002fd6ea803ba93d03bf4cc31119aa2c22bd857acef582e31960e6ac90c.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="479" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/pennsylvania-detectives-killed.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/pennsylvania-detectives-killed.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/pennsylvania-detectives-killed.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/6e4cf002fd6ea803ba93d03bf4cc31119aa2c22bd857acef582e31960e6ac90c.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/6e4cf002fd6ea803ba93d03bf4cc31119aa2c22bd857acef582e31960e6ac90c.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/6e4cf002fd6ea803ba93d03bf4cc31119aa2c22bd857acef582e31960e6ac90c.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Pennsylvania detectives killed in an ambush remembered for saving lives" data-title>Pennsylvania detectives killed in an ambush remembered for saving lives</span>
+					<span class="c-posts__headlineText" title="Luigi Mangione’s lawyers want death penalty case dismissed" data-title>Luigi Mangione’s lawyers want death penalty case dismissed</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>U.S. News</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Trending</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">3 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-6"
-	data-post-id="11436830"
+	data-post-id="11438379"
 	data-slide-index=""
-	data-caption="Ottawa hate crime bill would outlaw &#8216;hateful&#8217; displays of certain symbols"
+	data-caption="Emerging TikTok deal ensures U.S. oversight of algorithm, White House says"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11436830/canada-hate-crime-legislation-fraser/"
+		href="https://globalnews.ca/news/11438379/emerging-tiktok-deal-china-u-s-oversight-algorithm/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
 			>
 			
-		<div class="c-posts__media  c-imageContainer"  >
+		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/09/CP175032791_8596f1-e1758316510866.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=493 data-ratio=0.67									loading="lazy"
-								width="720" height="493" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/09/199d4f93d6316eb12d99f9c385ae2a813776dae5a291b123c3438c6a9ee8beeb_b5190f.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/CP175032791_8596f1-e1758316510866.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/CP175032791_8596f1-e1758316510866.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/CP175032791_8596f1-e1758316510866.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/199d4f93d6316eb12d99f9c385ae2a813776dae5a291b123c3438c6a9ee8beeb_b5190f.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/199d4f93d6316eb12d99f9c385ae2a813776dae5a291b123c3438c6a9ee8beeb_b5190f.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/199d4f93d6316eb12d99f9c385ae2a813776dae5a291b123c3438c6a9ee8beeb_b5190f.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Ottawa hate crime bill would outlaw &#8216;hateful&#8217; displays of certain symbols" data-title>Ottawa hate crime bill would outlaw &#8216;hateful&#8217; displays of certain symbols</span>
+					<span class="c-posts__headlineText" title="Emerging TikTok deal ensures U.S. oversight of algorithm, White House says" data-title>Emerging TikTok deal ensures U.S. oversight of algorithm, White House says</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Sep 19</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">7 min read</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>U.S. News</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">8 mins</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1932,6 +1933,39 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-8"
+	data-post-id="11438304"
+	data-slide-index=""
+	data-caption="Jewish groups urge politicians to stop using hate as a &#8216;partisan&#8217; prop"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11438304/jewish-advocacy-groups-antisemitism-politics/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/09/c4ea36a3e0279e5b4ecbb8cbf09f4c68b6ba0ac29593802ba4f3ff3c070356fd_442a15.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="473" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/c4ea36a3e0279e5b4ecbb8cbf09f4c68b6ba0ac29593802ba4f3ff3c070356fd_442a15.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/c4ea36a3e0279e5b4ecbb8cbf09f4c68b6ba0ac29593802ba4f3ff3c070356fd_442a15.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/c4ea36a3e0279e5b4ecbb8cbf09f4c68b6ba0ac29593802ba4f3ff3c070356fd_442a15.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Jewish groups urge politicians to stop using hate as a &#8216;partisan&#8217; prop" data-title>Jewish groups urge politicians to stop using hate as a &#8216;partisan&#8217; prop</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">6 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-9"
 	data-post-id="11438064"
 	data-slide-index=""
 	data-caption="Blue Jays to move pitcher Jose Berrios to bullpen"
@@ -1939,7 +1973,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11438064/blue-jays-to-move-pitcher-jose-berrios-to-bullpen/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1957,41 +1991,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Sports</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">11 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Sep 20</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-9"
-	data-post-id="11438228"
-	data-slide-index=""
-	data-caption="Grammy-winning songwriter Brett James dies in plane crash"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11438228/brett-james-songwriter-dead-plane-crash/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/09/brett-james-dead.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
-								width="720" height="504" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/brett-james-dead.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/brett-james-dead.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/brett-james-dead.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Grammy-winning songwriter Brett James dies in plane crash" data-title>Grammy-winning songwriter Brett James dies in plane crash</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Entertainment</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">45 mins</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 														</div>
 									</div>
 		</a>
@@ -2023,7 +2024,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">3 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">5 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
 														</div>
 									</div>
@@ -2031,6 +2032,39 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    is-hidden"
 	data-container-id="stories-item-11"
+	data-post-id="11438321"
+	data-slide-index=""
+	data-caption="Sonny Curtis, member of Buddy Holly&#8217;s Crickets, dead at 88"
+		data-ad-fallback=false>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11438321/sonny-curtis-crickets-dead-at-88/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/09/sonny-curtis-dead.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
+								width="720" height="504" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/sonny-curtis-dead.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/sonny-curtis-dead.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/sonny-curtis-dead.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Sonny Curtis, member of Buddy Holly&#8217;s Crickets, dead at 88" data-title>Sonny Curtis, member of Buddy Holly&#8217;s Crickets, dead at 88</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Entertainment</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    is-hidden"
+	data-container-id="stories-item-12"
 	data-post-id="11437743"
 	data-slide-index=""
 	data-caption="Hudson&#8217;s Bay wants to auction off historic founding charter, court docs say"
@@ -2038,7 +2072,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11437743/hudsons-bay-charter-auction-court/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:11}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -2058,39 +2092,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Sep 19</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    is-hidden"
-	data-container-id="stories-item-12"
-	data-post-id="11436881"
-	data-slide-index=""
-	data-caption="14 residents of tiny northern fishing village in Quebec win $50M jackpot"
-		data-ad-fallback=false>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11436881/14-residents-tiny-northern-fishing-village-win-50m-jackpot/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:11}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/09/IMG_6907-2-e1758319313100.jpeg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="446" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/IMG_6907-2-e1758319313100.jpeg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/IMG_6907-2-e1758319313100.jpeg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/IMG_6907-2-e1758319313100.jpeg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="14 residents of tiny northern fishing village in Quebec win $50M jackpot" data-title>14 residents of tiny northern fishing village in Quebec win $50M jackpot</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Sep 19</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
 									</div>
 		</a>
@@ -2190,44 +2191,14 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<ul 
 		class="c-posts c-posts--numbered"
 		data-ad-empty=true	>
-					<li class="c-posts__item" data-post-id="11437058">
+					<li class="c-posts__item" data-post-id="11436984">
 				<a
-					href="https://globalnews.ca/news/11437058/d4vd-celeste-rivas-hernandez-family-statement-missing-teen-dead/"
+					href="https://globalnews.ca/news/11436984/renewing-mortgage-bank-of-canada-rate-cut/"
 					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:0}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#1"></use>
-	</svg>
-						</div>
-					
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/09/d4vd-celeste-rivas-hernandez.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
-								width="720" height="504" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/d4vd-celeste-rivas-hernandez.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/d4vd-celeste-rivas-hernandez.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/d4vd-celeste-rivas-hernandez.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-							<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Family of missing teen found dead in singer D4vd&#8217;s car speaks out" data-title>Family of missing teen found dead in singer D4vd&#8217;s car speaks out</span>
-			</div>
-													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">14,431</span>
-							<span class="c-posts__info">Read</span>
-						</div>
-												
-											</div>
-				</a>
-			</li>
-								<li class="c-posts__item" data-post-id="11436984">
-				<a
-					href="https://globalnews.ca/news/11436984/renewing-mortgage-bank-of-canada-rate-cut/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:1}"
-				>
-					<div class="c-posts__rank">
-							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#2"></use>
 	</svg>
 						</div>
 					
@@ -2243,7 +2214,37 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Renewing your mortgage? What the Bank of Canada’s rate cut means for you" data-title>Renewing your mortgage? What the Bank of Canada’s rate cut means for you</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">14,410</span>
+							<span class="c-posts__info c-posts__info--highlight">21,435</span>
+							<span class="c-posts__info">Read</span>
+						</div>
+												
+											</div>
+				</a>
+			</li>
+								<li class="c-posts__item" data-post-id="11437058">
+				<a
+					href="https://globalnews.ca/news/11437058/d4vd-celeste-rivas-hernandez-family-statement-missing-teen-dead/"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:1}"
+				>
+					<div class="c-posts__rank">
+							<svg class="c-icon  c-posts__rankIcon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#2"></use>
+	</svg>
+						</div>
+					
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/09/d4vd-celeste-rivas-hernandez.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
+								width="720" height="504" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/d4vd-celeste-rivas-hernandez.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/d4vd-celeste-rivas-hernandez.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/d4vd-celeste-rivas-hernandez.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+							<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Family of missing teen found dead in singer D4vd&#8217;s car speaks out" data-title>Family of missing teen found dead in singer D4vd&#8217;s car speaks out</span>
+			</div>
+													<div class="c-posts__about">
+							<span class="c-posts__info c-posts__info--highlight">17,964</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2273,7 +2274,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Trump sets $100K fee for skilled foreign worker visas, $1M for &#8216;gold card&#8217;" data-title>Trump sets $100K fee for skilled foreign worker visas, $1M for &#8216;gold card&#8217;</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">9,995</span>
+							<span class="c-posts__info c-posts__info--highlight">12,308</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2303,16 +2304,16 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Here&#8217;s what Jimmy Kimmel said about the Charlie Kirk shooting" data-title>Here&#8217;s what Jimmy Kimmel said about the Charlie Kirk shooting</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">6,554</span>
+							<span class="c-posts__info c-posts__info--highlight">8,000</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
 											</div>
 				</a>
 			</li>
-								<li class="c-posts__item" data-post-id="11436436">
+								<li class="c-posts__item" data-post-id="11436677">
 				<a
-					href="https://globalnews.ca/news/11436436/toyota-recall-70k-vehicles-canada/"
+					href="https://globalnews.ca/news/11436677/travis-decker-remains-believed-located-police/"
 					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:4}"
 				>
 					<div class="c-posts__rank">
@@ -2321,19 +2322,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 						</div>
 					
-		<div class="c-posts__media "  >
+		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/09/Toyota-recall-70K.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="478" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/09/travis-decker-mugshot.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
+								width="720" height="504" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/Toyota-recall-70K.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/Toyota-recall-70K.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/Toyota-recall-70K.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/travis-decker-mugshot.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/travis-decker-mugshot.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/travis-decker-mugshot.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 							<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Toyota recalls more than 70K vehicles in Canada" data-title>Toyota recalls more than 70K vehicles in Canada</span>
+					<span class="c-posts__headlineText" title="Police find remains thought to be Travis Decker, accused of killing 3 kids" data-title>Police find remains thought to be Travis Decker, accused of killing 3 kids</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">5,089</span>
+							<span class="c-posts__info c-posts__info--highlight">6,052</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2397,8 +2398,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<input type="hidden" id="s_brand" name="s_brand" value="gn" />
 				<input type="hidden" id="s_gn_daily_national" name="s_gn_daily_national" value="100" data-newsletter-inline-code />
 				<input type="hidden" id="s_collector" name="s_collector" value="" />
-				<input type="hidden" id="s_create_date" name="s_create_date" value="2025-09-20 16:07:55" />
-				<input type="hidden" id="s_last_modified" name="s_last_modified" value="2025-09-20 16:07:55" />
+				<input type="hidden" id="s_create_date" name="s_create_date" value="2025-09-20 18:16:30" />
+				<input type="hidden" id="s_last_modified" name="s_last_modified" value="2025-09-20 18:16:30" />
 			</fieldset>
 			<label for="ns-region-home-email-input" class="sr-only">Sign up for National newsletter</label>
 			<input id="ns-region-home-email-input" type="text" class="c-newsletterSignup__input" placeholder="Email address" data-newsletter-inline-email />
@@ -2421,44 +2422,14 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							<ul 
 		class="c-posts c-posts--tile c-posts--horizontal"
 		data-ad-empty=true	>
-					<li class="c-posts__item" data-post-id="11437058">
+					<li class="c-posts__item" data-post-id="11436984">
 				<a
-					href="https://globalnews.ca/news/11437058/d4vd-celeste-rivas-hernandez-family-statement-missing-teen-dead/"
+					href="https://globalnews.ca/news/11436984/renewing-mortgage-bank-of-canada-rate-cut/"
 					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:0}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#1"></use>
-	</svg>
-						</div>
-					
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/09/d4vd-celeste-rivas-hernandez.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
-								width="720" height="504" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/d4vd-celeste-rivas-hernandez.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/d4vd-celeste-rivas-hernandez.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/d4vd-celeste-rivas-hernandez.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-							<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Family of missing teen found dead in singer D4vd&#8217;s car speaks out" data-title>Family of missing teen found dead in singer D4vd&#8217;s car speaks out</span>
-			</div>
-													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">14,431</span>
-							<span class="c-posts__info">Read</span>
-						</div>
-												
-											</div>
-				</a>
-			</li>
-								<li class="c-posts__item" data-post-id="11436984">
-				<a
-					href="https://globalnews.ca/news/11436984/renewing-mortgage-bank-of-canada-rate-cut/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:1}"
-				>
-					<div class="c-posts__rank">
-							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#2"></use>
 	</svg>
 						</div>
 					
@@ -2474,7 +2445,37 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Renewing your mortgage? What the Bank of Canada’s rate cut means for you" data-title>Renewing your mortgage? What the Bank of Canada’s rate cut means for you</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">14,410</span>
+							<span class="c-posts__info c-posts__info--highlight">21,435</span>
+							<span class="c-posts__info">Read</span>
+						</div>
+												
+											</div>
+				</a>
+			</li>
+								<li class="c-posts__item" data-post-id="11437058">
+				<a
+					href="https://globalnews.ca/news/11437058/d4vd-celeste-rivas-hernandez-family-statement-missing-teen-dead/"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:1}"
+				>
+					<div class="c-posts__rank">
+							<svg class="c-icon  c-posts__rankIcon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#2"></use>
+	</svg>
+						</div>
+					
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/09/d4vd-celeste-rivas-hernandez.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
+								width="720" height="504" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/d4vd-celeste-rivas-hernandez.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/d4vd-celeste-rivas-hernandez.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/d4vd-celeste-rivas-hernandez.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+							<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Family of missing teen found dead in singer D4vd&#8217;s car speaks out" data-title>Family of missing teen found dead in singer D4vd&#8217;s car speaks out</span>
+			</div>
+													<div class="c-posts__about">
+							<span class="c-posts__info c-posts__info--highlight">17,964</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2504,7 +2505,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Trump sets $100K fee for skilled foreign worker visas, $1M for &#8216;gold card&#8217;" data-title>Trump sets $100K fee for skilled foreign worker visas, $1M for &#8216;gold card&#8217;</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">9,995</span>
+							<span class="c-posts__info c-posts__info--highlight">12,308</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2534,16 +2535,16 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Here&#8217;s what Jimmy Kimmel said about the Charlie Kirk shooting" data-title>Here&#8217;s what Jimmy Kimmel said about the Charlie Kirk shooting</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">6,554</span>
+							<span class="c-posts__info c-posts__info--highlight">8,000</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
 											</div>
 				</a>
 			</li>
-								<li class="c-posts__item" data-post-id="11436436">
+								<li class="c-posts__item" data-post-id="11436677">
 				<a
-					href="https://globalnews.ca/news/11436436/toyota-recall-70k-vehicles-canada/"
+					href="https://globalnews.ca/news/11436677/travis-decker-remains-believed-located-police/"
 					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:4}"
 				>
 					<div class="c-posts__rank">
@@ -2552,19 +2553,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 						</div>
 					
-		<div class="c-posts__media "  >
+		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/09/Toyota-recall-70K.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="478" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/09/travis-decker-mugshot.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
+								width="720" height="504" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/Toyota-recall-70K.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/Toyota-recall-70K.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/Toyota-recall-70K.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/travis-decker-mugshot.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/travis-decker-mugshot.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/travis-decker-mugshot.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 							<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Toyota recalls more than 70K vehicles in Canada" data-title>Toyota recalls more than 70K vehicles in Canada</span>
+					<span class="c-posts__headlineText" title="Police find remains thought to be Travis Decker, accused of killing 3 kids" data-title>Police find remains thought to be Travis Decker, accused of killing 3 kids</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">5,089</span>
+							<span class="c-posts__info c-posts__info--highlight">6,052</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2945,22 +2946,22 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer"
-			data-displayinline-video-id="11434644"
+			data-displayinline-video-id="11438341"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11434644,11437287,11066485,11435232,11436728,11433265/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fpjf1rwlf5n-ztffeiqkvu%2FGNMRUBINARATECUTSTILL.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
-    		    			data-displayinline-playlist="11434644,11437287,11066485,11435232,11436728,11433265"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11438341,11437287,11066485,11434644,11435232,11436728/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fvshajlrkwo-5n8fc2cnov%2FAFF_TRUMP_H1B_VISAS-OC__OM01IGK1.mp4.00_00_44_07.Still001.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
+    		    			data-displayinline-playlist="11438341,11437287,11066485,11434644,11435232,11436728"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Money Matters: Bank of Canada cuts key interest rate for the first time since March'"
+						alt="Click to play video: 'New H-1B visa fee: Trump adds $100k fee per year for skilled worker visa applicants'"
 						width="640"
 						height="360"
-													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/pjf1rwlf5n-ztffeiqkvu/GNMRUBINARATECUTSTILL.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/vshajlrkwo-5n8fc2cnov/AFF_TRUMP_H1B_VISAS-OC__OM01IGK1.mp4.00_00_44_07.Still001.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/pjf1rwlf5n-ztffeiqkvu/GNMRUBINARATECUTSTILL.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/pjf1rwlf5n-ztffeiqkvu/GNMRUBINARATECUTSTILL.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/pjf1rwlf5n-ztffeiqkvu/GNMRUBINARATECUTSTILL.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
+								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/vshajlrkwo-5n8fc2cnov/AFF_TRUMP_H1B_VISAS-OC__OM01IGK1.mp4.00_00_44_07.Still001.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/vshajlrkwo-5n8fc2cnov/AFF_TRUMP_H1B_VISAS-OC__OM01IGK1.mp4.00_00_44_07.Still001.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/vshajlrkwo-5n8fc2cnov/AFF_TRUMP_H1B_VISAS-OC__OM01IGK1.mp4.00_00_44_07.Still001.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -2970,20 +2971,20 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">5:55</time>
-																									<span class="c-video__title">Money Matters: Bank of Canada cuts key interest rate for the first time since March</span>
+																	<time class="c-video__duration">2:21</time>
+																									<span class="c-video__title">New H-1B visa fee: Trump adds $100k fee per year for skilled worker visa applicants</span>
 															</div>
 						</span>
 											</span>
 				</div>
 							</div>
 								<div class="l-videoCarousel__sidebar">
-													<a href="https://globalnews.ca/video/11434644/money-matters-bank-of-canada-cuts-key-interest-rate-for-the-first-time-since-march/" class="l-videoCarousel__details">
-							<div class="l-videoCarousel__info">Canada</div>
+													<a href="https://globalnews.ca/video/11438341/new-h-1b-visa-fee-trump-adds-100k-fee-per-year-for-skilled-worker-visa-applicants/" class="l-videoCarousel__details">
+							<div class="l-videoCarousel__info">News</div>
 								<div class="l-videoCarousel__fullTitle">
-								Money Matters: Bank of Canada cuts key interest rate for the first time since March								</div>
+								New H-1B visa fee: Trump adds $100k fee per year for skilled worker visa applicants								</div>
 								<div class="l-videoCarousel__description">
-								The Bank of Canada has reduced its key interest rate by 25 basis points, bringing the overnight lending rate to 2.5 per cent. This comes as the U.S. Federal Reserve cut its rate for the first time this year. Financial expert Rubina Ahmed Haq joins Miranda Anthistle for this week’s more information in this week&#039;s edition of Money Matters.								</div>
+								The Trump administration announced plans on Friday to impose a $100,000 annual fee for H-1B worker visas, a move that could significantly impact the technology sector.								</div>
 						</a>
 								<div class="c-ad c-ad--bigbox c-ad--dark l-videoCarousel__ad">							<div class="c-ad__label">Advertisement</div>
 			
@@ -3010,18 +3011,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-carousel__track glide__track" data-glide-el="track">
 						<ul class="c-posts c-posts--video c-posts--tile c-posts--horizontal c-posts--inverted glide__slides">
 							
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Money Matters: Bank of Canada cuts key interest rate for the first time since March" data-slide-index="0">
-	<a href="https://globalnews.ca/video/11434644/money-matters-bank-of-canada-cuts-key-interest-rate-for-the-first-time-since-march/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="New H-1B visa fee: Trump adds $100k fee per year for skilled worker visa applicants" data-slide-index="0">
+	<a href="https://globalnews.ca/video/11438341/new-h-1b-visa-fee-trump-adds-100k-fee-per-year-for-skilled-worker-visa-applicants/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11434644"
+					data-video-id="11438341"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11434644,11437287,11066485,11435232,11436728,11433265/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11434644,11437287,11066485,11435232,11436728,11433265"
-			data-video-carousel-label="Canada"
-			data-video-carousel-content="The Bank of Canada has reduced its key interest rate by 25 basis points, bringing the overnight lending rate to 2.5 per cent. This comes as the U.S. Federal Reserve cut its rate for the first time this year. Financial expert Rubina Ahmed Haq joins Miranda Anthistle for this week’s more information in this week&#039;s edition of Money Matters."
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11438341,11437287,11066485,11434644,11435232,11436728/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11438341,11437287,11066485,11434644,11435232,11436728"
+			data-video-carousel-label="News"
+			data-video-carousel-content="The Trump administration announced plans on Friday to impose a $100,000 annual fee for H-1B worker visas, a move that could significantly impact the technology sector."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/pjf1rwlf5n-ztffeiqkvu/GNMRUBINARATECUTSTILL.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/vshajlrkwo-5n8fc2cnov/AFF_TRUMP_H1B_VISAS-OC__OM01IGK1.mp4.00_00_44_07.Still001.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -3030,9 +3031,9 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>
 		<div class="l-videoCarousel__details c-posts__details">
 							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+					<div class="c-posts__info c-posts__info--highlight">News</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Money Matters: Bank of Canada cuts key interest rate for the first time since March</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">New H-1B visa fee: Trump adds $100k fee per year for skilled worker visa applicants</span></div>
 					</div>
 	</a>
 </li>
@@ -3042,8 +3043,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11437287"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11437287,11066485,11435232,11436728,11433265,11434644/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11437287,11066485,11435232,11436728,11433265,11434644"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11437287,11066485,11434644,11435232,11436728,11438341/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11437287,11066485,11434644,11435232,11436728,11438341"
 			data-video-carousel-label="Crime"
 			data-video-carousel-content="Police believe they have found the remains of Travis Decker, the Washington State father accused of killing his three young daughters. Chelan County Sheriff’s Office says it is processing the discovery and will follow up with DNA analysis."
 			>
@@ -3069,8 +3070,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11066485"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11066485,11435232,11436728,11433265,11434644,11437287/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11066485,11435232,11436728,11433265,11434644,11437287"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11066485,11434644,11435232,11436728,11438341,11437287/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11066485,11434644,11435232,11436728,11438341,11437287"
 			data-video-carousel-label="Politics"
 			data-video-carousel-content="During a speech before a joint session of the U.S. Congress on Tuesday night, U.S. President Donald Trump extolled the virtues of the so-called &quot;Gold Card&quot; which Trump touted as a $5 million &quot;path to citizenship&quot; that would ensure more high value taxable income would remain in the United States. "
 			>
@@ -3091,13 +3092,40 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="&#8216;This is what authoritarianism looks like&#8217;: ABC suspends Jimmy Kimmel’s show indefinitely" data-slide-index="3">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Money Matters: Bank of Canada cuts key interest rate for the first time since March" data-slide-index="3">
+	<a href="https://globalnews.ca/video/11434644/money-matters-bank-of-canada-cuts-key-interest-rate-for-the-first-time-since-march/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11434644"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11434644,11435232,11436728,11438341,11437287,11066485/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11434644,11435232,11436728,11438341,11437287,11066485"
+			data-video-carousel-label="Canada"
+			data-video-carousel-content="The Bank of Canada has reduced its key interest rate by 25 basis points, bringing the overnight lending rate to 2.5 per cent. This comes as the U.S. Federal Reserve cut its rate for the first time this year. Financial expert Rubina Ahmed Haq joins Miranda Anthistle for this week’s more information in this week&#039;s edition of Money Matters."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/pjf1rwlf5n-ztffeiqkvu/GNMRUBINARATECUTSTILL.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Money Matters: Bank of Canada cuts key interest rate for the first time since March</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="&#8216;This is what authoritarianism looks like&#8217;: ABC suspends Jimmy Kimmel’s show indefinitely" data-slide-index="4">
 	<a href="https://globalnews.ca/video/11435232/this-is-what-authoritarianism-looks-like-abc-suspends-jimmy-kimmels-show-indefinitely/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11435232"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11435232,11436728,11433265,11434644,11437287,11066485/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11435232,11436728,11433265,11434644,11437287,11066485"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11435232,11436728,11438341,11437287,11066485,11434644/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11435232,11436728,11438341,11437287,11066485,11434644"
 			data-video-carousel-label="Entertainment"
 			data-video-carousel-content="Reaction is pouring in after ABC suspended Jimmy Kimmel’s late-night show indefinitely over comments he made about Charlie Kirk’s killing. “This is what authoritarianism looks like right now in this country. It’s happening,&quot; said comic Marc Maron. "
 			>
@@ -3118,13 +3146,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Jimmy Kimmel suspension: Comedians express concerns over free speech censorship" data-slide-index="4">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Jimmy Kimmel suspension: Comedians express concerns over free speech censorship" data-slide-index="5">
 	<a href="https://globalnews.ca/video/11436728/jimmy-kimmel-suspension-comedians-express-concerns-over-free-speech-censorship/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11436728"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11436728,11433265,11434644,11437287,11066485,11435232/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11436728,11433265,11434644,11437287,11066485,11435232"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11436728,11438341,11437287,11066485,11434644,11435232/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11436728,11438341,11437287,11066485,11434644,11435232"
 			data-video-carousel-label="Entertainment"
 			data-video-carousel-content="Concerns about the violation of freedom of speech are at an all-time high in the U.S. this week after broadcast giant ABC indefinitely suspended the ‘Jimmy Kimmel Live!’ show in wake of comments made by the late-night host deemed insensitive by President Donald Trump’s administration. A large sum of supporters – including fellow comedians and longtime fans – spoke out Thursday, condemning the network’s action against Kimmel. "
 			>
@@ -3141,33 +3169,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
 				</div>
 						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Jimmy Kimmel suspension: Comedians express concerns over free speech censorship</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Ben &#038; Jerry’s co-founder resigns" data-slide-index="5">
-	<a href="https://globalnews.ca/video/11433265/ben-jerrys-co-founder-resigns/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11433265"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11433265,11434644,11437287,11066485,11435232,11436728/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11433265,11434644,11437287,11066485,11435232,11436728"
-			data-video-carousel-label="News"
-			data-video-carousel-content="Ben &amp; Jerry’s co-founder Jerry Greenfield has left the ice cream company after nearly 50 years at the global brand, citing a dispute with its parent company, Unilever."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/t5a6geuzug-ha8i1n94jz/Sequence_07.00_01_21_08.Still003.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">News</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Ben &#038; Jerry’s co-founder resigns</span></div>
 					</div>
 	</a>
 </li>
@@ -3207,7 +3208,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11437287"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11437287,11066485,11435232,11436728,11433265/#autoplay&#038;stickyiframe=home-miniplayer_11437287"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11437287,11066485,11434644,11435232,11436728/#autoplay&#038;stickyiframe=home-miniplayer_11437287"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3261,7 +3262,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11066485"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11066485,11435232,11436728,11433265,11437287/#autoplay&#038;stickyiframe=home-miniplayer_11066485"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11066485,11434644,11435232,11436728,11437287/#autoplay&#038;stickyiframe=home-miniplayer_11066485"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3291,9 +3292,41 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
+			data-displayinline-player-id="home-miniplayer_11434644"
+			data-displayinline-ratio="16:9"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11434644,11435232,11436728,11437287,11066485/#autoplay&#038;stickyiframe=home-miniplayer_11434644"
+			data-displayinline-sticky="true"
+			data-displayinline-expand="true">
+			<div class="c-video__placeholder">
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/pjf1rwlf5n-ztffeiqkvu/GNMRUBINARATECUTSTILL.jpg?w=384&#038;quality=70&#038;strip=all"
+					width="236"
+					height="133"
+					class="c-posts__thumbnail c-video__image"
+					alt="Click to play video 'Money Matters: Bank of Canada cuts key interest rate for the first time since March'"
+					loading="lazy" />
+				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+			</div>
+		</a>
+		<a href="https://globalnews.ca/video/11434644/money-matters-bank-of-canada-cuts-key-interest-rate-for-the-first-time-since-march/" class="c-posts__details">
+				<div class="c-posts__about">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Money Matters: Bank of Canada cuts key interest rate for the first time since March</span></div>
+		</a>
+	</div>
+</li>
+
+<li class="c-posts__item">
+	<div class="c-posts__inner">
+		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
+			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11435232"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11435232,11436728,11433265,11437287,11066485/#autoplay&#038;stickyiframe=home-miniplayer_11435232"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11435232,11436728,11437287,11066485,11434644/#autoplay&#038;stickyiframe=home-miniplayer_11435232"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3318,38 +3351,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</div>
 </li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11436728"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11436728,11433265,11437287,11066485,11435232/#autoplay&#038;stickyiframe=home-miniplayer_11436728"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/zs68mnvqys-uh9nraknyp/JIMMY_KIMMEL_PROTESTS_VMS.jpg?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Jimmy Kimmel suspension: Comedians express concerns over free speech censorship'"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/11436728/jimmy-kimmel-suspension-comedians-express-concerns-over-free-speech-censorship/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Jimmy Kimmel suspension: Comedians express concerns over free speech censorship</span></div>
-		</a>
-	</div>
-</li>
 	</ul>
 	
 	</section>
@@ -3370,8 +3371,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-miniplayer-variant"
 			data-displayinline-video-id="11437316"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11437316,11436784,11437074,11437287,11435838/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fz7p8qqt8vg-jr2ceu3e19%2FFRI_RUSSIAN_JETS_SITE_THUMB_190925.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
-    		    			data-displayinline-playlist="11437316,11436784,11437074,11437287,11435838"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11437316,11436784,11437287,11435838,11435232/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fz7p8qqt8vg-jr2ceu3e19%2FFRI_RUSSIAN_JETS_SITE_THUMB_190925.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
+    		    			data-displayinline-playlist="11437316,11436784,11437287,11435838,11435232"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
@@ -3438,8 +3439,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11437316"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11437316,11436784,11437074,11437287,11435838/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11437316,11436784,11437074,11437287,11435838"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11437316,11436784,11437287,11435838,11435232/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11437316,11436784,11437287,11435838,11435232"
 			data-video-carousel-label="World"
 			data-video-carousel-content="NATO member Estonia&#039;s airspace was violated by three Russian military jets on Friday, its government said, amid an increasingly tense atmosphere on the alliance&#039;s eastern flank. The incident comes just over a week after more than 20 Russian drones entered Polish airspace on the night of September 9-10, prompting NATO jets to down some of them and Western officials to say Russia was testing the alliance&#039;s readiness and resolve. Tallinn said on Friday the three MiG-31 fighter jets entered Estonian airspace without permission and stayed there for a total of 12 minutes. "
 			>
@@ -3465,8 +3466,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11436784"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11436784,11437074,11437287,11435838,11437316/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11436784,11437074,11437287,11435838,11437316"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11436784,11437287,11435838,11435232,11437316/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11436784,11437287,11435838,11435232,11437316"
 			data-video-carousel-label="World"
 			data-video-carousel-content="A British couple was reunited with their family on Friday after being detained for months by the Taliban. Peter and Barbie Reynolds were arrested by the Taliban’s interior ministry on Feb. 1.  They were released after lengthy negotiations led by Qatar."
 			>
@@ -3487,40 +3488,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Ice cream giant Chapman’s announces plans to expand operations in Ontario" data-slide-index="2">
-	<a href="https://globalnews.ca/video/11437074/ice-cream-giant-chapmans-announces-plans-to-expand-operations-in-ontario/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11437074"
-			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11437074,11437287,11435838,11437316,11436784/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11437074,11437287,11435838,11437316,11436784"
-			data-video-carousel-label="News"
-			data-video-carousel-content="On Friday, Canadian ice cream giant Chapman’s announced it would expand its operations and build a new facility in the small town of Markdale, Ont. – a project worth upwards of $200 million. The expansion is supported by $27 million from Doug Ford government’s Invest Ontario Fund."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/ttewv32vv1-felhtxlsv5/DOUG_FORD_CHAPMANS_VMS.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">News</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Ice cream giant Chapman’s announces plans to expand operations in Ontario</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Police find remains thought to be Travis Decker, accused of killing 3 daughters" data-slide-index="3">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Police find remains thought to be Travis Decker, accused of killing 3 daughters" data-slide-index="2">
 	<a href="https://globalnews.ca/video/11437287/police-find-remains-thought-to-be-travis-decker-accused-of-killing-3-daughters/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11437287"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11437287,11435838,11437316,11436784,11437074/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11437287,11435838,11437316,11436784,11437074"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11437287,11435838,11435232,11437316,11436784/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11437287,11435838,11435232,11437316,11436784"
 			data-video-carousel-label="Crime"
 			data-video-carousel-content="Police believe they have found the remains of Travis Decker, the Washington State father accused of killing his three young daughters. Chelan County Sheriff’s Office says it is processing the discovery and will follow up with DNA analysis."
 			>
@@ -3541,13 +3515,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Palestinians flee Gaza City overnight amid Israeli military operations" data-slide-index="4">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Palestinians flee Gaza City overnight amid Israeli military operations" data-slide-index="3">
 	<a href="https://globalnews.ca/video/11435838/palestinians-flee-gaza-city-overnight-amid-israeli-military-operations/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11435838"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11435838,11437316,11436784,11437074,11437287/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11435838,11437316,11436784,11437074,11437287"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11435838,11435232,11437316,11436784,11437287/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11435838,11435232,11437316,11436784,11437287"
 			data-video-carousel-label="World"
 			data-video-carousel-content="Displaced Palestinians fled Gaza City overnight on Thursday, moving south after Israeli forces ordered residents to evacuate. Many people were driving cars, trucks, and carts loaded with belongings, while others walked along the coastal road in central Gaza. &quot;We are heading to sleep on the streets towards the beach, barefoot like this. We don’t know where to go,&quot; said displaced Palestinian Yasser Saleh. The Israeli military said on Wednesday it was opening an additional route for 48 hours that Palestinians could use to leave Gaza City, as it stepped up efforts to empty the city of civilians and confront thousands of Hamas combatants. "
 			>
@@ -3564,6 +3538,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-posts__info c-posts__info--highlight">World</div>
 				</div>
 						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Palestinians flee Gaza City overnight amid Israeli military operations</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="&#8216;This is what authoritarianism looks like&#8217;: ABC suspends Jimmy Kimmel’s show indefinitely" data-slide-index="4">
+	<a href="https://globalnews.ca/video/11435232/this-is-what-authoritarianism-looks-like-abc-suspends-jimmy-kimmels-show-indefinitely/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11435232"
+			data-video-player-id="home-miniplayer-variant"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11435232,11437316,11436784,11437287,11435838/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11435232,11437316,11436784,11437287,11435838"
+			data-video-carousel-label="Entertainment"
+			data-video-carousel-content="Reaction is pouring in after ABC suspended Jimmy Kimmel’s late-night show indefinitely over comments he made about Charlie Kirk’s killing. “This is what authoritarianism looks like right now in this country. It’s happening,&quot; said comic Marc Maron. "
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/9a0x0ckd7d-ix36lwh2ud/Jimmy_Kimmel_web.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">&#8216;This is what authoritarianism looks like&#8217;: ABC suspends Jimmy Kimmel’s show indefinitely</span></div>
 					</div>
 	</a>
 </li>
@@ -3603,7 +3604,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant_11436784"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11436784,11437074,11437287,11435838/#autoplay&#038;stickyiframe=home-miniplayer-variant_11436784"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11436784,11437287,11435838,11435232/#autoplay&#038;stickyiframe=home-miniplayer-variant_11436784"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3655,41 +3656,9 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11437074"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11437074,11437287,11435838,11436784/#autoplay&#038;stickyiframe=home-miniplayer-variant_11437074"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/ttewv32vv1-felhtxlsv5/DOUG_FORD_CHAPMANS_VMS.jpg?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Ice cream giant Chapman’s announces plans to expand operations in Ontario'"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/11437074/ice-cream-giant-chapmans-announces-plans-to-expand-operations-in-ontario/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">News</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Ice cream giant Chapman’s announces plans to expand operations in Ontario</span></div>
-		</a>
-	</div>
-</li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant_11437287"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11437287,11435838,11436784,11437074/#autoplay&#038;stickyiframe=home-miniplayer-variant_11437287"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11437287,11435838,11435232,11436784/#autoplay&#038;stickyiframe=home-miniplayer-variant_11437287"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3721,7 +3690,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant_11435838"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11435838,11436784,11437074,11437287/#autoplay&#038;stickyiframe=home-miniplayer-variant_11435838"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11435838,11435232,11436784,11437287/#autoplay&#038;stickyiframe=home-miniplayer-variant_11435838"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3743,6 +3712,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-posts__info c-posts__info--highlight">World</div>
 				</div>
 			<div class="c-posts__headline"><span class="c-posts__headlineText">Palestinians flee Gaza City overnight amid Israeli military operations</span></div>
+		</a>
+	</div>
+</li>
+
+<li class="c-posts__item">
+	<div class="c-posts__inner">
+		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
+			data-displayinline-type="video"
+			data-displayinline-player-id="home-miniplayer-variant_11435232"
+			data-displayinline-ratio="16:9"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11435232,11436784,11437287,11435838/#autoplay&#038;stickyiframe=home-miniplayer-variant_11435232"
+			data-displayinline-sticky="true"
+			data-displayinline-expand="true">
+			<div class="c-video__placeholder">
+				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/9a0x0ckd7d-ix36lwh2ud/Jimmy_Kimmel_web.jpg?w=384&#038;quality=70&#038;strip=all"
+					width="236"
+					height="133"
+					class="c-posts__thumbnail c-video__image"
+					alt="Click to play video '&#8216;This is what authoritarianism looks like&#8217;: ABC suspends Jimmy Kimmel’s show indefinitely'"
+					loading="lazy" />
+				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+			</div>
+		</a>
+		<a href="https://globalnews.ca/video/11435232/this-is-what-authoritarianism-looks-like-abc-suspends-jimmy-kimmels-show-indefinitely/" class="c-posts__details">
+				<div class="c-posts__about">
+					<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
+				</div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">&#8216;This is what authoritarianism looks like&#8217;: ABC suspends Jimmy Kimmel’s show indefinitely</span></div>
 		</a>
 	</div>
 </li>
@@ -3807,16 +3808,48 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11436677"
+				data-sophi-feature=latest-news			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11436677/travis-decker-remains-believed-located-police/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Police find remains thought to be Travis Decker, accused of killing 3 kids" data-title>Police find remains thought to be Travis Decker, accused of killing 3 kids</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						&#039;During the search, human remains were located in a remote wooded area south of the town of Leavenworth,&#039; the Chelan County Sheriff&#039;s Office said in a statement.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
+																						<div class="c-posts__info">Sep 19</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/09/travis-decker-mugshot.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
+								width="720" height="504" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/travis-decker-mugshot.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/travis-decker-mugshot.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/travis-decker-mugshot.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
 				data-post-id="11436881"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11436881/14-residents-tiny-northern-fishing-village-win-50m-jackpot/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="14 residents of tiny northern fishing village in Quebec win $50M jackpot" data-title>14 residents of tiny northern fishing village in Quebec win $50M jackpot</span>
+					<span class="c-posts__headlineText" title="14 residents of a tiny northern fishing village in Quebec win $50M jackpot" data-title>14 residents of a tiny northern fishing village in Quebec win $50M jackpot</span>
 			</div>
 	
 												
@@ -3839,161 +3872,129 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11436801"
+				data-post-id="11438321"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
-					href="https://globalnews.ca/news/11436801/brendan-carr-fcc-kimmy-kimmel-suspension/"
+					href="https://globalnews.ca/news/11438321/sonny-curtis-crickets-dead-at-88/"
 					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Who is Brendan Carr, FCC head under fire for Jimmy Kimmel suspension?" data-title>Who is Brendan Carr, FCC head under fire for Jimmy Kimmel suspension?</span>
+					<span class="c-posts__headlineText" title="Sonny Curtis, member of Buddy Holly&#8217;s Crickets, dead at 88" data-title>Sonny Curtis, member of Buddy Holly&#8217;s Crickets, dead at 88</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						Carr is a longtime FCC commissioner named as chairman by U.S. President Donald Trump in November, who has since launched investigations of ABC, CBS and NBC.						</div>
+						Sonny Curtis, inducted into the Rock and Roll Hall of Fame as a member of The Crickets in 2012, died Friday, his wife Louise Curtis said.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
-																						<div class="c-posts__info">Sep 19</div>
+															<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
+																						<div class="c-posts__info">2 hours</div>
 													</div>
 					</div>
 					
-		<div class="c-posts__media "  >
+		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/03/36da7a0774e2c8160756f51d2dd907019a4a20b6b6480713fac9616362d645da.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/09/sonny-curtis-dead.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
+								width="720" height="504" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/03/36da7a0774e2c8160756f51d2dd907019a4a20b6b6480713fac9616362d645da.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/03/36da7a0774e2c8160756f51d2dd907019a4a20b6b6480713fac9616362d645da.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/03/36da7a0774e2c8160756f51d2dd907019a4a20b6b6480713fac9616362d645da.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/sonny-curtis-dead.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/sonny-curtis-dead.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/sonny-curtis-dead.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11437391"
+				data-post-id="11436483"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
-					href="https://globalnews.ca/news/11437391/carney-united-nations-general-assembly/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Carney to attend UN events but won&#8217;t address General Assembly" data-title>Carney to attend UN events but won&#8217;t address General Assembly</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						Instead, Foreign Affairs Minister Anita Anand will address global leaders on the government&#039;s behalf from the green marble podium.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																						<div class="c-posts__info">Sep 19</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/09/CP174820558.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="454" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/CP174820558.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/CP174820558.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/CP174820558.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11436782"
-				data-sophi-feature=latest-news			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11436782/quebec-daycare-bus-crash-final-arguments/"
+					href="https://globalnews.ca/news/11436483/nova-scotia-missing-kids-police-dogs-detect-human-remains-new-searches/"
 					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Man in &#8216;cruel, savage&#8217; Quebec daycare attack merits high-risk offender status: Crown" data-title>Man in &#8216;cruel, savage&#8217; Quebec daycare attack merits high-risk offender status: Crown</span>
+					<span class="c-posts__headlineText" title="N.S. missing kids: Cadaver dogs to be used as RCMP announce new searches" data-title>N.S. missing kids: Cadaver dogs to be used as RCMP announce new searches</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						Pierre Ny St-Amand was found not criminally responsible in late April because of a mental disorder for killing two children and injuring six others on Feb. 8, 2023.						</div>
+						Lilly and Jack Sullivan have been missing since May 2. RCMP say while there&#039;s nothing &#039;definitive&#039; to say they are deceased, police are using cadaver dogs in the new searches. 						</div>
 						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Crime</div>
+															<div class="c-posts__info c-posts__info--highlight">Canada</div>
 																						<div class="c-posts__info">Sep 19</div>
 													</div>
 					</div>
 					
 		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2024/05/20240509110552-39eb211109b698903215ed088c5d969fd100b2af649bd95c541acc98276bf642.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=489 data-ratio=0.67									loading="lazy"
-								width="720" height="489" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/06/lilly-jack.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=505 data-ratio=0.67									loading="lazy"
+								width="720" height="505" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2024/05/20240509110552-39eb211109b698903215ed088c5d969fd100b2af649bd95c541acc98276bf642.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2024/05/20240509110552-39eb211109b698903215ed088c5d969fd100b2af649bd95c541acc98276bf642.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2024/05/20240509110552-39eb211109b698903215ed088c5d969fd100b2af649bd95c541acc98276bf642.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/06/lilly-jack.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/06/lilly-jack.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/06/lilly-jack.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11437743"
+				data-post-id="11436435"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
-					href="https://globalnews.ca/news/11437743/hudsons-bay-charter-auction-court/"
+					href="https://globalnews.ca/news/11436435/jimmy-kimmel-suspension-jon-stewart-stephen-colbert-reaction/"
 					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Hudson&#8217;s Bay wants to auction off historic founding charter, court docs say" data-title>Hudson&#8217;s Bay wants to auction off historic founding charter, court docs say</span>
+					<span class="c-posts__headlineText" title="Jon Stewart, Stephen Colbert react to Jimmy Kimmel&#8217;s suspension" data-title>Jon Stewart, Stephen Colbert react to Jimmy Kimmel&#8217;s suspension</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						If it gets approval, interested parties will have until Oct. 3 to submit bids of no less than $15 million and must commit to donating the 1670 document.						</div>
+						Jimmy Kimmel has not commented on the suspension following the remarks he made about the shooting death of Charlie Kirk on Monday.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Canada</div>
+															<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
 																						<div class="c-posts__info">Sep 19</div>
 													</div>
 					</div>
 					
-		<div class="c-posts__media "  >
+		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/09/Hudsons-Bay-Charter.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="465" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/09/stephen-colbert-jon-stewart-kimmel.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
+								width="720" height="504" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/Hudsons-Bay-Charter.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/Hudsons-Bay-Charter.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/Hudsons-Bay-Charter.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/stephen-colbert-jon-stewart-kimmel.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/stephen-colbert-jon-stewart-kimmel.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/stephen-colbert-jon-stewart-kimmel.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11436847"
+				data-post-id="11436830"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
-					href="https://globalnews.ca/news/11436847/canada-bars-irish-rap-group-kneecap-over-alleged-terror-group-support/"
+					href="https://globalnews.ca/news/11436830/canada-hate-crime-legislation-fraser/"
 					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Canada bars Irish rap group Kneecap over alleged terror group support" data-title>Canada bars Irish rap group Kneecap over alleged terror group support</span>
+					<span class="c-posts__headlineText" title="Ottawa hate crime bill would outlaw &#8216;hateful&#8217; displays of certain symbols" data-title>Ottawa hate crime bill would outlaw &#8216;hateful&#8217; displays of certain symbols</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						Canada has barred Irish rap group Kneecap from entering the country. The group had been scheduled to perform next month in Toronto and Vancouver.						</div>
+						Justice Minister Sean Fraser said the legislation would create four new criminal offences, including a specific criminal offence of hate.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Canada</div>
+															<div class="c-posts__info c-posts__info--highlight">Politics</div>
 																						<div class="c-posts__info">Sep 19</div>
 													</div>
 					</div>
 					
-		<div class="c-posts__media "  >
+		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/09/Kneecap.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="469" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/09/CP175032791_8596f1-e1758316510866.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=493 data-ratio=0.67									loading="lazy"
+								width="720" height="493" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/Kneecap.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/Kneecap.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/Kneecap.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/CP175032791_8596f1-e1758316510866.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/CP175032791_8596f1-e1758316510866.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/CP175032791_8596f1-e1758316510866.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -4031,33 +4032,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11436447"
+				data-post-id="11436436"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
-					href="https://globalnews.ca/news/11436447/donald-trump-threatens-to-revoke-tv-licences/"
+					href="https://globalnews.ca/news/11436436/toyota-recall-70k-vehicles-canada/"
 					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:8}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Trump suggests pulling licenses if broadcasters give him &#8216;bad publicity&#8217;" data-title>Trump suggests pulling licenses if broadcasters give him &#8216;bad publicity&#8217;</span>
+					<span class="c-posts__headlineText" title="Toyota recalls more than 70K vehicles in Canada" data-title>Toyota recalls more than 70K vehicles in Canada</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						Trump told reporters that the Federal Communications Commission may take away other networks&#039; licences because many of the hosts with shows on those networks are &#039;against me.&#039;						</div>
+						The recall pertains to 70,480 Toyota and Lexus vehicles equipped with a 12.3-inch display, Transport Canada said in the recall notice.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Trending</div>
+															<div class="c-posts__info c-posts__info--highlight">Canada</div>
 																						<div class="c-posts__info">Sep 19</div>
 													</div>
 					</div>
 					
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/09/GettyImages-2236176987.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/09/Toyota-recall-70K.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="478" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/GettyImages-2236176987.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/GettyImages-2236176987.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/GettyImages-2236176987.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/Toyota-recall-70K.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/Toyota-recall-70K.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/Toyota-recall-70K.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -4138,22 +4139,22 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-playlist-miniplayer"
-			data-displayinline-video-id="11434644"
+			data-displayinline-video-id="11438341"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11434644,11437287,11066485,11435232,11436728/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fpjf1rwlf5n-ztffeiqkvu%2FGNMRUBINARATECUTSTILL.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
-    		    			data-displayinline-playlist="11434644,11437287,11066485,11435232,11436728"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11438341,11437287,11066485,11434644,11435232/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fvshajlrkwo-5n8fc2cnov%2FAFF_TRUMP_H1B_VISAS-OC__OM01IGK1.mp4.00_00_44_07.Still001.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
+    		    			data-displayinline-playlist="11438341,11437287,11066485,11434644,11435232"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Money Matters: Bank of Canada cuts key interest rate for the first time since March'"
+						alt="Click to play video: 'New H-1B visa fee: Trump adds $100k fee per year for skilled worker visa applicants'"
 						width="640"
 						height="360"
-													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/pjf1rwlf5n-ztffeiqkvu/GNMRUBINARATECUTSTILL.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/vshajlrkwo-5n8fc2cnov/AFF_TRUMP_H1B_VISAS-OC__OM01IGK1.mp4.00_00_44_07.Still001.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/pjf1rwlf5n-ztffeiqkvu/GNMRUBINARATECUTSTILL.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/pjf1rwlf5n-ztffeiqkvu/GNMRUBINARATECUTSTILL.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/pjf1rwlf5n-ztffeiqkvu/GNMRUBINARATECUTSTILL.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
+								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/vshajlrkwo-5n8fc2cnov/AFF_TRUMP_H1B_VISAS-OC__OM01IGK1.mp4.00_00_44_07.Still001.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/vshajlrkwo-5n8fc2cnov/AFF_TRUMP_H1B_VISAS-OC__OM01IGK1.mp4.00_00_44_07.Still001.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/vshajlrkwo-5n8fc2cnov/AFF_TRUMP_H1B_VISAS-OC__OM01IGK1.mp4.00_00_44_07.Still001.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -4163,8 +4164,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">5:55</time>
-																									<span class="c-video__title">Money Matters: Bank of Canada cuts key interest rate for the first time since March</span>
+																	<time class="c-video__duration">2:21</time>
+																									<span class="c-video__title">New H-1B visa fee: Trump adds $100k fee per year for skilled worker visa applicants</span>
 															</div>
 						</span>
 											</span>
@@ -4180,23 +4181,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="1"
 	>
-	<a href="https://globalnews.ca/video/11434644/money-matters-bank-of-canada-cuts-key-interest-rate-for-the-first-time-since-march/"
-		title="Money Matters: Bank of Canada cuts key interest rate for the first time since March"
+	<a href="https://globalnews.ca/video/11438341/new-h-1b-visa-fee-trump-adds-100k-fee-per-year-for-skilled-worker-visa-applicants/"
+		title="New H-1B visa fee: Trump adds $100k fee per year for skilled worker visa applicants"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11434644"
-		data-video-label="Canada"
+		data-video-id="11438341"
+		data-video-label="News"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11434644,11437287,11066485,11435232,11436728/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11438341,11437287,11066485,11434644,11435232/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Money Matters: Bank of Canada cuts key interest rate for the first time since March</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">New H-1B visa fee: Trump adds $100k fee per year for skilled worker visa applicants</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
+						News					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/pjf1rwlf5n-ztffeiqkvu/GNMRUBINARATECUTSTILL.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/vshajlrkwo-5n8fc2cnov/AFF_TRUMP_H1B_VISAS-OC__OM01IGK1.mp4.00_00_44_07.Still001.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -4215,7 +4216,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Crime"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11437287,11066485,11435232,11436728/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11437287,11066485,11434644,11435232/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Police find remains thought to be Travis Decker, accused of killing 3 daughters</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4243,7 +4244,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Politics"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11066485,11435232,11436728,11437287/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11066485,11434644,11435232,11437287/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Gold Card: Trump touts $5 million USD &#8216;path to citizenship&#8217; during speech before Congress</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4264,23 +4265,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="4"
 	>
-	<a href="https://globalnews.ca/video/11435232/this-is-what-authoritarianism-looks-like-abc-suspends-jimmy-kimmels-show-indefinitely/"
-		title="&#8216;This is what authoritarianism looks like&#8217;: ABC suspends Jimmy Kimmel’s show indefinitely"
+	<a href="https://globalnews.ca/video/11434644/money-matters-bank-of-canada-cuts-key-interest-rate-for-the-first-time-since-march/"
+		title="Money Matters: Bank of Canada cuts key interest rate for the first time since March"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11435232"
-		data-video-label="Entertainment"
+		data-video-id="11434644"
+		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11435232,11436728,11437287,11066485/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11434644,11435232,11437287,11066485/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">&#8216;This is what authoritarianism looks like&#8217;: ABC suspends Jimmy Kimmel’s show indefinitely</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Money Matters: Bank of Canada cuts key interest rate for the first time since March</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Entertainment					</div>
+						Canada					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/9a0x0ckd7d-ix36lwh2ud/Jimmy_Kimmel_web.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/pjf1rwlf5n-ztffeiqkvu/GNMRUBINARATECUTSTILL.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -4292,23 +4293,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="5"
 	>
-	<a href="https://globalnews.ca/video/11436728/jimmy-kimmel-suspension-comedians-express-concerns-over-free-speech-censorship/"
-		title="Jimmy Kimmel suspension: Comedians express concerns over free speech censorship"
+	<a href="https://globalnews.ca/video/11435232/this-is-what-authoritarianism-looks-like-abc-suspends-jimmy-kimmels-show-indefinitely/"
+		title="&#8216;This is what authoritarianism looks like&#8217;: ABC suspends Jimmy Kimmel’s show indefinitely"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11436728"
+		data-video-id="11435232"
 		data-video-label="Entertainment"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11436728,11437287,11066485,11435232/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11435232,11437287,11066485,11434644/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Jimmy Kimmel suspension: Comedians express concerns over free speech censorship</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">&#8216;This is what authoritarianism looks like&#8217;: ABC suspends Jimmy Kimmel’s show indefinitely</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
 						Entertainment					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/zs68mnvqys-uh9nraknyp/JIMMY_KIMMEL_PROTESTS_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/9a0x0ckd7d-ix36lwh2ud/Jimmy_Kimmel_web.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -4335,8 +4336,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-playlist-miniplayer-variant"
 			data-displayinline-video-id="11437316"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11437316,11436784,11437074,11437287,11435838/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fz7p8qqt8vg-jr2ceu3e19%2FFRI_RUSSIAN_JETS_SITE_THUMB_190925.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
-    		    			data-displayinline-playlist="11437316,11436784,11437074,11437287,11435838"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11437316,11436784,11437287,11435838,11435232/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fz7p8qqt8vg-jr2ceu3e19%2FFRI_RUSSIAN_JETS_SITE_THUMB_190925.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
+    		    			data-displayinline-playlist="11437316,11436784,11437287,11435838,11435232"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
@@ -4382,7 +4383,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="World"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11437316,11436784,11437074,11437287,11435838/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11437316,11436784,11437287,11435838,11435232/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">&#8216;Dangerous provocation&#8217;: Russian jets violate Estonia&#8217;s airspace in 3rd NATO incursion in days</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4410,7 +4411,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="World"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11436784,11437074,11437287,11435838/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11436784,11437287,11435838,11435232/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">British couple reunited with family following months in Taliban detention</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4431,34 +4432,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="3"
 	>
-	<a href="https://globalnews.ca/video/11437074/ice-cream-giant-chapmans-announces-plans-to-expand-operations-in-ontario/"
-		title="Ice cream giant Chapman’s announces plans to expand operations in Ontario"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11437074"
-		data-video-label="News"
-		data-video-player-id="home-playlist-miniplayer-variant"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11437074,11437287,11435838,11436784/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Ice cream giant Chapman’s announces plans to expand operations in Ontario</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						News					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/ttewv32vv1-felhtxlsv5/DOUG_FORD_CHAPMANS_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="4"
-	>
 	<a href="https://globalnews.ca/video/11437287/police-find-remains-thought-to-be-travis-decker-accused-of-killing-3-daughters/"
 		title="Police find remains thought to be Travis Decker, accused of killing 3 daughters"
 		class="l-playlist__link c-posts__inner c-videoPlay"
@@ -4466,7 +4439,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Crime"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11437287,11435838,11436784,11437074/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11437287,11435838,11435232,11436784/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Police find remains thought to be Travis Decker, accused of killing 3 daughters</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4485,7 +4458,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 <li class="c-posts__item l-playlist__item"
-			data-playlist-index="5"
+			data-playlist-index="4"
 	>
 	<a href="https://globalnews.ca/video/11435838/palestinians-flee-gaza-city-overnight-amid-israeli-military-operations/"
 		title="Palestinians flee Gaza City overnight amid Israeli military operations"
@@ -4494,7 +4467,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="World"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11435838,11436784,11437074,11437287/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11435838,11435232,11436784,11437287/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Palestinians flee Gaza City overnight amid Israeli military operations</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4504,6 +4477,34 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					</div>
 		<div class="c-posts__media l-playlist__media">
 			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/8k3w745nti-90jlj3zxy7/THU_PALESTINIANS_FLEE_SITE_THUMB_180925.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="5"
+	>
+	<a href="https://globalnews.ca/video/11435232/this-is-what-authoritarianism-looks-like-abc-suspends-jimmy-kimmels-show-indefinitely/"
+		title="&#8216;This is what authoritarianism looks like&#8217;: ABC suspends Jimmy Kimmel’s show indefinitely"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11435232"
+		data-video-label="Entertainment"
+		data-video-player-id="home-playlist-miniplayer-variant"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11435232,11436784,11437287,11435838/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">&#8216;This is what authoritarianism looks like&#8217;: ABC suspends Jimmy Kimmel’s show indefinitely</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						Entertainment					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/9a0x0ckd7d-ix36lwh2ud/Jimmy_Kimmel_web.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -5154,93 +5155,93 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3											>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-30"
-	data-post-id="11437337"
+	data-post-id="11437602"
 	data-slide-index=""
-	data-caption="Fall foliage to be more &#8216;vibrant,&#8217; last longer this year in Ontario"
+	data-caption="2025 Calgary election to be costlier, results to take longer under new law"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11437337/fall-foliage-to-be-more-vibrant-last-longer-this-year/"
+		href="https://globalnews.ca/news/11437602/2025-calgary-election-higher-cost-slower-results/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/09/CP215702227.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/09/2025-ELECTION-CALGARY-PIC.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="405" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/CP215702227.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/CP215702227.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/CP215702227.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/2025-ELECTION-CALGARY-PIC.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/2025-ELECTION-CALGARY-PIC.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/2025-ELECTION-CALGARY-PIC.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Fall foliage to be more &#8216;vibrant,&#8217; last longer this year in Ontario" data-title>Fall foliage to be more &#8216;vibrant,&#8217; last longer this year in Ontario</span>
+					<span class="c-posts__headlineText" title="2025 Calgary election to be costlier, results to take longer under new law" data-title>2025 Calgary election to be costlier, results to take longer under new law</span>
 			</div>
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >6 hours</div>
+																<div class="c-posts__info" data-date >34 mins</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-31"
-	data-post-id="11436919"
+	data-post-id="11437951"
 	data-slide-index=""
-	data-caption="Alberta mountain biking community mourns the loss of avid supporter"
+	data-caption="Enzo reunited with his Langley family, 1.5 years after he was seized"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11436919/alberta-mountain-biking-cyclist-death/"
+		href="https://globalnews.ca/news/11437951/seized-dog-enzo-reunited-langley-family-following/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/09/Goheen-mosaic.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/09/SET-GFX-LANGLEY-PITBULL-RELEASE.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
 								width="720" height="405" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/Goheen-mosaic.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/Goheen-mosaic.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/Goheen-mosaic.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/SET-GFX-LANGLEY-PITBULL-RELEASE.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/SET-GFX-LANGLEY-PITBULL-RELEASE.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/SET-GFX-LANGLEY-PITBULL-RELEASE.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Alberta mountain biking community mourns the loss of avid supporter" data-title>Alberta mountain biking community mourns the loss of avid supporter</span>
+					<span class="c-posts__headlineText" title="Enzo reunited with his Langley family, 1.5 years after he was seized" data-title>Enzo reunited with his Langley family, 1.5 years after he was seized</span>
 			</div>
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Sep 19</div>
+																<div class="c-posts__info" data-date >2 hours</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-32"
-	data-post-id="11437797"
+	data-post-id="11437941"
 	data-slide-index=""
-	data-caption="New Edmonton police chief says force working to fix relationship with Crown prosecutors"
+	data-caption="Humpback whale &#8216;Midnight&#8217; dies following collision with BC Ferries vessel"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11437797/edmonton-police-crown-prosecutors-relationship/"
+		href="https://globalnews.ca/news/11437941/humpback-whale-midnight-apparent-bc-ferry-hit/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/09/d58113d6adfff767fcd7209b137233b224332182d0dc0ed06d7af98fe7c5ac49.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="473" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/09/6P-FERRY-HITS-HUMPBACK-_OM01IG8K.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="405" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/d58113d6adfff767fcd7209b137233b224332182d0dc0ed06d7af98fe7c5ac49.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/d58113d6adfff767fcd7209b137233b224332182d0dc0ed06d7af98fe7c5ac49.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/d58113d6adfff767fcd7209b137233b224332182d0dc0ed06d7af98fe7c5ac49.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/6P-FERRY-HITS-HUMPBACK-_OM01IG8K.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/6P-FERRY-HITS-HUMPBACK-_OM01IG8K.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/6P-FERRY-HITS-HUMPBACK-_OM01IG8K.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="New Edmonton police chief says force working to fix relationship with Crown prosecutors" data-title>New Edmonton police chief says force working to fix relationship with Crown prosecutors</span>
+					<span class="c-posts__headlineText" title="Humpback whale &#8216;Midnight&#8217; dies following collision with BC Ferries vessel" data-title>Humpback whale &#8216;Midnight&#8217; dies following collision with BC Ferries vessel</span>
 			</div>
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Sep 19</div>
+																<div class="c-posts__info" data-date >2 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5341,6 +5342,37 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-34"
+	data-post-id="11437391"
+	data-slide-index=""
+	data-caption="Carney to attend UN events but won&#8217;t address General Assembly"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11437391/carney-united-nations-general-assembly/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/09/CP174820558.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="454" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/CP174820558.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/CP174820558.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/CP174820558.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Carney to attend UN events but won&#8217;t address General Assembly" data-title>Carney to attend UN events but won&#8217;t address General Assembly</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >Sep 19</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-35"
 	data-post-id="11437192"
 	data-slide-index=""
 	data-caption="Talks resume as Oct. 6 deadline looms in possible Alberta-wide teachers strike"
@@ -5348,7 +5380,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11437192/alberta-teachers-talks-resume-september-19/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5361,37 +5393,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="Talks resume as Oct. 6 deadline looms in possible Alberta-wide teachers strike" data-title>Talks resume as Oct. 6 deadline looms in possible Alberta-wide teachers strike</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Sep 19</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-35"
-	data-post-id="11437157"
-	data-slide-index=""
-	data-caption="As city looks to clear encampment in Toronto park, residents demand permanent housing"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11437157/dufferin-encampment-demands/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/09/01e24fabc92ec24d2adc2aaf35360716fc5e41682f0ba84bf9ef8038a3f94cf9.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/01e24fabc92ec24d2adc2aaf35360716fc5e41682f0ba84bf9ef8038a3f94cf9.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/01e24fabc92ec24d2adc2aaf35360716fc5e41682f0ba84bf9ef8038a3f94cf9.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/01e24fabc92ec24d2adc2aaf35360716fc5e41682f0ba84bf9ef8038a3f94cf9.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="As city looks to clear encampment in Toronto park, residents demand permanent housing" data-title>As city looks to clear encampment in Toronto park, residents demand permanent housing</span>
 			</div>
 	
 						
@@ -5799,26 +5800,26 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3											>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-42"
-	data-post-id="11436435"
+	data-post-id="11436801"
 	data-slide-index=""
-	data-caption="Jon Stewart, Stephen Colbert react to Jimmy Kimmel&#8217;s suspension"
+	data-caption="Who is Brendan Carr, FCC head under fire for Jimmy Kimmel suspension?"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11436435/jimmy-kimmel-suspension-jon-stewart-stephen-colbert-reaction/"
+		href="https://globalnews.ca/news/11436801/brendan-carr-fcc-kimmy-kimmel-suspension/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
 			>
 			
-		<div class="c-posts__media  c-imageContainer"  >
+		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/09/stephen-colbert-jon-stewart-kimmel.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
-								width="720" height="504" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/03/36da7a0774e2c8160756f51d2dd907019a4a20b6b6480713fac9616362d645da.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/stephen-colbert-jon-stewart-kimmel.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/stephen-colbert-jon-stewart-kimmel.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/stephen-colbert-jon-stewart-kimmel.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/03/36da7a0774e2c8160756f51d2dd907019a4a20b6b6480713fac9616362d645da.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/03/36da7a0774e2c8160756f51d2dd907019a4a20b6b6480713fac9616362d645da.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/03/36da7a0774e2c8160756f51d2dd907019a4a20b6b6480713fac9616362d645da.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Jon Stewart, Stephen Colbert react to Jimmy Kimmel&#8217;s suspension" data-title>Jon Stewart, Stephen Colbert react to Jimmy Kimmel&#8217;s suspension</span>
+					<span class="c-posts__headlineText" title="Who is Brendan Carr, FCC head under fire for Jimmy Kimmel suspension?" data-title>Who is Brendan Carr, FCC head under fire for Jimmy Kimmel suspension?</span>
 			</div>
 	
 						
@@ -6312,7 +6313,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >27 mins</div>
+																<div class="c-posts__info" data-date >3 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -6343,7 +6344,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >10 hours</div>
+																<div class="c-posts__info" data-date >12 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -6374,7 +6375,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >11 hours</div>
+																<div class="c-posts__info" data-date >Sep 20</div>
 																			</div>
 									</div>
 		</a>
@@ -6683,7 +6684,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<!-- Redesign chartbeat end -->
 			<!-- Adobe Analytics code version: JS-2.6.0. -->
 		<script type="text/javascript">
-			var gnPageData = {"context_data":{"hourofday":"12","dayofweek":"Saturday","weekdayweekend":"Weekend","userregion":"national","region":"national"},"sections":["home"],"props":[]};
+			var gnPageData = {"context_data":{"hourofday":"14","dayofweek":"Saturday","weekdayweekend":"Weekend","userregion":"national","region":"national"},"sections":["home"],"props":[]};
 		</script>
 				<!-- End Adobe Analytics code -->
 			<script>
@@ -6737,5 +6738,5 @@ _stq.push([ "clickTrackerInit", "176892389", "0" ]);
 		
 		<div class="l-dynamicElement"></div>
 
-			</body>
+			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75660ba8f4","applicationID":"418684855","transactionName":"Z1BWZxdTWkAHVExRXF4adVARW1tdSV9XVVY=","queueTime":0,"applicationTime":623,"atts":"SxdBEV9JSR9EVhoCSE1I","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
