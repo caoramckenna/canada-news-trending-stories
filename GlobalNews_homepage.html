@@ -184,8 +184,7 @@
         }
     </script>
     	<!-- Meta Tags -->
-	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"75660ba8f4",applicationID:"418684855"};;/*! For license information please see nr-loader-rum-1.298.0.min.js.LICENSE.txt */
-(()=>{var e,t,r={122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let s in a)if(void 0!==e[s])try{if(null===e[s]){r[s]=null;continue}Array.isArray(e[s])&&Array.isArray(t[s])?r[s]=Array.from(new Set([...e[s],...t[s]])):"object"==typeof e[s]&&"object"==typeof t[s]?r[s]=i(e[s],t[s]):r[s]=e[s]}catch(e){r[s]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},555:(e,t,r)=>{"use strict";r.d(t,{D:()=>o,f:()=>s});var n=r(384),i=r(122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function s(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const o=e=>(0,i.a)(e,a)},699:(e,t,r)=>{"use strict";r.d(t,{It:()=>i,No:()=>n,qh:()=>s,uh:()=>a});const n=16e3,i=1e6,a="NR_CONTAINER_AGENT",s="SESSION_ERROR"},324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>a,xv:()=>n});const n="1.298.0",i="PROD",a="CDN"},154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>c,RI:()=>i,WN:()=>d,bv:()=>a,gm:()=>s,mw:()=>o,sb:()=>u});var n=r(863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),s=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===s?.document?.visibilityState),c=/iPad|iPhone|iPod/.test(s.navigator?.userAgent),u=c&&"undefined"==typeof SharedWorker,d=((()=>{const e=s.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)())},241:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(154);const i="newrelic";function a(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>u,Ze:()=>f,x3:()=>d});var n=r(241),i=r(836),a=r(606),s=r(860),o=r(646);const c={};function u(e,t){const r={staged:!1,priority:s.P3[t]||0};l(e),c[e].get(t)||c[e].set(t,r)}function d(e,t){e&&c[e]&&(c[e].get(t)&&c[e].delete(t),p(e,t,!1),c[e].size&&g(e))}function l(e){if(!e)throw new Error("agentIdentifier required");c[e]||(c[e]=new Map)}function f(e="",t="feature",r=!1){if(l(e),!e||!c[e].get(t)||r)return p(e,t);c[e].get(t).staged=!0,g(e)}function g(e){const t=Array.from(c[e]);t.every((([e,t])=>t.staged))&&(t.sort(((e,t)=>e[1].priority-t[1].priority)),t.forEach((([t])=>{c[e].delete(t),p(e,t)})))}function p(e,t,r=!0){const s=e?i.ee.get(e):i.ee,c=a.i.handlers;if(!s.aborted&&s.backlog&&c){if((0,n.W)({agentIdentifier:e,type:"lifecycle",name:"drain",feature:t}),r){const e=s.backlog[t],r=c[t];if(r){for(let t=0;e&&t<e.length;++t)m(e[t],r);Object.entries(r).forEach((([e,t])=>{Object.values(t||{}).forEach((t=>{t[0]?.on&&t[0]?.context()instanceof o.y&&t[0].on(e,t[1])}))}))}}s.isolatedBacklog||delete c[t],s.backlog[t]=null,s.emit("drain-"+t,[])}}function m(e,t){var r=e[1];Object.values(t[r]||{}).forEach((t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}}))}},836:(e,t,r)=>{"use strict";r.d(t,{P:()=>o,ee:()=>c});var n=r(384),i=r(990),a=r(646),s=r(607);const o="nr@context:".concat(s.W),c=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var o=g(n);m(e).forEach((e=>{e.apply(o,r)}));var u=v()[s[e]];u&&u.push([f,e,r,o]);return o},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach((([e,n])=>{s[n]=t,t in r||(r[t]=[])}))},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach((e=>{delete f.backlog[e]}))},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,o,(()=>new a.y(o))):new a.y(o)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c)},646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},606:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(908);a.on=s;var i=a.handlers={};function a(e,t,r,a){s(a||n.d,i,e,t,r)}function s(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var s=t[a]=t[a]||{};(s[r]=s[r]||[]).push([e,i])}},878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(566).bz)()},566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>o,bz:()=>s});var n=r(154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function s(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?a(t,r++).toString(16):"y"===e?(3&a()|8).toString(16):e)).join("")}function o(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const s=[];for(var o=0;o<e;o++)s.push(a(r,i++).toString(16));return s.join("")}},614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>s,H3:()=>n,g:()=>u,iL:()=>c,tS:()=>o,uh:()=>i,wk:()=>a});const n="NRBA",i="SESSION",a=144e5,s=18e5,o={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({agentIdentifier:null,drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},701:(e,t,r)=>{"use strict";r.d(t,{B:()=>a,t:()=>s});var n=r(241);const i=new Set,a={};function s(e,t){const r=t.agentIdentifier;a[r]??={},e&&"object"==typeof e&&(i.has(r)||(t.ee.emit("rumresp",[e]),a[r]=e,i.add(r),(0,n.W)({agentIdentifier:r,loaded:!0,drained:!0,type:"lifecycle",name:"load",feature:void 0,data:e})))}},990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout((()=>{i=clearTimeout(i)}),t)),n||(clearTimeout(i),i=setTimeout((()=>{e.apply(this,r)}),t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},910:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every((e=>{if(i.has(e))return i.get(e);const t="function"==typeof e&&e.toString().includes("[native code]");return t||(0,n.R)(64,e?.name||e?.toString()),i.set(e,t),t}))}},289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>a,Qr:()=>o,sB:()=>s});var n=r(878);function i(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(i())return e();(0,n.sp)("load",e,t)}function s(e){if(i())return e();(0,n.DD)("DOMContentLoaded",e)}function o(e){if(i())return e();(0,n.sp)("popstate",e)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>s,US:()=>d,Zm:()=>o,bQ:()=>u,dV:()=>c,pV:()=>l});var n=r(154),i=r(863),a=r(910);const s={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function o(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function c(){let e=o();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,a.i)(...Object.values(e.o))),e}function u(e,t){let r=o();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function d(e,t){o()[e]=t}function l(){return function(){let e=o();const t=e.info||{};e.info={beacon:s.beacon,errorBeacon:s.errorBeacon,...t}}(),function(){let e=o();const t=e.init||{};e.init={...t}}(),c(),function(){let e=o();const t=e.loader_config||{};e.loader_config={...t}}(),o()}},843:(e,t,r)=>{"use strict";r.d(t,{u:()=>i});var n=r(878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},773:(e,t,r)=>{"use strict";r.d(t,{z_:()=>a,XG:()=>o,TZ:()=>n,rs:()=>i,xV:()=>s});r(154),r(566),r(384);const n=r(860).K7.metrics,i="sm",a="cm",s="storeSupportabilityMetrics",o="storeEventMetrics"},630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},234:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(836),i=r(687);class a{constructor(e,t){this.agentIdentifier=e,this.ee=n.ee.get(e),this.featureName=t,this.blocked=!1}deregisterDrain(){(0,i.x3)(this.agentIdentifier,this.featureName)}}},741:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e){return this.#e(i.Dl,e)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(){return this.#e(i.dT)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}}},261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>u,BL:()=>o,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>h,Pl:()=>n,Tb:()=>l,U2:()=>a,V1:()=>k,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>s,nb:()=>m,o5:()=>d});const n="api-",i="addPageAction",a="addToTrace",s="addRelease",o="finished",c="interaction",u="log",d="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",m="setApplicationVersion",h="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",k="measure"},163:(e,t,r)=>{"use strict";r.d(t,{j:()=>E});var n=r(384),i=r(741);var a=r(555);r(860).K7.genericEvents;const s="experimental.marks",o="experimental.measures",c="experimental.resources",u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(614),l=r(944),f=r(122);const g="[data-nr-mask]",p=e=>(0,f.a)(e,(()=>{const e={feature_flags:[],experimental:{marks:!1,measures:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{allow_registered_children:!0,duplicate_registered_data:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{get capture_marks(){return e.feature_flags.includes(s)||e.experimental.marks},set capture_marks(t){e.experimental.marks=t},get capture_measures(){return e.feature_flags.includes(o)||e.experimental.measures},set capture_measures(t){e.experimental.measures=t},capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:d.wk,inactiveMs:d.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(g):""===t||null===t?e.mask_selector=g:(0,l.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},spa:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var m=r(154),h=r(324);let v=0;const b={buildEnv:h.F3,distMethod:h.Xs,version:h.xv,originTime:m.WN},y={appMetadata:{},customTransaction:void 0,denyList:void 0,disabled:!1,entityManager:void 0,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,jsAttributesMetadata:{bytes:0},get harvestCount(){return++v}},_=e=>{const t=(0,f.a)(e,y),r=Object.keys(b).reduce(((e,t)=>(e[t]={value:b[t],writable:!1,configurable:!0,enumerable:!0},e)),{});return Object.defineProperties(t,r)};var w=r(701);const x=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var k=r(836),S=r(241);const A={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},R=e=>(0,f.a)(e,A),T=new Set;function E(e,t={},r,s){let{init:o,info:c,loader_config:u,runtime:d={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();o=e.init,c=e.info,u=e.loader_config}e.init=p(o||{}),e.loader_config=R(u||{}),c.jsAttributes??={},m.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,a.D)(c);const f=e.init,g=[c.beacon,c.errorBeacon];T.has(e.agentIdentifier)||(f.proxy.assets&&(x(f.proxy.assets),g.push(f.proxy.assets)),f.proxy.beacon&&g.push(f.proxy.beacon),function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach((r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let a=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return a?a(...t):n})}))}(e),(0,n.US)("activatedFeatures",w.B),e.runSoftNavOverSpa&&=!0===f.soft_navigations.enabled&&f.feature_flags.includes("soft_nav")),d.denyList=[...f.ajax.deny_list||[],...f.ajax.block_internal?g:[]],d.ptid=e.agentIdentifier,d.loaderType=r,e.runtime=_(d),T.has(e.agentIdentifier)||(e.ee=k.ee.get(e.agentIdentifier),e.exposed=l,(0,S.W)({agentIdentifier:e.agentIdentifier,drained:!!w.B?.[e.agentIdentifier],type:"lifecycle",name:"initialize",feature:void 0,data:e.config})),T.add(e.agentIdentifier)}},374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>d,K7:()=>c,P3:()=>u,XX:()=>i,Yy:()=>o,df:()=>a,qY:()=>n,v4:()=>s});const n="events",i="jserrors",a="browser/blobs",s="rum",o="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},u={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.spa]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.softNav]:8,[c.sessionReplay]:9,[c.logging]:10,[c.genericEvents]:11},d={[c.pageViewEvent]:s,[c.pageViewTiming]:n,[c.ajax]:n,[c.spa]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:a,[c.sessionReplay]:a,[c.logging]:o,[c.genericEvents]:"ins"}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var a=n[e]={exports:{}};return r[e](a,a.exports,i),a.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>"nr-rum-1.298.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.298.0.PROD:",i.l=(r,n,a,s)=>{if(e[r])e[r].push(n);else{var o,c;if(void 0!==a)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+a){o=l;break}}if(!o){c=!0;var f={296:"sha512-7r59xFei/wYH/qDe7AmsUKR7NqbaD4hdacClEUAHBqKIhkH+j3LpuCNDcJ6TJ5mHwqOg0To3xAGIeaCDdga6dQ=="};(o=document.createElement("script")).charset="utf-8",o.timeout=120,i.nc&&o.setAttribute("nonce",i.nc),o.setAttribute("data-webpack",t+a),o.src=r,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),f[s]&&(o.integrity=f[s])}e[r]=[n];var g=(t,n)=>{o.onerror=o.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],o.parentNode&&o.parentNode.removeChild(o),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=g.bind(null,o.onerror),o.onload=g.bind(null,o.onload),c&&document.head.appendChild(o)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var a=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=a);var s=i.p+i.u(t),o=new Error;i.l(s,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var a=r&&("load"===r.type?"missing":r.type),s=r&&r.target&&r.target.src;o.message="Loading chunk "+t+" failed.\n("+a+": "+s+")",o.name="ChunkLoadError",o.type=a,o.request=s,n[1](o)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,a,[s,o,c]=r,u=0;if(s.some((t=>0!==e[t]))){for(n in o)i.o(o,n)&&(i.m[n]=o[n]);if(c)c(i)}for(t&&t(r);u<s.length;u++)a=s[u],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},r=self["webpackChunk:NRBA-1.298.0.PROD"]=self["webpackChunk:NRBA-1.298.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(374);var e=i(566),t=i(741);class r extends t.W{agentIdentifier=(0,e.LA)(16)}var n=i(860);const a=Object.values(n.K7);var s=i(163);var o=i(908),c=i(863),u=i(261),d=i(241),l=i(944),f=i(701),g=i(773);function p(e,t,i,a){const s=a||i;!s||s[e]&&s[e]!==r.prototype[e]||(s[e]=function(){(0,o.p)(g.xV,["API/"+e+"/called"],void 0,n.K7.metrics,i.ee),(0,d.W)({agentIdentifier:i.agentIdentifier,drained:!!f.B?.[i.agentIdentifier],type:"data",name:"api",feature:u.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,l.R)(23,e)}})}function m(e,t,r,n,i){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(i||null===r)&&(0,o.p)(u.Pl+n,[(0,c.t)(),t,r],void 0,"session",e.ee)}var h=i(687),v=i(234),b=i(289),y=i(154),_=i(384);const w=e=>y.RI&&!0===e?.privacy.cookies_enabled;function x(e){return!!(0,_.dV)().o.MO&&w(e)&&!0===e?.session_trace.enabled}var k=i(389),S=i(699);class A extends v.W{constructor(e,t){super(e.agentIdentifier,t),this.agentRef=e,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise(((t,r)=>{this.ee.on("manual-start-all",(0,k.J)((()=>{(0,h.Ak)(e.agentIdentifier,this.featureName),t()})))})):(0,h.Ak)(e.agentIdentifier,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;let n;this.onAggregateImported=new Promise((e=>{n=e}));const a=async()=>{let a;await this.deferred;try{if(w(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,305));a=t(e)}}catch(e){(0,l.R)(20,e),this.ee.emit("internal-error",[e]),(0,o.p)(S.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#t(this.featureName,a,e.init))return(0,h.Ze)(this.agentIdentifier,this.featureName),void n(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),n(!0)}catch(e){(0,l.R)(34,e),this.abortHandler?.(),(0,h.Ze)(this.agentIdentifier,this.featureName,!0),n(!1),this.ee&&this.ee.abort()}};y.RI?(0,b.GG)((()=>a()),!0):a()}#t(e,t,r){if(this.blocked)return!1;switch(e){case n.K7.sessionReplay:return x(r)&&!!t;case n.K7.sessionTrace:return!!t;default:return!0}}}var R=i(630),T=i(614);class E extends A{static featureName=R.T;constructor(e){var t;super(e,R.T),this.setupInspectionEvents(e.agentIdentifier),t=e,p(u.Fw,(function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,o.p)(u.Pl+u.Fw,[(0,c.t)()],void 0,void 0,t.ee))}),t),this.ee.on("api-send-rum",((e,t)=>(0,o.p)("send-rum",[e,t],void 0,this.featureName,this.ee))),this.importAggregator(e,(()=>i.e(296).then(i.bind(i,108))))}setupInspectionEvents(e){const t=(t,r)=>{t&&(0,d.W)({agentIdentifier:e,timeStamp:t.timeStamp,loaded:"complete"===t.target.readyState,type:"window",name:r,data:t.target.location+""})};(0,b.sB)((e=>{t(e,"DOMContentLoaded")})),(0,b.GG)((e=>{t(e,"load")})),(0,b.Qr)((e=>{t(e,"navigate")})),this.ee.on(T.tS.UPDATE,((t,r)=>{(0,d.W)({agentIdentifier:e,type:"lifecycle",name:"session",data:r})}))}}var N=i(843),I=i(878),j=i(782);class O extends A{static featureName=j.T;constructor(e){super(e,j.T),y.RI&&((0,N.u)((()=>(0,o.p)("docHidden",[(0,c.t)()],void 0,j.T,this.ee)),!0),(0,I.sp)("pagehide",(()=>(0,o.p)("winPagehide",[(0,c.t)()],void 0,j.T,this.ee))),this.importAggregator(e,(()=>i.e(296).then(i.bind(i,350)))))}}class P extends A{static featureName=g.TZ;constructor(e){super(e,g.TZ),y.RI&&document.addEventListener("securitypolicyviolation",(e=>{(0,o.p)(g.xV,["Generic/CSPViolation/Detected"],void 0,this.featureName,this.ee)})),this.importAggregator(e,(()=>i.e(296).then(i.bind(i,373))))}}new class extends r{constructor(e){var t;(super(),y.gm)?(this.features={},(0,_.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(E),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===n.K7.softNav)),(0,s.j)(this,e,e.loaderType||"agent"),t=this,p(u.cD,(function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return m(t,e,r,u.cD,n);(0,l.R)(40,typeof r)}else(0,l.R)(39,typeof e)}),t),function(e){p(u.Dl,(function(t){if("string"==typeof t||null===t)return m(e,"enduser.id",t,u.Dl,!0);(0,l.R)(41,typeof t)}),e)}(this),function(e){p(u.nb,(function(t){if("string"==typeof t||null===t)return m(e,"application.version",t,u.nb,!1);(0,l.R)(42,typeof t)}),e)}(this),function(e){p(u.d3,(function(){e.ee.emit("manual-start-all")}),e)}(this),this.run()):(0,l.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return a.forEach((r=>{t[r]=!!e[r]?.enabled})),t}(this.init),t=[...this.desiredFeatures];t.sort(((e,t)=>n.P3[e.featureName]-n.P3[t.featureName])),t.forEach((t=>{if(!e[t.featureName]&&t.featureName!==n.K7.pageViewEvent)return;if(this.runSoftNavOverSpa&&t.featureName===n.K7.spa)return;if(!this.runSoftNavOverSpa&&t.featureName===n.K7.softNav)return;const r=function(e){switch(e){case n.K7.ajax:return[n.K7.jserrors];case n.K7.sessionTrace:return[n.K7.ajax,n.K7.pageViewEvent];case n.K7.sessionReplay:return[n.K7.sessionTrace];case n.K7.pageViewTiming:return[n.K7.pageViewEvent];default:return[]}}(t.featureName).filter((e=>!(e in this.features)));r.length>0&&(0,l.R)(36,{targetFeature:t.featureName,missingDependencies:r}),this.features[t.featureName]=new t(this)}))}catch(e){(0,l.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,_.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}({features:[E,O,P],loaderType:"lite"})})()})();</script>
+	<meta charset="UTF-8">
 	<meta name="theme-color" content="#231F20">
 
 			<meta name="msvalidate.01" content="9E5C74811CA48CCCC61A2CF3C0A1BA6A">
@@ -243,8 +242,8 @@
 
 <!-- twitter: ends here -->
 
-			<link rel="preload" as="image" href="https://globalnews.ca/wp-content/uploads/2025/10/Alberta-teachers-strike.jpg?quality=65&#038;strip=all&#038;w=336"
-					imagesrcset="https://globalnews.ca/wp-content/uploads/2025/10/Alberta-teachers-strike.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/Alberta-teachers-strike.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/Alberta-teachers-strike.jpg?quality=65&#038;strip=all&#038;w=720 720w,"
+			<link rel="preload" as="image" href="https://globalnews.ca/wp-content/uploads/2025/10/Dustin-Strazza-protest.jpg?quality=65&#038;strip=all&#038;w=336"
+					imagesrcset="https://globalnews.ca/wp-content/uploads/2025/10/Dustin-Strazza-protest.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/Dustin-Strazza-protest.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/Dustin-Strazza-protest.jpg?quality=65&#038;strip=all&#038;w=720 720w,"
 							imagesizes="auto"
 		/>
 	
@@ -490,7 +489,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 
 				
 
-				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"21","weatherprec":"x","weathercode":"31","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
+				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"19","weatherprec":"x","weathercode":"31","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
 		</script>
 			<script>
 				// Load the APS JavaScript Library
@@ -1520,43 +1519,71 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			>
 		
 				<li 
-					class="c-posts__item " 
+					class="c-posts__item  c-posts__item--embedVideo" 
 					data-container-id="stories-1-0"
 					data-sophi-feature=hero				>
-										<a
-						class="c-posts__inner"
-						href="https://globalnews.ca/news/11465459/alberta-teachers-eve-of-strike/"
-						data-analytics="{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:0}"
-					>
+										<div class="c-posts__inner">
 											<div>
-														<div class="c-posts__headlineLink">
+														<a class="c-posts__headlineLink" href="https://globalnews.ca/news/11465459/alberta-teachers-eve-of-strike/">
 																		<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Students ‘falling through the cracks’, Alberta teachers say on eve of strike" data-title>Students ‘falling through the cracks’, Alberta teachers say on eve of strike</span>
+					<span class="c-posts__headlineText" title="On eve of strike, Alberta teachers say students ‘falling through the cracks’" data-title>On eve of strike, Alberta teachers say students ‘falling through the cracks’</span>
 			</div>
-															</div>
+															</a>
 													</div>
 						
-		<div class="c-posts__media "  >
+		<div class="c-posts__media  c-posts__media--video c-videoPlay c-videoPlay--standard" tabindex=0 >
 						<img class="c-posts__thumbnail"
-				src=https://globalnews.ca/wp-content/uploads/2025/10/Alberta-teachers-strike.jpg?quality=65&#038;strip=all&#038;w=720												width="720" height="480" alt="" 
-											srcset="https://globalnews.ca/wp-content/uploads/2025/10/Alberta-teachers-strike.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/Alberta-teachers-strike.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/Alberta-teachers-strike.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"						/>
-													</div>
+				src=https://globalnews.ca/wp-content/uploads/2025/10/Dustin-Strazza-protest.jpg?quality=65&#038;strip=all&#038;w=720												width="720" height="405" alt="" 
+											srcset="https://globalnews.ca/wp-content/uploads/2025/10/Dustin-Strazza-protest.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/Dustin-Strazza-protest.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/Dustin-Strazza-protest.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"						/>
+									<div class="c-posts__video">
+						    	<div class="c-video c-videoPlay  c-video--contained"
+    		data-iframe-receiver
+    		data-autoplay=""
+						data-displayinline-featured="false"
+    		data-displayinline-type="video"
+			data-displayinline-player-id="miniplayer_11465676_68e3302e8f527"
+			data-displayinline-video-id="11465676"
+    		data-displayinline-ratio="16:9"
+    		data-displayinline="https://globalnews.ca/video/embed/11465676/#autoplay&#038;stickyiframe=miniplayer_11465676_68e3302e8f527"
+    									data-displayinline-container="stories-1-0"
+										data-displayinline-sticky="true"
+						    		>
+				<div class="c-video__inner ">
+					<span class="c-video__placeholder">
+						<img class="c-video__image"
+						alt="Click to play video: 'Alberta teachers rally on Legislature steps ahead of strike'"
+						width="640"
+						height="360"
+													src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+													>
+											</span>
+				</div>
+							</div>
+							</div>
+										<div class="c-posts__overlay">
+			<div class="c-button c-video__icon c-videoPlay__icon  c-posts__icon c-posts__icon--embedVideo">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+				</div>
+							</div>
 								<img src="https://d21y75miwcfqoq.cloudfront.net/70c8fc80" alt="" style="position:absolute;width:1px;height:1px" referrerpolicy="no-referrer-when-downgrade">
 						<div class="c-posts__details">
-														<div class="c-posts__detailsLink">
+														<a class="c-posts__detailsLink" href="https://globalnews.ca/news/11465459/alberta-teachers-eve-of-strike/">
 																		<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Students ‘falling through the cracks’, Alberta teachers say on eve of strike" data-title>Students ‘falling through the cracks’, Alberta teachers say on eve of strike</span>
+					<span class="c-posts__headlineText" title="On eve of strike, Alberta teachers say students ‘falling through the cracks’" data-title>On eve of strike, Alberta teachers say students ‘falling through the cracks’</span>
 			</div>
 																		<div class="c-posts__excerpt">
 									The province of Alberta’s 51,000 teachers are poised to strike on Monday after nearly 90 per cent voted to reject the government’s latest offer. Negotiations continue. 									</div>
 																<div class="c-posts__about c-posts__about--multiple">
-																		<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">5 hours</div>
+																		<div class="c-posts__info c-posts__info--highlight">Politics</div>
+																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">7 hours</div>
 																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 																	</div>
-														</div>
+														</a>
 													</div>
-										</a>
+										</div>
 									</li>
 									<li 
 					class="c-posts__item " 
@@ -1581,7 +1608,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			</div>
 								<div class="c-posts__about c-posts__about--multiple">
 																<div class="c-posts__info c-posts__info--highlight">Economy</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">9 hours</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">11 hours</div>
 																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
 															</div>
 						</div>
@@ -1630,6 +1657,37 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=12			data-parent-id=home-topStories						data-sophi-feature=top-stories		>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-1"
+	data-post-id="11465500"
+	data-slide-index=""
+	data-caption="Quebec durable goods law comes into effect"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11465500/quebec-durable-goods-law-comes-into-effect-2/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				src=https://globalnews.ca/wp-content/uploads/2025/10/6cf8f993e2ce8d234a5e5a3542ecfd784ec6f4001f29e594ae98e2bf7672bdfd_48b776.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=507 data-ratio=0.67								width="720" height="507" alt="" 
+											srcset="https://globalnews.ca/wp-content/uploads/2025/10/6cf8f993e2ce8d234a5e5a3542ecfd784ec6f4001f29e594ae98e2bf7672bdfd_48b776.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/6cf8f993e2ce8d234a5e5a3542ecfd784ec6f4001f29e594ae98e2bf7672bdfd_48b776.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/6cf8f993e2ce8d234a5e5a3542ecfd784ec6f4001f29e594ae98e2bf7672bdfd_48b776.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Quebec durable goods law comes into effect" data-title>Quebec durable goods law comes into effect</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Economy</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">7 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-2"
 	data-post-id="11464697"
 	data-slide-index=""
 	data-caption="Pistachio products could carry salmonella risk. What we know so far"
@@ -1637,13 +1695,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11464697/pistachio-products-salmonella-risk/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				src=https://globalnews.ca/wp-content/uploads/2025/10/Pistachio-Salmonella.jpg?quality=65&#038;strip=all&#038;w=720												width="720" height="480" alt="" 
-											srcset="https://globalnews.ca/wp-content/uploads/2025/10/Pistachio-Salmonella.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/Pistachio-Salmonella.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/Pistachio-Salmonella.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"						/>
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/Pistachio-Salmonella.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/Pistachio-Salmonella.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/Pistachio-Salmonella.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/Pistachio-Salmonella.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
@@ -1655,39 +1715,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Oct 5</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-2"
-	data-post-id="11465237"
-	data-slide-index=""
-	data-caption="Gaza flotilla activists allege ‘stress and humiliation’ in Israeli custody"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11465237/gaza-flotilla-activists-stress-humiliation-israel/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/Gaza-Flotilla.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/Gaza-Flotilla.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/Gaza-Flotilla.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/Gaza-Flotilla.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Gaza flotilla activists allege ‘stress and humiliation’ in Israeli custody" data-title>Gaza flotilla activists allege ‘stress and humiliation’ in Israeli custody</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Oct 5</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1716,6 +1743,39 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-3"
+	data-post-id="11465648"
+	data-slide-index=""
+	data-caption="Blue Jays beat Yankees 13-7 in Game 2 of ALDS"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11465648/blue-jays-beat-yankees-13-7-in-game-2-of-alds-2/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2019/03/raw_3b5q_sports_article_blue_jays_a1.png?w=720				data-width=720 data-height=486 data-ratio=0.67									loading="lazy"
+								width="720" height="486" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2019/03/raw_3b5q_sports_article_blue_jays_a1.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2019/03/raw_3b5q_sports_article_blue_jays_a1.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2019/03/raw_3b5q_sports_article_blue_jays_a1.png?w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Blue Jays beat Yankees 13-7 in Game 2 of ALDS" data-title>Blue Jays beat Yankees 13-7 in Game 2 of ALDS</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Sports</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">3 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-4"
 	data-post-id="11465269"
 	data-slide-index=""
 	data-caption="Northern Manitoba community recovering from wildfire faces winter food crisis"
@@ -1723,7 +1783,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11465269/leaf-rapids-northern-manitoba-winter-food-crisis/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1741,41 +1801,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">9 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">11 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-4"
-	data-post-id="11465500"
-	data-slide-index=""
-	data-caption="Quebec durable goods law comes into effect"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11465500/quebec-durable-goods-law-comes-into-effect-2/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/6cf8f993e2ce8d234a5e5a3542ecfd784ec6f4001f29e594ae98e2bf7672bdfd_48b776.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=507 data-ratio=0.67									loading="lazy"
-								width="720" height="507" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/6cf8f993e2ce8d234a5e5a3542ecfd784ec6f4001f29e594ae98e2bf7672bdfd_48b776.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/6cf8f993e2ce8d234a5e5a3542ecfd784ec6f4001f29e594ae98e2bf7672bdfd_48b776.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/6cf8f993e2ce8d234a5e5a3542ecfd784ec6f4001f29e594ae98e2bf7672bdfd_48b776.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Quebec durable goods law comes into effect" data-title>Quebec durable goods law comes into effect</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Economy</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">5 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1807,7 +1834,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">9 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">11 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
 														</div>
 									</div>
@@ -1815,33 +1842,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-6"
-	data-post-id="11465261"
+	data-post-id="11465636"
 	data-slide-index=""
-	data-caption="Conflict in Gaza not over yet, Rubio warns"
+	data-caption="Blue Jays beat Yankees 13-7 in Game 2 of ALDS"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11465261/conflict-gaza-not-over-yet-rubio/"
+		href="https://globalnews.ca/news/11465636/blue-jays-beat-yankees-13-7-in-game-2-of-alds/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/Marco-Rubio-Gaza-war.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/e1298c7d785ee79d52e51c2358f76f7d16ec844baae4f6d1092d55c9dec857fc_2b51bc.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
 								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/Marco-Rubio-Gaza-war.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/Marco-Rubio-Gaza-war.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/Marco-Rubio-Gaza-war.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/e1298c7d785ee79d52e51c2358f76f7d16ec844baae4f6d1092d55c9dec857fc_2b51bc.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/e1298c7d785ee79d52e51c2358f76f7d16ec844baae4f6d1092d55c9dec857fc_2b51bc.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/e1298c7d785ee79d52e51c2358f76f7d16ec844baae4f6d1092d55c9dec857fc_2b51bc.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Conflict in Gaza not over yet, Rubio warns" data-title>Conflict in Gaza not over yet, Rubio warns</span>
+					<span class="c-posts__headlineText" title="Blue Jays beat Yankees 13-7 in Game 2 of ALDS" data-title>Blue Jays beat Yankees 13-7 in Game 2 of ALDS</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">11 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Sports</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">4 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1870,6 +1897,72 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-7"
+	data-post-id="11465237"
+	data-slide-index=""
+	data-caption="Gaza flotilla activists allege ‘stress and humiliation’ in Israeli custody"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11465237/gaza-flotilla-activists-stress-humiliation-israel/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/Gaza-Flotilla.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/Gaza-Flotilla.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/Gaza-Flotilla.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/Gaza-Flotilla.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Gaza flotilla activists allege ‘stress and humiliation’ in Israeli custody" data-title>Gaza flotilla activists allege ‘stress and humiliation’ in Israeli custody</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Oct 5</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-8"
+	data-post-id="11465261"
+	data-slide-index=""
+	data-caption="Conflict in Gaza not over yet, Rubio warns"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11465261/conflict-gaza-not-over-yet-rubio/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/Marco-Rubio-Gaza-war.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/Marco-Rubio-Gaza-war.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/Marco-Rubio-Gaza-war.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/Marco-Rubio-Gaza-war.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Conflict in Gaza not over yet, Rubio warns" data-title>Conflict in Gaza not over yet, Rubio warns</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Oct 5</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-9"
 	data-post-id="11465251"
 	data-slide-index=""
 	data-caption="B.C. spill response team is like ‘fire department’"
@@ -1877,7 +1970,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11465251/b-c-spill-response-team-is-like-fire-department/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1895,47 +1988,14 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Environment</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">12 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Oct 5</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
 														</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-8"
-	data-post-id="11465007"
-	data-slide-index=""
-	data-caption="Blue Jays open ALDS with blowout win over Yankees"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11465007/blue-jays-open-alds-with-blowout-win-over-yankees/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/334e65d64bf3f421c632c8b0dfeaa08b391088ae42297e108dd7474e3649b3b6.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/334e65d64bf3f421c632c8b0dfeaa08b391088ae42297e108dd7474e3649b3b6.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/334e65d64bf3f421c632c8b0dfeaa08b391088ae42297e108dd7474e3649b3b6.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/334e65d64bf3f421c632c8b0dfeaa08b391088ae42297e108dd7474e3649b3b6.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Blue Jays open ALDS with blowout win over Yankees" data-title>Blue Jays open ALDS with blowout win over Yankees</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Sports</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Oct 4</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-9"
+	data-container-id="stories-item-10"
 	data-post-id="11465119"
 	data-slide-index=""
 	data-caption="Blue Jays open ALDS with blowout win over Yankees"
@@ -1943,7 +2003,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11465119/blue-jays-open-alds-with-blowout-win-over-yankees-2/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1967,68 +2027,35 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 									</div>
 		</a>
 	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-10"
-	data-post-id="11465648"
-	data-slide-index=""
-	data-caption="Blue Jays beat Yankees 13-7 in Game 2 of ALDS"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11465648/blue-jays-beat-yankees-13-7-in-game-2-of-alds-2/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2019/03/raw_3b5q_sports_article_blue_jays_a1.png?w=720				data-width=720 data-height=486 data-ratio=0.67									loading="lazy"
-								width="720" height="486" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2019/03/raw_3b5q_sports_article_blue_jays_a1.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2019/03/raw_3b5q_sports_article_blue_jays_a1.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2019/03/raw_3b5q_sports_article_blue_jays_a1.png?w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Blue Jays beat Yankees 13-7 in Game 2 of ALDS" data-title>Blue Jays beat Yankees 13-7 in Game 2 of ALDS</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Sports</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
 <li class="c-posts__item    is-hidden"
 	data-container-id="stories-item-11"
-	data-post-id="11465636"
+	data-post-id="11465767"
 	data-slide-index=""
-	data-caption="Blue Jays beat Yankees 13-7 in Game 2 of ALDS"
+	data-caption="Blue Jays outscore Yankees 13-7 in Game 2 of ALDS"
 		data-ad-fallback=false>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11465636/blue-jays-beat-yankees-13-7-in-game-2-of-alds/"
+		href="https://globalnews.ca/news/11465767/blue-jays-outscore-yankees-13-7-in-game-2-of-alds/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/e1298c7d785ee79d52e51c2358f76f7d16ec844baae4f6d1092d55c9dec857fc_2b51bc.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/3a44f9931bc61d3fb6f74c97ec2f823fd71d8c60dad289de5b2ba82eb7a29026.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
 								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/e1298c7d785ee79d52e51c2358f76f7d16ec844baae4f6d1092d55c9dec857fc_2b51bc.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/e1298c7d785ee79d52e51c2358f76f7d16ec844baae4f6d1092d55c9dec857fc_2b51bc.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/e1298c7d785ee79d52e51c2358f76f7d16ec844baae4f6d1092d55c9dec857fc_2b51bc.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/3a44f9931bc61d3fb6f74c97ec2f823fd71d8c60dad289de5b2ba82eb7a29026.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/3a44f9931bc61d3fb6f74c97ec2f823fd71d8c60dad289de5b2ba82eb7a29026.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/3a44f9931bc61d3fb6f74c97ec2f823fd71d8c60dad289de5b2ba82eb7a29026.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Blue Jays beat Yankees 13-7 in Game 2 of ALDS" data-title>Blue Jays beat Yankees 13-7 in Game 2 of ALDS</span>
+					<span class="c-posts__headlineText" title="Blue Jays outscore Yankees 13-7 in Game 2 of ALDS" data-title>Blue Jays outscore Yankees 13-7 in Game 2 of ALDS</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Sports</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">1 hour</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
 		</a>
@@ -2059,7 +2086,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Economy</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">3 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">5 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 														</div>
 									</div>
@@ -2183,7 +2210,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Canadians will see mortgages rise. Can savings provide a buffer?" data-title>Canadians will see mortgages rise. Can savings provide a buffer?</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">45,399</span>
+							<span class="c-posts__info c-posts__info--highlight">49,057</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2213,37 +2240,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Canada Post’s latest offers ‘worse’ than before, union says" data-title>Canada Post’s latest offers ‘worse’ than before, union says</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">29,192</span>
-							<span class="c-posts__info">Read</span>
-						</div>
-												
-											</div>
-				</a>
-			</li>
-								<li class="c-posts__item" data-post-id="11464927">
-				<a
-					href="https://globalnews.ca/news/11464927/cfia-confirms-death-of-ostrich-at-b-c-farm/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
-				>
-					<div class="c-posts__rank">
-							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#3"></use>
-	</svg>
-						</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/512b21c44d1005d148f4cad68397d83352d157885ae1089f3b71fb8ea01e7c41_388710.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/512b21c44d1005d148f4cad68397d83352d157885ae1089f3b71fb8ea01e7c41_388710.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/512b21c44d1005d148f4cad68397d83352d157885ae1089f3b71fb8ea01e7c41_388710.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/512b21c44d1005d148f4cad68397d83352d157885ae1089f3b71fb8ea01e7c41_388710.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-							<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="CFIA confirms death of ostrich at B.C. farm" data-title>CFIA confirms death of ostrich at B.C. farm</span>
-			</div>
-													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">13,835</span>
+							<span class="c-posts__info c-posts__info--highlight">32,922</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2253,11 +2250,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<li class="c-posts__item" data-post-id="11465319">
 				<a
 					href="https://globalnews.ca/news/11465319/quebec-durable-goods-law-comes-into-effect/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:3}"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#4"></use>
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#3"></use>
 	</svg>
 						</div>
 					
@@ -2273,7 +2270,37 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Quebec durable goods law comes into effect" data-title>Quebec durable goods law comes into effect</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">12,115</span>
+							<span class="c-posts__info c-posts__info--highlight">17,938</span>
+							<span class="c-posts__info">Read</span>
+						</div>
+												
+											</div>
+				</a>
+			</li>
+								<li class="c-posts__item" data-post-id="11464927">
+				<a
+					href="https://globalnews.ca/news/11464927/cfia-confirms-death-of-ostrich-at-b-c-farm/"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:3}"
+				>
+					<div class="c-posts__rank">
+							<svg class="c-icon  c-posts__rankIcon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#4"></use>
+	</svg>
+						</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/512b21c44d1005d148f4cad68397d83352d157885ae1089f3b71fb8ea01e7c41_388710.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/512b21c44d1005d148f4cad68397d83352d157885ae1089f3b71fb8ea01e7c41_388710.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/512b21c44d1005d148f4cad68397d83352d157885ae1089f3b71fb8ea01e7c41_388710.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/512b21c44d1005d148f4cad68397d83352d157885ae1089f3b71fb8ea01e7c41_388710.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+							<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="CFIA confirms death of ostrich at B.C. farm" data-title>CFIA confirms death of ostrich at B.C. farm</span>
+			</div>
+													<div class="c-posts__about">
+							<span class="c-posts__info c-posts__info--highlight">14,893</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2303,7 +2330,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="5 things to know about Trump’s visa fee and what it means for Canada" data-title>5 things to know about Trump’s visa fee and what it means for Canada</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">11,362</span>
+							<span class="c-posts__info c-posts__info--highlight">12,168</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2367,8 +2394,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<input type="hidden" id="s_brand" name="s_brand" value="gn" />
 				<input type="hidden" id="s_gn_daily_national" name="s_gn_daily_national" value="100" data-newsletter-inline-code />
 				<input type="hidden" id="s_collector" name="s_collector" value="" />
-				<input type="hidden" id="s_create_date" name="s_create_date" value="2025-10-06 00:59:56" />
-				<input type="hidden" id="s_last_modified" name="s_last_modified" value="2025-10-06 00:59:56" />
+				<input type="hidden" id="s_create_date" name="s_create_date" value="2025-10-06 02:57:50" />
+				<input type="hidden" id="s_last_modified" name="s_last_modified" value="2025-10-06 02:57:50" />
 			</fieldset>
 			<label for="ns-region-home-email-input" class="sr-only">Sign up for National newsletter</label>
 			<input id="ns-region-home-email-input" type="text" class="c-newsletterSignup__input" placeholder="Email address" data-newsletter-inline-email />
@@ -2414,7 +2441,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Canadians will see mortgages rise. Can savings provide a buffer?" data-title>Canadians will see mortgages rise. Can savings provide a buffer?</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">45,399</span>
+							<span class="c-posts__info c-posts__info--highlight">49,057</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2444,37 +2471,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Canada Post’s latest offers ‘worse’ than before, union says" data-title>Canada Post’s latest offers ‘worse’ than before, union says</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">29,192</span>
-							<span class="c-posts__info">Read</span>
-						</div>
-												
-											</div>
-				</a>
-			</li>
-								<li class="c-posts__item" data-post-id="11464927">
-				<a
-					href="https://globalnews.ca/news/11464927/cfia-confirms-death-of-ostrich-at-b-c-farm/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
-				>
-					<div class="c-posts__rank">
-							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#3"></use>
-	</svg>
-						</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/512b21c44d1005d148f4cad68397d83352d157885ae1089f3b71fb8ea01e7c41_388710.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/512b21c44d1005d148f4cad68397d83352d157885ae1089f3b71fb8ea01e7c41_388710.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/512b21c44d1005d148f4cad68397d83352d157885ae1089f3b71fb8ea01e7c41_388710.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/512b21c44d1005d148f4cad68397d83352d157885ae1089f3b71fb8ea01e7c41_388710.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-							<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="CFIA confirms death of ostrich at B.C. farm" data-title>CFIA confirms death of ostrich at B.C. farm</span>
-			</div>
-													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">13,835</span>
+							<span class="c-posts__info c-posts__info--highlight">32,922</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2484,11 +2481,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<li class="c-posts__item" data-post-id="11465319">
 				<a
 					href="https://globalnews.ca/news/11465319/quebec-durable-goods-law-comes-into-effect/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:3}"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#4"></use>
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#3"></use>
 	</svg>
 						</div>
 					
@@ -2504,7 +2501,37 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Quebec durable goods law comes into effect" data-title>Quebec durable goods law comes into effect</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">12,115</span>
+							<span class="c-posts__info c-posts__info--highlight">17,938</span>
+							<span class="c-posts__info">Read</span>
+						</div>
+												
+											</div>
+				</a>
+			</li>
+								<li class="c-posts__item" data-post-id="11464927">
+				<a
+					href="https://globalnews.ca/news/11464927/cfia-confirms-death-of-ostrich-at-b-c-farm/"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:3}"
+				>
+					<div class="c-posts__rank">
+							<svg class="c-icon  c-posts__rankIcon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#4"></use>
+	</svg>
+						</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/512b21c44d1005d148f4cad68397d83352d157885ae1089f3b71fb8ea01e7c41_388710.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/512b21c44d1005d148f4cad68397d83352d157885ae1089f3b71fb8ea01e7c41_388710.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/512b21c44d1005d148f4cad68397d83352d157885ae1089f3b71fb8ea01e7c41_388710.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/512b21c44d1005d148f4cad68397d83352d157885ae1089f3b71fb8ea01e7c41_388710.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+							<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="CFIA confirms death of ostrich at B.C. farm" data-title>CFIA confirms death of ostrich at B.C. farm</span>
+			</div>
+													<div class="c-posts__about">
+							<span class="c-posts__info c-posts__info--highlight">14,893</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2534,7 +2561,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="5 things to know about Trump’s visa fee and what it means for Canada" data-title>5 things to know about Trump’s visa fee and what it means for Canada</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">11,362</span>
+							<span class="c-posts__info c-posts__info--highlight">12,168</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2919,22 +2946,22 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer"
-			data-displayinline-video-id="11464043"
+			data-displayinline-video-id="11465676"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11464043,11464039,11464609,11463997,11293596,11293596/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fdib2bhmakj-2w1aqu3dds%2FWEB_6P_DEER_TENNIS_NET_RESCUE.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
-    		    			data-displayinline-playlist="11464043,11464039,11464609,11463997,11293596,11293596"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11465676,11463997,11293596,11465691,11464609,11465483/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fnf9h927nkn-r9q7z5lyzi%2F6P_ATA_RALLY_pic.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
+    		    			data-displayinline-playlist="11465676,11463997,11293596,11465691,11464609,11465483"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Victoria residents rally to help deer tangled in tennis net'"
+						alt="Click to play video: 'Alberta teachers rally on Legislature steps ahead of strike'"
 						width="640"
 						height="360"
-													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/dib2bhmakj-2w1aqu3dds/WEB_6P_DEER_TENNIS_NET_RESCUE.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/nf9h927nkn-r9q7z5lyzi/6P_ATA_RALLY_pic.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/dib2bhmakj-2w1aqu3dds/WEB_6P_DEER_TENNIS_NET_RESCUE.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/dib2bhmakj-2w1aqu3dds/WEB_6P_DEER_TENNIS_NET_RESCUE.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/dib2bhmakj-2w1aqu3dds/WEB_6P_DEER_TENNIS_NET_RESCUE.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
+								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/nf9h927nkn-r9q7z5lyzi/6P_ATA_RALLY_pic.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/nf9h927nkn-r9q7z5lyzi/6P_ATA_RALLY_pic.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/nf9h927nkn-r9q7z5lyzi/6P_ATA_RALLY_pic.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -2944,20 +2971,20 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">1:49</time>
-																									<span class="c-video__title">Victoria residents rally to help deer tangled in tennis net</span>
+																	<time class="c-video__duration">1:59</time>
+																									<span class="c-video__title">Alberta teachers rally on Legislature steps ahead of strike</span>
 															</div>
 						</span>
 											</span>
 				</div>
 							</div>
 								<div class="l-videoCarousel__sidebar">
-													<a href="https://globalnews.ca/video/11464043/victoria-residents-rally-to-help-deer-tangled-in-tennis-net/" class="l-videoCarousel__details">
-							<div class="l-videoCarousel__info">Canada</div>
+													<a href="https://globalnews.ca/video/11465676/alberta-teachers-rally-on-legislature-steps-ahead-of-strike/" class="l-videoCarousel__details">
+							<div class="l-videoCarousel__info">Economy</div>
 								<div class="l-videoCarousel__fullTitle">
-								Victoria residents rally to help deer tangled in tennis net								</div>
+								Alberta teachers rally on Legislature steps ahead of strike								</div>
 								<div class="l-videoCarousel__description">
-								A group of Victoria area residents rallied to help a deer after it was found with a tennis net tangled in its antlers. The group jumped in to help after seeing a social media post on a local community page. Kylie Stanton has the story. 								</div>
+								Thousands of supporters rallied on the Alberta Legislature steps Sunday as tensions grow between the teachers&#039; union and the province. An Alberta-wide strike is set to begin on Monday, meaning schools will be closed until further notice. Jaclyn Kucey gives us a look.								</div>
 						</a>
 								<div class="c-ad c-ad--bigbox c-ad--dark l-videoCarousel__ad">							<div class="c-ad__label">Advertisement</div>
 			
@@ -2984,18 +3011,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-carousel__track glide__track" data-glide-el="track">
 						<ul class="c-posts c-posts--video c-posts--tile c-posts--horizontal c-posts--inverted glide__slides">
 							
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Victoria residents rally to help deer tangled in tennis net" data-slide-index="0">
-	<a href="https://globalnews.ca/video/11464043/victoria-residents-rally-to-help-deer-tangled-in-tennis-net/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Alberta teachers rally on Legislature steps ahead of strike" data-slide-index="0">
+	<a href="https://globalnews.ca/video/11465676/alberta-teachers-rally-on-legislature-steps-ahead-of-strike/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11464043"
+					data-video-id="11465676"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11464043,11464039,11464609,11463997,11293596,11293596/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11464043,11464039,11464609,11463997,11293596,11293596"
-			data-video-carousel-label="Canada"
-			data-video-carousel-content="A group of Victoria area residents rallied to help a deer after it was found with a tennis net tangled in its antlers. The group jumped in to help after seeing a social media post on a local community page. Kylie Stanton has the story. "
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11465676,11463997,11293596,11465691,11464609,11465483/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11465676,11463997,11293596,11465691,11464609,11465483"
+			data-video-carousel-label="Economy"
+			data-video-carousel-content="Thousands of supporters rallied on the Alberta Legislature steps Sunday as tensions grow between the teachers&#039; union and the province. An Alberta-wide strike is set to begin on Monday, meaning schools will be closed until further notice. Jaclyn Kucey gives us a look."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/dib2bhmakj-2w1aqu3dds/WEB_6P_DEER_TENNIS_NET_RESCUE.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/nf9h927nkn-r9q7z5lyzi/6P_ATA_RALLY_pic.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -3004,74 +3031,20 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>
 		<div class="l-videoCarousel__details c-posts__details">
 							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+					<div class="c-posts__info c-posts__info--highlight">Economy</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Victoria residents rally to help deer tangled in tennis net</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Alberta teachers rally on Legislature steps ahead of strike</span></div>
 					</div>
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Okanagan pig sanctuary needs new sick bay" data-slide-index="1">
-	<a href="https://globalnews.ca/video/11464039/okanagan-pig-sanctuary-needs-new-sick-bay/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11464039"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11464039,11464609,11463997,11293596,11293596,11464043/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11464039,11464609,11463997,11293596,11293596,11464043"
-			data-video-carousel-label="Environment"
-			data-video-carousel-content="An Okanagan animal sanctuary that houses dozens of abandoned and unwanted pigs - is in need of a new &#039;sick bay.&#039;  Sydney Morton reports."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/pqk953e656-0oku8p3r8m/WEB_KEL_PIGS.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Environment</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Okanagan pig sanctuary needs new sick bay</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Canada Post’s latest offer ‘worse’ than before: union" data-slide-index="2">
-	<a href="https://globalnews.ca/video/11464609/canada-posts-latest-offer-worse-than-before-union/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11464609"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11464609,11463997,11293596,11293596,11464043,11464039/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11464609,11463997,11293596,11293596,11464043,11464039"
-			data-video-carousel-label="Canada"
-			data-video-carousel-content="The union representing Canada Post workers says the Crown corporation’s latest contract offer is worse than before, despite weeks of waiting. In a statement Saturday, the Canadian Union of Postal Workers said the new proposal removes a previously-offered signing bonus and could lead to job cuts and post office closures.  "
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/pp7bqls2hi-c8pgs1tk8y/ONLINE_STILL_CANADA_POST_UNION.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Canada Post’s latest offer ‘worse’ than before: union</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Last day of class before Alberta teacher strike" data-slide-index="3">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Last day of class before Alberta teacher strike" data-slide-index="1">
 	<a href="https://globalnews.ca/video/11463997/last-day-of-class-before-alberta-teacher-strike/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11463997"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11463997,11293596,11293596,11464043,11464039,11464609/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11463997,11293596,11293596,11464043,11464039,11464609"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11463997,11293596,11465691,11464609,11465483,11465676/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11463997,11293596,11465691,11464609,11465483,11465676"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="Friday, Oct. 3 was an emotional day at school for many Alberta students, parents and teachers. After teachers province-wide voted down a proposed contract, students left classes not expecting to return Monday. Morgan Black has more."
 			>
@@ -3092,13 +3065,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Bank of Canada warns about higher mortgage payments" data-slide-index="4">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Bank of Canada warns about higher mortgage payments" data-slide-index="2">
 	<a href="https://globalnews.ca/video/11293596/bank-of-canada-warns-about-higher-mortgage-payments/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11293596"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11293596,11293596,11464043,11464039,11464609,11463997/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11293596,11293596,11464043,11464039,11464609,11463997"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11293596,11465691,11464609,11465483,11465676,11463997/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11293596,11465691,11464609,11465483,11465676,11463997"
 			data-video-carousel-label="Consumer"
 			data-video-carousel-content="The Bank of Canada says many people renewing their mortgages over the next year will end up paying more. Aaron McArthur reports. "
 			>
@@ -3119,18 +3092,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Bank of Canada warns about higher mortgage payments" data-slide-index="5">
-	<a href="https://globalnews.ca/video/11293596/bank-of-canada-warns-about-higher-mortgage-payments/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Thousands of Alberta teachers and supporters gather outside McDougall Centre for a rally hours ahead of looming strike" data-slide-index="3">
+	<a href="https://globalnews.ca/video/11465691/thousands-of-alberta-teachers-and-supporters-gather-outside-mcdougall-centre-for-a-rally-hours-ahead-of-looming-strike/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11293596"
+					data-video-id="11465691"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11293596,11464043,11464039,11464609,11463997,11293596/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11293596,11464043,11464039,11464609,11463997,11293596"
-			data-video-carousel-label="Consumer"
-			data-video-carousel-content="The Bank of Canada says many people renewing their mortgages over the next year will end up paying more. Aaron McArthur reports. "
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11465691,11464609,11465483,11465676,11463997,11293596/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11465691,11464609,11465483,11465676,11463997,11293596"
+			data-video-carousel-label="Economy"
+			data-video-carousel-content="Thousands of supporters rallied Sunday outside Calgary’s McDougall Center in support of teachers amid the ongoing dispute between their union and the province. As Craig Momney reports, as teachers prepare to walk off the job, parents and students are left wondering when a deal will be reached."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/sjhq3yqnz7-tz84lapqz4/WEB_BOC_PIC.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/7vp5ovpnwy-qd48bwkgox/6P_TEACHERS_RALLY_PIC.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -3139,9 +3112,63 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>
 		<div class="l-videoCarousel__details c-posts__details">
 							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Consumer</div>
+					<div class="c-posts__info c-posts__info--highlight">Economy</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Bank of Canada warns about higher mortgage payments</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Thousands of Alberta teachers and supporters gather outside McDougall Centre for a rally hours ahead of looming strike</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Canada Post’s latest offer ‘worse’ than before: union" data-slide-index="4">
+	<a href="https://globalnews.ca/video/11464609/canada-posts-latest-offer-worse-than-before-union/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11464609"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11464609,11465483,11465676,11463997,11293596,11465691/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11464609,11465483,11465676,11463997,11293596,11465691"
+			data-video-carousel-label="Canada"
+			data-video-carousel-content="The union representing Canada Post workers says the Crown corporation’s latest contract offer is worse than before, despite weeks of waiting. In a statement Saturday, the Canadian Union of Postal Workers said the new proposal removes a previously-offered signing bonus and could lead to job cuts and post office closures.  "
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/pp7bqls2hi-c8pgs1tk8y/ONLINE_STILL_CANADA_POST_UNION.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Canada Post’s latest offer ‘worse’ than before: union</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Carney to visit Washington amid U.S. govt shutdown, trade tensions" data-slide-index="5">
+	<a href="https://globalnews.ca/video/11465483/carney-to-visit-washington-amid-u-s-govt-shutdown-trade-tensions/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11465483"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11465483,11465676,11463997,11293596,11465691,11464609/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11465483,11465676,11463997,11293596,11465691,11464609"
+			data-video-carousel-label="Canada"
+			data-video-carousel-content="Joseph Steinberg of the University of Toronto joins Global’s Reggie Cecchini to talk about Carney’s trip to the U.S. as Ottawa looks for an off-ramp from tariffs."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/99jilfj6p0-tcjtrf8frj/ONLINE_STILL_CARNEY_WASHINGTON.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Carney to visit Washington amid U.S. govt shutdown, trade tensions</span></div>
 					</div>
 	</a>
 </li>
@@ -3179,17 +3206,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11464039"
+			data-displayinline-player-id="home-miniplayer_11463997"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11464039,11464609,11463997,11293596,11293596/#autoplay&#038;stickyiframe=home-miniplayer_11464039"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11463997,11293596,11465691,11464609,11465483/#autoplay&#038;stickyiframe=home-miniplayer_11463997"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/pqk953e656-0oku8p3r8m/WEB_KEL_PIGS.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/vtuls53szm-1vecegkh6b/6P-SAYONARA-SCHOOL-PKG_OM01J6RR_thumbnail_1280x720.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Okanagan pig sanctuary needs new sick bay'"
+					alt="Click to play video 'Last day of class before Alberta teacher strike'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3198,11 +3225,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11464039/okanagan-pig-sanctuary-needs-new-sick-bay/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11463997/last-day-of-class-before-alberta-teacher-strike/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Environment</div>
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Okanagan pig sanctuary needs new sick bay</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Last day of class before Alberta teacher strike</span></div>
 		</a>
 	</div>
 </li>
@@ -3233,73 +3260,9 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11464609"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11464609,11463997,11293596,11293596,11464039/#autoplay&#038;stickyiframe=home-miniplayer_11464609"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/pp7bqls2hi-c8pgs1tk8y/ONLINE_STILL_CANADA_POST_UNION.jpg?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Canada Post’s latest offer ‘worse’ than before: union'"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/11464609/canada-posts-latest-offer-worse-than-before-union/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Canada Post’s latest offer ‘worse’ than before: union</span></div>
-		</a>
-	</div>
-</li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11463997"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11463997,11293596,11293596,11464039,11464609/#autoplay&#038;stickyiframe=home-miniplayer_11463997"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/vtuls53szm-1vecegkh6b/6P-SAYONARA-SCHOOL-PKG_OM01J6RR_thumbnail_1280x720.jpg?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Last day of class before Alberta teacher strike'"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/11463997/last-day-of-class-before-alberta-teacher-strike/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Last day of class before Alberta teacher strike</span></div>
-		</a>
-	</div>
-</li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11293596"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11293596,11293596,11464039,11464609,11463997/#autoplay&#038;stickyiframe=home-miniplayer_11293596"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11293596,11465691,11464609,11465483,11463997/#autoplay&#038;stickyiframe=home-miniplayer_11293596"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3324,6 +3287,70 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</div>
 </li>
+
+<li class="c-posts__item">
+	<div class="c-posts__inner">
+		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
+			data-displayinline-type="video"
+			data-displayinline-player-id="home-miniplayer_11465691"
+			data-displayinline-ratio="16:9"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11465691,11464609,11465483,11463997,11293596/#autoplay&#038;stickyiframe=home-miniplayer_11465691"
+			data-displayinline-sticky="true"
+			data-displayinline-expand="true">
+			<div class="c-video__placeholder">
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/7vp5ovpnwy-qd48bwkgox/6P_TEACHERS_RALLY_PIC.jpg?w=384&#038;quality=70&#038;strip=all"
+					width="236"
+					height="133"
+					class="c-posts__thumbnail c-video__image"
+					alt="Click to play video 'Thousands of Alberta teachers and supporters gather outside McDougall Centre for a rally hours ahead of looming strike'"
+					loading="lazy" />
+				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+			</div>
+		</a>
+		<a href="https://globalnews.ca/video/11465691/thousands-of-alberta-teachers-and-supporters-gather-outside-mcdougall-centre-for-a-rally-hours-ahead-of-looming-strike/" class="c-posts__details">
+				<div class="c-posts__about">
+					<div class="c-posts__info c-posts__info--highlight">Economy</div>
+				</div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Thousands of Alberta teachers and supporters gather outside McDougall Centre for a rally hours ahead of looming strike</span></div>
+		</a>
+	</div>
+</li>
+
+<li class="c-posts__item">
+	<div class="c-posts__inner">
+		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
+			data-displayinline-type="video"
+			data-displayinline-player-id="home-miniplayer_11464609"
+			data-displayinline-ratio="16:9"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11464609,11465483,11463997,11293596,11465691/#autoplay&#038;stickyiframe=home-miniplayer_11464609"
+			data-displayinline-sticky="true"
+			data-displayinline-expand="true">
+			<div class="c-video__placeholder">
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/pp7bqls2hi-c8pgs1tk8y/ONLINE_STILL_CANADA_POST_UNION.jpg?w=384&#038;quality=70&#038;strip=all"
+					width="236"
+					height="133"
+					class="c-posts__thumbnail c-video__image"
+					alt="Click to play video 'Canada Post’s latest offer ‘worse’ than before: union'"
+					loading="lazy" />
+				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+			</div>
+		</a>
+		<a href="https://globalnews.ca/video/11464609/canada-posts-latest-offer-worse-than-before-union/" class="c-posts__details">
+				<div class="c-posts__about">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Canada Post’s latest offer ‘worse’ than before: union</span></div>
+		</a>
+	</div>
+</li>
 	</ul>
 	
 	</section>
@@ -3342,22 +3369,22 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant"
-			data-displayinline-video-id="11464609"
+			data-displayinline-video-id="11465724"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11464609,11465451,11465349,11465350,11463491/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fpp7bqls2hi-c8pgs1tk8y%2FONLINE_STILL_CANADA_POST_UNION.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
-    		    			data-displayinline-playlist="11464609,11465451,11465349,11465350,11463491"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11465724,11465602,11465451,11464609,11463491/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fb8a9vuhxeh-p5rj331nco%2Fgn_2_site.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
+    		    			data-displayinline-playlist="11465724,11465602,11465451,11464609,11463491"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Canada Post’s latest offer ‘worse’ than before: union'"
+						alt="Click to play video: 'Trump&#8217;s National Guard deployment plan sparks violent protests across U.S.'"
 						width="640"
 						height="360"
-													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/pp7bqls2hi-c8pgs1tk8y/ONLINE_STILL_CANADA_POST_UNION.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/b8a9vuhxeh-p5rj331nco/gn_2_site.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/pp7bqls2hi-c8pgs1tk8y/ONLINE_STILL_CANADA_POST_UNION.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/pp7bqls2hi-c8pgs1tk8y/ONLINE_STILL_CANADA_POST_UNION.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/pp7bqls2hi-c8pgs1tk8y/ONLINE_STILL_CANADA_POST_UNION.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
+								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/b8a9vuhxeh-p5rj331nco/gn_2_site.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/b8a9vuhxeh-p5rj331nco/gn_2_site.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/b8a9vuhxeh-p5rj331nco/gn_2_site.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -3367,20 +3394,20 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">0:37</time>
-																									<span class="c-video__title">Canada Post’s latest offer ‘worse’ than before: union</span>
+																	<time class="c-video__duration">2:01</time>
+																									<span class="c-video__title">Trump&#8217;s National Guard deployment plan sparks violent protests across U.S.</span>
 															</div>
 						</span>
 											</span>
 				</div>
 							</div>
 								<div class="l-videoCarousel__sidebar">
-													<a href="https://globalnews.ca/video/11464609/canada-posts-latest-offer-worse-than-before-union/" class="l-videoCarousel__details">
-							<div class="l-videoCarousel__info">Canada</div>
+													<a href="https://globalnews.ca/video/11465724/trumps-national-guard-deployment-plan-sparks-violent-protests-across-u-s/" class="l-videoCarousel__details">
+							<div class="l-videoCarousel__info">U.S. News</div>
 								<div class="l-videoCarousel__fullTitle">
-								Canada Post’s latest offer ‘worse’ than before: union								</div>
+								Trump&#8217;s National Guard deployment plan sparks violent protests across U.S.								</div>
 								<div class="l-videoCarousel__description">
-								The union representing Canada Post workers says the Crown corporation’s latest contract offer is worse than before, despite weeks of waiting. In a statement Saturday, the Canadian Union of Postal Workers said the new proposal removes a previously-offered signing bonus and could lead to job cuts and post office closures.  								</div>
+								Protests erupted across the U.S. on Sunday against President Donald Trump&#039;s plans to send troops from the National Guard to a growing list of American cities. The White House says the move is needed to crack down on crime and illegal immigration. As Candice Cole reports, the tensions have turned violent.								</div>
 						</a>
 								<div class="c-ad c-ad--bigbox c-ad--dark l-videoCarousel__ad">							<div class="c-ad__label">Advertisement</div>
 			
@@ -3407,18 +3434,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-carousel__track glide__track" data-glide-el="track">
 						<ul class="c-posts c-posts--video c-posts--tile c-posts--horizontal c-posts--inverted glide__slides">
 							
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Canada Post’s latest offer ‘worse’ than before: union" data-slide-index="0">
-	<a href="https://globalnews.ca/video/11464609/canada-posts-latest-offer-worse-than-before-union/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Trump&#8217;s National Guard deployment plan sparks violent protests across U.S." data-slide-index="0">
+	<a href="https://globalnews.ca/video/11465724/trumps-national-guard-deployment-plan-sparks-violent-protests-across-u-s/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11464609"
+					data-video-id="11465724"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11464609,11465451,11465349,11465350,11463491/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11464609,11465451,11465349,11465350,11463491"
-			data-video-carousel-label="Canada"
-			data-video-carousel-content="The union representing Canada Post workers says the Crown corporation’s latest contract offer is worse than before, despite weeks of waiting. In a statement Saturday, the Canadian Union of Postal Workers said the new proposal removes a previously-offered signing bonus and could lead to job cuts and post office closures.  "
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11465724,11465602,11465451,11464609,11463491/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11465724,11465602,11465451,11464609,11463491"
+			data-video-carousel-label="U.S. News"
+			data-video-carousel-content="Protests erupted across the U.S. on Sunday against President Donald Trump&#039;s plans to send troops from the National Guard to a growing list of American cities. The White House says the move is needed to crack down on crime and illegal immigration. As Candice Cole reports, the tensions have turned violent."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/pp7bqls2hi-c8pgs1tk8y/ONLINE_STILL_CANADA_POST_UNION.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/b8a9vuhxeh-p5rj331nco/gn_2_site.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -3427,20 +3454,47 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>
 		<div class="l-videoCarousel__details c-posts__details">
 							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+					<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Canada Post’s latest offer ‘worse’ than before: union</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Trump&#8217;s National Guard deployment plan sparks violent protests across U.S.</span></div>
 					</div>
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Greta Thunberg mistreated while detained by Israel, activists allege" data-slide-index="1">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="U.S. protests turn violent as Trump pledges troops in Chicago, Portland amid migrant crackdown" data-slide-index="1">
+	<a href="https://globalnews.ca/video/11465602/u-s-protests-turn-violent-as-trump-pledges-troops-in-chicago-portland-amid-migrant-crackdown/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11465602"
+			data-video-player-id="home-miniplayer-variant"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11465602,11465451,11464609,11463491,11465724/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11465602,11465451,11464609,11463491,11465724"
+			data-video-carousel-label="U.S. News"
+			data-video-carousel-content="Protests erupted across the U.S. on Sunday against President Donald Trump&#039;s plans to send troops from the National Guard to a growing list of American cities. The White House says the move is needed to crack down on crime and illegal immigration. "
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/1ohakytv6r-3ajp3jv4dp/SITE_TRUMP_2.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">U.S. protests turn violent as Trump pledges troops in Chicago, Portland amid migrant crackdown</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Greta Thunberg mistreated while detained by Israel, activists allege" data-slide-index="2">
 	<a href="https://globalnews.ca/video/11465451/greta-thunberg-mistreated-while-detained-by-israel-activists-allege/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11465451"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11465451,11465349,11465350,11463491,11464609/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11465451,11465349,11465350,11463491,11464609"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11465451,11464609,11463491,11465724,11465602/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11465451,11464609,11463491,11465724,11465602"
 			data-video-carousel-label="News"
 			data-video-carousel-content="Activists who were detained by Israel after taking part in a Gaza aid flotilla say Greta Thunberg was mistreated while in custody. The two activists who made the claim said they witnessed Thunberg being “dragged” and shoved and draped in an Israeli flag."
 			>
@@ -3461,45 +3515,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="A closer look at Trump’s &#8216;war&#8217; on dissent, drug cartels" data-slide-index="2">
-	<a href="https://globalnews.ca/video/11465349/a-closer-look-at-trumps-war-on-dissent-drug-cartels/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Canada Post’s latest offer ‘worse’ than before: union" data-slide-index="3">
+	<a href="https://globalnews.ca/video/11464609/canada-posts-latest-offer-worse-than-before-union/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11465349"
+					data-video-id="11464609"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11465349,11465350,11463491,11464609,11465451/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11465349,11465350,11463491,11464609,11465451"
-			data-video-carousel-label="Politics"
-			data-video-carousel-content="As the U.S. President escalates his claims of America being at &quot;war&quot; both on home soil and in international waters, what does this mean legally? The show spoke with Professor Geoffrey Corn, former Judge Advocate General officer and U.S. Army&#039;s senior adviser for law-of-war issues. &quot;Once you cross that threshold into armed conflict,&quot; Professor Corn said, &quot;you trigger extraordinary government powers for the military.  And it opens up a potential Pandora&#039;s Box of presidential options.&quot;"
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/12b9zws0to-88b4xorrip/ONLINE_STILL_TRUMP_WAR.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Politics</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">A closer look at Trump’s &#8216;war&#8217; on dissent, drug cartels</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Canada on “no-fail mission” to hit NATO’s 2% defence spending target, feds say" data-slide-index="3">
-	<a href="https://globalnews.ca/video/11465350/canada-on-no-fail-mission-to-hit-natos-2-defence-spending-target-feds-say/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11465350"
-			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11465350,11463491,11464609,11465451,11465349/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11465350,11463491,11464609,11465451,11465349"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11464609,11463491,11465724,11465602,11465451/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11464609,11463491,11465724,11465602,11465451"
 			data-video-carousel-label="Canada"
-			data-video-carousel-content="Stephen Fuhr, who&#039;s overseeing Canada&#039;s defence procurement, tells The West Block there&#039;s no turning back from Ottawa hitting NATO defence spending targets. The former fighter pilot also underlines how urgently our F-18s need replacement, and the delayed review of the American jet deal is to ensure the right decision is made for a &quot;sovereign&quot; Canada."
+			data-video-carousel-content="The union representing Canada Post workers says the Crown corporation’s latest contract offer is worse than before, despite weeks of waiting. In a statement Saturday, the Canadian Union of Postal Workers said the new proposal removes a previously-offered signing bonus and could lead to job cuts and post office closures.  "
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/29i0ke268d-0zz2e99ch8/ONLINE_STILL_STEPHEN_FUHR.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/pp7bqls2hi-c8pgs1tk8y/ONLINE_STILL_CANADA_POST_UNION.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -3510,7 +3537,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							<div class="l-videoCarousel__info">
 					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Canada on “no-fail mission” to hit NATO’s 2% defence spending target, feds say</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Canada Post’s latest offer ‘worse’ than before: union</span></div>
 					</div>
 	</a>
 </li>
@@ -3520,8 +3547,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11463491"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11463491,11464609,11465451,11465349,11465350/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11463491,11464609,11465451,11465349,11465350"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11463491,11465724,11465602,11465451,11464609/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11463491,11465724,11465602,11465451,11464609"
 			data-video-carousel-label="Health"
 			data-video-carousel-content="Researchers in London, Ontario are looking at a new way to treat kidney cancer. The technique involves targeting the cancer from the inside... out. Health reporter Katherine Ward explains."
 			>
@@ -3575,17 +3602,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11465451"
+			data-displayinline-player-id="home-miniplayer-variant_11465602"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11465451,11465349,11465350,11463491/#autoplay&#038;stickyiframe=home-miniplayer-variant_11465451"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11465602,11465451,11464609,11463491/#autoplay&#038;stickyiframe=home-miniplayer-variant_11465602"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/ruy13vpxl5-knmoui0hni/Greta_Thunberg_web.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/1ohakytv6r-3ajp3jv4dp/SITE_TRUMP_2.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Greta Thunberg mistreated while detained by Israel, activists allege'"
+					alt="Click to play video 'U.S. protests turn violent as Trump pledges troops in Chicago, Portland amid migrant crackdown'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3594,11 +3621,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11465451/greta-thunberg-mistreated-while-detained-by-israel-activists-allege/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11465602/u-s-protests-turn-violent-as-trump-pledges-troops-in-chicago-portland-amid-migrant-crackdown/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">News</div>
+					<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Greta Thunberg mistreated while detained by Israel, activists allege</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">U.S. protests turn violent as Trump pledges troops in Chicago, Portland amid migrant crackdown</span></div>
 		</a>
 	</div>
 </li>
@@ -3629,17 +3656,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11465349"
+			data-displayinline-player-id="home-miniplayer-variant_11465451"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11465349,11465350,11463491,11465451/#autoplay&#038;stickyiframe=home-miniplayer-variant_11465349"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11465451,11464609,11463491,11465602/#autoplay&#038;stickyiframe=home-miniplayer-variant_11465451"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/12b9zws0to-88b4xorrip/ONLINE_STILL_TRUMP_WAR.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/ruy13vpxl5-knmoui0hni/Greta_Thunberg_web.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'A closer look at Trump’s &#8216;war&#8217; on dissent, drug cartels'"
+					alt="Click to play video 'Greta Thunberg mistreated while detained by Israel, activists allege'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3648,11 +3675,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11465349/a-closer-look-at-trumps-war-on-dissent-drug-cartels/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11465451/greta-thunberg-mistreated-while-detained-by-israel-activists-allege/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Politics</div>
+					<div class="c-posts__info c-posts__info--highlight">News</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">A closer look at Trump’s &#8216;war&#8217; on dissent, drug cartels</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Greta Thunberg mistreated while detained by Israel, activists allege</span></div>
 		</a>
 	</div>
 </li>
@@ -3661,17 +3688,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11465350"
+			data-displayinline-player-id="home-miniplayer-variant_11464609"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11465350,11463491,11465451,11465349/#autoplay&#038;stickyiframe=home-miniplayer-variant_11465350"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11464609,11463491,11465602,11465451/#autoplay&#038;stickyiframe=home-miniplayer-variant_11464609"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/29i0ke268d-0zz2e99ch8/ONLINE_STILL_STEPHEN_FUHR.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/pp7bqls2hi-c8pgs1tk8y/ONLINE_STILL_CANADA_POST_UNION.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Canada on “no-fail mission” to hit NATO’s 2% defence spending target, feds say'"
+					alt="Click to play video 'Canada Post’s latest offer ‘worse’ than before: union'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3680,11 +3707,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11465350/canada-on-no-fail-mission-to-hit-natos-2-defence-spending-target-feds-say/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11464609/canada-posts-latest-offer-worse-than-before-union/" class="c-posts__details">
 				<div class="c-posts__about">
 					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Canada on “no-fail mission” to hit NATO’s 2% defence spending target, feds say</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Canada Post’s latest offer ‘worse’ than before: union</span></div>
 		</a>
 	</div>
 </li>
@@ -3695,7 +3722,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant_11463491"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11463491,11465451,11465349,11465350/#autoplay&#038;stickyiframe=home-miniplayer-variant_11463491"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11463491,11465602,11465451,11464609/#autoplay&#038;stickyiframe=home-miniplayer-variant_11463491"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3845,33 +3872,65 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11465636"
+				data-post-id="11465767"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
-					href="https://globalnews.ca/news/11465636/blue-jays-beat-yankees-13-7-in-game-2-of-alds/"
+					href="https://globalnews.ca/news/11465767/blue-jays-outscore-yankees-13-7-in-game-2-of-alds/"
 					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Blue Jays beat Yankees 13-7 in Game 2 of ALDS" data-title>Blue Jays beat Yankees 13-7 in Game 2 of ALDS</span>
+					<span class="c-posts__headlineText" title="Blue Jays outscore Yankees 13-7 in Game 2 of ALDS" data-title>Blue Jays outscore Yankees 13-7 in Game 2 of ALDS</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						The Toronto Blue Jays are one win away from advancing to the American League Championship Series. 						</div>
+						Trey Yesavage said he was built for this kind of opportunity. On Sunday afternoon, he went out and proved it.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
 															<div class="c-posts__info c-posts__info--highlight">Sports</div>
-																						<div class="c-posts__info">2 hours</div>
+																						<div class="c-posts__info">1 hour</div>
 													</div>
 					</div>
 					
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/e1298c7d785ee79d52e51c2358f76f7d16ec844baae4f6d1092d55c9dec857fc_2b51bc.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/3a44f9931bc61d3fb6f74c97ec2f823fd71d8c60dad289de5b2ba82eb7a29026.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
 								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/e1298c7d785ee79d52e51c2358f76f7d16ec844baae4f6d1092d55c9dec857fc_2b51bc.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/e1298c7d785ee79d52e51c2358f76f7d16ec844baae4f6d1092d55c9dec857fc_2b51bc.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/e1298c7d785ee79d52e51c2358f76f7d16ec844baae4f6d1092d55c9dec857fc_2b51bc.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/3a44f9931bc61d3fb6f74c97ec2f823fd71d8c60dad289de5b2ba82eb7a29026.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/3a44f9931bc61d3fb6f74c97ec2f823fd71d8c60dad289de5b2ba82eb7a29026.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/3a44f9931bc61d3fb6f74c97ec2f823fd71d8c60dad289de5b2ba82eb7a29026.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11465007"
+				data-sophi-feature=latest-news			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11465007/blue-jays-open-alds-with-blowout-win-over-yankees/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Blue Jays open ALDS with blowout win over Yankees" data-title>Blue Jays open ALDS with blowout win over Yankees</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						Vladimir Guerrero Jr. said goodbye to a slump in his opening at-bat Saturday. Alejandro Kirk used his first swing to show that his bat remained as hot as ever.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Sports</div>
+																						<div class="c-posts__info">Oct 4</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/334e65d64bf3f421c632c8b0dfeaa08b391088ae42297e108dd7474e3649b3b6.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/334e65d64bf3f421c632c8b0dfeaa08b391088ae42297e108dd7474e3649b3b6.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/334e65d64bf3f421c632c8b0dfeaa08b391088ae42297e108dd7474e3649b3b6.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/334e65d64bf3f421c632c8b0dfeaa08b391088ae42297e108dd7474e3649b3b6.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -3882,7 +3941,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11464785/u-s-brokered-gaza-ceasefire/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3914,7 +3973,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11464628/que-lng-proposal/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3941,65 +4000,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11464914"
+				data-post-id="11464398"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
-					href="https://globalnews.ca/news/11464914/blue-jays-thump-yankees-10-1-in-series-opener/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Blue Jays thump Yankees 10-1 in series opener" data-title>Blue Jays thump Yankees 10-1 in series opener</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						The Toronto Blue Jays have their first post-season victory in nine years. 						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Sports</div>
-																						<div class="c-posts__info">Oct 4</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/d99b7c3c9fd1143ecb089a778170c41f2b66bfaa3cd51aaab9f1b723a45d6ad9.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="479" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/d99b7c3c9fd1143ecb089a778170c41f2b66bfaa3cd51aaab9f1b723a45d6ad9.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/d99b7c3c9fd1143ecb089a778170c41f2b66bfaa3cd51aaab9f1b723a45d6ad9.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/d99b7c3c9fd1143ecb089a778170c41f2b66bfaa3cd51aaab9f1b723a45d6ad9.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11464934"
-				data-sophi-feature=latest-news			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11464934/blue-jays-dump-yankees-10-1-in-series-opener/"
+					href="https://globalnews.ca/news/11464398/japan-first-female-pm/"
 					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Blue Jays dump Yankees 10-1 in series opener" data-title>Blue Jays dump Yankees 10-1 in series opener</span>
+					<span class="c-posts__headlineText" title="Japan likely to get its first female PM as ruling party picks new leader" data-title>Japan likely to get its first female PM as ruling party picks new leader</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						Alejandro Kirk had his second straight two-homer game to power the Toronto Blue Jays to a 10-1 rout of the New York Yankees in Game 1 of their American League Division Series on Saturday.						</div>
+						Japan’s governing party on Saturday elected former Economic Security Minister Sanae Takaichi, a hard-line ultra-conservative and China hawk, as its new leader, making her likely to become the country’s first female prime minister. In a country that ranks poorly internationally for gender equality, the 64-year-old Takaichi makes history as the first female leader of Japan&#8217;s...						</div>
 						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Sports</div>
+															<div class="c-posts__info c-posts__info--highlight">World</div>
 																						<div class="c-posts__info">Oct 4</div>
 													</div>
 					</div>
 					
-		<div class="c-posts__media "  >
+		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/32b10d9beaf8e0fc414b9b643e1a8aaca6bf323b2222cee08ad61fa9ff126827.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/Sanae-Takaichi.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=610 data-ratio=0.67									loading="lazy"
+								width="720" height="610" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/32b10d9beaf8e0fc414b9b643e1a8aaca6bf323b2222cee08ad61fa9ff126827.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/32b10d9beaf8e0fc414b9b643e1a8aaca6bf323b2222cee08ad61fa9ff126827.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/32b10d9beaf8e0fc414b9b643e1a8aaca6bf323b2222cee08ad61fa9ff126827.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/Sanae-Takaichi.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/Sanae-Takaichi.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/Sanae-Takaichi.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -4112,22 +4139,22 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-playlist-miniplayer"
-			data-displayinline-video-id="11464043"
+			data-displayinline-video-id="11465676"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11464043,11464039,11464609,11463997,11293596/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fdib2bhmakj-2w1aqu3dds%2FWEB_6P_DEER_TENNIS_NET_RESCUE.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
-    		    			data-displayinline-playlist="11464043,11464039,11464609,11463997,11293596"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11465676,11463997,11293596,11465691,11464609/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fnf9h927nkn-r9q7z5lyzi%2F6P_ATA_RALLY_pic.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
+    		    			data-displayinline-playlist="11465676,11463997,11293596,11465691,11464609"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Victoria residents rally to help deer tangled in tennis net'"
+						alt="Click to play video: 'Alberta teachers rally on Legislature steps ahead of strike'"
 						width="640"
 						height="360"
-													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/dib2bhmakj-2w1aqu3dds/WEB_6P_DEER_TENNIS_NET_RESCUE.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/nf9h927nkn-r9q7z5lyzi/6P_ATA_RALLY_pic.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/dib2bhmakj-2w1aqu3dds/WEB_6P_DEER_TENNIS_NET_RESCUE.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/dib2bhmakj-2w1aqu3dds/WEB_6P_DEER_TENNIS_NET_RESCUE.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/dib2bhmakj-2w1aqu3dds/WEB_6P_DEER_TENNIS_NET_RESCUE.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
+								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/nf9h927nkn-r9q7z5lyzi/6P_ATA_RALLY_pic.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/nf9h927nkn-r9q7z5lyzi/6P_ATA_RALLY_pic.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/nf9h927nkn-r9q7z5lyzi/6P_ATA_RALLY_pic.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -4137,8 +4164,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">1:49</time>
-																									<span class="c-video__title">Victoria residents rally to help deer tangled in tennis net</span>
+																	<time class="c-video__duration">1:59</time>
+																									<span class="c-video__title">Alberta teachers rally on Legislature steps ahead of strike</span>
 															</div>
 						</span>
 											</span>
@@ -4154,23 +4181,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="1"
 	>
-	<a href="https://globalnews.ca/video/11464043/victoria-residents-rally-to-help-deer-tangled-in-tennis-net/"
-		title="Victoria residents rally to help deer tangled in tennis net"
+	<a href="https://globalnews.ca/video/11465676/alberta-teachers-rally-on-legislature-steps-ahead-of-strike/"
+		title="Alberta teachers rally on Legislature steps ahead of strike"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11464043"
-		data-video-label="Canada"
+		data-video-id="11465676"
+		data-video-label="Economy"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11464043,11464039,11464609,11463997,11293596/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11465676,11463997,11293596,11465691,11464609/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Victoria residents rally to help deer tangled in tennis net</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Alberta teachers rally on Legislature steps ahead of strike</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
+						Economy					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/dib2bhmakj-2w1aqu3dds/WEB_6P_DEER_TENNIS_NET_RESCUE.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/nf9h927nkn-r9q7z5lyzi/6P_ATA_RALLY_pic.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -4182,62 +4209,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="2"
 	>
-	<a href="https://globalnews.ca/video/11464039/okanagan-pig-sanctuary-needs-new-sick-bay/"
-		title="Okanagan pig sanctuary needs new sick bay"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11464039"
-		data-video-label="Environment"
-		data-video-player-id="home-playlist-miniplayer"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11464039,11464609,11463997,11293596/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Okanagan pig sanctuary needs new sick bay</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Environment					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/pqk953e656-0oku8p3r8m/WEB_KEL_PIGS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="3"
-	>
-	<a href="https://globalnews.ca/video/11464609/canada-posts-latest-offer-worse-than-before-union/"
-		title="Canada Post’s latest offer ‘worse’ than before: union"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11464609"
-		data-video-label="Canada"
-		data-video-player-id="home-playlist-miniplayer"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11464609,11463997,11293596,11464039/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Canada Post’s latest offer ‘worse’ than before: union</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/pp7bqls2hi-c8pgs1tk8y/ONLINE_STILL_CANADA_POST_UNION.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="4"
-	>
 	<a href="https://globalnews.ca/video/11463997/last-day-of-class-before-alberta-teacher-strike/"
 		title="Last day of class before Alberta teacher strike"
 		class="l-playlist__link c-posts__inner c-videoPlay"
@@ -4245,7 +4216,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11463997,11293596,11464039,11464609/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11463997,11293596,11465691,11464609/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Last day of class before Alberta teacher strike</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4264,7 +4235,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 <li class="c-posts__item l-playlist__item"
-			data-playlist-index="5"
+			data-playlist-index="3"
 	>
 	<a href="https://globalnews.ca/video/11293596/bank-of-canada-warns-about-higher-mortgage-payments/"
 		title="Bank of Canada warns about higher mortgage payments"
@@ -4273,7 +4244,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Consumer"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11293596,11464039,11464609,11463997/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11293596,11465691,11464609,11463997/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Bank of Canada warns about higher mortgage payments</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4283,6 +4254,62 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					</div>
 		<div class="c-posts__media l-playlist__media">
 			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/sjhq3yqnz7-tz84lapqz4/WEB_BOC_PIC.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="4"
+	>
+	<a href="https://globalnews.ca/video/11465691/thousands-of-alberta-teachers-and-supporters-gather-outside-mcdougall-centre-for-a-rally-hours-ahead-of-looming-strike/"
+		title="Thousands of Alberta teachers and supporters gather outside McDougall Centre for a rally hours ahead of looming strike"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11465691"
+		data-video-label="Economy"
+		data-video-player-id="home-playlist-miniplayer"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11465691,11464609,11463997,11293596/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Thousands of Alberta teachers and supporters gather outside McDougall Centre for a rally hours ahead of looming strike</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						Economy					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/7vp5ovpnwy-qd48bwkgox/6P_TEACHERS_RALLY_PIC.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="5"
+	>
+	<a href="https://globalnews.ca/video/11464609/canada-posts-latest-offer-worse-than-before-union/"
+		title="Canada Post’s latest offer ‘worse’ than before: union"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11464609"
+		data-video-label="Canada"
+		data-video-player-id="home-playlist-miniplayer"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11464609,11463997,11293596,11465691/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Canada Post’s latest offer ‘worse’ than before: union</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						Canada					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/pp7bqls2hi-c8pgs1tk8y/ONLINE_STILL_CANADA_POST_UNION.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -4307,22 +4334,22 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-playlist-miniplayer-variant"
-			data-displayinline-video-id="11464609"
+			data-displayinline-video-id="11465724"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11464609,11465451,11465349,11465350,11463491/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fpp7bqls2hi-c8pgs1tk8y%2FONLINE_STILL_CANADA_POST_UNION.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
-    		    			data-displayinline-playlist="11464609,11465451,11465349,11465350,11463491"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11465724,11465602,11465451,11464609,11463491/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fb8a9vuhxeh-p5rj331nco%2Fgn_2_site.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
+    		    			data-displayinline-playlist="11465724,11465602,11465451,11464609,11463491"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Canada Post’s latest offer ‘worse’ than before: union'"
+						alt="Click to play video: 'Trump&#8217;s National Guard deployment plan sparks violent protests across U.S.'"
 						width="640"
 						height="360"
-													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/pp7bqls2hi-c8pgs1tk8y/ONLINE_STILL_CANADA_POST_UNION.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/b8a9vuhxeh-p5rj331nco/gn_2_site.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/pp7bqls2hi-c8pgs1tk8y/ONLINE_STILL_CANADA_POST_UNION.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/pp7bqls2hi-c8pgs1tk8y/ONLINE_STILL_CANADA_POST_UNION.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/pp7bqls2hi-c8pgs1tk8y/ONLINE_STILL_CANADA_POST_UNION.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
+								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/b8a9vuhxeh-p5rj331nco/gn_2_site.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/b8a9vuhxeh-p5rj331nco/gn_2_site.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/b8a9vuhxeh-p5rj331nco/gn_2_site.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -4332,8 +4359,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">0:37</time>
-																									<span class="c-video__title">Canada Post’s latest offer ‘worse’ than before: union</span>
+																	<time class="c-video__duration">2:01</time>
+																									<span class="c-video__title">Trump&#8217;s National Guard deployment plan sparks violent protests across U.S.</span>
 															</div>
 						</span>
 											</span>
@@ -4349,23 +4376,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="1"
 	>
-	<a href="https://globalnews.ca/video/11464609/canada-posts-latest-offer-worse-than-before-union/"
-		title="Canada Post’s latest offer ‘worse’ than before: union"
+	<a href="https://globalnews.ca/video/11465724/trumps-national-guard-deployment-plan-sparks-violent-protests-across-u-s/"
+		title="Trump&#8217;s National Guard deployment plan sparks violent protests across U.S."
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11464609"
-		data-video-label="Canada"
+		data-video-id="11465724"
+		data-video-label="U.S. News"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11464609,11465451,11465349,11465350,11463491/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11465724,11465602,11465451,11464609,11463491/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Canada Post’s latest offer ‘worse’ than before: union</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Trump&#8217;s National Guard deployment plan sparks violent protests across U.S.</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
+						U.S. News					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/pp7bqls2hi-c8pgs1tk8y/ONLINE_STILL_CANADA_POST_UNION.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/b8a9vuhxeh-p5rj331nco/gn_2_site.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -4377,6 +4404,34 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="2"
 	>
+	<a href="https://globalnews.ca/video/11465602/u-s-protests-turn-violent-as-trump-pledges-troops-in-chicago-portland-amid-migrant-crackdown/"
+		title="U.S. protests turn violent as Trump pledges troops in Chicago, Portland amid migrant crackdown"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11465602"
+		data-video-label="U.S. News"
+		data-video-player-id="home-playlist-miniplayer-variant"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11465602,11465451,11464609,11463491/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">U.S. protests turn violent as Trump pledges troops in Chicago, Portland amid migrant crackdown</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						U.S. News					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/1ohakytv6r-3ajp3jv4dp/SITE_TRUMP_2.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="3"
+	>
 	<a href="https://globalnews.ca/video/11465451/greta-thunberg-mistreated-while-detained-by-israel-activists-allege/"
 		title="Greta Thunberg mistreated while detained by Israel, activists allege"
 		class="l-playlist__link c-posts__inner c-videoPlay"
@@ -4384,7 +4439,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="News"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11465451,11465349,11465350,11463491/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11465451,11464609,11463491,11465602/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Greta Thunberg mistreated while detained by Israel, activists allege</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4403,53 +4458,25 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 <li class="c-posts__item l-playlist__item"
-			data-playlist-index="3"
-	>
-	<a href="https://globalnews.ca/video/11465349/a-closer-look-at-trumps-war-on-dissent-drug-cartels/"
-		title="A closer look at Trump’s &#8216;war&#8217; on dissent, drug cartels"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11465349"
-		data-video-label="Politics"
-		data-video-player-id="home-playlist-miniplayer-variant"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11465349,11465350,11463491,11465451/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">A closer look at Trump’s &#8216;war&#8217; on dissent, drug cartels</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Politics					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/12b9zws0to-88b4xorrip/ONLINE_STILL_TRUMP_WAR.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
 			data-playlist-index="4"
 	>
-	<a href="https://globalnews.ca/video/11465350/canada-on-no-fail-mission-to-hit-natos-2-defence-spending-target-feds-say/"
-		title="Canada on “no-fail mission” to hit NATO’s 2% defence spending target, feds say"
+	<a href="https://globalnews.ca/video/11464609/canada-posts-latest-offer-worse-than-before-union/"
+		title="Canada Post’s latest offer ‘worse’ than before: union"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11465350"
+		data-video-id="11464609"
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11465350,11463491,11465451,11465349/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11464609,11463491,11465602,11465451/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Canada on “no-fail mission” to hit NATO’s 2% defence spending target, feds say</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Canada Post’s latest offer ‘worse’ than before: union</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
 						Canada					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/29i0ke268d-0zz2e99ch8/ONLINE_STILL_STEPHEN_FUHR.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/pp7bqls2hi-c8pgs1tk8y/ONLINE_STILL_CANADA_POST_UNION.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -4468,7 +4495,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Health"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11463491,11465451,11465349,11465350/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11463491,11465602,11465451,11464609/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">London Health Sciences Centre clinical trial targets kidney cancer with internal radiation</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -5013,31 +5040,31 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-29"
-	data-post-id="11464398"
+	data-post-id="11463174"
 	data-slide-index=""
-	data-caption="Japan likely to get its first female PM as ruling party picks new leader"
+	data-caption="After 2 weeks, why the Kneecap &#8216;entry ban&#8217; in Canada remains unclear"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11464398/japan-first-female-pm/"
+		href="https://globalnews.ca/news/11463174/kneecap-entry-ban-vince-gasparro-2-weeks-timeline/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
-		<div class="c-posts__media  c-imageContainer"  >
+		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/Sanae-Takaichi.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=610 data-ratio=0.67									loading="lazy"
-								width="720" height="610" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/CP174713682-e1759517426314.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/Sanae-Takaichi.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/Sanae-Takaichi.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/Sanae-Takaichi.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/CP174713682-e1759517426314.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/CP174713682-e1759517426314.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/CP174713682-e1759517426314.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Japan likely to get its first female PM as ruling party picks new leader" data-title>Japan likely to get its first female PM as ruling party picks new leader</span>
+					<span class="c-posts__headlineText" title="After 2 weeks, why the Kneecap &#8216;entry ban&#8217; in Canada remains unclear" data-title>After 2 weeks, why the Kneecap &#8216;entry ban&#8217; in Canada remains unclear</span>
 			</div>
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Oct 4</div>
+																<div class="c-posts__info" data-date >Oct 3</div>
 																			</div>
 									</div>
 		</a>
@@ -5951,7 +5978,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >9 hours</div>
+																<div class="c-posts__info" data-date >11 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -6284,7 +6311,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >6 hours</div>
+																<div class="c-posts__info" data-date >8 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -6315,7 +6342,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >7 hours</div>
+																<div class="c-posts__info" data-date >8 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -6346,7 +6373,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >7 hours</div>
+																<div class="c-posts__info" data-date >9 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -6662,7 +6689,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			<script async src="//static.chartbeat.com/js/chartbeat_mab.js"></script>
 			<!-- Adobe Analytics code version: JS-2.6.0. -->
 		<script type="text/javascript">
-			var gnPageData = {"context_data":{"hourofday":"20","dayofweek":"Sunday","weekdayweekend":"Weekend","userregion":"national","region":"national"},"sections":["home"],"props":[]};
+			var gnPageData = {"context_data":{"hourofday":"22","dayofweek":"Sunday","weekdayweekend":"Weekend","userregion":"national","region":"national"},"sections":["home"],"props":[]};
 		</script>
 				<!-- End Adobe Analytics code -->
 			<script>
@@ -6673,7 +6700,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<noscript>
 			<img src="https://sb.scorecardresearch.com/p?c1=2&c2=3005670&c3=&c4=&c5=&c6=&c15=&cv=2.0&cj=1" alt="" />
 		</noscript>
-			<script type="module">
+		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>	<script type="module">
 		import { Workbox } from "https:\/\/globalnews.ca\/wp-content\/plugins\/pwa\/wp-includes\/js\/workbox-v7.3.0\/workbox-window.prod.js";
 
 		if ( 'serviceWorker' in navigator ) {
@@ -6703,5 +6730,5 @@ _stq.push([ "clickTrackerInit", "176892389", "0" ]);
 		
 		<div class="l-dynamicElement"></div>
 
-			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75660ba8f4","applicationID":"418684855","transactionName":"Z1BWZxdTWkAHVExRXF4adVARW1tdSV9XVVY=","queueTime":0,"applicationTime":460,"atts":"SxdBEV9JSR9EVhoCSE1I","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+			</body>
 </html>
