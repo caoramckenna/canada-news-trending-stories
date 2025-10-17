@@ -184,8 +184,7 @@
         }
     </script>
     	<!-- Meta Tags -->
-	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"75660ba8f4",applicationID:"418684855"};;/*! For license information please see nr-loader-rum-1.299.0.min.js.LICENSE.txt */
-(()=>{var e,t,r={122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let s in a)if(void 0!==e[s])try{if(null===e[s]){r[s]=null;continue}Array.isArray(e[s])&&Array.isArray(t[s])?r[s]=Array.from(new Set([...e[s],...t[s]])):"object"==typeof e[s]&&"object"==typeof t[s]?r[s]=i(e[s],t[s]):r[s]=e[s]}catch(e){r[s]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},555:(e,t,r)=>{"use strict";r.d(t,{D:()=>o,f:()=>s});var n=r(384),i=r(122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function s(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const o=e=>(0,i.a)(e,a)},699:(e,t,r)=>{"use strict";r.d(t,{It:()=>i,No:()=>n,qh:()=>s,uh:()=>a});const n=16e3,i=1e6,a="NR_CONTAINER_AGENT",s="SESSION_ERROR"},324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>a,xv:()=>n});const n="1.299.0",i="PROD",a="CDN"},154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>c,RI:()=>i,WN:()=>d,bv:()=>a,gm:()=>s,mw:()=>o,sb:()=>u});var n=r(863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),s=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===s?.document?.visibilityState),c=/iPad|iPhone|iPod/.test(s.navigator?.userAgent),u=c&&"undefined"==typeof SharedWorker,d=((()=>{const e=s.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)())},241:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(154);const i="newrelic";function a(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>u,Ze:()=>f,x3:()=>d});var n=r(241),i=r(836),a=r(606),s=r(860),o=r(646);const c={};function u(e,t){const r={staged:!1,priority:s.P3[t]||0};l(e),c[e].get(t)||c[e].set(t,r)}function d(e,t){e&&c[e]&&(c[e].get(t)&&c[e].delete(t),p(e,t,!1),c[e].size&&g(e))}function l(e){if(!e)throw new Error("agentIdentifier required");c[e]||(c[e]=new Map)}function f(e="",t="feature",r=!1){if(l(e),!e||!c[e].get(t)||r)return p(e,t);c[e].get(t).staged=!0,g(e)}function g(e){const t=Array.from(c[e]);t.every((([e,t])=>t.staged))&&(t.sort(((e,t)=>e[1].priority-t[1].priority)),t.forEach((([t])=>{c[e].delete(t),p(e,t)})))}function p(e,t,r=!0){const s=e?i.ee.get(e):i.ee,c=a.i.handlers;if(!s.aborted&&s.backlog&&c){if((0,n.W)({agentIdentifier:e,type:"lifecycle",name:"drain",feature:t}),r){const e=s.backlog[t],r=c[t];if(r){for(let t=0;e&&t<e.length;++t)m(e[t],r);Object.entries(r).forEach((([e,t])=>{Object.values(t||{}).forEach((t=>{t[0]?.on&&t[0]?.context()instanceof o.y&&t[0].on(e,t[1])}))}))}}s.isolatedBacklog||delete c[t],s.backlog[t]=null,s.emit("drain-"+t,[])}}function m(e,t){var r=e[1];Object.values(t[r]||{}).forEach((t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}}))}},836:(e,t,r)=>{"use strict";r.d(t,{P:()=>o,ee:()=>c});var n=r(384),i=r(990),a=r(646),s=r(607);const o="nr@context:".concat(s.W),c=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var o=g(n);m(e).forEach((e=>{e.apply(o,r)}));var u=v()[s[e]];u&&u.push([f,e,r,o]);return o},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach((([e,n])=>{s[n]=t,t in r||(r[t]=[])}))},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach((e=>{delete f.backlog[e]}))},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,o,(()=>new a.y(o))):new a.y(o)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c)},646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},606:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(908);a.on=s;var i=a.handlers={};function a(e,t,r,a){s(a||n.d,i,e,t,r)}function s(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var s=t[a]=t[a]||{};(s[r]=s[r]||[]).push([e,i])}},878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(566).bz)()},566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>o,bz:()=>s});var n=r(154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function s(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?a(t,r++).toString(16):"y"===e?(3&a()|8).toString(16):e)).join("")}function o(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const s=[];for(var o=0;o<e;o++)s.push(a(r,i++).toString(16));return s.join("")}},614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>s,H3:()=>n,g:()=>u,iL:()=>c,tS:()=>o,uh:()=>i,wk:()=>a});const n="NRBA",i="SESSION",a=144e5,s=18e5,o={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({agentIdentifier:null,drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},701:(e,t,r)=>{"use strict";r.d(t,{B:()=>a,t:()=>s});var n=r(241);const i=new Set,a={};function s(e,t){const r=t.agentIdentifier;a[r]??={},e&&"object"==typeof e&&(i.has(r)||(t.ee.emit("rumresp",[e]),a[r]=e,i.add(r),(0,n.W)({agentIdentifier:r,loaded:!0,drained:!0,type:"lifecycle",name:"load",feature:void 0,data:e})))}},990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout((()=>{i=clearTimeout(i)}),t)),n||(clearTimeout(i),i=setTimeout((()=>{e.apply(this,r)}),t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},910:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every((e=>{if(i.has(e))return i.get(e);const t="function"==typeof e&&e.toString().includes("[native code]");return t||(0,n.R)(64,e?.name||e?.toString()),i.set(e,t),t}))}},289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>a,Qr:()=>o,sB:()=>s});var n=r(878);function i(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(i())return e();(0,n.sp)("load",e,t)}function s(e){if(i())return e();(0,n.DD)("DOMContentLoaded",e)}function o(e){if(i())return e();(0,n.sp)("popstate",e)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>s,US:()=>d,Zm:()=>o,bQ:()=>u,dV:()=>c,pV:()=>l});var n=r(154),i=r(863),a=r(910);const s={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function o(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function c(){let e=o();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,a.i)(...Object.values(e.o))),e}function u(e,t){let r=o();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function d(e,t){o()[e]=t}function l(){return function(){let e=o();const t=e.info||{};e.info={beacon:s.beacon,errorBeacon:s.errorBeacon,...t}}(),function(){let e=o();const t=e.init||{};e.init={...t}}(),c(),function(){let e=o();const t=e.loader_config||{};e.loader_config={...t}}(),o()}},843:(e,t,r)=>{"use strict";r.d(t,{u:()=>i});var n=r(878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},773:(e,t,r)=>{"use strict";r.d(t,{z_:()=>a,XG:()=>o,TZ:()=>n,rs:()=>i,xV:()=>s});r(154),r(566),r(384);const n=r(860).K7.metrics,i="sm",a="cm",s="storeSupportabilityMetrics",o="storeEventMetrics"},630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},234:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(836),i=r(687);class a{constructor(e,t){this.agentIdentifier=e,this.ee=n.ee.get(e),this.featureName=t,this.blocked=!1}deregisterDrain(){(0,i.x3)(this.agentIdentifier,this.featureName)}}},741:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e){return this.#e(i.Dl,e)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(){return this.#e(i.dT)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}}},261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>u,BL:()=>o,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>h,Pl:()=>n,Tb:()=>l,U2:()=>a,V1:()=>k,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>s,nb:()=>m,o5:()=>d});const n="api-",i="addPageAction",a="addToTrace",s="addRelease",o="finished",c="interaction",u="log",d="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",m="setApplicationVersion",h="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",k="measure"},163:(e,t,r)=>{"use strict";r.d(t,{j:()=>E});var n=r(384),i=r(741);var a=r(555);r(860).K7.genericEvents;const s="experimental.marks",o="experimental.measures",c="experimental.resources",u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(614),l=r(944),f=r(122);const g="[data-nr-mask]",p=e=>(0,f.a)(e,(()=>{const e={feature_flags:[],experimental:{marks:!1,measures:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{allow_registered_children:!0,duplicate_registered_data:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{get capture_marks(){return e.feature_flags.includes(s)||e.experimental.marks},set capture_marks(t){e.experimental.marks=t},get capture_measures(){return e.feature_flags.includes(o)||e.experimental.measures},set capture_measures(t){e.experimental.measures=t},capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:d.wk,inactiveMs:d.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(g):""===t||null===t?e.mask_selector=g:(0,l.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},spa:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var m=r(154),h=r(324);let v=0;const b={buildEnv:h.F3,distMethod:h.Xs,version:h.xv,originTime:m.WN},y={appMetadata:{},customTransaction:void 0,denyList:void 0,disabled:!1,entityManager:void 0,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,jsAttributesMetadata:{bytes:0},get harvestCount(){return++v}},_=e=>{const t=(0,f.a)(e,y),r=Object.keys(b).reduce(((e,t)=>(e[t]={value:b[t],writable:!1,configurable:!0,enumerable:!0},e)),{});return Object.defineProperties(t,r)};var w=r(701);const x=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var k=r(836),S=r(241);const A={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},R=e=>(0,f.a)(e,A),T=new Set;function E(e,t={},r,s){let{init:o,info:c,loader_config:u,runtime:d={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();o=e.init,c=e.info,u=e.loader_config}e.init=p(o||{}),e.loader_config=R(u||{}),c.jsAttributes??={},m.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,a.D)(c);const f=e.init,g=[c.beacon,c.errorBeacon];T.has(e.agentIdentifier)||(f.proxy.assets&&(x(f.proxy.assets),g.push(f.proxy.assets)),f.proxy.beacon&&g.push(f.proxy.beacon),e.beacons=[...g],function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach((r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let a=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return a?a(...t):n})}))}(e),(0,n.US)("activatedFeatures",w.B),e.runSoftNavOverSpa&&=!0===f.soft_navigations.enabled&&f.feature_flags.includes("soft_nav")),d.denyList=[...f.ajax.deny_list||[],...f.ajax.block_internal?g:[]],d.ptid=e.agentIdentifier,d.loaderType=r,e.runtime=_(d),T.has(e.agentIdentifier)||(e.ee=k.ee.get(e.agentIdentifier),e.exposed=l,(0,S.W)({agentIdentifier:e.agentIdentifier,drained:!!w.B?.[e.agentIdentifier],type:"lifecycle",name:"initialize",feature:void 0,data:e.config})),T.add(e.agentIdentifier)}},374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>d,K7:()=>c,P3:()=>u,XX:()=>i,Yy:()=>o,df:()=>a,qY:()=>n,v4:()=>s});const n="events",i="jserrors",a="browser/blobs",s="rum",o="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},u={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.spa]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.softNav]:8,[c.sessionReplay]:9,[c.logging]:10,[c.genericEvents]:11},d={[c.pageViewEvent]:s,[c.pageViewTiming]:n,[c.ajax]:n,[c.spa]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:a,[c.sessionReplay]:a,[c.logging]:o,[c.genericEvents]:"ins"}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var a=n[e]={exports:{}};return r[e](a,a.exports,i),a.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>"nr-rum-1.299.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.299.0.PROD:",i.l=(r,n,a,s)=>{if(e[r])e[r].push(n);else{var o,c;if(void 0!==a)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+a){o=l;break}}if(!o){c=!0;var f={296:"sha512-Cf4g7HSlF25k7Y3Kh54Vv2lQCIMl4iCvEa3R0US+n+CQuBbcjtBcHtGr2djt8/7pt1L32vnhj1iUpm9RYqqslA=="};(o=document.createElement("script")).charset="utf-8",o.timeout=120,i.nc&&o.setAttribute("nonce",i.nc),o.setAttribute("data-webpack",t+a),o.src=r,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),f[s]&&(o.integrity=f[s])}e[r]=[n];var g=(t,n)=>{o.onerror=o.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],o.parentNode&&o.parentNode.removeChild(o),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=g.bind(null,o.onerror),o.onload=g.bind(null,o.onload),c&&document.head.appendChild(o)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var a=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=a);var s=i.p+i.u(t),o=new Error;i.l(s,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var a=r&&("load"===r.type?"missing":r.type),s=r&&r.target&&r.target.src;o.message="Loading chunk "+t+" failed.\n("+a+": "+s+")",o.name="ChunkLoadError",o.type=a,o.request=s,n[1](o)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,a,[s,o,c]=r,u=0;if(s.some((t=>0!==e[t]))){for(n in o)i.o(o,n)&&(i.m[n]=o[n]);if(c)c(i)}for(t&&t(r);u<s.length;u++)a=s[u],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},r=self["webpackChunk:NRBA-1.299.0.PROD"]=self["webpackChunk:NRBA-1.299.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(374);var e=i(566),t=i(741);class r extends t.W{agentIdentifier=(0,e.LA)(16)}var n=i(860);const a=Object.values(n.K7);var s=i(163);var o=i(908),c=i(863),u=i(261),d=i(241),l=i(944),f=i(701),g=i(773);function p(e,t,i,a){const s=a||i;!s||s[e]&&s[e]!==r.prototype[e]||(s[e]=function(){(0,o.p)(g.xV,["API/"+e+"/called"],void 0,n.K7.metrics,i.ee),(0,d.W)({agentIdentifier:i.agentIdentifier,drained:!!f.B?.[i.agentIdentifier],type:"data",name:"api",feature:u.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,l.R)(23,e)}})}function m(e,t,r,n,i){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(i||null===r)&&(0,o.p)(u.Pl+n,[(0,c.t)(),t,r],void 0,"session",e.ee)}var h=i(687),v=i(234),b=i(289),y=i(154),_=i(384);const w=e=>y.RI&&!0===e?.privacy.cookies_enabled;function x(e){return!!(0,_.dV)().o.MO&&w(e)&&!0===e?.session_trace.enabled}var k=i(389),S=i(699);class A extends v.W{constructor(e,t){super(e.agentIdentifier,t),this.agentRef=e,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise(((t,r)=>{this.ee.on("manual-start-all",(0,k.J)((()=>{(0,h.Ak)(e.agentIdentifier,this.featureName),t()})))})):(0,h.Ak)(e.agentIdentifier,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;let n;this.onAggregateImported=new Promise((e=>{n=e}));const a=async()=>{let a;await this.deferred;try{if(w(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,305));a=t(e)}}catch(e){(0,l.R)(20,e),this.ee.emit("internal-error",[e]),(0,o.p)(S.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#t(this.featureName,a,e.init))return(0,h.Ze)(this.agentIdentifier,this.featureName),void n(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),n(!0)}catch(e){(0,l.R)(34,e),this.abortHandler?.(),(0,h.Ze)(this.agentIdentifier,this.featureName,!0),n(!1),this.ee&&this.ee.abort()}};y.RI?(0,b.GG)((()=>a()),!0):a()}#t(e,t,r){if(this.blocked)return!1;switch(e){case n.K7.sessionReplay:return x(r)&&!!t;case n.K7.sessionTrace:return!!t;default:return!0}}}var R=i(630),T=i(614);class E extends A{static featureName=R.T;constructor(e){var t;super(e,R.T),this.setupInspectionEvents(e.agentIdentifier),t=e,p(u.Fw,(function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,o.p)(u.Pl+u.Fw,[(0,c.t)()],void 0,void 0,t.ee))}),t),this.ee.on("api-send-rum",((e,t)=>(0,o.p)("send-rum",[e,t],void 0,this.featureName,this.ee))),this.importAggregator(e,(()=>i.e(296).then(i.bind(i,108))))}setupInspectionEvents(e){const t=(t,r)=>{t&&(0,d.W)({agentIdentifier:e,timeStamp:t.timeStamp,loaded:"complete"===t.target.readyState,type:"window",name:r,data:t.target.location+""})};(0,b.sB)((e=>{t(e,"DOMContentLoaded")})),(0,b.GG)((e=>{t(e,"load")})),(0,b.Qr)((e=>{t(e,"navigate")})),this.ee.on(T.tS.UPDATE,((t,r)=>{(0,d.W)({agentIdentifier:e,type:"lifecycle",name:"session",data:r})}))}}var N=i(843),I=i(878),j=i(782);class O extends A{static featureName=j.T;constructor(e){super(e,j.T),y.RI&&((0,N.u)((()=>(0,o.p)("docHidden",[(0,c.t)()],void 0,j.T,this.ee)),!0),(0,I.sp)("pagehide",(()=>(0,o.p)("winPagehide",[(0,c.t)()],void 0,j.T,this.ee))),this.importAggregator(e,(()=>i.e(296).then(i.bind(i,350)))))}}class P extends A{static featureName=g.TZ;constructor(e){super(e,g.TZ),y.RI&&document.addEventListener("securitypolicyviolation",(e=>{(0,o.p)(g.xV,["Generic/CSPViolation/Detected"],void 0,this.featureName,this.ee)})),this.importAggregator(e,(()=>i.e(296).then(i.bind(i,623))))}}new class extends r{constructor(e){var t;(super(),y.gm)?(this.features={},(0,_.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(E),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===n.K7.softNav)),(0,s.j)(this,e,e.loaderType||"agent"),t=this,p(u.cD,(function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return m(t,e,r,u.cD,n);(0,l.R)(40,typeof r)}else(0,l.R)(39,typeof e)}),t),function(e){p(u.Dl,(function(t){if("string"==typeof t||null===t)return m(e,"enduser.id",t,u.Dl,!0);(0,l.R)(41,typeof t)}),e)}(this),function(e){p(u.nb,(function(t){if("string"==typeof t||null===t)return m(e,"application.version",t,u.nb,!1);(0,l.R)(42,typeof t)}),e)}(this),function(e){p(u.d3,(function(){e.ee.emit("manual-start-all")}),e)}(this),this.run()):(0,l.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return a.forEach((r=>{t[r]=!!e[r]?.enabled})),t}(this.init),t=[...this.desiredFeatures];t.sort(((e,t)=>n.P3[e.featureName]-n.P3[t.featureName])),t.forEach((t=>{if(!e[t.featureName]&&t.featureName!==n.K7.pageViewEvent)return;if(this.runSoftNavOverSpa&&t.featureName===n.K7.spa)return;if(!this.runSoftNavOverSpa&&t.featureName===n.K7.softNav)return;const r=function(e){switch(e){case n.K7.ajax:return[n.K7.jserrors];case n.K7.sessionTrace:return[n.K7.ajax,n.K7.pageViewEvent];case n.K7.sessionReplay:return[n.K7.sessionTrace];case n.K7.pageViewTiming:return[n.K7.pageViewEvent];default:return[]}}(t.featureName).filter((e=>!(e in this.features)));r.length>0&&(0,l.R)(36,{targetFeature:t.featureName,missingDependencies:r}),this.features[t.featureName]=new t(this)}))}catch(e){(0,l.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,_.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}({features:[E,O,P],loaderType:"lite"})})()})();</script>
+	<meta charset="UTF-8">
 	<meta name="theme-color" content="#231F20">
 
 			<meta name="msvalidate.01" content="9E5C74811CA48CCCC61A2CF3C0A1BA6A">
@@ -490,7 +489,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 
 				
 
-				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"11","weatherprec":0.25,"weathercode":"26","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
+				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"12","weatherprec":1.52,"weathercode":"26","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
 		</script>
 			<script>
 				// Load the APS JavaScript Library
@@ -578,13 +577,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					</a>
 				</li>
 							<li class="c-trendingTopics__item">
-					<a href="https://globalnews.ca/news/11480593/diane-keaton-cause-of-death/" class="c-trendingTopics__link l-header__button c-headerButton">
-						<span>Diane Keaton</span>
+					<a href="https://globalnews.ca/news/11481250/shannon-kobylarczyk-fired-call-ice-dodgers-fan-video/" class="c-trendingTopics__link l-header__button c-headerButton">
+						<span>ICE</span>
 					</a>
 				</li>
 							<li class="c-trendingTopics__item">
-					<a href="https://globalnews.ca/news/11481250/shannon-kobylarczyk-fired-call-ice-dodgers-fan-video/" class="c-trendingTopics__link l-header__button c-headerButton">
-						<span>ICE</span>
+					<a href="https://globalnews.ca/news/11482442/gtha-condo-market-35-year-low/" class="c-trendingTopics__link l-header__button c-headerButton">
+						<span>Condos</span>
 					</a>
 				</li>
 							<li class="c-trendingTopics__item">
@@ -1551,7 +1550,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 									The Liberal government split its border security bill this month, hoping to pass some measures quickly and give more time for scrutiny of more controversial ones.									</div>
 																<div class="c-posts__about c-posts__about--multiple">
 																		<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
+																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">4 hours</div>
 																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
 																	</div>
 														</div>
@@ -1581,7 +1580,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			</div>
 								<div class="c-posts__about c-posts__about--multiple">
 																<div class="c-posts__info c-posts__info--highlight">Health</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">6 hours</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">8 hours</div>
 																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">6 min read</div>
 															</div>
 						</div>
@@ -1661,33 +1660,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-2"
-	data-post-id="11480793"
+	data-post-id="11480756"
 	data-slide-index=""
-	data-caption="Bail reform targeting violent crime coming next week, Carney says"
+	data-caption="&#8216;I have had enough&#8217;: Britney Spears responds to Kevin Federline allegations"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11480793/bail-reform-violent-crime-carney/"
+		href="https://globalnews.ca/news/11480756/britney-spears-responds-kevin-federline-memoir-allegations/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/Carney-bail-reform.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2022/08/GettyImages-134676700-e1659970778516.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="481" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/Carney-bail-reform.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/Carney-bail-reform.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/Carney-bail-reform.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2022/08/GettyImages-134676700-e1659970778516.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2022/08/GettyImages-134676700-e1659970778516.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2022/08/GettyImages-134676700-e1659970778516.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Bail reform targeting violent crime coming next week, Carney says" data-title>Bail reform targeting violent crime coming next week, Carney says</span>
+					<span class="c-posts__headlineText" title="&#8216;I have had enough&#8217;: Britney Spears responds to Kevin Federline allegations" data-title>&#8216;I have had enough&#8217;: Britney Spears responds to Kevin Federline allegations</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Entertainment</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Oct 16</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1749,39 +1748,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-4"
-	data-post-id="11480756"
-	data-slide-index=""
-	data-caption="&#8216;I have had enough&#8217;: Britney Spears responds to Kevin Federline allegations"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11480756/britney-spears-responds-kevin-federline-memoir-allegations/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2022/08/GettyImages-134676700-e1659970778516.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="481" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2022/08/GettyImages-134676700-e1659970778516.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2022/08/GettyImages-134676700-e1659970778516.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2022/08/GettyImages-134676700-e1659970778516.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="&#8216;I have had enough&#8217;: Britney Spears responds to Kevin Federline allegations" data-title>&#8216;I have had enough&#8217;: Britney Spears responds to Kevin Federline allegations</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Entertainment</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Oct 16</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-5"
 	data-post-id="11481594"
 	data-slide-index=""
 	data-caption="Canada&#8217;s first pre-charge Indigenous diversion program launches"
@@ -1789,7 +1755,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11481594/canada-first-pre-charge-indigenous-diversion-program-launches/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -1814,34 +1780,67 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-6"
-	data-post-id="11482491"
+	data-container-id="stories-item-5"
+	data-post-id="11482415"
 	data-slide-index=""
-	data-caption="China willing to restart dialogue with Canada in Beijing, minister says"
+	data-caption="RCMP covered up Trudeau-era scandals, Poilievre alleges"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11482491/canada-china-foreign-ministers-meeting-beijing/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
+		href="https://globalnews.ca/news/11482415/rcmp-covered-up-trudeau-era-scandals-poilievre/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
 			>
 			
-		<div class="c-posts__media "  >
+		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/08/Anita-Anand.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/Poilievre-RCMP.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=499 data-ratio=0.67									loading="lazy"
+								width="720" height="499" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/08/Anita-Anand.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/08/Anita-Anand.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/08/Anita-Anand.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/Poilievre-RCMP.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/Poilievre-RCMP.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/Poilievre-RCMP.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="China willing to restart dialogue with Canada in Beijing, minister says" data-title>China willing to restart dialogue with Canada in Beijing, minister says</span>
+					<span class="c-posts__headlineText" title="RCMP covered up Trudeau-era scandals, Poilievre alleges" data-title>RCMP covered up Trudeau-era scandals, Poilievre alleges</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">14 mins</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">4 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-6"
+	data-post-id="11480908"
+	data-slide-index=""
+	data-caption="Volunteer group joins search for missing Nova Scotia siblings Lilly and Jack Sullivan"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11480908/volunteer-group-joins-search-for-missing-nova-scotia-siblings-lilly-and-jack-sullivan/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/3cec34b8e8b0dc171070f55e4b3523ce1738920d4fcb534e955d25490a647f13.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="454" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/3cec34b8e8b0dc171070f55e4b3523ce1738920d4fcb534e955d25490a647f13.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/3cec34b8e8b0dc171070f55e4b3523ce1738920d4fcb534e955d25490a647f13.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/3cec34b8e8b0dc171070f55e4b3523ce1738920d4fcb534e955d25490a647f13.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Volunteer group joins search for missing Nova Scotia siblings Lilly and Jack Sullivan" data-title>Volunteer group joins search for missing Nova Scotia siblings Lilly and Jack Sullivan</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Oct 16</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1870,72 +1869,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-7"
-	data-post-id="11482442"
-	data-slide-index=""
-	data-caption="GTHA condo market falls to 35-year low, report shows"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11482442/gtha-condo-market-35-year-low/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/Toronto-Condominiums.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/Toronto-Condominiums.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/Toronto-Condominiums.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/Toronto-Condominiums.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="GTHA condo market falls to 35-year low, report shows" data-title>GTHA condo market falls to 35-year low, report shows</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">42 mins</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-8"
-	data-post-id="11480908"
-	data-slide-index=""
-	data-caption="Volunteer group joins search for missing Nova Scotia siblings Lilly and Jack Sullivan"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11480908/volunteer-group-joins-search-for-missing-nova-scotia-siblings-lilly-and-jack-sullivan/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/3cec34b8e8b0dc171070f55e4b3523ce1738920d4fcb534e955d25490a647f13.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="454" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/3cec34b8e8b0dc171070f55e4b3523ce1738920d4fcb534e955d25490a647f13.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/3cec34b8e8b0dc171070f55e4b3523ce1738920d4fcb534e955d25490a647f13.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/3cec34b8e8b0dc171070f55e4b3523ce1738920d4fcb534e955d25490a647f13.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Volunteer group joins search for missing Nova Scotia siblings Lilly and Jack Sullivan" data-title>Volunteer group joins search for missing Nova Scotia siblings Lilly and Jack Sullivan</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Oct 16</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-9"
 	data-post-id="11482328"
 	data-slide-index=""
 	data-caption="Toronto Blue Jays topple Seattle Mariners 8-2 to even ALCS at 2-2"
@@ -1943,7 +1876,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11482328/blue-jays-look-to-take-series-lead-in-game-5/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1961,88 +1894,22 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Sports</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">5 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">7 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
 														</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-10"
-	data-post-id="11480810"
-	data-slide-index=""
-	data-caption="Carney says &#8216;time to talk&#8217; with U.S. as Ford calls for tariff retaliation"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11480810/donald-trump-tariffs-carney-retaliation-ford-talks/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/4528db7ef238e86e24f0501a41ef5c3becd432bc4d963e3d76994a487f770179.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="470" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/4528db7ef238e86e24f0501a41ef5c3becd432bc4d963e3d76994a487f770179.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/4528db7ef238e86e24f0501a41ef5c3becd432bc4d963e3d76994a487f770179.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/4528db7ef238e86e24f0501a41ef5c3becd432bc4d963e3d76994a487f770179.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Carney says &#8216;time to talk&#8217; with U.S. as Ford calls for tariff retaliation" data-title>Carney says &#8216;time to talk&#8217; with U.S. as Ford calls for tariff retaliation</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Oct 16</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    is-hidden"
-	data-container-id="stories-item-11"
-	data-post-id="11482415"
-	data-slide-index=""
-	data-caption="RCMP covered up Trudeau-era scandals, Poilievre alleges"
-		data-ad-fallback=false>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11482415/rcmp-covered-up-trudeau-era-scandals-poilievre/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/Poilievre-RCMP.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=499 data-ratio=0.67									loading="lazy"
-								width="720" height="499" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/Poilievre-RCMP.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/Poilievre-RCMP.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/Poilievre-RCMP.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="RCMP covered up Trudeau-era scandals, Poilievre alleges" data-title>RCMP covered up Trudeau-era scandals, Poilievre alleges</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    is-hidden"
-	data-container-id="stories-item-12"
+	data-container-id="stories-item-8"
 	data-post-id="11482407"
 	data-slide-index=""
 	data-caption="CRA says it’s on track to meet call centre targets by deadline"
-		data-ad-fallback=false>
+		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11482407/canada-revenue-agency-call-center-delays-progress/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:11}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -2060,6 +1927,138 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">4 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-9"
+	data-post-id="11482686"
+	data-slide-index=""
+	data-caption="John Bolton pleads not guilty, says charges are Trump intimidation effort"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11482686/john-bolton-indictment-not-guilty/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/CP175171764-e1760716218274.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/CP175171764-e1760716218274.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/CP175171764-e1760716218274.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/CP175171764-e1760716218274.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="John Bolton pleads not guilty, says charges are Trump intimidation effort" data-title>John Bolton pleads not guilty, says charges are Trump intimidation effort</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>U.S. News</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">12 mins</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-10"
+	data-post-id="11481107"
+	data-slide-index=""
+	data-caption="Stellantis vowed to fill Brampton plant with new auto model: Carney"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11481107/stellantis-jeep-production-move-carney/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/8e3081763c90566b8a5882fa16b8ce5896e87a2ccde10f901aed91c1728185b7_bc8fc2.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=503 data-ratio=0.67									loading="lazy"
+								width="720" height="503" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/8e3081763c90566b8a5882fa16b8ce5896e87a2ccde10f901aed91c1728185b7_bc8fc2.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/8e3081763c90566b8a5882fa16b8ce5896e87a2ccde10f901aed91c1728185b7_bc8fc2.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/8e3081763c90566b8a5882fa16b8ce5896e87a2ccde10f901aed91c1728185b7_bc8fc2.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Stellantis vowed to fill Brampton plant with new auto model: Carney" data-title>Stellantis vowed to fill Brampton plant with new auto model: Carney</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Economy</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Oct 16</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    is-hidden"
+	data-container-id="stories-item-11"
+	data-post-id="11482608"
+	data-slide-index=""
+	data-caption="Forward Julian Reese signs with Toronto Raptors"
+		data-ad-fallback=false>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11482608/forward-julian-reese-signs-with-toronto-raptors/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/f55fd638145ab21d692f54e369d16ed79645a53dd7e89cc75bc86f14a7c47c46.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/f55fd638145ab21d692f54e369d16ed79645a53dd7e89cc75bc86f14a7c47c46.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/f55fd638145ab21d692f54e369d16ed79645a53dd7e89cc75bc86f14a7c47c46.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/f55fd638145ab21d692f54e369d16ed79645a53dd7e89cc75bc86f14a7c47c46.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Forward Julian Reese signs with Toronto Raptors" data-title>Forward Julian Reese signs with Toronto Raptors</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Sports</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">1 hour</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    is-hidden"
+	data-container-id="stories-item-12"
+	data-post-id="11482562"
+	data-slide-index=""
+	data-caption="Trump now says his 100% tariff on China &#8216;not sustainable&#8217;"
+		data-ad-fallback=false>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11482562/trump-100-tariff-on-china-not-sustainable/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:11}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/Trump-China-tariff.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/Trump-China-tariff.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/Trump-China-tariff.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/Trump-China-tariff.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Trump now says his 100% tariff on China &#8216;not sustainable&#8217;" data-title>Trump now says his 100% tariff on China &#8216;not sustainable&#8217;</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Economy</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
@@ -2184,7 +2183,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Woman fired after threatening to &#8216;call ICE&#8217; on Dodgers fan during playoff game" data-title>Woman fired after threatening to &#8216;call ICE&#8217; on Dodgers fan during playoff game</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">19,312</span>
+							<span class="c-posts__info c-posts__info--highlight">27,789</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2214,7 +2213,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Diane Keaton&#8217;s cause of death revealed by family" data-title>Diane Keaton&#8217;s cause of death revealed by family</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">12,087</span>
+							<span class="c-posts__info c-posts__info--highlight">15,070</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2244,7 +2243,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Canadians have visa-free access to more countries than Americans: report" data-title>Canadians have visa-free access to more countries than Americans: report</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">7,233</span>
+							<span class="c-posts__info c-posts__info--highlight">11,025</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2274,7 +2273,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Bail reform targeting violent crime coming next week, Carney says" data-title>Bail reform targeting violent crime coming next week, Carney says</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">4,857</span>
+							<span class="c-posts__info c-posts__info--highlight">5,952</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2304,7 +2303,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="&#8216;I have had enough&#8217;: Britney Spears responds to Kevin Federline allegations" data-title>&#8216;I have had enough&#8217;: Britney Spears responds to Kevin Federline allegations</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">3,642</span>
+							<span class="c-posts__info c-posts__info--highlight">5,722</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2401,7 +2400,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Woman fired after threatening to &#8216;call ICE&#8217; on Dodgers fan during playoff game" data-title>Woman fired after threatening to &#8216;call ICE&#8217; on Dodgers fan during playoff game</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">19,312</span>
+							<span class="c-posts__info c-posts__info--highlight">27,789</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2431,7 +2430,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Diane Keaton&#8217;s cause of death revealed by family" data-title>Diane Keaton&#8217;s cause of death revealed by family</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">12,087</span>
+							<span class="c-posts__info c-posts__info--highlight">15,070</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2461,7 +2460,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Canadians have visa-free access to more countries than Americans: report" data-title>Canadians have visa-free access to more countries than Americans: report</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">7,233</span>
+							<span class="c-posts__info c-posts__info--highlight">11,025</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2491,7 +2490,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Bail reform targeting violent crime coming next week, Carney says" data-title>Bail reform targeting violent crime coming next week, Carney says</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">4,857</span>
+							<span class="c-posts__info c-posts__info--highlight">5,952</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2521,7 +2520,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="&#8216;I have had enough&#8217;: Britney Spears responds to Kevin Federline allegations" data-title>&#8216;I have had enough&#8217;: Britney Spears responds to Kevin Federline allegations</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">3,642</span>
+							<span class="c-posts__info c-posts__info--highlight">5,722</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2922,22 +2921,22 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer"
-			data-displayinline-video-id="11480741"
+			data-displayinline-video-id="11481965"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11480741,11481965,11295662,11473240,11477180,11480741/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fmystrh0e9b-x5bp1vms3z%2FTMS_THURSDAY_ENTERTAINMENT_STILL.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
-    		    			data-displayinline-playlist="11480741,11481965,11295662,11473240,11477180,11480741"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11481965,11295662,11480741,11477180,11480741,11481391/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fbptejf5s9s-uwj9b94vaq%2F6P-SAMUEL-BIRD-FOUND.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
+    		    			data-displayinline-playlist="11481965,11295662,11480741,11477180,11480741,11481391"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Diane Keaton&#8217;s cause of death revealed'"
+						alt="Click to play video: 'Remains of missing Edmonton teen Samuel Bird found as murder charge laid'"
 						width="640"
 						height="360"
-													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/mystrh0e9b-x5bp1vms3z/TMS_THURSDAY_ENTERTAINMENT_STILL.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/bptejf5s9s-uwj9b94vaq/6P-SAMUEL-BIRD-FOUND.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/mystrh0e9b-x5bp1vms3z/TMS_THURSDAY_ENTERTAINMENT_STILL.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/mystrh0e9b-x5bp1vms3z/TMS_THURSDAY_ENTERTAINMENT_STILL.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/mystrh0e9b-x5bp1vms3z/TMS_THURSDAY_ENTERTAINMENT_STILL.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
+								data-srcset="https://i2.wp.com/media.globalnews.ca/videostatic/news/bptejf5s9s-uwj9b94vaq/6P-SAMUEL-BIRD-FOUND.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i2.wp.com/media.globalnews.ca/videostatic/news/bptejf5s9s-uwj9b94vaq/6P-SAMUEL-BIRD-FOUND.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i2.wp.com/media.globalnews.ca/videostatic/news/bptejf5s9s-uwj9b94vaq/6P-SAMUEL-BIRD-FOUND.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -2947,20 +2946,20 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">4:00</time>
-																									<span class="c-video__title">Diane Keaton&#8217;s cause of death revealed</span>
+																	<time class="c-video__duration">2:58</time>
+																									<span class="c-video__title">Remains of missing Edmonton teen Samuel Bird found as murder charge laid</span>
 															</div>
 						</span>
 											</span>
 				</div>
 							</div>
 								<div class="l-videoCarousel__sidebar">
-													<a href="https://globalnews.ca/video/11480741/diane-keatons-cause-of-death-revealed/" class="l-videoCarousel__details">
-							<div class="l-videoCarousel__info">Entertainment</div>
+													<a href="https://globalnews.ca/video/11481965/remains-of-missing-edmonton-teen-samuel-bird-found-as-murder-charge-laid/" class="l-videoCarousel__details">
+							<div class="l-videoCarousel__info">Crime</div>
 								<div class="l-videoCarousel__fullTitle">
-								Diane Keaton&#8217;s cause of death revealed								</div>
+								Remains of missing Edmonton teen Samuel Bird found as murder charge laid								</div>
 								<div class="l-videoCarousel__description">
-								Pneumonia claimed Diane Keaton&#039;s life, and in an online address, the Keaton family thanked the fans for their love and support during this time. Also - in an SNL spoof that featured the team behind the scenes, Sabrina Carpenter previews the show with a reference to Sex and the City&#039;s Carrie Bradshaw. JLO reveals her favorite on-screen kiss while playing Plead the Fifth on Andy Cohen to promote &#039;Kiss of the Spiderwoman.&#039;								</div>
+								Edmonton police have charged a man with second-degree murder in the death of a 14-year-old boy who disappeared in June. As Kabi Moulitharan explains, the remains of Samuel Bird were found in a rural area outside the city.								</div>
 						</a>
 								<div class="c-ad c-ad--bigbox c-ad--dark l-videoCarousel__ad">							<div class="c-ad__label">Advertisement</div>
 			
@@ -2987,40 +2986,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-carousel__track glide__track" data-glide-el="track">
 						<ul class="c-posts c-posts--video c-posts--tile c-posts--horizontal c-posts--inverted glide__slides">
 							
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Diane Keaton&#8217;s cause of death revealed" data-slide-index="0">
-	<a href="https://globalnews.ca/video/11480741/diane-keatons-cause-of-death-revealed/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11480741"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11480741,11481965,11295662,11473240,11477180,11480741/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11480741,11481965,11295662,11473240,11477180,11480741"
-			data-video-carousel-label="Entertainment"
-			data-video-carousel-content="Pneumonia claimed Diane Keaton&#039;s life, and in an online address, the Keaton family thanked the fans for their love and support during this time. Also - in an SNL spoof that featured the team behind the scenes, Sabrina Carpenter previews the show with a reference to Sex and the City&#039;s Carrie Bradshaw. JLO reveals her favorite on-screen kiss while playing Plead the Fifth on Andy Cohen to promote &#039;Kiss of the Spiderwoman.&#039;"
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/mystrh0e9b-x5bp1vms3z/TMS_THURSDAY_ENTERTAINMENT_STILL.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Diane Keaton&#8217;s cause of death revealed</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Remains of missing Edmonton teen Samuel Bird found as murder charge laid" data-slide-index="1">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Remains of missing Edmonton teen Samuel Bird found as murder charge laid" data-slide-index="0">
 	<a href="https://globalnews.ca/video/11481965/remains-of-missing-edmonton-teen-samuel-bird-found-as-murder-charge-laid/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11481965"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11481965,11295662,11473240,11477180,11480741,11480741/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11481965,11295662,11473240,11477180,11480741,11480741"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11481965,11295662,11480741,11477180,11480741,11481391/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11481965,11295662,11480741,11477180,11480741,11481391"
 			data-video-carousel-label="Crime"
 			data-video-carousel-content="Edmonton police have charged a man with second-degree murder in the death of a 14-year-old boy who disappeared in June. As Kabi Moulitharan explains, the remains of Samuel Bird were found in a rural area outside the city."
 			>
@@ -3041,13 +3013,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Pitt Meadows housing complex on edge after series of break-ins" data-slide-index="2">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Pitt Meadows housing complex on edge after series of break-ins" data-slide-index="1">
 	<a href="https://globalnews.ca/video/11295662/pitt-meadows-housing-complex-on-edge-after-series-of-break-ins/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11295662"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11295662,11473240,11477180,11480741,11480741,11481965/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11295662,11473240,11477180,11480741,11480741,11481965"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11295662,11480741,11477180,11480741,11481391,11481965/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11295662,11480741,11477180,11480741,11481391,11481965"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="Residents of a Pitt Meadows housing complex are being extra vigilant, keeping a watchful eye on their neighbours and community. That&#039;s after two separate break and enters earlier this week, as the homeowners slept in their beds. Alissa Thibault reports."
 			>
@@ -3068,18 +3040,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Call of the Wilde: Canadiens season begins" data-slide-index="3">
-	<a href="https://globalnews.ca/video/11473240/call-of-the-wilde-canadiens-season-begins/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Diane Keaton&#8217;s cause of death revealed" data-slide-index="2">
+	<a href="https://globalnews.ca/video/11480741/diane-keatons-cause-of-death-revealed/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11473240"
+					data-video-id="11480741"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11473240,11477180,11480741,11480741,11481965,11295662/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11473240,11477180,11480741,11480741,11481965,11295662"
-			data-video-carousel-label="News"
-			data-video-carousel-content="As another Habs season begins, Global News Morning is happy to welcome back Global News hockey analyst Brian Wilde with the Call of the Wilde. He joins host Laura Casella every Friday at 6:50 a.m."
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11480741,11477180,11480741,11481391,11481965,11295662/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11480741,11477180,11480741,11481391,11481965,11295662"
+			data-video-carousel-label="Entertainment"
+			data-video-carousel-content="Pneumonia claimed Diane Keaton&#039;s life, and in an online address, the Keaton family thanked the fans for their love and support during this time. Also - in an SNL spoof that featured the team behind the scenes, Sabrina Carpenter previews the show with a reference to Sex and the City&#039;s Carrie Bradshaw. JLO reveals her favorite on-screen kiss while playing Plead the Fifth on Andy Cohen to promote &#039;Kiss of the Spiderwoman.&#039;"
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/r25f31itm9-iueosvi0kr/CALL_OF_THE_WILDE_OCT_10.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/mystrh0e9b-x5bp1vms3z/TMS_THURSDAY_ENTERTAINMENT_STILL.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -3088,20 +3060,20 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>
 		<div class="l-videoCarousel__details c-posts__details">
 							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">News</div>
+					<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Call of the Wilde: Canadiens season begins</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Diane Keaton&#8217;s cause of death revealed</span></div>
 					</div>
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Canada Post mail delivery resumes after union launches rotating strike, but what does that mean?" data-slide-index="4">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Canada Post mail delivery resumes after union launches rotating strike, but what does that mean?" data-slide-index="3">
 	<a href="https://globalnews.ca/video/11477180/canada-post-mail-delivery-resumes-after-union-launches-rotating-strike-but-what-does-that-mean/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11477180"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11477180,11480741,11480741,11481965,11295662,11473240/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11477180,11480741,11480741,11481965,11295662,11473240"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11477180,11480741,11481391,11481965,11295662,11480741/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11477180,11480741,11481391,11481965,11295662,11480741"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="There&#039;s still no renewed collective agreement, but after more than two weeks of nationwide job action, Canada Post workers have decided to go back to work – at least partially. Explaining what a rotating strike means for your mail, Jaden Lee-Lincon reports from a Canada Post plant in Toronto."
 			>
@@ -3122,13 +3094,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Diane Keaton&#8217;s cause of death revealed" data-slide-index="5">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Diane Keaton&#8217;s cause of death revealed" data-slide-index="4">
 	<a href="https://globalnews.ca/video/11480741/diane-keatons-cause-of-death-revealed/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11480741"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11480741,11480741,11481965,11295662,11473240,11477180/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11480741,11480741,11481965,11295662,11473240,11477180"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11480741,11481391,11481965,11295662,11480741,11477180/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11480741,11481391,11481965,11295662,11480741,11477180"
 			data-video-carousel-label="Entertainment"
 			data-video-carousel-content="Pneumonia claimed Diane Keaton&#039;s life, and in an online address, the Keaton family thanked the fans for their love and support during this time. Also - in an SNL spoof that featured the team behind the scenes, Sabrina Carpenter previews the show with a reference to Sex and the City&#039;s Carrie Bradshaw. JLO reveals her favorite on-screen kiss while playing Plead the Fifth on Andy Cohen to promote &#039;Kiss of the Spiderwoman.&#039;"
 			>
@@ -3145,6 +3117,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
 				</div>
 						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Diane Keaton&#8217;s cause of death revealed</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Canadian government set to introduce bail reform for violent criminals" data-slide-index="5">
+	<a href="https://globalnews.ca/video/11481391/canadian-government-set-to-introduce-bail-reform-for-violent-criminals/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11481391"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11481391,11481965,11295662,11480741,11477180,11480741/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11481391,11481965,11295662,11480741,11477180,11480741"
+			data-video-carousel-label="Canada"
+			data-video-carousel-content="Canada&#039;s federal government will propose bail reform legislation aimed at cracking down on violent crime and repeat offenders, Canadian Prime Minister Mark Carney said Thursday. The legislation will also include consecutive sentencing for major crimes and restrict conditional sentencing for a number of sexual offences."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/1thwu5eda2-b58elm3x4w/ONLINE_STILL_CARNEY_BAIL_REFORM.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Canadian government set to introduce bail reform for violent criminals</span></div>
 					</div>
 	</a>
 </li>
@@ -3182,17 +3181,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11481965"
+			data-displayinline-player-id="home-miniplayer_11295662"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11481965,11295662,11473240,11477180,11480741/#autoplay&#038;stickyiframe=home-miniplayer_11481965"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11295662,11480741,11477180,11480741,11481391/#autoplay&#038;stickyiframe=home-miniplayer_11295662"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/bptejf5s9s-uwj9b94vaq/6P-SAMUEL-BIRD-FOUND.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/7y2ggm9814-yzqhqdznzo/WEBPIC_THIBAULT_0719.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Remains of missing Edmonton teen Samuel Bird found as murder charge laid'"
+					alt="Click to play video 'Pitt Meadows housing complex on edge after series of break-ins'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3201,11 +3200,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11481965/remains-of-missing-edmonton-teen-samuel-bird-found-as-murder-charge-laid/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11295662/pitt-meadows-housing-complex-on-edge-after-series-of-break-ins/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Crime</div>
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Remains of missing Edmonton teen Samuel Bird found as murder charge laid</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Pitt Meadows housing complex on edge after series of break-ins</span></div>
 		</a>
 	</div>
 </li>
@@ -3236,17 +3235,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11295662"
+			data-displayinline-player-id="home-miniplayer_11480741"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11295662,11473240,11477180,11480741,11481965/#autoplay&#038;stickyiframe=home-miniplayer_11295662"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11480741,11477180,11480741,11481391,11295662/#autoplay&#038;stickyiframe=home-miniplayer_11480741"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/7y2ggm9814-yzqhqdznzo/WEBPIC_THIBAULT_0719.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/mystrh0e9b-x5bp1vms3z/TMS_THURSDAY_ENTERTAINMENT_STILL.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Pitt Meadows housing complex on edge after series of break-ins'"
+					alt="Click to play video 'Diane Keaton&#8217;s cause of death revealed'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3255,43 +3254,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11295662/pitt-meadows-housing-complex-on-edge-after-series-of-break-ins/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11480741/diane-keatons-cause-of-death-revealed/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+					<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Pitt Meadows housing complex on edge after series of break-ins</span></div>
-		</a>
-	</div>
-</li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11473240"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11473240,11477180,11480741,11481965,11295662/#autoplay&#038;stickyiframe=home-miniplayer_11473240"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/r25f31itm9-iueosvi0kr/CALL_OF_THE_WILDE_OCT_10.jpg?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Call of the Wilde: Canadiens season begins'"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/11473240/call-of-the-wilde-canadiens-season-begins/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">News</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Call of the Wilde: Canadiens season begins</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Diane Keaton&#8217;s cause of death revealed</span></div>
 		</a>
 	</div>
 </li>
@@ -3302,7 +3269,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11477180"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11477180,11480741,11481965,11295662,11473240/#autoplay&#038;stickyiframe=home-miniplayer_11477180"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11477180,11480741,11481391,11295662,11480741/#autoplay&#038;stickyiframe=home-miniplayer_11477180"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3327,6 +3294,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</div>
 </li>
+
+<li class="c-posts__item">
+	<div class="c-posts__inner">
+		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
+			data-displayinline-type="video"
+			data-displayinline-player-id="home-miniplayer_11480741"
+			data-displayinline-ratio="16:9"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11480741,11481391,11295662,11480741,11477180/#autoplay&#038;stickyiframe=home-miniplayer_11480741"
+			data-displayinline-sticky="true"
+			data-displayinline-expand="true">
+			<div class="c-video__placeholder">
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/mystrh0e9b-x5bp1vms3z/TMS_THURSDAY_ENTERTAINMENT_STILL.jpg?w=384&#038;quality=70&#038;strip=all"
+					width="236"
+					height="133"
+					class="c-posts__thumbnail c-video__image"
+					alt="Click to play video 'Diane Keaton&#8217;s cause of death revealed'"
+					loading="lazy" />
+				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+			</div>
+		</a>
+		<a href="https://globalnews.ca/video/11480741/diane-keatons-cause-of-death-revealed/" class="c-posts__details">
+				<div class="c-posts__about">
+					<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
+				</div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Diane Keaton&#8217;s cause of death revealed</span></div>
+		</a>
+	</div>
+</li>
 	</ul>
 	
 	</section>
@@ -3345,22 +3344,22 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant"
-			data-displayinline-video-id="11482481"
+			data-displayinline-video-id="11482704"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11482481,11480741,11482037,11481391,11481575/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fpfwei5rfxr-znp330hzib%2FONLINE_STILL_UNDOCUMENTED_WORKERS.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
-    		    			data-displayinline-playlist="11482481,11480741,11482037,11481391,11481575"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11482704,11480741,11482481,11482037,11481974/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fabiwg9jqye-10m8zfgdpo%2FTMS_FRIDAY_ENTERTAINMENT_STILL.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
+    		    			data-displayinline-playlist="11482704,11480741,11482481,11482037,11481974"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: '4 undocumented workers identified at Calgary’s event centre site: CBSA'"
+						alt="Click to play video: '‘I have had enough’: Britney Spears responds to Kevin Federline allegations'"
 						width="640"
 						height="360"
-													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/pfwei5rfxr-znp330hzib/ONLINE_STILL_UNDOCUMENTED_WORKERS.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/abiwg9jqye-10m8zfgdpo/TMS_FRIDAY_ENTERTAINMENT_STILL.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/pfwei5rfxr-znp330hzib/ONLINE_STILL_UNDOCUMENTED_WORKERS.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/pfwei5rfxr-znp330hzib/ONLINE_STILL_UNDOCUMENTED_WORKERS.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/pfwei5rfxr-znp330hzib/ONLINE_STILL_UNDOCUMENTED_WORKERS.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
+								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/abiwg9jqye-10m8zfgdpo/TMS_FRIDAY_ENTERTAINMENT_STILL.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/abiwg9jqye-10m8zfgdpo/TMS_FRIDAY_ENTERTAINMENT_STILL.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/abiwg9jqye-10m8zfgdpo/TMS_FRIDAY_ENTERTAINMENT_STILL.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -3370,20 +3369,20 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">2:11</time>
-																									<span class="c-video__title">4 undocumented workers identified at Calgary’s event centre site: CBSA</span>
+																	<time class="c-video__duration">4:21</time>
+																									<span class="c-video__title">‘I have had enough’: Britney Spears responds to Kevin Federline allegations</span>
 															</div>
 						</span>
 											</span>
 				</div>
 							</div>
 								<div class="l-videoCarousel__sidebar">
-													<a href="https://globalnews.ca/video/11482481/4-undocumented-workers-identified-at-calgarys-event-centre-site-cbsa/" class="l-videoCarousel__details">
-							<div class="l-videoCarousel__info">Canada</div>
+													<a href="https://globalnews.ca/video/11482704/i-have-had-enough-britney-spears-responds-to-kevin-federline-allegations/" class="l-videoCarousel__details">
+							<div class="l-videoCarousel__info">Entertainment</div>
 								<div class="l-videoCarousel__fullTitle">
-								4 undocumented workers identified at Calgary’s event centre site: CBSA								</div>
+								‘I have had enough’: Britney Spears responds to Kevin Federline allegations								</div>
 								<div class="l-videoCarousel__description">
-								The Canada Border Services Agency confirmed four individuals without documentation were identified at the worksite of Calgary&#039;s event centre project.  It&#039;s raised concerns for experts, who say trafficking of undocumented workers on job sites is “not a secret” in Alberta.  Adam MacVicar reports. 								</div>
+								Britney Spears is speaking out against claims made by her ex-husband, Kevin Federline, after he publicly expressed concerns about her mental health. Over the past week, Federline has been discussing his upcoming memoir, You Thought You Knew, and his concerns for Spears. Federline and Spears were married from 2004 to 2007 and share two sons, Sean Preston Federline, 20, and Jayden James Federline, 19. Also: Al Pacino has posted an emotional tribute to his dear friend, Diane Keaton. The legendary actor writes, “Diane was my partner.” 								</div>
 						</a>
 								<div class="c-ad c-ad--bigbox c-ad--dark l-videoCarousel__ad">							<div class="c-ad__label">Advertisement</div>
 			
@@ -3410,18 +3409,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-carousel__track glide__track" data-glide-el="track">
 						<ul class="c-posts c-posts--video c-posts--tile c-posts--horizontal c-posts--inverted glide__slides">
 							
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="4 undocumented workers identified at Calgary’s event centre site: CBSA" data-slide-index="0">
-	<a href="https://globalnews.ca/video/11482481/4-undocumented-workers-identified-at-calgarys-event-centre-site-cbsa/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="‘I have had enough’: Britney Spears responds to Kevin Federline allegations" data-slide-index="0">
+	<a href="https://globalnews.ca/video/11482704/i-have-had-enough-britney-spears-responds-to-kevin-federline-allegations/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11482481"
+					data-video-id="11482704"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11482481,11480741,11482037,11481391,11481575/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11482481,11480741,11482037,11481391,11481575"
-			data-video-carousel-label="Canada"
-			data-video-carousel-content="The Canada Border Services Agency confirmed four individuals without documentation were identified at the worksite of Calgary&#039;s event centre project.  It&#039;s raised concerns for experts, who say trafficking of undocumented workers on job sites is “not a secret” in Alberta.  Adam MacVicar reports. "
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11482704,11480741,11482481,11482037,11481974/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11482704,11480741,11482481,11482037,11481974"
+			data-video-carousel-label="Entertainment"
+			data-video-carousel-content="Britney Spears is speaking out against claims made by her ex-husband, Kevin Federline, after he publicly expressed concerns about her mental health. Over the past week, Federline has been discussing his upcoming memoir, You Thought You Knew, and his concerns for Spears. Federline and Spears were married from 2004 to 2007 and share two sons, Sean Preston Federline, 20, and Jayden James Federline, 19. Also: Al Pacino has posted an emotional tribute to his dear friend, Diane Keaton. The legendary actor writes, “Diane was my partner.” "
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/pfwei5rfxr-znp330hzib/ONLINE_STILL_UNDOCUMENTED_WORKERS.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/abiwg9jqye-10m8zfgdpo/TMS_FRIDAY_ENTERTAINMENT_STILL.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -3430,9 +3429,9 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>
 		<div class="l-videoCarousel__details c-posts__details">
 							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+					<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">4 undocumented workers identified at Calgary’s event centre site: CBSA</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">‘I have had enough’: Britney Spears responds to Kevin Federline allegations</span></div>
 					</div>
 	</a>
 </li>
@@ -3442,8 +3441,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11480741"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11480741,11482037,11481391,11481575,11482481/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11480741,11482037,11481391,11481575,11482481"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11480741,11482481,11482037,11481974,11482704/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11480741,11482481,11482037,11481974,11482704"
 			data-video-carousel-label="Entertainment"
 			data-video-carousel-content="Pneumonia claimed Diane Keaton&#039;s life, and in an online address, the Keaton family thanked the fans for their love and support during this time. Also - in an SNL spoof that featured the team behind the scenes, Sabrina Carpenter previews the show with a reference to Sex and the City&#039;s Carrie Bradshaw. JLO reveals her favorite on-screen kiss while playing Plead the Fifth on Andy Cohen to promote &#039;Kiss of the Spiderwoman.&#039;"
 			>
@@ -3464,13 +3463,40 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="What is Trump trying to achieve in Venezuela?" data-slide-index="2">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="4 undocumented workers identified at Calgary’s event centre site: CBSA" data-slide-index="2">
+	<a href="https://globalnews.ca/video/11482481/4-undocumented-workers-identified-at-calgarys-event-centre-site-cbsa/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11482481"
+			data-video-player-id="home-miniplayer-variant"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11482481,11482037,11481974,11482704,11480741/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11482481,11482037,11481974,11482704,11480741"
+			data-video-carousel-label="Canada"
+			data-video-carousel-content="The Canada Border Services Agency confirmed four individuals without documentation were identified at the worksite of Calgary&#039;s event centre project.  It&#039;s raised concerns for experts, who say trafficking of undocumented workers on job sites is “not a secret” in Alberta.  Adam MacVicar reports. "
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/pfwei5rfxr-znp330hzib/ONLINE_STILL_UNDOCUMENTED_WORKERS.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">4 undocumented workers identified at Calgary’s event centre site: CBSA</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="What is Trump trying to achieve in Venezuela?" data-slide-index="3">
 	<a href="https://globalnews.ca/video/11482037/what-is-trump-trying-to-achieve-in-venezuela/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11482037"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11482037,11481391,11481575,11482481,11480741/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11482037,11481391,11481575,11482481,11480741"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11482037,11481974,11482704,11480741,11482481/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11482037,11481974,11482704,11480741,11482481"
 			data-video-carousel-label="Politics"
 			data-video-carousel-content="U.S. President Donald Trump is ramping up pressure on Venezuela by authorizing the Central Intelligence Agency (CIA) to conduct covert operations inside the country. Jackson Proskow looks at what Trump is trying to achieve in Venezuela, what it could mean down the road, and what&#039;s still unclear."
 			>
@@ -3491,18 +3517,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Canadian government set to introduce bail reform for violent criminals" data-slide-index="3">
-	<a href="https://globalnews.ca/video/11481391/canadian-government-set-to-introduce-bail-reform-for-violent-criminals/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Kiss lead guitarist Ace Frehley dies at 74" data-slide-index="4">
+	<a href="https://globalnews.ca/video/11481974/kiss-lead-guitarist-ace-frehley-dies-at-74/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11481391"
+					data-video-id="11481974"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11481391,11481575,11482481,11480741,11482037/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11481391,11481575,11482481,11480741,11482037"
-			data-video-carousel-label="Canada"
-			data-video-carousel-content="Canada&#039;s federal government will propose bail reform legislation aimed at cracking down on violent crime and repeat offenders, Canadian Prime Minister Mark Carney said Thursday. The legislation will also include consecutive sentencing for major crimes and restrict conditional sentencing for a number of sexual offences."
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11481974,11482704,11480741,11482481,11482037/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11481974,11482704,11480741,11482481,11482037"
+			data-video-carousel-label="Entertainment"
+			data-video-carousel-content="Ace Frehley, the lead guitarist of the rock band Kiss and a member of the Rock and Roll Hall of Fame, died Thursday at age 74 from injuries sustained in a fall last month."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/1thwu5eda2-b58elm3x4w/ONLINE_STILL_CARNEY_BAIL_REFORM.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/746nwt17dx-43yezx5lcf/KISS_SITE.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -3511,38 +3537,9 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>
 		<div class="l-videoCarousel__details c-posts__details">
 							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+					<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Canadian government set to introduce bail reform for violent criminals</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Orthopedic surgeon for the Toronto Blue Jays talks common MLB injuries" data-slide-index="4">
-	<a href="https://globalnews.ca/video/11481575/orthopedic-surgeon-for-the-toronto-blue-jays-talks-common-mlb-injuries/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11481575"
-			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11481575,11482481,11480741,11482037,11481391/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11481575,11482481,11480741,11482037,11481391"
-			data-video-carousel-label="Health"
-			data-video-carousel-content="With the Toronto Blue Jays doing everything they can to advance... you might wonder the toll the sport takes on a player&#039;s body. 
-Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon to talk about the big injuries that can happen on the diamond. 
-"
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/egi4sjaetk-u8oszb5utu/MLB_INJURIES_PKG_PIC.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Health</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Orthopedic surgeon for the Toronto Blue Jays talks common MLB injuries</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Kiss lead guitarist Ace Frehley dies at 74</span></div>
 					</div>
 	</a>
 </li>
@@ -3582,7 +3579,7 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant_11480741"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11480741,11482037,11481391,11481575/#autoplay&#038;stickyiframe=home-miniplayer-variant_11480741"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11480741,11482481,11482037,11481974/#autoplay&#038;stickyiframe=home-miniplayer-variant_11480741"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3634,9 +3631,41 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
+			data-displayinline-player-id="home-miniplayer-variant_11482481"
+			data-displayinline-ratio="16:9"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11482481,11482037,11481974,11480741/#autoplay&#038;stickyiframe=home-miniplayer-variant_11482481"
+			data-displayinline-sticky="true"
+			data-displayinline-expand="true">
+			<div class="c-video__placeholder">
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/pfwei5rfxr-znp330hzib/ONLINE_STILL_UNDOCUMENTED_WORKERS.jpg?w=384&#038;quality=70&#038;strip=all"
+					width="236"
+					height="133"
+					class="c-posts__thumbnail c-video__image"
+					alt="Click to play video '4 undocumented workers identified at Calgary’s event centre site: CBSA'"
+					loading="lazy" />
+				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+			</div>
+		</a>
+		<a href="https://globalnews.ca/video/11482481/4-undocumented-workers-identified-at-calgarys-event-centre-site-cbsa/" class="c-posts__details">
+				<div class="c-posts__about">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">4 undocumented workers identified at Calgary’s event centre site: CBSA</span></div>
+		</a>
+	</div>
+</li>
+
+<li class="c-posts__item">
+	<div class="c-posts__inner">
+		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
+			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant_11482037"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11482037,11481391,11481575,11480741/#autoplay&#038;stickyiframe=home-miniplayer-variant_11482037"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11482037,11481974,11480741,11482481/#autoplay&#038;stickyiframe=home-miniplayer-variant_11482037"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3666,17 +3695,17 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11481391"
+			data-displayinline-player-id="home-miniplayer-variant_11481974"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11481391,11481575,11480741,11482037/#autoplay&#038;stickyiframe=home-miniplayer-variant_11481391"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11481974,11480741,11482481,11482037/#autoplay&#038;stickyiframe=home-miniplayer-variant_11481974"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/1thwu5eda2-b58elm3x4w/ONLINE_STILL_CARNEY_BAIL_REFORM.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/746nwt17dx-43yezx5lcf/KISS_SITE.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Canadian government set to introduce bail reform for violent criminals'"
+					alt="Click to play video 'Kiss lead guitarist Ace Frehley dies at 74'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3685,43 +3714,11 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11481391/canadian-government-set-to-introduce-bail-reform-for-violent-criminals/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11481974/kiss-lead-guitarist-ace-frehley-dies-at-74/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+					<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Canadian government set to introduce bail reform for violent criminals</span></div>
-		</a>
-	</div>
-</li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11481575"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11481575,11480741,11482037,11481391/#autoplay&#038;stickyiframe=home-miniplayer-variant_11481575"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/egi4sjaetk-u8oszb5utu/MLB_INJURIES_PKG_PIC.jpg?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Orthopedic surgeon for the Toronto Blue Jays talks common MLB injuries'"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/11481575/orthopedic-surgeon-for-the-toronto-blue-jays-talks-common-mlb-injuries/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Health</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Orthopedic surgeon for the Toronto Blue Jays talks common MLB injuries</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Kiss lead guitarist Ace Frehley dies at 74</span></div>
 		</a>
 	</div>
 </li>
@@ -3786,12 +3783,44 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 					>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11482337"
+				data-sophi-feature=latest-news			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11482337/blue-jays-fervour-pushes-school-night-bedtimes/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Blue Jays fervour pushes school night bedtimes" data-title>Blue Jays fervour pushes school night bedtimes</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						By the time Blue Jays fan Suzanne Jangda and her two kids arrived at school Thursday morning the yard was empty and students were already inside. They were late. 						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Sports</div>
+																						<div class="c-posts__info">6 hours</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/7831b728903963cbe25fd3b2fa8b95aa43d28e0d2cb48b829263a1cfe42d7509.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/7831b728903963cbe25fd3b2fa8b95aa43d28e0d2cb48b829263a1cfe42d7509.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/7831b728903963cbe25fd3b2fa8b95aa43d28e0d2cb48b829263a1cfe42d7509.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/7831b728903963cbe25fd3b2fa8b95aa43d28e0d2cb48b829263a1cfe42d7509.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
 				data-post-id="11481118"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11481118/alaska-airlines-woman-arrested-assault/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3818,33 +3847,33 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11481606"
+				data-post-id="11482442"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
-					href="https://globalnews.ca/news/11481606/john-bolton-indictment-classified-info-trump/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
+					href="https://globalnews.ca/news/11482442/gtha-condo-market-35-year-low/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Ex-Trump advisor John Bolton charged with mishandling classified info" data-title>Ex-Trump advisor John Bolton charged with mishandling classified info</span>
+					<span class="c-posts__headlineText" title="GTHA condo market falls to 35-year low, report shows" data-title>GTHA condo market falls to 35-year low, report shows</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						The indictment of Bolton, Trump&#039;s former national security advisor who became a fierce critic, comes shortly after separate indictments of Trump&#039;s political adversaries.						</div>
+						Only 319 units were sold in July, August and September, down 54 per cent compared with the same period last year and 92 per cent below the 10-year average for this time of year.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
-																						<div class="c-posts__info">Oct 16</div>
+															<div class="c-posts__info c-posts__info--highlight">Canada</div>
+																						<div class="c-posts__info">3 hours</div>
 													</div>
 					</div>
 					
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2024/10/CP162341571.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/Toronto-Condominiums.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
 								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2024/10/CP162341571.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2024/10/CP162341571.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2024/10/CP162341571.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/Toronto-Condominiums.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/Toronto-Condominiums.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/Toronto-Condominiums.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -3855,7 +3884,7 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11481786/ace-frehley-kiss-band-dead/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3882,12 +3911,44 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11482361"
+				data-sophi-feature=latest-news			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11482361/provincial-federal-health-ministers-meeting-calgary/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Provincial health ministers want funding commitment out of federal meeting in Calgary" data-title>Provincial health ministers want funding commitment out of federal meeting in Calgary</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						Alberta minister Adriana LaGrange says provinces and territories are facing increased demands on their health-care systems and the federal government needs to step up its support.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Health</div>
+																						<div class="c-posts__info">5 hours</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/143bb1a457442a62d3f02adb58e38e4453b2542df3dae74fc9a44ebfab9b0458.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=508 data-ratio=0.67									loading="lazy"
+								width="720" height="508" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/143bb1a457442a62d3f02adb58e38e4453b2542df3dae74fc9a44ebfab9b0458.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/143bb1a457442a62d3f02adb58e38e4453b2542df3dae74fc9a44ebfab9b0458.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/143bb1a457442a62d3f02adb58e38e4453b2542df3dae74fc9a44ebfab9b0458.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
 				data-post-id="11481442"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11481442/amazon-unionization-quebec-discussed-by-management/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3914,129 +3975,65 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11481160"
+				data-post-id="11481560"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
-					href="https://globalnews.ca/news/11481160/carter-hart-vegas-golden-knights/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Carter Hart joins Vegas, 1st of acquitted world junior players to land NHL deal" data-title>Carter Hart joins Vegas, 1st of acquitted world junior players to land NHL deal</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						Goaltender Carter Hart, one of five members of Canada&#039;s 2018 world junior team recently acquitted following a sexual assault trial, is joining the Vegas Golden Knights.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Sports</div>
-																						<div class="c-posts__info">Oct 16</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/76474a0bf93ee89eb38d3b8fe2a87d380ec4bb087e7d14c2b9bd4fde2f927629.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/76474a0bf93ee89eb38d3b8fe2a87d380ec4bb087e7d14c2b9bd4fde2f927629.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/76474a0bf93ee89eb38d3b8fe2a87d380ec4bb087e7d14c2b9bd4fde2f927629.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/76474a0bf93ee89eb38d3b8fe2a87d380ec4bb087e7d14c2b9bd4fde2f927629.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11482337"
-				data-sophi-feature=latest-news			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11482337/blue-jays-fervour-pushes-school-night-bedtimes/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Blue Jays fervour pushes school night bedtimes" data-title>Blue Jays fervour pushes school night bedtimes</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						By the time Blue Jays fan Suzanne Jangda and her two kids arrived at school Thursday morning the yard was empty and students were already inside. They were late. 						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Sports</div>
-																						<div class="c-posts__info">4 hours</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/7831b728903963cbe25fd3b2fa8b95aa43d28e0d2cb48b829263a1cfe42d7509.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/7831b728903963cbe25fd3b2fa8b95aa43d28e0d2cb48b829263a1cfe42d7509.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/7831b728903963cbe25fd3b2fa8b95aa43d28e0d2cb48b829263a1cfe42d7509.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/7831b728903963cbe25fd3b2fa8b95aa43d28e0d2cb48b829263a1cfe42d7509.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11481107"
-				data-sophi-feature=latest-news			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11481107/stellantis-jeep-production-move-carney/"
+					href="https://globalnews.ca/news/11481560/gen-z-protests-world/"
 					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Stellantis vowed to fill Brampton plant with new auto model: Carney" data-title>Stellantis vowed to fill Brampton plant with new auto model: Carney</span>
+					<span class="c-posts__headlineText" title="Why Gen Z-led protests are spreading globally: &#8216;Fighting the same battle&#8217;" data-title>Why Gen Z-led protests are spreading globally: &#8216;Fighting the same battle&#8217;</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						Carney said Stellantis&#039; CEO told him that a decision on producing a vehicle in Brampton would be dependent on the finalization of a renewed free trade deal with the United States.						</div>
+						From the Andes to the Himalayas, a new wave of protests is unfolding across the world, driven by generational discontent against governments and anger among young people.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Economy</div>
+															<div class="c-posts__info c-posts__info--highlight">World</div>
 																						<div class="c-posts__info">Oct 16</div>
 													</div>
 					</div>
 					
-		<div class="c-posts__media  c-imageContainer"  >
+		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/8e3081763c90566b8a5882fa16b8ce5896e87a2ccde10f901aed91c1728185b7_bc8fc2.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=503 data-ratio=0.67									loading="lazy"
-								width="720" height="503" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/CP175157987-e1760647689623.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/8e3081763c90566b8a5882fa16b8ce5896e87a2ccde10f901aed91c1728185b7_bc8fc2.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/8e3081763c90566b8a5882fa16b8ce5896e87a2ccde10f901aed91c1728185b7_bc8fc2.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/8e3081763c90566b8a5882fa16b8ce5896e87a2ccde10f901aed91c1728185b7_bc8fc2.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/CP175157987-e1760647689623.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/CP175157987-e1760647689623.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/CP175157987-e1760647689623.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11480687"
+				data-post-id="11480810"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
-					href="https://globalnews.ca/news/11480687/crea-september-housing-sales/"
+					href="https://globalnews.ca/news/11480810/donald-trump-tariffs-carney-retaliation-ford-talks/"
 					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:8}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="No recovery yet as housing sales in Canada decline in September" data-title>No recovery yet as housing sales in Canada decline in September</span>
+					<span class="c-posts__headlineText" title="Carney says &#8216;time to talk&#8217; with U.S. as Ford calls for tariff retaliation" data-title>Carney says &#8216;time to talk&#8217; with U.S. as Ford calls for tariff retaliation</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						Compared with August, home sales in Canada declined by 1.7 per cent, marking the first monthly decline since April, the Canadian Real Estate Association said Thursday.						</div>
+						Mark Carney was speaking in Toronto ahead of a scheduled meeting with Ontario Premier Doug Ford, who has called on the federal government to hit back against U.S. tariffs.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
 															<div class="c-posts__info c-posts__info--highlight">Canada</div>
 																						<div class="c-posts__info">Oct 16</div>
 													</div>
 					</div>
 					
-		<div class="c-posts__media  c-imageContainer"  >
+		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/CREA-September-sales.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=521 data-ratio=0.67									loading="lazy"
-								width="720" height="521" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/4528db7ef238e86e24f0501a41ef5c3becd432bc4d963e3d76994a487f770179.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="470" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/CREA-September-sales.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/CREA-September-sales.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/CREA-September-sales.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/4528db7ef238e86e24f0501a41ef5c3becd432bc4d963e3d76994a487f770179.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/4528db7ef238e86e24f0501a41ef5c3becd432bc4d963e3d76994a487f770179.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/4528db7ef238e86e24f0501a41ef5c3becd432bc4d963e3d76994a487f770179.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -4117,22 +4114,22 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-playlist-miniplayer"
-			data-displayinline-video-id="11480741"
+			data-displayinline-video-id="11481965"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11480741,11481965,11295662,11473240,11477180/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fmystrh0e9b-x5bp1vms3z%2FTMS_THURSDAY_ENTERTAINMENT_STILL.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
-    		    			data-displayinline-playlist="11480741,11481965,11295662,11473240,11477180"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11481965,11295662,11480741,11477180,11480741/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fbptejf5s9s-uwj9b94vaq%2F6P-SAMUEL-BIRD-FOUND.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
+    		    			data-displayinline-playlist="11481965,11295662,11480741,11477180,11480741"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Diane Keaton&#8217;s cause of death revealed'"
+						alt="Click to play video: 'Remains of missing Edmonton teen Samuel Bird found as murder charge laid'"
 						width="640"
 						height="360"
-													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/mystrh0e9b-x5bp1vms3z/TMS_THURSDAY_ENTERTAINMENT_STILL.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/bptejf5s9s-uwj9b94vaq/6P-SAMUEL-BIRD-FOUND.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/mystrh0e9b-x5bp1vms3z/TMS_THURSDAY_ENTERTAINMENT_STILL.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/mystrh0e9b-x5bp1vms3z/TMS_THURSDAY_ENTERTAINMENT_STILL.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/mystrh0e9b-x5bp1vms3z/TMS_THURSDAY_ENTERTAINMENT_STILL.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
+								data-srcset="https://i2.wp.com/media.globalnews.ca/videostatic/news/bptejf5s9s-uwj9b94vaq/6P-SAMUEL-BIRD-FOUND.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i2.wp.com/media.globalnews.ca/videostatic/news/bptejf5s9s-uwj9b94vaq/6P-SAMUEL-BIRD-FOUND.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i2.wp.com/media.globalnews.ca/videostatic/news/bptejf5s9s-uwj9b94vaq/6P-SAMUEL-BIRD-FOUND.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -4142,8 +4139,8 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">4:00</time>
-																									<span class="c-video__title">Diane Keaton&#8217;s cause of death revealed</span>
+																	<time class="c-video__duration">2:58</time>
+																									<span class="c-video__title">Remains of missing Edmonton teen Samuel Bird found as murder charge laid</span>
 															</div>
 						</span>
 											</span>
@@ -4159,23 +4156,23 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="1"
 	>
-	<a href="https://globalnews.ca/video/11480741/diane-keatons-cause-of-death-revealed/"
-		title="Diane Keaton&#8217;s cause of death revealed"
+	<a href="https://globalnews.ca/video/11481965/remains-of-missing-edmonton-teen-samuel-bird-found-as-murder-charge-laid/"
+		title="Remains of missing Edmonton teen Samuel Bird found as murder charge laid"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11480741"
-		data-video-label="Entertainment"
+		data-video-id="11481965"
+		data-video-label="Crime"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11480741,11481965,11295662,11473240,11477180/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11481965,11295662,11480741,11477180,11480741/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Diane Keaton&#8217;s cause of death revealed</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Remains of missing Edmonton teen Samuel Bird found as murder charge laid</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Entertainment					</div>
+						Crime					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/mystrh0e9b-x5bp1vms3z/TMS_THURSDAY_ENTERTAINMENT_STILL.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/bptejf5s9s-uwj9b94vaq/6P-SAMUEL-BIRD-FOUND.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -4187,34 +4184,6 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="2"
 	>
-	<a href="https://globalnews.ca/video/11481965/remains-of-missing-edmonton-teen-samuel-bird-found-as-murder-charge-laid/"
-		title="Remains of missing Edmonton teen Samuel Bird found as murder charge laid"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11481965"
-		data-video-label="Crime"
-		data-video-player-id="home-playlist-miniplayer"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11481965,11295662,11473240,11477180/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Remains of missing Edmonton teen Samuel Bird found as murder charge laid</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Crime					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/bptejf5s9s-uwj9b94vaq/6P-SAMUEL-BIRD-FOUND.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="3"
-	>
 	<a href="https://globalnews.ca/video/11295662/pitt-meadows-housing-complex-on-edge-after-series-of-break-ins/"
 		title="Pitt Meadows housing complex on edge after series of break-ins"
 		class="l-playlist__link c-posts__inner c-videoPlay"
@@ -4222,7 +4191,7 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11295662,11473240,11477180,11481965/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11295662,11480741,11477180,11480741/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Pitt Meadows housing complex on edge after series of break-ins</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4241,25 +4210,53 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 	</a>
 </li>
 <li class="c-posts__item l-playlist__item"
-			data-playlist-index="4"
+			data-playlist-index="3"
 	>
-	<a href="https://globalnews.ca/video/11473240/call-of-the-wilde-canadiens-season-begins/"
-		title="Call of the Wilde: Canadiens season begins"
+	<a href="https://globalnews.ca/video/11480741/diane-keatons-cause-of-death-revealed/"
+		title="Diane Keaton&#8217;s cause of death revealed"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11473240"
-		data-video-label="News"
+		data-video-id="11480741"
+		data-video-label="Entertainment"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11473240,11477180,11481965,11295662/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11480741,11477180,11480741,11295662/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Call of the Wilde: Canadiens season begins</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Diane Keaton&#8217;s cause of death revealed</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						News					</div>
+						Entertainment					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/r25f31itm9-iueosvi0kr/CALL_OF_THE_WILDE_OCT_10.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/mystrh0e9b-x5bp1vms3z/TMS_THURSDAY_ENTERTAINMENT_STILL.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="4"
+	>
+	<a href="https://globalnews.ca/video/11477180/canada-post-mail-delivery-resumes-after-union-launches-rotating-strike-but-what-does-that-mean/"
+		title="Canada Post mail delivery resumes after union launches rotating strike, but what does that mean?"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11477180"
+		data-video-label="Canada"
+		data-video-player-id="home-playlist-miniplayer"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11477180,11480741,11295662,11480741/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Canada Post mail delivery resumes after union launches rotating strike, but what does that mean?</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						Canada					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/xuuj7bcy0e-kfr9e851h3/CANADA_POST_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -4271,23 +4268,23 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="5"
 	>
-	<a href="https://globalnews.ca/video/11477180/canada-post-mail-delivery-resumes-after-union-launches-rotating-strike-but-what-does-that-mean/"
-		title="Canada Post mail delivery resumes after union launches rotating strike, but what does that mean?"
+	<a href="https://globalnews.ca/video/11480741/diane-keatons-cause-of-death-revealed/"
+		title="Diane Keaton&#8217;s cause of death revealed"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11477180"
-		data-video-label="Canada"
+		data-video-id="11480741"
+		data-video-label="Entertainment"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11477180,11481965,11295662,11473240/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11480741,11295662,11480741,11477180/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Canada Post mail delivery resumes after union launches rotating strike, but what does that mean?</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Diane Keaton&#8217;s cause of death revealed</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
+						Entertainment					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/xuuj7bcy0e-kfr9e851h3/CANADA_POST_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/mystrh0e9b-x5bp1vms3z/TMS_THURSDAY_ENTERTAINMENT_STILL.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -4312,22 +4309,22 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-playlist-miniplayer-variant"
-			data-displayinline-video-id="11482481"
+			data-displayinline-video-id="11482704"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11482481,11480741,11482037,11481391,11481575/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fpfwei5rfxr-znp330hzib%2FONLINE_STILL_UNDOCUMENTED_WORKERS.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
-    		    			data-displayinline-playlist="11482481,11480741,11482037,11481391,11481575"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11482704,11480741,11482481,11482037,11481974/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fabiwg9jqye-10m8zfgdpo%2FTMS_FRIDAY_ENTERTAINMENT_STILL.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
+    		    			data-displayinline-playlist="11482704,11480741,11482481,11482037,11481974"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: '4 undocumented workers identified at Calgary’s event centre site: CBSA'"
+						alt="Click to play video: '‘I have had enough’: Britney Spears responds to Kevin Federline allegations'"
 						width="640"
 						height="360"
-													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/pfwei5rfxr-znp330hzib/ONLINE_STILL_UNDOCUMENTED_WORKERS.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/abiwg9jqye-10m8zfgdpo/TMS_FRIDAY_ENTERTAINMENT_STILL.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/pfwei5rfxr-znp330hzib/ONLINE_STILL_UNDOCUMENTED_WORKERS.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/pfwei5rfxr-znp330hzib/ONLINE_STILL_UNDOCUMENTED_WORKERS.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/pfwei5rfxr-znp330hzib/ONLINE_STILL_UNDOCUMENTED_WORKERS.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
+								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/abiwg9jqye-10m8zfgdpo/TMS_FRIDAY_ENTERTAINMENT_STILL.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/abiwg9jqye-10m8zfgdpo/TMS_FRIDAY_ENTERTAINMENT_STILL.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/abiwg9jqye-10m8zfgdpo/TMS_FRIDAY_ENTERTAINMENT_STILL.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -4337,8 +4334,8 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">2:11</time>
-																									<span class="c-video__title">4 undocumented workers identified at Calgary’s event centre site: CBSA</span>
+																	<time class="c-video__duration">4:21</time>
+																									<span class="c-video__title">‘I have had enough’: Britney Spears responds to Kevin Federline allegations</span>
 															</div>
 						</span>
 											</span>
@@ -4354,23 +4351,23 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="1"
 	>
-	<a href="https://globalnews.ca/video/11482481/4-undocumented-workers-identified-at-calgarys-event-centre-site-cbsa/"
-		title="4 undocumented workers identified at Calgary’s event centre site: CBSA"
+	<a href="https://globalnews.ca/video/11482704/i-have-had-enough-britney-spears-responds-to-kevin-federline-allegations/"
+		title="‘I have had enough’: Britney Spears responds to Kevin Federline allegations"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11482481"
-		data-video-label="Canada"
+		data-video-id="11482704"
+		data-video-label="Entertainment"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11482481,11480741,11482037,11481391,11481575/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11482704,11480741,11482481,11482037,11481974/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">4 undocumented workers identified at Calgary’s event centre site: CBSA</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">‘I have had enough’: Britney Spears responds to Kevin Federline allegations</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
+						Entertainment					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/pfwei5rfxr-znp330hzib/ONLINE_STILL_UNDOCUMENTED_WORKERS.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/abiwg9jqye-10m8zfgdpo/TMS_FRIDAY_ENTERTAINMENT_STILL.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -4389,7 +4386,7 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 		data-video-label="Entertainment"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11480741,11482037,11481391,11481575/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11480741,11482481,11482037,11481974/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Diane Keaton&#8217;s cause of death revealed</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4410,6 +4407,34 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="3"
 	>
+	<a href="https://globalnews.ca/video/11482481/4-undocumented-workers-identified-at-calgarys-event-centre-site-cbsa/"
+		title="4 undocumented workers identified at Calgary’s event centre site: CBSA"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11482481"
+		data-video-label="Canada"
+		data-video-player-id="home-playlist-miniplayer-variant"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11482481,11482037,11481974,11480741/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">4 undocumented workers identified at Calgary’s event centre site: CBSA</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						Canada					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/pfwei5rfxr-znp330hzib/ONLINE_STILL_UNDOCUMENTED_WORKERS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="4"
+	>
 	<a href="https://globalnews.ca/video/11482037/what-is-trump-trying-to-achieve-in-venezuela/"
 		title="What is Trump trying to achieve in Venezuela?"
 		class="l-playlist__link c-posts__inner c-videoPlay"
@@ -4417,7 +4442,7 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 		data-video-label="Politics"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11482037,11481391,11481575,11480741/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11482037,11481974,11480741,11482481/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">What is Trump trying to achieve in Venezuela?</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4436,53 +4461,25 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 	</a>
 </li>
 <li class="c-posts__item l-playlist__item"
-			data-playlist-index="4"
-	>
-	<a href="https://globalnews.ca/video/11481391/canadian-government-set-to-introduce-bail-reform-for-violent-criminals/"
-		title="Canadian government set to introduce bail reform for violent criminals"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11481391"
-		data-video-label="Canada"
-		data-video-player-id="home-playlist-miniplayer-variant"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11481391,11481575,11480741,11482037/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Canadian government set to introduce bail reform for violent criminals</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/1thwu5eda2-b58elm3x4w/ONLINE_STILL_CARNEY_BAIL_REFORM.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
 			data-playlist-index="5"
 	>
-	<a href="https://globalnews.ca/video/11481575/orthopedic-surgeon-for-the-toronto-blue-jays-talks-common-mlb-injuries/"
-		title="Orthopedic surgeon for the Toronto Blue Jays talks common MLB injuries"
+	<a href="https://globalnews.ca/video/11481974/kiss-lead-guitarist-ace-frehley-dies-at-74/"
+		title="Kiss lead guitarist Ace Frehley dies at 74"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11481575"
-		data-video-label="Health"
+		data-video-id="11481974"
+		data-video-label="Entertainment"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11481575,11480741,11482037,11481391/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11481974,11480741,11482481,11482037/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Orthopedic surgeon for the Toronto Blue Jays talks common MLB injuries</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Kiss lead guitarist Ace Frehley dies at 74</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Health					</div>
+						Entertainment					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/egi4sjaetk-u8oszb5utu/MLB_INJURIES_PKG_PIC.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/746nwt17dx-43yezx5lcf/KISS_SITE.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -4956,31 +4953,31 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 			data-num-posts=3											>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-27"
-	data-post-id="11481560"
+	data-post-id="11482491"
 	data-slide-index=""
-	data-caption="Why Gen Z-led protests are spreading globally: &#8216;Fighting the same battle&#8217;"
+	data-caption="China willing to restart dialogue with Canada in Beijing, minister says"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11481560/gen-z-protests-world/"
+		href="https://globalnews.ca/news/11482491/canada-china-foreign-ministers-meeting-beijing/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/CP175157987-e1760647689623.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/08/Anita-Anand.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
 								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/CP175157987-e1760647689623.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/CP175157987-e1760647689623.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/CP175157987-e1760647689623.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/08/Anita-Anand.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/08/Anita-Anand.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/08/Anita-Anand.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Why Gen Z-led protests are spreading globally: &#8216;Fighting the same battle&#8217;" data-title>Why Gen Z-led protests are spreading globally: &#8216;Fighting the same battle&#8217;</span>
+					<span class="c-posts__headlineText" title="China willing to restart dialogue with Canada in Beijing, minister says" data-title>China willing to restart dialogue with Canada in Beijing, minister says</span>
 			</div>
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Oct 16</div>
+																<div class="c-posts__info" data-date >2 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5133,93 +5130,93 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 			data-num-posts=3											>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-30"
-	data-post-id="11482415"
+	data-post-id="11482672"
 	data-slide-index=""
-	data-caption="RCMP covered up Trudeau-era scandals, Poilievre alleges"
+	data-caption="BCGEU and province to enter non-binding mediation in bid to end labour dispute"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11482415/rcmp-covered-up-trudeau-era-scandals-poilievre/"
+		href="https://globalnews.ca/news/11482672/bcgeu-job-action/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
 			>
 			
-		<div class="c-posts__media  c-imageContainer"  >
+		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/Poilievre-RCMP.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=499 data-ratio=0.67									loading="lazy"
-								width="720" height="499" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/3a0af226840e85445ea817ff1bc11ddd84e1fb0ef0b75d9dae4b5ff7f9bedad7_588bee.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/Poilievre-RCMP.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/Poilievre-RCMP.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/Poilievre-RCMP.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/3a0af226840e85445ea817ff1bc11ddd84e1fb0ef0b75d9dae4b5ff7f9bedad7_588bee.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/3a0af226840e85445ea817ff1bc11ddd84e1fb0ef0b75d9dae4b5ff7f9bedad7_588bee.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/3a0af226840e85445ea817ff1bc11ddd84e1fb0ef0b75d9dae4b5ff7f9bedad7_588bee.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="RCMP covered up Trudeau-era scandals, Poilievre alleges" data-title>RCMP covered up Trudeau-era scandals, Poilievre alleges</span>
+					<span class="c-posts__headlineText" title="BCGEU and province to enter non-binding mediation in bid to end labour dispute" data-title>BCGEU and province to enter non-binding mediation in bid to end labour dispute</span>
 			</div>
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >2 hours</div>
+																<div class="c-posts__info" data-date >38 mins</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-31"
-	data-post-id="11482407"
+	data-post-id="11482537"
 	data-slide-index=""
-	data-caption="CRA says it’s on track to meet call centre targets by deadline"
+	data-caption="$225K in ketamine bound for Ontario from Belgium seized in Montreal: RCMP"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11482407/canada-revenue-agency-call-center-delays-progress/"
+		href="https://globalnews.ca/news/11482537/ketamine-drugs-belgium-shipment-intercepted-canada/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
-		<div class="c-posts__media "  >
+		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2024/10/canada-revenue-agency.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/Royal_Canadian_Mounted_Police___Central_Region_RCMP_and_CBSA_int.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=540 data-ratio=0.67									loading="lazy"
+								width="720" height="540" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2024/10/canada-revenue-agency.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2024/10/canada-revenue-agency.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2024/10/canada-revenue-agency.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/Royal_Canadian_Mounted_Police___Central_Region_RCMP_and_CBSA_int.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/Royal_Canadian_Mounted_Police___Central_Region_RCMP_and_CBSA_int.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/Royal_Canadian_Mounted_Police___Central_Region_RCMP_and_CBSA_int.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="CRA says it’s on track to meet call centre targets by deadline" data-title>CRA says it’s on track to meet call centre targets by deadline</span>
+					<span class="c-posts__headlineText" title="$225K in ketamine bound for Ontario from Belgium seized in Montreal: RCMP" data-title>$225K in ketamine bound for Ontario from Belgium seized in Montreal: RCMP</span>
 			</div>
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >2 hours</div>
+																<div class="c-posts__info" data-date >52 mins</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-32"
-	data-post-id="11481842"
+	data-post-id="11482533"
 	data-slide-index=""
-	data-caption="Saskatchewan NDP calls for public inquiry into government wildfire response"
+	data-caption="Crown Royal maker would &#8216;engage&#8217; in talks for takeover of Ontario plant"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11481842/saskatchewan-ndp-wildfire-inquiry/"
+		href="https://globalnews.ca/news/11482533/amherstburg-diageo-crown-royal-sale-update/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/06/Screenshot-2025-06-03-185936.png?w=720													loading="lazy"
-								width="720" height="378" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/05/Crown-royal.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/06/Screenshot-2025-06-03-185936.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2025/06/Screenshot-2025-06-03-185936.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2025/06/Screenshot-2025-06-03-185936.png?w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/05/Crown-royal.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/05/Crown-royal.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/05/Crown-royal.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Saskatchewan NDP calls for public inquiry into government wildfire response" data-title>Saskatchewan NDP calls for public inquiry into government wildfire response</span>
+					<span class="c-posts__headlineText" title="Crown Royal maker would &#8216;engage&#8217; in talks for takeover of Ontario plant" data-title>Crown Royal maker would &#8216;engage&#8217; in talks for takeover of Ontario plant</span>
 			</div>
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Oct 16</div>
+																<div class="c-posts__info" data-date >2 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5313,7 +5310,7 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >4 hours</div>
+																<div class="c-posts__info" data-date >6 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5622,37 +5619,6 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 			data-num-posts=3											>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-39"
-	data-post-id="11482361"
-	data-slide-index=""
-	data-caption="Provincial health ministers want funding commitment out of federal meeting in Calgary"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11482361/provincial-federal-health-ministers-meeting-calgary/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/143bb1a457442a62d3f02adb58e38e4453b2542df3dae74fc9a44ebfab9b0458.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=508 data-ratio=0.67									loading="lazy"
-								width="720" height="508" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/143bb1a457442a62d3f02adb58e38e4453b2542df3dae74fc9a44ebfab9b0458.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/143bb1a457442a62d3f02adb58e38e4453b2542df3dae74fc9a44ebfab9b0458.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/143bb1a457442a62d3f02adb58e38e4453b2542df3dae74fc9a44ebfab9b0458.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Provincial health ministers want funding commitment out of federal meeting in Calgary" data-title>Provincial health ministers want funding commitment out of federal meeting in Calgary</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >3 hours</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-40"
 	data-post-id="11474709"
 	data-slide-index=""
 	data-caption="Glenrose Courage Award recipient Anna Siverns faces hurdles with smiles and jokes"
@@ -5660,7 +5626,7 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11474709/courage-award-glenrose-hospital-anna-siverns/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5683,7 +5649,7 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-41"
+	data-container-id="stories-item-40"
 	data-post-id="11481447"
 	data-slide-index=""
 	data-caption="University of Saskatchewan launches new public health-focused graduate program"
@@ -5691,7 +5657,7 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11481447/usask-nursing-public-health/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5704,6 +5670,37 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="University of Saskatchewan launches new public health-focused graduate program" data-title>University of Saskatchewan launches new public health-focused graduate program</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >Oct 16</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-41"
+	data-post-id="11480926"
+	data-slide-index=""
+	data-caption="&#8216;Real compassion&#8217;: Winnipeg mayor formally supports Manitoba intoxicated detention bill"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11480926/winnipeg-mayor-supports-manitoba-intoxicated-detention-bill/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2023/03/City_Hall_031623.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="405" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2023/03/City_Hall_031623.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2023/03/City_Hall_031623.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2023/03/City_Hall_031623.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="&#8216;Real compassion&#8217;: Winnipeg mayor formally supports Manitoba intoxicated detention bill" data-title>&#8216;Real compassion&#8217;: Winnipeg mayor formally supports Manitoba intoxicated detention bill</span>
 			</div>
 	
 						
@@ -6267,6 +6264,37 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 			data-num-posts=3											>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-51"
+	data-post-id="11482608"
+	data-slide-index=""
+	data-caption="Forward Julian Reese signs with Toronto Raptors"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11482608/forward-julian-reese-signs-with-toronto-raptors/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/f55fd638145ab21d692f54e369d16ed79645a53dd7e89cc75bc86f14a7c47c46.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/f55fd638145ab21d692f54e369d16ed79645a53dd7e89cc75bc86f14a7c47c46.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/f55fd638145ab21d692f54e369d16ed79645a53dd7e89cc75bc86f14a7c47c46.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/f55fd638145ab21d692f54e369d16ed79645a53dd7e89cc75bc86f14a7c47c46.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Forward Julian Reese signs with Toronto Raptors" data-title>Forward Julian Reese signs with Toronto Raptors</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >1 hour</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-52"
 	data-post-id="11482390"
 	data-slide-index=""
 	data-caption="ANALYSIS: Jets quietly showing their depth early in new season"
@@ -6274,7 +6302,7 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11482390/analysis-winnipeg-jets-depth-shannon/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -6291,13 +6319,13 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >2 hours</div>
+																<div class="c-posts__info" data-date >4 hours</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-52"
+	data-container-id="stories-item-53"
 	data-post-id="11482173"
 	data-slide-index=""
 	data-caption="Stolarz shines for Leafs in victory over Rangers"
@@ -6305,7 +6333,7 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11482173/stolarz-shines-for-leafs-in-victory-over-rangers/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -6318,37 +6346,6 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="Stolarz shines for Leafs in victory over Rangers" data-title>Stolarz shines for Leafs in victory over Rangers</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >11 hours</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-53"
-	data-post-id="11482111"
-	data-slide-index=""
-	data-caption="Caufield, Habs top Predators 3-2 in OT"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11482111/caufield-habs-top-predators-3-2-in-ot/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/ef27c49fbf24af14ec9d0301ae23f6c46c27f763b68e23fccd234fffbbb1f489.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="475" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/ef27c49fbf24af14ec9d0301ae23f6c46c27f763b68e23fccd234fffbbb1f489.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/ef27c49fbf24af14ec9d0301ae23f6c46c27f763b68e23fccd234fffbbb1f489.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/ef27c49fbf24af14ec9d0301ae23f6c46c27f763b68e23fccd234fffbbb1f489.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Caufield, Habs top Predators 3-2 in OT" data-title>Caufield, Habs top Predators 3-2 in OT</span>
 			</div>
 	
 						
@@ -6675,7 +6672,7 @@ Health reporter Katherine Ward caught up with the team&#039;s orthopedic surgeon
 			<script async src="//static.chartbeat.com/js/chartbeat_mab.js"></script>
 			<!-- Adobe Analytics code version: JS-2.6.0. -->
 		<script type="text/javascript">
-			var gnPageData = {"context_data":{"hourofday":"10","dayofweek":"Friday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
+			var gnPageData = {"context_data":{"hourofday":"12","dayofweek":"Friday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
 		</script>
 				<!-- End Adobe Analytics code -->
 			<script>
@@ -6716,5 +6713,5 @@ _stq.push([ "clickTrackerInit", "176892389", "0" ]);
 		
 		<div class="l-dynamicElement"></div>
 
-			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75660ba8f4","applicationID":"418684855","transactionName":"Z1BWZxdTWkAHVExRXF4adVARW1tdSV9XVVY=","queueTime":0,"applicationTime":684,"atts":"SxdBEV9JSR9EVhoCSE1I","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+			</body>
 </html>
