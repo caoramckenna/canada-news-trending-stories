@@ -184,7 +184,8 @@
         }
     </script>
     	<!-- Meta Tags -->
-	<meta charset="UTF-8">
+	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"75660ba8f4",applicationID:"418684855",browserID:"419993820"};;/*! For license information please see nr-loader-rum-1.301.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let o in a)if(void 0!==e[o])try{if(null===e[o]){r[o]=null;continue}Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):"object"==typeof e[o]&&"object"==typeof t[o]?r[o]=i(e[o],t[o]):r[o]=e[o]}catch(e){r[o]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>c,RI:()=>i,WN:()=>d,bv:()=>a,gm:()=>o,mw:()=>s,sb:()=>u});var n=r(863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),s=Boolean("hidden"===o?.document?.visibilityState),c=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),u=c&&"undefined"==typeof SharedWorker,d=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)())},163:(e,t,r)=>{"use strict";r.d(t,{j:()=>R});var n=r(384),i=r(741);var a=r(555);r(860).K7.genericEvents;const o="experimental.resources",s=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var c=r(614),u=r(944),d=r(122);const l="[data-nr-mask]",f=e=>(0,d.a)(e,(()=>{const e={feature_flags:[],experimental:{resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{allow_registered_children:!0,duplicate_registered_data:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(o)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:c.wk,inactiveMs:c.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){s(t)?e.mask_selector="".concat(t,",").concat(l):""===t||null===t?e.mask_selector=l:(0,u.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){s(t)?e.block_selector+=",".concat(t):""!==t&&(0,u.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,u.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},spa:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var g=r(154),p=r(324);let m=0;const h={buildEnv:p.F3,distMethod:p.Xs,version:p.xv,originTime:g.WN},v={appMetadata:{},customTransaction:void 0,denyList:void 0,disabled:!1,entityManager:void 0,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,jsAttributesMetadata:{bytes:0},get harvestCount(){return++m}},b=e=>{const t=(0,d.a)(e,v),r=Object.keys(h).reduce((e,t)=>(e[t]={value:h[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)};var y=r(701);const _=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var w=r(836),x=r(241);const k={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},S=e=>(0,d.a)(e,k),A=new Set;function R(e,t={},r,o){let{init:s,info:c,loader_config:u,runtime:d={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();s=e.init,c=e.info,u=e.loader_config}e.init=f(s||{}),e.loader_config=S(u||{}),c.jsAttributes??={},g.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,a.D)(c);const p=e.init,m=[c.beacon,c.errorBeacon];A.has(e.agentIdentifier)||(p.proxy.assets&&(_(p.proxy.assets),m.push(p.proxy.assets)),p.proxy.beacon&&m.push(p.proxy.beacon),e.beacons=[...m],function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach(r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let a=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return a?a(...t):n})})}(e),(0,n.US)("activatedFeatures",y.B),e.runSoftNavOverSpa&&=!0===p.soft_navigations.enabled&&p.feature_flags.includes("soft_nav")),d.denyList=[...p.ajax.deny_list||[],...p.ajax.block_internal?m:[]],d.ptid=e.agentIdentifier,d.loaderType=r,e.runtime=b(d),A.has(e.agentIdentifier)||(e.ee=w.ee.get(e.agentIdentifier),e.exposed=l,(0,x.W)({agentIdentifier:e.agentIdentifier,drained:!!y.B?.[e.agentIdentifier],type:"lifecycle",name:"initialize",feature:void 0,data:e.config})),A.add(e.agentIdentifier)}},234:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(836),i=r(687);class a{constructor(e,t){this.agentIdentifier=e,this.ee=n.ee.get(e),this.featureName=t,this.blocked=!1}deregisterDrain(){(0,i.x3)(this.agentIdentifier,this.featureName)}}},241:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(154);const i="newrelic";function a(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>u,BL:()=>s,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>h,Pl:()=>n,Tb:()=>l,U2:()=>a,V1:()=>k,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>o,nb:()=>m,o5:()=>d});const n="api-",i="addPageAction",a="addToTrace",o="addRelease",s="finished",c="interaction",u="log",d="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",m="setApplicationVersion",h="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",k="measure"},289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>a,Qr:()=>s,sB:()=>o});var n=r(878);function i(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(i())return e();(0,n.sp)("load",e,t)}function o(e){if(i())return e();(0,n.DD)("DOMContentLoaded",e)}function s(e){if(i())return e();(0,n.sp)("popstate",e)}},324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>a,xv:()=>n});const n="1.301.0",i="PROD",a="CDN"},374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>o,US:()=>d,Zm:()=>s,bQ:()=>u,dV:()=>c,pV:()=>l});var n=r(154),i=r(863),a=r(910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function s(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function c(){let e=s();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,a.i)(...Object.values(e.o))),e}function u(e,t){let r=s();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function d(e,t){s()[e]=t}function l(){return function(){let e=s();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=s();const t=e.init||{};e.init={...t}}(),c(),function(){let e=s();const t=e.loader_config||{};e.loader_config={...t}}(),s()}},389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},555:(e,t,r)=>{"use strict";r.d(t,{D:()=>s,f:()=>o});var n=r(384),i=r(122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function o(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const s=e=>(0,i.a)(e,a)},566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>s,bz:()=>o});var n=r(154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map(e=>"x"===e?a(t,r++).toString(16):"y"===e?(3&a()|8).toString(16):e).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const o=[];for(var s=0;s<e;s++)o.push(a(r,i++).toString(16));return o.join("")}},606:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(908);a.on=o;var i=a.handlers={};function a(e,t,r,a){o(a||n.d,i,e,t,r)}function o(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var o=t[a]=t[a]||{};(o[r]=o[r]||[]).push([e,i])}},607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(566).bz)()},614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>o,H3:()=>n,g:()=>u,iL:()=>c,tS:()=>s,uh:()=>i,wk:()=>a});const n="NRBA",i="SESSION",a=144e5,o=18e5,s={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>u,Ze:()=>f,x3:()=>d});var n=r(241),i=r(836),a=r(606),o=r(860),s=r(646);const c={};function u(e,t){const r={staged:!1,priority:o.P3[t]||0};l(e),c[e].get(t)||c[e].set(t,r)}function d(e,t){e&&c[e]&&(c[e].get(t)&&c[e].delete(t),p(e,t,!1),c[e].size&&g(e))}function l(e){if(!e)throw new Error("agentIdentifier required");c[e]||(c[e]=new Map)}function f(e="",t="feature",r=!1){if(l(e),!e||!c[e].get(t)||r)return p(e,t);c[e].get(t).staged=!0,g(e)}function g(e){const t=Array.from(c[e]);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{c[e].delete(t),p(e,t)}))}function p(e,t,r=!0){const o=e?i.ee.get(e):i.ee,c=a.i.handlers;if(!o.aborted&&o.backlog&&c){if((0,n.W)({agentIdentifier:e,type:"lifecycle",name:"drain",feature:t}),r){const e=o.backlog[t],r=c[t];if(r){for(let t=0;e&&t<e.length;++t)m(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0]?.context()instanceof s.y&&t[0].on(e,t[1])})})}}o.isolatedBacklog||delete c[t],o.backlog[t]=null,o.emit("drain-"+t,[])}}function m(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}})}},699:(e,t,r)=>{"use strict";r.d(t,{It:()=>i,No:()=>n,qh:()=>o,uh:()=>a});const n=16e3,i=1e6,a="NR_CONTAINER_AGENT",o="SESSION_ERROR"},701:(e,t,r)=>{"use strict";r.d(t,{B:()=>a,t:()=>o});var n=r(241);const i=new Set,a={};function o(e,t){const r=t.agentIdentifier;a[r]??={},e&&"object"==typeof e&&(i.has(r)||(t.ee.emit("rumresp",[e]),a[r]=e,i.add(r),(0,n.W)({agentIdentifier:r,loaded:!0,drained:!0,type:"lifecycle",name:"load",feature:void 0,data:e})))}},741:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e){return this.#e(i.Dl,e)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}}},773:(e,t,r)=>{"use strict";r.d(t,{z_:()=>a,XG:()=>s,TZ:()=>n,rs:()=>i,xV:()=>o});r(154),r(566),r(384);const n=r(860).K7.metrics,i="sm",a="cm",o="storeSupportabilityMetrics",s="storeEventMetrics"},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},836:(e,t,r)=>{"use strict";r.d(t,{P:()=>s,ee:()=>c});var n=r(384),i=r(990),a=r(646),o=r(607);const s="nr@context:".concat(o.W),c=function e(t,r){var n={},o={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var s=g(n);m(e).forEach(e=>{e.apply(s,r)});var u=v()[o[e]];u&&u.push([f,e,r,s]);return s},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{o[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[o[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,s,()=>new a.y(s)):new a.y(s)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c)},843:(e,t,r)=>{"use strict";r.d(t,{u:()=>i});var n=r(878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>d,K7:()=>c,P3:()=>u,XX:()=>i,Yy:()=>s,df:()=>a,qY:()=>n,v4:()=>o});const n="events",i="jserrors",a="browser/blobs",o="rum",s="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},u={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.spa]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.softNav]:8,[c.sessionReplay]:9,[c.logging]:10,[c.genericEvents]:11},d={[c.pageViewEvent]:o,[c.pageViewTiming]:n,[c.ajax]:n,[c.spa]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:a,[c.sessionReplay]:a,[c.logging]:s,[c.genericEvents]:"ins"}},863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},910:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e&&e.toString().includes("[native code]");return t||(0,n.R)(64,e?.name||e?.toString()),i.set(e,t),t})}},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({agentIdentifier:null,drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var a=n[e]={exports:{}};return r[e](a,a.exports,i),a.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce((t,r)=>(i.f[r](e,t),t),[])),i.u=e=>"nr-rum-1.301.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.301.0.PROD:",i.l=(r,n,a,o)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==a)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+a){s=l;break}}if(!s){c=!0;var f={296:"sha512-uirri2n208hvEusqP09Pp2vSrKjeItTAburRIb4o7yWRFpHyJMqCz0XdczsDmcszcuGUYobCVVcHeLDNmUENGg=="};(s=document.createElement("script")).charset="utf-8",i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+a),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[o]&&(s.integrity=f[o])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach(e=>e(n)),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var a=new Promise((r,i)=>n=e[t]=[r,i]);r.push(n[2]=a);var o=i.p+i.u(t),s=new Error;i.l(o,r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var a=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+a+": "+o+")",s.name="ChunkLoadError",s.type=a,s.request=o,n[1](s)}},"chunk-"+t,t)}};var t=(t,r)=>{var n,a,[o,s,c]=r,u=0;if(o.some(t=>0!==e[t])){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<o.length;u++)a=o[u],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},r=self["webpackChunk:NRBA-1.301.0.PROD"]=self["webpackChunk:NRBA-1.301.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(374);var e=i(566),t=i(741);class r extends t.W{agentIdentifier=(0,e.LA)(16)}var n=i(860);const a=Object.values(n.K7);var o=i(163);var s=i(908),c=i(863),u=i(261),d=i(241),l=i(944),f=i(701),g=i(773);function p(e,t,i,a){const o=a||i;!o||o[e]&&o[e]!==r.prototype[e]||(o[e]=function(){(0,s.p)(g.xV,["API/"+e+"/called"],void 0,n.K7.metrics,i.ee),(0,d.W)({agentIdentifier:i.agentIdentifier,drained:!!f.B?.[i.agentIdentifier],type:"data",name:"api",feature:u.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,l.R)(23,e)}})}function m(e,t,r,n,i){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(i||null===r)&&(0,s.p)(u.Pl+n,[(0,c.t)(),t,r],void 0,"session",e.ee)}var h=i(687),v=i(234),b=i(289),y=i(154),_=i(384);const w=e=>y.RI&&!0===e?.privacy.cookies_enabled;function x(e){return!!(0,_.dV)().o.MO&&w(e)&&!0===e?.session_trace.enabled}var k=i(389),S=i(699);class A extends v.W{constructor(e,t){super(e.agentIdentifier,t),this.agentRef=e,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,k.J)(()=>{(0,h.Ak)(e.agentIdentifier,this.featureName),t()}))}):(0,h.Ak)(e.agentIdentifier,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;let n;this.onAggregateImported=new Promise(e=>{n=e});const a=async()=>{let a;await this.deferred;try{if(w(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,305));a=t(e)}}catch(e){(0,l.R)(20,e),this.ee.emit("internal-error",[e]),(0,s.p)(S.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#t(this.featureName,a,e.init))return(0,h.Ze)(this.agentIdentifier,this.featureName),void n(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),n(!0)}catch(e){(0,l.R)(34,e),this.abortHandler?.(),(0,h.Ze)(this.agentIdentifier,this.featureName,!0),n(!1),this.ee&&this.ee.abort()}};y.RI?(0,b.GG)(()=>a(),!0):a()}#t(e,t,r){if(this.blocked)return!1;switch(e){case n.K7.sessionReplay:return x(r)&&!!t;case n.K7.sessionTrace:return!!t;default:return!0}}}var R=i(630),T=i(614);class E extends A{static featureName=R.T;constructor(e){var t;super(e,R.T),this.setupInspectionEvents(e.agentIdentifier),t=e,p(u.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,s.p)(u.Pl+u.Fw,[(0,c.t)()],void 0,void 0,t.ee))},t),this.ee.on("api-send-rum",(e,t)=>(0,s.p)("send-rum",[e,t],void 0,this.featureName,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,108)))}setupInspectionEvents(e){const t=(t,r)=>{t&&(0,d.W)({agentIdentifier:e,timeStamp:t.timeStamp,loaded:"complete"===t.target.readyState,type:"window",name:r,data:t.target.location+""})};(0,b.sB)(e=>{t(e,"DOMContentLoaded")}),(0,b.GG)(e=>{t(e,"load")}),(0,b.Qr)(e=>{t(e,"navigate")}),this.ee.on(T.tS.UPDATE,(t,r)=>{(0,d.W)({agentIdentifier:e,type:"lifecycle",name:"session",data:r})})}}var N=i(843),I=i(878),j=i(782);class O extends A{static featureName=j.T;constructor(e){super(e,j.T),y.RI&&((0,N.u)(()=>(0,s.p)("docHidden",[(0,c.t)()],void 0,j.T,this.ee),!0),(0,I.sp)("pagehide",()=>(0,s.p)("winPagehide",[(0,c.t)()],void 0,j.T,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,350))))}}class P extends A{static featureName=g.TZ;constructor(e){super(e,g.TZ),y.RI&&document.addEventListener("securitypolicyviolation",e=>{(0,s.p)(g.xV,["Generic/CSPViolation/Detected"],void 0,this.featureName,this.ee)}),this.importAggregator(e,()=>i.e(296).then(i.bind(i,623)))}}new class extends r{constructor(e){var t;(super(),y.gm)?(this.features={},(0,_.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(E),this.runSoftNavOverSpa=[...this.desiredFeatures].some(e=>e.featureName===n.K7.softNav),(0,o.j)(this,e,e.loaderType||"agent"),t=this,p(u.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return m(t,e,r,u.cD,n);(0,l.R)(40,typeof r)}else(0,l.R)(39,typeof e)},t),function(e){p(u.Dl,function(t){if("string"==typeof t||null===t)return m(e,"enduser.id",t,u.Dl,!0);(0,l.R)(41,typeof t)},e)}(this),function(e){p(u.nb,function(t){if("string"==typeof t||null===t)return m(e,"application.version",t,u.nb,!1);(0,l.R)(42,typeof t)},e)}(this),function(e){p(u.d3,function(){e.ee.emit("manual-start-all")},e)}(this),this.run()):(0,l.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return a.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),t=[...this.desiredFeatures];t.sort((e,t)=>n.P3[e.featureName]-n.P3[t.featureName]),t.forEach(t=>{if(!e[t.featureName]&&t.featureName!==n.K7.pageViewEvent)return;if(this.runSoftNavOverSpa&&t.featureName===n.K7.spa)return;if(!this.runSoftNavOverSpa&&t.featureName===n.K7.softNav)return;const r=function(e){switch(e){case n.K7.ajax:return[n.K7.jserrors];case n.K7.sessionTrace:return[n.K7.ajax,n.K7.pageViewEvent];case n.K7.sessionReplay:return[n.K7.sessionTrace];case n.K7.pageViewTiming:return[n.K7.pageViewEvent];default:return[]}}(t.featureName).filter(e=>!(e in this.features));r.length>0&&(0,l.R)(36,{targetFeature:t.featureName,missingDependencies:r}),this.features[t.featureName]=new t(this)})}catch(e){(0,l.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,_.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}({features:[E,O,P],loaderType:"lite"})})()})();</script>
 	<meta name="theme-color" content="#231F20">
 
 			<meta name="msvalidate.01" content="9E5C74811CA48CCCC61A2CF3C0A1BA6A">
@@ -242,8 +243,8 @@
 
 <!-- twitter: ends here -->
 
-			<link rel="preload" as="image" href="https://globalnews.ca/wp-content/uploads/2025/10/60abba831fa107ea22aa6da7df6960dddfbb42315d61d814c11f46b14a2d5b08_092ff9.jpg?quality=65&#038;strip=all&#038;w=336"
-					imagesrcset="https://globalnews.ca/wp-content/uploads/2025/10/60abba831fa107ea22aa6da7df6960dddfbb42315d61d814c11f46b14a2d5b08_092ff9.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/60abba831fa107ea22aa6da7df6960dddfbb42315d61d814c11f46b14a2d5b08_092ff9.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/60abba831fa107ea22aa6da7df6960dddfbb42315d61d814c11f46b14a2d5b08_092ff9.jpg?quality=65&#038;strip=all&#038;w=720 720w,"
+			<link rel="preload" as="image" href="https://globalnews.ca/wp-content/uploads/2025/10/90ccd3f1b3e3047a435776f9dc12985e6f47c7008b9d16436a8234e7aa189dea.jpg?quality=65&#038;strip=all&#038;w=336"
+					imagesrcset="https://globalnews.ca/wp-content/uploads/2025/10/90ccd3f1b3e3047a435776f9dc12985e6f47c7008b9d16436a8234e7aa189dea.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/90ccd3f1b3e3047a435776f9dc12985e6f47c7008b9d16436a8234e7aa189dea.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/90ccd3f1b3e3047a435776f9dc12985e6f47c7008b9d16436a8234e7aa189dea.jpg?quality=65&#038;strip=all&#038;w=720 720w,"
 							imagesizes="auto"
 		/>
 	
@@ -489,7 +490,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 
 				
 
-				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"11","weatherprec":"x","weathercode":"28","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
+				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"11","weatherprec":"x","weathercode":"26","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
 		</script>
 			<script>
 				// Load the APS JavaScript Library
@@ -1524,34 +1525,34 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					data-sophi-feature=hero				>
 										<div class="c-posts__inner">
 											<div>
-														<a class="c-posts__headlineLink" href="https://globalnews.ca/news/11494772/quebec-adopts-doctors/">
+														<a class="c-posts__headlineLink" href="https://globalnews.ca/news/11494843/alberta-premier-labour-action/">
 																		<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Quebec adopts special bill to impose new compensation system on doctors" data-title>Quebec adopts special bill to impose new compensation system on doctors</span>
+					<span class="c-posts__headlineText" title="Alberta premier responds to threat of broader labour action in call-in radio show" data-title>Alberta premier responds to threat of broader labour action in call-in radio show</span>
 			</div>
 															</a>
 													</div>
 						
-		<div class="c-posts__media  c-posts__media--video c-videoPlay c-videoPlay--standard c-imageContainer" tabindex=0 >
+		<div class="c-posts__media  c-posts__media--video c-videoPlay c-videoPlay--standard" tabindex=0 >
 						<img class="c-posts__thumbnail"
-				src=https://globalnews.ca/wp-content/uploads/2025/10/60abba831fa107ea22aa6da7df6960dddfbb42315d61d814c11f46b14a2d5b08_092ff9.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=511 data-ratio=0.67								width="720" height="511" alt="" 
-											srcset="https://globalnews.ca/wp-content/uploads/2025/10/60abba831fa107ea22aa6da7df6960dddfbb42315d61d814c11f46b14a2d5b08_092ff9.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/60abba831fa107ea22aa6da7df6960dddfbb42315d61d814c11f46b14a2d5b08_092ff9.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/60abba831fa107ea22aa6da7df6960dddfbb42315d61d814c11f46b14a2d5b08_092ff9.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"						/>
+				src=https://globalnews.ca/wp-content/uploads/2025/10/90ccd3f1b3e3047a435776f9dc12985e6f47c7008b9d16436a8234e7aa189dea.jpg?quality=65&#038;strip=all&#038;w=720												width="720" height="480" alt="" 
+											srcset="https://globalnews.ca/wp-content/uploads/2025/10/90ccd3f1b3e3047a435776f9dc12985e6f47c7008b9d16436a8234e7aa189dea.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/90ccd3f1b3e3047a435776f9dc12985e6f47c7008b9d16436a8234e7aa189dea.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/90ccd3f1b3e3047a435776f9dc12985e6f47c7008b9d16436a8234e7aa189dea.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"						/>
 									<div class="c-posts__video">
 						    	<div class="c-video c-videoPlay  c-video--contained"
     		data-iframe-receiver
     		data-autoplay=""
 						data-displayinline-featured="false"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_11492412_68fd11fa11943"
-			data-displayinline-video-id="11492412"
+			data-displayinline-player-id="miniplayer_11494155_68fd2eae14016"
+			data-displayinline-video-id="11494155"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/11492412/#autoplay&#038;stickyiframe=miniplayer_11492412_68fd11fa11943"
+    		data-displayinline="https://globalnews.ca/video/embed/11494155/#autoplay&#038;stickyiframe=miniplayer_11494155_68fd2eae14016"
     									data-displayinline-container="stories-1-0"
 										data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Legault threatens special law for doctors amid stalled talks'"
+						alt="Click to play video: 'Uncertain timeline for teachers and students return to class'"
 						width="640"
 						height="360"
 													src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
@@ -1570,16 +1571,16 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							</div>
 								<img src="https://d21y75miwcfqoq.cloudfront.net/70c8fc80" alt="" style="position:absolute;width:1px;height:1px" referrerpolicy="no-referrer-when-downgrade">
 						<div class="c-posts__details">
-														<a class="c-posts__detailsLink" href="https://globalnews.ca/news/11494772/quebec-adopts-doctors/">
+														<a class="c-posts__detailsLink" href="https://globalnews.ca/news/11494843/alberta-premier-labour-action/">
 																		<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Quebec adopts special bill to impose new compensation system on doctors" data-title>Quebec adopts special bill to impose new compensation system on doctors</span>
+					<span class="c-posts__headlineText" title="Alberta premier responds to threat of broader labour action in call-in radio show" data-title>Alberta premier responds to threat of broader labour action in call-in radio show</span>
 			</div>
 																		<div class="c-posts__excerpt">
-									Quebec passes Bill 2, forcing a new doctor pay system with fines for resistance; critics warn it violates rights and will face court challenges.									</div>
+									Alberta Premier Danielle Smith says legislation to force striking teachers back to work may come Monday, as tensions rise over possible use of the notwithstanding clause.									</div>
 																<div class="c-posts__about c-posts__about--multiple">
 																		<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">30 mins</div>
-																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">32 mins</div>
+																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
 																	</div>
 														</a>
 													</div>
@@ -1620,25 +1621,25 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					data-sophi-feature=top-stories				>
 					<a
 						class="c-posts__inner"
-						href="https://globalnews.ca/news/11493205/maplehurst-arman-dhillon-murder/"
+						href="https://globalnews.ca/news/11494577/blue-jays-world-series-game-one-barger-home-run/"
 						data-analytics="{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:2}"
 					>
 						
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2024/07/20240703100740-568e74eed1884a6eadc0f51e4f4c49b3dead3c5a364441c31084f0a7227e54bc.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="484" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/a77d0c81506e7e02af90828a3838d6f8ce3bc02c3c90120148930fe382368191_22dab8.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2024/07/20240703100740-568e74eed1884a6eadc0f51e4f4c49b3dead3c5a364441c31084f0a7227e54bc.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2024/07/20240703100740-568e74eed1884a6eadc0f51e4f4c49b3dead3c5a364441c31084f0a7227e54bc.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2024/07/20240703100740-568e74eed1884a6eadc0f51e4f4c49b3dead3c5a364441c31084f0a7227e54bc.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/a77d0c81506e7e02af90828a3838d6f8ce3bc02c3c90120148930fe382368191_22dab8.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/a77d0c81506e7e02af90828a3838d6f8ce3bc02c3c90120148930fe382368191_22dab8.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/a77d0c81506e7e02af90828a3838d6f8ce3bc02c3c90120148930fe382368191_22dab8.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 								<div class="c-posts__details">
 										<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Judge tosses murder charges over &#8216;torturous&#8217; treatment at Ontario jail" data-title>Judge tosses murder charges over &#8216;torturous&#8217; treatment at Ontario jail</span>
+					<span class="c-posts__headlineText" title="COMMENTARY: Couch-surfing Barger and Blue Jays show world they can&#8217;t be underestimated" data-title>COMMENTARY: Couch-surfing Barger and Blue Jays show world they can&#8217;t be underestimated</span>
 			</div>
 								<div class="c-posts__about c-posts__about--multiple">
-																<div class="c-posts__info c-posts__info--highlight">Crime</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Oct 24</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
+																<div class="c-posts__info c-posts__info--highlight">Commentary</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">7 hours</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 															</div>
 						</div>
 					</a>
@@ -1657,29 +1658,29 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=12			data-parent-id=home-topStories						data-sophi-feature=top-stories		>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-1"
-	data-post-id="11493440"
+	data-post-id="11494060"
 	data-slide-index=""
-	data-caption="CBSA launches anti-dumping probe into Chinese truck bodies"
+	data-caption="Company recalls 2 million pounds of barbecue pork jerky that may contain metal wire"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11493440/cbsa-anti-dumping-probe-chinese-trucks/"
+		href="https://globalnews.ca/news/11494060/company-recalls-2-million-pounds-of-barbecue-pork-jerky-that-may-contain-metal-wire/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				src=https://globalnews.ca/wp-content/uploads/2025/10/CBSA-badge.jpg?quality=65&#038;strip=all&#038;w=720												width="720" height="480" alt="" 
-											srcset="https://globalnews.ca/wp-content/uploads/2025/10/CBSA-badge.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/CBSA-badge.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/CBSA-badge.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"						/>
+				src=https://globalnews.ca/wp-content/uploads/2025/10/ea7642c1276bea0147b152c359acb945e9781e53511582b225f2d470deabf5c0.jpg?quality=65&#038;strip=all&#038;w=720												width="720" height="480" alt="" 
+											srcset="https://globalnews.ca/wp-content/uploads/2025/10/ea7642c1276bea0147b152c359acb945e9781e53511582b225f2d470deabf5c0.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/ea7642c1276bea0147b152c359acb945e9781e53511582b225f2d470deabf5c0.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/ea7642c1276bea0147b152c359acb945e9781e53511582b225f2d470deabf5c0.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="CBSA launches anti-dumping probe into Chinese truck bodies" data-title>CBSA launches anti-dumping probe into Chinese truck bodies</span>
+					<span class="c-posts__headlineText" title="Company recalls 2 million pounds of barbecue pork jerky that may contain metal wire" data-title>Company recalls 2 million pounds of barbecue pork jerky that may contain metal wire</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Health</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Oct 24</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
 														</div>
@@ -1688,33 +1689,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-2"
-	data-post-id="11494577"
+	data-post-id="11494571"
 	data-slide-index=""
-	data-caption="COMMENTARY: Couch-surfing Barger and Blue Jays show world they can&#8217;t be underestimated"
+	data-caption="Carney to pitch Canada as reliable partner in Asia"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11494577/blue-jays-world-series-game-one-barger-home-run/"
+		href="https://globalnews.ca/news/11494571/carney-to-pitch-canada-as-reliable-partner-in-asia/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/a77d0c81506e7e02af90828a3838d6f8ce3bc02c3c90120148930fe382368191_22dab8.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/c6319522109d4777420f4b1f164c2218b06cc83df518e38184e76f4da92c888e.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="470" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/a77d0c81506e7e02af90828a3838d6f8ce3bc02c3c90120148930fe382368191_22dab8.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/a77d0c81506e7e02af90828a3838d6f8ce3bc02c3c90120148930fe382368191_22dab8.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/a77d0c81506e7e02af90828a3838d6f8ce3bc02c3c90120148930fe382368191_22dab8.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/c6319522109d4777420f4b1f164c2218b06cc83df518e38184e76f4da92c888e.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/c6319522109d4777420f4b1f164c2218b06cc83df518e38184e76f4da92c888e.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/c6319522109d4777420f4b1f164c2218b06cc83df518e38184e76f4da92c888e.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="COMMENTARY: Couch-surfing Barger and Blue Jays show world they can&#8217;t be underestimated" data-title>COMMENTARY: Couch-surfing Barger and Blue Jays show world they can&#8217;t be underestimated</span>
+					<span class="c-posts__headlineText" title="Carney to pitch Canada as reliable partner in Asia" data-title>Carney to pitch Canada as reliable partner in Asia</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Commentary</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">5 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">8 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1743,105 +1744,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-3"
-	data-post-id="11493122"
-	data-slide-index=""
-	data-caption="White House says trade talks won&#8217;t resume if Canada &#8216;can&#8217;t be serious&#8217;"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11493122/donald-trump-tariffs-talks-terminated-us-reaction/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/CP174272909.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="472" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/CP174272909.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/CP174272909.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/CP174272909.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="White House says trade talks won&#8217;t resume if Canada &#8216;can&#8217;t be serious&#8217;" data-title>White House says trade talks won&#8217;t resume if Canada &#8216;can&#8217;t be serious&#8217;</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Oct 24</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-4"
-	data-post-id="11494060"
-	data-slide-index=""
-	data-caption="Company recalls 2 million pounds of barbecue pork jerky that may contain metal wire"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11494060/company-recalls-2-million-pounds-of-barbecue-pork-jerky-that-may-contain-metal-wire/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/ea7642c1276bea0147b152c359acb945e9781e53511582b225f2d470deabf5c0.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/ea7642c1276bea0147b152c359acb945e9781e53511582b225f2d470deabf5c0.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/ea7642c1276bea0147b152c359acb945e9781e53511582b225f2d470deabf5c0.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/ea7642c1276bea0147b152c359acb945e9781e53511582b225f2d470deabf5c0.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Company recalls 2 million pounds of barbecue pork jerky that may contain metal wire" data-title>Company recalls 2 million pounds of barbecue pork jerky that may contain metal wire</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Health</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Oct 24</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-5"
-	data-post-id="11494571"
-	data-slide-index=""
-	data-caption="Carney to pitch Canada as reliable partner in Asia"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11494571/carney-to-pitch-canada-as-reliable-partner-in-asia/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/c6319522109d4777420f4b1f164c2218b06cc83df518e38184e76f4da92c888e.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="470" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/c6319522109d4777420f4b1f164c2218b06cc83df518e38184e76f4da92c888e.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/c6319522109d4777420f4b1f164c2218b06cc83df518e38184e76f4da92c888e.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/c6319522109d4777420f4b1f164c2218b06cc83df518e38184e76f4da92c888e.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Carney to pitch Canada as reliable partner in Asia" data-title>Carney to pitch Canada as reliable partner in Asia</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">6 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-6"
 	data-post-id="11493594"
 	data-slide-index=""
 	data-caption="Quebec losing 37 young nurses for every 100 who enter workforce: report"
@@ -1849,7 +1751,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11493594/quebec-nurses-report/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -1867,8 +1769,107 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Health</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">8 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">10 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-4"
+	data-post-id="11494658"
+	data-slide-index=""
+	data-caption="&#8216;I&#8217;m so full of joy&#8217;: Fans react as Toronto Blue Jays win 1st game of World Series"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11494658/toronto-blue-jays-world-series-fans/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/a77d0c81506e7e02af90828a3838d6f8ce3bc02c3c90120148930fe382368191_22dab8.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/a77d0c81506e7e02af90828a3838d6f8ce3bc02c3c90120148930fe382368191_22dab8.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/a77d0c81506e7e02af90828a3838d6f8ce3bc02c3c90120148930fe382368191_22dab8.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/a77d0c81506e7e02af90828a3838d6f8ce3bc02c3c90120148930fe382368191_22dab8.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="&#8216;I&#8217;m so full of joy&#8217;: Fans react as Toronto Blue Jays win 1st game of World Series" data-title>&#8216;I&#8217;m so full of joy&#8217;: Fans react as Toronto Blue Jays win 1st game of World Series</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Sports</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">3 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-5"
+	data-post-id="11493779"
+	data-slide-index=""
+	data-caption="U.S. military sends aircraft carrier to Latin America in major escalation"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11493779/us-military-venezuela-latin-america-drugs/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/CP174816734.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="481" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/CP174816734.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/CP174816734.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/CP174816734.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="U.S. military sends aircraft carrier to Latin America in major escalation" data-title>U.S. military sends aircraft carrier to Latin America in major escalation</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Oct 24</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">6 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-6"
+	data-post-id="11494830"
+	data-slide-index=""
+	data-caption="A bomb in Gaza&#8217;s rubble wounds twins who thought it was a toy"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11494830/ml-mideast-wars-gaza-unexploded-bombs/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/4fc94800b8b5a8f041a4147ad0fb7847cf6aff973bcc05be2c243c52087eabe7.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/4fc94800b8b5a8f041a4147ad0fb7847cf6aff973bcc05be2c243c52087eabe7.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/4fc94800b8b5a8f041a4147ad0fb7847cf6aff973bcc05be2c243c52087eabe7.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/4fc94800b8b5a8f041a4147ad0fb7847cf6aff973bcc05be2c243c52087eabe7.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="A bomb in Gaza&#8217;s rubble wounds twins who thought it was a toy" data-title>A bomb in Gaza&#8217;s rubble wounds twins who thought it was a toy</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">37 mins</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1897,39 +1898,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-7"
-	data-post-id="11493779"
-	data-slide-index=""
-	data-caption="U.S. military sends aircraft carrier to Latin America in major escalation"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11493779/us-military-venezuela-latin-america-drugs/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/CP174816734.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="481" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/CP174816734.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/CP174816734.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/CP174816734.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="U.S. military sends aircraft carrier to Latin America in major escalation" data-title>U.S. military sends aircraft carrier to Latin America in major escalation</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Oct 24</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">6 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-8"
 	data-post-id="11494430"
 	data-slide-index=""
 	data-caption="Anti-abortion pregnancy centers are looking to offer much more than ultrasounds and diapers"
@@ -1937,7 +1905,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11494430/more-anti-abortion-pregnancy-centers-offer-medical-services-as-planned-parenthood-clinics-close/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1962,65 +1930,98 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-9"
-	data-post-id="11493465"
+	data-container-id="stories-item-8"
+	data-post-id="11494787"
 	data-slide-index=""
-	data-caption="D.C. man sues after detainment for following National Guard playing &#8216;Star Wars&#8217; song"
+	data-caption="Storm Melissa reaches hurricane strength, threatening catastrophic flooding in northern Caribbean"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11493465/sam-ohara-sues-national-guard-star-wars-song/"
+		href="https://globalnews.ca/news/11494787/cb-tropical-weather/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/962b5e889d093b4b5037f55625838adbeea9cf7b8af365bf86449fb7de92f6aa.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/962b5e889d093b4b5037f55625838adbeea9cf7b8af365bf86449fb7de92f6aa.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/962b5e889d093b4b5037f55625838adbeea9cf7b8af365bf86449fb7de92f6aa.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/962b5e889d093b4b5037f55625838adbeea9cf7b8af365bf86449fb7de92f6aa.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Storm Melissa reaches hurricane strength, threatening catastrophic flooding in northern Caribbean" data-title>Storm Melissa reaches hurricane strength, threatening catastrophic flooding in northern Caribbean</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">1 hour</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-9"
+	data-post-id="11493820"
+	data-slide-index=""
+	data-caption="Canada needs new Indo-Pacific strategy as it seeks deeper Asia ties: Anand"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11493820/canada-indo-pacific-strategy-anand-update/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/08/CP174861309.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/f4f3e607529477d20fdc9632c4ae154ae15f3cf60643d6dd993d0f180a105f29.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="444" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/08/CP174861309.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/08/CP174861309.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/08/CP174861309.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/f4f3e607529477d20fdc9632c4ae154ae15f3cf60643d6dd993d0f180a105f29.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/f4f3e607529477d20fdc9632c4ae154ae15f3cf60643d6dd993d0f180a105f29.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/f4f3e607529477d20fdc9632c4ae154ae15f3cf60643d6dd993d0f180a105f29.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="D.C. man sues after detainment for following National Guard playing &#8216;Star Wars&#8217; song" data-title>D.C. man sues after detainment for following National Guard playing &#8216;Star Wars&#8217; song</span>
+					<span class="c-posts__headlineText" title="Canada needs new Indo-Pacific strategy as it seeks deeper Asia ties: Anand" data-title>Canada needs new Indo-Pacific strategy as it seeks deeper Asia ties: Anand</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Trending</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Oct 24</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
 														</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-10"
-	data-post-id="11493170"
+	data-post-id="11494284"
 	data-slide-index=""
-	data-caption="AI security system mistakes bag of Doritos for gun at U.S. high school"
+	data-caption="Barnes in tough against ‘Force of Nature’"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11493170/ai-security-system-mistakes-bag-of-chips-for-gun/"
+		href="https://globalnews.ca/news/11494284/barnes-in-tough-against-force-of-nature/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/CP21370271.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="470" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/6e174231c5c3330cb3e628793c8be26dd2bf6b7c5e2b478072be48fece946fd7.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/CP21370271.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/CP21370271.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/CP21370271.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/6e174231c5c3330cb3e628793c8be26dd2bf6b7c5e2b478072be48fece946fd7.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/6e174231c5c3330cb3e628793c8be26dd2bf6b7c5e2b478072be48fece946fd7.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/6e174231c5c3330cb3e628793c8be26dd2bf6b7c5e2b478072be48fece946fd7.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="AI security system mistakes bag of Doritos for gun at U.S. high school" data-title>AI security system mistakes bag of Doritos for gun at U.S. high school</span>
+					<span class="c-posts__headlineText" title="Barnes in tough against ‘Force of Nature’" data-title>Barnes in tough against ‘Force of Nature’</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Trending</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Sports</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Oct 24</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
@@ -2029,39 +2030,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    is-hidden"
 	data-container-id="stories-item-11"
-	data-post-id="11494658"
-	data-slide-index=""
-	data-caption="&#8216;I&#8217;m so full of joy&#8217;: Fans react as Toronto Blue Jays win 1st game of World Series"
-		data-ad-fallback=false>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11494658/toronto-blue-jays-world-series-fans/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/a77d0c81506e7e02af90828a3838d6f8ce3bc02c3c90120148930fe382368191_22dab8.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/a77d0c81506e7e02af90828a3838d6f8ce3bc02c3c90120148930fe382368191_22dab8.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/a77d0c81506e7e02af90828a3838d6f8ce3bc02c3c90120148930fe382368191_22dab8.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/a77d0c81506e7e02af90828a3838d6f8ce3bc02c3c90120148930fe382368191_22dab8.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="&#8216;I&#8217;m so full of joy&#8217;: Fans react as Toronto Blue Jays win 1st game of World Series" data-title>&#8216;I&#8217;m so full of joy&#8217;: Fans react as Toronto Blue Jays win 1st game of World Series</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Sports</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">1 hour</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    is-hidden"
-	data-container-id="stories-item-12"
 	data-post-id="11494593"
 	data-slide-index=""
 	data-caption="Your latest prescription is to get outside"
@@ -2069,7 +2037,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11494593/your-latest-prescription-is-to-get-outside/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:11}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -2087,8 +2055,41 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Health</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">5 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">7 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    is-hidden"
+	data-container-id="stories-item-12"
+	data-post-id="11494229"
+	data-slide-index=""
+	data-caption="Antetokounmpo scores 31 as Bucks tip Raptors"
+		data-ad-fallback=false>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11494229/antetokounmpo-scores-31-as-bucks-tip-raptors/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:11}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/0d53c50a04e8dcaab4ef61c0725ad287700e4b59355f9d437217695eae3e4107.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/0d53c50a04e8dcaab4ef61c0725ad287700e4b59355f9d437217695eae3e4107.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/0d53c50a04e8dcaab4ef61c0725ad287700e4b59355f9d437217695eae3e4107.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/0d53c50a04e8dcaab4ef61c0725ad287700e4b59355f9d437217695eae3e4107.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Antetokounmpo scores 31 as Bucks tip Raptors" data-title>Antetokounmpo scores 31 as Bucks tip Raptors</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Sports</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Oct 24</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
 									</div>
 		</a>
@@ -2105,10 +2106,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay="true"
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_68fd11fa13c4f"
+			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_68fd2eae16a62"
 			data-displayinline-video-id="49a91e7f-1023-430f-8d66-561055f3d0f7"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_68fd11fa13c4f"
+    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_68fd2eae16a62"
     		    			data-displayinline-playlist="49a91e7f-1023-430f-8d66-561055f3d0f7"
     									data-displayinline-container="mini-ott"
 									    		>
@@ -2238,7 +2239,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Trump administration tells Colorado to stop importing wolves from Canada" data-title>Trump administration tells Colorado to stop importing wolves from Canada</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">22,433</span>
+							<span class="c-posts__info c-posts__info--highlight">26,471</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2268,7 +2269,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Rogers outage lawsuit moving ahead, millions may get compensation" data-title>Rogers outage lawsuit moving ahead, millions may get compensation</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">15,631</span>
+							<span class="c-posts__info c-posts__info--highlight">16,766</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2298,7 +2299,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Judge tosses murder charges over &#8216;torturous&#8217; treatment at Ontario jail" data-title>Judge tosses murder charges over &#8216;torturous&#8217; treatment at Ontario jail</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">10,077</span>
+							<span class="c-posts__info c-posts__info--highlight">12,204</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2328,7 +2329,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="White House releases list of donors paying for Trump&#8217;s &#8216;beautiful&#8217; ballroom" data-title>White House releases list of donors paying for Trump&#8217;s &#8216;beautiful&#8217; ballroom</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">8,936</span>
+							<span class="c-posts__info c-posts__info--highlight">10,430</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2358,7 +2359,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="CBSA launches anti-dumping probe into Chinese truck bodies" data-title>CBSA launches anti-dumping probe into Chinese truck bodies</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">7,437</span>
+							<span class="c-posts__info c-posts__info--highlight">8,478</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2457,7 +2458,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Trump administration tells Colorado to stop importing wolves from Canada" data-title>Trump administration tells Colorado to stop importing wolves from Canada</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">22,433</span>
+							<span class="c-posts__info c-posts__info--highlight">26,471</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2487,7 +2488,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Rogers outage lawsuit moving ahead, millions may get compensation" data-title>Rogers outage lawsuit moving ahead, millions may get compensation</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">15,631</span>
+							<span class="c-posts__info c-posts__info--highlight">16,766</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2517,7 +2518,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Judge tosses murder charges over &#8216;torturous&#8217; treatment at Ontario jail" data-title>Judge tosses murder charges over &#8216;torturous&#8217; treatment at Ontario jail</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">10,077</span>
+							<span class="c-posts__info c-posts__info--highlight">12,204</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2547,7 +2548,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="White House releases list of donors paying for Trump&#8217;s &#8216;beautiful&#8217; ballroom" data-title>White House releases list of donors paying for Trump&#8217;s &#8216;beautiful&#8217; ballroom</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">8,936</span>
+							<span class="c-posts__info c-posts__info--highlight">10,430</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2577,7 +2578,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="CBSA launches anti-dumping probe into Chinese truck bodies" data-title>CBSA launches anti-dumping probe into Chinese truck bodies</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">7,437</span>
+							<span class="c-posts__info c-posts__info--highlight">8,478</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2974,8 +2975,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-miniplayer"
 			data-displayinline-video-id="11493909"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11493909,11491750,11492178,11494520,11493738,8982853/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F8xr1ysri0w-pfqcs1l3yx%2Fonline_still_MAPLEHURST_CHARGES_STAYED_MCDONALD_PKG.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
-    		    			data-displayinline-playlist="11493909,11491750,11492178,11494520,11493738,8982853"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11493909,11494155,11494520,11311381,11491750,8982853/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F8xr1ysri0w-pfqcs1l3yx%2Fonline_still_MAPLEHURST_CHARGES_STAYED_MCDONALD_PKG.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
+    		    			data-displayinline-playlist="11493909,11494155,11494520,11311381,11491750,8982853"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
@@ -3042,8 +3043,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11493909"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11493909,11491750,11492178,11494520,11493738,8982853/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11493909,11491750,11492178,11494520,11493738,8982853"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11493909,11494155,11494520,11311381,11491750,8982853/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11493909,11494155,11494520,11311381,11491750,8982853"
 			data-video-carousel-label="News"
 			data-video-carousel-content="A judge has halted first-degree murder charges against three individuals after finding their charter rights may have been violated during a strip search at Maplehurst Correctional Complex. Catherine McDonald reports."
 			>
@@ -3064,18 +3065,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="White House defends East Wing demolition as ballroom cost rises once again" data-slide-index="1">
-	<a href="https://globalnews.ca/video/11491750/white-house-defends-east-wing-demolition-as-ballroom-cost-rises-once-again/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Uncertain timeline for teachers and students return to class" data-slide-index="1">
+	<a href="https://globalnews.ca/video/11494155/uncertain-timeline-for-teachers-and-students-return-to-class/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11491750"
+					data-video-id="11494155"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11491750,11492178,11494520,11493738,8982853,11493909/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11491750,11492178,11494520,11493738,8982853,11493909"
-			data-video-carousel-label="U.S. News"
-			data-video-carousel-content="Facing several questions from reporters about U.S. President Donald Trump’s controversial White House ballroom construction plans, press secretary Karoline Leavitt defended both the continually rising costs and the ongoing demolition of the landmark building’s East Wing, months after the president promised the building’s facade would remain untouched."
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11494155,11494520,11311381,11491750,8982853,11493909/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11494155,11494520,11311381,11491750,8982853,11493909"
+			data-video-carousel-label="Education"
+			data-video-carousel-content="The Alberta government’s Back to School Act could be passed as soon as Monday. But as for when students and teachers could return to classrooms remains uncertain. Erik Bay has more on how parents and school divisions are approaching next week."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/csoypl08wz-lyfmt5esqq/WHITE_HOUSE_VMS.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/z3rajcmftf-kzjcxpa87x/6P_BACK_TO_SCHOOL.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -3084,47 +3085,20 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>
 		<div class="l-videoCarousel__details c-posts__details">
 							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
+					<div class="c-posts__info c-posts__info--highlight">Education</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">White House defends East Wing demolition as ballroom cost rises once again</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Uncertain timeline for teachers and students return to class</span></div>
 					</div>
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Louvre heist: How a basket lift became thieves getaway vehicle" data-slide-index="2">
-	<a href="https://globalnews.ca/video/11492178/louvre-heist-how-a-basket-lift-became-thieves-getaway-vehicle/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11492178"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11492178,11494520,11493738,8982853,11493909,11491750/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11492178,11494520,11493738,8982853,11493909,11491750"
-			data-video-carousel-label="News"
-			data-video-carousel-content="A recent video has emerged showing thieves escaping the Louvre Museum after a daytime jewellery heist over the weekend. The footage captures two men using a powered, extendable ladder as the basket slowly lowers to the ground and into the truck. But burglars who stole jewels worth an estimated 88 million euros from the Louvre are not the only ones profiting from the heist."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/69mkl0qwzg-52glz974z5/2025-10-19T130213Z_1_LWD497119102025RP1_RTRWNEV_C_4971-FRANCE-CRIME-LOUVRE-CRANE-UPDATE.MP4.00_00_34_04.Still002.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">News</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Louvre heist: How a basket lift became thieves getaway vehicle</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="&#8216;They came through:&#8217; Barger&#8217;s history-making gland slam leads Blue Jays to Game 1 victory" data-slide-index="3">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="&#8216;They came through:&#8217; Barger&#8217;s history-making gland slam leads Blue Jays to Game 1 victory" data-slide-index="2">
 	<a href="https://globalnews.ca/video/11494520/they-came-through-bargers-history-making-gland-slam-leads-blue-jays-to-game-1-victory/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11494520"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11494520,11493738,8982853,11493909,11491750,11492178/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11494520,11493738,8982853,11493909,11491750,11492178"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11494520,11311381,11491750,8982853,11493909,11494155/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11494520,11311381,11491750,8982853,11493909,11494155"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="It was the best case scenario for fans, and the Toronto Blue Jays delivered. 
 After making it to the Fall Classic for the first time since 1993, the Jays sealed their first World Series game with a kiss... by taking home an 11-4 win against the Los Angeles Dodgers infront of a buzzing home crowd. 
@@ -3148,18 +3122,18 @@ Noor Ra&#039;fat breaks down how things played out. "
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="&#8216;Frustration has built over time&#8217;: White House advisor on Trump’s decision to end Canada trade talks" data-slide-index="4">
-	<a href="https://globalnews.ca/video/11493738/frustration-has-built-over-time-white-house-advisor-on-trumps-decision-to-end-canada-trade-talks/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Business Matters: Hudson’s Bay has repeatedly threatened to end lease deal with B.C. billionaire" data-slide-index="3">
+	<a href="https://globalnews.ca/video/11311381/business-matters-hudsons-bay-has-repeatedly-threatened-to-end-lease-deal-with-b-c-billionaire/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11493738"
+					data-video-id="11311381"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11493738,8982853,11493909,11491750,11492178,11494520/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11493738,8982853,11493909,11491750,11492178,11494520"
-			data-video-carousel-label="Politics"
-			data-video-carousel-content="U.S. officials are speaking out a day after President Donald Trump made the decision to end ongoing trade negotiations with Canada. White House Advisor Kevin Hassett accredited the move to a number of factors, including a “lack of flexibility” from Prime Minister Mark Carney – who he said is “difficult to negotiate with” – and “frustration [that] has built over time.”"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11311381,11491750,8982853,11493909,11494155,11494520/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11311381,11491750,8982853,11493909,11494155,11494520"
+			data-video-carousel-label="Canada"
+			data-video-carousel-content="New court filings show Hudson’s Bay has threatened to end a lease deal it has with a B.C. billionaire who wrote directly to a judge twice to try to persuade him to view her favourably. In a 50-page package Ruby Liu sent to Ontario Superior Court judge Peter Osborne, Liu says the company warned it could end their multimillion-dollar agreement to sell her 25 leases and forfeit her $9.4 million deposit. Anne Gaviola has this story and more in Business Matters for Wednesday July 30, 2025."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/w9fv2qzkdf-mnejkw5otu/TRUMP_CARNEY_VMS.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/1sq4wke26e-pwdt7do05c/BUSINESS_MATTERS_JULY_30TH_ONLINE_STILL.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -3168,9 +3142,36 @@ Noor Ra&#039;fat breaks down how things played out. "
 		</div>
 		<div class="l-videoCarousel__details c-posts__details">
 							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Politics</div>
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">&#8216;Frustration has built over time&#8217;: White House advisor on Trump’s decision to end Canada trade talks</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Business Matters: Hudson’s Bay has repeatedly threatened to end lease deal with B.C. billionaire</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="White House defends East Wing demolition as ballroom cost rises once again" data-slide-index="4">
+	<a href="https://globalnews.ca/video/11491750/white-house-defends-east-wing-demolition-as-ballroom-cost-rises-once-again/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11491750"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11491750,8982853,11493909,11494155,11494520,11311381/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11491750,8982853,11493909,11494155,11494520,11311381"
+			data-video-carousel-label="U.S. News"
+			data-video-carousel-content="Facing several questions from reporters about U.S. President Donald Trump’s controversial White House ballroom construction plans, press secretary Karoline Leavitt defended both the continually rising costs and the ongoing demolition of the landmark building’s East Wing, months after the president promised the building’s facade would remain untouched."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/csoypl08wz-lyfmt5esqq/WHITE_HOUSE_VMS.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">White House defends East Wing demolition as ballroom cost rises once again</span></div>
 					</div>
 	</a>
 </li>
@@ -3180,8 +3181,8 @@ Noor Ra&#039;fat breaks down how things played out. "
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="8982853"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/8982853,11493909,11491750,11492178,11494520,11493738/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="8982853,11493909,11491750,11492178,11494520,11493738"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/8982853,11493909,11494155,11494520,11311381,11491750/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="8982853,11493909,11494155,11494520,11311381,11491750"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="The Rogers outage brought Canada to its knees, and has even prompted a class-action lawsuit in one province. Anne Gaviola explains how Rogers plans to compensate customers, and the fears the company’s planned merger with Shaw is now in jeopardy."
 			>
@@ -3235,17 +3236,17 @@ Noor Ra&#039;fat breaks down how things played out. "
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11491750"
+			data-displayinline-player-id="home-miniplayer_11494155"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11491750,11492178,11494520,11493738,8982853/#autoplay&#038;stickyiframe=home-miniplayer_11491750"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11494155,11494520,11311381,11491750,8982853/#autoplay&#038;stickyiframe=home-miniplayer_11494155"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/csoypl08wz-lyfmt5esqq/WHITE_HOUSE_VMS.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/z3rajcmftf-kzjcxpa87x/6P_BACK_TO_SCHOOL.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'White House defends East Wing demolition as ballroom cost rises once again'"
+					alt="Click to play video 'Uncertain timeline for teachers and students return to class'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3254,11 +3255,11 @@ Noor Ra&#039;fat breaks down how things played out. "
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11491750/white-house-defends-east-wing-demolition-as-ballroom-cost-rises-once-again/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11494155/uncertain-timeline-for-teachers-and-students-return-to-class/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
+					<div class="c-posts__info c-posts__info--highlight">Education</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">White House defends East Wing demolition as ballroom cost rises once again</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Uncertain timeline for teachers and students return to class</span></div>
 		</a>
 	</div>
 </li>
@@ -3289,41 +3290,9 @@ Noor Ra&#039;fat breaks down how things played out. "
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11492178"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11492178,11494520,11493738,8982853,11491750/#autoplay&#038;stickyiframe=home-miniplayer_11492178"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/69mkl0qwzg-52glz974z5/2025-10-19T130213Z_1_LWD497119102025RP1_RTRWNEV_C_4971-FRANCE-CRIME-LOUVRE-CRANE-UPDATE.MP4.00_00_34_04.Still002.jpg?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Louvre heist: How a basket lift became thieves getaway vehicle'"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/11492178/louvre-heist-how-a-basket-lift-became-thieves-getaway-vehicle/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">News</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Louvre heist: How a basket lift became thieves getaway vehicle</span></div>
-		</a>
-	</div>
-</li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11494520"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11494520,11493738,8982853,11491750,11492178/#autoplay&#038;stickyiframe=home-miniplayer_11494520"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11494520,11311381,11491750,8982853,11494155/#autoplay&#038;stickyiframe=home-miniplayer_11494520"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3353,17 +3322,17 @@ Noor Ra&#039;fat breaks down how things played out. "
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11493738"
+			data-displayinline-player-id="home-miniplayer_11311381"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11493738,8982853,11491750,11492178,11494520/#autoplay&#038;stickyiframe=home-miniplayer_11493738"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11311381,11491750,8982853,11494155,11494520/#autoplay&#038;stickyiframe=home-miniplayer_11311381"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/w9fv2qzkdf-mnejkw5otu/TRUMP_CARNEY_VMS.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/1sq4wke26e-pwdt7do05c/BUSINESS_MATTERS_JULY_30TH_ONLINE_STILL.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video '&#8216;Frustration has built over time&#8217;: White House advisor on Trump’s decision to end Canada trade talks'"
+					alt="Click to play video 'Business Matters: Hudson’s Bay has repeatedly threatened to end lease deal with B.C. billionaire'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3372,11 +3341,43 @@ Noor Ra&#039;fat breaks down how things played out. "
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11493738/frustration-has-built-over-time-white-house-advisor-on-trumps-decision-to-end-canada-trade-talks/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11311381/business-matters-hudsons-bay-has-repeatedly-threatened-to-end-lease-deal-with-b-c-billionaire/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Politics</div>
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">&#8216;Frustration has built over time&#8217;: White House advisor on Trump’s decision to end Canada trade talks</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Business Matters: Hudson’s Bay has repeatedly threatened to end lease deal with B.C. billionaire</span></div>
+		</a>
+	</div>
+</li>
+
+<li class="c-posts__item">
+	<div class="c-posts__inner">
+		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
+			data-displayinline-type="video"
+			data-displayinline-player-id="home-miniplayer_11491750"
+			data-displayinline-ratio="16:9"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11491750,8982853,11494155,11494520,11311381/#autoplay&#038;stickyiframe=home-miniplayer_11491750"
+			data-displayinline-sticky="true"
+			data-displayinline-expand="true">
+			<div class="c-video__placeholder">
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/csoypl08wz-lyfmt5esqq/WHITE_HOUSE_VMS.jpg?w=384&#038;quality=70&#038;strip=all"
+					width="236"
+					height="133"
+					class="c-posts__thumbnail c-video__image"
+					alt="Click to play video 'White House defends East Wing demolition as ballroom cost rises once again'"
+					loading="lazy" />
+				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+			</div>
+		</a>
+		<a href="https://globalnews.ca/video/11491750/white-house-defends-east-wing-demolition-as-ballroom-cost-rises-once-again/" class="c-posts__details">
+				<div class="c-posts__about">
+					<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
+				</div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">White House defends East Wing demolition as ballroom cost rises once again</span></div>
 		</a>
 	</div>
 </li>
@@ -3398,22 +3399,22 @@ Noor Ra&#039;fat breaks down how things played out. "
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant"
-			data-displayinline-video-id="11492982"
+			data-displayinline-video-id="11494853"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11492982,11493738,11492965,11494726,11493221/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F3muoc52mkw-lcqdoctjr4%2FReganAdthumbersite.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
-    		    			data-displayinline-playlist="11492982,11493738,11492965,11494726,11493221"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11494853,11492982,11493738,11492965,11494726/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fsvld4gnqem-qfn945ippz%2FSIRIKIT_SITE.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
+    		    			data-displayinline-playlist="11494853,11492982,11493738,11492965,11494726"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'The Ontario anti-tariff ad which lead Trump to end trade talks with Canada'"
+						alt="Click to play video: '&#8216;My world stopped&#8217;: Thailand&#8217;s Queen Mother Sirikit dies at 93, Thai palace says'"
 						width="640"
 						height="360"
-													data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/3muoc52mkw-lcqdoctjr4/ReganAdthumbersite.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/svld4gnqem-qfn945ippz/SIRIKIT_SITE.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i2.wp.com/media.globalnews.ca/videostatic/news/3muoc52mkw-lcqdoctjr4/ReganAdthumbersite.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i2.wp.com/media.globalnews.ca/videostatic/news/3muoc52mkw-lcqdoctjr4/ReganAdthumbersite.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i2.wp.com/media.globalnews.ca/videostatic/news/3muoc52mkw-lcqdoctjr4/ReganAdthumbersite.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
+								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/svld4gnqem-qfn945ippz/SIRIKIT_SITE.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/svld4gnqem-qfn945ippz/SIRIKIT_SITE.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/svld4gnqem-qfn945ippz/SIRIKIT_SITE.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -3423,20 +3424,20 @@ Noor Ra&#039;fat breaks down how things played out. "
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">0:59</time>
-																									<span class="c-video__title">The Ontario anti-tariff ad which lead Trump to end trade talks with Canada</span>
+																	<time class="c-video__duration">1:23</time>
+																									<span class="c-video__title">&#8216;My world stopped&#8217;: Thailand&#8217;s Queen Mother Sirikit dies at 93, Thai palace says</span>
 															</div>
 						</span>
 											</span>
 				</div>
 							</div>
 								<div class="l-videoCarousel__sidebar">
-													<a href="https://globalnews.ca/video/11492982/the-ontario-anti-tariff-ad-which-lead-trump-to-end-trade-talks-with-canada/" class="l-videoCarousel__details">
-							<div class="l-videoCarousel__info">Trending</div>
+													<a href="https://globalnews.ca/video/11494853/my-world-stopped-thailands-queen-mother-sirikit-dies-at-93-thai-palace-says/" class="l-videoCarousel__details">
+							<div class="l-videoCarousel__info">World</div>
 								<div class="l-videoCarousel__fullTitle">
-								The Ontario anti-tariff ad which lead Trump to end trade talks with Canada								</div>
+								&#8216;My world stopped&#8217;: Thailand&#8217;s Queen Mother Sirikit dies at 93, Thai palace says								</div>
 								<div class="l-videoCarousel__description">
-								U.S. President Donald Trump said late Thursday that he was ending “all trade negotiations” with Canada because of a this television ad opposing U.S. tariffs and featuring the voice of former U.S. President Ronald Reagan.								</div>
+								Thailand&#039;s Queen Mother Sirikit has died at 93, the Royal Household Bureau said in a statement on Saturday. Sirikit was hospitalized since Sept. 7, 2019, due to several illnesses and developed a bloodstream infection in October before passing away peacefully on Friday, the palace said.								</div>
 						</a>
 								<div class="c-ad c-ad--bigbox c-ad--dark l-videoCarousel__ad">							<div class="c-ad__label">Advertisement</div>
 			
@@ -3463,13 +3464,40 @@ Noor Ra&#039;fat breaks down how things played out. "
 					<div class="c-carousel__track glide__track" data-glide-el="track">
 						<ul class="c-posts c-posts--video c-posts--tile c-posts--horizontal c-posts--inverted glide__slides">
 							
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="The Ontario anti-tariff ad which lead Trump to end trade talks with Canada" data-slide-index="0">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="&#8216;My world stopped&#8217;: Thailand&#8217;s Queen Mother Sirikit dies at 93, Thai palace says" data-slide-index="0">
+	<a href="https://globalnews.ca/video/11494853/my-world-stopped-thailands-queen-mother-sirikit-dies-at-93-thai-palace-says/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11494853"
+			data-video-player-id="home-miniplayer-variant"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11494853,11492982,11493738,11492965,11494726/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11494853,11492982,11493738,11492965,11494726"
+			data-video-carousel-label="World"
+			data-video-carousel-content="Thailand&#039;s Queen Mother Sirikit has died at 93, the Royal Household Bureau said in a statement on Saturday. Sirikit was hospitalized since Sept. 7, 2019, due to several illnesses and developed a bloodstream infection in October before passing away peacefully on Friday, the palace said."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/svld4gnqem-qfn945ippz/SIRIKIT_SITE.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">World</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">&#8216;My world stopped&#8217;: Thailand&#8217;s Queen Mother Sirikit dies at 93, Thai palace says</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="The Ontario anti-tariff ad which lead Trump to end trade talks with Canada" data-slide-index="1">
 	<a href="https://globalnews.ca/video/11492982/the-ontario-anti-tariff-ad-which-lead-trump-to-end-trade-talks-with-canada/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11492982"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11492982,11493738,11492965,11494726,11493221/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11492982,11493738,11492965,11494726,11493221"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11492982,11493738,11492965,11494726,11494853/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11492982,11493738,11492965,11494726,11494853"
 			data-video-carousel-label="Trending"
 			data-video-carousel-content="U.S. President Donald Trump said late Thursday that he was ending “all trade negotiations” with Canada because of a this television ad opposing U.S. tariffs and featuring the voice of former U.S. President Ronald Reagan."
 			>
@@ -3490,13 +3518,13 @@ Noor Ra&#039;fat breaks down how things played out. "
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="&#8216;Frustration has built over time&#8217;: White House advisor on Trump’s decision to end Canada trade talks" data-slide-index="1">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="&#8216;Frustration has built over time&#8217;: White House advisor on Trump’s decision to end Canada trade talks" data-slide-index="2">
 	<a href="https://globalnews.ca/video/11493738/frustration-has-built-over-time-white-house-advisor-on-trumps-decision-to-end-canada-trade-talks/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11493738"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11493738,11492965,11494726,11493221,11492982/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11493738,11492965,11494726,11493221,11492982"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11493738,11492965,11494726,11494853,11492982/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11493738,11492965,11494726,11494853,11492982"
 			data-video-carousel-label="Politics"
 			data-video-carousel-content="U.S. officials are speaking out a day after President Donald Trump made the decision to end ongoing trade negotiations with Canada. White House Advisor Kevin Hassett accredited the move to a number of factors, including a “lack of flexibility” from Prime Minister Mark Carney – who he said is “difficult to negotiate with” – and “frustration [that] has built over time.”"
 			>
@@ -3517,13 +3545,13 @@ Noor Ra&#039;fat breaks down how things played out. "
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Former U.S. President Ronald Reagan 1987 speech on tariffs and free trade" data-slide-index="2">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Former U.S. President Ronald Reagan 1987 speech on tariffs and free trade" data-slide-index="3">
 	<a href="https://globalnews.ca/video/11492965/former-u-s-president-ronald-reagan-1987-speech-on-tariffs-and-free-trade/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11492965"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11492965,11494726,11493221,11492982,11493738/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11492965,11494726,11493221,11492982,11493738"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11492965,11494726,11494853,11492982,11493738/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11492965,11494726,11494853,11492982,11493738"
 			data-video-carousel-label="News"
 			data-video-carousel-content="Full footage of former U.S. president Ronald Reagan&#039;s 1987 radio address. "
 			>
@@ -3544,13 +3572,13 @@ Noor Ra&#039;fat breaks down how things played out. "
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Canada-U.S. trade talks break down as world leaders head to Asia" data-slide-index="3">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Canada-U.S. trade talks break down as world leaders head to Asia" data-slide-index="4">
 	<a href="https://globalnews.ca/video/11494726/canada-u-s-trade-talks-break-down-as-world-leaders-head-to-asia/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11494726"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11494726,11493221,11492982,11493738,11492965/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11494726,11493221,11492982,11493738,11492965"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11494726,11494853,11492982,11493738,11492965/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11494726,11494853,11492982,11493738,11492965"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="William Pellerin, International Trade Lawyer at McMillan LLP joins Global’s Nivrita Ganguly to discuss Donald Trump terminating tariff talks with Canada, and what to expect from Mark Carney’s visit to Asia."
 			>
@@ -3567,33 +3595,6 @@ Noor Ra&#039;fat breaks down how things played out. "
 					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
 						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Canada-U.S. trade talks break down as world leaders head to Asia</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Doug Ford reacts to Trump ending trade talks with Canada after Ontario anti-tariff ad" data-slide-index="4">
-	<a href="https://globalnews.ca/video/11493221/doug-ford-reacts-to-trump-ending-trade-talks-with-canada-after-ontario-anti-tariff-ad/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11493221"
-			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11493221,11492982,11493738,11492965,11494726/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11493221,11492982,11493738,11492965,11494726"
-			data-video-carousel-label="Canada"
-			data-video-carousel-content="Ontario Premier Doug Ford responded to U.S. President Donald Trump, who announced on social media his decision to end trade talks with Canada over an Ontario-funded anti-tariff ad that used quotes from U.S. former president Ronald Reagan, claiming it represented “egregious behavior” aimed at influencing U.S. court decisions."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/188d453xcu-r7lnuq0iuh/SITE_TRUMP_FORD.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Doug Ford reacts to Trump ending trade talks with Canada after Ontario anti-tariff ad</span></div>
 					</div>
 	</a>
 </li>
@@ -3631,17 +3632,17 @@ Noor Ra&#039;fat breaks down how things played out. "
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11493738"
+			data-displayinline-player-id="home-miniplayer-variant_11492982"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11493738,11492965,11494726,11493221/#autoplay&#038;stickyiframe=home-miniplayer-variant_11493738"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11492982,11493738,11492965,11494726/#autoplay&#038;stickyiframe=home-miniplayer-variant_11492982"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/w9fv2qzkdf-mnejkw5otu/TRUMP_CARNEY_VMS.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/3muoc52mkw-lcqdoctjr4/ReganAdthumbersite.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video '&#8216;Frustration has built over time&#8217;: White House advisor on Trump’s decision to end Canada trade talks'"
+					alt="Click to play video 'The Ontario anti-tariff ad which lead Trump to end trade talks with Canada'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3650,11 +3651,11 @@ Noor Ra&#039;fat breaks down how things played out. "
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11493738/frustration-has-built-over-time-white-house-advisor-on-trumps-decision-to-end-canada-trade-talks/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11492982/the-ontario-anti-tariff-ad-which-lead-trump-to-end-trade-talks-with-canada/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Politics</div>
+					<div class="c-posts__info c-posts__info--highlight">Trending</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">&#8216;Frustration has built over time&#8217;: White House advisor on Trump’s decision to end Canada trade talks</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">The Ontario anti-tariff ad which lead Trump to end trade talks with Canada</span></div>
 		</a>
 	</div>
 </li>
@@ -3685,9 +3686,41 @@ Noor Ra&#039;fat breaks down how things played out. "
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
+			data-displayinline-player-id="home-miniplayer-variant_11493738"
+			data-displayinline-ratio="16:9"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11493738,11492965,11494726,11492982/#autoplay&#038;stickyiframe=home-miniplayer-variant_11493738"
+			data-displayinline-sticky="true"
+			data-displayinline-expand="true">
+			<div class="c-video__placeholder">
+				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/w9fv2qzkdf-mnejkw5otu/TRUMP_CARNEY_VMS.jpg?w=384&#038;quality=70&#038;strip=all"
+					width="236"
+					height="133"
+					class="c-posts__thumbnail c-video__image"
+					alt="Click to play video '&#8216;Frustration has built over time&#8217;: White House advisor on Trump’s decision to end Canada trade talks'"
+					loading="lazy" />
+				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+			</div>
+		</a>
+		<a href="https://globalnews.ca/video/11493738/frustration-has-built-over-time-white-house-advisor-on-trumps-decision-to-end-canada-trade-talks/" class="c-posts__details">
+				<div class="c-posts__about">
+					<div class="c-posts__info c-posts__info--highlight">Politics</div>
+				</div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">&#8216;Frustration has built over time&#8217;: White House advisor on Trump’s decision to end Canada trade talks</span></div>
+		</a>
+	</div>
+</li>
+
+<li class="c-posts__item">
+	<div class="c-posts__inner">
+		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
+			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant_11492965"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11492965,11494726,11493221,11493738/#autoplay&#038;stickyiframe=home-miniplayer-variant_11492965"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11492965,11494726,11492982,11493738/#autoplay&#038;stickyiframe=home-miniplayer-variant_11492965"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3719,7 +3752,7 @@ Noor Ra&#039;fat breaks down how things played out. "
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant_11494726"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11494726,11493221,11493738,11492965/#autoplay&#038;stickyiframe=home-miniplayer-variant_11494726"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11494726,11492982,11493738,11492965/#autoplay&#038;stickyiframe=home-miniplayer-variant_11494726"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3741,38 +3774,6 @@ Noor Ra&#039;fat breaks down how things played out. "
 					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
 			<div class="c-posts__headline"><span class="c-posts__headlineText">Canada-U.S. trade talks break down as world leaders head to Asia</span></div>
-		</a>
-	</div>
-</li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11493221"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11493221,11493738,11492965,11494726/#autoplay&#038;stickyiframe=home-miniplayer-variant_11493221"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/188d453xcu-r7lnuq0iuh/SITE_TRUMP_FORD.jpg?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Doug Ford reacts to Trump ending trade talks with Canada after Ontario anti-tariff ad'"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/11493221/doug-ford-reacts-to-trump-ending-trade-talks-with-canada-after-ontario-anti-tariff-ad/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Doug Ford reacts to Trump ending trade talks with Canada after Ontario anti-tariff ad</span></div>
 		</a>
 	</div>
 </li>
@@ -3837,12 +3838,44 @@ Noor Ra&#039;fat breaks down how things played out. "
 					>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11493205"
+				data-sophi-feature=latest-news			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11493205/maplehurst-arman-dhillon-murder/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Judge tosses murder charges over &#8216;torturous&#8217; treatment at Ontario jail" data-title>Judge tosses murder charges over &#8216;torturous&#8217; treatment at Ontario jail</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						An Ontario judge has ordered the end to a first-degree murder case over the “torturous” treatment the accused experienced while incarcerated.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Crime</div>
+																						<div class="c-posts__info">Oct 24</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2024/07/20240703100740-568e74eed1884a6eadc0f51e4f4c49b3dead3c5a364441c31084f0a7227e54bc.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="484" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2024/07/20240703100740-568e74eed1884a6eadc0f51e4f4c49b3dead3c5a364441c31084f0a7227e54bc.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2024/07/20240703100740-568e74eed1884a6eadc0f51e4f4c49b3dead3c5a364441c31084f0a7227e54bc.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2024/07/20240703100740-568e74eed1884a6eadc0f51e4f4c49b3dead3c5a364441c31084f0a7227e54bc.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
 				data-post-id="11493050"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11493050/white-house-ballroom-trump-donors-list/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3869,12 +3902,44 @@ Noor Ra&#039;fat breaks down how things played out. "
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11493440"
+				data-sophi-feature=latest-news			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11493440/cbsa-anti-dumping-probe-chinese-trucks/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="CBSA launches anti-dumping probe into Chinese truck bodies" data-title>CBSA launches anti-dumping probe into Chinese truck bodies</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						The investigation follows a complaint filed by two Canadian groups, Morgan Canada Corporation and Morgan Transit Corporation, in Bolton, Ont., and Laval, Que., respectively.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Canada</div>
+																						<div class="c-posts__info">Oct 24</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/CBSA-badge.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/CBSA-badge.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/CBSA-badge.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/CBSA-badge.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
 				data-post-id="11491079"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11491079/inuit-womens-association-in-crosshairs-of-me-too-movement/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3901,12 +3966,44 @@ Noor Ra&#039;fat breaks down how things played out. "
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11493122"
+				data-sophi-feature=latest-news			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11493122/donald-trump-tariffs-talks-terminated-us-reaction/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="White House says trade talks won&#8217;t resume if Canada &#8216;can&#8217;t be serious&#8217;" data-title>White House says trade talks won&#8217;t resume if Canada &#8216;can&#8217;t be serious&#8217;</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						Trump&#039;s top economic adviser said the announcement reflected mounting &#039;frustrations&#039; with Canada in negotiations, while Democrats highlighted the economic harm of Trump&#039;s tariffs.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Politics</div>
+																						<div class="c-posts__info">Oct 24</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/CP174272909.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="472" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/CP174272909.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/CP174272909.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/CP174272909.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
 				data-post-id="11493043"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11493043/air-canada-management-cuts/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3938,7 +4035,7 @@ Noor Ra&#039;fat breaks down how things played out. "
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11491309/ukraine-canada-armoured-vehicle-contract-cancelled-explanation/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3960,102 +4057,6 @@ Noor Ra&#039;fat breaks down how things played out. "
 								width="720" height="540" alt="" 
 												srcset='' sizes=''
 								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/CP13386338.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/CP13386338.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/CP13386338.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11492823"
-				data-sophi-feature=latest-news			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11492823/donald-trump-axes-trade-talks-ontario-tv-ad/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Ford says anti-tariff ads to run on World Series weekend then pause Monday" data-title>Ford says anti-tariff ads to run on World Series weekend then pause Monday</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						Ontario Premier Doug Ford plans to pause the anti-tariff ad campaign which led U.S. President Donald Trump to halt all trade negotiations in response.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																						<div class="c-posts__info">Oct 24</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/1c7c7ee1b1d2a287db2a584b6e63c5447d5e5b7f9f466709eba91597ed34274e.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/1c7c7ee1b1d2a287db2a584b6e63c5447d5e5b7f9f466709eba91597ed34274e.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/1c7c7ee1b1d2a287db2a584b6e63c5447d5e5b7f9f466709eba91597ed34274e.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/1c7c7ee1b1d2a287db2a584b6e63c5447d5e5b7f9f466709eba91597ed34274e.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11492825"
-				data-sophi-feature=latest-news			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11492825/trump-cut-off-trade-talks-canada-tv-ad/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Trump just cut off trade talks with Canada. This is the ad he&#8217;s blaming" data-title>Trump just cut off trade talks with Canada. This is the ad he&#8217;s blaming</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						In his Truth Social post, Trump blamed an &#039;egregious&#039; television ad paid for and run by the Ontario government on American television networks.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																						<div class="c-posts__info">Oct 24</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/donald-trump-ronald-reagan-pic.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/donald-trump-ronald-reagan-pic.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/donald-trump-ronald-reagan-pic.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/donald-trump-ronald-reagan-pic.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11493163"
-				data-sophi-feature=latest-news			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11493163/blood-tests-show-highest-levels-of-forever-chemicals-in-those-living-near-new-mexico-plume/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Blood tests show highest levels of forever chemicals in those living near New Mexico plume" data-title>Blood tests show highest levels of forever chemicals in those living near New Mexico plume</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						ALBUQUERQUE, N.M. (AP) — It&#039;s a name many people have trouble pronouncing, but these synthetic chemicals have been used in everything from fast-food packaging to nonstick cookware, clothing, household cleaning products and even firefighting foam.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Health</div>
-																						<div class="c-posts__info">Oct 24</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/1a60cb4fe4c7c7538074d11eee511453e43f6f70ac4d415355cd626bb0907e23.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/1a60cb4fe4c7c7538074d11eee511453e43f6f70ac4d415355cd626bb0907e23.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/1a60cb4fe4c7c7538074d11eee511453e43f6f70ac4d415355cd626bb0907e23.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/1a60cb4fe4c7c7538074d11eee511453e43f6f70ac4d415355cd626bb0907e23.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -4170,8 +4171,8 @@ Noor Ra&#039;fat breaks down how things played out. "
 			data-displayinline-player-id="home-playlist-miniplayer"
 			data-displayinline-video-id="11493909"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11493909,11491750,11492178,11494520,11493738/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F8xr1ysri0w-pfqcs1l3yx%2Fonline_still_MAPLEHURST_CHARGES_STAYED_MCDONALD_PKG.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
-    		    			data-displayinline-playlist="11493909,11491750,11492178,11494520,11493738"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11493909,11494155,11494520,11311381,11491750/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F8xr1ysri0w-pfqcs1l3yx%2Fonline_still_MAPLEHURST_CHARGES_STAYED_MCDONALD_PKG.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
+    		    			data-displayinline-playlist="11493909,11494155,11494520,11311381,11491750"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
@@ -4217,7 +4218,7 @@ Noor Ra&#039;fat breaks down how things played out. "
 		data-video-label="News"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11493909,11491750,11492178,11494520,11493738/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11493909,11494155,11494520,11311381,11491750/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Milton judge halts murder charges against three accused</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4238,23 +4239,23 @@ Noor Ra&#039;fat breaks down how things played out. "
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="2"
 	>
-	<a href="https://globalnews.ca/video/11491750/white-house-defends-east-wing-demolition-as-ballroom-cost-rises-once-again/"
-		title="White House defends East Wing demolition as ballroom cost rises once again"
+	<a href="https://globalnews.ca/video/11494155/uncertain-timeline-for-teachers-and-students-return-to-class/"
+		title="Uncertain timeline for teachers and students return to class"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11491750"
-		data-video-label="U.S. News"
+		data-video-id="11494155"
+		data-video-label="Education"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11491750,11492178,11494520,11493738/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11494155,11494520,11311381,11491750/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">White House defends East Wing demolition as ballroom cost rises once again</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Uncertain timeline for teachers and students return to class</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						U.S. News					</div>
+						Education					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/csoypl08wz-lyfmt5esqq/WHITE_HOUSE_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/z3rajcmftf-kzjcxpa87x/6P_BACK_TO_SCHOOL.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -4266,34 +4267,6 @@ Noor Ra&#039;fat breaks down how things played out. "
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="3"
 	>
-	<a href="https://globalnews.ca/video/11492178/louvre-heist-how-a-basket-lift-became-thieves-getaway-vehicle/"
-		title="Louvre heist: How a basket lift became thieves getaway vehicle"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11492178"
-		data-video-label="News"
-		data-video-player-id="home-playlist-miniplayer"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11492178,11494520,11493738,11491750/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Louvre heist: How a basket lift became thieves getaway vehicle</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						News					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/69mkl0qwzg-52glz974z5/2025-10-19T130213Z_1_LWD497119102025RP1_RTRWNEV_C_4971-FRANCE-CRIME-LOUVRE-CRANE-UPDATE.MP4.00_00_34_04.Still002.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="4"
-	>
 	<a href="https://globalnews.ca/video/11494520/they-came-through-bargers-history-making-gland-slam-leads-blue-jays-to-game-1-victory/"
 		title="&#8216;They came through:&#8217; Barger&#8217;s history-making gland slam leads Blue Jays to Game 1 victory"
 		class="l-playlist__link c-posts__inner c-videoPlay"
@@ -4301,7 +4274,7 @@ Noor Ra&#039;fat breaks down how things played out. "
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11494520,11493738,11491750,11492178/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11494520,11311381,11491750,11494155/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">&#8216;They came through:&#8217; Barger&#8217;s history-making gland slam leads Blue Jays to Game 1 victory</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4320,25 +4293,53 @@ Noor Ra&#039;fat breaks down how things played out. "
 	</a>
 </li>
 <li class="c-posts__item l-playlist__item"
-			data-playlist-index="5"
+			data-playlist-index="4"
 	>
-	<a href="https://globalnews.ca/video/11493738/frustration-has-built-over-time-white-house-advisor-on-trumps-decision-to-end-canada-trade-talks/"
-		title="&#8216;Frustration has built over time&#8217;: White House advisor on Trump’s decision to end Canada trade talks"
+	<a href="https://globalnews.ca/video/11311381/business-matters-hudsons-bay-has-repeatedly-threatened-to-end-lease-deal-with-b-c-billionaire/"
+		title="Business Matters: Hudson’s Bay has repeatedly threatened to end lease deal with B.C. billionaire"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11493738"
-		data-video-label="Politics"
+		data-video-id="11311381"
+		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11493738,11491750,11492178,11494520/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11311381,11491750,11494155,11494520/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">&#8216;Frustration has built over time&#8217;: White House advisor on Trump’s decision to end Canada trade talks</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Business Matters: Hudson’s Bay has repeatedly threatened to end lease deal with B.C. billionaire</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Politics					</div>
+						Canada					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/w9fv2qzkdf-mnejkw5otu/TRUMP_CARNEY_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/1sq4wke26e-pwdt7do05c/BUSINESS_MATTERS_JULY_30TH_ONLINE_STILL.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="5"
+	>
+	<a href="https://globalnews.ca/video/11491750/white-house-defends-east-wing-demolition-as-ballroom-cost-rises-once-again/"
+		title="White House defends East Wing demolition as ballroom cost rises once again"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11491750"
+		data-video-label="U.S. News"
+		data-video-player-id="home-playlist-miniplayer"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11491750,11494155,11494520,11311381/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">White House defends East Wing demolition as ballroom cost rises once again</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						U.S. News					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/csoypl08wz-lyfmt5esqq/WHITE_HOUSE_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -4363,22 +4364,22 @@ Noor Ra&#039;fat breaks down how things played out. "
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-playlist-miniplayer-variant"
-			data-displayinline-video-id="11492982"
+			data-displayinline-video-id="11494853"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11492982,11493738,11492965,11494726,11493221/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F3muoc52mkw-lcqdoctjr4%2FReganAdthumbersite.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
-    		    			data-displayinline-playlist="11492982,11493738,11492965,11494726,11493221"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11494853,11492982,11493738,11492965,11494726/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fsvld4gnqem-qfn945ippz%2FSIRIKIT_SITE.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
+    		    			data-displayinline-playlist="11494853,11492982,11493738,11492965,11494726"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'The Ontario anti-tariff ad which lead Trump to end trade talks with Canada'"
+						alt="Click to play video: '&#8216;My world stopped&#8217;: Thailand&#8217;s Queen Mother Sirikit dies at 93, Thai palace says'"
 						width="640"
 						height="360"
-													data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/3muoc52mkw-lcqdoctjr4/ReganAdthumbersite.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/svld4gnqem-qfn945ippz/SIRIKIT_SITE.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i2.wp.com/media.globalnews.ca/videostatic/news/3muoc52mkw-lcqdoctjr4/ReganAdthumbersite.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i2.wp.com/media.globalnews.ca/videostatic/news/3muoc52mkw-lcqdoctjr4/ReganAdthumbersite.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i2.wp.com/media.globalnews.ca/videostatic/news/3muoc52mkw-lcqdoctjr4/ReganAdthumbersite.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
+								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/svld4gnqem-qfn945ippz/SIRIKIT_SITE.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/svld4gnqem-qfn945ippz/SIRIKIT_SITE.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/svld4gnqem-qfn945ippz/SIRIKIT_SITE.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -4388,8 +4389,8 @@ Noor Ra&#039;fat breaks down how things played out. "
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">0:59</time>
-																									<span class="c-video__title">The Ontario anti-tariff ad which lead Trump to end trade talks with Canada</span>
+																	<time class="c-video__duration">1:23</time>
+																									<span class="c-video__title">&#8216;My world stopped&#8217;: Thailand&#8217;s Queen Mother Sirikit dies at 93, Thai palace says</span>
 															</div>
 						</span>
 											</span>
@@ -4405,23 +4406,23 @@ Noor Ra&#039;fat breaks down how things played out. "
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="1"
 	>
-	<a href="https://globalnews.ca/video/11492982/the-ontario-anti-tariff-ad-which-lead-trump-to-end-trade-talks-with-canada/"
-		title="The Ontario anti-tariff ad which lead Trump to end trade talks with Canada"
+	<a href="https://globalnews.ca/video/11494853/my-world-stopped-thailands-queen-mother-sirikit-dies-at-93-thai-palace-says/"
+		title="&#8216;My world stopped&#8217;: Thailand&#8217;s Queen Mother Sirikit dies at 93, Thai palace says"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11492982"
-		data-video-label="Trending"
+		data-video-id="11494853"
+		data-video-label="World"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11492982,11493738,11492965,11494726,11493221/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11494853,11492982,11493738,11492965,11494726/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">The Ontario anti-tariff ad which lead Trump to end trade talks with Canada</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">&#8216;My world stopped&#8217;: Thailand&#8217;s Queen Mother Sirikit dies at 93, Thai palace says</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Trending					</div>
+						World					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/3muoc52mkw-lcqdoctjr4/ReganAdthumbersite.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/svld4gnqem-qfn945ippz/SIRIKIT_SITE.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -4433,6 +4434,34 @@ Noor Ra&#039;fat breaks down how things played out. "
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="2"
 	>
+	<a href="https://globalnews.ca/video/11492982/the-ontario-anti-tariff-ad-which-lead-trump-to-end-trade-talks-with-canada/"
+		title="The Ontario anti-tariff ad which lead Trump to end trade talks with Canada"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11492982"
+		data-video-label="Trending"
+		data-video-player-id="home-playlist-miniplayer-variant"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11492982,11493738,11492965,11494726/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">The Ontario anti-tariff ad which lead Trump to end trade talks with Canada</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						Trending					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/3muoc52mkw-lcqdoctjr4/ReganAdthumbersite.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="3"
+	>
 	<a href="https://globalnews.ca/video/11493738/frustration-has-built-over-time-white-house-advisor-on-trumps-decision-to-end-canada-trade-talks/"
 		title="&#8216;Frustration has built over time&#8217;: White House advisor on Trump’s decision to end Canada trade talks"
 		class="l-playlist__link c-posts__inner c-videoPlay"
@@ -4440,7 +4469,7 @@ Noor Ra&#039;fat breaks down how things played out. "
 		data-video-label="Politics"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11493738,11492965,11494726,11493221/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11493738,11492965,11494726,11492982/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">&#8216;Frustration has built over time&#8217;: White House advisor on Trump’s decision to end Canada trade talks</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4459,7 +4488,7 @@ Noor Ra&#039;fat breaks down how things played out. "
 	</a>
 </li>
 <li class="c-posts__item l-playlist__item"
-			data-playlist-index="3"
+			data-playlist-index="4"
 	>
 	<a href="https://globalnews.ca/video/11492965/former-u-s-president-ronald-reagan-1987-speech-on-tariffs-and-free-trade/"
 		title="Former U.S. President Ronald Reagan 1987 speech on tariffs and free trade"
@@ -4468,7 +4497,7 @@ Noor Ra&#039;fat breaks down how things played out. "
 		data-video-label="News"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11492965,11494726,11493221,11493738/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11492965,11494726,11492982,11493738/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Former U.S. President Ronald Reagan 1987 speech on tariffs and free trade</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4487,7 +4516,7 @@ Noor Ra&#039;fat breaks down how things played out. "
 	</a>
 </li>
 <li class="c-posts__item l-playlist__item"
-			data-playlist-index="4"
+			data-playlist-index="5"
 	>
 	<a href="https://globalnews.ca/video/11494726/canada-u-s-trade-talks-break-down-as-world-leaders-head-to-asia/"
 		title="Canada-U.S. trade talks break down as world leaders head to Asia"
@@ -4496,7 +4525,7 @@ Noor Ra&#039;fat breaks down how things played out. "
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11494726,11493221,11493738,11492965/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11494726,11492982,11493738,11492965/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Canada-U.S. trade talks break down as world leaders head to Asia</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4506,34 +4535,6 @@ Noor Ra&#039;fat breaks down how things played out. "
 					</div>
 		<div class="c-posts__media l-playlist__media">
 			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/vqgom2alcl-wezi8y47im/NIVRITA_TRUMP.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="5"
-	>
-	<a href="https://globalnews.ca/video/11493221/doug-ford-reacts-to-trump-ending-trade-talks-with-canada-after-ontario-anti-tariff-ad/"
-		title="Doug Ford reacts to Trump ending trade talks with Canada after Ontario anti-tariff ad"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11493221"
-		data-video-label="Canada"
-		data-video-player-id="home-playlist-miniplayer-variant"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11493221,11493738,11492965,11494726/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Doug Ford reacts to Trump ending trade talks with Canada after Ontario anti-tariff ad</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/188d453xcu-r7lnuq0iuh/SITE_TRUMP_FORD.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -5007,37 +5008,6 @@ Noor Ra&#039;fat breaks down how things played out. "
 			data-num-posts=3											>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-27"
-	data-post-id="11493820"
-	data-slide-index=""
-	data-caption="Canada needs new Indo-Pacific strategy as it seeks deeper Asia ties: Anand"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11493820/canada-indo-pacific-strategy-anand-update/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/f4f3e607529477d20fdc9632c4ae154ae15f3cf60643d6dd993d0f180a105f29.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="444" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/f4f3e607529477d20fdc9632c4ae154ae15f3cf60643d6dd993d0f180a105f29.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/f4f3e607529477d20fdc9632c4ae154ae15f3cf60643d6dd993d0f180a105f29.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/f4f3e607529477d20fdc9632c4ae154ae15f3cf60643d6dd993d0f180a105f29.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Canada needs new Indo-Pacific strategy as it seeks deeper Asia ties: Anand" data-title>Canada needs new Indo-Pacific strategy as it seeks deeper Asia ties: Anand</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Oct 24</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-28"
 	data-post-id="11491691"
 	data-slide-index=""
 	data-caption="French museum robbed of gold and silver coins hours after Louvre theft"
@@ -5045,7 +5015,7 @@ Noor Ra&#039;fat breaks down how things played out. "
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11491691/french-museum-robbed-gold-silver-coins-louvre-theft/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -5068,7 +5038,7 @@ Noor Ra&#039;fat breaks down how things played out. "
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-29"
+	data-container-id="stories-item-28"
 	data-post-id="11491559"
 	data-slide-index=""
 	data-caption="Trump pardons Canadian crypto billionaire serving money laundering sentence"
@@ -5076,7 +5046,7 @@ Noor Ra&#039;fat breaks down how things played out. "
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11491559/trump-pardon-binance-founder-changpeng-zhao/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -5089,6 +5059,37 @@ Noor Ra&#039;fat breaks down how things played out. "
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="Trump pardons Canadian crypto billionaire serving money laundering sentence" data-title>Trump pardons Canadian crypto billionaire serving money laundering sentence</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >Oct 23</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-29"
+	data-post-id="11490954"
+	data-slide-index=""
+	data-caption="Video captures thieves escaping after Louvre Museum jewel heist"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11490954/louvre-jewel-heist-video-robbery/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/louvre-jewel-heist-video.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
+								width="720" height="504" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/louvre-jewel-heist-video.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/louvre-jewel-heist-video.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/louvre-jewel-heist-video.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Video captures thieves escaping after Louvre Museum jewel heist" data-title>Video captures thieves escaping after Louvre Museum jewel heist</span>
 			</div>
 	
 						
@@ -5184,6 +5185,37 @@ Noor Ra&#039;fat breaks down how things played out. "
 			data-num-posts=3											>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-30"
+	data-post-id="11494772"
+	data-slide-index=""
+	data-caption="Quebec adopts special bill to impose new compensation system on doctors"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11494772/quebec-adopts-doctors/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/60abba831fa107ea22aa6da7df6960dddfbb42315d61d814c11f46b14a2d5b08_092ff9.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=511 data-ratio=0.67									loading="lazy"
+								width="720" height="511" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/60abba831fa107ea22aa6da7df6960dddfbb42315d61d814c11f46b14a2d5b08_092ff9.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/60abba831fa107ea22aa6da7df6960dddfbb42315d61d814c11f46b14a2d5b08_092ff9.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/60abba831fa107ea22aa6da7df6960dddfbb42315d61d814c11f46b14a2d5b08_092ff9.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Quebec adopts special bill to impose new compensation system on doctors" data-title>Quebec adopts special bill to impose new compensation system on doctors</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >3 hours</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-31"
 	data-post-id="11494745"
 	data-slide-index=""
 	data-caption="8-year-old New Brunswick boy dead after vehicle strikes moped"
@@ -5191,7 +5223,7 @@ Noor Ra&#039;fat breaks down how things played out. "
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11494745/8-yr-old-collision/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -5208,38 +5240,7 @@ Noor Ra&#039;fat breaks down how things played out. "
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >35 mins</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-31"
-	data-post-id="11494658"
-	data-slide-index=""
-	data-caption="&#8216;I&#8217;m so full of joy&#8217;: Fans react as Toronto Blue Jays win 1st game of World Series"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11494658/toronto-blue-jays-world-series-fans/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/a77d0c81506e7e02af90828a3838d6f8ce3bc02c3c90120148930fe382368191_22dab8.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/a77d0c81506e7e02af90828a3838d6f8ce3bc02c3c90120148930fe382368191_22dab8.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/a77d0c81506e7e02af90828a3838d6f8ce3bc02c3c90120148930fe382368191_22dab8.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/a77d0c81506e7e02af90828a3838d6f8ce3bc02c3c90120148930fe382368191_22dab8.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="&#8216;I&#8217;m so full of joy&#8217;: Fans react as Toronto Blue Jays win 1st game of World Series" data-title>&#8216;I&#8217;m so full of joy&#8217;: Fans react as Toronto Blue Jays win 1st game of World Series</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >1 hour</div>
+																<div class="c-posts__info" data-date >3 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5270,7 +5271,7 @@ Noor Ra&#039;fat breaks down how things played out. "
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >4 hours</div>
+																<div class="c-posts__info" data-date >6 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5364,7 +5365,7 @@ Noor Ra&#039;fat breaks down how things played out. "
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >12 hours</div>
+																<div class="c-posts__info" data-date >Oct 25</div>
 																			</div>
 									</div>
 		</a>
@@ -5697,13 +5698,44 @@ Noor Ra&#039;fat breaks down how things played out. "
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >5 hours</div>
+																<div class="c-posts__info" data-date >7 hours</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-40"
+	data-post-id="11493163"
+	data-slide-index=""
+	data-caption="Blood tests show highest levels of forever chemicals in those living near New Mexico plume"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11493163/blood-tests-show-highest-levels-of-forever-chemicals-in-those-living-near-new-mexico-plume/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/1a60cb4fe4c7c7538074d11eee511453e43f6f70ac4d415355cd626bb0907e23.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/1a60cb4fe4c7c7538074d11eee511453e43f6f70ac4d415355cd626bb0907e23.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/1a60cb4fe4c7c7538074d11eee511453e43f6f70ac4d415355cd626bb0907e23.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/1a60cb4fe4c7c7538074d11eee511453e43f6f70ac4d415355cd626bb0907e23.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Blood tests show highest levels of forever chemicals in those living near New Mexico plume" data-title>Blood tests show highest levels of forever chemicals in those living near New Mexico plume</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >Oct 24</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-41"
 	data-post-id="11492874"
 	data-slide-index=""
 	data-caption="Social Security recipients get a 2.8% cost-of-living boost in 2026, average of $56 per month"
@@ -5711,7 +5743,7 @@ Noor Ra&#039;fat breaks down how things played out. "
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11492874/social-security-recipients-get-a-2-8-cost-of-living-boost-in-2026-average-of-56-per-month/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5724,37 +5756,6 @@ Noor Ra&#039;fat breaks down how things played out. "
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="Social Security recipients get a 2.8% cost-of-living boost in 2026, average of $56 per month" data-title>Social Security recipients get a 2.8% cost-of-living boost in 2026, average of $56 per month</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Oct 24</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-41"
-	data-post-id="11492800"
-	data-slide-index=""
-	data-caption="In a California farming region, researchers are mapping rural heat to protect farmworkers"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11492800/in-a-california-farming-region-researchers-are-mapping-rural-heat-to-protect-farmworkers/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/001b4c08c8afd706dc7ad591367a2a4a4e2f1d215c1eae9a623c08ea1cef727b.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/001b4c08c8afd706dc7ad591367a2a4a4e2f1d215c1eae9a623c08ea1cef727b.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/001b4c08c8afd706dc7ad591367a2a4a4e2f1d215c1eae9a623c08ea1cef727b.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/001b4c08c8afd706dc7ad591367a2a4a4e2f1d215c1eae9a623c08ea1cef727b.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="In a California farming region, researchers are mapping rural heat to protect farmworkers" data-title>In a California farming region, researchers are mapping rural heat to protect farmworkers</span>
 			</div>
 	
 						
@@ -6342,7 +6343,7 @@ Noor Ra&#039;fat breaks down how things played out. "
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >37 mins</div>
+																<div class="c-posts__info" data-date >3 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -6373,7 +6374,7 @@ Noor Ra&#039;fat breaks down how things played out. "
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >5 hours</div>
+																<div class="c-posts__info" data-date >7 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -6726,7 +6727,7 @@ Noor Ra&#039;fat breaks down how things played out. "
 			<script async src="//static.chartbeat.com/js/chartbeat_mab.js"></script>
 			<!-- Adobe Analytics code version: JS-2.6.0. -->
 		<script type="text/javascript">
-			var gnPageData = {"context_data":{"hourofday":"14","dayofweek":"Saturday","weekdayweekend":"Weekend","userregion":"national","region":"national"},"sections":["home"],"props":[]};
+			var gnPageData = {"context_data":{"hourofday":"16","dayofweek":"Saturday","weekdayweekend":"Weekend","userregion":"national","region":"national"},"sections":["home"],"props":[]};
 		</script>
 				<!-- End Adobe Analytics code -->
 			<script>
@@ -6767,5 +6768,5 @@ _stq.push([ "clickTrackerInit", "176892389", "0" ]);
 		
 		<div class="l-dynamicElement"></div>
 
-			</body>
+			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75660ba8f4","applicationID":"418684855","transactionName":"Z1BWZxdTWkAHVExRXF4adVARW1tdSV9XVVY=","queueTime":0,"applicationTime":483,"atts":"SxdBEV9JSR9EVhoCSE1I","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
