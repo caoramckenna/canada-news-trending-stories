@@ -184,8 +184,7 @@
         }
     </script>
     	<!-- Meta Tags -->
-	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"75660ba8f4",applicationID:"418684855",browserID:"419993820"};;/*! For license information please see nr-loader-rum-1.302.0.min.js.LICENSE.txt */
-(()=>{var e,t,r={122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let o in a)if(void 0!==e[o])try{if(null===e[o]){r[o]=null;continue}Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):"object"==typeof e[o]&&"object"==typeof t[o]?r[o]=i(e[o],t[o]):r[o]=e[o]}catch(e){r[o]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>c,RI:()=>i,WN:()=>u,bv:()=>a,gm:()=>o,mw:()=>s,sb:()=>d});var n=r(863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),s=Boolean("hidden"===o?.document?.visibilityState),c=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=c&&"undefined"==typeof SharedWorker,u=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)())},163:(e,t,r)=>{"use strict";r.d(t,{j:()=>T});var n=r(384),i=r(741);var a=r(555);r(860).K7.genericEvents;const o="experimental.resources",s="register",c=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(614),u=r(944),l=r(122);const f="[data-nr-mask]",g=e=>(0,l.a)(e,(()=>{const e={feature_flags:[],experimental:{allow_registered_children:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{get allow_registered_children(){return e.feature_flags.includes(s)||e.experimental.allow_registered_children},set allow_registered_children(t){e.experimental.allow_registered_children=t},duplicate_registered_data:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(o)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:d.wk,inactiveMs:d.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){c(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,u.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){c(t)?e.block_selector+=",".concat(t):""!==t&&(0,u.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,u.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},spa:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var p=r(154),m=r(324);let h=0;const v={buildEnv:m.F3,distMethod:m.Xs,version:m.xv,originTime:p.WN},b={appMetadata:{},customTransaction:void 0,denyList:void 0,disabled:!1,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++h}},y=e=>{const t=(0,l.a)(e,b),r=Object.keys(v).reduce((e,t)=>(e[t]={value:v[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)};var _=r(701);const w=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var x=r(836),k=r(241);const S={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A=e=>(0,l.a)(e,S),R=new Set;function T(e,t={},r,o){let{init:s,info:c,loader_config:d,runtime:u={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();s=e.init,c=e.info,d=e.loader_config}e.init=g(s||{}),e.loader_config=A(d||{}),c.jsAttributes??={},p.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,a.D)(c);const f=e.init,m=[c.beacon,c.errorBeacon];R.has(e.agentIdentifier)||(f.proxy.assets&&(w(f.proxy.assets),m.push(f.proxy.assets)),f.proxy.beacon&&m.push(f.proxy.beacon),e.beacons=[...m],function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach(r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let a=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return a?a(...t):n})})}(e),(0,n.US)("activatedFeatures",_.B),e.runSoftNavOverSpa&&=!0===f.soft_navigations.enabled&&f.feature_flags.includes("soft_nav")),u.denyList=[...f.ajax.deny_list||[],...f.ajax.block_internal?m:[]],u.ptid=e.agentIdentifier,u.loaderType=r,e.runtime=y(u),R.has(e.agentIdentifier)||(e.ee=x.ee.get(e.agentIdentifier),e.exposed=l,(0,k.W)({agentIdentifier:e.agentIdentifier,drained:!!_.B?.[e.agentIdentifier],type:"lifecycle",name:"initialize",feature:void 0,data:e.config})),R.add(e.agentIdentifier)}},234:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(836),i=r(687);class a{constructor(e,t){this.agentIdentifier=e,this.ee=n.ee.get(e),this.featureName=t,this.blocked=!1}deregisterDrain(){(0,i.x3)(this.agentIdentifier,this.featureName)}}},241:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(154);const i="newrelic";function a(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>d,BL:()=>s,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>h,Pl:()=>n,Tb:()=>l,U2:()=>a,V1:()=>k,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>o,nb:()=>m,o5:()=>u});const n="api-",i="addPageAction",a="addToTrace",o="addRelease",s="finished",c="interaction",d="log",u="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",m="setApplicationVersion",h="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",k="measure"},289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>a,Qr:()=>s,sB:()=>o});var n=r(878);function i(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(i())return e();(0,n.sp)("load",e,t)}function o(e){if(i())return e();(0,n.DD)("DOMContentLoaded",e)}function s(e){if(i())return e();(0,n.sp)("popstate",e)}},324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>a,xv:()=>n});const n="1.302.0",i="PROD",a="CDN"},374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>o,US:()=>u,Zm:()=>s,bQ:()=>d,dV:()=>c,pV:()=>l});var n=r(154),i=r(863),a=r(910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function s(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function c(){let e=s();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,a.i)(...Object.values(e.o))),e}function d(e,t){let r=s();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function u(e,t){s()[e]=t}function l(){return function(){let e=s();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=s();const t=e.init||{};e.init={...t}}(),c(),function(){let e=s();const t=e.loader_config||{};e.loader_config={...t}}(),s()}},389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},555:(e,t,r)=>{"use strict";r.d(t,{D:()=>s,f:()=>o});var n=r(384),i=r(122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function o(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const s=e=>(0,i.a)(e,a)},566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>s,bz:()=>o});var n=r(154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map(e=>"x"===e?a(t,r++).toString(16):"y"===e?(3&a()|8).toString(16):e).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const o=[];for(var s=0;s<e;s++)o.push(a(r,i++).toString(16));return o.join("")}},606:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(908);a.on=o;var i=a.handlers={};function a(e,t,r,a){o(a||n.d,i,e,t,r)}function o(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var o=t[a]=t[a]||{};(o[r]=o[r]||[]).push([e,i])}},607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(566).bz)()},614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>o,H3:()=>n,g:()=>d,iL:()=>c,tS:()=>s,uh:()=>i,wk:()=>a});const n="NRBA",i="SESSION",a=144e5,o=18e5,s={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},d={OFF:0,FULL:1,ERROR:2}},630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>d,Ze:()=>f,x3:()=>u});var n=r(241),i=r(836),a=r(606),o=r(860),s=r(646);const c={};function d(e,t){const r={staged:!1,priority:o.P3[t]||0};l(e),c[e].get(t)||c[e].set(t,r)}function u(e,t){e&&c[e]&&(c[e].get(t)&&c[e].delete(t),p(e,t,!1),c[e].size&&g(e))}function l(e){if(!e)throw new Error("agentIdentifier required");c[e]||(c[e]=new Map)}function f(e="",t="feature",r=!1){if(l(e),!e||!c[e].get(t)||r)return p(e,t);c[e].get(t).staged=!0,g(e)}function g(e){const t=Array.from(c[e]);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{c[e].delete(t),p(e,t)}))}function p(e,t,r=!0){const o=e?i.ee.get(e):i.ee,c=a.i.handlers;if(!o.aborted&&o.backlog&&c){if((0,n.W)({agentIdentifier:e,type:"lifecycle",name:"drain",feature:t}),r){const e=o.backlog[t],r=c[t];if(r){for(let t=0;e&&t<e.length;++t)m(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0]?.context()instanceof s.y&&t[0].on(e,t[1])})})}}o.isolatedBacklog||delete c[t],o.backlog[t]=null,o.emit("drain-"+t,[])}}function m(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}})}},699:(e,t,r)=>{"use strict";r.d(t,{It:()=>a,KC:()=>s,No:()=>i,qh:()=>o});var n=r(860);const i=16e3,a=1e6,o="SESSION_ERROR",s={[n.K7.logging]:!0,[n.K7.genericEvents]:!1,[n.K7.jserrors]:!1,[n.K7.ajax]:!1}},701:(e,t,r)=>{"use strict";r.d(t,{B:()=>a,t:()=>o});var n=r(241);const i=new Set,a={};function o(e,t){const r=t.agentIdentifier;a[r]??={},e&&"object"==typeof e&&(i.has(r)||(t.ee.emit("rumresp",[e]),a[r]=e,i.add(r),(0,n.W)({agentIdentifier:r,loaded:!0,drained:!0,type:"lifecycle",name:"load",feature:void 0,data:e})))}},741:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e){return this.#e(i.Dl,e)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}}},773:(e,t,r)=>{"use strict";r.d(t,{z_:()=>a,XG:()=>s,TZ:()=>n,rs:()=>i,xV:()=>o});r(154),r(566),r(384);const n=r(860).K7.metrics,i="sm",a="cm",o="storeSupportabilityMetrics",s="storeEventMetrics"},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},836:(e,t,r)=>{"use strict";r.d(t,{P:()=>s,ee:()=>c});var n=r(384),i=r(990),a=r(646),o=r(607);const s="nr@context:".concat(o.W),c=function e(t,r){var n={},o={},u={},l=!1;try{l=16===r.length&&d.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var s=g(n);m(e).forEach(e=>{e.apply(s,r)});var d=v()[o[e]];d&&d.push([f,e,r,s]);return s},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{o[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[o[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,s,()=>new a.y(s)):new a.y(s)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return u[t]=u[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),d=(0,n.Zm)();d.ee||(d.ee=c)},843:(e,t,r)=>{"use strict";r.d(t,{u:()=>i});var n=r(878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>u,K7:()=>c,P3:()=>d,XX:()=>i,Yy:()=>s,df:()=>a,qY:()=>n,v4:()=>o});const n="events",i="jserrors",a="browser/blobs",o="rum",s="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},d={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.spa]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.softNav]:8,[c.sessionReplay]:9,[c.logging]:10,[c.genericEvents]:11},u={[c.pageViewEvent]:o,[c.pageViewTiming]:n,[c.ajax]:n,[c.spa]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:a,[c.sessionReplay]:a,[c.logging]:s,[c.genericEvents]:"ins"}},863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},910:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e&&e.toString().includes("[native code]");return t||(0,n.R)(64,e?.name||e?.toString()),i.set(e,t),t})}},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({agentIdentifier:null,drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var a=n[e]={exports:{}};return r[e](a,a.exports,i),a.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce((t,r)=>(i.f[r](e,t),t),[])),i.u=e=>"nr-rum-1.302.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.302.0.PROD:",i.l=(r,n,a,o)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==a)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+a){s=l;break}}if(!s){c=!0;var f={296:"sha512-wOb3n9Oo7XFlPj8/eeDjhAZxpAcaDdsBkC//L8axozi0po4wdPEJ2ECVlu9KEBVFgfQVL0TCY6kPzr0KcVfkBQ=="};(s=document.createElement("script")).charset="utf-8",i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+a),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[o]&&(s.integrity=f[o])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach(e=>e(n)),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var a=new Promise((r,i)=>n=e[t]=[r,i]);r.push(n[2]=a);var o=i.p+i.u(t),s=new Error;i.l(o,r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var a=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+a+": "+o+")",s.name="ChunkLoadError",s.type=a,s.request=o,n[1](s)}},"chunk-"+t,t)}};var t=(t,r)=>{var n,a,[o,s,c]=r,d=0;if(o.some(t=>0!==e[t])){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);d<o.length;d++)a=o[d],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},r=self["webpackChunk:NRBA-1.302.0.PROD"]=self["webpackChunk:NRBA-1.302.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(374);var e=i(566),t=i(741);class r extends t.W{agentIdentifier=(0,e.LA)(16)}var n=i(860);const a=Object.values(n.K7);var o=i(163);var s=i(908),c=i(863),d=i(261),u=i(241),l=i(944),f=i(701),g=i(773);function p(e,t,i,a){const o=a||i;!o||o[e]&&o[e]!==r.prototype[e]||(o[e]=function(){(0,s.p)(g.xV,["API/"+e+"/called"],void 0,n.K7.metrics,i.ee),(0,u.W)({agentIdentifier:i.agentIdentifier,drained:!!f.B?.[i.agentIdentifier],type:"data",name:"api",feature:d.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,l.R)(23,e)}})}function m(e,t,r,n,i){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(i||null===r)&&(0,s.p)(d.Pl+n,[(0,c.t)(),t,r],void 0,"session",e.ee)}var h=i(687),v=i(234),b=i(289),y=i(154),_=i(384);const w=e=>y.RI&&!0===e?.privacy.cookies_enabled;function x(e){return!!(0,_.dV)().o.MO&&w(e)&&!0===e?.session_trace.enabled}var k=i(389),S=i(699);class A extends v.W{constructor(e,t){super(e.agentIdentifier,t),this.agentRef=e,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,k.J)(()=>{(0,h.Ak)(e.agentIdentifier,this.featureName),t()}))}):(0,h.Ak)(e.agentIdentifier,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;let n;this.onAggregateImported=new Promise(e=>{n=e});const a=async()=>{let a;await this.deferred;try{if(w(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,305));a=t(e)}}catch(e){(0,l.R)(20,e),this.ee.emit("internal-error",[e]),(0,s.p)(S.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#t(this.featureName,a,e.init))return(0,h.Ze)(this.agentIdentifier,this.featureName),void n(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),n(!0)}catch(e){(0,l.R)(34,e),this.abortHandler?.(),(0,h.Ze)(this.agentIdentifier,this.featureName,!0),n(!1),this.ee&&this.ee.abort()}};y.RI?(0,b.GG)(()=>a(),!0):a()}#t(e,t,r){if(this.blocked)return!1;switch(e){case n.K7.sessionReplay:return x(r)&&!!t;case n.K7.sessionTrace:return!!t;default:return!0}}}var R=i(630),T=i(614);class E extends A{static featureName=R.T;constructor(e){var t;super(e,R.T),this.setupInspectionEvents(e.agentIdentifier),t=e,p(d.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,s.p)(d.Pl+d.Fw,[(0,c.t)()],void 0,void 0,t.ee))},t),this.ee.on("api-send-rum",(e,t)=>(0,s.p)("send-rum",[e,t],void 0,this.featureName,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,108)))}setupInspectionEvents(e){const t=(t,r)=>{t&&(0,u.W)({agentIdentifier:e,timeStamp:t.timeStamp,loaded:"complete"===t.target.readyState,type:"window",name:r,data:t.target.location+""})};(0,b.sB)(e=>{t(e,"DOMContentLoaded")}),(0,b.GG)(e=>{t(e,"load")}),(0,b.Qr)(e=>{t(e,"navigate")}),this.ee.on(T.tS.UPDATE,(t,r)=>{(0,u.W)({agentIdentifier:e,type:"lifecycle",name:"session",data:r})})}}var N=i(843),j=i(878),I=i(782);class O extends A{static featureName=I.T;constructor(e){super(e,I.T),y.RI&&((0,N.u)(()=>(0,s.p)("docHidden",[(0,c.t)()],void 0,I.T,this.ee),!0),(0,j.sp)("pagehide",()=>(0,s.p)("winPagehide",[(0,c.t)()],void 0,I.T,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,350))))}}class P extends A{static featureName=g.TZ;constructor(e){super(e,g.TZ),y.RI&&document.addEventListener("securitypolicyviolation",e=>{(0,s.p)(g.xV,["Generic/CSPViolation/Detected"],void 0,this.featureName,this.ee)}),this.importAggregator(e,()=>i.e(296).then(i.bind(i,623)))}}new class extends r{constructor(e){var t;(super(),y.gm)?(this.features={},(0,_.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(E),this.runSoftNavOverSpa=[...this.desiredFeatures].some(e=>e.featureName===n.K7.softNav),(0,o.j)(this,e,e.loaderType||"agent"),t=this,p(d.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return m(t,e,r,d.cD,n);(0,l.R)(40,typeof r)}else(0,l.R)(39,typeof e)},t),function(e){p(d.Dl,function(t){if("string"==typeof t||null===t)return m(e,"enduser.id",t,d.Dl,!0);(0,l.R)(41,typeof t)},e)}(this),function(e){p(d.nb,function(t){if("string"==typeof t||null===t)return m(e,"application.version",t,d.nb,!1);(0,l.R)(42,typeof t)},e)}(this),function(e){p(d.d3,function(){e.ee.emit("manual-start-all")},e)}(this),this.run()):(0,l.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return a.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),t=[...this.desiredFeatures];t.sort((e,t)=>n.P3[e.featureName]-n.P3[t.featureName]),t.forEach(t=>{if(!e[t.featureName]&&t.featureName!==n.K7.pageViewEvent)return;if(this.runSoftNavOverSpa&&t.featureName===n.K7.spa)return;if(!this.runSoftNavOverSpa&&t.featureName===n.K7.softNav)return;const r=function(e){switch(e){case n.K7.ajax:return[n.K7.jserrors];case n.K7.sessionTrace:return[n.K7.ajax,n.K7.pageViewEvent];case n.K7.sessionReplay:return[n.K7.sessionTrace];case n.K7.pageViewTiming:return[n.K7.pageViewEvent];default:return[]}}(t.featureName).filter(e=>!(e in this.features));r.length>0&&(0,l.R)(36,{targetFeature:t.featureName,missingDependencies:r}),this.features[t.featureName]=new t(this)})}catch(e){(0,l.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,_.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}({features:[E,O,P],loaderType:"lite"})})()})();</script>
+	<meta charset="UTF-8">
 	<meta name="theme-color" content="#231F20">
 
 			<meta name="msvalidate.01" content="9E5C74811CA48CCCC61A2CF3C0A1BA6A">
@@ -243,8 +242,8 @@
 
 <!-- twitter: ends here -->
 
-			<link rel="preload" as="image" href="https://globalnews.ca/wp-content/uploads/2025/11/ontario-snow.jpg?quality=65&#038;strip=all&#038;w=336"
-					imagesrcset="https://globalnews.ca/wp-content/uploads/2025/11/ontario-snow.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/ontario-snow.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/ontario-snow.jpg?quality=65&#038;strip=all&#038;w=720 720w,"
+			<link rel="preload" as="image" href="https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=336"
+					imagesrcset="https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=720 720w,"
 							imagesizes="auto"
 		/>
 	
@@ -490,7 +489,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 
 				
 
-				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"-1","weatherprec":0.76,"weathercode":"16","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
+				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"-1","weatherprec":1.02,"weathercode":"14","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
 		</script>
 			<script>
 				// Load the APS JavaScript Library
@@ -1525,34 +1524,34 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					data-sophi-feature=hero				>
 										<div class="c-posts__inner">
 											<div>
-														<a class="c-posts__headlineLink" href="https://globalnews.ca/news/11518564/ontario-quebec-first-snowfall-warnings/">
+														<a class="c-posts__headlineLink" href="https://globalnews.ca/news/11518599/nova-scotia-courts-poppies-chief-justice-defends-decision/">
 																		<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Southern Ontario, parts of Quebec see 1st snowfall of the year" data-title>Southern Ontario, parts of Quebec see 1st snowfall of the year</span>
+					<span class="c-posts__headlineText" title="N.S. Supreme Court chief justice defends staff poppy ban in some courtrooms" data-title>N.S. Supreme Court chief justice defends staff poppy ban in some courtrooms</span>
 			</div>
 															</a>
 													</div>
 						
 		<div class="c-posts__media  c-posts__media--video c-videoPlay c-videoPlay--standard" tabindex=0 >
 						<img class="c-posts__thumbnail"
-				src=https://globalnews.ca/wp-content/uploads/2025/11/ontario-snow.jpg?quality=65&#038;strip=all&#038;w=720												width="720" height="405" alt="" 
-											srcset="https://globalnews.ca/wp-content/uploads/2025/11/ontario-snow.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/ontario-snow.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/ontario-snow.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"						/>
+				src=https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=720												width="720" height="448" alt="" 
+											srcset="https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"						/>
 									<div class="c-posts__video">
 						    	<div class="c-video c-videoPlay  c-video--contained"
     		data-iframe-receiver
     		data-autoplay=""
 						data-displayinline-featured="false"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_11510860_6910f48909a2e"
-			data-displayinline-video-id="11510860"
+			data-displayinline-player-id="miniplayer_11517291_6911109b6e297"
+			data-displayinline-video-id="11517291"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/11510860/#autoplay&#038;stickyiframe=miniplayer_11510860_6910f48909a2e"
+    		data-displayinline="https://globalnews.ca/video/embed/11517291/#autoplay&#038;stickyiframe=miniplayer_11517291_6911109b6e297"
     									data-displayinline-container="stories-1-0"
 										data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Toronto lays out plan to fix snow clearing issues'"
+						alt="Click to play video: 'Nova Scotia’s premier criticizes &#8216;disgusting&#8217; ban on court staff wearing poppies'"
 						width="640"
 						height="360"
 													src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
@@ -1571,16 +1570,16 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							</div>
 								<img src="https://d21y75miwcfqoq.cloudfront.net/70c8fc80" alt="" style="position:absolute;width:1px;height:1px" referrerpolicy="no-referrer-when-downgrade">
 						<div class="c-posts__details">
-														<a class="c-posts__detailsLink" href="https://globalnews.ca/news/11518564/ontario-quebec-first-snowfall-warnings/">
+														<a class="c-posts__detailsLink" href="https://globalnews.ca/news/11518599/nova-scotia-courts-poppies-chief-justice-defends-decision/">
 																		<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Southern Ontario, parts of Quebec see 1st snowfall of the year" data-title>Southern Ontario, parts of Quebec see 1st snowfall of the year</span>
+					<span class="c-posts__headlineText" title="N.S. Supreme Court chief justice defends staff poppy ban in some courtrooms" data-title>N.S. Supreme Court chief justice defends staff poppy ban in some courtrooms</span>
 			</div>
 																		<div class="c-posts__excerpt">
-									Snow is falling on parts of southern Ontario and southern and central Quebec on Sunday with the potential for some regions to see up to 20 centimetres of snow. 									</div>
+									Chief justice of the Supreme Court of Nova Scotia notes banning court staff from wearing of poppies is &#039;very sensitive,&#039; but said there can be &#039;no signs of favouritism&#039; in court. 									</div>
 																<div class="c-posts__about c-posts__about--multiple">
-																		<div class="c-posts__info c-posts__info--highlight">Weather</div>
+																		<div class="c-posts__info c-posts__info--highlight">Canada</div>
 																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">3 hours</div>
-																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 																	</div>
 														</a>
 													</div>
@@ -1592,37 +1591,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					data-sophi-feature=top-stories				>
 					<a
 						class="c-posts__inner"
-						href="https://globalnews.ca/news/11518014/trailer-park-boys-charges/"
-						data-analytics="{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:1}"
-					>
-						
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/11/5ebd7024cd2541f4ed3a1ac3186d649c9c197365394cc0053ddec5ebb4507bae.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/5ebd7024cd2541f4ed3a1ac3186d649c9c197365394cc0053ddec5ebb4507bae.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/5ebd7024cd2541f4ed3a1ac3186d649c9c197365394cc0053ddec5ebb4507bae.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/5ebd7024cd2541f4ed3a1ac3186d649c9c197365394cc0053ddec5ebb4507bae.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-								<div class="c-posts__details">
-										<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Trailer Park Boys actor Mike Smith charged with sexual assault for 2017 incident" data-title>Trailer Park Boys actor Mike Smith charged with sexual assault for 2017 incident</span>
-			</div>
-								<div class="c-posts__about c-posts__about--multiple">
-																<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Nov 8</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
-															</div>
-						</div>
-					</a>
-				</li>
-									<li 
-					class="c-posts__item " 
-					data-container-id="stories-1-2"
-					data-sophi-feature=top-stories				>
-					<a
-						class="c-posts__inner"
 						href="https://globalnews.ca/news/11517876/cda-eu-travel/"
-						data-analytics="{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:2}"
+						data-analytics="{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:1}"
 					>
 						
 		<div class="c-posts__media "  >
@@ -1640,6 +1610,35 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 																<div class="c-posts__info c-posts__info--highlight">Canada</div>
 																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Nov 8</div>
 																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
+															</div>
+						</div>
+					</a>
+				</li>
+									<li 
+					class="c-posts__item " 
+					data-container-id="stories-1-2"
+					data-sophi-feature=top-stories				>
+					<a
+						class="c-posts__inner"
+						href="https://globalnews.ca/news/11518014/trailer-park-boys-charges/"
+						data-analytics="{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:2}"
+					>
+						
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/11/5ebd7024cd2541f4ed3a1ac3186d649c9c197365394cc0053ddec5ebb4507bae.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/5ebd7024cd2541f4ed3a1ac3186d649c9c197365394cc0053ddec5ebb4507bae.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/5ebd7024cd2541f4ed3a1ac3186d649c9c197365394cc0053ddec5ebb4507bae.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/5ebd7024cd2541f4ed3a1ac3186d649c9c197365394cc0053ddec5ebb4507bae.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+								<div class="c-posts__details">
+										<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Trailer Park Boys actor Mike Smith charged with sexual assault for 2017 incident" data-title>Trailer Park Boys actor Mike Smith charged with sexual assault for 2017 incident</span>
+			</div>
+								<div class="c-posts__about c-posts__about--multiple">
+																<div class="c-posts__info c-posts__info--highlight">Canada</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Nov 8</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
 															</div>
 						</div>
 					</a>
@@ -1681,7 +1680,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Entertainment</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">5 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">7 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
 														</div>
 									</div>
@@ -1689,33 +1688,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-2"
-	data-post-id="11517856"
+	data-post-id="11518322"
 	data-slide-index=""
-	data-caption="Yes, you do need to clean your water bottle. Here’s why and how"
+	data-caption="Infant botulism in 10 US states linked to formula being recalled"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11517856/yes-you-do-need-to-clean-your-water-bottle-heres-why-and-how/"
+		href="https://globalnews.ca/news/11518322/infant-botulism-in-10-us-states-linked-to-formula-being-recalled/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/11/cfb05ef79f3b8ecb52e942e4179bfaef26842d4f7179711e55c1c427b85a616e_e94b6e.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/11/38d7a84e17d41d07daa9b5e06219e3f719c40907862455212ee31ed60a37a601.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
 								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/cfb05ef79f3b8ecb52e942e4179bfaef26842d4f7179711e55c1c427b85a616e_e94b6e.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/cfb05ef79f3b8ecb52e942e4179bfaef26842d4f7179711e55c1c427b85a616e_e94b6e.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/cfb05ef79f3b8ecb52e942e4179bfaef26842d4f7179711e55c1c427b85a616e_e94b6e.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/38d7a84e17d41d07daa9b5e06219e3f719c40907862455212ee31ed60a37a601.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/38d7a84e17d41d07daa9b5e06219e3f719c40907862455212ee31ed60a37a601.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/38d7a84e17d41d07daa9b5e06219e3f719c40907862455212ee31ed60a37a601.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Yes, you do need to clean your water bottle. Here’s why and how" data-title>Yes, you do need to clean your water bottle. Here’s why and how</span>
+					<span class="c-posts__headlineText" title="Infant botulism in 10 US states linked to formula being recalled" data-title>Infant botulism in 10 US states linked to formula being recalled</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Health</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Nov 8</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1744,39 +1743,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-3"
-	data-post-id="11518322"
-	data-slide-index=""
-	data-caption="Infant botulism in 10 US states linked to formula being recalled"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11518322/infant-botulism-in-10-us-states-linked-to-formula-being-recalled/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/11/38d7a84e17d41d07daa9b5e06219e3f719c40907862455212ee31ed60a37a601.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/38d7a84e17d41d07daa9b5e06219e3f719c40907862455212ee31ed60a37a601.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/38d7a84e17d41d07daa9b5e06219e3f719c40907862455212ee31ed60a37a601.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/38d7a84e17d41d07daa9b5e06219e3f719c40907862455212ee31ed60a37a601.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Infant botulism in 10 US states linked to formula being recalled" data-title>Infant botulism in 10 US states linked to formula being recalled</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Health</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Nov 8</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-4"
 	data-post-id="11517882"
 	data-slide-index=""
 	data-caption="Canadians honour Indigenous veterans with ceremonies across the country"
@@ -1784,7 +1750,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11517882/indigenous-veterans-day-ceremonies-across-canada/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1809,66 +1775,99 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-5"
-	data-post-id="11517895"
+	data-container-id="stories-item-4"
+	data-post-id="11517856"
 	data-slide-index=""
-	data-caption="What to know if your travel plans are impacted by the FAA&#8217;s flight cancellations"
+	data-caption="Yes, you do need to clean your water bottle. Here’s why and how"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11517895/us-government-shutdown-airlines-explainer/"
+		href="https://globalnews.ca/news/11517856/yes-you-do-need-to-clean-your-water-bottle-heres-why-and-how/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/11/cfb05ef79f3b8ecb52e942e4179bfaef26842d4f7179711e55c1c427b85a616e_e94b6e.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/cfb05ef79f3b8ecb52e942e4179bfaef26842d4f7179711e55c1c427b85a616e_e94b6e.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/cfb05ef79f3b8ecb52e942e4179bfaef26842d4f7179711e55c1c427b85a616e_e94b6e.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/cfb05ef79f3b8ecb52e942e4179bfaef26842d4f7179711e55c1c427b85a616e_e94b6e.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Yes, you do need to clean your water bottle. Here’s why and how" data-title>Yes, you do need to clean your water bottle. Here’s why and how</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Health</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Nov 8</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-5"
+	data-post-id="11518544"
+	data-slide-index=""
+	data-caption="What is Canada&#8217;s role at COP30 climate summit? What to know"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11518544/cop30-canada-role/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/11/ad3f7500b6fec51abc2a245f007a6062b7300cc11794f1bc3f65d3edebd03b36.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/11/eec8c617828a8b1642a7025e9626a2425ab62395170dc4c1e9389a16740888c0.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
 								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/ad3f7500b6fec51abc2a245f007a6062b7300cc11794f1bc3f65d3edebd03b36.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/ad3f7500b6fec51abc2a245f007a6062b7300cc11794f1bc3f65d3edebd03b36.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/ad3f7500b6fec51abc2a245f007a6062b7300cc11794f1bc3f65d3edebd03b36.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/eec8c617828a8b1642a7025e9626a2425ab62395170dc4c1e9389a16740888c0.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/eec8c617828a8b1642a7025e9626a2425ab62395170dc4c1e9389a16740888c0.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/eec8c617828a8b1642a7025e9626a2425ab62395170dc4c1e9389a16740888c0.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="What to know if your travel plans are impacted by the FAA&#8217;s flight cancellations" data-title>What to know if your travel plans are impacted by the FAA&#8217;s flight cancellations</span>
+					<span class="c-posts__headlineText" title="What is Canada&#8217;s role at COP30 climate summit? What to know" data-title>What is Canada&#8217;s role at COP30 climate summit? What to know</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>U.S. News</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Nov 8</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Environment</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">8 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">6 min read</div>
 														</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-6"
-	data-post-id="11518634"
+	data-post-id="11518769"
 	data-slide-index=""
-	data-caption="Could Canada join Eurovision Song Contest? Experts say audience needed"
+	data-caption="Chief judges back court poppy ban after backlash"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11518634/canada-eurovision-song-contest-audience-need/"
+		href="https://globalnews.ca/news/11518769/chief-judges-back-court-poppy-ban-after-backlash/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/11/eurovision-karaaja-baby-lasagna.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="448" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/eurovision-karaaja-baby-lasagna.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/eurovision-karaaja-baby-lasagna.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/eurovision-karaaja-baby-lasagna.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Could Canada join Eurovision Song Contest? Experts say audience needed" data-title>Could Canada join Eurovision Song Contest? Experts say audience needed</span>
+					<span class="c-posts__headlineText" title="Chief judges back court poppy ban after backlash" data-title>Chief judges back court poppy ban after backlash</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Entertainment</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">24 mins</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
@@ -1898,39 +1897,105 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-7"
-	data-post-id="11518544"
+	data-post-id="11518634"
 	data-slide-index=""
-	data-caption="What is Canada&#8217;s role at COP30 climate summit? What to know"
+	data-caption="Could Canada join Eurovision Song Contest? Experts say audience needed"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11518544/cop30-canada-role/"
+		href="https://globalnews.ca/news/11518634/canada-eurovision-song-contest-audience-need/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/11/eec8c617828a8b1642a7025e9626a2425ab62395170dc4c1e9389a16740888c0.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/11/eurovision-karaaja-baby-lasagna.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
 								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/eec8c617828a8b1642a7025e9626a2425ab62395170dc4c1e9389a16740888c0.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/eec8c617828a8b1642a7025e9626a2425ab62395170dc4c1e9389a16740888c0.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/eec8c617828a8b1642a7025e9626a2425ab62395170dc4c1e9389a16740888c0.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/eurovision-karaaja-baby-lasagna.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/eurovision-karaaja-baby-lasagna.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/eurovision-karaaja-baby-lasagna.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="What is Canada&#8217;s role at COP30 climate summit? What to know" data-title>What is Canada&#8217;s role at COP30 climate summit? What to know</span>
+					<span class="c-posts__headlineText" title="Could Canada join Eurovision Song Contest? Experts say audience needed" data-title>Could Canada join Eurovision Song Contest? Experts say audience needed</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Environment</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">6 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">6 min read</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Entertainment</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-8"
+	data-post-id="11518549"
+	data-slide-index=""
+	data-caption="Landmark Paris Agreement set a path to slow warming. The world hasn’t stayed on it"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11518549/landmark-paris-agreement-set-a-path-to-slow-warming-the-world-hasnt-stayed-on-it/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/11/48253bb834af15fb1f4ecbc1c2630542e547c8138588a801c2de2d50fa62fbe2_10777d.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/48253bb834af15fb1f4ecbc1c2630542e547c8138588a801c2de2d50fa62fbe2_10777d.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/48253bb834af15fb1f4ecbc1c2630542e547c8138588a801c2de2d50fa62fbe2_10777d.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/48253bb834af15fb1f4ecbc1c2630542e547c8138588a801c2de2d50fa62fbe2_10777d.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Landmark Paris Agreement set a path to slow warming. The world hasn’t stayed on it" data-title>Landmark Paris Agreement set a path to slow warming. The world hasn’t stayed on it</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Health</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">8 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-9"
+	data-post-id="11517895"
+	data-slide-index=""
+	data-caption="What to know if your travel plans are impacted by the FAA&#8217;s flight cancellations"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11517895/us-government-shutdown-airlines-explainer/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/11/ad3f7500b6fec51abc2a245f007a6062b7300cc11794f1bc3f65d3edebd03b36.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/ad3f7500b6fec51abc2a245f007a6062b7300cc11794f1bc3f65d3edebd03b36.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/ad3f7500b6fec51abc2a245f007a6062b7300cc11794f1bc3f65d3edebd03b36.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/ad3f7500b6fec51abc2a245f007a6062b7300cc11794f1bc3f65d3edebd03b36.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="What to know if your travel plans are impacted by the FAA&#8217;s flight cancellations" data-title>What to know if your travel plans are impacted by the FAA&#8217;s flight cancellations</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>U.S. News</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Nov 8</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-10"
 	data-post-id="11517920"
 	data-slide-index=""
 	data-caption="Powerful tornado in Brazil kills 6 people and injures more than 400 others"
@@ -1938,7 +2003,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11517920/lt-brazil-tornado/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1962,100 +2027,34 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 									</div>
 		</a>
 	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-9"
-	data-post-id="11518599"
-	data-slide-index=""
-	data-caption="N.S. Supreme Court chief justice defends staff poppy ban in some courtrooms"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11518599/nova-scotia-courts-poppies-chief-justice-defends-decision/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="448" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="N.S. Supreme Court chief justice defends staff poppy ban in some courtrooms" data-title>N.S. Supreme Court chief justice defends staff poppy ban in some courtrooms</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">1 hour</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-10"
-	data-post-id="11518549"
-	data-slide-index=""
-	data-caption="Landmark Paris Agreement set a path to slow warming. The world hasn’t stayed on it"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11518549/landmark-paris-agreement-set-a-path-to-slow-warming-the-world-hasnt-stayed-on-it/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/11/48253bb834af15fb1f4ecbc1c2630542e547c8138588a801c2de2d50fa62fbe2_10777d.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/48253bb834af15fb1f4ecbc1c2630542e547c8138588a801c2de2d50fa62fbe2_10777d.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/48253bb834af15fb1f4ecbc1c2630542e547c8138588a801c2de2d50fa62fbe2_10777d.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/48253bb834af15fb1f4ecbc1c2630542e547c8138588a801c2de2d50fa62fbe2_10777d.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Landmark Paris Agreement set a path to slow warming. The world hasn’t stayed on it" data-title>Landmark Paris Agreement set a path to slow warming. The world hasn’t stayed on it</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Health</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">6 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
 <li class="c-posts__item    is-hidden"
 	data-container-id="stories-item-11"
-	data-post-id="11518769"
+	data-post-id="11518808"
 	data-slide-index=""
-	data-caption="Chief judges back court poppy ban after backlash"
+	data-caption="Preliminary tests find germ that causes botulism in ByHeart baby formula"
 		data-ad-fallback=false>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11518769/chief-judges-back-court-poppy-ban-after-backlash/"
+		href="https://globalnews.ca/news/11518808/preliminary-tests-find-germ-that-causes-botulism-in-byheart-baby-formula/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="448" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/11/38d7a84e17d41d07daa9b5e06219e3f719c40907862455212ee31ed60a37a601_688d78.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/38d7a84e17d41d07daa9b5e06219e3f719c40907862455212ee31ed60a37a601_688d78.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/38d7a84e17d41d07daa9b5e06219e3f719c40907862455212ee31ed60a37a601_688d78.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/38d7a84e17d41d07daa9b5e06219e3f719c40907862455212ee31ed60a37a601_688d78.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Chief judges back court poppy ban after backlash" data-title>Chief judges back court poppy ban after backlash</span>
+					<span class="c-posts__headlineText" title="Preliminary tests find germ that causes botulism in ByHeart baby formula" data-title>Preliminary tests find germ that causes botulism in ByHeart baby formula</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">20 mins</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Health</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">1 hour</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
@@ -2106,10 +2105,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay="true"
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6910f4890d3cf"
+			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6911109b7010d"
 			data-displayinline-video-id="49a91e7f-1023-430f-8d66-561055f3d0f7"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6910f4890d3cf"
+    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6911109b7010d"
     		    			data-displayinline-playlist="49a91e7f-1023-430f-8d66-561055f3d0f7"
     									data-displayinline-container="mini-ott"
 									    		>
@@ -2239,7 +2238,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Canadian travellers to Europe face new border measures as security ramps up" data-title>Canadian travellers to Europe face new border measures as security ramps up</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">43,034</span>
+							<span class="c-posts__info c-posts__info--highlight">49,330</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2269,7 +2268,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Trailer Park Boys actor Mike Smith charged with sexual assault for 2017 incident" data-title>Trailer Park Boys actor Mike Smith charged with sexual assault for 2017 incident</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">28,279</span>
+							<span class="c-posts__info c-posts__info--highlight">31,157</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2299,7 +2298,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Ostrich cull complete at B.C. farm, flock of birds shot dead, CFIA says" data-title>Ostrich cull complete at B.C. farm, flock of birds shot dead, CFIA says</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">6,249</span>
+							<span class="c-posts__info c-posts__info--highlight">7,332</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2329,16 +2328,16 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Yes, you do need to clean your water bottle. Here’s why and how" data-title>Yes, you do need to clean your water bottle. Here’s why and how</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">5,997</span>
+							<span class="c-posts__info c-posts__info--highlight">6,630</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
 											</div>
 				</a>
 			</li>
-								<li class="c-posts__item" data-post-id="11516434">
+								<li class="c-posts__item" data-post-id="11517602">
 				<a
-					href="https://globalnews.ca/news/11516434/olivier-rioux-worlds-tallest-teenager-canada-college-basketball/"
+					href="https://globalnews.ca/news/11517602/name-of-founding-hells-angels-quebec-tombstone/"
 					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:4}"
 				>
 					<div class="c-posts__rank">
@@ -2349,17 +2348,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/11/f6b1547f1de9ccbfea7ac5095c583daa46eb27ee0c82c940d032292e555a69ab.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/11/00e3ea1cbbb4fb34e63abc918e13e1a66d705a5f96dcea71df38acd7d6596cfa.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="447" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/f6b1547f1de9ccbfea7ac5095c583daa46eb27ee0c82c940d032292e555a69ab.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/f6b1547f1de9ccbfea7ac5095c583daa46eb27ee0c82c940d032292e555a69ab.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/f6b1547f1de9ccbfea7ac5095c583daa46eb27ee0c82c940d032292e555a69ab.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/00e3ea1cbbb4fb34e63abc918e13e1a66d705a5f96dcea71df38acd7d6596cfa.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/00e3ea1cbbb4fb34e63abc918e13e1a66d705a5f96dcea71df38acd7d6596cfa.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/00e3ea1cbbb4fb34e63abc918e13e1a66d705a5f96dcea71df38acd7d6596cfa.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 							<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="The world&#8217;s tallest teenager — a Canadian — becomes tallest player in college basketball history" data-title>The world&#8217;s tallest teenager — a Canadian — becomes tallest player in college basketball history</span>
+					<span class="c-posts__headlineText" title="Name of founding Hells Angels member appears on Montreal-area tombstone" data-title>Name of founding Hells Angels member appears on Montreal-area tombstone</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">5,015</span>
+							<span class="c-posts__info c-posts__info--highlight">5,952</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2458,7 +2457,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Canadian travellers to Europe face new border measures as security ramps up" data-title>Canadian travellers to Europe face new border measures as security ramps up</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">43,034</span>
+							<span class="c-posts__info c-posts__info--highlight">49,330</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2488,7 +2487,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Trailer Park Boys actor Mike Smith charged with sexual assault for 2017 incident" data-title>Trailer Park Boys actor Mike Smith charged with sexual assault for 2017 incident</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">28,279</span>
+							<span class="c-posts__info c-posts__info--highlight">31,157</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2518,7 +2517,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Ostrich cull complete at B.C. farm, flock of birds shot dead, CFIA says" data-title>Ostrich cull complete at B.C. farm, flock of birds shot dead, CFIA says</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">6,249</span>
+							<span class="c-posts__info c-posts__info--highlight">7,332</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2548,16 +2547,16 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Yes, you do need to clean your water bottle. Here’s why and how" data-title>Yes, you do need to clean your water bottle. Here’s why and how</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">5,997</span>
+							<span class="c-posts__info c-posts__info--highlight">6,630</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
 											</div>
 				</a>
 			</li>
-								<li class="c-posts__item" data-post-id="11516434">
+								<li class="c-posts__item" data-post-id="11517602">
 				<a
-					href="https://globalnews.ca/news/11516434/olivier-rioux-worlds-tallest-teenager-canada-college-basketball/"
+					href="https://globalnews.ca/news/11517602/name-of-founding-hells-angels-quebec-tombstone/"
 					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:4}"
 				>
 					<div class="c-posts__rank">
@@ -2568,17 +2567,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/11/f6b1547f1de9ccbfea7ac5095c583daa46eb27ee0c82c940d032292e555a69ab.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/11/00e3ea1cbbb4fb34e63abc918e13e1a66d705a5f96dcea71df38acd7d6596cfa.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="447" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/f6b1547f1de9ccbfea7ac5095c583daa46eb27ee0c82c940d032292e555a69ab.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/f6b1547f1de9ccbfea7ac5095c583daa46eb27ee0c82c940d032292e555a69ab.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/f6b1547f1de9ccbfea7ac5095c583daa46eb27ee0c82c940d032292e555a69ab.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/00e3ea1cbbb4fb34e63abc918e13e1a66d705a5f96dcea71df38acd7d6596cfa.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/00e3ea1cbbb4fb34e63abc918e13e1a66d705a5f96dcea71df38acd7d6596cfa.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/00e3ea1cbbb4fb34e63abc918e13e1a66d705a5f96dcea71df38acd7d6596cfa.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 							<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="The world&#8217;s tallest teenager — a Canadian — becomes tallest player in college basketball history" data-title>The world&#8217;s tallest teenager — a Canadian — becomes tallest player in college basketball history</span>
+					<span class="c-posts__headlineText" title="Name of founding Hells Angels member appears on Montreal-area tombstone" data-title>Name of founding Hells Angels member appears on Montreal-area tombstone</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">5,015</span>
+							<span class="c-posts__info c-posts__info--highlight">5,952</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2971,8 +2970,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-miniplayer"
 			data-displayinline-video-id="11352514"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11352514,11517540,11518208,11505758,11352514,11518208/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fkuq8m7q0sm-ngadhkhjkn%2FTRUMP_PEACOCKING.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
-    		    			data-displayinline-playlist="11352514,11517540,11518208,11505758,11352514,11518208"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11352514,11517540,11512807,11518208,11352514,11518208/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fkuq8m7q0sm-ngadhkhjkn%2FTRUMP_PEACOCKING.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
+    		    			data-displayinline-playlist="11352514,11517540,11512807,11518208,11352514,11518208"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
@@ -3040,8 +3039,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11352514"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11352514,11517540,11518208,11505758,11352514,11518208/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11352514,11517540,11518208,11505758,11352514,11518208"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11352514,11517540,11512807,11518208,11352514,11518208/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11352514,11517540,11512807,11518208,11352514,11518208"
 			data-video-carousel-label="Commentary"
 			data-video-carousel-content="On this segment from today&#039;s &quot;The Ben Mulroney Show,&quot; Ben welcomes Francis Syms, Associate Dean of the Faculty of Science and Technology at Humber Polytechnic to discuss the evolution of airport security, particularly focusing on the increase in device searches at borders and the implications for travellers&#039; privacy. 
 "
@@ -3068,8 +3067,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11517540"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11517540,11518208,11505758,11352514,11518208,11352514/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11517540,11518208,11505758,11352514,11518208,11352514"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11517540,11512807,11518208,11352514,11518208,11352514/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11517540,11512807,11518208,11352514,11518208,11352514"
 			data-video-carousel-label="Consumer"
 			data-video-carousel-content="Health Canada is warning people not to use any products purchased from Ezra Healing after the wellness centre was recently raided. Klaudia Van Emmerik reports."
 			>
@@ -3090,13 +3089,40 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Trailer Park Boys&#8217; Bubbles actor Mike Smith charged with sexual assault" data-slide-index="2">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Catholic diocese condemns Hells Angels logo on tombstone in Quebec cemetery" data-slide-index="2">
+	<a href="https://globalnews.ca/video/11512807/catholic-diocese-condemns-hells-angels-logo-on-tombstone-in-quebec-cemetery/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11512807"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11512807,11518208,11352514,11518208,11352514,11517540/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11512807,11518208,11352514,11518208,11352514,11517540"
+			data-video-carousel-label="News"
+			data-video-carousel-content="A Roman Catholic diocese on Montreal’s South Shore is expressing regret over a tombstone featuring the logo of the Hells Angels biker gang at a local parish cemetery. The monument is stirring controversy, with calls for it to be promptly removed. Brayden Jagger Haines reports."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i1.wp.com/assets.news.corusappservices.com/upload/news/CP175264436.JPG?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">News</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Catholic diocese condemns Hells Angels logo on tombstone in Quebec cemetery</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Trailer Park Boys&#8217; Bubbles actor Mike Smith charged with sexual assault" data-slide-index="3">
 	<a href="https://globalnews.ca/video/11518208/trailer-park-boys-bubbles-actor-mike-smith-charged-with-sexual-assault/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11518208"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11518208,11505758,11352514,11518208,11352514,11517540/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11518208,11505758,11352514,11518208,11352514,11517540"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11518208,11352514,11518208,11352514,11517540,11512807/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11518208,11352514,11518208,11352514,11517540,11512807"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="Nova Scotia&#039;s Mike Smith, best known for his character Bubbles on the Trailer Park Boys, has been charged with sexual assault stemming from an incident in December 2017 in Dartmouth. "
 			>
@@ -3117,40 +3143,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="B.C. appeals to Ottawa for help dealing with extortion cases" data-slide-index="3">
-	<a href="https://globalnews.ca/video/11505758/b-c-appeals-to-ottawa-for-help-dealing-with-extortion-cases/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11505758"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11505758,11352514,11518208,11352514,11517540,11518208/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11505758,11352514,11518208,11352514,11517540,11518208"
-			data-video-carousel-label="Canada"
-			data-video-carousel-content="Surrey&#039;s mayor wants more resources to combat violence associated with extortions. Now, B.C.&#039;s public safety minister has sent a letter to Ottawa asking the feds to get involved and help out. Rumina Daya reports."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/33eftag3nt-rs04ny0wh0/WEB_6P_SURREY_ADDITIONAL_RCMP.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">B.C. appeals to Ottawa for help dealing with extortion cases</span></div>
-					</div>
-	</a>
-</li>
-
 <li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Air travel is about to get a lot harder for Canadians going to US" data-slide-index="4">
 	<a href="https://globalnews.ca/video/11352514/air-travel-is-about-to-get-a-lot-harder-for-canadians-going-to-us/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11352514"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11352514,11518208,11352514,11517540,11518208,11505758/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11352514,11518208,11352514,11517540,11518208,11505758"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11352514,11518208,11352514,11517540,11512807,11518208/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11352514,11518208,11352514,11517540,11512807,11518208"
 			data-video-carousel-label="Commentary"
 			data-video-carousel-content="On this segment from today&#039;s &quot;The Ben Mulroney Show,&quot; Ben welcomes Francis Syms, Associate Dean of the Faculty of Science and Technology at Humber Polytechnic to discuss the evolution of airport security, particularly focusing on the increase in device searches at borders and the implications for travellers&#039; privacy. 
 "
@@ -3177,8 +3176,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11518208"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11518208,11352514,11517540,11518208,11505758,11352514/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11518208,11352514,11517540,11518208,11505758,11352514"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11518208,11352514,11517540,11512807,11518208,11352514/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11518208,11352514,11517540,11512807,11518208,11352514"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="Nova Scotia&#039;s Mike Smith, best known for his character Bubbles on the Trailer Park Boys, has been charged with sexual assault stemming from an incident in December 2017 in Dartmouth. "
 			>
@@ -3234,7 +3233,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11517540"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11517540,11518208,11505758,11352514,11518208/#autoplay&#038;stickyiframe=home-miniplayer_11517540"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11517540,11512807,11518208,11352514,11518208/#autoplay&#038;stickyiframe=home-miniplayer_11517540"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3286,9 +3285,41 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
+			data-displayinline-player-id="home-miniplayer_11512807"
+			data-displayinline-ratio="16:9"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11512807,11518208,11352514,11518208,11517540/#autoplay&#038;stickyiframe=home-miniplayer_11512807"
+			data-displayinline-sticky="true"
+			data-displayinline-expand="true">
+			<div class="c-video__placeholder">
+				<img data-src="https://i1.wp.com/assets.news.corusappservices.com/upload/news/CP175264436.JPG?w=384&#038;quality=70&#038;strip=all"
+					width="236"
+					height="133"
+					class="c-posts__thumbnail c-video__image"
+					alt="Click to play video 'Catholic diocese condemns Hells Angels logo on tombstone in Quebec cemetery'"
+					loading="lazy" />
+				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+			</div>
+		</a>
+		<a href="https://globalnews.ca/video/11512807/catholic-diocese-condemns-hells-angels-logo-on-tombstone-in-quebec-cemetery/" class="c-posts__details">
+				<div class="c-posts__about">
+					<div class="c-posts__info c-posts__info--highlight">News</div>
+				</div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Catholic diocese condemns Hells Angels logo on tombstone in Quebec cemetery</span></div>
+		</a>
+	</div>
+</li>
+
+<li class="c-posts__item">
+	<div class="c-posts__inner">
+		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
+			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11518208"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11518208,11505758,11352514,11518208,11517540/#autoplay&#038;stickyiframe=home-miniplayer_11518208"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11518208,11352514,11518208,11517540,11512807/#autoplay&#038;stickyiframe=home-miniplayer_11518208"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3318,41 +3349,9 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11505758"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11505758,11352514,11518208,11517540,11518208/#autoplay&#038;stickyiframe=home-miniplayer_11505758"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/33eftag3nt-rs04ny0wh0/WEB_6P_SURREY_ADDITIONAL_RCMP.jpg?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'B.C. appeals to Ottawa for help dealing with extortion cases'"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/11505758/b-c-appeals-to-ottawa-for-help-dealing-with-extortion-cases/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">B.C. appeals to Ottawa for help dealing with extortion cases</span></div>
-		</a>
-	</div>
-</li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11352514"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11352514,11518208,11517540,11518208,11505758/#autoplay&#038;stickyiframe=home-miniplayer_11352514"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11352514,11518208,11517540,11512807,11518208/#autoplay&#038;stickyiframe=home-miniplayer_11352514"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3395,22 +3394,22 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant"
-			data-displayinline-video-id="11518208"
+			data-displayinline-video-id="11518813"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11518208,11518288,11517929,11518273,11518147/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F54t7k6bt9i-yu6pazb9lv%2FTRAILER_PARK_SAT_thumbnail_1280x720.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
-    		    			data-displayinline-playlist="11518208,11518288,11517929,11518273,11518147"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11518813,11518805,11518824,11518208,11518655/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fusoh2n95c1-jd4xt0191y%2FUS_FLIGHTS_SUN_thumbnail_1280x720.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
+    		    			data-displayinline-playlist="11518813,11518805,11518824,11518208,11518655"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Trailer Park Boys&#8217; Bubbles actor Mike Smith charged with sexual assault'"
+						alt="Click to play video: 'U.S. flight cuts upset travel plans, supply chains'"
 						width="640"
 						height="360"
-													data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/54t7k6bt9i-yu6pazb9lv/TRAILER_PARK_SAT_thumbnail_1280x720.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/usoh2n95c1-jd4xt0191y/US_FLIGHTS_SUN_thumbnail_1280x720.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i2.wp.com/media.globalnews.ca/videostatic/news/54t7k6bt9i-yu6pazb9lv/TRAILER_PARK_SAT_thumbnail_1280x720.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i2.wp.com/media.globalnews.ca/videostatic/news/54t7k6bt9i-yu6pazb9lv/TRAILER_PARK_SAT_thumbnail_1280x720.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i2.wp.com/media.globalnews.ca/videostatic/news/54t7k6bt9i-yu6pazb9lv/TRAILER_PARK_SAT_thumbnail_1280x720.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
+								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/usoh2n95c1-jd4xt0191y/US_FLIGHTS_SUN_thumbnail_1280x720.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/usoh2n95c1-jd4xt0191y/US_FLIGHTS_SUN_thumbnail_1280x720.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/usoh2n95c1-jd4xt0191y/US_FLIGHTS_SUN_thumbnail_1280x720.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -3420,20 +3419,20 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">0:26</time>
-																									<span class="c-video__title">Trailer Park Boys&#8217; Bubbles actor Mike Smith charged with sexual assault</span>
+																	<time class="c-video__duration">8:31</time>
+																									<span class="c-video__title">U.S. flight cuts upset travel plans, supply chains</span>
 															</div>
 						</span>
 											</span>
 				</div>
 							</div>
 								<div class="l-videoCarousel__sidebar">
-													<a href="https://globalnews.ca/video/11518208/trailer-park-boys-bubbles-actor-mike-smith-charged-with-sexual-assault/" class="l-videoCarousel__details">
-							<div class="l-videoCarousel__info">Canada</div>
+													<a href="https://globalnews.ca/video/11518813/u-s-flight-cuts-upset-travel-plans-supply-chains/" class="l-videoCarousel__details">
+							<div class="l-videoCarousel__info">U.S. News</div>
 								<div class="l-videoCarousel__fullTitle">
-								Trailer Park Boys&#8217; Bubbles actor Mike Smith charged with sexual assault								</div>
+								U.S. flight cuts upset travel plans, supply chains								</div>
 								<div class="l-videoCarousel__description">
-								Nova Scotia&#039;s Mike Smith, best known for his character Bubbles on the Trailer Park Boys, has been charged with sexual assault stemming from an incident in December 2017 in Dartmouth. 								</div>
+								Daniel Béland, Director of the McGill Institute for the Study of Canada, joins Global’s Nivrita Ganguly to discuss the politics surrounding the 2025 federal budget.								</div>
 						</a>
 								<div class="c-ad c-ad--bigbox c-ad--dark l-videoCarousel__ad">							<div class="c-ad__label">Advertisement</div>
 			
@@ -3460,13 +3459,94 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-carousel__track glide__track" data-glide-el="track">
 						<ul class="c-posts c-posts--video c-posts--tile c-posts--horizontal c-posts--inverted glide__slides">
 							
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Trailer Park Boys&#8217; Bubbles actor Mike Smith charged with sexual assault" data-slide-index="0">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="U.S. flight cuts upset travel plans, supply chains" data-slide-index="0">
+	<a href="https://globalnews.ca/video/11518813/u-s-flight-cuts-upset-travel-plans-supply-chains/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11518813"
+			data-video-player-id="home-miniplayer-variant"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11518813,11518805,11518824,11518208,11518655/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11518813,11518805,11518824,11518208,11518655"
+			data-video-carousel-label="U.S. News"
+			data-video-carousel-content="Daniel Béland, Director of the McGill Institute for the Study of Canada, joins Global’s Nivrita Ganguly to discuss the politics surrounding the 2025 federal budget."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/usoh2n95c1-jd4xt0191y/US_FLIGHTS_SUN_thumbnail_1280x720.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">U.S. flight cuts upset travel plans, supply chains</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="What are Canada’s climate goals at COP30?" data-slide-index="1">
+	<a href="https://globalnews.ca/video/11518805/what-are-canadas-climate-goals-at-cop30/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11518805"
+			data-video-player-id="home-miniplayer-variant"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11518805,11518824,11518208,11518655,11518813/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11518805,11518824,11518208,11518655,11518813"
+			data-video-carousel-label="Canada"
+			data-video-carousel-content="Julie Segal, Senior Program Manager of Climate Finance at Environmental Defence Climate, joins Global’s Nivrita Ganguly from Belém to discuss Canada’s climate goals ahead of this year’s COP30 meeting in Brazil."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/psh9t7krqi-cfz0fmcl53/COP_N.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">What are Canada’s climate goals at COP30?</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="At least two dead as Super Typhoon Fung-wong makes landfall in northern Philippines" data-slide-index="2">
+	<a href="https://globalnews.ca/video/11518824/at-least-two-dead-as-super-typhoon-fung-wong-makes-landfall-in-northern-philippines/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11518824"
+			data-video-player-id="home-miniplayer-variant"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11518824,11518208,11518655,11518813,11518805/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11518824,11518208,11518655,11518813,11518805"
+			data-video-carousel-label="Weather"
+			data-video-carousel-content="Typhoon Fung-wong has made landfall in the northern Philippines, the state weather agency said on Sunday. At least two people have died as Fung-wong lashed the central and eastern parts of the Philippines with heavy rains and strong winds, cutting power in large areas of the Bicol region ahead of its landfall."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/v37nyksz5f-5q0isd142o/AFF_TYPHOON_FUNG_WONG-O_OM01L33W.mp4.00_00_04_00.Still001.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Weather</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">At least two dead as Super Typhoon Fung-wong makes landfall in northern Philippines</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Trailer Park Boys&#8217; Bubbles actor Mike Smith charged with sexual assault" data-slide-index="3">
 	<a href="https://globalnews.ca/video/11518208/trailer-park-boys-bubbles-actor-mike-smith-charged-with-sexual-assault/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11518208"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11518208,11518288,11517929,11518273,11518147/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11518208,11518288,11517929,11518273,11518147"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11518208,11518655,11518813,11518805,11518824/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11518208,11518655,11518813,11518805,11518824"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="Nova Scotia&#039;s Mike Smith, best known for his character Bubbles on the Trailer Park Boys, has been charged with sexual assault stemming from an incident in December 2017 in Dartmouth. "
 			>
@@ -3487,73 +3567,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Microplastics found in lobster, researchers sound alarm" data-slide-index="1">
-	<a href="https://globalnews.ca/video/11518288/microplastics-found-in-lobster-researchers-sound-alarm/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Green Party leader &#8216;working to make sure&#8217; a snap election doesn&#8217;t happen" data-slide-index="4">
+	<a href="https://globalnews.ca/video/11518655/green-party-leader-working-to-make-sure-a-snap-election-doesnt-happen/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11518288"
+					data-video-id="11518655"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11518288,11517929,11518273,11518147,11518208/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11518288,11517929,11518273,11518147,11518208"
-			data-video-carousel-label="Health"
-			data-video-carousel-content="Plastics are everywhere in our modern world, and when they break down, they leave behind microplastics. Heidi Petracek explains what the researchers found and why they say it&#039;s a call to action.
- "
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/4nfohtbl6h-f1t5gdpuue/site_lobster.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Health</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Microplastics found in lobster, researchers sound alarm</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Powerful tornado rips through southern Brazil, Parana declares state of emergency " data-slide-index="2">
-	<a href="https://globalnews.ca/video/11517929/powerful-tornado-rips-through-southern-brazil-parana-declares-state-of-emergency/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11517929"
-			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11517929,11518273,11518147,11518208,11518288/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11517929,11518273,11518147,11518208,11518288"
-			data-video-carousel-label="News"
-			data-video-carousel-content="A powerful tornado struck Brazil&#039;s Paraná State on Friday, killing at least six people and causing extensive damage throughout the region. "
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/jc99omy485-xjmkavtvsm/2025-11-08T145729Z_1_LWD052508112025RP1_RTRWNEV_C_0525-BRAZIL-WEATHER-TORNADO-AERIALS.MP4.00_00_26_13.Still001.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">News</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Powerful tornado rips through southern Brazil, Parana declares state of emergency </span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Indigenous veterans remembered in special commemoration in Toronto" data-slide-index="3">
-	<a href="https://globalnews.ca/video/11518273/indigenous-veterans-remembered-in-special-commemoration-in-toronto/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11518273"
-			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11518273,11518147,11518208,11518288,11517929/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11518273,11518147,11518208,11518288,11517929"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11518655,11518813,11518805,11518824,11518208/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11518655,11518813,11518805,11518824,11518208"
 			data-video-carousel-label="Canada"
-			data-video-carousel-content="Ceremonies featured culture and tradition to honour a group of veterans whose sacrifice was long overlooked. Moosa Imran reports on how those at an Indigenous Veterans Day commemoration in Toronto are ensuring the legacy of Indigenous veterans lives on."
+			data-video-carousel-content="We get budget reaction from Conservative House Leader​ Andrew Scheer and Green Party Leader Elizabeth May. When it comes down to the final budget vote, where are they planning to throw support and could a snap election be possible?"
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/yhk234v4f4-afgwkr195d/GN1_SITE_SAT.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/ygls3wesay-w3ndsojjqg/THUMBS.00_01_40_29.Still004.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -3564,34 +3589,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							<div class="l-videoCarousel__info">
 					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Indigenous veterans remembered in special commemoration in Toronto</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Gold toilet &#8216;America&#8217; expected to fetch $10 million at auction in NY" data-slide-index="4">
-	<a href="https://globalnews.ca/video/11518147/gold-toilet-america-expected-to-fetch-10-million-at-auction-in-ny/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11518147"
-			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11518147,11518208,11518288,11517929,11518273/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11518147,11518208,11518288,11517929,11518273"
-			data-video-carousel-label="Lifestyle"
-			data-video-carousel-content="Sotheby&#039;s is putting Maurizio Cattelan&#039;s 18‑karat gold toilet, titled &#039;America,&#039; on the auction block in New York City on Nov. 18. "
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/a1sx8gayzg-ez5wfhroch/SITE_GOLDEN_TOILET.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Lifestyle</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Gold toilet &#8216;America&#8217; expected to fetch $10 million at auction in NY</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Green Party leader &#8216;working to make sure&#8217; a snap election doesn&#8217;t happen</span></div>
 					</div>
 	</a>
 </li>
@@ -3629,17 +3627,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11518288"
+			data-displayinline-player-id="home-miniplayer-variant_11518805"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11518288,11517929,11518273,11518147/#autoplay&#038;stickyiframe=home-miniplayer-variant_11518288"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11518805,11518824,11518208,11518655/#autoplay&#038;stickyiframe=home-miniplayer-variant_11518805"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/4nfohtbl6h-f1t5gdpuue/site_lobster.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/psh9t7krqi-cfz0fmcl53/COP_N.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Microplastics found in lobster, researchers sound alarm'"
+					alt="Click to play video 'What are Canada’s climate goals at COP30?'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3648,11 +3646,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11518288/microplastics-found-in-lobster-researchers-sound-alarm/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11518805/what-are-canadas-climate-goals-at-cop30/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Health</div>
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Microplastics found in lobster, researchers sound alarm</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">What are Canada’s climate goals at COP30?</span></div>
 		</a>
 	</div>
 </li>
@@ -3683,17 +3681,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11517929"
+			data-displayinline-player-id="home-miniplayer-variant_11518824"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11517929,11518273,11518147,11518288/#autoplay&#038;stickyiframe=home-miniplayer-variant_11517929"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11518824,11518208,11518655,11518805/#autoplay&#038;stickyiframe=home-miniplayer-variant_11518824"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/jc99omy485-xjmkavtvsm/2025-11-08T145729Z_1_LWD052508112025RP1_RTRWNEV_C_0525-BRAZIL-WEATHER-TORNADO-AERIALS.MP4.00_00_26_13.Still001.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/v37nyksz5f-5q0isd142o/AFF_TYPHOON_FUNG_WONG-O_OM01L33W.mp4.00_00_04_00.Still001.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Powerful tornado rips through southern Brazil, Parana declares state of emergency '"
+					alt="Click to play video 'At least two dead as Super Typhoon Fung-wong makes landfall in northern Philippines'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3702,11 +3700,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11517929/powerful-tornado-rips-through-southern-brazil-parana-declares-state-of-emergency/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11518824/at-least-two-dead-as-super-typhoon-fung-wong-makes-landfall-in-northern-philippines/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">News</div>
+					<div class="c-posts__info c-posts__info--highlight">Weather</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Powerful tornado rips through southern Brazil, Parana declares state of emergency </span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">At least two dead as Super Typhoon Fung-wong makes landfall in northern Philippines</span></div>
 		</a>
 	</div>
 </li>
@@ -3715,17 +3713,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11518273"
+			data-displayinline-player-id="home-miniplayer-variant_11518208"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11518273,11518147,11518288,11517929/#autoplay&#038;stickyiframe=home-miniplayer-variant_11518273"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11518208,11518655,11518805,11518824/#autoplay&#038;stickyiframe=home-miniplayer-variant_11518208"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/yhk234v4f4-afgwkr195d/GN1_SITE_SAT.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/54t7k6bt9i-yu6pazb9lv/TRAILER_PARK_SAT_thumbnail_1280x720.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Indigenous veterans remembered in special commemoration in Toronto'"
+					alt="Click to play video 'Trailer Park Boys&#8217; Bubbles actor Mike Smith charged with sexual assault'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3734,11 +3732,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11518273/indigenous-veterans-remembered-in-special-commemoration-in-toronto/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11518208/trailer-park-boys-bubbles-actor-mike-smith-charged-with-sexual-assault/" class="c-posts__details">
 				<div class="c-posts__about">
 					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Indigenous veterans remembered in special commemoration in Toronto</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Trailer Park Boys&#8217; Bubbles actor Mike Smith charged with sexual assault</span></div>
 		</a>
 	</div>
 </li>
@@ -3747,17 +3745,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11518147"
+			data-displayinline-player-id="home-miniplayer-variant_11518655"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11518147,11518288,11517929,11518273/#autoplay&#038;stickyiframe=home-miniplayer-variant_11518147"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11518655,11518805,11518824,11518208/#autoplay&#038;stickyiframe=home-miniplayer-variant_11518655"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/a1sx8gayzg-ez5wfhroch/SITE_GOLDEN_TOILET.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/ygls3wesay-w3ndsojjqg/THUMBS.00_01_40_29.Still004.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Gold toilet &#8216;America&#8217; expected to fetch $10 million at auction in NY'"
+					alt="Click to play video 'Green Party leader &#8216;working to make sure&#8217; a snap election doesn&#8217;t happen'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3766,11 +3764,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11518147/gold-toilet-america-expected-to-fetch-10-million-at-auction-in-ny/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11518655/green-party-leader-working-to-make-sure-a-snap-election-doesnt-happen/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Lifestyle</div>
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Gold toilet &#8216;America&#8217; expected to fetch $10 million at auction in NY</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Green Party leader &#8216;working to make sure&#8217; a snap election doesn&#8217;t happen</span></div>
 		</a>
 	</div>
 </li>
@@ -3835,12 +3833,44 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11518808"
+				data-sophi-feature=latest-news			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11518808/preliminary-tests-find-germ-that-causes-botulism-in-byheart-baby-formula/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Preliminary tests find germ that causes botulism in ByHeart baby formula" data-title>Preliminary tests find germ that causes botulism in ByHeart baby formula</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						Preliminary tests showed that ByHeart baby formula contained the type of bacteria that produces the toxin linked to a botulism outbreak, California health officials said.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Health</div>
+																						<div class="c-posts__info">1 hour</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/11/38d7a84e17d41d07daa9b5e06219e3f719c40907862455212ee31ed60a37a601_688d78.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/38d7a84e17d41d07daa9b5e06219e3f719c40907862455212ee31ed60a37a601_688d78.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/38d7a84e17d41d07daa9b5e06219e3f719c40907862455212ee31ed60a37a601_688d78.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/38d7a84e17d41d07daa9b5e06219e3f719c40907862455212ee31ed60a37a601_688d78.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
 				data-post-id="11517942"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11517942/pfizer-clinches-deal-for-obesity-drug-developer-metsea-after-a-bidding-war-with-novo-nordisk/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3872,7 +3902,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11517602/name-of-founding-hells-angels-quebec-tombstone/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3894,38 +3924,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								width="720" height="447" alt="" 
 												srcset='' sizes=''
 								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/00e3ea1cbbb4fb34e63abc918e13e1a66d705a5f96dcea71df38acd7d6596cfa.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/00e3ea1cbbb4fb34e63abc918e13e1a66d705a5f96dcea71df38acd7d6596cfa.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/00e3ea1cbbb4fb34e63abc918e13e1a66d705a5f96dcea71df38acd7d6596cfa.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11518769"
-				data-sophi-feature=latest-news			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11518769/chief-judges-back-court-poppy-ban-after-backlash/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Chief judges back court poppy ban after backlash" data-title>Chief judges back court poppy ban after backlash</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						The heads of Nova Scotia&#039;s supreme and provincial courts are expressing their support for judges who ban court staff from pinning poppies to their robes during proceedings after some Canadian politicians called the practice wrong.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																						<div class="c-posts__info">20 mins</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="448" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/31501b01d2e35ef92fa74d13b403d2e7db8d10d1a060b24f663b264c745df1aa.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -4027,65 +4025,65 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11516903"
+				data-post-id="11517415"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
-					href="https://globalnews.ca/news/11516903/man-finds-gold-yard-france-buried-treasure/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
+					href="https://globalnews.ca/news/11517415/poilievre-budget-economic-club/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Man stumbles upon buried gold while renovating his yard in France" data-title>Man stumbles upon buried gold while renovating his yard in France</span>
+					<span class="c-posts__headlineText" title="Poilievre blasts Carney over budget deficit, spending in free-market speech" data-title>Poilievre blasts Carney over budget deficit, spending in free-market speech</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						The origin of the gold&#039;s burial in the man&#039;s yard remains a mystery.						</div>
+						Poilievre delivered his address to a business crowd at the Economic Club of Canada, a few blocks away from the Canadian Club Toronto — where Carney was promoting his budget.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Trending</div>
+															<div class="c-posts__info c-posts__info--highlight">Politics</div>
 																						<div class="c-posts__info">Nov 7</div>
 													</div>
 					</div>
 					
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/11/CP175172127.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/11/ff3f0fa69e539c6266b0dadca6137088573b513f2f35ef16cc2e5bf52e9a52a6.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="465" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/CP175172127.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/CP175172127.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/CP175172127.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/ff3f0fa69e539c6266b0dadca6137088573b513f2f35ef16cc2e5bf52e9a52a6.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/ff3f0fa69e539c6266b0dadca6137088573b513f2f35ef16cc2e5bf52e9a52a6.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/ff3f0fa69e539c6266b0dadca6137088573b513f2f35ef16cc2e5bf52e9a52a6.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11516879"
+				data-post-id="11517283"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
-					href="https://globalnews.ca/news/11516879/pierre-poilievres-bad-week/"
+					href="https://globalnews.ca/news/11517283/a-study-questions-melatonin-use-and-heart-health-but-dont-lose-sleep-over-it/"
 					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:8}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Bad week for the Conservatives puts Pierre Poilievre on the defensive" data-title>Bad week for the Conservatives puts Pierre Poilievre on the defensive</span>
+					<span class="c-posts__headlineText" title="A study questions melatonin use and heart health but don’t lose sleep over it" data-title>A study questions melatonin use and heart health but don’t lose sleep over it</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						It was a week that was supposed to focus on Mark Carney’s first budget, but instead raised questions about Poilievre’s leadership.						</div>
+						WASHINGTON (AP) — Don&#039;t lose sleep over headlines linking melatonin to heart failure.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Canada</div>
+															<div class="c-posts__info c-posts__info--highlight">Health</div>
 																						<div class="c-posts__info">Nov 7</div>
 													</div>
 					</div>
 					
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/09/6e2ef05e5cc9fb9b49c3fdc08b3a91a3116d19e9a864ca9d053d1b559b32728d.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/11/068d71d9c2b1b2e065842c9cc1b3113d4dea3efbcc3592803bd77353f23018b3_8e10ce.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
 								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/6e2ef05e5cc9fb9b49c3fdc08b3a91a3116d19e9a864ca9d053d1b559b32728d.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/6e2ef05e5cc9fb9b49c3fdc08b3a91a3116d19e9a864ca9d053d1b559b32728d.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/6e2ef05e5cc9fb9b49c3fdc08b3a91a3116d19e9a864ca9d053d1b559b32728d.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/068d71d9c2b1b2e065842c9cc1b3113d4dea3efbcc3592803bd77353f23018b3_8e10ce.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/068d71d9c2b1b2e065842c9cc1b3113d4dea3efbcc3592803bd77353f23018b3_8e10ce.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/068d71d9c2b1b2e065842c9cc1b3113d4dea3efbcc3592803bd77353f23018b3_8e10ce.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -4168,8 +4166,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-playlist-miniplayer"
 			data-displayinline-video-id="11352514"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11352514,11517540,11518208,11505758,11352514/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fkuq8m7q0sm-ngadhkhjkn%2FTRUMP_PEACOCKING.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
-    		    			data-displayinline-playlist="11352514,11517540,11518208,11505758,11352514"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11352514,11517540,11512807,11518208,11352514/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fkuq8m7q0sm-ngadhkhjkn%2FTRUMP_PEACOCKING.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
+    		    			data-displayinline-playlist="11352514,11517540,11512807,11518208,11352514"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
@@ -4215,7 +4213,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Commentary"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11352514,11517540,11518208,11505758,11352514/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11352514,11517540,11512807,11518208,11352514/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Air travel is about to get a lot harder for Canadians going to US</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4243,7 +4241,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Consumer"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11517540,11518208,11505758,11352514/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11517540,11512807,11518208,11352514/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Health Canada warning follows Kelowna raid</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4264,6 +4262,34 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="3"
 	>
+	<a href="https://globalnews.ca/video/11512807/catholic-diocese-condemns-hells-angels-logo-on-tombstone-in-quebec-cemetery/"
+		title="Catholic diocese condemns Hells Angels logo on tombstone in Quebec cemetery"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11512807"
+		data-video-label="News"
+		data-video-player-id="home-playlist-miniplayer"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11512807,11518208,11352514,11517540/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Catholic diocese condemns Hells Angels logo on tombstone in Quebec cemetery</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						News					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i1.wp.com/assets.news.corusappservices.com/upload/news/CP175264436.JPG?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="4"
+	>
 	<a href="https://globalnews.ca/video/11518208/trailer-park-boys-bubbles-actor-mike-smith-charged-with-sexual-assault/"
 		title="Trailer Park Boys&#8217; Bubbles actor Mike Smith charged with sexual assault"
 		class="l-playlist__link c-posts__inner c-videoPlay"
@@ -4271,7 +4297,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11518208,11505758,11352514,11517540/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11518208,11352514,11517540,11512807/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Trailer Park Boys&#8217; Bubbles actor Mike Smith charged with sexual assault</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4290,34 +4316,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 <li class="c-posts__item l-playlist__item"
-			data-playlist-index="4"
-	>
-	<a href="https://globalnews.ca/video/11505758/b-c-appeals-to-ottawa-for-help-dealing-with-extortion-cases/"
-		title="B.C. appeals to Ottawa for help dealing with extortion cases"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11505758"
-		data-video-label="Canada"
-		data-video-player-id="home-playlist-miniplayer"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11505758,11352514,11517540,11518208/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">B.C. appeals to Ottawa for help dealing with extortion cases</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/33eftag3nt-rs04ny0wh0/WEB_6P_SURREY_ADDITIONAL_RCMP.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
 			data-playlist-index="5"
 	>
 	<a href="https://globalnews.ca/video/11352514/air-travel-is-about-to-get-a-lot-harder-for-canadians-going-to-us/"
@@ -4327,7 +4325,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Commentary"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11352514,11517540,11518208,11505758/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11352514,11517540,11512807,11518208/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Air travel is about to get a lot harder for Canadians going to US</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4361,22 +4359,22 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-playlist-miniplayer-variant"
-			data-displayinline-video-id="11518208"
+			data-displayinline-video-id="11518813"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11518208,11518288,11517929,11518273,11518147/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F54t7k6bt9i-yu6pazb9lv%2FTRAILER_PARK_SAT_thumbnail_1280x720.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
-    		    			data-displayinline-playlist="11518208,11518288,11517929,11518273,11518147"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11518813,11518805,11518824,11518208,11518655/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fusoh2n95c1-jd4xt0191y%2FUS_FLIGHTS_SUN_thumbnail_1280x720.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
+    		    			data-displayinline-playlist="11518813,11518805,11518824,11518208,11518655"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Trailer Park Boys&#8217; Bubbles actor Mike Smith charged with sexual assault'"
+						alt="Click to play video: 'U.S. flight cuts upset travel plans, supply chains'"
 						width="640"
 						height="360"
-													data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/54t7k6bt9i-yu6pazb9lv/TRAILER_PARK_SAT_thumbnail_1280x720.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/usoh2n95c1-jd4xt0191y/US_FLIGHTS_SUN_thumbnail_1280x720.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i2.wp.com/media.globalnews.ca/videostatic/news/54t7k6bt9i-yu6pazb9lv/TRAILER_PARK_SAT_thumbnail_1280x720.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i2.wp.com/media.globalnews.ca/videostatic/news/54t7k6bt9i-yu6pazb9lv/TRAILER_PARK_SAT_thumbnail_1280x720.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i2.wp.com/media.globalnews.ca/videostatic/news/54t7k6bt9i-yu6pazb9lv/TRAILER_PARK_SAT_thumbnail_1280x720.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
+								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/usoh2n95c1-jd4xt0191y/US_FLIGHTS_SUN_thumbnail_1280x720.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/usoh2n95c1-jd4xt0191y/US_FLIGHTS_SUN_thumbnail_1280x720.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/usoh2n95c1-jd4xt0191y/US_FLIGHTS_SUN_thumbnail_1280x720.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -4386,8 +4384,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">0:26</time>
-																									<span class="c-video__title">Trailer Park Boys&#8217; Bubbles actor Mike Smith charged with sexual assault</span>
+																	<time class="c-video__duration">8:31</time>
+																									<span class="c-video__title">U.S. flight cuts upset travel plans, supply chains</span>
 															</div>
 						</span>
 											</span>
@@ -4403,23 +4401,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="1"
 	>
-	<a href="https://globalnews.ca/video/11518208/trailer-park-boys-bubbles-actor-mike-smith-charged-with-sexual-assault/"
-		title="Trailer Park Boys&#8217; Bubbles actor Mike Smith charged with sexual assault"
+	<a href="https://globalnews.ca/video/11518813/u-s-flight-cuts-upset-travel-plans-supply-chains/"
+		title="U.S. flight cuts upset travel plans, supply chains"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11518208"
-		data-video-label="Canada"
+		data-video-id="11518813"
+		data-video-label="U.S. News"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11518208,11518288,11517929,11518273,11518147/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11518813,11518805,11518824,11518208,11518655/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Trailer Park Boys&#8217; Bubbles actor Mike Smith charged with sexual assault</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">U.S. flight cuts upset travel plans, supply chains</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
+						U.S. News					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/54t7k6bt9i-yu6pazb9lv/TRAILER_PARK_SAT_thumbnail_1280x720.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/usoh2n95c1-jd4xt0191y/US_FLIGHTS_SUN_thumbnail_1280x720.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -4431,23 +4429,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="2"
 	>
-	<a href="https://globalnews.ca/video/11518288/microplastics-found-in-lobster-researchers-sound-alarm/"
-		title="Microplastics found in lobster, researchers sound alarm"
+	<a href="https://globalnews.ca/video/11518805/what-are-canadas-climate-goals-at-cop30/"
+		title="What are Canada’s climate goals at COP30?"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11518288"
-		data-video-label="Health"
+		data-video-id="11518805"
+		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11518288,11517929,11518273,11518147/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11518805,11518824,11518208,11518655/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Microplastics found in lobster, researchers sound alarm</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">What are Canada’s climate goals at COP30?</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Health					</div>
+						Canada					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/4nfohtbl6h-f1t5gdpuue/site_lobster.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/psh9t7krqi-cfz0fmcl53/COP_N.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -4459,23 +4457,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="3"
 	>
-	<a href="https://globalnews.ca/video/11517929/powerful-tornado-rips-through-southern-brazil-parana-declares-state-of-emergency/"
-		title="Powerful tornado rips through southern Brazil, Parana declares state of emergency "
+	<a href="https://globalnews.ca/video/11518824/at-least-two-dead-as-super-typhoon-fung-wong-makes-landfall-in-northern-philippines/"
+		title="At least two dead as Super Typhoon Fung-wong makes landfall in northern Philippines"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11517929"
-		data-video-label="News"
+		data-video-id="11518824"
+		data-video-label="Weather"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11517929,11518273,11518147,11518288/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11518824,11518208,11518655,11518805/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Powerful tornado rips through southern Brazil, Parana declares state of emergency </span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">At least two dead as Super Typhoon Fung-wong makes landfall in northern Philippines</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						News					</div>
+						Weather					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/jc99omy485-xjmkavtvsm/2025-11-08T145729Z_1_LWD052508112025RP1_RTRWNEV_C_0525-BRAZIL-WEATHER-TORNADO-AERIALS.MP4.00_00_26_13.Still001.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/v37nyksz5f-5q0isd142o/AFF_TYPHOON_FUNG_WONG-O_OM01L33W.mp4.00_00_04_00.Still001.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -4487,23 +4485,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="4"
 	>
-	<a href="https://globalnews.ca/video/11518273/indigenous-veterans-remembered-in-special-commemoration-in-toronto/"
-		title="Indigenous veterans remembered in special commemoration in Toronto"
+	<a href="https://globalnews.ca/video/11518208/trailer-park-boys-bubbles-actor-mike-smith-charged-with-sexual-assault/"
+		title="Trailer Park Boys&#8217; Bubbles actor Mike Smith charged with sexual assault"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11518273"
+		data-video-id="11518208"
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11518273,11518147,11518288,11517929/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11518208,11518655,11518805,11518824/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Indigenous veterans remembered in special commemoration in Toronto</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Trailer Park Boys&#8217; Bubbles actor Mike Smith charged with sexual assault</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
 						Canada					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/yhk234v4f4-afgwkr195d/GN1_SITE_SAT.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/54t7k6bt9i-yu6pazb9lv/TRAILER_PARK_SAT_thumbnail_1280x720.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -4515,23 +4513,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="5"
 	>
-	<a href="https://globalnews.ca/video/11518147/gold-toilet-america-expected-to-fetch-10-million-at-auction-in-ny/"
-		title="Gold toilet &#8216;America&#8217; expected to fetch $10 million at auction in NY"
+	<a href="https://globalnews.ca/video/11518655/green-party-leader-working-to-make-sure-a-snap-election-doesnt-happen/"
+		title="Green Party leader &#8216;working to make sure&#8217; a snap election doesn&#8217;t happen"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11518147"
-		data-video-label="Lifestyle"
+		data-video-id="11518655"
+		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11518147,11518288,11517929,11518273/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11518655,11518805,11518824,11518208/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Gold toilet &#8216;America&#8217; expected to fetch $10 million at auction in NY</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Green Party leader &#8216;working to make sure&#8217; a snap election doesn&#8217;t happen</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Lifestyle					</div>
+						Canada					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/a1sx8gayzg-ez5wfhroch/SITE_GOLDEN_TOILET.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/ygls3wesay-w3ndsojjqg/THUMBS.00_01_40_29.Still004.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=cv3j60zbx#play"></use>
@@ -5029,7 +5027,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >5 hours</div>
+																<div class="c-posts__info" data-date >7 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5067,26 +5065,26 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-29"
-	data-post-id="11516927"
+	data-post-id="11516903"
 	data-slide-index=""
-	data-caption="James Watson, co-discoverer of the double-helix shape of DNA, has died at age 97"
+	data-caption="Man stumbles upon buried gold while renovating his yard in France"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11516927/james-watson-co-discoverer-of-the-double-helix-shape-of-dna-has-died-at-age-97/"
+		href="https://globalnews.ca/news/11516903/man-finds-gold-yard-france-buried-treasure/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
-		<div class="c-posts__media  c-imageContainer"  >
+		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/11/71280adf5553b379bedeb313d0b8e0ddd24c8cb0fe8f52645c17f63e9be3323a_3a141a.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=521 data-ratio=0.67									loading="lazy"
-								width="720" height="521" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/11/CP175172127.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/71280adf5553b379bedeb313d0b8e0ddd24c8cb0fe8f52645c17f63e9be3323a_3a141a.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/71280adf5553b379bedeb313d0b8e0ddd24c8cb0fe8f52645c17f63e9be3323a_3a141a.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/71280adf5553b379bedeb313d0b8e0ddd24c8cb0fe8f52645c17f63e9be3323a_3a141a.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/CP175172127.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/CP175172127.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/CP175172127.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="James Watson, co-discoverer of the double-helix shape of DNA, has died at age 97" data-title>James Watson, co-discoverer of the double-helix shape of DNA, has died at age 97</span>
+					<span class="c-posts__headlineText" title="Man stumbles upon buried gold while renovating his yard in France" data-title>Man stumbles upon buried gold while renovating his yard in France</span>
 			</div>
 	
 						
@@ -5206,13 +5204,44 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >44 mins</div>
+																<div class="c-posts__info" data-date >3 hours</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-31"
+	data-post-id="11518564"
+	data-slide-index=""
+	data-caption="Southern Ontario, parts of Quebec see 1st snowfall of the season"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11518564/ontario-quebec-first-snowfall-warnings/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/11/ontario-snow.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="405" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/ontario-snow.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/ontario-snow.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/ontario-snow.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Southern Ontario, parts of Quebec see 1st snowfall of the season" data-title>Southern Ontario, parts of Quebec see 1st snowfall of the season</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >5 hours</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-32"
 	data-post-id="11518182"
 	data-slide-index=""
 	data-caption="Accessibility is coming to playgrounds in Regina"
@@ -5220,7 +5249,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11518182/accessibility-playgrounds-regina/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5233,37 +5262,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="Accessibility is coming to playgrounds in Regina" data-title>Accessibility is coming to playgrounds in Regina</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >11 hours</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-32"
-	data-post-id="11518398"
-	data-slide-index=""
-	data-caption="Nield thrilled to help gambling Riders beat Lions"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11518398/nield-thrilled-to-help-gambling-riders-beat-lions/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/11/f89e851aa9ca64a7b8ec725226201ce319e54b1ce2030d84515dd946be7d8fdf.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="432" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/f89e851aa9ca64a7b8ec725226201ce319e54b1ce2030d84515dd946be7d8fdf.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/f89e851aa9ca64a7b8ec725226201ce319e54b1ce2030d84515dd946be7d8fdf.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/f89e851aa9ca64a7b8ec725226201ce319e54b1ce2030d84515dd946be7d8fdf.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Nield thrilled to help gambling Riders beat Lions" data-title>Nield thrilled to help gambling Riders beat Lions</span>
 			</div>
 	
 						
@@ -5702,37 +5700,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-40"
-	data-post-id="11517283"
-	data-slide-index=""
-	data-caption="A study questions melatonin use and heart health but don’t lose sleep over it"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11517283/a-study-questions-melatonin-use-and-heart-health-but-dont-lose-sleep-over-it/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/11/068d71d9c2b1b2e065842c9cc1b3113d4dea3efbcc3592803bd77353f23018b3_8e10ce.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/068d71d9c2b1b2e065842c9cc1b3113d4dea3efbcc3592803bd77353f23018b3_8e10ce.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/068d71d9c2b1b2e065842c9cc1b3113d4dea3efbcc3592803bd77353f23018b3_8e10ce.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/068d71d9c2b1b2e065842c9cc1b3113d4dea3efbcc3592803bd77353f23018b3_8e10ce.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="A study questions melatonin use and heart health but don’t lose sleep over it" data-title>A study questions melatonin use and heart health but don’t lose sleep over it</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Nov 7</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-41"
 	data-post-id="11517168"
 	data-slide-index=""
 	data-caption="Florida is suing Planned Parenthood over the safety of abortion drugs. Here’s what to know"
@@ -5740,7 +5707,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11517168/florida-is-suing-planned-parenthood-over-the-safety-of-abortion-drugs-heres-what-to-know/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5753,6 +5720,37 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="Florida is suing Planned Parenthood over the safety of abortion drugs. Here’s what to know" data-title>Florida is suing Planned Parenthood over the safety of abortion drugs. Here’s what to know</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >Nov 7</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-41"
+	data-post-id="11516882"
+	data-slide-index=""
+	data-caption="Strep throat, ear infection testing at Sask. pharmacies to expand beyond initial pilot"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11516882/pilot-project-saskatchewan-pharmacies-strep/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2017/03/gettyimages-151037583.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2017/03/gettyimages-151037583.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2017/03/gettyimages-151037583.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2017/03/gettyimages-151037583.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Strep throat, ear infection testing at Sask. pharmacies to expand beyond initial pilot" data-title>Strep throat, ear infection testing at Sask. pharmacies to expand beyond initial pilot</span>
 			</div>
 	
 						
@@ -6007,7 +6005,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >2 hours</div>
+																<div class="c-posts__info" data-date >4 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -6316,6 +6314,68 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3											>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-51"
+	data-post-id="11518081"
+	data-slide-index=""
+	data-caption="Goalie Seb Gatto backstops London Knights in 3-2 shootout win over Owen Sound"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11518081/london-knights-in-3-2-shootout-win-owen-sound-attack/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/11/IMG_8564.jpeg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="404" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/IMG_8564.jpeg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/IMG_8564.jpeg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/IMG_8564.jpeg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Goalie Seb Gatto backstops London Knights in 3-2 shootout win over Owen Sound" data-title>Goalie Seb Gatto backstops London Knights in 3-2 shootout win over Owen Sound</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >2 hours</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-52"
+	data-post-id="11518361"
+	data-slide-index=""
+	data-caption="USask Huskies launch 4th quarter rally to stun Regina Rams in 88th Hardy Cup"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11518361/usask-huskies-4th-quarter-rally-regina-rams-hardy-cup-2025/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/11/Huskies-Football-Hardy-Cup-2025-e1762664416760.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/Huskies-Football-Hardy-Cup-2025-e1762664416760.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/Huskies-Football-Hardy-Cup-2025-e1762664416760.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/Huskies-Football-Hardy-Cup-2025-e1762664416760.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="USask Huskies launch 4th quarter rally to stun Regina Rams in 88th Hardy Cup" data-title>USask Huskies launch 4th quarter rally to stun Regina Rams in 88th Hardy Cup</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >2 hours</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-53"
 	data-post-id="11517656"
 	data-slide-index=""
 	data-caption="Call of the Wilde: Montreal Canadiens tame the Utah Mammoth"
@@ -6323,7 +6383,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11517656/call-of-the-wilde-montreal-canadiens-tame-the-utah-mammoth/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -6340,69 +6400,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >4 hours</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-52"
-	data-post-id="11518525"
-	data-slide-index=""
-	data-caption="Canucks aim to improve on win over Blue Jackets"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11518525/canucks-aim-to-improve-on-win-over-blue-jackets/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/11/6a5399484e507059771bd8bbcc6f825c068e65386254f8ca650b555df58003c2.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=530 data-ratio=0.67									loading="lazy"
-								width="720" height="530" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/6a5399484e507059771bd8bbcc6f825c068e65386254f8ca650b555df58003c2.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/6a5399484e507059771bd8bbcc6f825c068e65386254f8ca650b555df58003c2.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/6a5399484e507059771bd8bbcc6f825c068e65386254f8ca650b555df58003c2.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Canucks aim to improve on win over Blue Jackets" data-title>Canucks aim to improve on win over Blue Jackets</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >7 hours</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-53"
-	data-post-id="11518450"
-	data-slide-index=""
-	data-caption="MacKinnon thrilled with Avalanche’s hot start"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11518450/mackinnon-thrilled-with-avalanches-hot-start/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/11/ae1d7140fd6026cac9c847ffb9f02158c3b64d260773a939bc22188cfb33fec5.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="458" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/ae1d7140fd6026cac9c847ffb9f02158c3b64d260773a939bc22188cfb33fec5.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/ae1d7140fd6026cac9c847ffb9f02158c3b64d260773a939bc22188cfb33fec5.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/ae1d7140fd6026cac9c847ffb9f02158c3b64d260773a939bc22188cfb33fec5.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="MacKinnon thrilled with Avalanche’s hot start" data-title>MacKinnon thrilled with Avalanche’s hot start</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Nov 9</div>
+																<div class="c-posts__info" data-date >6 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -6724,7 +6722,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			<script async src="//static.chartbeat.com/js/chartbeat_mab.js"></script>
 			<!-- Adobe Analytics code version: JS-2.6.0. -->
 		<script type="text/javascript">
-			var gnPageData = {"context_data":{"hourofday":"15","dayofweek":"Sunday","weekdayweekend":"Weekend","userregion":"national","region":"national"},"sections":["home"],"props":[]};
+			var gnPageData = {"context_data":{"hourofday":"17","dayofweek":"Sunday","weekdayweekend":"Weekend","userregion":"national","region":"national"},"sections":["home"],"props":[]};
 		</script>
 				<!-- End Adobe Analytics code -->
 			<script>
@@ -6765,5 +6763,5 @@ _stq.push([ "clickTrackerInit", "176892389", "0" ]);
 		
 		<div class="l-dynamicElement"></div>
 
-			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75660ba8f4","applicationID":"418684855","transactionName":"Z1BWZxdTWkAHVExRXF4adVARW1tdSV9XVVY=","queueTime":0,"applicationTime":578,"atts":"SxdBEV9JSR9EVhoCSE1I","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+			</body>
 </html>
