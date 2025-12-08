@@ -184,7 +184,8 @@
         }
     </script>
     	<!-- Meta Tags -->
-	<meta charset="UTF-8">
+	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"75660ba8f4",applicationID:"418684855",browserID:"419993820"};;/*! For license information please see nr-loader-rum-1.303.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let o in a)if(void 0!==e[o])try{if(null===e[o]){r[o]=null;continue}Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):"object"==typeof e[o]&&"object"==typeof t[o]?r[o]=i(e[o],t[o]):r[o]=e[o]}catch(e){r[o]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>c,RI:()=>i,WN:()=>u,bv:()=>a,gm:()=>o,mw:()=>s,sb:()=>d});var n=r(863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),s=Boolean("hidden"===o?.document?.visibilityState),c=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=c&&"undefined"==typeof SharedWorker,u=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)())},163:(e,t,r)=>{"use strict";r.d(t,{j:()=>E});var n=r(384),i=r(741);var a=r(555);r(860).K7.genericEvents;const o="experimental.resources",s="register",c=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(614),u=r(944),l=r(122);const f="[data-nr-mask]",g=e=>(0,l.a)(e,(()=>{const e={feature_flags:[],experimental:{allow_registered_children:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{get allow_registered_children(){return e.feature_flags.includes(s)||e.experimental.allow_registered_children},set allow_registered_children(t){e.experimental.allow_registered_children=t},duplicate_registered_data:!1},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(o)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:d.wk,inactiveMs:d.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){c(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,u.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){c(t)?e.block_selector+=",".concat(t):""!==t&&(0,u.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,u.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},spa:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var p=r(154),h=r(324);let m=0;const v={buildEnv:h.F3,distMethod:h.Xs,version:h.xv,originTime:p.WN},b={consented:!1},y={appMetadata:{},get consented(){return this.session?.state?.consent||b.consented},set consented(e){b.consented=e},customTransaction:void 0,denyList:void 0,disabled:!1,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++m}},_=e=>{const t=(0,l.a)(e,y),r=Object.keys(v).reduce((e,t)=>(e[t]={value:v[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)};var w=r(701);const x=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var S=r(836),k=r(241);const R={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A=e=>(0,l.a)(e,R),T=new Set;function E(e,t={},r,o){let{init:s,info:c,loader_config:d,runtime:u={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();s=e.init,c=e.info,d=e.loader_config}e.init=g(s||{}),e.loader_config=A(d||{}),c.jsAttributes??={},p.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,a.D)(c);const f=e.init,h=[c.beacon,c.errorBeacon];T.has(e.agentIdentifier)||(f.proxy.assets&&(x(f.proxy.assets),h.push(f.proxy.assets)),f.proxy.beacon&&h.push(f.proxy.beacon),e.beacons=[...h],function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach(r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let a=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return a?a(...t):n})})}(e),(0,n.US)("activatedFeatures",w.B),e.runSoftNavOverSpa&&=!0===f.soft_navigations.enabled&&f.feature_flags.includes("soft_nav")),u.denyList=[...f.ajax.deny_list||[],...f.ajax.block_internal?h:[]],u.ptid=e.agentIdentifier,u.loaderType=r,e.runtime=_(u),T.has(e.agentIdentifier)||(e.ee=S.ee.get(e.agentIdentifier),e.exposed=l,(0,k.W)({agentIdentifier:e.agentIdentifier,drained:!!w.B?.[e.agentIdentifier],type:"lifecycle",name:"initialize",feature:void 0,data:e.config})),T.add(e.agentIdentifier)}},234:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(836),i=r(687);class a{constructor(e,t){this.agentIdentifier=e,this.ee=n.ee.get(e),this.featureName=t,this.blocked=!1}deregisterDrain(){(0,i.x3)(this.agentIdentifier,this.featureName)}}},241:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(154);const i="newrelic";function a(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>d,BL:()=>s,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>m,Pl:()=>n,Pv:()=>k,Tb:()=>l,U2:()=>a,V1:()=>S,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>o,nb:()=>h,o5:()=>u});const n="api-",i="addPageAction",a="addToTrace",o="addRelease",s="finished",c="interaction",d="log",u="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",h="setApplicationVersion",m="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",S="measure",k="consent"},289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>a,Qr:()=>s,sB:()=>o});var n=r(878);function i(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(i())return e();(0,n.sp)("load",e,t)}function o(e){if(i())return e();(0,n.DD)("DOMContentLoaded",e)}function s(e){if(i())return e();(0,n.sp)("popstate",e)}},324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>a,xv:()=>n});const n="1.303.0",i="PROD",a="CDN"},374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>o,US:()=>u,Zm:()=>s,bQ:()=>d,dV:()=>c,pV:()=>l});var n=r(154),i=r(863),a=r(910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function s(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function c(){let e=s();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,a.i)(...Object.values(e.o))),e}function d(e,t){let r=s();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function u(e,t){s()[e]=t}function l(){return function(){let e=s();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=s();const t=e.init||{};e.init={...t}}(),c(),function(){let e=s();const t=e.loader_config||{};e.loader_config={...t}}(),s()}},389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},555:(e,t,r)=>{"use strict";r.d(t,{D:()=>s,f:()=>o});var n=r(384),i=r(122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function o(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const s=e=>(0,i.a)(e,a)},566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>s,bz:()=>o});var n=r(154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map(e=>"x"===e?a(t,r++).toString(16):"y"===e?(3&a()|8).toString(16):e).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const o=[];for(var s=0;s<e;s++)o.push(a(r,i++).toString(16));return o.join("")}},606:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(908);a.on=o;var i=a.handlers={};function a(e,t,r,a){o(a||n.d,i,e,t,r)}function o(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var o=t[a]=t[a]||{};(o[r]=o[r]||[]).push([e,i])}},607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(566).bz)()},614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>o,H3:()=>n,g:()=>d,iL:()=>c,tS:()=>s,uh:()=>i,wk:()=>a});const n="NRBA",i="SESSION",a=144e5,o=18e5,s={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},d={OFF:0,FULL:1,ERROR:2}},630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>d,Ze:()=>f,x3:()=>u});var n=r(241),i=r(836),a=r(606),o=r(860),s=r(646);const c={};function d(e,t){const r={staged:!1,priority:o.P3[t]||0};l(e),c[e].get(t)||c[e].set(t,r)}function u(e,t){e&&c[e]&&(c[e].get(t)&&c[e].delete(t),p(e,t,!1),c[e].size&&g(e))}function l(e){if(!e)throw new Error("agentIdentifier required");c[e]||(c[e]=new Map)}function f(e="",t="feature",r=!1){if(l(e),!e||!c[e].get(t)||r)return p(e,t);c[e].get(t).staged=!0,g(e)}function g(e){const t=Array.from(c[e]);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{c[e].delete(t),p(e,t)}))}function p(e,t,r=!0){const o=e?i.ee.get(e):i.ee,c=a.i.handlers;if(!o.aborted&&o.backlog&&c){if((0,n.W)({agentIdentifier:e,type:"lifecycle",name:"drain",feature:t}),r){const e=o.backlog[t],r=c[t];if(r){for(let t=0;e&&t<e.length;++t)h(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0]?.context()instanceof s.y&&t[0].on(e,t[1])})})}}o.isolatedBacklog||delete c[t],o.backlog[t]=null,o.emit("drain-"+t,[])}}function h(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}})}},699:(e,t,r)=>{"use strict";r.d(t,{It:()=>a,KC:()=>s,No:()=>i,qh:()=>o});var n=r(860);const i=16e3,a=1e6,o="SESSION_ERROR",s={[n.K7.logging]:!0,[n.K7.genericEvents]:!1,[n.K7.jserrors]:!1,[n.K7.ajax]:!1}},701:(e,t,r)=>{"use strict";r.d(t,{B:()=>a,t:()=>o});var n=r(241);const i=new Set,a={};function o(e,t){const r=t.agentIdentifier;a[r]??={},e&&"object"==typeof e&&(i.has(r)||(t.ee.emit("rumresp",[e]),a[r]=e,i.add(r),(0,n.W)({agentIdentifier:r,loaded:!0,drained:!0,type:"lifecycle",name:"load",feature:void 0,data:e})))}},741:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e){return this.#e(i.Dl,e)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},773:(e,t,r)=>{"use strict";r.d(t,{z_:()=>a,XG:()=>s,TZ:()=>n,rs:()=>i,xV:()=>o});r(154),r(566),r(384);const n=r(860).K7.metrics,i="sm",a="cm",o="storeSupportabilityMetrics",s="storeEventMetrics"},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},836:(e,t,r)=>{"use strict";r.d(t,{P:()=>s,ee:()=>c});var n=r(384),i=r(990),a=r(646),o=r(607);const s="nr@context:".concat(o.W),c=function e(t,r){var n={},o={},u={},l=!1;try{l=16===r.length&&d.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var s=g(n);h(e).forEach(e=>{e.apply(s,r)});var d=v()[o[e]];d&&d.push([f,e,r,s]);return s},get:m,listeners:h,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{o[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[o[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,s,()=>new a.y(s)):new a.y(s)}function p(e,t){n[e]=h(e).concat(t)}function h(e){return n[e]||[]}function m(t){return u[t]=u[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),d=(0,n.Zm)();d.ee||(d.ee=c)},843:(e,t,r)=>{"use strict";r.d(t,{u:()=>i});var n=r(878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>u,K7:()=>c,P3:()=>d,XX:()=>i,Yy:()=>s,df:()=>a,qY:()=>n,v4:()=>o});const n="events",i="jserrors",a="browser/blobs",o="rum",s="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},d={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.spa]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.softNav]:8,[c.sessionReplay]:9,[c.logging]:10,[c.genericEvents]:11},u={[c.pageViewEvent]:o,[c.pageViewTiming]:n,[c.ajax]:n,[c.spa]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:a,[c.sessionReplay]:a,[c.logging]:s,[c.genericEvents]:"ins"}},863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},910:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e&&e.toString().includes("[native code]");return t||(0,n.R)(64,e?.name||e?.toString()),i.set(e,t),t})}},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({agentIdentifier:null,drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var a=n[e]={exports:{}};return r[e](a,a.exports,i),a.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce((t,r)=>(i.f[r](e,t),t),[])),i.u=e=>"nr-rum-1.303.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.303.0.PROD:",i.l=(r,n,a,o)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==a)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+a){s=l;break}}if(!s){c=!0;var f={296:"sha512-DjFbtykbDCyUDGsp+l/dYhH0LhW/Jv9sDnc+aleTRmpV1ZRfyOeip4Sv4USz3Fk0DZCWshsM7d24cTr9Xf3L/A=="};(s=document.createElement("script")).charset="utf-8",i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+a),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[o]&&(s.integrity=f[o])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach(e=>e(n)),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var a=new Promise((r,i)=>n=e[t]=[r,i]);r.push(n[2]=a);var o=i.p+i.u(t),s=new Error;i.l(o,r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var a=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+a+": "+o+")",s.name="ChunkLoadError",s.type=a,s.request=o,n[1](s)}},"chunk-"+t,t)}};var t=(t,r)=>{var n,a,[o,s,c]=r,d=0;if(o.some(t=>0!==e[t])){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);d<o.length;d++)a=o[d],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},r=self["webpackChunk:NRBA-1.303.0.PROD"]=self["webpackChunk:NRBA-1.303.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(374);var e=i(566),t=i(741);class r extends t.W{agentIdentifier=(0,e.LA)(16)}var n=i(860);const a=Object.values(n.K7);var o=i(163);var s=i(908),c=i(863),d=i(261),u=i(241),l=i(944),f=i(701),g=i(773);function p(e,t,i,a){const o=a||i;!o||o[e]&&o[e]!==r.prototype[e]||(o[e]=function(){(0,s.p)(g.xV,["API/"+e+"/called"],void 0,n.K7.metrics,i.ee),(0,u.W)({agentIdentifier:i.agentIdentifier,drained:!!f.B?.[i.agentIdentifier],type:"data",name:"api",feature:d.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,l.R)(23,e)}})}function h(e,t,r,n,i){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(i||null===r)&&(0,s.p)(d.Pl+n,[(0,c.t)(),t,r],void 0,"session",e.ee)}var m=i(687),v=i(234),b=i(289),y=i(154),_=i(384);const w=e=>y.RI&&!0===e?.privacy.cookies_enabled;function x(e){return!!(0,_.dV)().o.MO&&w(e)&&!0===e?.session_trace.enabled}var S=i(389),k=i(699);class R extends v.W{constructor(e,t){super(e.agentIdentifier,t),this.agentRef=e,this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,S.J)(()=>{(0,m.Ak)(e.agentIdentifier,this.featureName),t()}))}):(0,m.Ak)(e.agentIdentifier,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;const n=async()=>{let n;await this.deferred;try{if(w(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,305));n=t(e)}}catch(e){(0,l.R)(20,e),this.ee.emit("internal-error",[e]),(0,s.p)(k.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#t(this.featureName,n,e.init))return(0,m.Ze)(this.agentIdentifier,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,l.R)(34,e),this.abortHandler?.(),(0,m.Ze)(this.agentIdentifier,this.featureName,!0),this.loadedSuccessfully(!1),this.ee&&this.ee.abort()}};y.RI?(0,b.GG)(()=>n(),!0):n()}#t(e,t,r){if(this.blocked)return!1;switch(e){case n.K7.sessionReplay:return x(r)&&!!t;case n.K7.sessionTrace:return!!t;default:return!0}}}var A=i(630),T=i(614);class E extends R{static featureName=A.T;constructor(e){var t;super(e,A.T),this.setupInspectionEvents(e.agentIdentifier),t=e,p(d.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,s.p)(d.Pl+d.Fw,[(0,c.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>i.e(296).then(i.bind(i,108)))}setupInspectionEvents(e){const t=(t,r)=>{t&&(0,u.W)({agentIdentifier:e,timeStamp:t.timeStamp,loaded:"complete"===t.target.readyState,type:"window",name:r,data:t.target.location+""})};(0,b.sB)(e=>{t(e,"DOMContentLoaded")}),(0,b.GG)(e=>{t(e,"load")}),(0,b.Qr)(e=>{t(e,"navigate")}),this.ee.on(T.tS.UPDATE,(t,r)=>{(0,u.W)({agentIdentifier:e,type:"lifecycle",name:"session",data:r})})}}var N=i(843),j=i(878),I=i(782);class P extends R{static featureName=I.T;constructor(e){super(e,I.T),y.RI&&((0,N.u)(()=>(0,s.p)("docHidden",[(0,c.t)()],void 0,I.T,this.ee),!0),(0,j.sp)("pagehide",()=>(0,s.p)("winPagehide",[(0,c.t)()],void 0,I.T,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,350))))}}class O extends R{static featureName=g.TZ;constructor(e){super(e,g.TZ),y.RI&&document.addEventListener("securitypolicyviolation",e=>{(0,s.p)(g.xV,["Generic/CSPViolation/Detected"],void 0,this.featureName,this.ee)}),this.importAggregator(e,()=>i.e(296).then(i.bind(i,623)))}}new class extends r{constructor(e){var t;(super(),y.gm)?(this.features={},(0,_.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(E),this.runSoftNavOverSpa=[...this.desiredFeatures].some(e=>e.featureName===n.K7.softNav),(0,o.j)(this,e,e.loaderType||"agent"),t=this,p(d.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return h(t,e,r,d.cD,n);(0,l.R)(40,typeof r)}else(0,l.R)(39,typeof e)},t),function(e){p(d.Dl,function(t){if("string"==typeof t||null===t)return h(e,"enduser.id",t,d.Dl,!0);(0,l.R)(41,typeof t)},e)}(this),function(e){p(d.nb,function(t){if("string"==typeof t||null===t)return h(e,"application.version",t,d.nb,!1);(0,l.R)(42,typeof t)},e)}(this),function(e){p(d.d3,function(){e.ee.emit("manual-start-all")},e)}(this),function(e){p(d.Pv,function(t=!0){if("boolean"==typeof t){if((0,s.p)(d.Pl+d.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum()})}}else(0,l.R)(65,typeof t)},e)}(this),this.run()):(0,l.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return a.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),t=[...this.desiredFeatures];t.sort((e,t)=>n.P3[e.featureName]-n.P3[t.featureName]),t.forEach(t=>{if(!e[t.featureName]&&t.featureName!==n.K7.pageViewEvent)return;if(this.runSoftNavOverSpa&&t.featureName===n.K7.spa)return;if(!this.runSoftNavOverSpa&&t.featureName===n.K7.softNav)return;const r=function(e){switch(e){case n.K7.ajax:return[n.K7.jserrors];case n.K7.sessionTrace:return[n.K7.ajax,n.K7.pageViewEvent];case n.K7.sessionReplay:return[n.K7.sessionTrace];case n.K7.pageViewTiming:return[n.K7.pageViewEvent];default:return[]}}(t.featureName).filter(e=>!(e in this.features));r.length>0&&(0,l.R)(36,{targetFeature:t.featureName,missingDependencies:r}),this.features[t.featureName]=new t(this)})}catch(e){(0,l.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,_.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}({features:[E,P,O],loaderType:"lite"})})()})();</script>
 	<meta name="theme-color" content="#231F20">
 
 			<meta name="msvalidate.01" content="9E5C74811CA48CCCC61A2CF3C0A1BA6A">
@@ -489,7 +490,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 
 				
 
-				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"-8","weatherprec":"x","weathercode":"31","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
+				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"-9","weatherprec":"x","weathercode":"31","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
 		</script>
 			<script>
 				// Load the APS JavaScript Library
@@ -1528,10 +1529,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay=""
 						data-displayinline-featured="false"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_11567850_69368650a3b7e"
+			data-displayinline-player-id="miniplayer_11567850_6936a466c865d"
 			data-displayinline-video-id="11567850"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/11567850/#autoplay&#038;stickyiframe=miniplayer_11567850_69368650a3b7e"
+    		data-displayinline="https://globalnews.ca/video/embed/11567850/#autoplay&#038;stickyiframe=miniplayer_11567850_6936a466c865d"
     									data-displayinline-container="stories-1-0"
 										data-displayinline-sticky="true"
 						    		>
@@ -1565,7 +1566,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 									As an airline pilot strike looms, depending on when an Air Transat customer&#039;s flight is cancelled, they could receive a full refund or rebooking on the next available flight. 									</div>
 																<div class="c-posts__about c-posts__about--multiple">
 																		<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">9 hours</div>
+																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">11 hours</div>
 																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 																	</div>
 														</a>
@@ -1595,7 +1596,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			</div>
 								<div class="c-posts__about c-posts__about--multiple">
 																<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">10 hours</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Dec 7</div>
 																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 															</div>
 						</div>
@@ -1667,7 +1668,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>U.S. News</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">10 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">12 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
@@ -1675,33 +1676,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-2"
-	data-post-id="11566494"
+	data-post-id="11566874"
 	data-slide-index=""
-	data-caption="Dozens of Indigenous artifacts return to Canada from Vatican"
+	data-caption="Israel, Hamas to enter 2nd stage of ceasefire soon, Netanyahu says"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11566494/vatican-indigenous-items/"
+		href="https://globalnews.ca/news/11566874/israel-hamas-second-stage-ceasefire/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/Screenshot-2025-12-06-201653.png?w=527													loading="lazy"
-								width="527" height="346" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/israel-netanyahu.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/Screenshot-2025-12-06-201653.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/Screenshot-2025-12-06-201653.png?w=527 527w,https://globalnews.ca/wp-content/uploads/2025/12/Screenshot-2025-12-06-201653.png?w=527 527w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/israel-netanyahu.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/israel-netanyahu.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/israel-netanyahu.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Dozens of Indigenous artifacts return to Canada from Vatican" data-title>Dozens of Indigenous artifacts return to Canada from Vatican</span>
+					<span class="c-posts__headlineText" title="Israel, Hamas to enter 2nd stage of ceasefire soon, Netanyahu says" data-title>Israel, Hamas to enter 2nd stage of ceasefire soon, Netanyahu says</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Dec 6</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Dec 7</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1730,6 +1731,39 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-3"
+	data-post-id="11566494"
+	data-slide-index=""
+	data-caption="Dozens of Indigenous artifacts return to Canada from Vatican"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11566494/vatican-indigenous-items/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/Screenshot-2025-12-06-201653.png?w=527													loading="lazy"
+								width="527" height="346" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/Screenshot-2025-12-06-201653.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/Screenshot-2025-12-06-201653.png?w=527 527w,https://globalnews.ca/wp-content/uploads/2025/12/Screenshot-2025-12-06-201653.png?w=527 527w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Dozens of Indigenous artifacts return to Canada from Vatican" data-title>Dozens of Indigenous artifacts return to Canada from Vatican</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Dec 6</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-4"
 	data-post-id="11566767"
 	data-slide-index=""
 	data-caption="Nightclub fire in India&#8217;s Goa state kills at least 25 prompting probe into cause"
@@ -1737,7 +1771,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11566767/nightclub-fire-deaths-india-goa-state-probe/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1757,39 +1791,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Dec 7</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-4"
-	data-post-id="11566874"
-	data-slide-index=""
-	data-caption="Israel, Hamas to enter 2nd stage of ceasefire soon, Netanyahu says"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11566874/israel-hamas-second-stage-ceasefire/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/israel-netanyahu.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/israel-netanyahu.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/israel-netanyahu.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/israel-netanyahu.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Israel, Hamas to enter 2nd stage of ceasefire soon, Netanyahu says" data-title>Israel, Hamas to enter 2nd stage of ceasefire soon, Netanyahu says</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Dec 7</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1821,7 +1822,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Sports</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">9 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">11 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
 									</div>
@@ -1917,39 +1918,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-8"
-	data-post-id="11564234"
-	data-slide-index=""
-	data-caption="Montreal fans, entrepreneurs explore bringing MLB Expos back to city"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11564234/montreal-fans-mlb-expos/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/labbatt-park.webp?w=720				data-width=720 data-height=530 data-ratio=0.67									loading="lazy"
-								width="720" height="530" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/labbatt-park.webp?w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/labbatt-park.webp?w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/labbatt-park.webp?w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Montreal fans, entrepreneurs explore bringing MLB Expos back to city" data-title>Montreal fans, entrepreneurs explore bringing MLB Expos back to city</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Sports</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Dec 6</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-9"
 	data-post-id="11559610"
 	data-slide-index=""
 	data-caption="What to know about Venezuela, Maduro and Trump&#8217;s possible military plans"
@@ -1957,7 +1925,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11559610/venezuela-maduro-trump-drugs-military-explained/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1982,48 +1950,48 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-10"
-	data-post-id="11563659"
+	data-container-id="stories-item-9"
+	data-post-id="11564234"
 	data-slide-index=""
-	data-caption="Over $1.7 million raised for 88-year-old army vet working in grocery store"
+	data-caption="Montreal fans, entrepreneurs explore bringing MLB Expos back to city"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11563659/ed-bambas-army-vet-grocery-store-video/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
+		href="https://globalnews.ca/news/11564234/montreal-fans-mlb-expos/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/Untitled-design-50.png?w=720				data-width=720 data-height=563 data-ratio=0.67									loading="lazy"
-								width="720" height="563" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/labbatt-park.webp?w=720				data-width=720 data-height=530 data-ratio=0.67									loading="lazy"
+								width="720" height="530" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/Untitled-design-50.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/Untitled-design-50.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/Untitled-design-50.png?w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/labbatt-park.webp?w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/labbatt-park.webp?w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/labbatt-park.webp?w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Over $1.7 million raised for 88-year-old army vet working in grocery store" data-title>Over $1.7 million raised for 88-year-old army vet working in grocery store</span>
+					<span class="c-posts__headlineText" title="Montreal fans, entrepreneurs explore bringing MLB Expos back to city" data-title>Montreal fans, entrepreneurs explore bringing MLB Expos back to city</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Trending</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Dec 5</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Sports</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Dec 6</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 														</div>
 									</div>
 		</a>
 	</li>
-<li class="c-posts__item    is-hidden"
-	data-container-id="stories-item-11"
+<li class="c-posts__item    "
+	data-container-id="stories-item-10"
 	data-post-id="11564758"
 	data-slide-index=""
 	data-caption="Mogbo embracing being a role player for Raptors"
-		data-ad-fallback=false>
+		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11564758/mogbo-embracing-being-a-role-player-for-raptors/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -2048,7 +2016,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    is-hidden"
-	data-container-id="stories-item-12"
+	data-container-id="stories-item-11"
 	data-post-id="11564723"
 	data-slide-index=""
 	data-caption="Knueppel leads Hornets in blowout of Raptors"
@@ -2056,7 +2024,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11564723/knueppel-leads-hornets-in-blowout-of-raptors/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:11}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -2080,6 +2048,39 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 									</div>
 		</a>
 	</li>
+<li class="c-posts__item    is-hidden"
+	data-container-id="stories-item-12"
+	data-post-id="11564162"
+	data-slide-index=""
+	data-caption="Judge rules proposed Alberta separation referendum would be unconstitutional"
+		data-ad-fallback=false>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11564162/alberta-judge-proposed-referendum-quesion-unconstitutional/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:11}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/court-2_1.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="405" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/court-2_1.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/court-2_1.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/court-2_1.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Judge rules proposed Alberta separation referendum would be unconstitutional" data-title>Judge rules proposed Alberta separation referendum would be unconstitutional</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Dec 5</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
 			</ul>
 						</div>
 			</section>
@@ -2092,10 +2093,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay="true"
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69368650a6e77"
+			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6936a466cbe6c"
 			data-displayinline-video-id="49a91e7f-1023-430f-8d66-561055f3d0f7"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69368650a6e77"
+    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6936a466cbe6c"
     		    			data-displayinline-playlist="49a91e7f-1023-430f-8d66-561055f3d0f7"
     									data-displayinline-container="mini-ott"
 									    		>
@@ -2225,7 +2226,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Veterans Affairs demands repayment of some benefits; process shocks veterans&#8217; advocates" data-title>Veterans Affairs demands repayment of some benefits; process shocks veterans&#8217; advocates</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">1,800</span>
+							<span class="c-posts__info c-posts__info--highlight">2,515</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2255,7 +2256,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Air Transat to begin cancelling flights Monday. What you need to know" data-title>Air Transat to begin cancelling flights Monday. What you need to know</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">1,396</span>
+							<span class="c-posts__info c-posts__info--highlight">2,081</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2285,7 +2286,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Dozens of Indigenous artifacts return to Canada from Vatican" data-title>Dozens of Indigenous artifacts return to Canada from Vatican</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">468</span>
+							<span class="c-posts__info c-posts__info--highlight">678</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2315,7 +2316,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Air Transat pilots gear up for strike as union issues 72-hour notice" data-title>Air Transat pilots gear up for strike as union issues 72-hour notice</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">313</span>
+							<span class="c-posts__info c-posts__info--highlight">432</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2345,7 +2346,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Over $1.7 million raised for 88-year-old army vet working in grocery store" data-title>Over $1.7 million raised for 88-year-old army vet working in grocery store</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">280</span>
+							<span class="c-posts__info c-posts__info--highlight">345</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2448,7 +2449,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Veterans Affairs demands repayment of some benefits; process shocks veterans&#8217; advocates" data-title>Veterans Affairs demands repayment of some benefits; process shocks veterans&#8217; advocates</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">1,800</span>
+							<span class="c-posts__info c-posts__info--highlight">2,515</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2478,7 +2479,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Air Transat to begin cancelling flights Monday. What you need to know" data-title>Air Transat to begin cancelling flights Monday. What you need to know</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">1,396</span>
+							<span class="c-posts__info c-posts__info--highlight">2,081</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2508,7 +2509,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Dozens of Indigenous artifacts return to Canada from Vatican" data-title>Dozens of Indigenous artifacts return to Canada from Vatican</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">468</span>
+							<span class="c-posts__info c-posts__info--highlight">678</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2538,7 +2539,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Air Transat pilots gear up for strike as union issues 72-hour notice" data-title>Air Transat pilots gear up for strike as union issues 72-hour notice</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">313</span>
+							<span class="c-posts__info c-posts__info--highlight">432</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2568,7 +2569,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Over $1.7 million raised for 88-year-old army vet working in grocery store" data-title>Over $1.7 million raised for 88-year-old army vet working in grocery store</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">280</span>
+							<span class="c-posts__info c-posts__info--highlight">345</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2822,8 +2823,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-miniplayer"
 			data-displayinline-video-id="11567850"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11567850,11564618,11567640,11567850,11566516,11558768/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fpm2zf33vzx-li0q215yfn%2FAIR_TRANSAT_STRIKE_VMS.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
-    		    			data-displayinline-playlist="11567850,11564618,11567640,11567850,11566516,11558768"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11567850,11566902,1016573,11567640,11567850,11566516/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fpm2zf33vzx-li0q215yfn%2FAIR_TRANSAT_STRIKE_VMS.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
+    		    			data-displayinline-playlist="11567850,11566902,1016573,11567640,11567850,11566516"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
@@ -2890,8 +2891,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11567850"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11567850,11564618,11567640,11567850,11566516,11558768/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11567850,11564618,11567640,11567850,11566516,11558768"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11567850,11566902,1016573,11567640,11567850,11566516/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11567850,11566902,1016573,11567640,11567850,11566516"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="An ongoing labour dispute could upend many Canadians’ holiday travel plans. Pilots at Air Transat have given notice that they are preparing to go on strike this Wednesday. As a result, the Canadian airline said it will begin grounding flights starting Monday, and will suspend all service on Tuesday, unless a last-minute deal can be reached. Mike Armstrong reports on the negotiations and the travellers caught in the middle."
 			>
@@ -2912,18 +2913,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Alberta judge finds proposed referendum question on separation is unconstitutional" data-slide-index="1">
-	<a href="https://globalnews.ca/video/11564618/alberta-judge-finds-proposed-referendum-question-on-separation-is-unconstitutional/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Hegseth says officials mulling decision to release full video of controversial boat strike" data-slide-index="1">
+	<a href="https://globalnews.ca/video/11566902/hegseth-says-officials-mulling-decision-to-release-full-video-of-controversial-boat-strike/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11564618"
+					data-video-id="11566902"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11564618,11567640,11567850,11566516,11558768,11567850/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11564618,11567640,11567850,11566516,11558768,11567850"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11566902,1016573,11567640,11567850,11566516,11567850/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11566902,1016573,11567640,11567850,11566516,11567850"
 			data-video-carousel-label="Politics"
-			data-video-carousel-content="A proposed referendum question supporting Alberta separation has been found to be unconstitutional by a judge. But the group behind the question could try again if new provincial legislation is passed. Erik Bay reports."
+			data-video-carousel-content="U.S. Secretary of War Pete Hegseth said on Saturday that he “would have made the same call” in ordering a controversial follow-up strike on a suspected drug boat in the Caribbean that killed survivors. Hegseth, who made the comments while speaking to a defence industry forum, reiterated his claim that he was not present for the duration of the military operation. The Sept. 2 attack by the U.S. military struck a vessel in the Caribbean, killing 11 suspected drug traffickers. The initial strike left survivors, who were killed in a subsequent strike, prompting critics to ask whether the operation violated laws and whether Hegseth was responsible for it. "
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/qrfgk9w01s-liu8c15626/6P-SEPARATION-ANXIETY-P_OM01MJ1T_thumbnail_1280x720_.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/rhm0bg3ub9-g2arlxcuy5/SUN_HEGSETH_SITE_THUMB_071225.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -2934,18 +2935,45 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							<div class="l-videoCarousel__info">
 					<div class="c-posts__info c-posts__info--highlight">Politics</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Alberta judge finds proposed referendum question on separation is unconstitutional</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Hegseth says officials mulling decision to release full video of controversial boat strike</span></div>
 					</div>
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Canadian Veterans, advocates shocked by overpayment letters" data-slide-index="2">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Global National: Dec 7" data-slide-index="2">
+	<a href="https://globalnews.ca/video/1016573/global-national-dec-7/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="1016573"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/1016573,11567640,11567850,11566516,11567850,11566902/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="1016573,11567640,11567850,11566516,11567850,11566902"
+			data-video-carousel-label="Global National"
+			data-video-carousel-content="The Saturday, December 7, 2013 edition of Global National with Robin Gill"
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videothumbnails/152/1015/GN071213Full.png?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Global National</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Global National: Dec 7</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Canadian Veterans, advocates shocked by overpayment letters" data-slide-index="3">
 	<a href="https://globalnews.ca/video/11567640/veterans-advocates-shocked-by-overpayment-letters/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11567640"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11567640,11567850,11566516,11558768,11567850,11564618/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11567640,11567850,11566516,11558768,11567850,11564618"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11567640,11567850,11566516,11567850,11566902,1016573/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11567640,11567850,11566516,11567850,11566902,1016573"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="Veterans who received the income replacement benefit (IRB) are receiving overpayment letters from Veterans Affairs Canada (VAC) requiring them to pay in the thousands. The IRB is granted to Veterans who have been discharged due to illness or injury from service. Meanwhile, many of the Veterans who have received letters claim they have kept their financials up to date and that this is a mistake. Heidi Petracek reports."
 			>
@@ -2966,13 +2994,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Air Transat pilots gear up for strike as union issues 72-hour notice" data-slide-index="3">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Air Transat pilots gear up for strike as union issues 72-hour notice" data-slide-index="4">
 	<a href="https://globalnews.ca/video/11567850/air-transat-pilots-gear-up-for-strike-as-union-issues-72-hour-notice/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11567850"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11567850,11566516,11558768,11567850,11564618,11567640/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11567850,11566516,11558768,11567850,11564618,11567640"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11567850,11566516,11567850,11566902,1016573,11567640/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11567850,11566516,11567850,11566902,1016573,11567640"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="An ongoing labour dispute could upend many Canadians’ holiday travel plans. Pilots at Air Transat have given notice that they are preparing to go on strike this Wednesday. As a result, the Canadian airline said it will begin grounding flights starting Monday, and will suspend all service on Tuesday, unless a last-minute deal can be reached. Mike Armstrong reports on the negotiations and the travellers caught in the middle."
 			>
@@ -2993,13 +3021,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Global National: Dec. 6" data-slide-index="4">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Global National: Dec. 6" data-slide-index="5">
 	<a href="https://globalnews.ca/video/11566516/global-national-dec-6-13/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11566516"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11566516,11558768,11567850,11564618,11567640,11567850/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11566516,11558768,11567850,11564618,11567640,11567850"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11566516,11567850,11566902,1016573,11567640,11567850/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11566516,11567850,11566902,1016573,11567640,11567850"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="More than 60 Indigenous artifacts were returned to Canada Saturday morning after spending a century at the Vatican. The priceless items were taken from Indigenous communities in 1925 and put on display as part of the Vatican&#039;s missionary exhibition. The repatriation of the items makes good on a promise first made by the late Pope Francis three years ago. Saturday also marks the National Day of Remembrance and Action on Violence Against Women, held to honour the 14 women who were murdered in an anti-feminist shooting at École Polytechnique in 1989, as well as other victims. Plus, FIFA has released the full schedule for the group stage of the 2026 World Cup. Fans hoping to attend a match in Vancouver or Toronto now know which teams are coming to town. And, plans are underway to expand Trump&#039;s already extensive travel ban to even more countries. The White House warns that more than 30 countries could face restrictions at a time."
 			>
@@ -3016,33 +3044,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
 						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Global National: Dec. 6</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Air Transat pilots vote to strike if contract talks fail" data-slide-index="5">
-	<a href="https://globalnews.ca/video/11558768/air-transat-pilots-vote-to-strike-if-contract-talks-fail/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11558768"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11558768,11567850,11564618,11567640,11567850,11566516/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11558768,11567850,11564618,11567640,11567850,11566516"
-			data-video-carousel-label="Canada"
-			data-video-carousel-content="Air Transat&#039;s pilots have voted overwhelmingly to strike if contract talks between their union and the company fail. Mike Armstrong looks at what pilots are unhappy about, and the impact a work stoppage could have on the airline industry ahead of a busy holiday travel season."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/liu65i7mnz-reurpw00kt/251203-MIKE.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Air Transat pilots vote to strike if contract talks fail</span></div>
 					</div>
 	</a>
 </li>
@@ -3080,17 +3081,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11564618"
+			data-displayinline-player-id="home-miniplayer_11566902"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11564618,11567640,11567850,11566516,11558768/#autoplay&#038;stickyiframe=home-miniplayer_11564618"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11566902,1016573,11567640,11567850,11566516/#autoplay&#038;stickyiframe=home-miniplayer_11566902"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/qrfgk9w01s-liu8c15626/6P-SEPARATION-ANXIETY-P_OM01MJ1T_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/rhm0bg3ub9-g2arlxcuy5/SUN_HEGSETH_SITE_THUMB_071225.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Alberta judge finds proposed referendum question on separation is unconstitutional'"
+					alt="Click to play video 'Hegseth says officials mulling decision to release full video of controversial boat strike'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3099,11 +3100,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11564618/alberta-judge-finds-proposed-referendum-question-on-separation-is-unconstitutional/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11566902/hegseth-says-officials-mulling-decision-to-release-full-video-of-controversial-boat-strike/" class="c-posts__details">
 				<div class="c-posts__about">
 					<div class="c-posts__info c-posts__info--highlight">Politics</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Alberta judge finds proposed referendum question on separation is unconstitutional</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Hegseth says officials mulling decision to release full video of controversial boat strike</span></div>
 		</a>
 	</div>
 </li>
@@ -3134,9 +3135,41 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
+			data-displayinline-player-id="home-miniplayer_1016573"
+			data-displayinline-ratio="16:9"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/1016573,11567640,11567850,11566516,11566902/#autoplay&#038;stickyiframe=home-miniplayer_1016573"
+			data-displayinline-sticky="true"
+			data-displayinline-expand="true">
+			<div class="c-video__placeholder">
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videothumbnails/152/1015/GN071213Full.png?w=384&#038;quality=70&#038;strip=all"
+					width="236"
+					height="133"
+					class="c-posts__thumbnail c-video__image"
+					alt="Click to play video 'Global National: Dec 7'"
+					loading="lazy" />
+				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+			</div>
+		</a>
+		<a href="https://globalnews.ca/video/1016573/global-national-dec-7/" class="c-posts__details">
+				<div class="c-posts__about">
+					<div class="c-posts__info c-posts__info--highlight">Global National</div>
+				</div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Global National: Dec 7</span></div>
+		</a>
+	</div>
+</li>
+
+<li class="c-posts__item">
+	<div class="c-posts__inner">
+		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
+			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11567640"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11567640,11567850,11566516,11558768,11564618/#autoplay&#038;stickyiframe=home-miniplayer_11567640"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11567640,11567850,11566516,11566902,1016573/#autoplay&#038;stickyiframe=home-miniplayer_11567640"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3168,7 +3201,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11567850"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11567850,11566516,11558768,11564618,11567640/#autoplay&#038;stickyiframe=home-miniplayer_11567850"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11567850,11566516,11566902,1016573,11567640/#autoplay&#038;stickyiframe=home-miniplayer_11567850"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3193,38 +3226,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</div>
 </li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11566516"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11566516,11558768,11564618,11567640,11567850/#autoplay&#038;stickyiframe=home-miniplayer_11566516"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/xl52fh55ux-zuskdihxq2/INDIGENOUS_ARTIFACTS_GN_VMS.jpg?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Global National: Dec. 6'"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/11566516/global-national-dec-6-13/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Global National: Dec. 6</span></div>
-		</a>
-	</div>
-</li>
 	</ul>
 	
 	</section>
@@ -3245,8 +3246,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-miniplayer-variant"
 			data-displayinline-video-id="11567944"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11567944,11567640,11567832,11566879,11567850/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fn0okg93zal-s2zchk11sb%2FCARNEY_SHEINBAUM_TRUMP_VMS.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
-    		    			data-displayinline-playlist="11567944,11567640,11567832,11566879,11567850"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11567944,11567640,11567850,11567855,11567832/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fn0okg93zal-s2zchk11sb%2FCARNEY_SHEINBAUM_TRUMP_VMS.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
+    		    			data-displayinline-playlist="11567944,11567640,11567850,11567855,11567832"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
@@ -3313,8 +3314,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11567944"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11567944,11567640,11567832,11566879,11567850/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11567944,11567640,11567832,11566879,11567850"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11567944,11567640,11567850,11567855,11567832/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11567944,11567640,11567850,11567855,11567832"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="While walking the red carpet at the Kennedy Center Honors Gala on Sunday, U.S. President Donald Trump gave on update on brief trade talks he held with the leaders of Canada and Mexico on Friday. Asked if he would restart trade negotiations he halted with Canada in late October, Trump responded, “Canada makes a lot of things that we don&#039;t need – because we make them also – but we&#039;ll work it out.”"
 			>
@@ -3340,8 +3341,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11567640"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11567640,11567832,11566879,11567850,11567944/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11567640,11567832,11566879,11567850,11567944"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11567640,11567850,11567855,11567832,11567944/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11567640,11567850,11567855,11567832,11567944"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="Veterans who received the income replacement benefit (IRB) are receiving overpayment letters from Veterans Affairs Canada (VAC) requiring them to pay in the thousands. The IRB is granted to Veterans who have been discharged due to illness or injury from service. Meanwhile, many of the Veterans who have received letters claim they have kept their financials up to date and that this is a mistake. Heidi Petracek reports."
 			>
@@ -3362,67 +3363,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Natural resources key in upcoming NDP leadership race: analysis" data-slide-index="2">
-	<a href="https://globalnews.ca/video/11567832/natural-resources-key-in-upcoming-ndp-leadership-race-analysis/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11567832"
-			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11567832,11566879,11567850,11567944,11567640/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11567832,11566879,11567850,11567944,11567640"
-			data-video-carousel-label="Canada"
-			data-video-carousel-content="The federal NDP is set to pick a new leader in less than four months as the party looks to rebuild after its worst showing in decades. Climate and energy policy is emerging as the key fault line, with top leadership contenders calling for an end to fossil fuel expansion, while rivals push a more gradual transition. David Akin reports on what&#039;s at stake for the NDP, and their next election."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/atm34ji1xv-aqcvzklkvr/NDP_VMS.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Natural resources key in upcoming NDP leadership race: analysis</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Along the Northwest B.C. coast, experts &#8216;take the conduct of the ship away from the master&#8217;" data-slide-index="3">
-	<a href="https://globalnews.ca/video/11566879/along-the-northwest-b-c-coast-experts-take-the-conduct-of-the-ship-away-from-the-master/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11566879"
-			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11566879,11567850,11567944,11567640,11567832/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11566879,11567850,11567944,11567640,11567832"
-			data-video-carousel-label="Canada"
-			data-video-carousel-content="As fierce debate escalates over dropping the tanker ban in the Northwest coast of British Columbia, we take a breather from the political debate and speak with a local ship captain. He heads a group mandated to jump aboard ships in the region to help safely navigate waters there. "
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/p2rnl9tdd1-fejx7mt2qx/SUN_TWB_SITE_THUMB_071225.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Along the Northwest B.C. coast, experts &#8216;take the conduct of the ship away from the master&#8217;</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Air Transat pilots gear up for strike as union issues 72-hour notice" data-slide-index="4">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Air Transat pilots gear up for strike as union issues 72-hour notice" data-slide-index="2">
 	<a href="https://globalnews.ca/video/11567850/air-transat-pilots-gear-up-for-strike-as-union-issues-72-hour-notice/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11567850"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11567850,11567944,11567640,11567832,11566879/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11567850,11567944,11567640,11567832,11566879"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11567850,11567855,11567832,11567944,11567640/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11567850,11567855,11567832,11567944,11567640"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="An ongoing labour dispute could upend many Canadians’ holiday travel plans. Pilots at Air Transat have given notice that they are preparing to go on strike this Wednesday. As a result, the Canadian airline said it will begin grounding flights starting Monday, and will suspend all service on Tuesday, unless a last-minute deal can be reached. Mike Armstrong reports on the negotiations and the travellers caught in the middle."
 			>
@@ -3439,6 +3386,60 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
 						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Air Transat pilots gear up for strike as union issues 72-hour notice</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Indian authorities investigating deadly fire that killed dozens at Goa nightclub" data-slide-index="3">
+	<a href="https://globalnews.ca/video/11567855/indian-authorities-investigating-deadly-fire-that-killed-dozens-at-goa-nightclub/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11567855"
+			data-video-player-id="home-miniplayer-variant"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11567855,11567832,11567944,11567640,11567850/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11567855,11567832,11567944,11567640,11567850"
+			data-video-carousel-label="World"
+			data-video-carousel-content="On Saturday, a deadly fire tore through a nightclub in Goa – a resort region massively popular with tourists. The blaze killed dozens of people, and authorities are still investigating the cause. Jillian Piper reports."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/h6jpnuoa6u-85s9lslysh/GOA_NIGHTCLUB_VMS.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">World</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Indian authorities investigating deadly fire that killed dozens at Goa nightclub</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Natural resources key in upcoming NDP leadership race: analysis" data-slide-index="4">
+	<a href="https://globalnews.ca/video/11567832/natural-resources-key-in-upcoming-ndp-leadership-race-analysis/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11567832"
+			data-video-player-id="home-miniplayer-variant"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11567832,11567944,11567640,11567850,11567855/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11567832,11567944,11567640,11567850,11567855"
+			data-video-carousel-label="Canada"
+			data-video-carousel-content="The federal NDP is set to pick a new leader in less than four months as the party looks to rebuild after its worst showing in decades. Climate and energy policy is emerging as the key fault line, with top leadership contenders calling for an end to fossil fuel expansion, while rivals push a more gradual transition. David Akin reports on what&#039;s at stake for the NDP, and their next election."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/atm34ji1xv-aqcvzklkvr/NDP_VMS.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Natural resources key in upcoming NDP leadership race: analysis</span></div>
 					</div>
 	</a>
 </li>
@@ -3478,7 +3479,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant_11567640"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11567640,11567832,11566879,11567850/#autoplay&#038;stickyiframe=home-miniplayer-variant_11567640"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11567640,11567850,11567855,11567832/#autoplay&#038;stickyiframe=home-miniplayer-variant_11567640"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3530,73 +3531,9 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11567832"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11567832,11566879,11567850,11567640/#autoplay&#038;stickyiframe=home-miniplayer-variant_11567832"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/atm34ji1xv-aqcvzklkvr/NDP_VMS.jpg?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Natural resources key in upcoming NDP leadership race: analysis'"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/11567832/natural-resources-key-in-upcoming-ndp-leadership-race-analysis/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Natural resources key in upcoming NDP leadership race: analysis</span></div>
-		</a>
-	</div>
-</li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11566879"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11566879,11567850,11567640,11567832/#autoplay&#038;stickyiframe=home-miniplayer-variant_11566879"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/p2rnl9tdd1-fejx7mt2qx/SUN_TWB_SITE_THUMB_071225.jpg?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Along the Northwest B.C. coast, experts &#8216;take the conduct of the ship away from the master&#8217;'"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/11566879/along-the-northwest-b-c-coast-experts-take-the-conduct-of-the-ship-away-from-the-master/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Along the Northwest B.C. coast, experts &#8216;take the conduct of the ship away from the master&#8217;</span></div>
-		</a>
-	</div>
-</li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant_11567850"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11567850,11567640,11567832,11566879/#autoplay&#038;stickyiframe=home-miniplayer-variant_11567850"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11567850,11567855,11567832,11567640/#autoplay&#038;stickyiframe=home-miniplayer-variant_11567850"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3618,6 +3555,70 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
 			<div class="c-posts__headline"><span class="c-posts__headlineText">Air Transat pilots gear up for strike as union issues 72-hour notice</span></div>
+		</a>
+	</div>
+</li>
+
+<li class="c-posts__item">
+	<div class="c-posts__inner">
+		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
+			data-displayinline-type="video"
+			data-displayinline-player-id="home-miniplayer-variant_11567855"
+			data-displayinline-ratio="16:9"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11567855,11567832,11567640,11567850/#autoplay&#038;stickyiframe=home-miniplayer-variant_11567855"
+			data-displayinline-sticky="true"
+			data-displayinline-expand="true">
+			<div class="c-video__placeholder">
+				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/h6jpnuoa6u-85s9lslysh/GOA_NIGHTCLUB_VMS.jpg?w=384&#038;quality=70&#038;strip=all"
+					width="236"
+					height="133"
+					class="c-posts__thumbnail c-video__image"
+					alt="Click to play video 'Indian authorities investigating deadly fire that killed dozens at Goa nightclub'"
+					loading="lazy" />
+				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+			</div>
+		</a>
+		<a href="https://globalnews.ca/video/11567855/indian-authorities-investigating-deadly-fire-that-killed-dozens-at-goa-nightclub/" class="c-posts__details">
+				<div class="c-posts__about">
+					<div class="c-posts__info c-posts__info--highlight">World</div>
+				</div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Indian authorities investigating deadly fire that killed dozens at Goa nightclub</span></div>
+		</a>
+	</div>
+</li>
+
+<li class="c-posts__item">
+	<div class="c-posts__inner">
+		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
+			data-displayinline-type="video"
+			data-displayinline-player-id="home-miniplayer-variant_11567832"
+			data-displayinline-ratio="16:9"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11567832,11567640,11567850,11567855/#autoplay&#038;stickyiframe=home-miniplayer-variant_11567832"
+			data-displayinline-sticky="true"
+			data-displayinline-expand="true">
+			<div class="c-video__placeholder">
+				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/atm34ji1xv-aqcvzklkvr/NDP_VMS.jpg?w=384&#038;quality=70&#038;strip=all"
+					width="236"
+					height="133"
+					class="c-posts__thumbnail c-video__image"
+					alt="Click to play video 'Natural resources key in upcoming NDP leadership race: analysis'"
+					loading="lazy" />
+				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+			</div>
+		</a>
+		<a href="https://globalnews.ca/video/11567832/natural-resources-key-in-upcoming-ndp-leadership-race-analysis/" class="c-posts__details">
+				<div class="c-posts__about">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Natural resources key in upcoming NDP leadership race: analysis</span></div>
 		</a>
 	</div>
 </li>
@@ -3682,33 +3683,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11564091"
+				data-post-id="11563659"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
-					href="https://globalnews.ca/news/11564091/public-servants-job-cuts/"
+					href="https://globalnews.ca/news/11563659/ed-bambas-army-vet-grocery-store-video/"
 					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Hundreds of public sector workers warned their jobs could be cut: union" data-title>Hundreds of public sector workers warned their jobs could be cut: union</span>
+					<span class="c-posts__headlineText" title="Over $1.7 million raised for 88-year-old army vet working in grocery store" data-title>Over $1.7 million raised for 88-year-old army vet working in grocery store</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						A federal union says hundreds of workers have been warned they may lose their jobs as the government moves to shrink the size of the public service.						</div>
+						Ed Bambas said he had to return to work after his wife died from an illness 7 years ago, and his former employer went bankrupt and stopped paying his pension.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Canada</div>
+															<div class="c-posts__info c-posts__info--highlight">Trending</div>
 																						<div class="c-posts__info">Dec 5</div>
 													</div>
 					</div>
 					
-		<div class="c-posts__media "  >
+		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/ffd9000e0d2e0c78b40949c1f8f56852077ad2f8128018eea75c89f2fe127b15.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="463" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/Untitled-design-50.png?w=720				data-width=720 data-height=563 data-ratio=0.67									loading="lazy"
+								width="720" height="563" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/ffd9000e0d2e0c78b40949c1f8f56852077ad2f8128018eea75c89f2fe127b15.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/ffd9000e0d2e0c78b40949c1f8f56852077ad2f8128018eea75c89f2fe127b15.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/ffd9000e0d2e0c78b40949c1f8f56852077ad2f8128018eea75c89f2fe127b15.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/Untitled-design-50.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/Untitled-design-50.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/Untitled-design-50.png?w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -3746,33 +3747,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11564773"
+				data-post-id="11564091"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
-					href="https://globalnews.ca/news/11564773/nerve-blockers-migraines/"
+					href="https://globalnews.ca/news/11564091/public-servants-job-cuts/"
 					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="&#8216;Patients get relief&#8217;: Researchers recommending nerve blockers to treat migraines" data-title>&#8216;Patients get relief&#8217;: Researchers recommending nerve blockers to treat migraines</span>
+					<span class="c-posts__headlineText" title="Hundreds of public sector workers warned their jobs could be cut: union" data-title>Hundreds of public sector workers warned their jobs could be cut: union</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						The research recommends occipital nerve blocks should be offered in emergency rooms to treat acute migraine attacks. 						</div>
+						A federal union says hundreds of workers have been warned they may lose their jobs as the government moves to shrink the size of the public service.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Health</div>
+															<div class="c-posts__info c-posts__info--highlight">Canada</div>
 																						<div class="c-posts__info">Dec 5</div>
 													</div>
 					</div>
 					
-		<div class="c-posts__media  c-imageContainer"  >
+		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/968600a6ce9203df3376a37ddaf3657728134b1f74d00974169710104fdc430c.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=540 data-ratio=0.67									loading="lazy"
-								width="720" height="540" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/ffd9000e0d2e0c78b40949c1f8f56852077ad2f8128018eea75c89f2fe127b15.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="463" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/968600a6ce9203df3376a37ddaf3657728134b1f74d00974169710104fdc430c.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/968600a6ce9203df3376a37ddaf3657728134b1f74d00974169710104fdc430c.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/968600a6ce9203df3376a37ddaf3657728134b1f74d00974169710104fdc430c.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/ffd9000e0d2e0c78b40949c1f8f56852077ad2f8128018eea75c89f2fe127b15.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/ffd9000e0d2e0c78b40949c1f8f56852077ad2f8128018eea75c89f2fe127b15.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/ffd9000e0d2e0c78b40949c1f8f56852077ad2f8128018eea75c89f2fe127b15.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -3805,6 +3806,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								width="720" height="720" alt="" 
 												srcset='' sizes=''
 								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/335a1ce1ab16cc6ea11a5feb8a00e798ff93e5cf95ce13113d4b46959ccf66ae.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/335a1ce1ab16cc6ea11a5feb8a00e798ff93e5cf95ce13113d4b46959ccf66ae.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/335a1ce1ab16cc6ea11a5feb8a00e798ff93e5cf95ce13113d4b46959ccf66ae.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11563450"
+				data-sophi-feature=latest-news			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11563450/deepak-paradkar-ryan-wedding-law-licence/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="‘Cocaine lawyer’ for Ryan Wedding has legal licence suspended in Ontario" data-title>‘Cocaine lawyer’ for Ryan Wedding has legal licence suspended in Ontario</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						An Ontario lawyer accused by American authorities of advising a Canadian Olympian-turned-alleged-cocaine kingpin has had his licence to practice law suspended.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Crime</div>
+																						<div class="c-posts__info">Dec 5</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/Deepak-hearing.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="445" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/Deepak-hearing.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/Deepak-hearing.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/Deepak-hearing.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -3847,7 +3880,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11563636/trump-national-security-strategy-europe-world-middle-east/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3874,65 +3907,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11563699"
+				data-post-id="11562395"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
-					href="https://globalnews.ca/news/11563699/donald-trump-inaugural-fifa-peace-prize/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Donald Trump awarded with inaugural FIFA Peace Prize" data-title>Donald Trump awarded with inaugural FIFA Peace Prize</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						United States President Donald Trump has been awarded with the FIFA Peace Prize. It&#039;s the first time the award has been given out.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">World</div>
-																						<div class="c-posts__info">Dec 5</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/aed357646370197a5f8bd88eeb3a7bfe89fa07299ce9ff5b1a1d6acba92968d5.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/aed357646370197a5f8bd88eeb3a7bfe89fa07299ce9ff5b1a1d6acba92968d5.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/aed357646370197a5f8bd88eeb3a7bfe89fa07299ce9ff5b1a1d6acba92968d5.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/aed357646370197a5f8bd88eeb3a7bfe89fa07299ce9ff5b1a1d6acba92968d5.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11563450"
-				data-sophi-feature=latest-news			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11563450/deepak-paradkar-ryan-wedding-law-licence/"
+					href="https://globalnews.ca/news/11562395/saab-fighter-jets-jobs-canada/"
 					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:8}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="‘Cocaine lawyer’ for Ryan Wedding has legal licence suspended in Ontario" data-title>‘Cocaine lawyer’ for Ryan Wedding has legal licence suspended in Ontario</span>
+					<span class="c-posts__headlineText" title="Industry experts question Saab&#8217;s pitch to bring 10,000 jobs to Canada" data-title>Industry experts question Saab&#8217;s pitch to bring 10,000 jobs to Canada</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						An Ontario lawyer accused by American authorities of advising a Canadian Olympian-turned-alleged-cocaine kingpin has had his licence to practice law suspended.						</div>
+						Critics are questioning the solidity of Saab&#039;s pitch to deliver 10,000 jobs in Canada if it decides to set up shop here to assemble Gripen fighter jets.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Crime</div>
+															<div class="c-posts__info c-posts__info--highlight">Canada</div>
 																						<div class="c-posts__info">Dec 5</div>
 													</div>
 					</div>
 					
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/Deepak-hearing.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="445" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/11/3133261afbdfcd2fa7460fc96d29707e66f662269c59f042abc8391a63dd769e.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/Deepak-hearing.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/Deepak-hearing.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/Deepak-hearing.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/3133261afbdfcd2fa7460fc96d29707e66f662269c59f042abc8391a63dd769e.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/3133261afbdfcd2fa7460fc96d29707e66f662269c59f042abc8391a63dd769e.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/3133261afbdfcd2fa7460fc96d29707e66f662269c59f042abc8391a63dd769e.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -4015,8 +4016,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-playlist-miniplayer"
 			data-displayinline-video-id="11567850"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11567850,11564618,11567640,11567850,11566516/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fpm2zf33vzx-li0q215yfn%2FAIR_TRANSAT_STRIKE_VMS.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
-    		    			data-displayinline-playlist="11567850,11564618,11567640,11567850,11566516"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11567850,11566902,1016573,11567640,11567850/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fpm2zf33vzx-li0q215yfn%2FAIR_TRANSAT_STRIKE_VMS.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
+    		    			data-displayinline-playlist="11567850,11566902,1016573,11567640,11567850"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
@@ -4062,7 +4063,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11567850,11564618,11567640,11567850,11566516/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11567850,11566902,1016573,11567640,11567850/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Air Transat pilots gear up for strike as union issues 72-hour notice</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4083,23 +4084,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="2"
 	>
-	<a href="https://globalnews.ca/video/11564618/alberta-judge-finds-proposed-referendum-question-on-separation-is-unconstitutional/"
-		title="Alberta judge finds proposed referendum question on separation is unconstitutional"
+	<a href="https://globalnews.ca/video/11566902/hegseth-says-officials-mulling-decision-to-release-full-video-of-controversial-boat-strike/"
+		title="Hegseth says officials mulling decision to release full video of controversial boat strike"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11564618"
+		data-video-id="11566902"
 		data-video-label="Politics"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11564618,11567640,11567850,11566516/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11566902,1016573,11567640,11567850/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Alberta judge finds proposed referendum question on separation is unconstitutional</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Hegseth says officials mulling decision to release full video of controversial boat strike</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
 						Politics					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/qrfgk9w01s-liu8c15626/6P-SEPARATION-ANXIETY-P_OM01MJ1T_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/rhm0bg3ub9-g2arlxcuy5/SUN_HEGSETH_SITE_THUMB_071225.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4111,6 +4112,34 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="3"
 	>
+	<a href="https://globalnews.ca/video/1016573/global-national-dec-7/"
+		title="Global National: Dec 7"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="1016573"
+		data-video-label="Global National"
+		data-video-player-id="home-playlist-miniplayer"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/1016573,11567640,11567850,11566902/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Global National: Dec 7</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						Global National					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videothumbnails/152/1015/GN071213Full.png?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="4"
+	>
 	<a href="https://globalnews.ca/video/11567640/veterans-advocates-shocked-by-overpayment-letters/"
 		title="Canadian Veterans, advocates shocked by overpayment letters"
 		class="l-playlist__link c-posts__inner c-videoPlay"
@@ -4118,7 +4147,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11567640,11567850,11566516,11564618/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11567640,11567850,11566902,1016573/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Canadian Veterans, advocates shocked by overpayment letters</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4137,7 +4166,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 <li class="c-posts__item l-playlist__item"
-			data-playlist-index="4"
+			data-playlist-index="5"
 	>
 	<a href="https://globalnews.ca/video/11567850/air-transat-pilots-gear-up-for-strike-as-union-issues-72-hour-notice/"
 		title="Air Transat pilots gear up for strike as union issues 72-hour notice"
@@ -4146,7 +4175,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11567850,11566516,11564618,11567640/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11567850,11566902,1016573,11567640/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Air Transat pilots gear up for strike as union issues 72-hour notice</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4156,34 +4185,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					</div>
 		<div class="c-posts__media l-playlist__media">
 			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/pm2zf33vzx-li0q215yfn/AIR_TRANSAT_STRIKE_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="5"
-	>
-	<a href="https://globalnews.ca/video/11566516/global-national-dec-6-13/"
-		title="Global National: Dec. 6"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11566516"
-		data-video-label="Canada"
-		data-video-player-id="home-playlist-miniplayer"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11566516,11564618,11567640,11567850/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Global National: Dec. 6</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/xl52fh55ux-zuskdihxq2/INDIGENOUS_ARTIFACTS_GN_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4210,8 +4211,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-playlist-miniplayer-variant"
 			data-displayinline-video-id="11567944"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11567944,11567640,11567832,11566879,11567850/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fn0okg93zal-s2zchk11sb%2FCARNEY_SHEINBAUM_TRUMP_VMS.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
-    		    			data-displayinline-playlist="11567944,11567640,11567832,11566879,11567850"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11567944,11567640,11567850,11567855,11567832/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fn0okg93zal-s2zchk11sb%2FCARNEY_SHEINBAUM_TRUMP_VMS.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
+    		    			data-displayinline-playlist="11567944,11567640,11567850,11567855,11567832"
     												data-displayinline-sticky="true"
 						    		>
 				<div class="c-video__inner ">
@@ -4257,7 +4258,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11567944,11567640,11567832,11566879,11567850/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11567944,11567640,11567850,11567855,11567832/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">&#8216;We&#8217;ll work it out&#8217;: Trump on trade meetings with Carney, Sheinbaum in Washington</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4285,7 +4286,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11567640,11567832,11566879,11567850/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11567640,11567850,11567855,11567832/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Canadian Veterans, advocates shocked by overpayment letters</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4306,23 +4307,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="3"
 	>
-	<a href="https://globalnews.ca/video/11567832/natural-resources-key-in-upcoming-ndp-leadership-race-analysis/"
-		title="Natural resources key in upcoming NDP leadership race: analysis"
+	<a href="https://globalnews.ca/video/11567850/air-transat-pilots-gear-up-for-strike-as-union-issues-72-hour-notice/"
+		title="Air Transat pilots gear up for strike as union issues 72-hour notice"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11567832"
+		data-video-id="11567850"
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11567832,11566879,11567850,11567640/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11567850,11567855,11567832,11567640/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Natural resources key in upcoming NDP leadership race: analysis</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Air Transat pilots gear up for strike as union issues 72-hour notice</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
 						Canada					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/atm34ji1xv-aqcvzklkvr/NDP_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/pm2zf33vzx-li0q215yfn/AIR_TRANSAT_STRIKE_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4334,23 +4335,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="4"
 	>
-	<a href="https://globalnews.ca/video/11566879/along-the-northwest-b-c-coast-experts-take-the-conduct-of-the-ship-away-from-the-master/"
-		title="Along the Northwest B.C. coast, experts &#8216;take the conduct of the ship away from the master&#8217;"
+	<a href="https://globalnews.ca/video/11567855/indian-authorities-investigating-deadly-fire-that-killed-dozens-at-goa-nightclub/"
+		title="Indian authorities investigating deadly fire that killed dozens at Goa nightclub"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11566879"
-		data-video-label="Canada"
+		data-video-id="11567855"
+		data-video-label="World"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11566879,11567850,11567640,11567832/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11567855,11567832,11567640,11567850/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Along the Northwest B.C. coast, experts &#8216;take the conduct of the ship away from the master&#8217;</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Indian authorities investigating deadly fire that killed dozens at Goa nightclub</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
+						World					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/p2rnl9tdd1-fejx7mt2qx/SUN_TWB_SITE_THUMB_071225.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/h6jpnuoa6u-85s9lslysh/GOA_NIGHTCLUB_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4362,23 +4363,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="5"
 	>
-	<a href="https://globalnews.ca/video/11567850/air-transat-pilots-gear-up-for-strike-as-union-issues-72-hour-notice/"
-		title="Air Transat pilots gear up for strike as union issues 72-hour notice"
+	<a href="https://globalnews.ca/video/11567832/natural-resources-key-in-upcoming-ndp-leadership-race-analysis/"
+		title="Natural resources key in upcoming NDP leadership race: analysis"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11567850"
+		data-video-id="11567832"
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11567850,11567640,11567832,11566879/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11567832,11567640,11567850,11567855/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Air Transat pilots gear up for strike as union issues 72-hour notice</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Natural resources key in upcoming NDP leadership race: analysis</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
 						Canada					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/pm2zf33vzx-li0q215yfn/AIR_TRANSAT_STRIKE_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/atm34ji1xv-aqcvzklkvr/NDP_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4914,26 +4915,26 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-25"
-	data-post-id="11563473"
+	data-post-id="11563699"
 	data-slide-index=""
-	data-caption="Police &#8216;naturally&#8217; recover poached Fabergé egg swallowed by suspected thief"
+	data-caption="Donald Trump awarded with inaugural FIFA Peace Prize"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11563473/faberge-egg-swallowed-recovery/"
+		href="https://globalnews.ca/news/11563699/donald-trump-inaugural-fifa-peace-prize/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
-		<div class="c-posts__media  c-imageContainer"  >
+		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/Untitled-design-49.png?w=720				data-width=720 data-height=563 data-ratio=0.67									loading="lazy"
-								width="720" height="563" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/aed357646370197a5f8bd88eeb3a7bfe89fa07299ce9ff5b1a1d6acba92968d5.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/Untitled-design-49.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/Untitled-design-49.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/Untitled-design-49.png?w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/aed357646370197a5f8bd88eeb3a7bfe89fa07299ce9ff5b1a1d6acba92968d5.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/aed357646370197a5f8bd88eeb3a7bfe89fa07299ce9ff5b1a1d6acba92968d5.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/aed357646370197a5f8bd88eeb3a7bfe89fa07299ce9ff5b1a1d6acba92968d5.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Police &#8216;naturally&#8217; recover poached Fabergé egg swallowed by suspected thief" data-title>Police &#8216;naturally&#8217; recover poached Fabergé egg swallowed by suspected thief</span>
+					<span class="c-posts__headlineText" title="Donald Trump awarded with inaugural FIFA Peace Prize" data-title>Donald Trump awarded with inaugural FIFA Peace Prize</span>
 			</div>
 	
 						
@@ -5053,7 +5054,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >9 hours</div>
+																<div class="c-posts__info" data-date >11 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5084,7 +5085,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >11 hours</div>
+																<div class="c-posts__info" data-date >Dec 7</div>
 																			</div>
 									</div>
 		</a>
@@ -5518,6 +5519,37 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3											>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-35"
+	data-post-id="11564773"
+	data-slide-index=""
+	data-caption="&#8216;Patients get relief&#8217;: Researchers recommending nerve blockers to treat migraines"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11564773/nerve-blockers-migraines/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/968600a6ce9203df3376a37ddaf3657728134b1f74d00974169710104fdc430c.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=540 data-ratio=0.67									loading="lazy"
+								width="720" height="540" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/968600a6ce9203df3376a37ddaf3657728134b1f74d00974169710104fdc430c.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/968600a6ce9203df3376a37ddaf3657728134b1f74d00974169710104fdc430c.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/968600a6ce9203df3376a37ddaf3657728134b1f74d00974169710104fdc430c.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="&#8216;Patients get relief&#8217;: Researchers recommending nerve blockers to treat migraines" data-title>&#8216;Patients get relief&#8217;: Researchers recommending nerve blockers to treat migraines</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >Dec 5</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-36"
 	data-post-id="11564124"
 	data-slide-index=""
 	data-caption="Manitoba informs residents of revised location for supervised drug consumption site"
@@ -5525,7 +5557,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11564124/manitoba-safe-consumption-location/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5548,7 +5580,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-36"
+	data-container-id="stories-item-37"
 	data-post-id="11563921"
 	data-slide-index=""
 	data-caption="B.C. government provides guidance about involuntary care for people under 19"
@@ -5556,7 +5588,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11563921/bc-government-guidance-involuntary-care-people-under-19/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5569,37 +5601,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="B.C. government provides guidance about involuntary care for people under 19" data-title>B.C. government provides guidance about involuntary care for people under 19</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Dec 5</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-37"
-	data-post-id="11563732"
-	data-slide-index=""
-	data-caption="2 more Alberta cabinet ministers and NDP MLA latest targets of recall campaign"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11563732/alberta-recall-petitions-lagrange-chapman/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/03/65397b112727f64187b9abe3cd03e639d6be16fa83a0d5048c86a00276991843_2db57a.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=498 data-ratio=0.67									loading="lazy"
-								width="720" height="498" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/03/65397b112727f64187b9abe3cd03e639d6be16fa83a0d5048c86a00276991843_2db57a.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/03/65397b112727f64187b9abe3cd03e639d6be16fa83a0d5048c86a00276991843_2db57a.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/03/65397b112727f64187b9abe3cd03e639d6be16fa83a0d5048c86a00276991843_2db57a.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="2 more Alberta cabinet ministers and NDP MLA latest targets of recall campaign" data-title>2 more Alberta cabinet ministers and NDP MLA latest targets of recall campaign</span>
 			</div>
 	
 						
@@ -6571,7 +6572,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			<script async src="//static.chartbeat.com/js/chartbeat_mab.js"></script>
 			<!-- Adobe Analytics code version: JS-2.6.0. -->
 		<script type="text/javascript">
-			var gnPageData = {"context_data":{"hourofday":"3","dayofweek":"Monday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
+			var gnPageData = {"context_data":{"hourofday":"5","dayofweek":"Monday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
 		</script>
 				<!-- End Adobe Analytics code -->
 			<script>
@@ -6617,5 +6618,5 @@ var GN_OneSignalSettings = {"isCurator":"","appId":"8beb7996-b996-4ce8-a474-d488
 		
 		<div class="l-dynamicElement"></div>
 
-			</body>
+			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75660ba8f4","applicationID":"418684855","transactionName":"Z1BWZxdTWkAHVExRXF4adVARW1tdSV9XVVY=","queueTime":0,"applicationTime":5819,"atts":"SxdBEV9JSR9EVhoCSE1I","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
