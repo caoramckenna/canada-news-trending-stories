@@ -184,7 +184,8 @@
         }
     </script>
     	<!-- Meta Tags -->
-	<meta charset="UTF-8">
+	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"75660ba8f4",applicationID:"418684855",browserID:"419993820"};;/*! For license information please see nr-loader-rum-1.306.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let o in a)if(void 0!==e[o])try{if(null===e[o]){r[o]=null;continue}Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):"object"==typeof e[o]&&"object"==typeof t[o]?r[o]=i(e[o],t[o]):r[o]=e[o]}catch(e){r[o]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>c,RI:()=>i,WN:()=>u,bv:()=>a,eN:()=>l,gm:()=>o,mw:()=>s,sb:()=>d});var n=r(863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),s=Boolean("hidden"===o?.document?.visibilityState),c=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=c&&"undefined"==typeof SharedWorker,u=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)()),l=()=>"undefined"!=typeof PerformanceNavigationTiming&&o?.performance?.getEntriesByType("navigation")?.[0]?.responseStart},163:(e,t,r)=>{"use strict";r.d(t,{j:()=>E});var n=r(384),i=r(741);var a=r(555);r(860).K7.genericEvents;const o="experimental.resources",s="register",c=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(614),u=r(944),l=r(122);const f="[data-nr-mask]",g=e=>(0,l.a)(e,(()=>{const e={feature_flags:[],experimental:{allow_registered_children:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{get allow_registered_children(){return e.feature_flags.includes(s)||e.experimental.allow_registered_children},set allow_registered_children(t){e.experimental.allow_registered_children=t},duplicate_registered_data:!1},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(o)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:d.wk,inactiveMs:d.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){c(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,u.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){c(t)?e.block_selector+=",".concat(t):""!==t&&(0,u.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,u.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},spa:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var p=r(154),m=r(324);let h=0;const v={buildEnv:m.F3,distMethod:m.Xs,version:m.xv,originTime:p.WN},b={consented:!1},y={appMetadata:{},get consented(){return this.session?.state?.consent||b.consented},set consented(e){b.consented=e},customTransaction:void 0,denyList:void 0,disabled:!1,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++h}},_=e=>{const t=(0,l.a)(e,y),r=Object.keys(v).reduce((e,t)=>(e[t]={value:v[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)};var w=r(701);const x=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var S=r(836),k=r(241);const R={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A=e=>(0,l.a)(e,R),T=new Set;function E(e,t={},r,o){let{init:s,info:c,loader_config:d,runtime:u={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();s=e.init,c=e.info,d=e.loader_config}e.init=g(s||{}),e.loader_config=A(d||{}),c.jsAttributes??={},p.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,a.D)(c);const f=e.init,m=[c.beacon,c.errorBeacon];T.has(e.agentIdentifier)||(f.proxy.assets&&(x(f.proxy.assets),m.push(f.proxy.assets)),f.proxy.beacon&&m.push(f.proxy.beacon),e.beacons=[...m],function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach(r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let a=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return a?a(...t):n})})}(e),(0,n.US)("activatedFeatures",w.B),e.runSoftNavOverSpa&&=!0===f.soft_navigations.enabled&&f.feature_flags.includes("soft_nav")),u.denyList=[...f.ajax.deny_list||[],...f.ajax.block_internal?m:[]],u.ptid=e.agentIdentifier,u.loaderType=r,e.runtime=_(u),T.has(e.agentIdentifier)||(e.ee=S.ee.get(e.agentIdentifier),e.exposed=l,(0,k.W)({agentIdentifier:e.agentIdentifier,drained:!!w.B?.[e.agentIdentifier],type:"lifecycle",name:"initialize",feature:void 0,data:e.config})),T.add(e.agentIdentifier)}},234:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(836),i=r(687);class a{constructor(e,t){this.agentIdentifier=e,this.ee=n.ee.get(e),this.featureName=t,this.blocked=!1}deregisterDrain(){(0,i.x3)(this.agentIdentifier,this.featureName)}}},241:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(154);const i="newrelic";function a(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>d,BL:()=>s,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>h,Pl:()=>n,Pv:()=>k,Tb:()=>l,U2:()=>a,V1:()=>S,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>o,nb:()=>m,o5:()=>u});const n="api-",i="addPageAction",a="addToTrace",o="addRelease",s="finished",c="interaction",d="log",u="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",m="setApplicationVersion",h="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",S="measure",k="consent"},289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>o,Qr:()=>c,sB:()=>s});var n=r(878),i=r(389);function a(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(a())return e();const r=(0,i.J)(e),o=setInterval(()=>{a()&&(clearInterval(o),r())},500);(0,n.sp)("load",r,t)}function s(e){if(a())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(a())return e();(0,n.sp)("popstate",e)}},324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>a,xv:()=>n});const n="1.306.0",i="PROD",a="CDN"},374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>o,US:()=>u,Zm:()=>s,bQ:()=>d,dV:()=>c,pV:()=>l});var n=r(154),i=r(863),a=r(910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function s(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function c(){let e=s();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,a.i)(...Object.values(e.o))),e}function d(e,t){let r=s();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function u(e,t){s()[e]=t}function l(){return function(){let e=s();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=s();const t=e.init||{};e.init={...t}}(),c(),function(){let e=s();const t=e.loader_config||{};e.loader_config={...t}}(),s()}},389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},555:(e,t,r)=>{"use strict";r.d(t,{D:()=>s,f:()=>o});var n=r(384),i=r(122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function o(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const s=e=>(0,i.a)(e,a)},566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>s,bz:()=>o});var n=r(154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map(e=>"x"===e?a(t,r++).toString(16):"y"===e?(3&a()|8).toString(16):e).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const o=[];for(var s=0;s<e;s++)o.push(a(r,i++).toString(16));return o.join("")}},606:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(908);a.on=o;var i=a.handlers={};function a(e,t,r,a){o(a||n.d,i,e,t,r)}function o(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var o=t[a]=t[a]||{};(o[r]=o[r]||[]).push([e,i])}},607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(566).bz)()},614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>o,H3:()=>n,g:()=>d,iL:()=>c,tS:()=>s,uh:()=>i,wk:()=>a});const n="NRBA",i="SESSION",a=144e5,o=18e5,s={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},d={OFF:0,FULL:1,ERROR:2}},630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>d,Ze:()=>f,x3:()=>u});var n=r(241),i=r(836),a=r(606),o=r(860),s=r(646);const c={};function d(e,t){const r={staged:!1,priority:o.P3[t]||0};l(e),c[e].get(t)||c[e].set(t,r)}function u(e,t){e&&c[e]&&(c[e].get(t)&&c[e].delete(t),p(e,t,!1),c[e].size&&g(e))}function l(e){if(!e)throw new Error("agentIdentifier required");c[e]||(c[e]=new Map)}function f(e="",t="feature",r=!1){if(l(e),!e||!c[e].get(t)||r)return p(e,t);c[e].get(t).staged=!0,g(e)}function g(e){const t=Array.from(c[e]);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{c[e].delete(t),p(e,t)}))}function p(e,t,r=!0){const o=e?i.ee.get(e):i.ee,c=a.i.handlers;if(!o.aborted&&o.backlog&&c){if((0,n.W)({agentIdentifier:e,type:"lifecycle",name:"drain",feature:t}),r){const e=o.backlog[t],r=c[t];if(r){for(let t=0;e&&t<e.length;++t)m(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0]?.context()instanceof s.y&&t[0].on(e,t[1])})})}}o.isolatedBacklog||delete c[t],o.backlog[t]=null,o.emit("drain-"+t,[])}}function m(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}})}},699:(e,t,r)=>{"use strict";r.d(t,{It:()=>a,KC:()=>s,No:()=>i,qh:()=>o});var n=r(860);const i=16e3,a=1e6,o="SESSION_ERROR",s={[n.K7.logging]:!0,[n.K7.genericEvents]:!1,[n.K7.jserrors]:!1,[n.K7.ajax]:!1}},701:(e,t,r)=>{"use strict";r.d(t,{B:()=>a,t:()=>o});var n=r(241);const i=new Set,a={};function o(e,t){const r=t.agentIdentifier;a[r]??={},e&&"object"==typeof e&&(i.has(r)||(t.ee.emit("rumresp",[e]),a[r]=e,i.add(r),(0,n.W)({agentIdentifier:r,loaded:!0,drained:!0,type:"lifecycle",name:"load",feature:void 0,data:e})))}},741:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e){return this.#e(i.Dl,e)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},836:(e,t,r)=>{"use strict";r.d(t,{P:()=>s,ee:()=>c});var n=r(384),i=r(990),a=r(646),o=r(607);const s="nr@context:".concat(o.W),c=function e(t,r){var n={},o={},u={},l=!1;try{l=16===r.length&&d.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var s=g(n);m(e).forEach(e=>{e.apply(s,r)});var d=v()[o[e]];d&&d.push([f,e,r,s]);return s},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{o[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[o[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,s,()=>new a.y(s)):new a.y(s)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return u[t]=u[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),d=(0,n.Zm)();d.ee||(d.ee=c)},843:(e,t,r)=>{"use strict";r.d(t,{G:()=>a,u:()=>i});var n=r(878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function a(e,t,r){(0,n.sp)("pagehide",e,t,r)}},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>u,K7:()=>c,P3:()=>d,XX:()=>i,Yy:()=>s,df:()=>a,qY:()=>n,v4:()=>o});const n="events",i="jserrors",a="browser/blobs",o="rum",s="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},d={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.spa]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.softNav]:8,[c.sessionReplay]:9,[c.logging]:10,[c.genericEvents]:11},u={[c.pageViewEvent]:o,[c.pageViewTiming]:n,[c.ajax]:n,[c.spa]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:a,[c.sessionReplay]:a,[c.logging]:s,[c.genericEvents]:"ins"}},863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},910:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),a=t.includes("nrWrapper");return r||a||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({agentIdentifier:null,drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>s,rs:()=>i,xV:()=>o,z_:()=>a});const n=r(860).K7.metrics,i="sm",a="cm",o="storeSupportabilityMetrics",s="storeEventMetrics"},990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var a=n[e]={exports:{}};return r[e](a,a.exports,i),a.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce((t,r)=>(i.f[r](e,t),t),[])),i.u=e=>"nr-rum-1.306.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.306.0.PROD:",i.l=(r,n,a,o)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==a)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+a){s=l;break}}if(!s){c=!0;var f={296:"sha512-XHJAyYwsxAD4jnOFenBf2aq49/pv28jKOJKs7YGQhagYYI2Zk8nHflZPdd7WiilkmEkgIZQEFX4f1AJMoyzKwA=="};(s=document.createElement("script")).charset="utf-8",i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+a),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[o]&&(s.integrity=f[o])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach(e=>e(n)),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var a=new Promise((r,i)=>n=e[t]=[r,i]);r.push(n[2]=a);var o=i.p+i.u(t),s=new Error;i.l(o,r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var a=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed: ("+a+": "+o+")",s.name="ChunkLoadError",s.type=a,s.request=o,n[1](s)}},"chunk-"+t,t)}};var t=(t,r)=>{var n,a,[o,s,c]=r,d=0;if(o.some(t=>0!==e[t])){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);d<o.length;d++)a=o[d],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},r=self["webpackChunk:NRBA-1.306.0.PROD"]=self["webpackChunk:NRBA-1.306.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(374);var e=i(566),t=i(741);class r extends t.W{agentIdentifier=(0,e.LA)(16)}var n=i(860);const a=Object.values(n.K7);var o=i(163);var s=i(908),c=i(863),d=i(261),u=i(241),l=i(944),f=i(701),g=i(969);function p(e,t,i,a){const o=a||i;!o||o[e]&&o[e]!==r.prototype[e]||(o[e]=function(){(0,s.p)(g.xV,["API/"+e+"/called"],void 0,n.K7.metrics,i.ee),(0,u.W)({agentIdentifier:i.agentIdentifier,drained:!!f.B?.[i.agentIdentifier],type:"data",name:"api",feature:d.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,l.R)(23,e)}})}function m(e,t,r,n,i){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(i||null===r)&&(0,s.p)(d.Pl+n,[(0,c.t)(),t,r],void 0,"session",e.ee)}var h=i(687),v=i(234),b=i(289),y=i(154),_=i(384);const w=e=>y.RI&&!0===e?.privacy.cookies_enabled;function x(e){return!!(0,_.dV)().o.MO&&w(e)&&!0===e?.session_trace.enabled}var S=i(389),k=i(699);class R extends v.W{constructor(e,t){super(e.agentIdentifier,t),this.agentRef=e,this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,S.J)(()=>{(0,h.Ak)(e.agentIdentifier,this.featureName),t()}))}):(0,h.Ak)(e.agentIdentifier,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;const n=async()=>{let n;await this.deferred;try{if(w(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,305));n=t(e)}}catch(e){(0,l.R)(20,e),this.ee.emit("internal-error",[e]),(0,s.p)(k.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#t(this.featureName,n,e.init))return(0,h.Ze)(this.agentIdentifier,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,l.R)(34,e),this.abortHandler?.(),(0,h.Ze)(this.agentIdentifier,this.featureName,!0),this.loadedSuccessfully(!1),this.ee&&this.ee.abort()}};y.RI?(0,b.GG)(()=>n(),!0):n()}#t(e,t,r){if(this.blocked)return!1;switch(e){case n.K7.sessionReplay:return x(r)&&!!t;case n.K7.sessionTrace:return!!t;default:return!0}}}var A=i(630),T=i(614);class E extends R{static featureName=A.T;constructor(e){var t;super(e,A.T),this.setupInspectionEvents(e.agentIdentifier),t=e,p(d.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,s.p)(d.Pl+d.Fw,[(0,c.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>i.e(296).then(i.bind(i,943)))}setupInspectionEvents(e){const t=(t,r)=>{t&&(0,u.W)({agentIdentifier:e,timeStamp:t.timeStamp,loaded:"complete"===t.target.readyState,type:"window",name:r,data:t.target.location+""})};(0,b.sB)(e=>{t(e,"DOMContentLoaded")}),(0,b.GG)(e=>{t(e,"load")}),(0,b.Qr)(e=>{t(e,"navigate")}),this.ee.on(T.tS.UPDATE,(t,r)=>{(0,u.W)({agentIdentifier:e,type:"lifecycle",name:"session",data:r})})}}var N=i(843),I=i(782);class j extends R{static featureName=I.T;constructor(e){super(e,I.T),y.RI&&((0,N.u)(()=>(0,s.p)("docHidden",[(0,c.t)()],void 0,I.T,this.ee),!0),(0,N.G)(()=>(0,s.p)("winPagehide",[(0,c.t)()],void 0,I.T,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,117))))}}class P extends R{static featureName=g.TZ;constructor(e){super(e,g.TZ),y.RI&&document.addEventListener("securitypolicyviolation",e=>{(0,s.p)(g.xV,["Generic/CSPViolation/Detected"],void 0,this.featureName,this.ee)}),this.importAggregator(e,()=>i.e(296).then(i.bind(i,623)))}}new class extends r{constructor(e){var t;(super(),y.gm)?(this.features={},(0,_.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(E),this.runSoftNavOverSpa=[...this.desiredFeatures].some(e=>e.featureName===n.K7.softNav),(0,o.j)(this,e,e.loaderType||"agent"),t=this,p(d.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return m(t,e,r,d.cD,n);(0,l.R)(40,typeof r)}else(0,l.R)(39,typeof e)},t),function(e){p(d.Dl,function(t){if("string"==typeof t||null===t)return m(e,"enduser.id",t,d.Dl,!0);(0,l.R)(41,typeof t)},e)}(this),function(e){p(d.nb,function(t){if("string"==typeof t||null===t)return m(e,"application.version",t,d.nb,!1);(0,l.R)(42,typeof t)},e)}(this),function(e){p(d.d3,function(){e.ee.emit("manual-start-all")},e)}(this),function(e){p(d.Pv,function(t=!0){if("boolean"==typeof t){if((0,s.p)(d.Pl+d.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum()})}}else(0,l.R)(65,typeof t)},e)}(this),this.run()):(0,l.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return a.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),t=[...this.desiredFeatures];t.sort((e,t)=>n.P3[e.featureName]-n.P3[t.featureName]),t.forEach(t=>{if(!e[t.featureName]&&t.featureName!==n.K7.pageViewEvent)return;if(this.runSoftNavOverSpa&&t.featureName===n.K7.spa)return;if(!this.runSoftNavOverSpa&&t.featureName===n.K7.softNav)return;const r=function(e){switch(e){case n.K7.ajax:return[n.K7.jserrors];case n.K7.sessionTrace:return[n.K7.ajax,n.K7.pageViewEvent];case n.K7.sessionReplay:return[n.K7.sessionTrace];case n.K7.pageViewTiming:return[n.K7.pageViewEvent];default:return[]}}(t.featureName).filter(e=>!(e in this.features));r.length>0&&(0,l.R)(36,{targetFeature:t.featureName,missingDependencies:r}),this.features[t.featureName]=new t(this)})}catch(e){(0,l.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,_.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}({features:[E,j,P],loaderType:"lite"})})()})();</script>
 	<meta name="theme-color" content="#231F20">
 
 			<meta name="msvalidate.01" content="9E5C74811CA48CCCC61A2CF3C0A1BA6A">
@@ -473,7 +474,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 
 				
 
-				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"7","weatherprec":1.52,"weathercode":"12","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
+				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"3","weatherprec":3.56,"weathercode":"12","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
 		</script>
 			<script>
 				// Load the APS JavaScript Library
@@ -1604,37 +1605,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=12			data-parent-id=home-topStories						data-sophi-feature=top-stories		>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-1"
-	data-post-id="11583334"
-	data-slide-index=""
-	data-caption="Karoline Leavitt shares &#8216;behind the scenes&#8217; photos amid Vanity Fair shoot scrutiny"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11583334/karoline-leavitt-behind-the-scenes-vanity-fair-photos/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				src=https://globalnews.ca/wp-content/uploads/2025/12/karoline-leavitt-behind-the-scenes.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67								width="720" height="504" alt="" 
-											srcset="https://globalnews.ca/wp-content/uploads/2025/12/karoline-leavitt-behind-the-scenes.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/karoline-leavitt-behind-the-scenes.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/karoline-leavitt-behind-the-scenes.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Karoline Leavitt shares &#8216;behind the scenes&#8217; photos amid Vanity Fair shoot scrutiny" data-title>Karoline Leavitt shares &#8216;behind the scenes&#8217; photos amid Vanity Fair shoot scrutiny</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Trending</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Dec 18</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-2"
 	data-post-id="11583140"
 	data-slide-index=""
 	data-caption="Corey Feldman claims Corey Haim molested him on set of &#8216;Lost Boys&#8217;"
@@ -1642,15 +1612,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11583140/corey-feldman-corey-haim-lost-boys-accusations/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2017/10/corey-haim-corey-feldman.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="450" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2017/10/corey-haim-corey-feldman.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2017/10/corey-haim-corey-feldman.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2017/10/corey-haim-corey-feldman.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+				src=https://globalnews.ca/wp-content/uploads/2017/10/corey-haim-corey-feldman.jpg?quality=65&#038;strip=all&#038;w=720												width="720" height="450" alt="" 
+											srcset="https://globalnews.ca/wp-content/uploads/2017/10/corey-haim-corey-feldman.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2017/10/corey-haim-corey-feldman.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2017/10/corey-haim-corey-feldman.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
@@ -1662,6 +1630,39 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 											<div class="c-posts__info c-posts__info--highlight" data-label>Entertainment</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Dec 18</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-2"
+	data-post-id="11583334"
+	data-slide-index=""
+	data-caption="Karoline Leavitt shares &#8216;behind the scenes&#8217; photos amid Vanity Fair shoot scrutiny"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11583334/karoline-leavitt-behind-the-scenes-vanity-fair-photos/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/karoline-leavitt-behind-the-scenes.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
+								width="720" height="504" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/karoline-leavitt-behind-the-scenes.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/karoline-leavitt-behind-the-scenes.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/karoline-leavitt-behind-the-scenes.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Karoline Leavitt shares &#8216;behind the scenes&#8217; photos amid Vanity Fair shoot scrutiny" data-title>Karoline Leavitt shares &#8216;behind the scenes&#8217; photos amid Vanity Fair shoot scrutiny</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Trending</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Dec 18</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1748,7 +1749,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Consumer</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">8 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">11 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 														</div>
 									</div>
@@ -1789,31 +1790,31 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-6"
-	data-post-id="11583801"
+	data-post-id="11583344"
 	data-slide-index=""
-	data-caption="Multiple deaths after business jet crashes in North Carolina: authorities"
+	data-caption="Canada, U.S. may not get sectoral deals before CUSMA renewal, Carney says"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11583801/business-jet-crash-north-carolina-nascar/"
+		href="https://globalnews.ca/news/11583344/donald-trump-tariffs-mark-carney-cusma-renewal/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
 			>
 			
-		<div class="c-posts__media "  >
+		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/3b412d34e5fc51781eafc0d9e1a52c4dd63ffd5384d89d258d314a0db3aa14c8.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/Trump-Carney-CUSMA-sectoral-deals.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=577 data-ratio=0.67									loading="lazy"
+								width="720" height="577" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/3b412d34e5fc51781eafc0d9e1a52c4dd63ffd5384d89d258d314a0db3aa14c8.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/3b412d34e5fc51781eafc0d9e1a52c4dd63ffd5384d89d258d314a0db3aa14c8.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/3b412d34e5fc51781eafc0d9e1a52c4dd63ffd5384d89d258d314a0db3aa14c8.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/Trump-Carney-CUSMA-sectoral-deals.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/Trump-Carney-CUSMA-sectoral-deals.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/Trump-Carney-CUSMA-sectoral-deals.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Multiple deaths after business jet crashes in North Carolina: authorities" data-title>Multiple deaths after business jet crashes in North Carolina: authorities</span>
+					<span class="c-posts__headlineText" title="Canada, U.S. may not get sectoral deals before CUSMA renewal, Carney says" data-title>Canada, U.S. may not get sectoral deals before CUSMA renewal, Carney says</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>U.S. News</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Dec 18</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
@@ -1844,31 +1845,31 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-7"
-	data-post-id="11583344"
+	data-post-id="11583801"
 	data-slide-index=""
-	data-caption="Canada, U.S. may not get sectoral deals before CUSMA renewal, Carney says"
+	data-caption="Multiple deaths after business jet crashes in North Carolina: authorities"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11583344/donald-trump-tariffs-mark-carney-cusma-renewal/"
+		href="https://globalnews.ca/news/11583801/business-jet-crash-north-carolina-nascar/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
 			>
 			
-		<div class="c-posts__media  c-imageContainer"  >
+		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/Trump-Carney-CUSMA-sectoral-deals.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=577 data-ratio=0.67									loading="lazy"
-								width="720" height="577" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/3b412d34e5fc51781eafc0d9e1a52c4dd63ffd5384d89d258d314a0db3aa14c8.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/Trump-Carney-CUSMA-sectoral-deals.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/Trump-Carney-CUSMA-sectoral-deals.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/Trump-Carney-CUSMA-sectoral-deals.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/3b412d34e5fc51781eafc0d9e1a52c4dd63ffd5384d89d258d314a0db3aa14c8.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/3b412d34e5fc51781eafc0d9e1a52c4dd63ffd5384d89d258d314a0db3aa14c8.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/3b412d34e5fc51781eafc0d9e1a52c4dd63ffd5384d89d258d314a0db3aa14c8.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Canada, U.S. may not get sectoral deals before CUSMA renewal, Carney says" data-title>Canada, U.S. may not get sectoral deals before CUSMA renewal, Carney says</span>
+					<span class="c-posts__headlineText" title="Multiple deaths after business jet crashes in North Carolina: authorities" data-title>Multiple deaths after business jet crashes in North Carolina: authorities</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>U.S. News</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Dec 18</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
@@ -1910,6 +1911,39 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-9"
+	data-post-id="11584397"
+	data-slide-index=""
+	data-caption="Quebec man seeks bail as 1994 murder conviction likely a miscarriage of justice"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11584397/quebec-man-bail-1994-murder-review/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/19b00bca3ae40ec5d2b021fa1d4f9024c3164412c46e9767380a27be08023830.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=506 data-ratio=0.67									loading="lazy"
+								width="720" height="506" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/19b00bca3ae40ec5d2b021fa1d4f9024c3164412c46e9767380a27be08023830.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/19b00bca3ae40ec5d2b021fa1d4f9024c3164412c46e9767380a27be08023830.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/19b00bca3ae40ec5d2b021fa1d4f9024c3164412c46e9767380a27be08023830.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Quebec man seeks bail as 1994 murder conviction likely a miscarriage of justice" data-title>Quebec man seeks bail as 1994 murder conviction likely a miscarriage of justice</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Crime</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Dec 18</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-10"
 	data-post-id="11583913"
 	data-slide-index=""
 	data-caption="These were Canada&#8217;s &#8216;most significant&#8217; weather events, from floods to fires"
@@ -1917,7 +1951,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11583913/canada-top-10-most-significant-weather-events-2025/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -1937,39 +1971,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Dec 18</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-10"
-	data-post-id="11584397"
-	data-slide-index=""
-	data-caption="Quebec man seeks bail as 1994 murder conviction likely a miscarriage of justice"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11584397/quebec-man-bail-1994-murder-review/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/19b00bca3ae40ec5d2b021fa1d4f9024c3164412c46e9767380a27be08023830.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=506 data-ratio=0.67									loading="lazy"
-								width="720" height="506" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/19b00bca3ae40ec5d2b021fa1d4f9024c3164412c46e9767380a27be08023830.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/19b00bca3ae40ec5d2b021fa1d4f9024c3164412c46e9767380a27be08023830.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/19b00bca3ae40ec5d2b021fa1d4f9024c3164412c46e9767380a27be08023830.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Quebec man seeks bail as 1994 murder conviction likely a miscarriage of justice" data-title>Quebec man seeks bail as 1994 murder conviction likely a miscarriage of justice</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Crime</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">10 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 														</div>
 									</div>
 		</a>
@@ -2001,7 +2002,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>News</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">7 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">9 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
 														</div>
 									</div>
@@ -2052,10 +2053,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay="true"
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6945260a5254b"
+			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69454475f0d58"
 			data-displayinline-video-id="49a91e7f-1023-430f-8d66-561055f3d0f7"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6945260a5254b"
+    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69454475f0d58"
     		    			data-displayinline-playlist="49a91e7f-1023-430f-8d66-561055f3d0f7"
     									data-displayinline-container="mini-ott"
 																data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;recent_terms_datastore&quot;,&quot;type&quot;:&quot;wlo_option&quot;}}"
@@ -2186,7 +2187,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="No evidence entire Pakistan airline crew disappeared in Toronto" data-title>No evidence entire Pakistan airline crew disappeared in Toronto</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">3,605</span>
+							<span class="c-posts__info c-posts__info--highlight">5,002</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2216,7 +2217,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="More Epstein photos released by House Democrats as DOJ deadline looms" data-title>More Epstein photos released by House Democrats as DOJ deadline looms</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,799</span>
+							<span class="c-posts__info c-posts__info--highlight">4,747</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2246,7 +2247,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Karoline Leavitt shares &#8216;behind the scenes&#8217; photos amid Vanity Fair shoot scrutiny" data-title>Karoline Leavitt shares &#8216;behind the scenes&#8217; photos amid Vanity Fair shoot scrutiny</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,007</span>
+							<span class="c-posts__info c-posts__info--highlight">2,846</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2276,16 +2277,16 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Corey Feldman claims Corey Haim molested him on set of &#8216;Lost Boys&#8217;" data-title>Corey Feldman claims Corey Haim molested him on set of &#8216;Lost Boys&#8217;</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">1,643</span>
+							<span class="c-posts__info c-posts__info--highlight">2,492</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
 											</div>
 				</a>
 			</li>
-								<li class="c-posts__item" data-post-id="11580130">
+								<li class="c-posts__item" data-post-id="11582077">
 				<a
-					href="https://globalnews.ca/news/11580130/td-mutual-funds-lawsuit-settlement/"
+					href="https://globalnews.ca/news/11582077/new-flu-strain-h3n2-subclade-k-canada/"
 					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:4}"
 				>
 					<div class="c-posts__rank">
@@ -2296,17 +2297,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2024/10/20241010101020-20241010101012-34107e9c2ca3318a42619988d22d7a2dd0244b66664feefb57c9e0c99d335a6b_e6f0a2.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/Kids-Flu-Deaths.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="428" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2024/10/20241010101020-20241010101012-34107e9c2ca3318a42619988d22d7a2dd0244b66664feefb57c9e0c99d335a6b_e6f0a2.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2024/10/20241010101020-20241010101012-34107e9c2ca3318a42619988d22d7a2dd0244b66664feefb57c9e0c99d335a6b_e6f0a2.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2024/10/20241010101020-20241010101012-34107e9c2ca3318a42619988d22d7a2dd0244b66664feefb57c9e0c99d335a6b_e6f0a2.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/Kids-Flu-Deaths.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/Kids-Flu-Deaths.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/Kids-Flu-Deaths.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 							<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Are you eligible in TD mutual fund class-action settlement? What to know" data-title>Are you eligible in TD mutual fund class-action settlement? What to know</span>
+					<span class="c-posts__headlineText" title="This H3N2 flu strain is spreading &#8216;rapidly.&#8217; Why subclade K is hitting hard" data-title>This H3N2 flu strain is spreading &#8216;rapidly.&#8217; Why subclade K is hitting hard</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">1,560</span>
+							<span class="c-posts__info c-posts__info--highlight">2,027</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2409,7 +2410,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="No evidence entire Pakistan airline crew disappeared in Toronto" data-title>No evidence entire Pakistan airline crew disappeared in Toronto</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">3,605</span>
+							<span class="c-posts__info c-posts__info--highlight">5,002</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2439,7 +2440,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="More Epstein photos released by House Democrats as DOJ deadline looms" data-title>More Epstein photos released by House Democrats as DOJ deadline looms</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,799</span>
+							<span class="c-posts__info c-posts__info--highlight">4,747</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2469,7 +2470,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Karoline Leavitt shares &#8216;behind the scenes&#8217; photos amid Vanity Fair shoot scrutiny" data-title>Karoline Leavitt shares &#8216;behind the scenes&#8217; photos amid Vanity Fair shoot scrutiny</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,007</span>
+							<span class="c-posts__info c-posts__info--highlight">2,846</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2499,16 +2500,16 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Corey Feldman claims Corey Haim molested him on set of &#8216;Lost Boys&#8217;" data-title>Corey Feldman claims Corey Haim molested him on set of &#8216;Lost Boys&#8217;</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">1,643</span>
+							<span class="c-posts__info c-posts__info--highlight">2,492</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
 											</div>
 				</a>
 			</li>
-								<li class="c-posts__item" data-post-id="11580130">
+								<li class="c-posts__item" data-post-id="11582077">
 				<a
-					href="https://globalnews.ca/news/11580130/td-mutual-funds-lawsuit-settlement/"
+					href="https://globalnews.ca/news/11582077/new-flu-strain-h3n2-subclade-k-canada/"
 					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:4}"
 				>
 					<div class="c-posts__rank">
@@ -2519,17 +2520,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2024/10/20241010101020-20241010101012-34107e9c2ca3318a42619988d22d7a2dd0244b66664feefb57c9e0c99d335a6b_e6f0a2.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/Kids-Flu-Deaths.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="428" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2024/10/20241010101020-20241010101012-34107e9c2ca3318a42619988d22d7a2dd0244b66664feefb57c9e0c99d335a6b_e6f0a2.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2024/10/20241010101020-20241010101012-34107e9c2ca3318a42619988d22d7a2dd0244b66664feefb57c9e0c99d335a6b_e6f0a2.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2024/10/20241010101020-20241010101012-34107e9c2ca3318a42619988d22d7a2dd0244b66664feefb57c9e0c99d335a6b_e6f0a2.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/Kids-Flu-Deaths.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/Kids-Flu-Deaths.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/Kids-Flu-Deaths.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 							<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Are you eligible in TD mutual fund class-action settlement? What to know" data-title>Are you eligible in TD mutual fund class-action settlement? What to know</span>
+					<span class="c-posts__headlineText" title="This H3N2 flu strain is spreading &#8216;rapidly.&#8217; Why subclade K is hitting hard" data-title>This H3N2 flu strain is spreading &#8216;rapidly.&#8217; Why subclade K is hitting hard</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">1,560</span>
+							<span class="c-posts__info c-posts__info--highlight">2,027</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2783,8 +2784,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-miniplayer"
 			data-displayinline-video-id="11584236"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11584236,11572729,11582484,11562373,11584236/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F25d07guz8q-dtjwrt949q%2Fbill_1.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
-    		    			data-displayinline-playlist="11584236,11572729,11582484,11562373,11584236"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11584236,11572729,11562373,11584236,11582196/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F25d07guz8q-dtjwrt949q%2Fbill_1.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
+    		    			data-displayinline-playlist="11584236,11572729,11562373,11584236,11582196"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Epstein files: Bill Gates and Steve Bannon in Democrats&#039; newly released photos&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;us-news&quot;],&quot;keywords&quot;:[&quot;bill-gates&quot;,&quot;epstein-files-epstein&quot;,&quot;short-clip&quot;]}}"
 			    		>
@@ -2852,8 +2853,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11584236"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11584236,11572729,11582484,11562373,11584236/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11584236,11572729,11582484,11562373,11584236"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11584236,11572729,11562373,11584236,11582196/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11584236,11572729,11562373,11584236,11582196"
 			data-video-carousel-label="U.S. News"
 			data-video-carousel-content="Congressional Democrats released dozens of new images from the estate of the late convicted sex offender Jeffrey Epstein on Thursday, a day before the U.S. Justice Department is required by law to release unclassified files from its investigation of the disgraced financier."
 			>
@@ -2879,8 +2880,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11572729"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11572729,11582484,11562373,11584236,11584236/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11572729,11582484,11562373,11584236,11584236"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11572729,11562373,11584236,11582196,11584236/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11572729,11562373,11584236,11582196,11584236"
 			data-video-carousel-label="Traffic"
 			data-video-carousel-content="Tensions are growing between Metrolinx and the TTC over when the Eglinton Crosstown LRT will finally open. In a Global News exclusive, multiple sources confirmed the provincial agency and Ministry of Transportation planned to open the line the last week of December. But sources say the TTC has resisted that, saying February is more likely. Colin D&#039;Mello reports on what we know."
 			>
@@ -2901,40 +2902,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Canada sees biggest population decline on record: StatCan" data-slide-index="2">
-	<a href="https://globalnews.ca/video/11582484/canada-sees-biggest-population-decline-on-record-statcan/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11582484"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11582484,11562373,11584236,11584236,11572729/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11582484,11562373,11584236,11584236,11572729"
-			data-video-carousel-label="Canada"
-			data-video-carousel-content="Canada&#039;s population dropped by more than 75 thousand people between July and October, according to Statistics Canada. Touria Izri reports on what&#039;s behind the downtrend. "
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/vbou89gzad-2j02dr38o9/IZRI_POPULATION_WED_thumbnail_1280x720_.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Canada sees biggest population decline on record: StatCan</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Call of the Wilde: Habs down Jets" data-slide-index="3">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Call of the Wilde: Habs down Jets" data-slide-index="2">
 	<a href="https://globalnews.ca/video/11562373/call-of-the-wilde-habs-down-jets/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11562373"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11562373,11584236,11584236,11572729,11582484/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11562373,11584236,11584236,11572729,11582484"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11562373,11584236,11582196,11584236,11572729/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11562373,11584236,11582196,11584236,11572729"
 			data-video-carousel-label="Sports"
 			data-video-carousel-content="After a loss against Ottawa on Tuesday, the Habs came back with a big win against the Jets on Wednesday in a shootout. Global News hockey analyst Brian Wilde joins Global News Morning’ s host Laura Casella for this latest Call of the Wilde."
 			>
@@ -2955,13 +2929,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Epstein files: Bill Gates and Steve Bannon in Democrats&#8217; newly released photos" data-slide-index="4">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Epstein files: Bill Gates and Steve Bannon in Democrats&#8217; newly released photos" data-slide-index="3">
 	<a href="https://globalnews.ca/video/11584236/epstein-files-bill-gates-and-steve-bannon-in-democrats-newly-released-photos/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11584236"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11584236,11584236,11572729,11582484,11562373/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11584236,11584236,11572729,11582484,11562373"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11584236,11582196,11584236,11572729,11562373/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11584236,11582196,11584236,11572729,11562373"
 			data-video-carousel-label="U.S. News"
 			data-video-carousel-content="Congressional Democrats released dozens of new images from the estate of the late convicted sex offender Jeffrey Epstein on Thursday, a day before the U.S. Justice Department is required by law to release unclassified files from its investigation of the disgraced financier."
 			>
@@ -2978,6 +2952,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
 				</div>
 						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Epstein files: Bill Gates and Steve Bannon in Democrats&#8217; newly released photos</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Flu cases surge across Canada with H3N2 as the dominant strain of the virus " data-slide-index="4">
+	<a href="https://globalnews.ca/video/11582196/flu-cases-surge-across-canada-with-h3n2-as-the-dominant-strain-of-the-virus/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11582196"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11582196,11584236,11572729,11562373,11584236/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11582196,11584236,11572729,11562373,11584236"
+			data-video-carousel-label="Health"
+			data-video-carousel-content="The flu season is kicking off early across Canada, and the pressures are already hitting hospital systems. Health reporter Katherine Ward has more on what&#039;s driving case counts, and what people can do to protect themselves. "
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/udubcuoe0a-vup9x5cji5/AFF_FLU_SEASON_SPIKE_WARD_ONLINE_STILL.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Health</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Flu cases surge across Canada with H3N2 as the dominant strain of the virus </span></div>
 					</div>
 	</a>
 </li>
@@ -3017,7 +3018,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11572729"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11572729,11582484,11562373,11584236/#autoplay&#038;stickyiframe=home-miniplayer_11572729"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11572729,11562373,11584236,11582196/#autoplay&#038;stickyiframe=home-miniplayer_11572729"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3069,41 +3070,9 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11582484"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11582484,11562373,11584236,11572729/#autoplay&#038;stickyiframe=home-miniplayer_11582484"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/vbou89gzad-2j02dr38o9/IZRI_POPULATION_WED_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Canada sees biggest population decline on record: StatCan'"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/11582484/canada-sees-biggest-population-decline-on-record-statcan/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Canada sees biggest population decline on record: StatCan</span></div>
-		</a>
-	</div>
-</li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11562373"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11562373,11584236,11572729,11582484/#autoplay&#038;stickyiframe=home-miniplayer_11562373"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11562373,11584236,11582196,11572729/#autoplay&#038;stickyiframe=home-miniplayer_11562373"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3135,7 +3104,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11584236"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11584236,11572729,11582484,11562373/#autoplay&#038;stickyiframe=home-miniplayer_11584236"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11584236,11582196,11572729,11562373/#autoplay&#038;stickyiframe=home-miniplayer_11584236"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3160,6 +3129,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</div>
 </li>
+
+<li class="c-posts__item">
+	<div class="c-posts__inner">
+		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
+			data-displayinline-type="video"
+			data-displayinline-player-id="home-miniplayer_11582196"
+			data-displayinline-ratio="16:9"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11582196,11572729,11562373,11584236/#autoplay&#038;stickyiframe=home-miniplayer_11582196"
+			data-displayinline-sticky="true"
+			data-displayinline-expand="true">
+			<div class="c-video__placeholder">
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/udubcuoe0a-vup9x5cji5/AFF_FLU_SEASON_SPIKE_WARD_ONLINE_STILL.jpg?w=384&#038;quality=70&#038;strip=all"
+					width="236"
+					height="133"
+					class="c-posts__thumbnail c-video__image"
+					alt="Click to play video 'Flu cases surge across Canada with H3N2 as the dominant strain of the virus '"
+					loading="lazy" />
+				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+			</div>
+		</a>
+		<a href="https://globalnews.ca/video/11582196/flu-cases-surge-across-canada-with-h3n2-as-the-dominant-strain-of-the-virus/" class="c-posts__details">
+				<div class="c-posts__about">
+					<div class="c-posts__info c-posts__info--highlight">Health</div>
+				</div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Flu cases surge across Canada with H3N2 as the dominant strain of the virus </span></div>
+		</a>
+	</div>
+</li>
 	</ul>
 	
 	</section>
@@ -3180,8 +3181,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-miniplayer-variant"
 			data-displayinline-video-id="11584236"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11584236,11584536,11583545,11584063,11582196/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F25d07guz8q-dtjwrt949q%2Fbill_1.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
-    		    			data-displayinline-playlist="11584236,11584536,11583545,11584063,11582196"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11584236,11583557,11582484,11584536,11584503/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F25d07guz8q-dtjwrt949q%2Fbill_1.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
+    		    			data-displayinline-playlist="11584236,11583557,11582484,11584536,11584503"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Epstein files: Bill Gates and Steve Bannon in Democrats&#039; newly released photos&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;us-news&quot;],&quot;keywords&quot;:[&quot;bill-gates&quot;,&quot;epstein-files-epstein&quot;,&quot;short-clip&quot;]}}"
 			    		>
@@ -3249,8 +3250,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11584236"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11584236,11584536,11583545,11584063,11582196/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11584236,11584536,11583545,11584063,11582196"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11584236,11583557,11582484,11584536,11584503/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11584236,11583557,11582484,11584536,11584503"
 			data-video-carousel-label="U.S. News"
 			data-video-carousel-content="Congressional Democrats released dozens of new images from the estate of the late convicted sex offender Jeffrey Epstein on Thursday, a day before the U.S. Justice Department is required by law to release unclassified files from its investigation of the disgraced financier."
 			>
@@ -3271,13 +3272,67 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Global National: Dec. 18" data-slide-index="1">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="&#8216;Best ad that&#8217;s ever run&#8217;: Ford&#8217;s defence of infamous anti-tariff ad makes Carney giggle" data-slide-index="1">
+	<a href="https://globalnews.ca/video/11583557/best-ad-thats-ever-run-fords-defence-of-infamous-anti-tariff-ad-makes-carney-giggle/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11583557"
+			data-video-player-id="home-miniplayer-variant"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11583557,11582484,11584536,11584503,11584236/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11583557,11582484,11584536,11584503,11584236"
+			data-video-carousel-label="Politics"
+			data-video-carousel-content="Canadian Prime Minister Mark Carney and Ontario Premier Doug Ford were in Ottawa on Thursday when Carney jokingly eyerolled in response to Ford calling Ontario&#039;s anti-tariff ad, &quot;the best ad that&#039;s ever.&quot;"
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/j2tj1dgnmg-fi00vipw2f/carney_ford.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Politics</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">&#8216;Best ad that&#8217;s ever run&#8217;: Ford&#8217;s defence of infamous anti-tariff ad makes Carney giggle</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Canada sees biggest population decline on record: StatCan" data-slide-index="2">
+	<a href="https://globalnews.ca/video/11582484/canada-sees-biggest-population-decline-on-record-statcan/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11582484"
+			data-video-player-id="home-miniplayer-variant"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11582484,11584536,11584503,11584236,11583557/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11582484,11584536,11584503,11584236,11583557"
+			data-video-carousel-label="Canada"
+			data-video-carousel-content="Canada&#039;s population dropped by more than 75 thousand people between July and October, according to Statistics Canada. Touria Izri reports on what&#039;s behind the downtrend. "
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/vbou89gzad-2j02dr38o9/IZRI_POPULATION_WED_thumbnail_1280x720_.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Canada sees biggest population decline on record: StatCan</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Global National: Dec. 18" data-slide-index="3">
 	<a href="https://globalnews.ca/video/11584536/global-national-dec-18-12/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11584536"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11584536,11583545,11584063,11582196,11584236/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11584536,11583545,11584063,11582196,11584236"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11584536,11584503,11584236,11583557,11582484/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11584536,11584503,11584236,11583557,11582484"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="“Winter-peg” in living up to its nickname. It was a rare snow day for students in Manitoba as an Alberta Clipper brought blizzard conditions across the prairies and into Ontario. As much as 50 cm fell in some areas with wind gusts up to 90 km/h closing highways and shutting schools. Heather Yourex-West reports on the storm&#039;s impact and why this winter storm isn’t over yet. U.S. President Donald Trump continued his condemnation of former president Joe Biden during a prime time address Wednesday night, blaming his predecessor for the state of the U.S. economy. Unemployment and inflation are climbing in the U.S., driven in part by Trump’s trade war and cuts to the federal service. But Trump is trying to dispel those concerns about the economy. Jackson Proskow reports on what the president said and if Americans are listening."
 			>
@@ -3298,18 +3353,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Carney says Canada-US trade deal on key sectors &#8216;unlikely&#8217; as CUSMA renewal looms" data-slide-index="2">
-	<a href="https://globalnews.ca/video/11583545/carney-says-canada-us-trade-deal-on-key-sectors-unlikely-as-cusma-renewal-looms/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="What was Canada’s top weather story of 2025?" data-slide-index="4">
+	<a href="https://globalnews.ca/video/11584503/what-was-canadas-top-weather-story-of-2025/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11583545"
+					data-video-id="11584503"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11583545,11584063,11582196,11584236,11584536/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11583545,11584063,11582196,11584236,11584536"
-			data-video-carousel-label="U.S. News"
-			data-video-carousel-content="In Ottawa on Thursday, Canadian Prime Minister Mark Carney said a planned trade deal on key sectors between the United States and Canada was unlikely."
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11584503,11584236,11583557,11582484,11584536/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11584503,11584236,11583557,11582484,11584536"
+			data-video-carousel-label="Canada"
+			data-video-carousel-content="Crippling snowstorms, fierce wildfires and relentless droughts — 2025 was a year of wild swings. Environment Canada released its list of the biggest weather stories of the year with the destructive wildfire season coming in at No. 1 and considered the second worst in Canadian history. Fire ravaged an area bigger than New Brunswick and PEI combined. Global’s Touria Izri reports."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/dq6klqtiwr-u4e8s3qmm1/site_carney.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/0vjamow06e-absa35cg4m/THU_TOURIA_SITE_THUMB_181225.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3318,63 +3373,9 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>
 		<div class="l-videoCarousel__details c-posts__details">
 							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Carney says Canada-US trade deal on key sectors &#8216;unlikely&#8217; as CUSMA renewal looms</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Democrats release new Epstein estate photos ahead of DOJ deadline" data-slide-index="3">
-	<a href="https://globalnews.ca/video/11584063/democrats-release-new-epstein-estate-photos-ahead-of-doj-deadline/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11584063"
-			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11584063,11582196,11584236,11584536,11583545/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11584063,11582196,11584236,11584536,11583545"
-			data-video-carousel-label="News"
-			data-video-carousel-content="Democrats on the U.S. House Oversight Committee have released 68 previously unseen photographs from Jeffrey Epstein’s estate. The images include obscured foreign passports and excerpts from the novel Lolita written on what appears to be a woman’s body. The release comes one day before the Justice Department is required to make Epstein case records public under the Epstein Files Transparency Act."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/1u5jmqzl5t-6v9h2f366g/EPSTEIN.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">News</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Democrats release new Epstein estate photos ahead of DOJ deadline</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Flu cases surge across Canada with H3N2 as the dominant strain of the virus " data-slide-index="4">
-	<a href="https://globalnews.ca/video/11582196/flu-cases-surge-across-canada-with-h3n2-as-the-dominant-strain-of-the-virus/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11582196"
-			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11582196,11584236,11584536,11583545,11584063/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11582196,11584236,11584536,11583545,11584063"
-			data-video-carousel-label="Health"
-			data-video-carousel-content="The flu season is kicking off early across Canada, and the pressures are already hitting hospital systems. Health reporter Katherine Ward has more on what&#039;s driving case counts, and what people can do to protect themselves. "
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/udubcuoe0a-vup9x5cji5/AFF_FLU_SEASON_SPIKE_WARD_ONLINE_STILL.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Health</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Flu cases surge across Canada with H3N2 as the dominant strain of the virus </span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">What was Canada’s top weather story of 2025?</span></div>
 					</div>
 	</a>
 </li>
@@ -3412,17 +3413,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11584536"
+			data-displayinline-player-id="home-miniplayer-variant_11583557"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11584536,11583545,11584063,11582196/#autoplay&#038;stickyiframe=home-miniplayer-variant_11584536"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11583557,11582484,11584536,11584503/#autoplay&#038;stickyiframe=home-miniplayer-variant_11583557"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/News/365e7d10-dc91-11f0-a320-0242ac110004/THU_GN_FULL_SHOW_V2_181225.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/j2tj1dgnmg-fi00vipw2f/carney_ford.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Global National: Dec. 18'"
+					alt="Click to play video '&#8216;Best ad that&#8217;s ever run&#8217;: Ford&#8217;s defence of infamous anti-tariff ad makes Carney giggle'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3431,11 +3432,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11584536/global-national-dec-18-12/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11583557/best-ad-thats-ever-run-fords-defence-of-infamous-anti-tariff-ad-makes-carney-giggle/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+					<div class="c-posts__info c-posts__info--highlight">Politics</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Global National: Dec. 18</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">&#8216;Best ad that&#8217;s ever run&#8217;: Ford&#8217;s defence of infamous anti-tariff ad makes Carney giggle</span></div>
 		</a>
 	</div>
 </li>
@@ -3466,17 +3467,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11583545"
+			data-displayinline-player-id="home-miniplayer-variant_11582484"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11583545,11584063,11582196,11584536/#autoplay&#038;stickyiframe=home-miniplayer-variant_11583545"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11582484,11584536,11584503,11583557/#autoplay&#038;stickyiframe=home-miniplayer-variant_11582484"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/dq6klqtiwr-u4e8s3qmm1/site_carney.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/vbou89gzad-2j02dr38o9/IZRI_POPULATION_WED_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Carney says Canada-US trade deal on key sectors &#8216;unlikely&#8217; as CUSMA renewal looms'"
+					alt="Click to play video 'Canada sees biggest population decline on record: StatCan'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3485,11 +3486,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11583545/carney-says-canada-us-trade-deal-on-key-sectors-unlikely-as-cusma-renewal-looms/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11582484/canada-sees-biggest-population-decline-on-record-statcan/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Carney says Canada-US trade deal on key sectors &#8216;unlikely&#8217; as CUSMA renewal looms</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Canada sees biggest population decline on record: StatCan</span></div>
 		</a>
 	</div>
 </li>
@@ -3498,17 +3499,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11584063"
+			data-displayinline-player-id="home-miniplayer-variant_11584536"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11584063,11582196,11584536,11583545/#autoplay&#038;stickyiframe=home-miniplayer-variant_11584063"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11584536,11584503,11583557,11582484/#autoplay&#038;stickyiframe=home-miniplayer-variant_11584536"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/1u5jmqzl5t-6v9h2f366g/EPSTEIN.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/News/365e7d10-dc91-11f0-a320-0242ac110004/THU_GN_FULL_SHOW_V2_181225.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Democrats release new Epstein estate photos ahead of DOJ deadline'"
+					alt="Click to play video 'Global National: Dec. 18'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3517,11 +3518,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11584063/democrats-release-new-epstein-estate-photos-ahead-of-doj-deadline/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11584536/global-national-dec-18-12/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">News</div>
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Democrats release new Epstein estate photos ahead of DOJ deadline</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Global National: Dec. 18</span></div>
 		</a>
 	</div>
 </li>
@@ -3530,17 +3531,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11582196"
+			data-displayinline-player-id="home-miniplayer-variant_11584503"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11582196,11584536,11583545,11584063/#autoplay&#038;stickyiframe=home-miniplayer-variant_11582196"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11584503,11583557,11582484,11584536/#autoplay&#038;stickyiframe=home-miniplayer-variant_11584503"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/udubcuoe0a-vup9x5cji5/AFF_FLU_SEASON_SPIKE_WARD_ONLINE_STILL.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/0vjamow06e-absa35cg4m/THU_TOURIA_SITE_THUMB_181225.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Flu cases surge across Canada with H3N2 as the dominant strain of the virus '"
+					alt="Click to play video 'What was Canada’s top weather story of 2025?'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3549,11 +3550,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11582196/flu-cases-surge-across-canada-with-h3n2-as-the-dominant-strain-of-the-virus/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11584503/what-was-canadas-top-weather-story-of-2025/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Health</div>
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Flu cases surge across Canada with H3N2 as the dominant strain of the virus </span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">What was Canada’s top weather story of 2025?</span></div>
 		</a>
 	</div>
 </li>
@@ -3618,12 +3619,44 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11583567"
+				data-sophi-feature=latest-news			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11583567/trump-proposals-transgender-care-minors/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Trump administration proposals aim to ban transgender care for minors" data-title>Trump administration proposals aim to ban transgender care for minors</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						The U.S. Department of Health and Human Services on Thursday unveiled a series of regulatory actions designed to effectively ban gender-affirming care for minors.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
+																						<div class="c-posts__info">Dec 18</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/de70d7bc827668b25a0069cbcf0f67a36a739150154a3f654f270814d5402068_d9f6bd.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/de70d7bc827668b25a0069cbcf0f67a36a739150154a3f654f270814d5402068_d9f6bd.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/de70d7bc827668b25a0069cbcf0f67a36a739150154a3f654f270814d5402068_d9f6bd.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/de70d7bc827668b25a0069cbcf0f67a36a739150154a3f654f270814d5402068_d9f6bd.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
 				data-post-id="11583084"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11583084/ghislaine-maxwell-sex-trafficking-petition-to-overturn-conviction/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3655,7 +3688,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11581900/canada-record-population-drop/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3687,7 +3720,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11582077/new-flu-strain-h3n2-subclade-k-canada/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3719,7 +3752,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11582683/cusma-donald-trump-tariffs-canada-trade-greer-issues/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3741,38 +3774,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								width="720" height="480" alt="" 
 												srcset='' sizes=''
 								data-srcset="https://globalnews.ca/wp-content/uploads/2025/04/0e190366ba22801d7a53c151851a305c38574785b3f0dd791d4c0137f1133093.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/04/0e190366ba22801d7a53c151851a305c38574785b3f0dd791d4c0137f1133093.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/04/0e190366ba22801d7a53c151851a305c38574785b3f0dd791d4c0137f1133093.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11582009"
-				data-sophi-feature=latest-news			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11582009/pornhub-premium-data-hack-shinyhunters/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Pornhub premium users&#8217; data stolen by hackers demanding ransom" data-title>Pornhub premium users&#8217; data stolen by hackers demanding ransom</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						The hacking group ShinyHunters shared data with Reuters from what it said were users of Pornhub’s premium service, and said it was demanding ransom in Bitcoin to delete the data.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Tech</div>
-																						<div class="c-posts__info">Dec 17</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2024/06/20240614130636-851a7693e5e97010ba0fdeb8bde6be1624c1575bcce78eec262a8b6b1960ea0d_31eaf3-e1765998910797.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="429" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2024/06/20240614130636-851a7693e5e97010ba0fdeb8bde6be1624c1575bcce78eec262a8b6b1960ea0d_31eaf3-e1765998910797.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2024/06/20240614130636-851a7693e5e97010ba0fdeb8bde6be1624c1575bcce78eec262a8b6b1960ea0d_31eaf3-e1765998910797.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2024/06/20240614130636-851a7693e5e97010ba0fdeb8bde6be1624c1575bcce78eec262a8b6b1960ea0d_31eaf3-e1765998910797.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -3810,33 +3811,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11582159"
+				data-post-id="11582009"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
-					href="https://globalnews.ca/news/11582159/ukraine-russia-putin-europe-piglings/"
+					href="https://globalnews.ca/news/11582009/pornhub-premium-data-hack-shinyhunters/"
 					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Russia to seize more of Ukraine if Europe &#8216;piglings&#8217; reject demands: Putin" data-title>Russia to seize more of Ukraine if Europe &#8216;piglings&#8217; reject demands: Putin</span>
+					<span class="c-posts__headlineText" title="Pornhub premium users&#8217; data stolen by hackers demanding ransom" data-title>Pornhub premium users&#8217; data stolen by hackers demanding ransom</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						Putin said &#039;if the opposing side and its foreign patrons refuse to engage in substantive dialogue, Russia will achieve the liberation of its historical lands by military means.&#039;						</div>
+						The hacking group ShinyHunters shared data with Reuters from what it said were users of Pornhub’s premium service, and said it was demanding ransom in Bitcoin to delete the data.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">World</div>
+															<div class="c-posts__info c-posts__info--highlight">Tech</div>
 																						<div class="c-posts__info">Dec 17</div>
 													</div>
 					</div>
 					
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/769e71ef201a3b3e61fa59874dcc86ec255d38b7702830d7d805ec879ae60806_aa4ccb.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2024/06/20240614130636-851a7693e5e97010ba0fdeb8bde6be1624c1575bcce78eec262a8b6b1960ea0d_31eaf3-e1765998910797.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="429" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/769e71ef201a3b3e61fa59874dcc86ec255d38b7702830d7d805ec879ae60806_aa4ccb.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/769e71ef201a3b3e61fa59874dcc86ec255d38b7702830d7d805ec879ae60806_aa4ccb.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/769e71ef201a3b3e61fa59874dcc86ec255d38b7702830d7d805ec879ae60806_aa4ccb.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2024/06/20240614130636-851a7693e5e97010ba0fdeb8bde6be1624c1575bcce78eec262a8b6b1960ea0d_31eaf3-e1765998910797.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2024/06/20240614130636-851a7693e5e97010ba0fdeb8bde6be1624c1575bcce78eec262a8b6b1960ea0d_31eaf3-e1765998910797.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2024/06/20240614130636-851a7693e5e97010ba0fdeb8bde6be1624c1575bcce78eec262a8b6b1960ea0d_31eaf3-e1765998910797.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -3951,8 +3952,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-playlist-miniplayer"
 			data-displayinline-video-id="11584236"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11584236,11572729,11582484,11562373,11584236/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F25d07guz8q-dtjwrt949q%2Fbill_1.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
-    		    			data-displayinline-playlist="11584236,11572729,11582484,11562373,11584236"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11584236,11572729,11562373,11584236,11582196/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F25d07guz8q-dtjwrt949q%2Fbill_1.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
+    		    			data-displayinline-playlist="11584236,11572729,11562373,11584236,11582196"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Epstein files: Bill Gates and Steve Bannon in Democrats&#039; newly released photos&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;us-news&quot;],&quot;keywords&quot;:[&quot;bill-gates&quot;,&quot;epstein-files-epstein&quot;,&quot;short-clip&quot;]}}"
 			    		>
@@ -3999,7 +4000,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="U.S. News"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11584236,11572729,11582484,11562373,11584236/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11584236,11572729,11562373,11584236,11582196/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Epstein files: Bill Gates and Steve Bannon in Democrats&#8217; newly released photos</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4027,7 +4028,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Traffic"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11572729,11582484,11562373,11584236/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11572729,11562373,11584236,11582196/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">TTC, Metrolinx at odds over Eglinton LRT opening</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4048,34 +4049,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="3"
 	>
-	<a href="https://globalnews.ca/video/11582484/canada-sees-biggest-population-decline-on-record-statcan/"
-		title="Canada sees biggest population decline on record: StatCan"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11582484"
-		data-video-label="Canada"
-		data-video-player-id="home-playlist-miniplayer"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11582484,11562373,11584236,11572729/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Canada sees biggest population decline on record: StatCan</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/vbou89gzad-2j02dr38o9/IZRI_POPULATION_WED_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="4"
-	>
 	<a href="https://globalnews.ca/video/11562373/call-of-the-wilde-habs-down-jets/"
 		title="Call of the Wilde: Habs down Jets"
 		class="l-playlist__link c-posts__inner c-videoPlay"
@@ -4083,7 +4056,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Sports"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11562373,11584236,11572729,11582484/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11562373,11584236,11582196,11572729/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Call of the Wilde: Habs down Jets</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4102,7 +4075,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 <li class="c-posts__item l-playlist__item"
-			data-playlist-index="5"
+			data-playlist-index="4"
 	>
 	<a href="https://globalnews.ca/video/11584236/epstein-files-bill-gates-and-steve-bannon-in-democrats-newly-released-photos/"
 		title="Epstein files: Bill Gates and Steve Bannon in Democrats&#8217; newly released photos"
@@ -4111,7 +4084,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="U.S. News"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11584236,11572729,11582484,11562373/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11584236,11582196,11572729,11562373/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Epstein files: Bill Gates and Steve Bannon in Democrats&#8217; newly released photos</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4121,6 +4094,34 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					</div>
 		<div class="c-posts__media l-playlist__media">
 			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/25d07guz8q-dtjwrt949q/bill_1.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="5"
+	>
+	<a href="https://globalnews.ca/video/11582196/flu-cases-surge-across-canada-with-h3n2-as-the-dominant-strain-of-the-virus/"
+		title="Flu cases surge across Canada with H3N2 as the dominant strain of the virus "
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11582196"
+		data-video-label="Health"
+		data-video-player-id="home-playlist-miniplayer"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11582196,11572729,11562373,11584236/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Flu cases surge across Canada with H3N2 as the dominant strain of the virus </span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						Health					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/udubcuoe0a-vup9x5cji5/AFF_FLU_SEASON_SPIKE_WARD_ONLINE_STILL.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4147,8 +4148,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-playlist-miniplayer-variant"
 			data-displayinline-video-id="11584236"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11584236,11584536,11583545,11584063,11582196/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F25d07guz8q-dtjwrt949q%2Fbill_1.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
-    		    			data-displayinline-playlist="11584236,11584536,11583545,11584063,11582196"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11584236,11583557,11582484,11584536,11584503/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F25d07guz8q-dtjwrt949q%2Fbill_1.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
+    		    			data-displayinline-playlist="11584236,11583557,11582484,11584536,11584503"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Epstein files: Bill Gates and Steve Bannon in Democrats&#039; newly released photos&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;us-news&quot;],&quot;keywords&quot;:[&quot;bill-gates&quot;,&quot;epstein-files-epstein&quot;,&quot;short-clip&quot;]}}"
 			    		>
@@ -4195,7 +4196,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="U.S. News"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11584236,11584536,11583545,11584063,11582196/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11584236,11583557,11582484,11584536,11584503/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Epstein files: Bill Gates and Steve Bannon in Democrats&#8217; newly released photos</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4216,6 +4217,62 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="2"
 	>
+	<a href="https://globalnews.ca/video/11583557/best-ad-thats-ever-run-fords-defence-of-infamous-anti-tariff-ad-makes-carney-giggle/"
+		title="&#8216;Best ad that&#8217;s ever run&#8217;: Ford&#8217;s defence of infamous anti-tariff ad makes Carney giggle"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11583557"
+		data-video-label="Politics"
+		data-video-player-id="home-playlist-miniplayer-variant"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11583557,11582484,11584536,11584503/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">&#8216;Best ad that&#8217;s ever run&#8217;: Ford&#8217;s defence of infamous anti-tariff ad makes Carney giggle</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						Politics					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/j2tj1dgnmg-fi00vipw2f/carney_ford.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="3"
+	>
+	<a href="https://globalnews.ca/video/11582484/canada-sees-biggest-population-decline-on-record-statcan/"
+		title="Canada sees biggest population decline on record: StatCan"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11582484"
+		data-video-label="Canada"
+		data-video-player-id="home-playlist-miniplayer-variant"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11582484,11584536,11584503,11583557/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Canada sees biggest population decline on record: StatCan</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						Canada					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/vbou89gzad-2j02dr38o9/IZRI_POPULATION_WED_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="4"
+	>
 	<a href="https://globalnews.ca/video/11584536/global-national-dec-18-12/"
 		title="Global National: Dec. 18"
 		class="l-playlist__link c-posts__inner c-videoPlay"
@@ -4223,7 +4280,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11584536,11583545,11584063,11582196/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11584536,11584503,11583557,11582484/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Global National: Dec. 18</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4242,81 +4299,25 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 <li class="c-posts__item l-playlist__item"
-			data-playlist-index="3"
-	>
-	<a href="https://globalnews.ca/video/11583545/carney-says-canada-us-trade-deal-on-key-sectors-unlikely-as-cusma-renewal-looms/"
-		title="Carney says Canada-US trade deal on key sectors &#8216;unlikely&#8217; as CUSMA renewal looms"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11583545"
-		data-video-label="U.S. News"
-		data-video-player-id="home-playlist-miniplayer-variant"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11583545,11584063,11582196,11584536/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Carney says Canada-US trade deal on key sectors &#8216;unlikely&#8217; as CUSMA renewal looms</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						U.S. News					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/dq6klqtiwr-u4e8s3qmm1/site_carney.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="4"
-	>
-	<a href="https://globalnews.ca/video/11584063/democrats-release-new-epstein-estate-photos-ahead-of-doj-deadline/"
-		title="Democrats release new Epstein estate photos ahead of DOJ deadline"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11584063"
-		data-video-label="News"
-		data-video-player-id="home-playlist-miniplayer-variant"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11584063,11582196,11584536,11583545/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Democrats release new Epstein estate photos ahead of DOJ deadline</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						News					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/1u5jmqzl5t-6v9h2f366g/EPSTEIN.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
 			data-playlist-index="5"
 	>
-	<a href="https://globalnews.ca/video/11582196/flu-cases-surge-across-canada-with-h3n2-as-the-dominant-strain-of-the-virus/"
-		title="Flu cases surge across Canada with H3N2 as the dominant strain of the virus "
+	<a href="https://globalnews.ca/video/11584503/what-was-canadas-top-weather-story-of-2025/"
+		title="What was Canada’s top weather story of 2025?"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11582196"
-		data-video-label="Health"
+		data-video-id="11584503"
+		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11582196,11584536,11583545,11584063/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11584503,11583557,11582484,11584536/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Flu cases surge across Canada with H3N2 as the dominant strain of the virus </span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">What was Canada’s top weather story of 2025?</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Health					</div>
+						Canada					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/udubcuoe0a-vup9x5cji5/AFF_FLU_SEASON_SPIKE_WARD_ONLINE_STILL.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/0vjamow06e-absa35cg4m/THU_TOURIA_SITE_THUMB_181225.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4405,17 +4406,77 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="glide">
 					<div class="c-carousel__track glide__track" data-glide-el="track">
 										<ul class="c-posts c-posts--overImage c-posts--overImageSmall c-posts--horizontal glide__slides"
-			data-num-posts=10											>
+			data-num-posts=9											>
 	<li class="c-posts__item  glide__slide  "
 	data-container-id="stories-item-13"
-	data-post-id="11557034"
+	data-post-id="11563586"
 	data-slide-index="0"
+	data-caption="The best early Boxing Day deals from Amazon Canada"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/the-curator/11563586/amazon-canada-boxing-day-2025/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/Frame-372.png?w=336				data-width=336 data-height=252 data-ratio=0.67									loading="lazy"
+								width="336" height="252" alt="" 
+						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="The best early Boxing Day deals from Amazon Canada" data-title>The best early Boxing Day deals from Amazon Canada</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+											<div class="c-posts__info c-posts__info--highlight" data-label>The Curator</div>
+																								</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item  glide__slide  "
+	data-container-id="stories-item-14"
+	data-post-id="11578630"
+	data-slide-index="1"
+	data-caption="Brands you didn&#8217;t know you could shop on Amazon"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/the-curator/11578630/brands-you-didnt-know-you-could-shop-on-amazon/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/amazon.jpg?quality=65&#038;strip=all&#038;w=336				data-width=336 data-height=252 data-ratio=0.67									loading="lazy"
+								width="336" height="252" alt="" 
+						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Brands you didn&#8217;t know you could shop on Amazon" data-title>Brands you didn&#8217;t know you could shop on Amazon</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+											<div class="c-posts__info c-posts__info--highlight" data-label>The Curator</div>
+																								</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item  glide__slide  "
+	data-container-id="stories-item-15"
+	data-post-id="11557034"
+	data-slide-index="2"
 	data-caption="Beauty stocking stuffers that deliver major holiday magic"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11557034/best-beauty-stocking-stuffers-2025/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4437,15 +4498,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-14"
+	data-container-id="stories-item-16"
 	data-post-id="11582698"
-	data-slide-index="1"
+	data-slide-index="3"
 	data-caption="Ring in the New Year with these dazzling Amazon Canada accessories"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11582698/new-years-eve-accessories-amazon/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4467,15 +4528,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-15"
+	data-container-id="stories-item-17"
 	data-post-id="11581344"
-	data-slide-index="2"
+	data-slide-index="4"
 	data-caption="The ultimate &#8216;chocolate everything&#8217; gift guide"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11581344/best-chocolate-gifts-2025/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4497,15 +4558,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-16"
+	data-container-id="stories-item-18"
 	data-post-id="11581129"
-	data-slide-index="3"
+	data-slide-index="5"
 	data-caption="The best women’s swimsuits for a stylish seaside escape"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11581129/best-womens-bathing-suits/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4527,15 +4588,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-17"
+	data-container-id="stories-item-19"
 	data-post-id="11577922"
-	data-slide-index="4"
+	data-slide-index="6"
 	data-caption="Last minute gifting: Gift cards they&#8217;ll actually want"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11577922/last-minute-gifting-best-gift-cards-theyll-actually-want/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4557,15 +4618,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-18"
+	data-container-id="stories-item-20"
 	data-post-id="11577818"
-	data-slide-index="5"
+	data-slide-index="7"
 	data-caption="Top luggage deals available to buy right now"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11577818/top-luggage-deals-available-to-buy-right-now/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4587,15 +4648,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-19"
+	data-container-id="stories-item-21"
 	data-post-id="11546559"
-	data-slide-index="6"
+	data-slide-index="8"
 	data-caption="Foolproof gifts for everyone on your list this holiday"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11546559/best-foolproof-gifts-2025/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4607,96 +4668,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="Foolproof gifts for everyone on your list this holiday" data-title>Foolproof gifts for everyone on your list this holiday</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-											<div class="c-posts__info c-posts__info--highlight" data-label>The Curator</div>
-																								</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-20"
-	data-post-id="11571925"
-	data-slide-index="7"
-	data-caption="Best itty bitty Amazon gifts that make a big impression"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/the-curator/11571925/the-ultimate-amazon-itty-bitty-gift-guide/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/mini.jpg?quality=65&#038;strip=all&#038;w=336				data-width=336 data-height=252 data-ratio=0.67									loading="lazy"
-								width="336" height="252" alt="" 
-						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Best itty bitty Amazon gifts that make a big impression" data-title>Best itty bitty Amazon gifts that make a big impression</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-											<div class="c-posts__info c-posts__info--highlight" data-label>The Curator</div>
-																								</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-21"
-	data-post-id="11546571"
-	data-slide-index="8"
-	data-caption="Best post-holiday party cleanup tips"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/the-curator/11546571/post-holiday-party-cleanup-tips/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/11/GettyImages-1165530892-1.png?w=336				data-width=336 data-height=252 data-ratio=0.67									loading="lazy"
-								width="336" height="252" alt="" 
-						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Best post-holiday party cleanup tips" data-title>Best post-holiday party cleanup tips</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-											<div class="c-posts__info c-posts__info--highlight" data-label>The Curator</div>
-																								</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-22"
-	data-post-id="10913974"
-	data-slide-index="9"
-	data-caption="Cold weather clothing essentials for kids"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/the-curator/10913974/warm-weather-clothing-essentials-for-kids/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2024/12/warm-essentials-kids.png?w=336				data-width=336 data-height=252 data-ratio=0.67									loading="lazy"
-								width="336" height="252" alt="" 
-						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Cold weather clothing essentials for kids" data-title>Cold weather clothing essentials for kids</span>
 			</div>
 	
 						
@@ -4789,7 +4760,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							<ul class="c-posts c-posts--tile l-topics__posts c-posts--anchored c-posts--grid c-posts--gridList"
 			data-num-posts=3											>
 	<li class="c-posts__item    "
-	data-container-id="stories-item-23"
+	data-container-id="stories-item-22"
 	data-post-id="11582296"
 	data-slide-index=""
 	data-caption="EU proposal would ease cross-border abortion access for women facing bans"
@@ -4820,6 +4791,37 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
+	data-container-id="stories-item-23"
+	data-post-id="11582159"
+	data-slide-index=""
+	data-caption="Russia to seize more of Ukraine if Europe &#8216;piglings&#8217; reject demands: Putin"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11582159/ukraine-russia-putin-europe-piglings/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/10/769e71ef201a3b3e61fa59874dcc86ec255d38b7702830d7d805ec879ae60806_aa4ccb.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/769e71ef201a3b3e61fa59874dcc86ec255d38b7702830d7d805ec879ae60806_aa4ccb.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/769e71ef201a3b3e61fa59874dcc86ec255d38b7702830d7d805ec879ae60806_aa4ccb.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/769e71ef201a3b3e61fa59874dcc86ec255d38b7702830d7d805ec879ae60806_aa4ccb.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Russia to seize more of Ukraine if Europe &#8216;piglings&#8217; reject demands: Putin" data-title>Russia to seize more of Ukraine if Europe &#8216;piglings&#8217; reject demands: Putin</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >Dec 17</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
 	data-container-id="stories-item-24"
 	data-post-id="11581669"
 	data-slide-index=""
@@ -4828,7 +4830,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11581669/dinosaur-footprints-discovered-italy/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4841,37 +4843,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="Thousands of 210-million-year-old dinosaur footprints discovered in Italy" data-title>Thousands of 210-million-year-old dinosaur footprints discovered in Italy</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Dec 17</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-25"
-	data-post-id="11581424"
-	data-slide-index=""
-	data-caption="Trump orders blockade of &#8216;sanctioned oil tankers&#8217; into Venezuela"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11581424/trump-oil-tanker-blockade-venezuela/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/Venezuela-coast.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=509 data-ratio=0.67									loading="lazy"
-								width="720" height="509" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/Venezuela-coast.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/Venezuela-coast.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/Venezuela-coast.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Trump orders blockade of &#8216;sanctioned oil tankers&#8217; into Venezuela" data-title>Trump orders blockade of &#8216;sanctioned oil tankers&#8217; into Venezuela</span>
 			</div>
 	
 						
@@ -4966,94 +4937,94 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							<ul class="c-posts c-posts--tile l-topics__posts c-posts--anchored c-posts--grid c-posts--gridList"
 			data-num-posts=3											>
 	<li class="c-posts__item    "
-	data-container-id="stories-item-26"
-	data-post-id="9913127"
+	data-container-id="stories-item-25"
+	data-post-id="11584746"
 	data-slide-index=""
-	data-caption="WATCH: Global Okanagan News at 5:30 p.m. &#8211; Dec. 18"
+	data-caption="Alberta to launch trial in 2026 increasing some rural highway speeds to 120 km/h"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/9913127/watch-global-okanagan-news-at-530/"
+		href="https://globalnews.ca/news/11584746/alberta-highway-speed-trials-120-km/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/GLOBALNEWS_OKANAGAN-show-thumbnail-NEW.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="405" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/ebf1502c421c40aa5a59539a827859a94fb3b089ed3d1e9643a27d03c36e2d4f.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="458" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/GLOBALNEWS_OKANAGAN-show-thumbnail-NEW.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/GLOBALNEWS_OKANAGAN-show-thumbnail-NEW.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/GLOBALNEWS_OKANAGAN-show-thumbnail-NEW.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/ebf1502c421c40aa5a59539a827859a94fb3b089ed3d1e9643a27d03c36e2d4f.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/ebf1502c421c40aa5a59539a827859a94fb3b089ed3d1e9643a27d03c36e2d4f.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/ebf1502c421c40aa5a59539a827859a94fb3b089ed3d1e9643a27d03c36e2d4f.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="WATCH: Global Okanagan News at 5:30 p.m. &#8211; Dec. 18" data-title>WATCH: Global Okanagan News at 5:30 p.m. &#8211; Dec. 18</span>
+					<span class="c-posts__headlineText" title="Alberta to launch trial in 2026 increasing some rural highway speeds to 120 km/h" data-title>Alberta to launch trial in 2026 increasing some rural highway speeds to 120 km/h</span>
 			</div>
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >9 hours</div>
+																<div class="c-posts__info" data-date >26 mins</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-26"
+	data-post-id="11584730"
+	data-slide-index=""
+	data-caption="Family of Ontario man who went missing in Quebec ski town renews call for help"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11584730/missing-ontario-man-mont-tremblent-ski-trip/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/e9f62257e473e0c8c311d4cf7184d4c5bb320dfe9d5f214eba3e954c6411b832.jpg?quality=65&#038;strip=all&#038;w=569				data-width=569 data-height=720 data-ratio=0.67									loading="lazy"
+								width="569" height="720" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/e9f62257e473e0c8c311d4cf7184d4c5bb320dfe9d5f214eba3e954c6411b832.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/e9f62257e473e0c8c311d4cf7184d4c5bb320dfe9d5f214eba3e954c6411b832.jpg?quality=65&#038;strip=all&#038;w=443 443w,https://globalnews.ca/wp-content/uploads/2025/12/e9f62257e473e0c8c311d4cf7184d4c5bb320dfe9d5f214eba3e954c6411b832.jpg?quality=65&#038;strip=all&#038;w=569 569w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Family of Ontario man who went missing in Quebec ski town renews call for help" data-title>Family of Ontario man who went missing in Quebec ski town renews call for help</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >1 hour</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-27"
-	data-post-id="11584094"
+	data-post-id="11584724"
 	data-slide-index=""
-	data-caption="Cat seen locked out on Burnaby balcony &#8216;for months&#8217; now in care, BC SPCA says"
+	data-caption="Toronto—Quebec City high-speed rail could see dozens of daily trains: documents"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11584094/cat-locked-burnaby-balcony-months-in-care-bc-spca/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/cat-balcony3.jpg?quality=65&#038;strip=all&#038;w=540				data-width=540 data-height=720 data-ratio=0.67									loading="lazy"
-								width="540" height="720" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/cat-balcony3.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/cat-balcony3.jpg?quality=65&#038;strip=all&#038;w=420 420w,https://globalnews.ca/wp-content/uploads/2025/12/cat-balcony3.jpg?quality=65&#038;strip=all&#038;w=540 540w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Cat seen locked out on Burnaby balcony &#8216;for months&#8217; now in care, BC SPCA says" data-title>Cat seen locked out on Burnaby balcony &#8216;for months&#8217; now in care, BC SPCA says</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >9 hours</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-28"
-	data-post-id="11584139"
-	data-slide-index=""
-	data-caption="Saskatchewan digs out after significant Wednesday night snowfall"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11584139/saskatchewan-digs-out-wednesday-night-snow/"
+		href="https://globalnews.ca/news/11584724/toronto-quebec-city-high-speed-rail-trains/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/Shovelling.bmp?w=720													loading="lazy"
-								width="720" height="405" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/a0961409feb96142108c262b5965a58bffd0a858a9b30dab5cf6787733de938f_199892.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="463" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/Shovelling.bmp?w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/Shovelling.bmp?w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/Shovelling.bmp?w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/a0961409feb96142108c262b5965a58bffd0a858a9b30dab5cf6787733de938f_199892.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/a0961409feb96142108c262b5965a58bffd0a858a9b30dab5cf6787733de938f_199892.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/a0961409feb96142108c262b5965a58bffd0a858a9b30dab5cf6787733de938f_199892.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Saskatchewan digs out after significant Wednesday night snowfall" data-title>Saskatchewan digs out after significant Wednesday night snowfall</span>
+					<span class="c-posts__headlineText" title="Toronto—Quebec City high-speed rail could see dozens of daily trains: documents" data-title>Toronto—Quebec City high-speed rail could see dozens of daily trains: documents</span>
 			</div>
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >10 hours</div>
+																<div class="c-posts__info" data-date >1 hour</div>
 																			</div>
 									</div>
 		</a>
@@ -5122,7 +5093,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							<ul class="c-posts c-posts--tile l-topics__posts c-posts--anchored c-posts--grid c-posts--gridList"
 			data-num-posts=3											>
 	<li class="c-posts__item    "
-	data-container-id="stories-item-29"
+	data-container-id="stories-item-28"
 	data-post-id="11583871"
 	data-slide-index=""
 	data-caption="Quebec Health Minister Christian Dubé says he&#8217;s resigning from cabinet"
@@ -5147,13 +5118,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >11 hours</div>
+																<div class="c-posts__info" data-date >Dec 18</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-30"
+	data-container-id="stories-item-29"
 	data-post-id="11584111"
 	data-slide-index=""
 	data-caption="Ontario integrity commissioner launches investigation into Ford&#8217;s labour minister"
@@ -5178,13 +5149,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >11 hours</div>
+																<div class="c-posts__info" data-date >Dec 18</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-31"
+	data-container-id="stories-item-30"
 	data-post-id="11583912"
 	data-slide-index=""
 	data-caption="Hockey, table tennis to go ahead in Alberta after figure skating opts out over trans law"
@@ -5278,7 +5249,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							<ul class="c-posts c-posts--tile l-topics__posts c-posts--anchored c-posts--grid c-posts--gridList"
 			data-num-posts=3											>
 	<li class="c-posts__item    "
-	data-container-id="stories-item-32"
+	data-container-id="stories-item-31"
 	data-post-id="11580796"
 	data-slide-index=""
 	data-caption="Buy now, pay later plans may seem attractive but come at a cost, warn experts"
@@ -5309,7 +5280,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-33"
+	data-container-id="stories-item-32"
 	data-post-id="11576077"
 	data-slide-index=""
 	data-caption="Manitoba ranks as most generous province as fewer Canadians donate to charity"
@@ -5340,7 +5311,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-34"
+	data-container-id="stories-item-33"
 	data-post-id="11575899"
 	data-slide-index=""
 	data-caption="WestJet pauses installing non-reclining seats after blowback — for now"
@@ -5455,7 +5426,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							<ul class="c-posts c-posts--tile l-topics__posts c-posts--anchored c-posts--grid c-posts--gridList"
 			data-num-posts=3											>
 	<li class="c-posts__item    "
-	data-container-id="stories-item-35"
+	data-container-id="stories-item-34"
 	data-post-id="11583554"
 	data-slide-index=""
 	data-caption="Dr. Vivien Suttorp named Alberta’s permanent chief medical officer of health"
@@ -5486,38 +5457,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-36"
-	data-post-id="11583567"
-	data-slide-index=""
-	data-caption="Trump administration proposals aim to ban transgender care for minors"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11583567/trump-proposals-transgender-care-minors/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/de70d7bc827668b25a0069cbcf0f67a36a739150154a3f654f270814d5402068_d9f6bd.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/de70d7bc827668b25a0069cbcf0f67a36a739150154a3f654f270814d5402068_d9f6bd.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/de70d7bc827668b25a0069cbcf0f67a36a739150154a3f654f270814d5402068_d9f6bd.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/de70d7bc827668b25a0069cbcf0f67a36a739150154a3f654f270814d5402068_d9f6bd.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Trump administration proposals aim to ban transgender care for minors" data-title>Trump administration proposals aim to ban transgender care for minors</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Dec 18</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-37"
+	data-container-id="stories-item-35"
 	data-post-id="11582599"
 	data-slide-index=""
 	data-caption="Woman with blood disorder finds B.C. is only province not to cover &#8216;life-changing&#8217; drug"
@@ -5525,7 +5465,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11582599/woman-rare-blood-disorder-bc-only-province-not-to-cover-life-changing-drug/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5543,6 +5483,37 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about ">
 																<div class="c-posts__info" data-date >Dec 18</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-36"
+	data-post-id="11582508"
+	data-slide-index=""
+	data-caption="U.S. may soon reclassify marijuana to allow medical research. What to know"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11582508/us-marijuana-reclassification-trump-explainer/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/11/6c9965455a2d2188bd6508a373d0f1c3c5b1c0d26f88bfa2715b73b527121534.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=510 data-ratio=0.67									loading="lazy"
+								width="720" height="510" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/6c9965455a2d2188bd6508a373d0f1c3c5b1c0d26f88bfa2715b73b527121534.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/6c9965455a2d2188bd6508a373d0f1c3c5b1c0d26f88bfa2715b73b527121534.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/6c9965455a2d2188bd6508a373d0f1c3c5b1c0d26f88bfa2715b73b527121534.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="U.S. may soon reclassify marijuana to allow medical research. What to know" data-title>U.S. may soon reclassify marijuana to allow medical research. What to know</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >Dec 17</div>
 																			</div>
 									</div>
 		</a>
@@ -5611,7 +5582,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							<ul class="c-posts c-posts--tile l-topics__posts c-posts--anchored c-posts--grid c-posts--gridList"
 			data-num-posts=3											>
 	<li class="c-posts__item    "
-	data-container-id="stories-item-38"
+	data-container-id="stories-item-37"
 	data-post-id="11581897"
 	data-slide-index=""
 	data-caption="The Oscars are moving to YouTube in 2029"
@@ -5642,7 +5613,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-39"
+	data-container-id="stories-item-38"
 	data-post-id="11581527"
 	data-slide-index=""
 	data-caption="Mick Foley parts ways with WWE over its &#8216;close relationship&#8217; with Trump"
@@ -5673,7 +5644,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-40"
+	data-container-id="stories-item-39"
 	data-post-id="11581689"
 	data-slide-index=""
 	data-caption="Rob Reiner&#8217;s son Nick appears in court on 2 counts of murder"
@@ -5767,7 +5738,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							<ul class="c-posts c-posts--tile l-topics__posts c-posts--anchored c-posts--grid c-posts--gridList"
 			data-num-posts=3											>
 	<li class="c-posts__item    "
-	data-container-id="stories-item-41"
+	data-container-id="stories-item-40"
 	data-post-id="11576118"
 	data-slide-index=""
 	data-caption="Recipe: Spice rubbed prawns with tequila tomatoes"
@@ -5798,7 +5769,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-42"
+	data-container-id="stories-item-41"
 	data-post-id="11575083"
 	data-slide-index=""
 	data-caption="Hanukkah begins this weekend. What to know and how it’s celebrated"
@@ -5829,7 +5800,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-43"
+	data-container-id="stories-item-42"
 	data-post-id="11571139"
 	data-slide-index=""
 	data-caption="Regina police Cops and Kids reunite for another season of holiday shopping"
@@ -5944,7 +5915,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							<ul class="c-posts c-posts--tile l-topics__posts c-posts--anchored c-posts--grid c-posts--gridList"
 			data-num-posts=3											>
 	<li class="c-posts__item    "
-	data-container-id="stories-item-44"
+	data-container-id="stories-item-43"
 	data-post-id="11570704"
 	data-slide-index=""
 	data-caption="Amendments or repeal of DRIPA would have negative impact on reconciliation: B.C. chief"
@@ -5975,7 +5946,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-45"
+	data-container-id="stories-item-44"
 	data-post-id="11568633"
 	data-slide-index=""
 	data-caption="BC Conservatives want David Eby to reconvene legislature, repeal DRIPA"
@@ -6006,7 +5977,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-46"
+	data-container-id="stories-item-45"
 	data-post-id="11564301"
 	data-slide-index=""
 	data-caption="2 B.C. First Nations say government is rushing mine expansion without proper review"
@@ -6100,7 +6071,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							<ul class="c-posts c-posts--tile l-topics__posts c-posts--anchored c-posts--grid c-posts--gridList"
 			data-num-posts=3											>
 	<li class="c-posts__item    "
-	data-container-id="stories-item-47"
+	data-container-id="stories-item-46"
 	data-post-id="11583776"
 	data-slide-index=""
 	data-caption="Call of the Wilde: Canadiens dominate Blackhawks as Montreal bests Chicago 4-1"
@@ -6125,13 +6096,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >7 hours</div>
+																<div class="c-posts__info" data-date >10 hours</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-48"
+	data-container-id="stories-item-47"
 	data-post-id="11584128"
 	data-slide-index=""
 	data-caption="Winnipeg Blue Bombers re-sign Demski, Nichols to contract extensions"
@@ -6156,13 +6127,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >11 hours</div>
+																<div class="c-posts__info" data-date >Dec 18</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-49"
+	data-container-id="stories-item-48"
 	data-post-id="11583597"
 	data-slide-index=""
 	data-caption="Bombers re-sign veteran stars Demski, Nichols"
@@ -6509,7 +6480,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			<script async src="//static.chartbeat.com/js/chartbeat_mab.js"></script>
 			<!-- Adobe Analytics code version: JS-2.6.0. -->
 		<script type="text/javascript">
-			var gnPageData = {"context_data":{"hourofday":"5","dayofweek":"Friday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
+			var gnPageData = {"context_data":{"hourofday":"7","dayofweek":"Friday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
 		</script>
 				<!-- End Adobe Analytics code -->
 			<script>
@@ -6558,5 +6529,5 @@ var GN_OneSignalSettings = {"isCurator":"","appId":"8beb7996-b996-4ce8-a474-d488
 		
 		<div class="l-dynamicElement"></div>
 
-			</body>
+			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75660ba8f4","applicationID":"418684855","transactionName":"Z1BWZxdTWkAHVExRXF4adVARW1tdSV9XVVY=","queueTime":0,"applicationTime":502,"atts":"SxdBEV9JSR9EVhoCSE1I","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
