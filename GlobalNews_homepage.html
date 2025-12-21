@@ -184,8 +184,7 @@
         }
     </script>
     	<!-- Meta Tags -->
-	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"75660ba8f4",applicationID:"418684855",browserID:"419993820"};;/*! For license information please see nr-loader-rum-1.306.0.min.js.LICENSE.txt */
-(()=>{var e,t,r={122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let o in a)if(void 0!==e[o])try{if(null===e[o]){r[o]=null;continue}Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):"object"==typeof e[o]&&"object"==typeof t[o]?r[o]=i(e[o],t[o]):r[o]=e[o]}catch(e){r[o]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>c,RI:()=>i,WN:()=>u,bv:()=>a,eN:()=>l,gm:()=>o,mw:()=>s,sb:()=>d});var n=r(863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),s=Boolean("hidden"===o?.document?.visibilityState),c=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=c&&"undefined"==typeof SharedWorker,u=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)()),l=()=>"undefined"!=typeof PerformanceNavigationTiming&&o?.performance?.getEntriesByType("navigation")?.[0]?.responseStart},163:(e,t,r)=>{"use strict";r.d(t,{j:()=>E});var n=r(384),i=r(741);var a=r(555);r(860).K7.genericEvents;const o="experimental.resources",s="register",c=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(614),u=r(944),l=r(122);const f="[data-nr-mask]",g=e=>(0,l.a)(e,(()=>{const e={feature_flags:[],experimental:{allow_registered_children:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{get allow_registered_children(){return e.feature_flags.includes(s)||e.experimental.allow_registered_children},set allow_registered_children(t){e.experimental.allow_registered_children=t},duplicate_registered_data:!1},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(o)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:d.wk,inactiveMs:d.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){c(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,u.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){c(t)?e.block_selector+=",".concat(t):""!==t&&(0,u.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,u.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},spa:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var p=r(154),m=r(324);let h=0;const v={buildEnv:m.F3,distMethod:m.Xs,version:m.xv,originTime:p.WN},b={consented:!1},y={appMetadata:{},get consented(){return this.session?.state?.consent||b.consented},set consented(e){b.consented=e},customTransaction:void 0,denyList:void 0,disabled:!1,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++h}},_=e=>{const t=(0,l.a)(e,y),r=Object.keys(v).reduce((e,t)=>(e[t]={value:v[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)};var w=r(701);const x=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var S=r(836),k=r(241);const R={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A=e=>(0,l.a)(e,R),T=new Set;function E(e,t={},r,o){let{init:s,info:c,loader_config:d,runtime:u={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();s=e.init,c=e.info,d=e.loader_config}e.init=g(s||{}),e.loader_config=A(d||{}),c.jsAttributes??={},p.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,a.D)(c);const f=e.init,m=[c.beacon,c.errorBeacon];T.has(e.agentIdentifier)||(f.proxy.assets&&(x(f.proxy.assets),m.push(f.proxy.assets)),f.proxy.beacon&&m.push(f.proxy.beacon),e.beacons=[...m],function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach(r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let a=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return a?a(...t):n})})}(e),(0,n.US)("activatedFeatures",w.B),e.runSoftNavOverSpa&&=!0===f.soft_navigations.enabled&&f.feature_flags.includes("soft_nav")),u.denyList=[...f.ajax.deny_list||[],...f.ajax.block_internal?m:[]],u.ptid=e.agentIdentifier,u.loaderType=r,e.runtime=_(u),T.has(e.agentIdentifier)||(e.ee=S.ee.get(e.agentIdentifier),e.exposed=l,(0,k.W)({agentIdentifier:e.agentIdentifier,drained:!!w.B?.[e.agentIdentifier],type:"lifecycle",name:"initialize",feature:void 0,data:e.config})),T.add(e.agentIdentifier)}},234:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(836),i=r(687);class a{constructor(e,t){this.agentIdentifier=e,this.ee=n.ee.get(e),this.featureName=t,this.blocked=!1}deregisterDrain(){(0,i.x3)(this.agentIdentifier,this.featureName)}}},241:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(154);const i="newrelic";function a(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>d,BL:()=>s,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>h,Pl:()=>n,Pv:()=>k,Tb:()=>l,U2:()=>a,V1:()=>S,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>o,nb:()=>m,o5:()=>u});const n="api-",i="addPageAction",a="addToTrace",o="addRelease",s="finished",c="interaction",d="log",u="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",m="setApplicationVersion",h="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",S="measure",k="consent"},289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>o,Qr:()=>c,sB:()=>s});var n=r(878),i=r(389);function a(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(a())return e();const r=(0,i.J)(e),o=setInterval(()=>{a()&&(clearInterval(o),r())},500);(0,n.sp)("load",r,t)}function s(e){if(a())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(a())return e();(0,n.sp)("popstate",e)}},324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>a,xv:()=>n});const n="1.306.0",i="PROD",a="CDN"},374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>o,US:()=>u,Zm:()=>s,bQ:()=>d,dV:()=>c,pV:()=>l});var n=r(154),i=r(863),a=r(910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function s(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function c(){let e=s();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,a.i)(...Object.values(e.o))),e}function d(e,t){let r=s();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function u(e,t){s()[e]=t}function l(){return function(){let e=s();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=s();const t=e.init||{};e.init={...t}}(),c(),function(){let e=s();const t=e.loader_config||{};e.loader_config={...t}}(),s()}},389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},555:(e,t,r)=>{"use strict";r.d(t,{D:()=>s,f:()=>o});var n=r(384),i=r(122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function o(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const s=e=>(0,i.a)(e,a)},566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>s,bz:()=>o});var n=r(154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map(e=>"x"===e?a(t,r++).toString(16):"y"===e?(3&a()|8).toString(16):e).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const o=[];for(var s=0;s<e;s++)o.push(a(r,i++).toString(16));return o.join("")}},606:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(908);a.on=o;var i=a.handlers={};function a(e,t,r,a){o(a||n.d,i,e,t,r)}function o(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var o=t[a]=t[a]||{};(o[r]=o[r]||[]).push([e,i])}},607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(566).bz)()},614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>o,H3:()=>n,g:()=>d,iL:()=>c,tS:()=>s,uh:()=>i,wk:()=>a});const n="NRBA",i="SESSION",a=144e5,o=18e5,s={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},d={OFF:0,FULL:1,ERROR:2}},630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>d,Ze:()=>f,x3:()=>u});var n=r(241),i=r(836),a=r(606),o=r(860),s=r(646);const c={};function d(e,t){const r={staged:!1,priority:o.P3[t]||0};l(e),c[e].get(t)||c[e].set(t,r)}function u(e,t){e&&c[e]&&(c[e].get(t)&&c[e].delete(t),p(e,t,!1),c[e].size&&g(e))}function l(e){if(!e)throw new Error("agentIdentifier required");c[e]||(c[e]=new Map)}function f(e="",t="feature",r=!1){if(l(e),!e||!c[e].get(t)||r)return p(e,t);c[e].get(t).staged=!0,g(e)}function g(e){const t=Array.from(c[e]);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{c[e].delete(t),p(e,t)}))}function p(e,t,r=!0){const o=e?i.ee.get(e):i.ee,c=a.i.handlers;if(!o.aborted&&o.backlog&&c){if((0,n.W)({agentIdentifier:e,type:"lifecycle",name:"drain",feature:t}),r){const e=o.backlog[t],r=c[t];if(r){for(let t=0;e&&t<e.length;++t)m(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0]?.context()instanceof s.y&&t[0].on(e,t[1])})})}}o.isolatedBacklog||delete c[t],o.backlog[t]=null,o.emit("drain-"+t,[])}}function m(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}})}},699:(e,t,r)=>{"use strict";r.d(t,{It:()=>a,KC:()=>s,No:()=>i,qh:()=>o});var n=r(860);const i=16e3,a=1e6,o="SESSION_ERROR",s={[n.K7.logging]:!0,[n.K7.genericEvents]:!1,[n.K7.jserrors]:!1,[n.K7.ajax]:!1}},701:(e,t,r)=>{"use strict";r.d(t,{B:()=>a,t:()=>o});var n=r(241);const i=new Set,a={};function o(e,t){const r=t.agentIdentifier;a[r]??={},e&&"object"==typeof e&&(i.has(r)||(t.ee.emit("rumresp",[e]),a[r]=e,i.add(r),(0,n.W)({agentIdentifier:r,loaded:!0,drained:!0,type:"lifecycle",name:"load",feature:void 0,data:e})))}},741:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e){return this.#e(i.Dl,e)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},836:(e,t,r)=>{"use strict";r.d(t,{P:()=>s,ee:()=>c});var n=r(384),i=r(990),a=r(646),o=r(607);const s="nr@context:".concat(o.W),c=function e(t,r){var n={},o={},u={},l=!1;try{l=16===r.length&&d.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var s=g(n);m(e).forEach(e=>{e.apply(s,r)});var d=v()[o[e]];d&&d.push([f,e,r,s]);return s},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{o[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[o[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,s,()=>new a.y(s)):new a.y(s)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return u[t]=u[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),d=(0,n.Zm)();d.ee||(d.ee=c)},843:(e,t,r)=>{"use strict";r.d(t,{G:()=>a,u:()=>i});var n=r(878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function a(e,t,r){(0,n.sp)("pagehide",e,t,r)}},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>u,K7:()=>c,P3:()=>d,XX:()=>i,Yy:()=>s,df:()=>a,qY:()=>n,v4:()=>o});const n="events",i="jserrors",a="browser/blobs",o="rum",s="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},d={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.spa]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.softNav]:8,[c.sessionReplay]:9,[c.logging]:10,[c.genericEvents]:11},u={[c.pageViewEvent]:o,[c.pageViewTiming]:n,[c.ajax]:n,[c.spa]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:a,[c.sessionReplay]:a,[c.logging]:s,[c.genericEvents]:"ins"}},863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},910:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),a=t.includes("nrWrapper");return r||a||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({agentIdentifier:null,drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>s,rs:()=>i,xV:()=>o,z_:()=>a});const n=r(860).K7.metrics,i="sm",a="cm",o="storeSupportabilityMetrics",s="storeEventMetrics"},990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var a=n[e]={exports:{}};return r[e](a,a.exports,i),a.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce((t,r)=>(i.f[r](e,t),t),[])),i.u=e=>"nr-rum-1.306.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.306.0.PROD:",i.l=(r,n,a,o)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==a)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+a){s=l;break}}if(!s){c=!0;var f={296:"sha512-XHJAyYwsxAD4jnOFenBf2aq49/pv28jKOJKs7YGQhagYYI2Zk8nHflZPdd7WiilkmEkgIZQEFX4f1AJMoyzKwA=="};(s=document.createElement("script")).charset="utf-8",i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+a),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[o]&&(s.integrity=f[o])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach(e=>e(n)),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var a=new Promise((r,i)=>n=e[t]=[r,i]);r.push(n[2]=a);var o=i.p+i.u(t),s=new Error;i.l(o,r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var a=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed: ("+a+": "+o+")",s.name="ChunkLoadError",s.type=a,s.request=o,n[1](s)}},"chunk-"+t,t)}};var t=(t,r)=>{var n,a,[o,s,c]=r,d=0;if(o.some(t=>0!==e[t])){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);d<o.length;d++)a=o[d],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},r=self["webpackChunk:NRBA-1.306.0.PROD"]=self["webpackChunk:NRBA-1.306.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(374);var e=i(566),t=i(741);class r extends t.W{agentIdentifier=(0,e.LA)(16)}var n=i(860);const a=Object.values(n.K7);var o=i(163);var s=i(908),c=i(863),d=i(261),u=i(241),l=i(944),f=i(701),g=i(969);function p(e,t,i,a){const o=a||i;!o||o[e]&&o[e]!==r.prototype[e]||(o[e]=function(){(0,s.p)(g.xV,["API/"+e+"/called"],void 0,n.K7.metrics,i.ee),(0,u.W)({agentIdentifier:i.agentIdentifier,drained:!!f.B?.[i.agentIdentifier],type:"data",name:"api",feature:d.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,l.R)(23,e)}})}function m(e,t,r,n,i){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(i||null===r)&&(0,s.p)(d.Pl+n,[(0,c.t)(),t,r],void 0,"session",e.ee)}var h=i(687),v=i(234),b=i(289),y=i(154),_=i(384);const w=e=>y.RI&&!0===e?.privacy.cookies_enabled;function x(e){return!!(0,_.dV)().o.MO&&w(e)&&!0===e?.session_trace.enabled}var S=i(389),k=i(699);class R extends v.W{constructor(e,t){super(e.agentIdentifier,t),this.agentRef=e,this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,S.J)(()=>{(0,h.Ak)(e.agentIdentifier,this.featureName),t()}))}):(0,h.Ak)(e.agentIdentifier,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;const n=async()=>{let n;await this.deferred;try{if(w(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,305));n=t(e)}}catch(e){(0,l.R)(20,e),this.ee.emit("internal-error",[e]),(0,s.p)(k.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#t(this.featureName,n,e.init))return(0,h.Ze)(this.agentIdentifier,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,l.R)(34,e),this.abortHandler?.(),(0,h.Ze)(this.agentIdentifier,this.featureName,!0),this.loadedSuccessfully(!1),this.ee&&this.ee.abort()}};y.RI?(0,b.GG)(()=>n(),!0):n()}#t(e,t,r){if(this.blocked)return!1;switch(e){case n.K7.sessionReplay:return x(r)&&!!t;case n.K7.sessionTrace:return!!t;default:return!0}}}var A=i(630),T=i(614);class E extends R{static featureName=A.T;constructor(e){var t;super(e,A.T),this.setupInspectionEvents(e.agentIdentifier),t=e,p(d.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,s.p)(d.Pl+d.Fw,[(0,c.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>i.e(296).then(i.bind(i,943)))}setupInspectionEvents(e){const t=(t,r)=>{t&&(0,u.W)({agentIdentifier:e,timeStamp:t.timeStamp,loaded:"complete"===t.target.readyState,type:"window",name:r,data:t.target.location+""})};(0,b.sB)(e=>{t(e,"DOMContentLoaded")}),(0,b.GG)(e=>{t(e,"load")}),(0,b.Qr)(e=>{t(e,"navigate")}),this.ee.on(T.tS.UPDATE,(t,r)=>{(0,u.W)({agentIdentifier:e,type:"lifecycle",name:"session",data:r})})}}var N=i(843),I=i(782);class j extends R{static featureName=I.T;constructor(e){super(e,I.T),y.RI&&((0,N.u)(()=>(0,s.p)("docHidden",[(0,c.t)()],void 0,I.T,this.ee),!0),(0,N.G)(()=>(0,s.p)("winPagehide",[(0,c.t)()],void 0,I.T,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,117))))}}class P extends R{static featureName=g.TZ;constructor(e){super(e,g.TZ),y.RI&&document.addEventListener("securitypolicyviolation",e=>{(0,s.p)(g.xV,["Generic/CSPViolation/Detected"],void 0,this.featureName,this.ee)}),this.importAggregator(e,()=>i.e(296).then(i.bind(i,623)))}}new class extends r{constructor(e){var t;(super(),y.gm)?(this.features={},(0,_.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(E),this.runSoftNavOverSpa=[...this.desiredFeatures].some(e=>e.featureName===n.K7.softNav),(0,o.j)(this,e,e.loaderType||"agent"),t=this,p(d.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return m(t,e,r,d.cD,n);(0,l.R)(40,typeof r)}else(0,l.R)(39,typeof e)},t),function(e){p(d.Dl,function(t){if("string"==typeof t||null===t)return m(e,"enduser.id",t,d.Dl,!0);(0,l.R)(41,typeof t)},e)}(this),function(e){p(d.nb,function(t){if("string"==typeof t||null===t)return m(e,"application.version",t,d.nb,!1);(0,l.R)(42,typeof t)},e)}(this),function(e){p(d.d3,function(){e.ee.emit("manual-start-all")},e)}(this),function(e){p(d.Pv,function(t=!0){if("boolean"==typeof t){if((0,s.p)(d.Pl+d.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum()})}}else(0,l.R)(65,typeof t)},e)}(this),this.run()):(0,l.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return a.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),t=[...this.desiredFeatures];t.sort((e,t)=>n.P3[e.featureName]-n.P3[t.featureName]),t.forEach(t=>{if(!e[t.featureName]&&t.featureName!==n.K7.pageViewEvent)return;if(this.runSoftNavOverSpa&&t.featureName===n.K7.spa)return;if(!this.runSoftNavOverSpa&&t.featureName===n.K7.softNav)return;const r=function(e){switch(e){case n.K7.ajax:return[n.K7.jserrors];case n.K7.sessionTrace:return[n.K7.ajax,n.K7.pageViewEvent];case n.K7.sessionReplay:return[n.K7.sessionTrace];case n.K7.pageViewTiming:return[n.K7.pageViewEvent];default:return[]}}(t.featureName).filter(e=>!(e in this.features));r.length>0&&(0,l.R)(36,{targetFeature:t.featureName,missingDependencies:r}),this.features[t.featureName]=new t(this)})}catch(e){(0,l.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,_.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}({features:[E,j,P],loaderType:"lite"})})()})();</script>
+	<meta charset="UTF-8">
 	<meta name="theme-color" content="#231F20">
 
 			<meta name="msvalidate.01" content="9E5C74811CA48CCCC61A2CF3C0A1BA6A">
@@ -474,7 +473,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 
 				
 
-				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"5","weatherprec":"x","weathercode":"26","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
+				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"5","weatherprec":"x","weathercode":"27","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
 		</script>
 			<script>
 				// Load the APS JavaScript Library
@@ -1517,10 +1516,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay=""
 						data-displayinline-featured="false"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_11586463_694746f8be389"
+			data-displayinline-player-id="miniplayer_11586463_6947688a9772d"
 			data-displayinline-video-id="11586463"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/11586463/#autoplay&#038;stickyiframe=miniplayer_11586463_694746f8be389"
+    		data-displayinline="https://globalnews.ca/video/embed/11586463/#autoplay&#038;stickyiframe=miniplayer_11586463_6947688a9772d"
     									data-displayinline-container="stories-1-0"
 										data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;&#039;This is a war now&#039;: Giuffre family seeks accountability over redacted\u00a0Epstein\u00a0files&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;],&quot;keywords&quot;:[&quot;epstein-files&quot;,&quot;giuffre-family&quot;,&quot;international&quot;,&quot;short-clip&quot;,&quot;top-news&quot;]}}"
@@ -1555,7 +1554,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 									More than a dozen Epstein-related files vanished from the U.S. Justice Department’s website within a day, with no explanation, raising transparency concerns.									</div>
 																<div class="c-posts__about c-posts__about--multiple">
 																		<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
-																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
+																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">4 hours</div>
 																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">6 min read</div>
 																	</div>
 														</a>
@@ -1614,7 +1613,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			</div>
 								<div class="c-posts__about c-posts__about--multiple">
 																<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">4 hours</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">7 hours</div>
 																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 															</div>
 						</div>
@@ -1665,33 +1664,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-2"
-	data-post-id="11585139"
+	data-post-id="11584809"
 	data-slide-index=""
-	data-caption="Democrats mock Trump&#8217;s Patriot Games, compare it to &#8216;The Hunger Games&#8217;"
+	data-caption="&#8216;Beyond comprehension&#8217;: Maria Shriver derides Trump Kennedy Center renaming"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11585139/donald-trump-patriot-games-hunger-games/"
+		href="https://globalnews.ca/news/11584809/maria-shriver-donald-trump-kennedy-center-renaming/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
-		<div class="c-posts__media "  >
+		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/Trump-white-house-address.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/Untitled-design-59.png?w=720				data-width=720 data-height=563 data-ratio=0.67									loading="lazy"
+								width="720" height="563" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/Trump-white-house-address.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/Trump-white-house-address.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/Trump-white-house-address.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/Untitled-design-59.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/Untitled-design-59.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/Untitled-design-59.png?w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Democrats mock Trump&#8217;s Patriot Games, compare it to &#8216;The Hunger Games&#8217;" data-title>Democrats mock Trump&#8217;s Patriot Games, compare it to &#8216;The Hunger Games&#8217;</span>
+					<span class="c-posts__headlineText" title="&#8216;Beyond comprehension&#8217;: Maria Shriver derides Trump Kennedy Center renaming" data-title>&#8216;Beyond comprehension&#8217;: Maria Shriver derides Trump Kennedy Center renaming</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Trending</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Dec 19</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1720,39 +1719,105 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-3"
-	data-post-id="11584809"
+	data-post-id="11585139"
 	data-slide-index=""
-	data-caption="&#8216;Beyond comprehension&#8217;: Maria Shriver derides Trump Kennedy Center renaming"
+	data-caption="Democrats mock Trump&#8217;s Patriot Games, compare it to &#8216;The Hunger Games&#8217;"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11584809/maria-shriver-donald-trump-kennedy-center-renaming/"
+		href="https://globalnews.ca/news/11585139/donald-trump-patriot-games-hunger-games/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
-		<div class="c-posts__media  c-imageContainer"  >
+		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/Untitled-design-59.png?w=720				data-width=720 data-height=563 data-ratio=0.67									loading="lazy"
-								width="720" height="563" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/Trump-white-house-address.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/Untitled-design-59.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/Untitled-design-59.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/Untitled-design-59.png?w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/Trump-white-house-address.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/Trump-white-house-address.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/Trump-white-house-address.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="&#8216;Beyond comprehension&#8217;: Maria Shriver derides Trump Kennedy Center renaming" data-title>&#8216;Beyond comprehension&#8217;: Maria Shriver derides Trump Kennedy Center renaming</span>
+					<span class="c-posts__headlineText" title="Democrats mock Trump&#8217;s Patriot Games, compare it to &#8216;The Hunger Games&#8217;" data-title>Democrats mock Trump&#8217;s Patriot Games, compare it to &#8216;The Hunger Games&#8217;</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Trending</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Dec 19</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-4"
+	data-post-id="11586390"
+	data-slide-index=""
+	data-caption="Paraplegic engineer becomes the first wheelchair user to blast into space"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11586390/us-sci-blue-origin-launch/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/6d6ac723f4e767528c65b95fc35e1f91c0d559cfca5846ceaf87b0ef9d719cdf.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="393" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/6d6ac723f4e767528c65b95fc35e1f91c0d559cfca5846ceaf87b0ef9d719cdf.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/6d6ac723f4e767528c65b95fc35e1f91c0d559cfca5846ceaf87b0ef9d719cdf.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/6d6ac723f4e767528c65b95fc35e1f91c0d559cfca5846ceaf87b0ef9d719cdf.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Paraplegic engineer becomes the first wheelchair user to blast into space" data-title>Paraplegic engineer becomes the first wheelchair user to blast into space</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">9 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-5"
+	data-post-id="11586402"
+	data-slide-index=""
+	data-caption="Australia plans tougher laws against displaying extremist flags after Bondi shooting"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11586402/austraila-bondi-shooting/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/CP218111264.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/CP218111264.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/CP218111264.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/CP218111264.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Australia plans tougher laws against displaying extremist flags after Bondi shooting" data-title>Australia plans tougher laws against displaying extremist flags after Bondi shooting</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">8 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-6"
 	data-post-id="11584834"
 	data-slide-index=""
 	data-caption="Three Toronto men arrested for hate-motivated attacks, ISIS-related terrorism"
@@ -1760,7 +1825,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11584834/toronto-man-arrested-isis-terrorism/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1780,72 +1845,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Dec 19</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-5"
-	data-post-id="11586390"
-	data-slide-index=""
-	data-caption="Paraplegic engineer becomes the first wheelchair user to blast into space"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11586390/us-sci-blue-origin-launch/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/6d6ac723f4e767528c65b95fc35e1f91c0d559cfca5846ceaf87b0ef9d719cdf.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="393" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/6d6ac723f4e767528c65b95fc35e1f91c0d559cfca5846ceaf87b0ef9d719cdf.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/6d6ac723f4e767528c65b95fc35e1f91c0d559cfca5846ceaf87b0ef9d719cdf.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/6d6ac723f4e767528c65b95fc35e1f91c0d559cfca5846ceaf87b0ef9d719cdf.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Paraplegic engineer becomes the first wheelchair user to blast into space" data-title>Paraplegic engineer becomes the first wheelchair user to blast into space</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">6 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-6"
-	data-post-id="11586402"
-	data-slide-index=""
-	data-caption="Australia plans tougher laws against displaying extremist flags after Bondi shooting"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11586402/austraila-bondi-shooting/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/CP218111264.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/CP218111264.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/CP218111264.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/CP218111264.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Australia plans tougher laws against displaying extremist flags after Bondi shooting" data-title>Australia plans tougher laws against displaying extremist flags after Bondi shooting</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">6 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1874,72 +1873,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-7"
-	data-post-id="11585402"
-	data-slide-index=""
-	data-caption="Rubio says U.S. wants to &#8216;partner&#8217; with countries on hemisphere issues"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11585402/trump-rubio-national-security-venezuela-ukraine-nato/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/CP175501494.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/CP175501494.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/CP175501494.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/CP175501494.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Rubio says U.S. wants to &#8216;partner&#8217; with countries on hemisphere issues" data-title>Rubio says U.S. wants to &#8216;partner&#8217; with countries on hemisphere issues</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>U.S. News</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Dec 19</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-8"
-	data-post-id="11584954"
-	data-slide-index=""
-	data-caption="Jelly Roll receives pardon from Tennessee governor for drug, robbery convictions"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11584954/jelly-roll-pardon-drugs-robbery-charges-tennessee/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/CP175497377.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/CP175497377.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/CP175497377.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/CP175497377.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Jelly Roll receives pardon from Tennessee governor for drug, robbery convictions" data-title>Jelly Roll receives pardon from Tennessee governor for drug, robbery convictions</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Entertainment</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Dec 19</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-9"
 	data-post-id="11585885"
 	data-slide-index=""
 	data-caption="U.S. launches anti-ISIS strikes in Syria after Americans killed: officials"
@@ -1947,7 +1880,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11585885/us-strikes-isis-syria/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1972,7 +1905,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-10"
+	data-container-id="stories-item-8"
 	data-post-id="11586518"
 	data-slide-index=""
 	data-caption="Jakob Poeltl out for Raptors vs. Celtics"
@@ -1980,7 +1913,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11586518/jakob-poeltl-out-for-raptors-vs-celtics/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1998,8 +1931,74 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Sports</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">4 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-9"
+	data-post-id="11585402"
+	data-slide-index=""
+	data-caption="Rubio says U.S. wants to &#8216;partner&#8217; with countries on hemisphere issues"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11585402/trump-rubio-national-security-venezuela-ukraine-nato/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/CP175501494.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/CP175501494.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/CP175501494.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/CP175501494.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Rubio says U.S. wants to &#8216;partner&#8217; with countries on hemisphere issues" data-title>Rubio says U.S. wants to &#8216;partner&#8217; with countries on hemisphere issues</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>U.S. News</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Dec 19</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-10"
+	data-post-id="11586631"
+	data-slide-index=""
+	data-caption="Pritchard leads undermanned Celtics past Raptors"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11586631/pritchard-leads-undermanned-celtics-past-raptors/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/72d61065c57ef027bbd24f66a7df8196ad762be68b1be9fea3ff2c9c13bb56cf.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="479" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/72d61065c57ef027bbd24f66a7df8196ad762be68b1be9fea3ff2c9c13bb56cf.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/72d61065c57ef027bbd24f66a7df8196ad762be68b1be9fea3ff2c9c13bb56cf.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/72d61065c57ef027bbd24f66a7df8196ad762be68b1be9fea3ff2c9c13bb56cf.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Pritchard leads undermanned Celtics past Raptors" data-title>Pritchard leads undermanned Celtics past Raptors</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Sports</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">55 mins</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
 														</div>
 									</div>
 		</a>
@@ -2082,10 +2081,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay="true"
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_694746f8c1821"
+			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6947688a9a8f6"
 			data-displayinline-video-id="49a91e7f-1023-430f-8d66-561055f3d0f7"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_694746f8c1821"
+    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6947688a9a8f6"
     		    			data-displayinline-playlist="49a91e7f-1023-430f-8d66-561055f3d0f7"
     									data-displayinline-container="mini-ott"
 																data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;recent_terms_datastore&quot;,&quot;type&quot;:&quot;wlo_option&quot;}}"
@@ -2216,7 +2215,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Flu hospitalizations rise sharply as H3N2 spreads across Canada" data-title>Flu hospitalizations rise sharply as H3N2 spreads across Canada</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">14,755</span>
+							<span class="c-posts__info c-posts__info--highlight">16,956</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2246,7 +2245,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="&#8216;Beyond comprehension&#8217;: Maria Shriver derides Trump Kennedy Center renaming" data-title>&#8216;Beyond comprehension&#8217;: Maria Shriver derides Trump Kennedy Center renaming</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">11,343</span>
+							<span class="c-posts__info c-posts__info--highlight">12,946</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2276,7 +2275,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Tax season is still months away. Doing 3 things now could help you later" data-title>Tax season is still months away. Doing 3 things now could help you later</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">11,141</span>
+							<span class="c-posts__info c-posts__info--highlight">12,522</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2306,7 +2305,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Epstein files: U.S. DOJ says more to come after 1st batch released" data-title>Epstein files: U.S. DOJ says more to come after 1st batch released</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">10,379</span>
+							<span class="c-posts__info c-posts__info--highlight">11,002</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2336,7 +2335,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Three Toronto men arrested for hate-motivated attacks, ISIS-related terrorism" data-title>Three Toronto men arrested for hate-motivated attacks, ISIS-related terrorism</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">9,009</span>
+							<span class="c-posts__info c-posts__info--highlight">9,929</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2439,7 +2438,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Flu hospitalizations rise sharply as H3N2 spreads across Canada" data-title>Flu hospitalizations rise sharply as H3N2 spreads across Canada</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">14,755</span>
+							<span class="c-posts__info c-posts__info--highlight">16,956</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2469,7 +2468,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="&#8216;Beyond comprehension&#8217;: Maria Shriver derides Trump Kennedy Center renaming" data-title>&#8216;Beyond comprehension&#8217;: Maria Shriver derides Trump Kennedy Center renaming</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">11,343</span>
+							<span class="c-posts__info c-posts__info--highlight">12,946</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2499,7 +2498,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Tax season is still months away. Doing 3 things now could help you later" data-title>Tax season is still months away. Doing 3 things now could help you later</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">11,141</span>
+							<span class="c-posts__info c-posts__info--highlight">12,522</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2529,7 +2528,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Epstein files: U.S. DOJ says more to come after 1st batch released" data-title>Epstein files: U.S. DOJ says more to come after 1st batch released</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">10,379</span>
+							<span class="c-posts__info c-posts__info--highlight">11,002</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2559,7 +2558,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Three Toronto men arrested for hate-motivated attacks, ISIS-related terrorism" data-title>Three Toronto men arrested for hate-motivated attacks, ISIS-related terrorism</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">9,009</span>
+							<span class="c-posts__info c-posts__info--highlight">9,929</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2801,7 +2800,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel l-videoCarousel--standalone c-carousel"
 					data-video-carousel-play-inline="true"
 				data-video-carousel-init="false" 
-		aria-label="Video carousel contains 5 videos."
+		aria-label="Video carousel contains 6 videos."
 		data-sophi-feature=video		data-gnca-ab-test="sophi-video" data-gnca-ab-variation="control"	>
 				<div class="l-videoCarousel__inner">
 							<div class="l-videoCarousel__featured">
@@ -2811,23 +2810,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer"
-			data-displayinline-video-id="11585069"
+			data-displayinline-video-id="11585856"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11585069,11585856,11586463,11580868,11586328/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fuip3w6uibv-o19dgw33cf%2FSequence_09.00_00_55_13.Still001.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
-    		    			data-displayinline-playlist="11585069,11585856,11586463,11580868,11586328"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11585856,11586463,11585069,11585784,11580868,11586328/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Ff7qpmka1re-kz0j37dgp1%2Fonline_still_WELLAND_SHOOTING_BINGLEY_PKG.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
+    		    			data-displayinline-playlist="11585856,11586463,11585069,11585784,11580868,11586328"
     												data-displayinline-sticky="true"
-													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Trump announces 2 youths from each state to compete in &#039;Patriot Games&#039; for America&#039;s 250th birthday&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;us-news&quot;],&quot;keywords&quot;:[&quot;america-250&quot;,&quot;hunger-games&quot;,&quot;patriot-games&quot;,&quot;short-clip&quot;,&quot;trump&quot;]}}"
+													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Standoff in Welland after police officer shot during bylaw visit&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;toronto&quot;,&quot;crime&quot;],&quot;keywords&quot;:[&quot;niagara-regional-police&quot;,&quot;shooting&quot;,&quot;short-clip&quot;,&quot;welland&quot;]}}"
 			    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Trump announces 2 youths from each state to compete in &#8216;Patriot Games&#8217; for America&#8217;s 250th birthday'"
+						alt="Click to play video: 'Standoff in Welland after police officer shot during bylaw visit'"
 						width="640"
 						height="360"
-													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/uip3w6uibv-o19dgw33cf/Sequence_09.00_00_55_13.Still001.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/f7qpmka1re-kz0j37dgp1/online_still_WELLAND_SHOOTING_BINGLEY_PKG.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/uip3w6uibv-o19dgw33cf/Sequence_09.00_00_55_13.Still001.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/uip3w6uibv-o19dgw33cf/Sequence_09.00_00_55_13.Still001.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/uip3w6uibv-o19dgw33cf/Sequence_09.00_00_55_13.Still001.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
+								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/f7qpmka1re-kz0j37dgp1/online_still_WELLAND_SHOOTING_BINGLEY_PKG.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/f7qpmka1re-kz0j37dgp1/online_still_WELLAND_SHOOTING_BINGLEY_PKG.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/f7qpmka1re-kz0j37dgp1/online_still_WELLAND_SHOOTING_BINGLEY_PKG.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -2837,20 +2836,20 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">3:16</time>
-																									<span class="c-video__title">Trump announces 2 youths from each state to compete in &#8216;Patriot Games&#8217; for America&#8217;s 250th birthday</span>
+																	<time class="c-video__duration">1:43</time>
+																									<span class="c-video__title">Standoff in Welland after police officer shot during bylaw visit</span>
 															</div>
 						</span>
 											</span>
 				</div>
 							</div>
 								<div class="l-videoCarousel__sidebar">
-													<a href="https://globalnews.ca/video/11585069/trump-announces-2-youths-from-each-state-to-compete-in-patriot-games-for-americas-250th-birthday/" class="l-videoCarousel__details">
-							<div class="l-videoCarousel__info">U.S. News</div>
+													<a href="https://globalnews.ca/video/11585856/standoff-in-welland-after-police-officer-shot-during-bylaw-visit/" class="l-videoCarousel__details">
+							<div class="l-videoCarousel__info">Crime</div>
 								<div class="l-videoCarousel__fullTitle">
-								Trump announces 2 youths from each state to compete in &#8216;Patriot Games&#8217; for America&#8217;s 250th birthday								</div>
+								Standoff in Welland after police officer shot during bylaw visit								</div>
 								<div class="l-videoCarousel__description">
-								U.S. President Donald Trump announced on Thursday that he&#039;ll host the &quot;Patriot Games&quot; to celebrate 250 years of America. He said that it&#039;ll be an &quot;...unprecedented four-day athletic event featuring the greatest high school athletes... One young man and one young woman from each state and territory.”								</div>
+								Welland residents were put under a shelter in place order on Friday after a routine bylaw visit resulted in a police officer getting shot. The officer suffered non-life threatening injuries and negotiators continue to seek a peaceful resolution to the standoff. Matthew Bingley reports.								</div>
 						</a>
 								<div class="c-ad c-ad--bigbox c-ad--dark l-videoCarousel__ad">							<div class="c-ad__label">Advertisement</div>
 			
@@ -2877,40 +2876,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-carousel__track glide__track" data-glide-el="track">
 						<ul class="c-posts c-posts--video c-posts--tile c-posts--horizontal c-posts--inverted glide__slides">
 							
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Trump announces 2 youths from each state to compete in &#8216;Patriot Games&#8217; for America&#8217;s 250th birthday" data-slide-index="0">
-	<a href="https://globalnews.ca/video/11585069/trump-announces-2-youths-from-each-state-to-compete-in-patriot-games-for-americas-250th-birthday/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11585069"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11585069,11585856,11586463,11580868,11586328/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11585069,11585856,11586463,11580868,11586328"
-			data-video-carousel-label="U.S. News"
-			data-video-carousel-content="U.S. President Donald Trump announced on Thursday that he&#039;ll host the &quot;Patriot Games&quot; to celebrate 250 years of America. He said that it&#039;ll be an &quot;...unprecedented four-day athletic event featuring the greatest high school athletes... One young man and one young woman from each state and territory.”"
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/uip3w6uibv-o19dgw33cf/Sequence_09.00_00_55_13.Still001.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Trump announces 2 youths from each state to compete in &#8216;Patriot Games&#8217; for America&#8217;s 250th birthday</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Standoff in Welland after police officer shot during bylaw visit" data-slide-index="1">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Standoff in Welland after police officer shot during bylaw visit" data-slide-index="0">
 	<a href="https://globalnews.ca/video/11585856/standoff-in-welland-after-police-officer-shot-during-bylaw-visit/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11585856"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11585856,11586463,11580868,11586328,11585069/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11585856,11586463,11580868,11586328,11585069"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11585856,11586463,11585069,11585784,11580868,11586328/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11585856,11586463,11585069,11585784,11580868,11586328"
 			data-video-carousel-label="Crime"
 			data-video-carousel-content="Welland residents were put under a shelter in place order on Friday after a routine bylaw visit resulted in a police officer getting shot. The officer suffered non-life threatening injuries and negotiators continue to seek a peaceful resolution to the standoff. Matthew Bingley reports."
 			>
@@ -2931,13 +2903,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="&#8216;This is a war now&#8217;: Giuffre family seeks accountability over redacted Epstein files" data-slide-index="2">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="&#8216;This is a war now&#8217;: Giuffre family seeks accountability over redacted Epstein files" data-slide-index="1">
 	<a href="https://globalnews.ca/video/11586463/this-is-a-war-now-giuffre-family-seeks-accountability-over-redacted-epstein-files/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11586463"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11586463,11580868,11586328,11585069,11585856/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11586463,11580868,11586328,11585069,11585856"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11586463,11585069,11585784,11580868,11586328,11585856/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11586463,11585069,11585784,11580868,11586328,11585856"
 			data-video-carousel-label="News"
 			data-video-carousel-content="The family of Virginia Giuffre, a victim of convicted sex offender Jeffrey Epstein, said on Friday they were seeking accountability after the U.S. Justice Department released thousands of heavily redacted documents related to the late financier."
 			>
@@ -2958,13 +2930,67 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Schumer sends warning to Trump on Epstein files: &#8216;We will find everything they&#8217;re trying to hide&#8217;" data-slide-index="3">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Trump announces 2 youths from each state to compete in &#8216;Patriot Games&#8217; for America&#8217;s 250th birthday" data-slide-index="2">
+	<a href="https://globalnews.ca/video/11585069/trump-announces-2-youths-from-each-state-to-compete-in-patriot-games-for-americas-250th-birthday/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11585069"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11585069,11585784,11580868,11586328,11585856,11586463/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11585069,11585784,11580868,11586328,11585856,11586463"
+			data-video-carousel-label="U.S. News"
+			data-video-carousel-content="U.S. President Donald Trump announced on Thursday that he&#039;ll host the &quot;Patriot Games&quot; to celebrate 250 years of America. He said that it&#039;ll be an &quot;...unprecedented four-day athletic event featuring the greatest high school athletes... One young man and one young woman from each state and territory.”"
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/uip3w6uibv-o19dgw33cf/Sequence_09.00_00_55_13.Still001.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Trump announces 2 youths from each state to compete in &#8216;Patriot Games&#8217; for America&#8217;s 250th birthday</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="&#8216;Serious threat&#8217;: Rubio on transnational terrorist criminal gangs operating from Venezuela" data-slide-index="3">
+	<a href="https://globalnews.ca/video/11585784/serious-threat-rubio-on-transnational-terrorist-criminal-gangs-operating-from-venezuela/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11585784"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11585784,11580868,11586328,11585856,11586463,11585069/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11585784,11580868,11586328,11585856,11586463,11585069"
+			data-video-carousel-label="Crime"
+			data-video-carousel-content="U.S. Secretary of State Marco Rubio held a year-end news conference on Friday and stated that the “single most serious threat to the United States from the Western Hemisphere is from transnational terrorist criminal groups.” Rubio stated that “there&#039;s one (country) that doesn&#039;t cooperate. And it&#039;s the illegitimate regime in Venezuela. Not only do they not cooperate with us, they openly cooperate with terrorist and criminal elements.” "
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/i93ejh7wz1-151s3kbapi/FRI_RUBIO_SITE_THUMB_191225.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Crime</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">&#8216;Serious threat&#8217;: Rubio on transnational terrorist criminal gangs operating from Venezuela</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Schumer sends warning to Trump on Epstein files: &#8216;We will find everything they&#8217;re trying to hide&#8217;" data-slide-index="4">
 	<a href="https://globalnews.ca/video/11580868/schumer-sends-warning-to-trump-on-epstein-files-we-will-find-everything-theyre-trying-to-hide/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11580868"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11580868,11586328,11585069,11585856,11586463/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11580868,11586328,11585069,11585856,11586463"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11580868,11586328,11585856,11586463,11585069,11585784/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11580868,11586328,11585856,11586463,11585069,11585784"
 			data-video-carousel-label="News"
 			data-video-carousel-content="Senate Minority Leader Chuck Schumer said on Tuesday that nearly a month ago, “every single senator and all but one member of Congress” sent U.S. President Donald Trump a unified message calling for the release of the Epstein files. &quot;Stop hiding. Stop delaying,&quot; he said, adding, &quot;We will find  out everything they&#039;re trying to hide.&quot;"
 			>
@@ -2985,13 +3011,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Toronto man charged with terrorism-related offences" data-slide-index="4">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Toronto man charged with terrorism-related offences" data-slide-index="5">
 	<a href="https://globalnews.ca/video/11586328/toronto-man-charged-with-terrorism-related-offences/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11586328"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11586328,11585069,11585856,11586463,11580868/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11586328,11585069,11585856,11586463,11580868"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11586328,11585856,11586463,11585069,11585784,11580868/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11586328,11585856,11586463,11585069,11585784,11580868"
 			data-video-carousel-label="Crime"
 			data-video-carousel-content="A Toronto man is facing terrorism charges. He is one of three GTA men arrested in an investigation involving local police forces and the RCMP. The men are accused of hate-motivated crimes, targeting women and the Jewish community. Nicole Di Donato reports. "
 			>
@@ -3045,17 +3071,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11585856"
+			data-displayinline-player-id="home-miniplayer_11586463"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11585856,11586463,11580868,11586328/#autoplay&#038;stickyiframe=home-miniplayer_11585856"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11586463,11585069,11585784,11580868,11586328/#autoplay&#038;stickyiframe=home-miniplayer_11586463"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/f7qpmka1re-kz0j37dgp1/online_still_WELLAND_SHOOTING_BINGLEY_PKG.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/lhviyweso1-yeba085afs/THUMBNAILS.00_00_18_16.Still007.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Standoff in Welland after police officer shot during bylaw visit'"
+					alt="Click to play video '&#8216;This is a war now&#8217;: Giuffre family seeks accountability over redacted Epstein files'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3064,11 +3090,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11585856/standoff-in-welland-after-police-officer-shot-during-bylaw-visit/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11586463/this-is-a-war-now-giuffre-family-seeks-accountability-over-redacted-epstein-files/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Crime</div>
+					<div class="c-posts__info c-posts__info--highlight">News</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Standoff in Welland after police officer shot during bylaw visit</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">&#8216;This is a war now&#8217;: Giuffre family seeks accountability over redacted Epstein files</span></div>
 		</a>
 	</div>
 </li>
@@ -3099,17 +3125,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11586463"
+			data-displayinline-player-id="home-miniplayer_11585069"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11586463,11580868,11586328,11585856/#autoplay&#038;stickyiframe=home-miniplayer_11586463"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11585069,11585784,11580868,11586328,11586463/#autoplay&#038;stickyiframe=home-miniplayer_11585069"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/lhviyweso1-yeba085afs/THUMBNAILS.00_00_18_16.Still007.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/uip3w6uibv-o19dgw33cf/Sequence_09.00_00_55_13.Still001.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video '&#8216;This is a war now&#8217;: Giuffre family seeks accountability over redacted Epstein files'"
+					alt="Click to play video 'Trump announces 2 youths from each state to compete in &#8216;Patriot Games&#8217; for America&#8217;s 250th birthday'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3118,11 +3144,43 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11586463/this-is-a-war-now-giuffre-family-seeks-accountability-over-redacted-epstein-files/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11585069/trump-announces-2-youths-from-each-state-to-compete-in-patriot-games-for-americas-250th-birthday/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">News</div>
+					<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">&#8216;This is a war now&#8217;: Giuffre family seeks accountability over redacted Epstein files</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Trump announces 2 youths from each state to compete in &#8216;Patriot Games&#8217; for America&#8217;s 250th birthday</span></div>
+		</a>
+	</div>
+</li>
+
+<li class="c-posts__item">
+	<div class="c-posts__inner">
+		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
+			data-displayinline-type="video"
+			data-displayinline-player-id="home-miniplayer_11585784"
+			data-displayinline-ratio="16:9"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11585784,11580868,11586328,11586463,11585069/#autoplay&#038;stickyiframe=home-miniplayer_11585784"
+			data-displayinline-sticky="true"
+			data-displayinline-expand="true">
+			<div class="c-video__placeholder">
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/i93ejh7wz1-151s3kbapi/FRI_RUBIO_SITE_THUMB_191225.jpg?w=384&#038;quality=70&#038;strip=all"
+					width="236"
+					height="133"
+					class="c-posts__thumbnail c-video__image"
+					alt="Click to play video '&#8216;Serious threat&#8217;: Rubio on transnational terrorist criminal gangs operating from Venezuela'"
+					loading="lazy" />
+				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+			</div>
+		</a>
+		<a href="https://globalnews.ca/video/11585784/serious-threat-rubio-on-transnational-terrorist-criminal-gangs-operating-from-venezuela/" class="c-posts__details">
+				<div class="c-posts__about">
+					<div class="c-posts__info c-posts__info--highlight">Crime</div>
+				</div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">&#8216;Serious threat&#8217;: Rubio on transnational terrorist criminal gangs operating from Venezuela</span></div>
 		</a>
 	</div>
 </li>
@@ -3133,7 +3191,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11580868"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11580868,11586328,11585856,11586463/#autoplay&#038;stickyiframe=home-miniplayer_11580868"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11580868,11586328,11586463,11585069,11585784/#autoplay&#038;stickyiframe=home-miniplayer_11580868"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3158,38 +3216,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</div>
 </li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11586328"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11586328,11585856,11586463,11580868/#autoplay&#038;stickyiframe=home-miniplayer_11586328"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/nhoiim5c6v-ifasnt331j/still6PPROJECTNEAPOLITANDONATODEC19.jpg?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Toronto man charged with terrorism-related offences'"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/11586328/toronto-man-charged-with-terrorism-related-offences/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Crime</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Toronto man charged with terrorism-related offences</span></div>
-		</a>
-	</div>
-</li>
 	</ul>
 	
 	</section>
@@ -3210,8 +3236,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-miniplayer-variant"
 			data-displayinline-video-id="11585069"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11585069,11584824,11586099,11586093,11586403/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fuip3w6uibv-o19dgw33cf%2FSequence_09.00_00_55_13.Still001.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
-    		    			data-displayinline-playlist="11585069,11584824,11586099,11586093,11586403"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11585069,11586463,11584824,11586093,11586403/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fuip3w6uibv-o19dgw33cf%2FSequence_09.00_00_55_13.Still001.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
+    		    			data-displayinline-playlist="11585069,11586463,11584824,11586093,11586403"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Trump announces 2 youths from each state to compete in &#039;Patriot Games&#039; for America&#039;s 250th birthday&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;us-news&quot;],&quot;keywords&quot;:[&quot;america-250&quot;,&quot;hunger-games&quot;,&quot;patriot-games&quot;,&quot;short-clip&quot;,&quot;trump&quot;]}}"
 			    		>
@@ -3279,8 +3305,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11585069"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11585069,11584824,11586099,11586093,11586403/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11585069,11584824,11586099,11586093,11586403"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11585069,11586463,11584824,11586093,11586403/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11585069,11586463,11584824,11586093,11586403"
 			data-video-carousel-label="U.S. News"
 			data-video-carousel-content="U.S. President Donald Trump announced on Thursday that he&#039;ll host the &quot;Patriot Games&quot; to celebrate 250 years of America. He said that it&#039;ll be an &quot;...unprecedented four-day athletic event featuring the greatest high school athletes... One young man and one young woman from each state and territory.”"
 			>
@@ -3301,13 +3327,40 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="5 charged in $2M Ajax Amazon theft probe" data-slide-index="1">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="&#8216;This is a war now&#8217;: Giuffre family seeks accountability over redacted Epstein files" data-slide-index="1">
+	<a href="https://globalnews.ca/video/11586463/this-is-a-war-now-giuffre-family-seeks-accountability-over-redacted-epstein-files/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11586463"
+			data-video-player-id="home-miniplayer-variant"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11586463,11584824,11586093,11586403,11585069/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11586463,11584824,11586093,11586403,11585069"
+			data-video-carousel-label="News"
+			data-video-carousel-content="The family of Virginia Giuffre, a victim of convicted sex offender Jeffrey Epstein, said on Friday they were seeking accountability after the U.S. Justice Department released thousands of heavily redacted documents related to the late financier."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/lhviyweso1-yeba085afs/THUMBNAILS.00_00_18_16.Still007.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">News</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">&#8216;This is a war now&#8217;: Giuffre family seeks accountability over redacted Epstein files</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="5 charged in $2M Ajax Amazon theft probe" data-slide-index="2">
 	<a href="https://globalnews.ca/video/11584824/5-charged-in-2m-ajax-amazon-theft-probe/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11584824"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11584824,11586099,11586093,11586403,11585069/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11584824,11586099,11586093,11586403,11585069"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11584824,11586093,11586403,11585069,11586463/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11584824,11586093,11586403,11585069,11586463"
 			data-video-carousel-label="Crime"
 			data-video-carousel-content="Durham Regional Police say $2 million worth of merchandise from an Amazon warehouse in Ajax, Ont. was stolen over two years, and five people are facing charges."
 			>
@@ -3328,40 +3381,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Canadians bracing for wild weather ahead of the holidays" data-slide-index="2">
-	<a href="https://globalnews.ca/video/11586099/canadians-across-the-country-dealt-winter-wallop-ahead-of-the-holidays/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11586099"
-			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11586099,11586093,11586403,11585069,11584824/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11586099,11586093,11586403,11585069,11584824"
-			data-video-carousel-label="Canada"
-			data-video-carousel-content="Weather alerts were issued for every province and territory on Friday. From double digit temperatures and high winds on the East Coast to freezing cold on the Prairies, Canadians are bracing for wild weather ahead of the holidays. Heidi Petracek walks us through some of the extremes."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/w3n100yfbf-e6s6ztofhn/ONLINE_STILL_WEATHER_WALLOP.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Canadians bracing for wild weather ahead of the holidays</span></div>
-					</div>
-	</a>
-</li>
-
 <li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="3 Toronto men arrested for hate-motivated attacks, ISIS-related terrorism" data-slide-index="3">
 	<a href="https://globalnews.ca/video/11586093/three-toronto-men-arrested-for-hate-motivated-attacks-isis-related-terrorism/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11586093"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11586093,11586403,11585069,11584824,11586099/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11586093,11586403,11585069,11584824,11586099"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11586093,11586403,11585069,11586463,11584824/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11586093,11586403,11585069,11586463,11584824"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="Officers have arrested three men in Ontario, accused of trying to kidnap several women from the streets of Ontario. Police say the attack was motivated by hate and specifically targeted Jewish Canadians. One of the men is now charged with terrorism and was allegedly working for the Islamic State. As Touria Izri reports, the case is fuelling fears over antisemitic attacks."
 			>
@@ -3387,8 +3413,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11586403"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11586403,11585069,11584824,11586099,11586093/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11586403,11585069,11584824,11586099,11586093"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11586403,11585069,11586463,11584824,11586093/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11586403,11585069,11586463,11584824,11586093"
 			data-video-carousel-label="News"
 			data-video-carousel-content="Samantha Jones, Charles Sturt University Criminology Lecturer, joins Global’s Nivrita Ganguly to discuss the steps being taken to tighten gun legislation and anti-hate speech laws in the aftermath of last week’s Bondi Beach attack that killed 15."
 			>
@@ -3442,17 +3468,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11584824"
+			data-displayinline-player-id="home-miniplayer-variant_11586463"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11584824,11586099,11586093,11586403/#autoplay&#038;stickyiframe=home-miniplayer-variant_11584824"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11586463,11584824,11586093,11586403/#autoplay&#038;stickyiframe=home-miniplayer-variant_11586463"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/mxutr5mnxt-ub97z35k9h/Sequence_24.00_00_00_00.Still001.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/lhviyweso1-yeba085afs/THUMBNAILS.00_00_18_16.Still007.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video '5 charged in $2M Ajax Amazon theft probe'"
+					alt="Click to play video '&#8216;This is a war now&#8217;: Giuffre family seeks accountability over redacted Epstein files'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3461,11 +3487,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11584824/5-charged-in-2m-ajax-amazon-theft-probe/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11586463/this-is-a-war-now-giuffre-family-seeks-accountability-over-redacted-epstein-files/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Crime</div>
+					<div class="c-posts__info c-posts__info--highlight">News</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">5 charged in $2M Ajax Amazon theft probe</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">&#8216;This is a war now&#8217;: Giuffre family seeks accountability over redacted Epstein files</span></div>
 		</a>
 	</div>
 </li>
@@ -3496,17 +3522,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11586099"
+			data-displayinline-player-id="home-miniplayer-variant_11584824"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11586099,11586093,11586403,11584824/#autoplay&#038;stickyiframe=home-miniplayer-variant_11586099"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11584824,11586093,11586403,11586463/#autoplay&#038;stickyiframe=home-miniplayer-variant_11584824"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/w3n100yfbf-e6s6ztofhn/ONLINE_STILL_WEATHER_WALLOP.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/mxutr5mnxt-ub97z35k9h/Sequence_24.00_00_00_00.Still001.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Canadians bracing for wild weather ahead of the holidays'"
+					alt="Click to play video '5 charged in $2M Ajax Amazon theft probe'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3515,11 +3541,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11586099/canadians-across-the-country-dealt-winter-wallop-ahead-of-the-holidays/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11584824/5-charged-in-2m-ajax-amazon-theft-probe/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+					<div class="c-posts__info c-posts__info--highlight">Crime</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Canadians bracing for wild weather ahead of the holidays</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">5 charged in $2M Ajax Amazon theft probe</span></div>
 		</a>
 	</div>
 </li>
@@ -3530,7 +3556,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant_11586093"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11586093,11586403,11584824,11586099/#autoplay&#038;stickyiframe=home-miniplayer-variant_11586093"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11586093,11586403,11586463,11584824/#autoplay&#038;stickyiframe=home-miniplayer-variant_11586093"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3562,7 +3588,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant_11586403"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11586403,11584824,11586099,11586093/#autoplay&#038;stickyiframe=home-miniplayer-variant_11586403"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11586403,11586463,11584824,11586093/#autoplay&#038;stickyiframe=home-miniplayer-variant_11586403"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3648,44 +3674,12 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11582030"
-				data-sophi-feature=latest-news			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11582030/epstein-files-released-photos/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Epstein files: U.S. DOJ says more to come after 1st batch released" data-title>Epstein files: U.S. DOJ says more to come after 1st batch released</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						Among the thousands of records released on Friday&#039;s deadline under the law are photos, call logs, grand jury testimony and interview transcripts, many of which were redacted.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Trending</div>
-																						<div class="c-posts__info">Dec 19</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/epstein-dec-19-release-4.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=511 data-ratio=0.67									loading="lazy"
-								width="720" height="511" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/epstein-dec-19-release-4.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/epstein-dec-19-release-4.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/epstein-dec-19-release-4.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
 				data-post-id="11585298"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11585298/canada-carney-new-deputy-ministers/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3707,6 +3701,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								width="720" height="480" alt="" 
 												srcset='' sizes=''
 								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/1a6fbacf42f2821a273269d6cf2c8ef8a964f66ce730396a778b8d2265aea6be.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/1a6fbacf42f2821a273269d6cf2c8ef8a964f66ce730396a778b8d2265aea6be.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/1a6fbacf42f2821a273269d6cf2c8ef8a964f66ce730396a778b8d2265aea6be.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11584954"
+				data-sophi-feature=latest-news			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11584954/jelly-roll-pardon-drugs-robbery-charges-tennessee/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Jelly Roll receives pardon from Tennessee governor for drug, robbery convictions" data-title>Jelly Roll receives pardon from Tennessee governor for drug, robbery convictions</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						Gov. Bill Lee pardoned the &#039;Need a Favor&#039; singer for two robbery and drug felonies issued before 2010 in Davidson County.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
+																						<div class="c-posts__info">Dec 19</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/CP175497377.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/CP175497377.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/CP175497377.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/CP175497377.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -3808,33 +3834,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11585396"
+				data-post-id="11582030"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
-					href="https://globalnews.ca/news/11585396/bowen-yang-exits-saturday-night-live/"
+					href="https://globalnews.ca/news/11582030/epstein-files-released-photos/"
 					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Bowen Yang to exit &#8216;Saturday Night Live&#8217; after 8 seasons" data-title>Bowen Yang to exit &#8216;Saturday Night Live&#8217; after 8 seasons</span>
+					<span class="c-posts__headlineText" title="Epstein files: U.S. DOJ says more to come after 1st batch released" data-title>Epstein files: U.S. DOJ says more to come after 1st batch released</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						His final episode as a cast member will be on Dec. 20, hosted by his &#039;Wicked&#039; co-star Ariana Grande with Cher as musical guest.						</div>
+						Among the thousands of records released on Friday&#039;s deadline under the law are photos, call logs, grand jury testimony and interview transcripts, many of which were redacted.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
+															<div class="c-posts__info c-posts__info--highlight">Trending</div>
 																						<div class="c-posts__info">Dec 19</div>
 													</div>
 					</div>
 					
 		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/CP164640522.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=532 data-ratio=0.67									loading="lazy"
-								width="720" height="532" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/epstein-dec-19-release-4.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=511 data-ratio=0.67									loading="lazy"
+								width="720" height="511" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/CP164640522.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/CP164640522.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/CP164640522.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/epstein-dec-19-release-4.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/epstein-dec-19-release-4.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/epstein-dec-19-release-4.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -3872,33 +3898,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11584842"
+				data-post-id="11584828"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
-					href="https://globalnews.ca/news/11584842/brown-mit-professor-shooting-suspect-found/"
+					href="https://globalnews.ca/news/11584828/pete-davidson-elsie-hewitt-first-child-daughter/"
 					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:8}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Brown shooting, MIT professor’s killing suspect found dead, officials say" data-title>Brown shooting, MIT professor’s killing suspect found dead, officials say</span>
+					<span class="c-posts__headlineText" title="Pete Davidson welcomes 1st child with girlfriend Elsie Hewitt" data-title>Pete Davidson welcomes 1st child with girlfriend Elsie Hewitt</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						A frantic search for the suspect in last weekend’s mass shooting at Brown University ended at a New Hampshire storage facility where authorities discovered the man dead inside.						</div>
+						&#039;My best work yet, i am absolutely overflowing with love and gratitude and disbelief,&#039; Davidson&#039;s girlfriend Elsie Hewitt captioned a series of photos on Instagram.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
+															<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
 																						<div class="c-posts__info">Dec 19</div>
 													</div>
 					</div>
 					
-		<div class="c-posts__media "  >
+		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/51782c4c515501084799decc5946bdff7bf5e1d4014af8d3b9b6124ba21d7290_1bc201.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/pete-davidson-baby.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
+								width="720" height="504" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/51782c4c515501084799decc5946bdff7bf5e1d4014af8d3b9b6124ba21d7290_1bc201.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/51782c4c515501084799decc5946bdff7bf5e1d4014af8d3b9b6124ba21d7290_1bc201.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/51782c4c515501084799decc5946bdff7bf5e1d4014af8d3b9b6124ba21d7290_1bc201.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/pete-davidson-baby.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/pete-davidson-baby.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/pete-davidson-baby.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -3979,23 +4005,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-playlist-miniplayer"
-			data-displayinline-video-id="11585069"
+			data-displayinline-video-id="11585856"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11585069,11585856,11586463,11580868,11586328/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fuip3w6uibv-o19dgw33cf%2FSequence_09.00_00_55_13.Still001.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
-    		    			data-displayinline-playlist="11585069,11585856,11586463,11580868,11586328"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11585856,11586463,11585069,11585784,11580868/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Ff7qpmka1re-kz0j37dgp1%2Fonline_still_WELLAND_SHOOTING_BINGLEY_PKG.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
+    		    			data-displayinline-playlist="11585856,11586463,11585069,11585784,11580868"
     												data-displayinline-sticky="true"
-													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Trump announces 2 youths from each state to compete in &#039;Patriot Games&#039; for America&#039;s 250th birthday&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;us-news&quot;],&quot;keywords&quot;:[&quot;america-250&quot;,&quot;hunger-games&quot;,&quot;patriot-games&quot;,&quot;short-clip&quot;,&quot;trump&quot;]}}"
+													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Standoff in Welland after police officer shot during bylaw visit&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;toronto&quot;,&quot;crime&quot;],&quot;keywords&quot;:[&quot;niagara-regional-police&quot;,&quot;shooting&quot;,&quot;short-clip&quot;,&quot;welland&quot;]}}"
 			    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Trump announces 2 youths from each state to compete in &#8216;Patriot Games&#8217; for America&#8217;s 250th birthday'"
+						alt="Click to play video: 'Standoff in Welland after police officer shot during bylaw visit'"
 						width="640"
 						height="360"
-													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/uip3w6uibv-o19dgw33cf/Sequence_09.00_00_55_13.Still001.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/f7qpmka1re-kz0j37dgp1/online_still_WELLAND_SHOOTING_BINGLEY_PKG.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/uip3w6uibv-o19dgw33cf/Sequence_09.00_00_55_13.Still001.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/uip3w6uibv-o19dgw33cf/Sequence_09.00_00_55_13.Still001.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/uip3w6uibv-o19dgw33cf/Sequence_09.00_00_55_13.Still001.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
+								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/f7qpmka1re-kz0j37dgp1/online_still_WELLAND_SHOOTING_BINGLEY_PKG.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/f7qpmka1re-kz0j37dgp1/online_still_WELLAND_SHOOTING_BINGLEY_PKG.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/f7qpmka1re-kz0j37dgp1/online_still_WELLAND_SHOOTING_BINGLEY_PKG.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -4005,8 +4031,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">3:16</time>
-																									<span class="c-video__title">Trump announces 2 youths from each state to compete in &#8216;Patriot Games&#8217; for America&#8217;s 250th birthday</span>
+																	<time class="c-video__duration">1:43</time>
+																									<span class="c-video__title">Standoff in Welland after police officer shot during bylaw visit</span>
 															</div>
 						</span>
 											</span>
@@ -4022,23 +4048,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="1"
 	>
-	<a href="https://globalnews.ca/video/11585069/trump-announces-2-youths-from-each-state-to-compete-in-patriot-games-for-americas-250th-birthday/"
-		title="Trump announces 2 youths from each state to compete in &#8216;Patriot Games&#8217; for America&#8217;s 250th birthday"
+	<a href="https://globalnews.ca/video/11585856/standoff-in-welland-after-police-officer-shot-during-bylaw-visit/"
+		title="Standoff in Welland after police officer shot during bylaw visit"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11585069"
-		data-video-label="U.S. News"
+		data-video-id="11585856"
+		data-video-label="Crime"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11585069,11585856,11586463,11580868,11586328/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11585856,11586463,11585069,11585784,11580868/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Trump announces 2 youths from each state to compete in &#8216;Patriot Games&#8217; for America&#8217;s 250th birthday</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Standoff in Welland after police officer shot during bylaw visit</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						U.S. News					</div>
+						Crime					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/uip3w6uibv-o19dgw33cf/Sequence_09.00_00_55_13.Still001.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/f7qpmka1re-kz0j37dgp1/online_still_WELLAND_SHOOTING_BINGLEY_PKG.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4050,34 +4076,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="2"
 	>
-	<a href="https://globalnews.ca/video/11585856/standoff-in-welland-after-police-officer-shot-during-bylaw-visit/"
-		title="Standoff in Welland after police officer shot during bylaw visit"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11585856"
-		data-video-label="Crime"
-		data-video-player-id="home-playlist-miniplayer"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11585856,11586463,11580868,11586328/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Standoff in Welland after police officer shot during bylaw visit</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Crime					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/f7qpmka1re-kz0j37dgp1/online_still_WELLAND_SHOOTING_BINGLEY_PKG.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="3"
-	>
 	<a href="https://globalnews.ca/video/11586463/this-is-a-war-now-giuffre-family-seeks-accountability-over-redacted-epstein-files/"
 		title="&#8216;This is a war now&#8217;: Giuffre family seeks accountability over redacted Epstein files"
 		class="l-playlist__link c-posts__inner c-videoPlay"
@@ -4085,7 +4083,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="News"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11586463,11580868,11586328,11585856/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11586463,11585069,11585784,11580868/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">&#8216;This is a war now&#8217;: Giuffre family seeks accountability over redacted Epstein files</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4104,25 +4102,53 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 <li class="c-posts__item l-playlist__item"
-			data-playlist-index="4"
+			data-playlist-index="3"
 	>
-	<a href="https://globalnews.ca/video/11580868/schumer-sends-warning-to-trump-on-epstein-files-we-will-find-everything-theyre-trying-to-hide/"
-		title="Schumer sends warning to Trump on Epstein files: &#8216;We will find everything they&#8217;re trying to hide&#8217;"
+	<a href="https://globalnews.ca/video/11585069/trump-announces-2-youths-from-each-state-to-compete-in-patriot-games-for-americas-250th-birthday/"
+		title="Trump announces 2 youths from each state to compete in &#8216;Patriot Games&#8217; for America&#8217;s 250th birthday"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11580868"
-		data-video-label="News"
+		data-video-id="11585069"
+		data-video-label="U.S. News"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11580868,11586328,11585856,11586463/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11585069,11585784,11580868,11586463/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Schumer sends warning to Trump on Epstein files: &#8216;We will find everything they&#8217;re trying to hide&#8217;</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Trump announces 2 youths from each state to compete in &#8216;Patriot Games&#8217; for America&#8217;s 250th birthday</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						News					</div>
+						U.S. News					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/egbu0p88c0-lku5scqjgj/THUMBNAILS.00_00_11_11.Still004.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/uip3w6uibv-o19dgw33cf/Sequence_09.00_00_55_13.Still001.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="4"
+	>
+	<a href="https://globalnews.ca/video/11585784/serious-threat-rubio-on-transnational-terrorist-criminal-gangs-operating-from-venezuela/"
+		title="&#8216;Serious threat&#8217;: Rubio on transnational terrorist criminal gangs operating from Venezuela"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11585784"
+		data-video-label="Crime"
+		data-video-player-id="home-playlist-miniplayer"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11585784,11580868,11586463,11585069/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">&#8216;Serious threat&#8217;: Rubio on transnational terrorist criminal gangs operating from Venezuela</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						Crime					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/i93ejh7wz1-151s3kbapi/FRI_RUBIO_SITE_THUMB_191225.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4134,23 +4160,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="5"
 	>
-	<a href="https://globalnews.ca/video/11586328/toronto-man-charged-with-terrorism-related-offences/"
-		title="Toronto man charged with terrorism-related offences"
+	<a href="https://globalnews.ca/video/11580868/schumer-sends-warning-to-trump-on-epstein-files-we-will-find-everything-theyre-trying-to-hide/"
+		title="Schumer sends warning to Trump on Epstein files: &#8216;We will find everything they&#8217;re trying to hide&#8217;"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11586328"
-		data-video-label="Crime"
+		data-video-id="11580868"
+		data-video-label="News"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11586328,11585856,11586463,11580868/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11580868,11586463,11585069,11585784/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Toronto man charged with terrorism-related offences</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Schumer sends warning to Trump on Epstein files: &#8216;We will find everything they&#8217;re trying to hide&#8217;</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Crime					</div>
+						News					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/nhoiim5c6v-ifasnt331j/still6PPROJECTNEAPOLITANDONATODEC19.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/egbu0p88c0-lku5scqjgj/THUMBNAILS.00_00_11_11.Still004.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4177,8 +4203,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-playlist-miniplayer-variant"
 			data-displayinline-video-id="11585069"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11585069,11584824,11586099,11586093,11586403/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fuip3w6uibv-o19dgw33cf%2FSequence_09.00_00_55_13.Still001.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
-    		    			data-displayinline-playlist="11585069,11584824,11586099,11586093,11586403"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11585069,11586463,11584824,11586093,11586403/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fuip3w6uibv-o19dgw33cf%2FSequence_09.00_00_55_13.Still001.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
+    		    			data-displayinline-playlist="11585069,11586463,11584824,11586093,11586403"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Trump announces 2 youths from each state to compete in &#039;Patriot Games&#039; for America&#039;s 250th birthday&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;us-news&quot;],&quot;keywords&quot;:[&quot;america-250&quot;,&quot;hunger-games&quot;,&quot;patriot-games&quot;,&quot;short-clip&quot;,&quot;trump&quot;]}}"
 			    		>
@@ -4225,7 +4251,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="U.S. News"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11585069,11584824,11586099,11586093,11586403/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11585069,11586463,11584824,11586093,11586403/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Trump announces 2 youths from each state to compete in &#8216;Patriot Games&#8217; for America&#8217;s 250th birthday</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4246,6 +4272,34 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="2"
 	>
+	<a href="https://globalnews.ca/video/11586463/this-is-a-war-now-giuffre-family-seeks-accountability-over-redacted-epstein-files/"
+		title="&#8216;This is a war now&#8217;: Giuffre family seeks accountability over redacted Epstein files"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11586463"
+		data-video-label="News"
+		data-video-player-id="home-playlist-miniplayer-variant"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11586463,11584824,11586093,11586403/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">&#8216;This is a war now&#8217;: Giuffre family seeks accountability over redacted Epstein files</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						News					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/lhviyweso1-yeba085afs/THUMBNAILS.00_00_18_16.Still007.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="3"
+	>
 	<a href="https://globalnews.ca/video/11584824/5-charged-in-2m-ajax-amazon-theft-probe/"
 		title="5 charged in $2M Ajax Amazon theft probe"
 		class="l-playlist__link c-posts__inner c-videoPlay"
@@ -4253,7 +4307,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Crime"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11584824,11586099,11586093,11586403/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11584824,11586093,11586403,11586463/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">5 charged in $2M Ajax Amazon theft probe</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4272,34 +4326,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 <li class="c-posts__item l-playlist__item"
-			data-playlist-index="3"
-	>
-	<a href="https://globalnews.ca/video/11586099/canadians-across-the-country-dealt-winter-wallop-ahead-of-the-holidays/"
-		title="Canadians bracing for wild weather ahead of the holidays"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11586099"
-		data-video-label="Canada"
-		data-video-player-id="home-playlist-miniplayer-variant"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11586099,11586093,11586403,11584824/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Canadians bracing for wild weather ahead of the holidays</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/w3n100yfbf-e6s6ztofhn/ONLINE_STILL_WEATHER_WALLOP.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
 			data-playlist-index="4"
 	>
 	<a href="https://globalnews.ca/video/11586093/three-toronto-men-arrested-for-hate-motivated-attacks-isis-related-terrorism/"
@@ -4309,7 +4335,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11586093,11586403,11584824,11586099/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11586093,11586403,11586463,11584824/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">3 Toronto men arrested for hate-motivated attacks, ISIS-related terrorism</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4337,7 +4363,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="News"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11586403,11584824,11586099,11586093/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11586403,11586463,11584824,11586093/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Australia to tighten gun, hate speech laws after Bondi Beach Hanukkah attack</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4760,6 +4786,37 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3											>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-21"
+	data-post-id="11584842"
+	data-slide-index=""
+	data-caption="Brown shooting, MIT professor’s killing suspect found dead, officials say"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11584842/brown-mit-professor-shooting-suspect-found/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/51782c4c515501084799decc5946bdff7bf5e1d4014af8d3b9b6124ba21d7290_1bc201.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/51782c4c515501084799decc5946bdff7bf5e1d4014af8d3b9b6124ba21d7290_1bc201.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/51782c4c515501084799decc5946bdff7bf5e1d4014af8d3b9b6124ba21d7290_1bc201.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/51782c4c515501084799decc5946bdff7bf5e1d4014af8d3b9b6124ba21d7290_1bc201.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Brown shooting, MIT professor’s killing suspect found dead, officials say" data-title>Brown shooting, MIT professor’s killing suspect found dead, officials say</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >Dec 19</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-22"
 	data-post-id="11583256"
 	data-slide-index=""
 	data-caption="Finland PM apologizes to Asian nations after beauty queen racism scandal"
@@ -4767,7 +4824,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11583256/finland-racism-scandal-prime-minister-apologizes-asia/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4790,7 +4847,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-22"
+	data-container-id="stories-item-23"
 	data-post-id="11582296"
 	data-slide-index=""
 	data-caption="EU proposal would ease cross-border abortion access for women facing bans"
@@ -4798,7 +4855,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11582296/europe-abortion-access-eu-proposal-women/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -4811,37 +4868,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="EU proposal would ease cross-border abortion access for women facing bans" data-title>EU proposal would ease cross-border abortion access for women facing bans</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Dec 17</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-23"
-	data-post-id="11582159"
-	data-slide-index=""
-	data-caption="Russia to seize more of Ukraine if Europe &#8216;piglings&#8217; reject demands: Putin"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11582159/ukraine-russia-putin-europe-piglings/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/10/769e71ef201a3b3e61fa59874dcc86ec255d38b7702830d7d805ec879ae60806_aa4ccb.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/10/769e71ef201a3b3e61fa59874dcc86ec255d38b7702830d7d805ec879ae60806_aa4ccb.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/10/769e71ef201a3b3e61fa59874dcc86ec255d38b7702830d7d805ec879ae60806_aa4ccb.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/10/769e71ef201a3b3e61fa59874dcc86ec255d38b7702830d7d805ec879ae60806_aa4ccb.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Russia to seize more of Ukraine if Europe &#8216;piglings&#8217; reject demands: Putin" data-title>Russia to seize more of Ukraine if Europe &#8216;piglings&#8217; reject demands: Putin</span>
 			</div>
 	
 						
@@ -4937,6 +4963,37 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3											>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-24"
+	data-post-id="11577705"
+	data-slide-index=""
+	data-caption="International students at USask struggle to keep up with rising tuition costs"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11577705/usask-international-students-struggle-rising-tuition-costs/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/ISSAC-Lounge-USask.bmp?w=720													loading="lazy"
+								width="720" height="405" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/ISSAC-Lounge-USask.bmp?w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/ISSAC-Lounge-USask.bmp?w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/ISSAC-Lounge-USask.bmp?w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="International students at USask struggle to keep up with rising tuition costs" data-title>International students at USask struggle to keep up with rising tuition costs</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >2 hours</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-25"
 	data-post-id="11586471"
 	data-slide-index=""
 	data-caption="Two teens arrested in stabbing of 12-year-old boy in Montreal: police"
@@ -4944,7 +5001,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11586471/que-teens-attempted-murder/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4961,13 +5018,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >3 hours</div>
+																<div class="c-posts__info" data-date >6 hours</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-25"
+	data-container-id="stories-item-26"
 	data-post-id="11586455"
 	data-slide-index=""
 	data-caption="Edmonton police release photos of truck connected to multi-vehicle hit and run"
@@ -4975,7 +5032,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11586455/edmonton-police-multi-vehicle-crash-photos/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4992,38 +5049,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >4 hours</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-26"
-	data-post-id="11586355"
-	data-slide-index=""
-	data-caption="BC Housing directed to investigate accused killer’s presence at SRO"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11586355/bc-housing-accused-killer/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/SRO-buildingggg.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="405" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/SRO-buildingggg.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/SRO-buildingggg.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/SRO-buildingggg.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="BC Housing directed to investigate accused killer’s presence at SRO" data-title>BC Housing directed to investigate accused killer’s presence at SRO</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >7 hours</div>
+																<div class="c-posts__info" data-date >6 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5117,7 +5143,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >5 hours</div>
+																<div class="c-posts__info" data-date >8 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5148,7 +5174,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >7 hours</div>
+																<div class="c-posts__info" data-date >10 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5582,26 +5608,26 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3											>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-36"
-	data-post-id="11584828"
+	data-post-id="11585396"
 	data-slide-index=""
-	data-caption="Pete Davidson welcomes 1st child with girlfriend Elsie Hewitt"
+	data-caption="Bowen Yang to exit &#8216;Saturday Night Live&#8217; after 8 seasons"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11584828/pete-davidson-elsie-hewitt-first-child-daughter/"
+		href="https://globalnews.ca/news/11585396/bowen-yang-exits-saturday-night-live/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/pete-davidson-baby.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
-								width="720" height="504" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/CP164640522.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=532 data-ratio=0.67									loading="lazy"
+								width="720" height="532" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/pete-davidson-baby.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/pete-davidson-baby.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/pete-davidson-baby.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/CP164640522.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/CP164640522.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/CP164640522.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Pete Davidson welcomes 1st child with girlfriend Elsie Hewitt" data-title>Pete Davidson welcomes 1st child with girlfriend Elsie Hewitt</span>
+					<span class="c-posts__headlineText" title="Bowen Yang to exit &#8216;Saturday Night Live&#8217; after 8 seasons" data-title>Bowen Yang to exit &#8216;Saturday Night Live&#8217; after 8 seasons</span>
 			</div>
 	
 						
@@ -5762,7 +5788,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >11 hours</div>
+																<div class="c-posts__info" data-date >Dec 20</div>
 																			</div>
 									</div>
 		</a>
@@ -6095,7 +6121,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >2 hours</div>
+																<div class="c-posts__info" data-date >4 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -6126,7 +6152,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >12 hours</div>
+																<div class="c-posts__info" data-date >Dec 20</div>
 																			</div>
 									</div>
 		</a>
@@ -6479,7 +6505,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			<script async src="//static.chartbeat.com/js/chartbeat_mab.js"></script>
 			<!-- Adobe Analytics code version: JS-2.6.0. -->
 		<script type="text/javascript">
-			var gnPageData = {"context_data":{"hourofday":"20","dayofweek":"Saturday","weekdayweekend":"Weekend","userregion":"national","region":"national"},"sections":["home"],"props":[]};
+			var gnPageData = {"context_data":{"hourofday":"22","dayofweek":"Saturday","weekdayweekend":"Weekend","userregion":"national","region":"national"},"sections":["home"],"props":[]};
 		</script>
 				<!-- End Adobe Analytics code -->
 			<script>
@@ -6528,5 +6554,5 @@ var GN_OneSignalSettings = {"isCurator":"","appId":"8beb7996-b996-4ce8-a474-d488
 		
 		<div class="l-dynamicElement"></div>
 
-			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75660ba8f4","applicationID":"418684855","transactionName":"Z1BWZxdTWkAHVExRXF4adVARW1tdSV9XVVY=","queueTime":0,"applicationTime":460,"atts":"SxdBEV9JSR9EVhoCSE1I","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+			</body>
 </html>
