@@ -184,8 +184,7 @@
         }
     </script>
     	<!-- Meta Tags -->
-	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"75660ba8f4",applicationID:"418684855",browserID:"419993820"};;/*! For license information please see nr-loader-rum-1.308.0.min.js.LICENSE.txt */
-(()=>{var e,t,r={163:(e,t,r)=>{"use strict";r.d(t,{j:()=>E});var n=r(384),i=r(1741);var a=r(2555);r(860).K7.genericEvents;const s="experimental.resources",o="register",c=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(2614),u=r(944),l=r(8122);const f="[data-nr-mask]",g=e=>(0,l.a)(e,(()=>{const e={feature_flags:[],experimental:{allow_registered_children:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{get allow_registered_children(){return e.feature_flags.includes(o)||e.experimental.allow_registered_children},set allow_registered_children(t){e.experimental.allow_registered_children=t},duplicate_registered_data:!1},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(s)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:d.wk,inactiveMs:d.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){c(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,u.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){c(t)?e.block_selector+=",".concat(t):""!==t&&(0,u.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,u.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},spa:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var p=r(6154),m=r(9324);let h=0;const v={buildEnv:m.F3,distMethod:m.Xs,version:m.xv,originTime:p.WN},b={consented:!1},y={appMetadata:{},get consented(){return this.session?.state?.consent||b.consented},set consented(e){b.consented=e},customTransaction:void 0,denyList:void 0,disabled:!1,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++h}},_=e=>{const t=(0,l.a)(e,y),r=Object.keys(v).reduce((e,t)=>(e[t]={value:v[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)};var w=r(5701);const x=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var R=r(7836),k=r(3241);const A={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},S=e=>(0,l.a)(e,A),T=new Set;function E(e,t={},r,s){let{init:o,info:c,loader_config:d,runtime:u={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();o=e.init,c=e.info,d=e.loader_config}e.init=g(o||{}),e.loader_config=S(d||{}),c.jsAttributes??={},p.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,a.D)(c);const f=e.init,m=[c.beacon,c.errorBeacon];T.has(e.agentIdentifier)||(f.proxy.assets&&(x(f.proxy.assets),m.push(f.proxy.assets)),f.proxy.beacon&&m.push(f.proxy.beacon),e.beacons=[...m],function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach(r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let a=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return a?a(...t):n})})}(e),(0,n.US)("activatedFeatures",w.B)),u.denyList=[...f.ajax.deny_list||[],...f.ajax.block_internal?m:[]],u.ptid=e.agentIdentifier,u.loaderType=r,e.runtime=_(u),T.has(e.agentIdentifier)||(e.ee=R.ee.get(e.agentIdentifier),e.exposed=l,(0,k.W)({agentIdentifier:e.agentIdentifier,drained:!!w.B?.[e.agentIdentifier],type:"lifecycle",name:"initialize",feature:void 0,data:e.config})),T.add(e.agentIdentifier)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>s,US:()=>u,Zm:()=>o,bQ:()=>d,dV:()=>c,pV:()=>l});var n=r(6154),i=r(1863),a=r(1910);const s={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function o(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function c(){let e=o();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,a.i)(...Object.values(e.o))),e}function d(e,t){let r=o();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function u(e,t){o()[e]=t}function l(){return function(){let e=o();const t=e.info||{};e.info={beacon:s.beacon,errorBeacon:s.errorBeacon,...t}}(),function(){let e=o();const t=e.init||{};e.init={...t}}(),c(),function(){let e=o();const t=e.loader_config||{};e.loader_config={...t}}(),o()}},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>u,K7:()=>c,P3:()=>d,XX:()=>i,Yy:()=>o,df:()=>a,qY:()=>n,v4:()=>s});const n="events",i="jserrors",a="browser/blobs",s="rum",o="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},d={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.spa]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.softNav]:8,[c.sessionReplay]:9,[c.logging]:10,[c.genericEvents]:11},u={[c.pageViewEvent]:s,[c.pageViewTiming]:n,[c.ajax]:n,[c.spa]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:a,[c.sessionReplay]:a,[c.logging]:o,[c.genericEvents]:"ins"}},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({agentIdentifier:null,drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},1687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>d,Ze:()=>f,x3:()=>u});var n=r(3241),i=r(7836),a=r(3606),s=r(860),o=r(2646);const c={};function d(e,t){const r={staged:!1,priority:s.P3[t]||0};l(e),c[e].get(t)||c[e].set(t,r)}function u(e,t){e&&c[e]&&(c[e].get(t)&&c[e].delete(t),p(e,t,!1),c[e].size&&g(e))}function l(e){if(!e)throw new Error("agentIdentifier required");c[e]||(c[e]=new Map)}function f(e="",t="feature",r=!1){if(l(e),!e||!c[e].get(t)||r)return p(e,t);c[e].get(t).staged=!0,g(e)}function g(e){const t=Array.from(c[e]);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{c[e].delete(t),p(e,t)}))}function p(e,t,r=!0){const s=e?i.ee.get(e):i.ee,c=a.i.handlers;if(!s.aborted&&s.backlog&&c){if((0,n.W)({agentIdentifier:e,type:"lifecycle",name:"drain",feature:t}),r){const e=s.backlog[t],r=c[t];if(r){for(let t=0;e&&t<e.length;++t)m(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0]?.context()instanceof o.y&&t[0].on(e,t[1])})})}}s.isolatedBacklog||delete c[t],s.backlog[t]=null,s.emit("drain-"+t,[])}}function m(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}})}},1738:(e,t,r)=>{"use strict";r.d(t,{U:()=>g,Y:()=>f});var n=r(3241),i=r(9908),a=r(1863),s=r(944),o=r(5701),c=r(3969),d=r(8362),u=r(860),l=r(4261);function f(e,t,r,a){const f=a||r;!f||f[e]&&f[e]!==d.d.prototype[e]||(f[e]=function(){(0,i.p)(c.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({agentIdentifier:r.agentIdentifier,drained:!!o.B?.[r.agentIdentifier],type:"data",name:"api",feature:l.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,s.R)(23,e)}})}function g(e,t,r,n,s){const o=e.info;null===r?delete o.jsAttributes[t]:o.jsAttributes[t]=r,(s||null===r)&&(0,i.p)(l.Pl+n,[(0,a.t)(),t,r],void 0,"session",e.ee)}},1741:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(4261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},1863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},1910:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),a=t.includes("nrWrapper");return r||a||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},2555:(e,t,r)=>{"use strict";r.d(t,{D:()=>o,f:()=>s});var n=r(384),i=r(8122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function s(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const o=e=>(0,i.a)(e,a)},2614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>s,H3:()=>n,g:()=>d,iL:()=>c,tS:()=>o,uh:()=>i,wk:()=>a});const n="NRBA",i="SESSION",a=144e5,s=18e5,o={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},d={OFF:0,FULL:1,ERROR:2}},2646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},2843:(e,t,r)=>{"use strict";r.d(t,{G:()=>a,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function a(e,t,r){(0,n.sp)("pagehide",e,t,r)}},3241:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(6154);const i="newrelic";function a(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},3606:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(9908);a.on=s;var i=a.handlers={};function a(e,t,r,a){s(a||n.d,i,e,t,r)}function s(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var s=t[a]=t[a]||{};(s[r]=s[r]||[]).push([e,i])}},3878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},3969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>o,rs:()=>i,xV:()=>s,z_:()=>a});const n=r(860).K7.metrics,i="sm",a="cm",s="storeSupportabilityMetrics",o="storeEventMetrics"},4234:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(7836),i=r(1687);class a{constructor(e,t){this.agentIdentifier=e,this.ee=n.ee.get(e),this.featureName=t,this.blocked=!1}deregisterDrain(){(0,i.x3)(this.agentIdentifier,this.featureName)}}},4261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>d,BL:()=>o,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>h,Pl:()=>n,Pv:()=>k,Tb:()=>l,U2:()=>a,V1:()=>R,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>s,nb:()=>m,o5:()=>u});const n="api-",i="addPageAction",a="addToTrace",s="addRelease",o="finished",c="interaction",d="log",u="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",m="setApplicationVersion",h="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",R="measure",k="consent"},5289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>s,Qr:()=>c,sB:()=>o});var n=r(3878),i=r(6389);function a(){return"undefined"==typeof document||"complete"===document.readyState}function s(e,t){if(a())return e();const r=(0,i.J)(e),s=setInterval(()=>{a()&&(clearInterval(s),r())},500);(0,n.sp)("load",r,t)}function o(e){if(a())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(a())return e();(0,n.sp)("popstate",e)}},5607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},5701:(e,t,r)=>{"use strict";r.d(t,{B:()=>a,t:()=>s});var n=r(3241);const i=new Set,a={};function s(e,t){const r=t.agentIdentifier;a[r]??={},e&&"object"==typeof e&&(i.has(r)||(t.ee.emit("rumresp",[e]),a[r]=e,i.add(r),(0,n.W)({agentIdentifier:r,loaded:!0,drained:!0,type:"lifecycle",name:"load",feature:void 0,data:e})))}},6154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>c,RI:()=>i,WN:()=>u,bv:()=>a,eN:()=>l,gm:()=>s,mw:()=>o,sb:()=>d});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),s=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===s?.document?.visibilityState),c=/iPad|iPhone|iPod/.test(s.navigator?.userAgent),d=c&&"undefined"==typeof SharedWorker,u=((()=>{const e=s.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)()),l=()=>"undefined"!=typeof PerformanceNavigationTiming&&s?.performance?.getEntriesByType("navigation")?.[0]?.responseStart},6389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},6630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},7699:(e,t,r)=>{"use strict";r.d(t,{It:()=>a,KC:()=>o,No:()=>i,qh:()=>s});var n=r(860);const i=16e3,a=1e6,s="SESSION_ERROR",o={[n.K7.logging]:!0,[n.K7.genericEvents]:!1,[n.K7.jserrors]:!1,[n.K7.ajax]:!1}},7836:(e,t,r)=>{"use strict";r.d(t,{P:()=>o,ee:()=>c});var n=r(384),i=r(8990),a=r(2646),s=r(5607);const o="nr@context:".concat(s.W),c=function e(t,r){var n={},s={},u={},l=!1;try{l=16===r.length&&d.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var o=g(n);m(e).forEach(e=>{e.apply(o,r)});var d=v()[s[e]];d&&d.push([f,e,r,o]);return o},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{s[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,o,()=>new a.y(o)):new a.y(o)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return u[t]=u[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),d=(0,n.Zm)();d.ee||(d.ee=c)},8122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let s in a)if(void 0!==e[s])try{if(null===e[s]){r[s]=null;continue}Array.isArray(e[s])&&Array.isArray(t[s])?r[s]=Array.from(new Set([...e[s],...t[s]])):"object"==typeof e[s]&&"object"==typeof t[s]?r[s]=i(e[s],t[s]):r[s]=e[s]}catch(e){r[s]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},8362:(e,t,r)=>{"use strict";r.d(t,{d:()=>a});var n=r(9566),i=r(1741);class a extends i.W{agentIdentifier=(0,n.LA)(16)}},8374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},8990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},9324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>a,xv:()=>n});const n="1.308.0",i="PROD",a="CDN"},9566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>o,bz:()=>s});var n=r(6154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function s(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map(e=>"x"===e?a(t,r++).toString(16):"y"===e?(3&a()|8).toString(16):e).join("")}function o(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const s=[];for(var o=0;o<e;o++)s.push(a(r,i++).toString(16));return s.join("")}},9908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var a=n[e]={exports:{}};return r[e](a,a.exports,i),a.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce((t,r)=>(i.f[r](e,t),t),[])),i.u=e=>"nr-rum-1.308.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.308.0.PROD:",i.l=(r,n,a,s)=>{if(e[r])e[r].push(n);else{var o,c;if(void 0!==a)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+a){o=l;break}}if(!o){c=!0;var f={296:"sha512-+MIMDsOcckGXa1EdWHqFNv7P+JUkd5kQwCBr3KE6uCvnsBNUrdSt4a/3/L4j4TxtnaMNjHpza2/erNQbpacJQA=="};(o=document.createElement("script")).charset="utf-8",i.nc&&o.setAttribute("nonce",i.nc),o.setAttribute("data-webpack",t+a),o.src=r,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),f[s]&&(o.integrity=f[s])}e[r]=[n];var g=(t,n)=>{o.onerror=o.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],o.parentNode&&o.parentNode.removeChild(o),i&&i.forEach(e=>e(n)),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=g.bind(null,o.onerror),o.onload=g.bind(null,o.onload),c&&document.head.appendChild(o)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var a=new Promise((r,i)=>n=e[t]=[r,i]);r.push(n[2]=a);var s=i.p+i.u(t),o=new Error;i.l(s,r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var a=r&&("load"===r.type?"missing":r.type),s=r&&r.target&&r.target.src;o.message="Loading chunk "+t+" failed: ("+a+": "+s+")",o.name="ChunkLoadError",o.type=a,o.request=s,n[1](o)}},"chunk-"+t,t)}};var t=(t,r)=>{var n,a,[s,o,c]=r,d=0;if(s.some(t=>0!==e[t])){for(n in o)i.o(o,n)&&(i.m[n]=o[n]);if(c)c(i)}for(t&&t(r);d<s.length;d++)a=s[d],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},r=self["webpackChunk:NRBA-1.308.0.PROD"]=self["webpackChunk:NRBA-1.308.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(8362),t=i(860);const r=Object.values(t.K7);var n=i(163);var a=i(9908),s=i(1863),o=i(4261),c=i(1738);var d=i(1687),u=i(4234),l=i(5289),f=i(6154),g=i(944),p=i(384);const m=e=>f.RI&&!0===e?.privacy.cookies_enabled;function h(e){return!!(0,p.dV)().o.MO&&m(e)&&!0===e?.session_trace.enabled}var v=i(6389),b=i(7699);class y extends u.W{constructor(e,t){super(e.agentIdentifier,t),this.agentRef=e,this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,v.J)(()=>{(0,d.Ak)(e.agentIdentifier,this.featureName),t()}))}):(0,d.Ak)(e.agentIdentifier,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;const n=async()=>{let n;await this.deferred;try{if(m(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,3305));n=t(e)}}catch(e){(0,g.R)(20,e),this.ee.emit("internal-error",[e]),(0,a.p)(b.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#t(this.featureName,n,e.init))return(0,d.Ze)(this.agentIdentifier,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,g.R)(34,e),this.abortHandler?.(),(0,d.Ze)(this.agentIdentifier,this.featureName,!0),this.loadedSuccessfully(!1),this.ee&&this.ee.abort()}};f.RI?(0,l.GG)(()=>n(),!0):n()}#t(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return h(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}}var _=i(6630),w=i(2614),x=i(3241);class R extends y{static featureName=_.T;constructor(e){var t;super(e,_.T),this.setupInspectionEvents(e.agentIdentifier),t=e,(0,c.Y)(o.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,a.p)(o.Pl+o.Fw,[(0,s.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>i.e(296).then(i.bind(i,3943)))}setupInspectionEvents(e){const t=(t,r)=>{t&&(0,x.W)({agentIdentifier:e,timeStamp:t.timeStamp,loaded:"complete"===t.target.readyState,type:"window",name:r,data:t.target.location+""})};(0,l.sB)(e=>{t(e,"DOMContentLoaded")}),(0,l.GG)(e=>{t(e,"load")}),(0,l.Qr)(e=>{t(e,"navigate")}),this.ee.on(w.tS.UPDATE,(t,r)=>{(0,x.W)({agentIdentifier:e,type:"lifecycle",name:"session",data:r})})}}class k extends e.d{constructor(e){var t;(super(),f.gm)?(this.features={},(0,p.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(R),(0,n.j)(this,e,e.loaderType||"agent"),t=this,(0,c.Y)(o.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,c.U)(t,e,r,o.cD,n);(0,g.R)(40,typeof r)}else(0,g.R)(39,typeof e)},t),function(e){(0,c.Y)(o.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,g.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,a.p)(o.Pl+"setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,c.U)(e,"enduser.id",t,o.Dl,!0)},e)}(this),function(e){(0,c.Y)(o.nb,function(t){if("string"==typeof t||null===t)return(0,c.U)(e,"application.version",t,o.nb,!1);(0,g.R)(42,typeof t)},e)}(this),function(e){(0,c.Y)(o.d3,function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,c.Y)(o.Pv,function(t=!0){if("boolean"==typeof t){if((0,a.p)(o.Pl+o.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum()})}}else(0,g.R)(65,typeof t)},e)}(this),this.run()):(0,g.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return r.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),n=[...this.desiredFeatures];n.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),n.forEach(r=>{if(!e[r.featureName]&&r.featureName!==t.K7.pageViewEvent)return;if(r.featureName===t.K7.spa)return void(0,g.R)(67);const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,g.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,g.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,p.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var A=i(2843),S=i(782);class T extends y{static featureName=S.T;constructor(e){super(e,S.T),f.RI&&((0,A.u)(()=>(0,a.p)("docHidden",[(0,s.t)()],void 0,S.T,this.ee),!0),(0,A.G)(()=>(0,a.p)("winPagehide",[(0,s.t)()],void 0,S.T,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,2117))))}}var E=i(3969);class I extends y{static featureName=E.TZ;constructor(e){super(e,E.TZ),f.RI&&document.addEventListener("securitypolicyviolation",e=>{(0,a.p)(E.xV,["Generic/CSPViolation/Detected"],void 0,this.featureName,this.ee)}),this.importAggregator(e,()=>i.e(296).then(i.bind(i,9623)))}}new k({features:[R,T,I],loaderType:"lite"})})()})();</script>
+	<meta charset="UTF-8">
 	<meta name="theme-color" content="#231F20">
 
 			<meta name="msvalidate.01" content="9E5C74811CA48CCCC61A2CF3C0A1BA6A">
@@ -565,23 +564,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-trendingTopics__title">In the news</div>
 				<ul class="c-trendingTopics__list">
 							<li class="c-trendingTopics__item">
-					<a href="https://globalnews.ca/news/11639360/carney-walked-back-davos-comments-call-trump/" class="c-trendingTopics__link l-header__button c-headerButton">
-						<span>Carney</span>
+					<a href="https://globalnews.ca/news/11639735/what-is-nipah-virus-disease-outbreak/" class="c-trendingTopics__link l-header__button c-headerButton">
+						<span>Nipah Virus</span>
 					</a>
 				</li>
 							<li class="c-trendingTopics__item">
-					<a href="https://globalnews.ca/news/11639373/ice-agents-security-2026-winter-olympics/" class="c-trendingTopics__link l-header__button c-headerButton">
+					<a href="https://globalnews.ca/news/11640030/shooting-border-patrol-us-mexico-border/" class="c-trendingTopics__link l-header__button c-headerButton">
+						<span>Border Patrol</span>
+					</a>
+				</li>
+							<li class="c-trendingTopics__item">
+					<a href="https://globalnews.ca/news/11639752/doug-ford-ice-vehicle-new-comments/" class="c-trendingTopics__link l-header__button c-headerButton">
 						<span>ICE</span>
 					</a>
 				</li>
 							<li class="c-trendingTopics__item">
-					<a href="https://globalnews.ca/news/11639369/greg-bovino-leaving-minnesota-ice-shooting/" class="c-trendingTopics__link l-header__button c-headerButton">
-						<span>Greg Bovino</span>
-					</a>
-				</li>
-							<li class="c-trendingTopics__item">
-					<a href="https://globalnews.ca/news/11639650/opp-highway-401-trenton-collisions/" class="c-trendingTopics__link l-header__button c-headerButton">
-						<span>Highway 401</span>
+					<a href="https://globalnews.ca/news/11639479/las-vegas-hotel-group-promos-canada-dollars/" class="c-trendingTopics__link l-header__button c-headerButton">
+						<span>Las Vegas</span>
 					</a>
 				</li>
 					</ul>
@@ -1521,10 +1520,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay=""
 						data-displayinline-featured="false"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_11638091_6979fcbd122d1"
+			data-displayinline-player-id="miniplayer_11638091_697a1bfde1ad2"
 			data-displayinline-video-id="11638091"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/11638091/#autoplay&#038;stickyiframe=miniplayer_11638091_6979fcbd122d1"
+    		data-displayinline="https://globalnews.ca/video/embed/11638091/#autoplay&#038;stickyiframe=miniplayer_11638091_697a1bfde1ad2"
     									data-displayinline-container="stories-1-0"
 										data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Business Matters: Bank of Canada expected to keep key policy rate steady this week&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;],&quot;keywords&quot;:[&quot;bank-of-canada&quot;,&quot;business&quot;,&quot;business-matters&quot;,&quot;short-clip&quot;]}}"
@@ -1724,6 +1723,39 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-3"
+	data-post-id="11641184"
+	data-slide-index=""
+	data-caption="Rep. Ilhan Omar sprayed with unknown substance, man tackled, arrested"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11641184/ilhan-omar-doused-unknown-substance-suspect-arrested-minneapolis/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/01/CP175691867.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=511 data-ratio=0.67									loading="lazy"
+								width="720" height="511" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/CP175691867.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/CP175691867.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/CP175691867.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Rep. Ilhan Omar sprayed with unknown substance, man tackled, arrested" data-title>Rep. Ilhan Omar sprayed with unknown substance, man tackled, arrested</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>U.S. News</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">16 mins</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-4"
 	data-post-id="11640013"
 	data-slide-index=""
 	data-caption="Alberta judges urge respect, independence after Danielle Smith said she wants to &#8216;direct&#8217; them"
@@ -1731,7 +1763,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11640013/alberta-judges-danielle-smith/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1756,7 +1788,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-4"
+	data-container-id="stories-item-5"
 	data-post-id="11625147"
 	data-slide-index=""
 	data-caption="Canada deal on Chinese EVs shows trade &#8216;trumped national security&#8217;: experts"
@@ -1764,7 +1796,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11625147/chinese-electric-vehicles-security-risks/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1789,7 +1821,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-5"
+	data-container-id="stories-item-6"
 	data-post-id="11639479"
 	data-slide-index=""
 	data-caption="Vegas casino owner introduces &#8216;at par&#8217; pricing for Canadian tourists amid slump"
@@ -1797,7 +1829,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11639479/las-vegas-hotel-group-promos-canada-dollars/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1810,39 +1842,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="Vegas casino owner introduces &#8216;at par&#8217; pricing for Canadian tourists amid slump" data-title>Vegas casino owner introduces &#8216;at par&#8217; pricing for Canadian tourists amid slump</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jan 27</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-6"
-	data-post-id="11639360"
-	data-slide-index=""
-	data-caption="‘I meant what I said&#8217;: Carney says he did not walk back Davos speech to Trump"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11639360/carney-walked-back-davos-comments-call-trump/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/01/Carney-Trump-Davos-call.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/Carney-Trump-Davos-call.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/Carney-Trump-Davos-call.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/Carney-Trump-Davos-call.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="‘I meant what I said&#8217;: Carney says he did not walk back Davos speech to Trump" data-title>‘I meant what I said&#8217;: Carney says he did not walk back Davos speech to Trump</span>
 			</div>
 	
 						
@@ -1977,33 +1976,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-10"
-	data-post-id="11639369"
+	data-post-id="11639731"
 	data-slide-index=""
-	data-caption="Border Patrol commander Greg Bovino leaving Minnesota after 2nd fatal shooting"
+	data-caption="Pizza Pops contaminated with E. coli tied to 7 hospitalizations, data shows"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11639369/greg-bovino-leaving-minnesota-ice-shooting/"
+		href="https://globalnews.ca/news/11639731/pizza-pops-illness-hospitalization-update/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/01/a49fee446861e0011f64b46b247aa63d2a108e4136033d3d504dbaf79f5d0207_d62d70.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/01/CP175683231.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
 								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/a49fee446861e0011f64b46b247aa63d2a108e4136033d3d504dbaf79f5d0207_d62d70.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/a49fee446861e0011f64b46b247aa63d2a108e4136033d3d504dbaf79f5d0207_d62d70.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/a49fee446861e0011f64b46b247aa63d2a108e4136033d3d504dbaf79f5d0207_d62d70.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/CP175683231.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/CP175683231.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/CP175683231.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Border Patrol commander Greg Bovino leaving Minnesota after 2nd fatal shooting" data-title>Border Patrol commander Greg Bovino leaving Minnesota after 2nd fatal shooting</span>
+					<span class="c-posts__headlineText" title="Pizza Pops contaminated with E. coli tied to 7 hospitalizations, data shows" data-title>Pizza Pops contaminated with E. coli tied to 7 hospitalizations, data shows</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>U.S. News</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Health</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jan 27</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
 									</div>
 		</a>
@@ -2035,7 +2034,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Features</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">10 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jan 27</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
 									</div>
@@ -2086,10 +2085,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay="true"
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6979fcbd17133"
+			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_697a1bfde4f56"
 			data-displayinline-video-id="49a91e7f-1023-430f-8d66-561055f3d0f7"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6979fcbd17133"
+    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_697a1bfde4f56"
     		    			data-displayinline-playlist="49a91e7f-1023-430f-8d66-561055f3d0f7"
     									data-displayinline-container="mini-ott"
 																data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;recent_terms_datastore&quot;,&quot;type&quot;:&quot;wlo_option&quot;}}"
@@ -2220,37 +2219,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="What is Nipah virus? What to know about the disease as India faces outbreak" data-title>What is Nipah virus? What to know about the disease as India faces outbreak</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">19,634</span>
-							<span class="c-posts__info">Read</span>
-						</div>
-												
-											</div>
-				</a>
-			</li>
-								<li class="c-posts__item" data-post-id="11639650">
-				<a
-					href="https://globalnews.ca/news/11639650/opp-highway-401-trenton-collisions/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:1}"
-				>
-					<div class="c-posts__rank">
-							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#2"></use>
-	</svg>
-						</div>
-					
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/01/hwy-401-fire-trenton-pileup.jpg?quality=65&#038;strip=all&#038;w=542				data-width=542 data-height=720 data-ratio=0.67									loading="lazy"
-								width="542" height="720" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/hwy-401-fire-trenton-pileup.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/hwy-401-fire-trenton-pileup.jpg?quality=65&#038;strip=all&#038;w=422 422w,https://globalnews.ca/wp-content/uploads/2026/01/hwy-401-fire-trenton-pileup.jpg?quality=65&#038;strip=all&#038;w=542 542w,"				data-sizes="auto"						/>
-													</div>
-							<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="About 50 vehicles involved in &#8216;many&#8217; collisions on Highway 401" data-title>About 50 vehicles involved in &#8216;many&#8217; collisions on Highway 401</span>
-			</div>
-													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">10,668</span>
+							<span class="c-posts__info c-posts__info--highlight">27,267</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2260,11 +2229,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<li class="c-posts__item" data-post-id="11639752">
 				<a
 					href="https://globalnews.ca/news/11639752/doug-ford-ice-vehicle-new-comments/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:1}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#3"></use>
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#2"></use>
 	</svg>
 						</div>
 					
@@ -2280,7 +2249,37 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Ford distances himself from ICE vehicle order placed with Ontario-based company" data-title>Ford distances himself from ICE vehicle order placed with Ontario-based company</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">9,524</span>
+							<span class="c-posts__info c-posts__info--highlight">22,119</span>
+							<span class="c-posts__info">Read</span>
+						</div>
+												
+											</div>
+				</a>
+			</li>
+								<li class="c-posts__item" data-post-id="11639650">
+				<a
+					href="https://globalnews.ca/news/11639650/opp-highway-401-trenton-collisions/"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
+				>
+					<div class="c-posts__rank">
+							<svg class="c-icon  c-posts__rankIcon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#3"></use>
+	</svg>
+						</div>
+					
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/01/hwy-401-fire-trenton-pileup.jpg?quality=65&#038;strip=all&#038;w=542				data-width=542 data-height=720 data-ratio=0.67									loading="lazy"
+								width="542" height="720" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/hwy-401-fire-trenton-pileup.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/hwy-401-fire-trenton-pileup.jpg?quality=65&#038;strip=all&#038;w=422 422w,https://globalnews.ca/wp-content/uploads/2026/01/hwy-401-fire-trenton-pileup.jpg?quality=65&#038;strip=all&#038;w=542 542w,"				data-sizes="auto"						/>
+													</div>
+							<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="About 50 vehicles involved in &#8216;many&#8217; collisions on Highway 401" data-title>About 50 vehicles involved in &#8216;many&#8217; collisions on Highway 401</span>
+			</div>
+													<div class="c-posts__about">
+							<span class="c-posts__info c-posts__info--highlight">14,702</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2310,7 +2309,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="1 person shot, in critical condition in incident involving U.S. Border Patrol" data-title>1 person shot, in critical condition in incident involving U.S. Border Patrol</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">6,335</span>
+							<span class="c-posts__info c-posts__info--highlight">14,048</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2340,7 +2339,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="The Bank of Canada&#8217;s 1st rate decision of 2026 is almost here" data-title>The Bank of Canada&#8217;s 1st rate decision of 2026 is almost here</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">4,345</span>
+							<span class="c-posts__info c-posts__info--highlight">7,064</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2443,37 +2442,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="What is Nipah virus? What to know about the disease as India faces outbreak" data-title>What is Nipah virus? What to know about the disease as India faces outbreak</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">19,634</span>
-							<span class="c-posts__info">Read</span>
-						</div>
-												
-											</div>
-				</a>
-			</li>
-								<li class="c-posts__item" data-post-id="11639650">
-				<a
-					href="https://globalnews.ca/news/11639650/opp-highway-401-trenton-collisions/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:1}"
-				>
-					<div class="c-posts__rank">
-							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#2"></use>
-	</svg>
-						</div>
-					
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/01/hwy-401-fire-trenton-pileup.jpg?quality=65&#038;strip=all&#038;w=542				data-width=542 data-height=720 data-ratio=0.67									loading="lazy"
-								width="542" height="720" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/hwy-401-fire-trenton-pileup.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/hwy-401-fire-trenton-pileup.jpg?quality=65&#038;strip=all&#038;w=422 422w,https://globalnews.ca/wp-content/uploads/2026/01/hwy-401-fire-trenton-pileup.jpg?quality=65&#038;strip=all&#038;w=542 542w,"				data-sizes="auto"						/>
-													</div>
-							<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="About 50 vehicles involved in &#8216;many&#8217; collisions on Highway 401" data-title>About 50 vehicles involved in &#8216;many&#8217; collisions on Highway 401</span>
-			</div>
-													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">10,668</span>
+							<span class="c-posts__info c-posts__info--highlight">27,267</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2483,11 +2452,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<li class="c-posts__item" data-post-id="11639752">
 				<a
 					href="https://globalnews.ca/news/11639752/doug-ford-ice-vehicle-new-comments/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:1}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#3"></use>
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#2"></use>
 	</svg>
 						</div>
 					
@@ -2503,7 +2472,37 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Ford distances himself from ICE vehicle order placed with Ontario-based company" data-title>Ford distances himself from ICE vehicle order placed with Ontario-based company</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">9,524</span>
+							<span class="c-posts__info c-posts__info--highlight">22,119</span>
+							<span class="c-posts__info">Read</span>
+						</div>
+												
+											</div>
+				</a>
+			</li>
+								<li class="c-posts__item" data-post-id="11639650">
+				<a
+					href="https://globalnews.ca/news/11639650/opp-highway-401-trenton-collisions/"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
+				>
+					<div class="c-posts__rank">
+							<svg class="c-icon  c-posts__rankIcon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#3"></use>
+	</svg>
+						</div>
+					
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/01/hwy-401-fire-trenton-pileup.jpg?quality=65&#038;strip=all&#038;w=542				data-width=542 data-height=720 data-ratio=0.67									loading="lazy"
+								width="542" height="720" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/hwy-401-fire-trenton-pileup.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/hwy-401-fire-trenton-pileup.jpg?quality=65&#038;strip=all&#038;w=422 422w,https://globalnews.ca/wp-content/uploads/2026/01/hwy-401-fire-trenton-pileup.jpg?quality=65&#038;strip=all&#038;w=542 542w,"				data-sizes="auto"						/>
+													</div>
+							<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="About 50 vehicles involved in &#8216;many&#8217; collisions on Highway 401" data-title>About 50 vehicles involved in &#8216;many&#8217; collisions on Highway 401</span>
+			</div>
+													<div class="c-posts__about">
+							<span class="c-posts__info c-posts__info--highlight">14,702</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2533,7 +2532,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="1 person shot, in critical condition in incident involving U.S. Border Patrol" data-title>1 person shot, in critical condition in incident involving U.S. Border Patrol</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">6,335</span>
+							<span class="c-posts__info c-posts__info--highlight">14,048</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2563,7 +2562,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="The Bank of Canada&#8217;s 1st rate decision of 2026 is almost here" data-title>The Bank of Canada&#8217;s 1st rate decision of 2026 is almost here</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">4,345</span>
+							<span class="c-posts__info c-posts__info--highlight">7,064</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2976,8 +2975,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-miniplayer"
 			data-displayinline-video-id="11640142"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11640142,11640344,11638091/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fheb0uyv730-i41u7y80p1%2FTHUMB.00_00_40_03.Still005.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
-    		    			data-displayinline-playlist="11640142,11640344,11638091"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11640142,11638091,11640344/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fheb0uyv730-i41u7y80p1%2FTHUMB.00_00_40_03.Still005.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
+    		    			data-displayinline-playlist="11640142,11638091,11640344"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;&#039;I\u00a0don\u2019t direct companies&#039;: Doug Ford distances himself from ICE armoured vehicle order&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;],&quot;keywords&quot;:[&quot;armoured-vehicles&quot;,&quot;doug-ford&quot;,&quot;ice&quot;,&quot;international&quot;,&quot;short-clip&quot;]}}"
 			    		>
@@ -3046,8 +3045,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11640142"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11640142,11640344,11638091/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11640142,11640344,11638091"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11640142,11638091,11640344/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11640142,11638091,11640344"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="Ontario Premier Doug Ford is distancing himself from an Ontario-headquartered company selling military vehicles to Immigration and Customs Enforcement (ICE) in the United States, a few weeks after he called the agreement “fantastic.” 
 “I’m going to correct this story once and for all. I heard it on the news. I don’t direct companies to sell military vehicles down south or around the world,” Ford said on Tuesday."
@@ -3069,13 +3068,40 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Serious multiple-vehicle collision on Highway 401" data-slide-index="1">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Business Matters: Bank of Canada expected to keep key policy rate steady this week" data-slide-index="1">
+	<a href="https://globalnews.ca/video/11638091/business-matters-bank-of-canada-expected-to-keep-key-policy-rate-steady-this-week/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11638091"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11638091,11640344,11640142/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11638091,11640344,11640142"
+			data-video-carousel-label="News"
+			data-video-carousel-content="Canada’s central bank will make its first interest rate decision of 2026 on Wednesday and many economists expect no changes. In fact, barring any unforeseen circumstances, it may hold steady for the rest of the year. Anne Gaviola has this story and more in Business Matters for Jan. 26, 2026."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/rwnoc5yo1a-7xe7ugqef8/BOC_JAN_26.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">News</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Business Matters: Bank of Canada expected to keep key policy rate steady this week</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Serious multiple-vehicle collision on Highway 401" data-slide-index="2">
 	<a href="https://globalnews.ca/video/11640344/serious-multiple-vehicle-collision-on-highway-401/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11640344"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11640344,11638091,11640142/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11640344,11638091,11640142"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11640344,11640142,11638091/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11640344,11640142,11638091"
 			data-video-carousel-label="Environment"
 			data-video-carousel-content="A miracle on the 401 today, after a massive chain-reaction crash involving nearly 50 vehicles shut down the highway.
 
@@ -3098,33 +3124,6 @@ Jesse Reynolds has more."
 					<div class="c-posts__info c-posts__info--highlight">Environment</div>
 				</div>
 						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Serious multiple-vehicle collision on Highway 401</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Business Matters: Bank of Canada expected to keep key policy rate steady this week" data-slide-index="2">
-	<a href="https://globalnews.ca/video/11638091/business-matters-bank-of-canada-expected-to-keep-key-policy-rate-steady-this-week/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11638091"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11638091,11640142,11640344/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11638091,11640142,11640344"
-			data-video-carousel-label="News"
-			data-video-carousel-content="Canada’s central bank will make its first interest rate decision of 2026 on Wednesday and many economists expect no changes. In fact, barring any unforeseen circumstances, it may hold steady for the rest of the year. Anne Gaviola has this story and more in Business Matters for Jan. 26, 2026."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/rwnoc5yo1a-7xe7ugqef8/BOC_JAN_26.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">News</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Business Matters: Bank of Canada expected to keep key policy rate steady this week</span></div>
 					</div>
 	</a>
 </li>
@@ -3167,17 +3166,17 @@ Jesse Reynolds has more."
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11640344"
+			data-displayinline-player-id="home-miniplayer_11638091"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11640344,11638091/#autoplay&#038;stickyiframe=home-miniplayer_11640344"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11638091,11640344/#autoplay&#038;stickyiframe=home-miniplayer_11638091"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/wen3d4rno4-yj4atznu1a/6Tu-401_PILEUP-SLIDE-RANT3_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/rwnoc5yo1a-7xe7ugqef8/BOC_JAN_26.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Serious multiple-vehicle collision on Highway 401'"
+					alt="Click to play video 'Business Matters: Bank of Canada expected to keep key policy rate steady this week'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3186,11 +3185,11 @@ Jesse Reynolds has more."
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11640344/serious-multiple-vehicle-collision-on-highway-401/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11638091/business-matters-bank-of-canada-expected-to-keep-key-policy-rate-steady-this-week/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Environment</div>
+					<div class="c-posts__info c-posts__info--highlight">News</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Serious multiple-vehicle collision on Highway 401</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Business Matters: Bank of Canada expected to keep key policy rate steady this week</span></div>
 		</a>
 	</div>
 </li>
@@ -3221,17 +3220,17 @@ Jesse Reynolds has more."
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11638091"
+			data-displayinline-player-id="home-miniplayer_11640344"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11638091,11640344/#autoplay&#038;stickyiframe=home-miniplayer_11638091"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11640344,11638091/#autoplay&#038;stickyiframe=home-miniplayer_11640344"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/rwnoc5yo1a-7xe7ugqef8/BOC_JAN_26.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/wen3d4rno4-yj4atznu1a/6Tu-401_PILEUP-SLIDE-RANT3_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Business Matters: Bank of Canada expected to keep key policy rate steady this week'"
+					alt="Click to play video 'Serious multiple-vehicle collision on Highway 401'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3240,11 +3239,11 @@ Jesse Reynolds has more."
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11638091/business-matters-bank-of-canada-expected-to-keep-key-policy-rate-steady-this-week/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11640344/serious-multiple-vehicle-collision-on-highway-401/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">News</div>
+					<div class="c-posts__info c-posts__info--highlight">Environment</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Business Matters: Bank of Canada expected to keep key policy rate steady this week</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Serious multiple-vehicle collision on Highway 401</span></div>
 		</a>
 	</div>
 </li>
@@ -3266,23 +3265,23 @@ Jesse Reynolds has more."
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant"
-			data-displayinline-video-id="11640344"
+			data-displayinline-video-id="11640142"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11640344,11640142,11640902,11638091,11640707/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fwen3d4rno4-yj4atznu1a%2F6Tu-401_PILEUP-SLIDE-RANT3_thumbnail_1280x720_.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
-    		    			data-displayinline-playlist="11640344,11640142,11640902,11638091,11640707"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11640142,11640344,11640902,11638091,11639931/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fheb0uyv730-i41u7y80p1%2FTHUMB.00_00_40_03.Still005.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
+    		    			data-displayinline-playlist="11640142,11640344,11640902,11638091,11639931"
     												data-displayinline-sticky="true"
-													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Serious multiple-vehicle collision on Highway 401&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;kingston&quot;,&quot;environment&quot;,&quot;traffic&quot;],&quot;keywords&quot;:[&quot;fires&quot;,&quot;short-clip&quot;]}}"
+													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;&#039;I\u00a0don\u2019t direct companies&#039;: Doug Ford distances himself from ICE armoured vehicle order&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;],&quot;keywords&quot;:[&quot;armoured-vehicles&quot;,&quot;doug-ford&quot;,&quot;ice&quot;,&quot;international&quot;,&quot;short-clip&quot;]}}"
 			    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Serious multiple-vehicle collision on Highway 401'"
+						alt="Click to play video: '&#8216;I don’t direct companies&#8217;: Doug Ford distances himself from ICE armoured vehicle order'"
 						width="640"
 						height="360"
-													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/wen3d4rno4-yj4atznu1a/6Tu-401_PILEUP-SLIDE-RANT3_thumbnail_1280x720_.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/heb0uyv730-i41u7y80p1/THUMB.00_00_40_03.Still005.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/wen3d4rno4-yj4atznu1a/6Tu-401_PILEUP-SLIDE-RANT3_thumbnail_1280x720_.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/wen3d4rno4-yj4atznu1a/6Tu-401_PILEUP-SLIDE-RANT3_thumbnail_1280x720_.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/wen3d4rno4-yj4atznu1a/6Tu-401_PILEUP-SLIDE-RANT3_thumbnail_1280x720_.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
+								data-srcset="https://i2.wp.com/media.globalnews.ca/videostatic/news/heb0uyv730-i41u7y80p1/THUMB.00_00_40_03.Still005.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i2.wp.com/media.globalnews.ca/videostatic/news/heb0uyv730-i41u7y80p1/THUMB.00_00_40_03.Still005.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i2.wp.com/media.globalnews.ca/videostatic/news/heb0uyv730-i41u7y80p1/THUMB.00_00_40_03.Still005.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -3292,26 +3291,21 @@ Jesse Reynolds has more."
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">1:02</time>
-																									<span class="c-video__title">Serious multiple-vehicle collision on Highway 401</span>
+																	<time class="c-video__duration">1:27</time>
+																									<span class="c-video__title">&#8216;I don’t direct companies&#8217;: Doug Ford distances himself from ICE armoured vehicle order</span>
 															</div>
 						</span>
 											</span>
 				</div>
 							</div>
 								<div class="l-videoCarousel__sidebar">
-													<a href="https://globalnews.ca/video/11640344/serious-multiple-vehicle-collision-on-highway-401/" class="l-videoCarousel__details">
-							<div class="l-videoCarousel__info">Environment</div>
+													<a href="https://globalnews.ca/video/11640142/i-dont-direct-companies-doug-ford-distances-himself-from-ice-armoured-vehicle-order/" class="l-videoCarousel__details">
+							<div class="l-videoCarousel__info">Canada</div>
 								<div class="l-videoCarousel__fullTitle">
-								Serious multiple-vehicle collision on Highway 401								</div>
+								&#8216;I don’t direct companies&#8217;: Doug Ford distances himself from ICE armoured vehicle order								</div>
 								<div class="l-videoCarousel__description">
-								A miracle on the 401 today, after a massive chain-reaction crash involving nearly 50 vehicles shut down the highway.
-
-First responders say the scene on the highway between Quinte West and Belleville looked far worse than the outcome.
-
-Somehow, police say there were no serious injuries.
-
-Jesse Reynolds has more.								</div>
+								Ontario Premier Doug Ford is distancing himself from an Ontario-headquartered company selling military vehicles to Immigration and Customs Enforcement (ICE) in the United States, a few weeks after he called the agreement “fantastic.” 
+“I’m going to correct this story once and for all. I heard it on the news. I don’t direct companies to sell military vehicles down south or around the world,” Ford said on Tuesday.								</div>
 						</a>
 								<div class="c-ad c-ad--bigbox c-ad--dark l-videoCarousel__ad">							<div class="c-ad__label">Advertisement</div>
 			
@@ -3338,13 +3332,41 @@ Jesse Reynolds has more.								</div>
 					<div class="c-carousel__track glide__track" data-glide-el="track">
 						<ul class="c-posts c-posts--video c-posts--tile c-posts--horizontal c-posts--inverted glide__slides">
 							
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Serious multiple-vehicle collision on Highway 401" data-slide-index="0">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="&#8216;I don’t direct companies&#8217;: Doug Ford distances himself from ICE armoured vehicle order" data-slide-index="0">
+	<a href="https://globalnews.ca/video/11640142/i-dont-direct-companies-doug-ford-distances-himself-from-ice-armoured-vehicle-order/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11640142"
+			data-video-player-id="home-miniplayer-variant"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11640142,11640344,11640902,11638091,11639931/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11640142,11640344,11640902,11638091,11639931"
+			data-video-carousel-label="Canada"
+			data-video-carousel-content="Ontario Premier Doug Ford is distancing himself from an Ontario-headquartered company selling military vehicles to Immigration and Customs Enforcement (ICE) in the United States, a few weeks after he called the agreement “fantastic.” 
+“I’m going to correct this story once and for all. I heard it on the news. I don’t direct companies to sell military vehicles down south or around the world,” Ford said on Tuesday."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/heb0uyv730-i41u7y80p1/THUMB.00_00_40_03.Still005.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">&#8216;I don’t direct companies&#8217;: Doug Ford distances himself from ICE armoured vehicle order</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Serious multiple-vehicle collision on Highway 401" data-slide-index="1">
 	<a href="https://globalnews.ca/video/11640344/serious-multiple-vehicle-collision-on-highway-401/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11640344"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11640344,11640142,11640902,11638091,11640707/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11640344,11640142,11640902,11638091,11640707"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11640344,11640902,11638091,11639931,11640142/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11640344,11640902,11638091,11639931,11640142"
 			data-video-carousel-label="Environment"
 			data-video-carousel-content="A miracle on the 401 today, after a massive chain-reaction crash involving nearly 50 vehicles shut down the highway.
 
@@ -3371,41 +3393,13 @@ Jesse Reynolds has more."
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="&#8216;I don’t direct companies&#8217;: Doug Ford distances himself from ICE armoured vehicle order" data-slide-index="1">
-	<a href="https://globalnews.ca/video/11640142/i-dont-direct-companies-doug-ford-distances-himself-from-ice-armoured-vehicle-order/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11640142"
-			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11640142,11640902,11638091,11640707,11640344/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11640142,11640902,11638091,11640707,11640344"
-			data-video-carousel-label="Canada"
-			data-video-carousel-content="Ontario Premier Doug Ford is distancing himself from an Ontario-headquartered company selling military vehicles to Immigration and Customs Enforcement (ICE) in the United States, a few weeks after he called the agreement “fantastic.” 
-“I’m going to correct this story once and for all. I heard it on the news. I don’t direct companies to sell military vehicles down south or around the world,” Ford said on Tuesday."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/heb0uyv730-i41u7y80p1/THUMB.00_00_40_03.Still005.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">&#8216;I don’t direct companies&#8217;: Doug Ford distances himself from ICE armoured vehicle order</span></div>
-					</div>
-	</a>
-</li>
-
 <li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Investigators suspect high levels of chlorine in Alberta pool sent 11 children to hospital" data-slide-index="2">
 	<a href="https://globalnews.ca/video/11640902/investigators-suspect-high-level-of-chlorine-in-swimming-pool-that-sent-10-children-to-hospital/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11640902"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11640902,11638091,11640707,11640344,11640142/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11640902,11638091,11640707,11640344,11640142"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11640902,11638091,11639931,11640142,11640344/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11640902,11638091,11639931,11640142,11640344"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="A chemical leak at a Canmore, Alta., pool last Sunday, where around 30 kids were waiting for treatment when the fire rescue team arrived, remains under investigation. Officials say an air monitor detected a high level of chemicals in the pool, which they believed to be chlorine. Bella Finn has more. "
 			>
@@ -3431,8 +3425,8 @@ Jesse Reynolds has more."
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11638091"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11638091,11640707,11640344,11640142,11640902/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11638091,11640707,11640344,11640142,11640902"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11638091,11639931,11640142,11640344,11640902/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11638091,11639931,11640142,11640344,11640902"
 			data-video-carousel-label="News"
 			data-video-carousel-content="Canada’s central bank will make its first interest rate decision of 2026 on Wednesday and many economists expect no changes. In fact, barring any unforeseen circumstances, it may hold steady for the rest of the year. Anne Gaviola has this story and more in Business Matters for Jan. 26, 2026."
 			>
@@ -3453,18 +3447,18 @@ Jesse Reynolds has more."
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Alberta judges make a statement about judicial independence after premier said she wants to &#8216;direct&#8217; them" data-slide-index="4">
-	<a href="https://globalnews.ca/video/11640707/alberta-judges-make-a-statement-about-judicial-independence-after-premier-said-she-wants-to-direct-them/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Las Vegas resorts offer 1-to-1 exchange rate for Canadian dollar to promote tourism" data-slide-index="4">
+	<a href="https://globalnews.ca/video/11639931/las-vegas-resorts-offer-1-to-1-exchange-rate-for-canadian-dollar-to-promote-tourism/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11640707"
+					data-video-id="11639931"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11640707,11640344,11640142,11640902,11638091/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11640707,11640344,11640142,11640902,11638091"
-			data-video-carousel-label="Crime"
-			data-video-carousel-content="Alberta&#039;s judges have come together to send a message about judicial independence. A letter issued by the province&#039;s three chief justices comes after Premier Danielle Smith said she wishes she could direct judges. As Sarah Komadina explains, law experts say it’s rare to have all three levels of court unite in this way."
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11639931,11640142,11640344,11640902,11638091/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11639931,11640142,11640344,11640902,11638091"
+			data-video-carousel-label="Consumer"
+			data-video-carousel-content="For Canadians travelling to the U.S., unfavourable exchange rates can deter tourism spending. A new commitment from various Las Vegas hotels is trying to encourage Canadian tourism by treating Canadian dollars as U.S. dollars. The initiative ends Aug. 31, 2026."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/1xbnhju6tw-uqa53zxlqc/6P_JUDGES_VS_SMITH.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/75by7n65dw-uevf0to15e/Vegas_thumb.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3473,9 +3467,9 @@ Jesse Reynolds has more."
 		</div>
 		<div class="l-videoCarousel__details c-posts__details">
 							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Crime</div>
+					<div class="c-posts__info c-posts__info--highlight">Consumer</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Alberta judges make a statement about judicial independence after premier said she wants to &#8216;direct&#8217; them</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Las Vegas resorts offer 1-to-1 exchange rate for Canadian dollar to promote tourism</span></div>
 					</div>
 	</a>
 </li>
@@ -3513,17 +3507,17 @@ Jesse Reynolds has more."
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11640142"
+			data-displayinline-player-id="home-miniplayer-variant_11640344"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11640142,11640902,11638091,11640707/#autoplay&#038;stickyiframe=home-miniplayer-variant_11640142"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11640344,11640902,11638091,11639931/#autoplay&#038;stickyiframe=home-miniplayer-variant_11640344"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/heb0uyv730-i41u7y80p1/THUMB.00_00_40_03.Still005.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/wen3d4rno4-yj4atznu1a/6Tu-401_PILEUP-SLIDE-RANT3_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video '&#8216;I don’t direct companies&#8217;: Doug Ford distances himself from ICE armoured vehicle order'"
+					alt="Click to play video 'Serious multiple-vehicle collision on Highway 401'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3532,11 +3526,11 @@ Jesse Reynolds has more."
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11640142/i-dont-direct-companies-doug-ford-distances-himself-from-ice-armoured-vehicle-order/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11640344/serious-multiple-vehicle-collision-on-highway-401/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+					<div class="c-posts__info c-posts__info--highlight">Environment</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">&#8216;I don’t direct companies&#8217;: Doug Ford distances himself from ICE armoured vehicle order</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Serious multiple-vehicle collision on Highway 401</span></div>
 		</a>
 	</div>
 </li>
@@ -3569,7 +3563,7 @@ Jesse Reynolds has more."
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant_11640902"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11640902,11638091,11640707,11640142/#autoplay&#038;stickyiframe=home-miniplayer-variant_11640902"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11640902,11638091,11639931,11640344/#autoplay&#038;stickyiframe=home-miniplayer-variant_11640902"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3601,7 +3595,7 @@ Jesse Reynolds has more."
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant_11638091"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11638091,11640707,11640142,11640902/#autoplay&#038;stickyiframe=home-miniplayer-variant_11638091"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11638091,11639931,11640344,11640902/#autoplay&#038;stickyiframe=home-miniplayer-variant_11638091"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3631,17 +3625,17 @@ Jesse Reynolds has more."
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11640707"
+			data-displayinline-player-id="home-miniplayer-variant_11639931"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11640707,11640142,11640902,11638091/#autoplay&#038;stickyiframe=home-miniplayer-variant_11640707"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11639931,11640344,11640902,11638091/#autoplay&#038;stickyiframe=home-miniplayer-variant_11639931"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/1xbnhju6tw-uqa53zxlqc/6P_JUDGES_VS_SMITH.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/75by7n65dw-uevf0to15e/Vegas_thumb.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Alberta judges make a statement about judicial independence after premier said she wants to &#8216;direct&#8217; them'"
+					alt="Click to play video 'Las Vegas resorts offer 1-to-1 exchange rate for Canadian dollar to promote tourism'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3650,11 +3644,11 @@ Jesse Reynolds has more."
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11640707/alberta-judges-make-a-statement-about-judicial-independence-after-premier-said-she-wants-to-direct-them/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11639931/las-vegas-resorts-offer-1-to-1-exchange-rate-for-canadian-dollar-to-promote-tourism/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Crime</div>
+					<div class="c-posts__info c-posts__info--highlight">Consumer</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Alberta judges make a statement about judicial independence after premier said she wants to &#8216;direct&#8217; them</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Las Vegas resorts offer 1-to-1 exchange rate for Canadian dollar to promote tourism</span></div>
 		</a>
 	</div>
 </li>
@@ -3719,44 +3713,12 @@ Jesse Reynolds has more."
 					>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11639731"
-				data-sophi-feature=latest-news			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11639731/pizza-pops-illness-hospitalization-update/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Pizza Pops contaminated with E. coli tied to 7 hospitalizations, data shows" data-title>Pizza Pops contaminated with E. coli tied to 7 hospitalizations, data shows</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						A growing number of Canadians have reported becoming ill and even hospitalized after consuming or handling Pillsbury Pizza Pops that may have been contaminated with E. coli O26.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Health</div>
-																						<div class="c-posts__info">Jan 27</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/01/CP175683231.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/CP175683231.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/CP175683231.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/CP175683231.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
 				data-post-id="11639688"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11639688/canada-population-2075/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3788,7 +3750,7 @@ Jesse Reynolds has more."
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11638221/canada-ultra-low-fertility/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3820,7 +3782,7 @@ Jesse Reynolds has more."
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11640228/cybersecurity-bill-internet-freedom-speech-minister/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3852,7 +3814,7 @@ Jesse Reynolds has more."
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11639621/2026-juno-awards-nominations-justin-bieber-tate-mcrae/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3884,7 +3846,7 @@ Jesse Reynolds has more."
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11637874/food-costs-rebates-price-freezes/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3916,7 +3878,7 @@ Jesse Reynolds has more."
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11639917/auto-theft-cost-soars-edmonton-calgary/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3938,6 +3900,38 @@ Jesse Reynolds has more."
 								width="720" height="405" alt="" 
 												srcset='' sizes=''
 								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/auto-theft-1_1.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/auto-theft-1_1.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/auto-theft-1_1.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11639806"
+				data-sophi-feature=latest-news			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11639806/russia-military-invasion/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Russia offers incentives to those outside the country to replenish military" data-title>Russia offers incentives to those outside the country to replenish military</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						Men from across the globe are being recruited to join the Russian military in exchange for cash bonuses and becoming free from imprisonment. 						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">World</div>
+																						<div class="c-posts__info">Jan 27</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/01/CP175670519.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/CP175670519.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/CP175670519.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/CP175670519.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -4052,8 +4046,8 @@ Jesse Reynolds has more."
 			data-displayinline-player-id="home-playlist-miniplayer"
 			data-displayinline-video-id="11640142"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11640142,11640344,11638091/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fheb0uyv730-i41u7y80p1%2FTHUMB.00_00_40_03.Still005.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
-    		    			data-displayinline-playlist="11640142,11640344,11638091"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11640142,11638091,11640344/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fheb0uyv730-i41u7y80p1%2FTHUMB.00_00_40_03.Still005.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
+    		    			data-displayinline-playlist="11640142,11638091,11640344"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;&#039;I\u00a0don\u2019t direct companies&#039;: Doug Ford distances himself from ICE armoured vehicle order&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;],&quot;keywords&quot;:[&quot;armoured-vehicles&quot;,&quot;doug-ford&quot;,&quot;ice&quot;,&quot;international&quot;,&quot;short-clip&quot;]}}"
 			    		>
@@ -4100,7 +4094,7 @@ Jesse Reynolds has more."
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11640142,11640344,11638091/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11640142,11638091,11640344/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">&#8216;I don’t direct companies&#8217;: Doug Ford distances himself from ICE armoured vehicle order</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4120,34 +4114,6 @@ Jesse Reynolds has more."
 </li>
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="2"
-	>
-	<a href="https://globalnews.ca/video/11640344/serious-multiple-vehicle-collision-on-highway-401/"
-		title="Serious multiple-vehicle collision on Highway 401"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11640344"
-		data-video-label="Environment"
-		data-video-player-id="home-playlist-miniplayer"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11640344,11638091/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Serious multiple-vehicle collision on Highway 401</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Environment					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/wen3d4rno4-yj4atznu1a/6Tu-401_PILEUP-SLIDE-RANT3_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="3"
 	>
 	<a href="https://globalnews.ca/video/11638091/business-matters-bank-of-canada-expected-to-keep-key-policy-rate-steady-this-week/"
 		title="Business Matters: Bank of Canada expected to keep key policy rate steady this week"
@@ -4173,6 +4139,34 @@ Jesse Reynolds has more."
 	</div>
 		</div>
 	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="3"
+	>
+	<a href="https://globalnews.ca/video/11640344/serious-multiple-vehicle-collision-on-highway-401/"
+		title="Serious multiple-vehicle collision on Highway 401"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11640344"
+		data-video-label="Environment"
+		data-video-player-id="home-playlist-miniplayer"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11640344,11638091/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Serious multiple-vehicle collision on Highway 401</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						Environment					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/wen3d4rno4-yj4atznu1a/6Tu-401_PILEUP-SLIDE-RANT3_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
 </li>			</ul>
 				</div>
 
@@ -4190,23 +4184,23 @@ Jesse Reynolds has more."
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-playlist-miniplayer-variant"
-			data-displayinline-video-id="11640344"
+			data-displayinline-video-id="11640142"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11640344,11640142,11640902,11638091,11640707/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fwen3d4rno4-yj4atznu1a%2F6Tu-401_PILEUP-SLIDE-RANT3_thumbnail_1280x720_.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
-    		    			data-displayinline-playlist="11640344,11640142,11640902,11638091,11640707"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11640142,11640344,11640902,11638091,11639931/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fheb0uyv730-i41u7y80p1%2FTHUMB.00_00_40_03.Still005.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
+    		    			data-displayinline-playlist="11640142,11640344,11640902,11638091,11639931"
     												data-displayinline-sticky="true"
-													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Serious multiple-vehicle collision on Highway 401&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;kingston&quot;,&quot;environment&quot;,&quot;traffic&quot;],&quot;keywords&quot;:[&quot;fires&quot;,&quot;short-clip&quot;]}}"
+													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;&#039;I\u00a0don\u2019t direct companies&#039;: Doug Ford distances himself from ICE armoured vehicle order&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;],&quot;keywords&quot;:[&quot;armoured-vehicles&quot;,&quot;doug-ford&quot;,&quot;ice&quot;,&quot;international&quot;,&quot;short-clip&quot;]}}"
 			    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Serious multiple-vehicle collision on Highway 401'"
+						alt="Click to play video: '&#8216;I don’t direct companies&#8217;: Doug Ford distances himself from ICE armoured vehicle order'"
 						width="640"
 						height="360"
-													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/wen3d4rno4-yj4atznu1a/6Tu-401_PILEUP-SLIDE-RANT3_thumbnail_1280x720_.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/heb0uyv730-i41u7y80p1/THUMB.00_00_40_03.Still005.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/wen3d4rno4-yj4atznu1a/6Tu-401_PILEUP-SLIDE-RANT3_thumbnail_1280x720_.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/wen3d4rno4-yj4atznu1a/6Tu-401_PILEUP-SLIDE-RANT3_thumbnail_1280x720_.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/wen3d4rno4-yj4atznu1a/6Tu-401_PILEUP-SLIDE-RANT3_thumbnail_1280x720_.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
+								data-srcset="https://i2.wp.com/media.globalnews.ca/videostatic/news/heb0uyv730-i41u7y80p1/THUMB.00_00_40_03.Still005.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i2.wp.com/media.globalnews.ca/videostatic/news/heb0uyv730-i41u7y80p1/THUMB.00_00_40_03.Still005.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i2.wp.com/media.globalnews.ca/videostatic/news/heb0uyv730-i41u7y80p1/THUMB.00_00_40_03.Still005.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -4216,8 +4210,8 @@ Jesse Reynolds has more."
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">1:02</time>
-																									<span class="c-video__title">Serious multiple-vehicle collision on Highway 401</span>
+																	<time class="c-video__duration">1:27</time>
+																									<span class="c-video__title">&#8216;I don’t direct companies&#8217;: Doug Ford distances himself from ICE armoured vehicle order</span>
 															</div>
 						</span>
 											</span>
@@ -4233,23 +4227,23 @@ Jesse Reynolds has more."
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="1"
 	>
-	<a href="https://globalnews.ca/video/11640344/serious-multiple-vehicle-collision-on-highway-401/"
-		title="Serious multiple-vehicle collision on Highway 401"
+	<a href="https://globalnews.ca/video/11640142/i-dont-direct-companies-doug-ford-distances-himself-from-ice-armoured-vehicle-order/"
+		title="&#8216;I don’t direct companies&#8217;: Doug Ford distances himself from ICE armoured vehicle order"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11640344"
-		data-video-label="Environment"
+		data-video-id="11640142"
+		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11640344,11640142,11640902,11638091,11640707/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11640142,11640344,11640902,11638091,11639931/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Serious multiple-vehicle collision on Highway 401</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">&#8216;I don’t direct companies&#8217;: Doug Ford distances himself from ICE armoured vehicle order</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Environment					</div>
+						Canada					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/wen3d4rno4-yj4atznu1a/6Tu-401_PILEUP-SLIDE-RANT3_thumbnail_1280x720_.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/heb0uyv730-i41u7y80p1/THUMB.00_00_40_03.Still005.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4261,23 +4255,23 @@ Jesse Reynolds has more."
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="2"
 	>
-	<a href="https://globalnews.ca/video/11640142/i-dont-direct-companies-doug-ford-distances-himself-from-ice-armoured-vehicle-order/"
-		title="&#8216;I don’t direct companies&#8217;: Doug Ford distances himself from ICE armoured vehicle order"
+	<a href="https://globalnews.ca/video/11640344/serious-multiple-vehicle-collision-on-highway-401/"
+		title="Serious multiple-vehicle collision on Highway 401"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11640142"
-		data-video-label="Canada"
+		data-video-id="11640344"
+		data-video-label="Environment"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11640142,11640902,11638091,11640707/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11640344,11640902,11638091,11639931/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">&#8216;I don’t direct companies&#8217;: Doug Ford distances himself from ICE armoured vehicle order</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Serious multiple-vehicle collision on Highway 401</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
+						Environment					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/heb0uyv730-i41u7y80p1/THUMB.00_00_40_03.Still005.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/wen3d4rno4-yj4atznu1a/6Tu-401_PILEUP-SLIDE-RANT3_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4296,7 +4290,7 @@ Jesse Reynolds has more."
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11640902,11638091,11640707,11640142/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11640902,11638091,11639931,11640344/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Investigators suspect high levels of chlorine in Alberta pool sent 11 children to hospital</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4324,7 +4318,7 @@ Jesse Reynolds has more."
 		data-video-label="News"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11638091,11640707,11640142,11640902/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11638091,11639931,11640344,11640902/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Business Matters: Bank of Canada expected to keep key policy rate steady this week</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4345,23 +4339,23 @@ Jesse Reynolds has more."
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="5"
 	>
-	<a href="https://globalnews.ca/video/11640707/alberta-judges-make-a-statement-about-judicial-independence-after-premier-said-she-wants-to-direct-them/"
-		title="Alberta judges make a statement about judicial independence after premier said she wants to &#8216;direct&#8217; them"
+	<a href="https://globalnews.ca/video/11639931/las-vegas-resorts-offer-1-to-1-exchange-rate-for-canadian-dollar-to-promote-tourism/"
+		title="Las Vegas resorts offer 1-to-1 exchange rate for Canadian dollar to promote tourism"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11640707"
-		data-video-label="Crime"
+		data-video-id="11639931"
+		data-video-label="Consumer"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11640707,11640142,11640902,11638091/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11639931,11640344,11640902,11638091/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Alberta judges make a statement about judicial independence after premier said she wants to &#8216;direct&#8217; them</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Las Vegas resorts offer 1-to-1 exchange rate for Canadian dollar to promote tourism</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Crime					</div>
+						Consumer					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/1xbnhju6tw-uqa53zxlqc/6P_JUDGES_VS_SMITH.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/75by7n65dw-uevf0to15e/Vegas_thumb.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4453,14 +4447,44 @@ Jesse Reynolds has more."
 			data-num-posts=10											>
 	<li class="c-posts__item  glide__slide  "
 	data-container-id="stories-item-17"
-	data-post-id="11640963"
+	data-post-id="11637480"
 	data-slide-index="0"
+	data-caption="Budget-friendly Valentine’s Day gifts under $50 she’ll love"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/the-curator/11637480/budget-friendly-valentines-day-gifts-under-50-shell-love/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/01/valentines.png?w=336				data-width=336 data-height=252 data-ratio=0.67									loading="lazy"
+								width="336" height="252" alt="" 
+						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Budget-friendly Valentine’s Day gifts under $50 she’ll love" data-title>Budget-friendly Valentine’s Day gifts under $50 she’ll love</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+											<div class="c-posts__info c-posts__info--highlight" data-label>The Curator</div>
+																								</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item  glide__slide  "
+	data-container-id="stories-item-18"
+	data-post-id="11640963"
+	data-slide-index="1"
 	data-caption="Dry, cracked skin? You need these winter skincare staples"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11640963/winter-skincare-essentials/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4482,15 +4506,15 @@ Jesse Reynolds has more."
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-18"
+	data-container-id="stories-item-19"
 	data-post-id="11637854"
-	data-slide-index="1"
+	data-slide-index="2"
 	data-caption="Samsonite, Monos and more: The best deals on luggage and travel accessories"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11637854/travel-deals-top-discounts-on-suitcases-carry-ons-accessories/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4512,15 +4536,15 @@ Jesse Reynolds has more."
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-19"
+	data-container-id="stories-item-20"
 	data-post-id="11638945"
-	data-slide-index="2"
+	data-slide-index="3"
 	data-caption="These 2016 trends are back&#8211;and better than ever"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11638945/2016-beauty-fashion-trends/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4542,15 +4566,15 @@ Jesse Reynolds has more."
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-20"
+	data-container-id="stories-item-21"
 	data-post-id="11487218"
-	data-slide-index="3"
+	data-slide-index="4"
 	data-caption="Best beauty products under $30 available on Amazon right now"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11487218/best-beauty-products-under-30-available-on-amazon-right-now/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4572,15 +4596,15 @@ Jesse Reynolds has more."
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-21"
+	data-container-id="stories-item-22"
 	data-post-id="11455221"
-	data-slide-index="4"
+	data-slide-index="5"
 	data-caption="Game-changing travel accessories for your next vacation"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11455221/game-changing-travel-accessories/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4602,15 +4626,15 @@ Jesse Reynolds has more."
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-22"
+	data-container-id="stories-item-23"
 	data-post-id="11637569"
-	data-slide-index="5"
+	data-slide-index="6"
 	data-caption="10 lighting upgrades that instantly make your home feel bigger and brighter"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11637569/best-home-lighting-2026/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4632,15 +4656,15 @@ Jesse Reynolds has more."
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-23"
+	data-container-id="stories-item-24"
 	data-post-id="11588786"
-	data-slide-index="6"
+	data-slide-index="7"
 	data-caption="Viral cleaning &amp; organizing tools that actually work"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11588786/top-cleaning-and-organizing-tips/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4662,15 +4686,15 @@ Jesse Reynolds has more."
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-24"
+	data-container-id="stories-item-25"
 	data-post-id="11235144"
-	data-slide-index="7"
+	data-slide-index="8"
 	data-caption="Best packing cubes that are worth the hype"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11235144/best-packing-cubes-that-are-worth-the-hype/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4692,15 +4716,15 @@ Jesse Reynolds has more."
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-25"
+	data-container-id="stories-item-26"
 	data-post-id="10106122"
-	data-slide-index="8"
+	data-slide-index="9"
 	data-caption="Best winter car essentials: Must-have products for safe driving"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/10106122/car-winter-prep/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4712,36 +4736,6 @@ Jesse Reynolds has more."
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="Best winter car essentials: Must-have products for safe driving" data-title>Best winter car essentials: Must-have products for safe driving</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-											<div class="c-posts__info c-posts__info--highlight" data-label>The Curator</div>
-																								</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-26"
-	data-post-id="11617071"
-	data-slide-index="9"
-	data-caption="Best kids’ night lights that make bedtime easier"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/the-curator/11617071/top-10-best-night-lights-for-kids/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/01/night-light.jpg?quality=65&#038;strip=all&#038;w=336				data-width=336 data-height=252 data-ratio=0.67									loading="lazy"
-								width="336" height="252" alt="" 
-						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Best kids’ night lights that make bedtime easier" data-title>Best kids’ night lights that make bedtime easier</span>
 			</div>
 	
 						
@@ -4835,37 +4829,6 @@ Jesse Reynolds has more."
 			data-num-posts=3											>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-27"
-	data-post-id="11639806"
-	data-slide-index=""
-	data-caption="Russia offers incentives to those outside the country to replenish military"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11639806/russia-military-invasion/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/01/CP175670519.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/CP175670519.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/CP175670519.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/CP175670519.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Russia offers incentives to those outside the country to replenish military" data-title>Russia offers incentives to those outside the country to replenish military</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Jan 27</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-28"
 	data-post-id="11638076"
 	data-slide-index=""
 	data-caption="China removes top military general over suspected discipline violations"
@@ -4873,7 +4836,7 @@ Jesse Reynolds has more."
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11638076/china-xi-jinping-military/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -4896,7 +4859,7 @@ Jesse Reynolds has more."
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-29"
+	data-container-id="stories-item-28"
 	data-post-id="11637856"
 	data-slide-index=""
 	data-caption="At least 18 dead after ferry carrying over 330 people sinks in Philippines"
@@ -4904,7 +4867,7 @@ Jesse Reynolds has more."
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11637856/philippines-ferry-capsizes-sinks-death-toll/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4917,6 +4880,37 @@ Jesse Reynolds has more."
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="At least 18 dead after ferry carrying over 330 people sinks in Philippines" data-title>At least 18 dead after ferry carrying over 330 people sinks in Philippines</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >Jan 26</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-29"
+	data-post-id="11638030"
+	data-slide-index=""
+	data-caption="EU investigating Musk&#8217;s X platform over AI chatbot Grok sexual deepfakes"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11638030/european-union-investigation-musk-grok-deepfakes/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/01/CP175665100.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/CP175665100.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/CP175665100.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/CP175665100.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="EU investigating Musk&#8217;s X platform over AI chatbot Grok sexual deepfakes" data-title>EU investigating Musk&#8217;s X platform over AI chatbot Grok sexual deepfakes</span>
 			</div>
 	
 						
@@ -5012,6 +5006,37 @@ Jesse Reynolds has more."
 			data-num-posts=3											>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-30"
+	data-post-id="11640841"
+	data-slide-index=""
+	data-caption="City of Calgary maintains Angel&#8217;s Cafe site necessary for feeder main replacement"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11640841/city-of-calgary-angels-cafe-site-necessary-feeder-main-replacement/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/01/feeder-main-project00000001.png?w=720													loading="lazy"
+								width="720" height="405" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/feeder-main-project00000001.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/feeder-main-project00000001.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/feeder-main-project00000001.png?w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="City of Calgary maintains Angel&#8217;s Cafe site necessary for feeder main replacement" data-title>City of Calgary maintains Angel&#8217;s Cafe site necessary for feeder main replacement</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >58 mins</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-31"
 	data-post-id="11641135"
 	data-slide-index=""
 	data-caption="Toronto cyclists set to defend bike lane challenge before Ontario&#8217;s top court"
@@ -5019,7 +5044,7 @@ Jesse Reynolds has more."
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11641135/toronto-cyclists-bike-lane-challenge/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5036,13 +5061,13 @@ Jesse Reynolds has more."
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >37 mins</div>
+																<div class="c-posts__info" data-date >3 hours</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-31"
+	data-container-id="stories-item-32"
 	data-post-id="11641118"
 	data-slide-index=""
 	data-caption="&#8216;Lightly felt&#8217;: Magnitude 3.7 earthquake gently rocks southern Ontario"
@@ -5050,7 +5075,7 @@ Jesse Reynolds has more."
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11641118/ontario-earthquake-near-orillia-january-2026/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -5067,38 +5092,7 @@ Jesse Reynolds has more."
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >1 hour</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-32"
-	data-post-id="11640530"
-	data-slide-index=""
-	data-caption="Life is getting more difficult for trans people living in Alberta, advocates say"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11640530/life-more-difficult-trans-people-alberta/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/09/974112f69448f8fae44276e3c5081873d6eda487988436656527a7b03a4d9932.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/09/974112f69448f8fae44276e3c5081873d6eda487988436656527a7b03a4d9932.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/09/974112f69448f8fae44276e3c5081873d6eda487988436656527a7b03a4d9932.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/09/974112f69448f8fae44276e3c5081873d6eda487988436656527a7b03a4d9932.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Life is getting more difficult for trans people living in Alberta, advocates say" data-title>Life is getting more difficult for trans people living in Alberta, advocates say</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >9 hours</div>
+																<div class="c-posts__info" data-date >3 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5192,7 +5186,7 @@ Jesse Reynolds has more."
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >1 hour</div>
+																<div class="c-posts__info" data-date >3 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5223,7 +5217,7 @@ Jesse Reynolds has more."
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >9 hours</div>
+																<div class="c-posts__info" data-date >11 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5254,7 +5248,7 @@ Jesse Reynolds has more."
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >10 hours</div>
+																<div class="c-posts__info" data-date >Jan 27</div>
 																			</div>
 									</div>
 		</a>
@@ -6170,7 +6164,7 @@ Jesse Reynolds has more."
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >6 hours</div>
+																<div class="c-posts__info" data-date >8 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -6201,7 +6195,7 @@ Jesse Reynolds has more."
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >9 hours</div>
+																<div class="c-posts__info" data-date >11 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -6232,7 +6226,7 @@ Jesse Reynolds has more."
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >9 hours</div>
+																<div class="c-posts__info" data-date >11 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -6554,7 +6548,7 @@ Jesse Reynolds has more."
 			<script async src="//static.chartbeat.com/js/chartbeat_mab.js"></script>
 			<!-- Adobe Analytics code version: JS-2.6.0. -->
 		<script type="text/javascript">
-			var gnPageData = {"context_data":{"hourofday":"7","dayofweek":"Wednesday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
+			var gnPageData = {"context_data":{"hourofday":"9","dayofweek":"Wednesday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
 		</script>
 				<!-- End Adobe Analytics code -->
 			<script>
@@ -6603,5 +6597,5 @@ var GN_OneSignalSettings = {"isCurator":"","appId":"8beb7996-b996-4ce8-a474-d488
 		
 		<div class="l-dynamicElement"></div>
 
-			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75660ba8f4","applicationID":"418684855","transactionName":"Z1BWZxdTWkAHVExRXF4adVARW1tdSV9XVVY=","queueTime":0,"applicationTime":613,"atts":"SxdBEV9JSR9EVhoCSE1I","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+			</body>
 </html>
