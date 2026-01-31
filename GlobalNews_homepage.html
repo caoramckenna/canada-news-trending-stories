@@ -184,7 +184,8 @@
         }
     </script>
     	<!-- Meta Tags -->
-	<meta charset="UTF-8">
+	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"75660ba8f4",applicationID:"418684855",browserID:"419993820"};;/*! For license information please see nr-loader-rum-1.308.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={163:(e,t,r)=>{"use strict";r.d(t,{j:()=>E});var n=r(384),i=r(1741);var a=r(2555);r(860).K7.genericEvents;const s="experimental.resources",o="register",c=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(2614),u=r(944),l=r(8122);const f="[data-nr-mask]",g=e=>(0,l.a)(e,(()=>{const e={feature_flags:[],experimental:{allow_registered_children:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{get allow_registered_children(){return e.feature_flags.includes(o)||e.experimental.allow_registered_children},set allow_registered_children(t){e.experimental.allow_registered_children=t},duplicate_registered_data:!1},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(s)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:d.wk,inactiveMs:d.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){c(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,u.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){c(t)?e.block_selector+=",".concat(t):""!==t&&(0,u.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,u.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},spa:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var p=r(6154),m=r(9324);let h=0;const v={buildEnv:m.F3,distMethod:m.Xs,version:m.xv,originTime:p.WN},b={consented:!1},y={appMetadata:{},get consented(){return this.session?.state?.consent||b.consented},set consented(e){b.consented=e},customTransaction:void 0,denyList:void 0,disabled:!1,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++h}},_=e=>{const t=(0,l.a)(e,y),r=Object.keys(v).reduce((e,t)=>(e[t]={value:v[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)};var w=r(5701);const x=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var R=r(7836),k=r(3241);const A={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},S=e=>(0,l.a)(e,A),T=new Set;function E(e,t={},r,s){let{init:o,info:c,loader_config:d,runtime:u={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();o=e.init,c=e.info,d=e.loader_config}e.init=g(o||{}),e.loader_config=S(d||{}),c.jsAttributes??={},p.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,a.D)(c);const f=e.init,m=[c.beacon,c.errorBeacon];T.has(e.agentIdentifier)||(f.proxy.assets&&(x(f.proxy.assets),m.push(f.proxy.assets)),f.proxy.beacon&&m.push(f.proxy.beacon),e.beacons=[...m],function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach(r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let a=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return a?a(...t):n})})}(e),(0,n.US)("activatedFeatures",w.B)),u.denyList=[...f.ajax.deny_list||[],...f.ajax.block_internal?m:[]],u.ptid=e.agentIdentifier,u.loaderType=r,e.runtime=_(u),T.has(e.agentIdentifier)||(e.ee=R.ee.get(e.agentIdentifier),e.exposed=l,(0,k.W)({agentIdentifier:e.agentIdentifier,drained:!!w.B?.[e.agentIdentifier],type:"lifecycle",name:"initialize",feature:void 0,data:e.config})),T.add(e.agentIdentifier)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>s,US:()=>u,Zm:()=>o,bQ:()=>d,dV:()=>c,pV:()=>l});var n=r(6154),i=r(1863),a=r(1910);const s={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function o(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function c(){let e=o();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,a.i)(...Object.values(e.o))),e}function d(e,t){let r=o();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function u(e,t){o()[e]=t}function l(){return function(){let e=o();const t=e.info||{};e.info={beacon:s.beacon,errorBeacon:s.errorBeacon,...t}}(),function(){let e=o();const t=e.init||{};e.init={...t}}(),c(),function(){let e=o();const t=e.loader_config||{};e.loader_config={...t}}(),o()}},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>u,K7:()=>c,P3:()=>d,XX:()=>i,Yy:()=>o,df:()=>a,qY:()=>n,v4:()=>s});const n="events",i="jserrors",a="browser/blobs",s="rum",o="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},d={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.spa]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.softNav]:8,[c.sessionReplay]:9,[c.logging]:10,[c.genericEvents]:11},u={[c.pageViewEvent]:s,[c.pageViewTiming]:n,[c.ajax]:n,[c.spa]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:a,[c.sessionReplay]:a,[c.logging]:o,[c.genericEvents]:"ins"}},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({agentIdentifier:null,drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},1687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>d,Ze:()=>f,x3:()=>u});var n=r(3241),i=r(7836),a=r(3606),s=r(860),o=r(2646);const c={};function d(e,t){const r={staged:!1,priority:s.P3[t]||0};l(e),c[e].get(t)||c[e].set(t,r)}function u(e,t){e&&c[e]&&(c[e].get(t)&&c[e].delete(t),p(e,t,!1),c[e].size&&g(e))}function l(e){if(!e)throw new Error("agentIdentifier required");c[e]||(c[e]=new Map)}function f(e="",t="feature",r=!1){if(l(e),!e||!c[e].get(t)||r)return p(e,t);c[e].get(t).staged=!0,g(e)}function g(e){const t=Array.from(c[e]);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{c[e].delete(t),p(e,t)}))}function p(e,t,r=!0){const s=e?i.ee.get(e):i.ee,c=a.i.handlers;if(!s.aborted&&s.backlog&&c){if((0,n.W)({agentIdentifier:e,type:"lifecycle",name:"drain",feature:t}),r){const e=s.backlog[t],r=c[t];if(r){for(let t=0;e&&t<e.length;++t)m(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0]?.context()instanceof o.y&&t[0].on(e,t[1])})})}}s.isolatedBacklog||delete c[t],s.backlog[t]=null,s.emit("drain-"+t,[])}}function m(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}})}},1738:(e,t,r)=>{"use strict";r.d(t,{U:()=>g,Y:()=>f});var n=r(3241),i=r(9908),a=r(1863),s=r(944),o=r(5701),c=r(3969),d=r(8362),u=r(860),l=r(4261);function f(e,t,r,a){const f=a||r;!f||f[e]&&f[e]!==d.d.prototype[e]||(f[e]=function(){(0,i.p)(c.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({agentIdentifier:r.agentIdentifier,drained:!!o.B?.[r.agentIdentifier],type:"data",name:"api",feature:l.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,s.R)(23,e)}})}function g(e,t,r,n,s){const o=e.info;null===r?delete o.jsAttributes[t]:o.jsAttributes[t]=r,(s||null===r)&&(0,i.p)(l.Pl+n,[(0,a.t)(),t,r],void 0,"session",e.ee)}},1741:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(4261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},1863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},1910:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),a=t.includes("nrWrapper");return r||a||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},2555:(e,t,r)=>{"use strict";r.d(t,{D:()=>o,f:()=>s});var n=r(384),i=r(8122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function s(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const o=e=>(0,i.a)(e,a)},2614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>s,H3:()=>n,g:()=>d,iL:()=>c,tS:()=>o,uh:()=>i,wk:()=>a});const n="NRBA",i="SESSION",a=144e5,s=18e5,o={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},d={OFF:0,FULL:1,ERROR:2}},2646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},2843:(e,t,r)=>{"use strict";r.d(t,{G:()=>a,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function a(e,t,r){(0,n.sp)("pagehide",e,t,r)}},3241:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(6154);const i="newrelic";function a(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},3606:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(9908);a.on=s;var i=a.handlers={};function a(e,t,r,a){s(a||n.d,i,e,t,r)}function s(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var s=t[a]=t[a]||{};(s[r]=s[r]||[]).push([e,i])}},3878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},3969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>o,rs:()=>i,xV:()=>s,z_:()=>a});const n=r(860).K7.metrics,i="sm",a="cm",s="storeSupportabilityMetrics",o="storeEventMetrics"},4234:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(7836),i=r(1687);class a{constructor(e,t){this.agentIdentifier=e,this.ee=n.ee.get(e),this.featureName=t,this.blocked=!1}deregisterDrain(){(0,i.x3)(this.agentIdentifier,this.featureName)}}},4261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>d,BL:()=>o,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>h,Pl:()=>n,Pv:()=>k,Tb:()=>l,U2:()=>a,V1:()=>R,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>s,nb:()=>m,o5:()=>u});const n="api-",i="addPageAction",a="addToTrace",s="addRelease",o="finished",c="interaction",d="log",u="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",m="setApplicationVersion",h="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",R="measure",k="consent"},5289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>s,Qr:()=>c,sB:()=>o});var n=r(3878),i=r(6389);function a(){return"undefined"==typeof document||"complete"===document.readyState}function s(e,t){if(a())return e();const r=(0,i.J)(e),s=setInterval(()=>{a()&&(clearInterval(s),r())},500);(0,n.sp)("load",r,t)}function o(e){if(a())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(a())return e();(0,n.sp)("popstate",e)}},5607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},5701:(e,t,r)=>{"use strict";r.d(t,{B:()=>a,t:()=>s});var n=r(3241);const i=new Set,a={};function s(e,t){const r=t.agentIdentifier;a[r]??={},e&&"object"==typeof e&&(i.has(r)||(t.ee.emit("rumresp",[e]),a[r]=e,i.add(r),(0,n.W)({agentIdentifier:r,loaded:!0,drained:!0,type:"lifecycle",name:"load",feature:void 0,data:e})))}},6154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>c,RI:()=>i,WN:()=>u,bv:()=>a,eN:()=>l,gm:()=>s,mw:()=>o,sb:()=>d});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),s=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===s?.document?.visibilityState),c=/iPad|iPhone|iPod/.test(s.navigator?.userAgent),d=c&&"undefined"==typeof SharedWorker,u=((()=>{const e=s.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)()),l=()=>"undefined"!=typeof PerformanceNavigationTiming&&s?.performance?.getEntriesByType("navigation")?.[0]?.responseStart},6389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},6630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},7699:(e,t,r)=>{"use strict";r.d(t,{It:()=>a,KC:()=>o,No:()=>i,qh:()=>s});var n=r(860);const i=16e3,a=1e6,s="SESSION_ERROR",o={[n.K7.logging]:!0,[n.K7.genericEvents]:!1,[n.K7.jserrors]:!1,[n.K7.ajax]:!1}},7836:(e,t,r)=>{"use strict";r.d(t,{P:()=>o,ee:()=>c});var n=r(384),i=r(8990),a=r(2646),s=r(5607);const o="nr@context:".concat(s.W),c=function e(t,r){var n={},s={},u={},l=!1;try{l=16===r.length&&d.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var o=g(n);m(e).forEach(e=>{e.apply(o,r)});var d=v()[s[e]];d&&d.push([f,e,r,o]);return o},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{s[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,o,()=>new a.y(o)):new a.y(o)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return u[t]=u[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),d=(0,n.Zm)();d.ee||(d.ee=c)},8122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let s in a)if(void 0!==e[s])try{if(null===e[s]){r[s]=null;continue}Array.isArray(e[s])&&Array.isArray(t[s])?r[s]=Array.from(new Set([...e[s],...t[s]])):"object"==typeof e[s]&&"object"==typeof t[s]?r[s]=i(e[s],t[s]):r[s]=e[s]}catch(e){r[s]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},8362:(e,t,r)=>{"use strict";r.d(t,{d:()=>a});var n=r(9566),i=r(1741);class a extends i.W{agentIdentifier=(0,n.LA)(16)}},8374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},8990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},9324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>a,xv:()=>n});const n="1.308.0",i="PROD",a="CDN"},9566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>o,bz:()=>s});var n=r(6154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function s(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map(e=>"x"===e?a(t,r++).toString(16):"y"===e?(3&a()|8).toString(16):e).join("")}function o(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const s=[];for(var o=0;o<e;o++)s.push(a(r,i++).toString(16));return s.join("")}},9908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var a=n[e]={exports:{}};return r[e](a,a.exports,i),a.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce((t,r)=>(i.f[r](e,t),t),[])),i.u=e=>"nr-rum-1.308.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.308.0.PROD:",i.l=(r,n,a,s)=>{if(e[r])e[r].push(n);else{var o,c;if(void 0!==a)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+a){o=l;break}}if(!o){c=!0;var f={296:"sha512-+MIMDsOcckGXa1EdWHqFNv7P+JUkd5kQwCBr3KE6uCvnsBNUrdSt4a/3/L4j4TxtnaMNjHpza2/erNQbpacJQA=="};(o=document.createElement("script")).charset="utf-8",i.nc&&o.setAttribute("nonce",i.nc),o.setAttribute("data-webpack",t+a),o.src=r,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),f[s]&&(o.integrity=f[s])}e[r]=[n];var g=(t,n)=>{o.onerror=o.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],o.parentNode&&o.parentNode.removeChild(o),i&&i.forEach(e=>e(n)),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=g.bind(null,o.onerror),o.onload=g.bind(null,o.onload),c&&document.head.appendChild(o)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var a=new Promise((r,i)=>n=e[t]=[r,i]);r.push(n[2]=a);var s=i.p+i.u(t),o=new Error;i.l(s,r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var a=r&&("load"===r.type?"missing":r.type),s=r&&r.target&&r.target.src;o.message="Loading chunk "+t+" failed: ("+a+": "+s+")",o.name="ChunkLoadError",o.type=a,o.request=s,n[1](o)}},"chunk-"+t,t)}};var t=(t,r)=>{var n,a,[s,o,c]=r,d=0;if(s.some(t=>0!==e[t])){for(n in o)i.o(o,n)&&(i.m[n]=o[n]);if(c)c(i)}for(t&&t(r);d<s.length;d++)a=s[d],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},r=self["webpackChunk:NRBA-1.308.0.PROD"]=self["webpackChunk:NRBA-1.308.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(8362),t=i(860);const r=Object.values(t.K7);var n=i(163);var a=i(9908),s=i(1863),o=i(4261),c=i(1738);var d=i(1687),u=i(4234),l=i(5289),f=i(6154),g=i(944),p=i(384);const m=e=>f.RI&&!0===e?.privacy.cookies_enabled;function h(e){return!!(0,p.dV)().o.MO&&m(e)&&!0===e?.session_trace.enabled}var v=i(6389),b=i(7699);class y extends u.W{constructor(e,t){super(e.agentIdentifier,t),this.agentRef=e,this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,v.J)(()=>{(0,d.Ak)(e.agentIdentifier,this.featureName),t()}))}):(0,d.Ak)(e.agentIdentifier,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;const n=async()=>{let n;await this.deferred;try{if(m(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,3305));n=t(e)}}catch(e){(0,g.R)(20,e),this.ee.emit("internal-error",[e]),(0,a.p)(b.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#t(this.featureName,n,e.init))return(0,d.Ze)(this.agentIdentifier,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,g.R)(34,e),this.abortHandler?.(),(0,d.Ze)(this.agentIdentifier,this.featureName,!0),this.loadedSuccessfully(!1),this.ee&&this.ee.abort()}};f.RI?(0,l.GG)(()=>n(),!0):n()}#t(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return h(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}}var _=i(6630),w=i(2614),x=i(3241);class R extends y{static featureName=_.T;constructor(e){var t;super(e,_.T),this.setupInspectionEvents(e.agentIdentifier),t=e,(0,c.Y)(o.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,a.p)(o.Pl+o.Fw,[(0,s.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>i.e(296).then(i.bind(i,3943)))}setupInspectionEvents(e){const t=(t,r)=>{t&&(0,x.W)({agentIdentifier:e,timeStamp:t.timeStamp,loaded:"complete"===t.target.readyState,type:"window",name:r,data:t.target.location+""})};(0,l.sB)(e=>{t(e,"DOMContentLoaded")}),(0,l.GG)(e=>{t(e,"load")}),(0,l.Qr)(e=>{t(e,"navigate")}),this.ee.on(w.tS.UPDATE,(t,r)=>{(0,x.W)({agentIdentifier:e,type:"lifecycle",name:"session",data:r})})}}class k extends e.d{constructor(e){var t;(super(),f.gm)?(this.features={},(0,p.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(R),(0,n.j)(this,e,e.loaderType||"agent"),t=this,(0,c.Y)(o.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,c.U)(t,e,r,o.cD,n);(0,g.R)(40,typeof r)}else(0,g.R)(39,typeof e)},t),function(e){(0,c.Y)(o.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,g.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,a.p)(o.Pl+"setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,c.U)(e,"enduser.id",t,o.Dl,!0)},e)}(this),function(e){(0,c.Y)(o.nb,function(t){if("string"==typeof t||null===t)return(0,c.U)(e,"application.version",t,o.nb,!1);(0,g.R)(42,typeof t)},e)}(this),function(e){(0,c.Y)(o.d3,function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,c.Y)(o.Pv,function(t=!0){if("boolean"==typeof t){if((0,a.p)(o.Pl+o.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum()})}}else(0,g.R)(65,typeof t)},e)}(this),this.run()):(0,g.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return r.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),n=[...this.desiredFeatures];n.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),n.forEach(r=>{if(!e[r.featureName]&&r.featureName!==t.K7.pageViewEvent)return;if(r.featureName===t.K7.spa)return void(0,g.R)(67);const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,g.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,g.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,p.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var A=i(2843),S=i(782);class T extends y{static featureName=S.T;constructor(e){super(e,S.T),f.RI&&((0,A.u)(()=>(0,a.p)("docHidden",[(0,s.t)()],void 0,S.T,this.ee),!0),(0,A.G)(()=>(0,a.p)("winPagehide",[(0,s.t)()],void 0,S.T,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,2117))))}}var E=i(3969);class I extends y{static featureName=E.TZ;constructor(e){super(e,E.TZ),f.RI&&document.addEventListener("securitypolicyviolation",e=>{(0,a.p)(E.xV,["Generic/CSPViolation/Detected"],void 0,this.featureName,this.ee)}),this.importAggregator(e,()=>i.e(296).then(i.bind(i,9623)))}}new k({features:[R,T,I],loaderType:"lite"})})()})();</script>
 	<meta name="theme-color" content="#231F20">
 
 			<meta name="msvalidate.01" content="9E5C74811CA48CCCC61A2CF3C0A1BA6A">
@@ -478,7 +479,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 
 				
 
-				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"-11","weatherprec":"x","weathercode":"30","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
+				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"-9","weatherprec":"x","weathercode":"30","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
 		</script>
 			<script>
 				// Load the APS JavaScript Library
@@ -1521,10 +1522,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay=""
 						data-displayinline-featured="false"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_11646626_697e2bc6900bc"
+			data-displayinline-player-id="miniplayer_11646626_697e4846de118"
 			data-displayinline-video-id="11646626"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/11646626/#autoplay&#038;stickyiframe=miniplayer_11646626_697e2bc6900bc"
+    		data-displayinline="https://globalnews.ca/video/embed/11646626/#autoplay&#038;stickyiframe=miniplayer_11646626_697e4846de118"
     									data-displayinline-container="stories-1-0"
 										data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Conservatives vote to keep Pierre Poilievre on as party leader&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;,&quot;politics&quot;],&quot;keywords&quot;:[&quot;conservative-party&quot;,&quot;leadership-review&quot;,&quot;pierre-poilievre&quot;,&quot;short-clip&quot;,&quot;vote&quot;]}}"
@@ -1724,6 +1725,39 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-3"
+	data-post-id="11646619"
+	data-slide-index=""
+	data-caption="&#8216;Canada is not Minnesota,&#8217; minister says in reaction to U.S. immigration raids"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11646619/canada-minnesota-immigration-raids/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/01/dd7727f7ae4c9f52da14f892771637dfae6120ed6d4d5e7acf97a0c3d2c6142c.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/dd7727f7ae4c9f52da14f892771637dfae6120ed6d4d5e7acf97a0c3d2c6142c.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/dd7727f7ae4c9f52da14f892771637dfae6120ed6d4d5e7acf97a0c3d2c6142c.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/dd7727f7ae4c9f52da14f892771637dfae6120ed6d4d5e7acf97a0c3d2c6142c.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="&#8216;Canada is not Minnesota,&#8217; minister says in reaction to U.S. immigration raids" data-title>&#8216;Canada is not Minnesota,&#8217; minister says in reaction to U.S. immigration raids</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">4 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-4"
 	data-post-id="11646399"
 	data-slide-index=""
 	data-caption="Read the full transcript of Poilievre&#8217;s speech to Conservative convention"
@@ -1731,7 +1765,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11646399/poilievre-conservative-convention-speech-transcript/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1749,14 +1783,14 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">11 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jan 30</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">27 min read</div>
 														</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-4"
+	data-container-id="stories-item-5"
 	data-post-id="11644818"
 	data-slide-index=""
 	data-caption="Canada&#8217;s GDP saw 0% growth in latest report, StatCan says"
@@ -1764,7 +1798,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11644818/canada-gdp-november-2025/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -1784,39 +1818,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 											<div class="c-posts__info c-posts__info--highlight" data-label>Economy</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jan 30</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-5"
-	data-post-id="11645740"
-	data-slide-index=""
-	data-caption="Jeffrey Epstein denied permission to visit Canada in 2018, documents show"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11645740/jeffrey-epstein-denied-entry-to-canada-files/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/12/epstein-dec-19-release-4.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=511 data-ratio=0.67									loading="lazy"
-								width="720" height="511" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/epstein-dec-19-release-4.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/epstein-dec-19-release-4.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/epstein-dec-19-release-4.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Jeffrey Epstein denied permission to visit Canada in 2018, documents show" data-title>Jeffrey Epstein denied permission to visit Canada in 2018, documents show</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jan 30</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1878,6 +1879,39 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-7"
+	data-post-id="11645740"
+	data-slide-index=""
+	data-caption="Jeffrey Epstein denied permission to visit Canada in 2018, documents show"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11645740/jeffrey-epstein-denied-entry-to-canada-files/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/epstein-dec-19-release-4.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=511 data-ratio=0.67									loading="lazy"
+								width="720" height="511" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/epstein-dec-19-release-4.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/epstein-dec-19-release-4.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/epstein-dec-19-release-4.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Jeffrey Epstein denied permission to visit Canada in 2018, documents show" data-title>Jeffrey Epstein denied permission to visit Canada in 2018, documents show</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jan 30</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-8"
 	data-post-id="11646218"
 	data-slide-index=""
 	data-caption="U.S. Senate passes funding deal as shutdown looms, DHS debate to come"
@@ -1885,7 +1919,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11646218/us-government-shutdown-ice-senate-funding/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1910,7 +1944,40 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-8"
+	data-container-id="stories-item-9"
+	data-post-id="11644810"
+	data-slide-index=""
+	data-caption="Mark Carney, &#8216;Heated Rivalry&#8217; star embrace on the red carpet"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11644810/mark-carney-hudson-williams-heated-rivalry/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/01/Untitled-design-6.png?w=720				data-width=720 data-height=563 data-ratio=0.67									loading="lazy"
+								width="720" height="563" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/Untitled-design-6.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/Untitled-design-6.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/Untitled-design-6.png?w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Mark Carney, &#8216;Heated Rivalry&#8217; star embrace on the red carpet" data-title>Mark Carney, &#8216;Heated Rivalry&#8217; star embrace on the red carpet</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Entertainment</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jan 30</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-10"
 	data-post-id="11645115"
 	data-slide-index=""
 	data-caption="Epstein files: Millions of documents and pages released by DOJ"
@@ -1918,7 +1985,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11645115/jeffrey-epstein-files-release-jan-30-2026/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -1942,49 +2009,49 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 									</div>
 		</a>
 	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-9"
-	data-post-id="11644902"
+<li class="c-posts__item    is-hidden"
+	data-container-id="stories-item-11"
+	data-post-id="11646678"
 	data-slide-index=""
-	data-caption="Trump sues IRS and Treasury for $10 billion, cites leaked tax information"
-		>
+	data-caption="Major weather alerts issued for Saskatchewan, Toronto and N.S"
+		data-ad-fallback=false>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11644902/trump-sues-irs-for-10-billion/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
+		href="https://globalnews.ca/news/11646678/winter-alerts-saskatchewan-ontario-n-s/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/01/CP175089322.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="473" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/6a2497adaa9b403358bd3bd4143ed1dc9ff8504ddd87714f8edd7900e1f64dbc.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/CP175089322.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/CP175089322.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/CP175089322.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/6a2497adaa9b403358bd3bd4143ed1dc9ff8504ddd87714f8edd7900e1f64dbc.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/6a2497adaa9b403358bd3bd4143ed1dc9ff8504ddd87714f8edd7900e1f64dbc.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/6a2497adaa9b403358bd3bd4143ed1dc9ff8504ddd87714f8edd7900e1f64dbc.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Trump sues IRS and Treasury for $10 billion, cites leaked tax information" data-title>Trump sues IRS and Treasury for $10 billion, cites leaked tax information</span>
+					<span class="c-posts__headlineText" title="Major weather alerts issued for Saskatchewan, Toronto and N.S" data-title>Major weather alerts issued for Saskatchewan, Toronto and N.S</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>U.S. News</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jan 30</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Weather</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">36 mins</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
 														</div>
 									</div>
 		</a>
 	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-10"
+<li class="c-posts__item    is-hidden"
+	data-container-id="stories-item-12"
 	data-post-id="11646351"
 	data-slide-index=""
 	data-caption="Two teens arrested in connection with First Nation double homicide in northern Quebec"
-		>
+		data-ad-fallback=false>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11646351/two-teens-arrested-in-connection-with-first-nation-double-homicide-in-northern-quebec/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:11}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -2008,72 +2075,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 									</div>
 		</a>
 	</li>
-<li class="c-posts__item    is-hidden"
-	data-container-id="stories-item-11"
-	data-post-id="11646619"
-	data-slide-index=""
-	data-caption="&#8216;Canada is not Minnesota,&#8217; minister says in reaction to U.S. immigration raids"
-		data-ad-fallback=false>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11646619/canada-minnesota-immigration-raids/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/01/dd7727f7ae4c9f52da14f892771637dfae6120ed6d4d5e7acf97a0c3d2c6142c.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/dd7727f7ae4c9f52da14f892771637dfae6120ed6d4d5e7acf97a0c3d2c6142c.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/dd7727f7ae4c9f52da14f892771637dfae6120ed6d4d5e7acf97a0c3d2c6142c.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/dd7727f7ae4c9f52da14f892771637dfae6120ed6d4d5e7acf97a0c3d2c6142c.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="&#8216;Canada is not Minnesota,&#8217; minister says in reaction to U.S. immigration raids" data-title>&#8216;Canada is not Minnesota,&#8217; minister says in reaction to U.S. immigration raids</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    is-hidden"
-	data-container-id="stories-item-12"
-	data-post-id="11645337"
-	data-slide-index=""
-	data-caption="Alex Pretti: U.S. DOJ opens federal civil rights investigation into death"
-		data-ad-fallback=false>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11645337/alex-pretti-death-doj-civil-rights-investigation/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:11}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/01/74a3cc82f678fc5dc935c89f71f8838cfa9db38af585ef4dfe65e01d1680663f.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/74a3cc82f678fc5dc935c89f71f8838cfa9db38af585ef4dfe65e01d1680663f.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/74a3cc82f678fc5dc935c89f71f8838cfa9db38af585ef4dfe65e01d1680663f.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/74a3cc82f678fc5dc935c89f71f8838cfa9db38af585ef4dfe65e01d1680663f.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Alex Pretti: U.S. DOJ opens federal civil rights investigation into death" data-title>Alex Pretti: U.S. DOJ opens federal civil rights investigation into death</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>U.S. News</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jan 30</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
 			</ul>
 						</div>
 			</section>
@@ -2086,10 +2087,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay="true"
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_697e2bc69413d"
+			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_697e4846e1073"
 			data-displayinline-video-id="49a91e7f-1023-430f-8d66-561055f3d0f7"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_697e2bc69413d"
+    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_697e4846e1073"
     		    			data-displayinline-playlist="49a91e7f-1023-430f-8d66-561055f3d0f7"
     									data-displayinline-container="mini-ott"
 																data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;recent_terms_datastore&quot;,&quot;type&quot;:&quot;wlo_option&quot;}}"
@@ -2220,7 +2221,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Canadian military member has died while deployed in Latvia, Ottawa says" data-title>Canadian military member has died while deployed in Latvia, Ottawa says</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">27,030</span>
+							<span class="c-posts__info c-posts__info--highlight">31,405</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2250,37 +2251,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Conservatives vote to keep Pierre Poilievre on as party leader" data-title>Conservatives vote to keep Pierre Poilievre on as party leader</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">18,169</span>
-							<span class="c-posts__info">Read</span>
-						</div>
-												
-											</div>
-				</a>
-			</li>
-								<li class="c-posts__item" data-post-id="11645353">
-				<a
-					href="https://globalnews.ca/news/11645353/catherine-o-hara-death-reports/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
-				>
-					<div class="c-posts__rank">
-							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#3"></use>
-	</svg>
-						</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/01/9a8f30ed30397fd79edd0e960933eff9c0164282d2884d4a9a20e1d71b9d680a.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/9a8f30ed30397fd79edd0e960933eff9c0164282d2884d4a9a20e1d71b9d680a.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/9a8f30ed30397fd79edd0e960933eff9c0164282d2884d4a9a20e1d71b9d680a.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/9a8f30ed30397fd79edd0e960933eff9c0164282d2884d4a9a20e1d71b9d680a.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-							<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Catherine O&#8217;Hara, Canadian actor and &#8216;Schitt&#8217;s Creek&#8217; star, dead at 71" data-title>Catherine O&#8217;Hara, Canadian actor and &#8216;Schitt&#8217;s Creek&#8217; star, dead at 71</span>
-			</div>
-													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">12,251</span>
+							<span class="c-posts__info c-posts__info--highlight">21,795</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2290,11 +2261,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<li class="c-posts__item" data-post-id="11645329">
 				<a
 					href="https://globalnews.ca/news/11645329/toronto-stock-exchange-value-january-30/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:3}"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#4"></use>
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#3"></use>
 	</svg>
 						</div>
 					
@@ -2310,7 +2281,37 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Toronto Stock Exchange plunges due to massive precious metals sell-off" data-title>Toronto Stock Exchange plunges due to massive precious metals sell-off</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">11,498</span>
+							<span class="c-posts__info c-posts__info--highlight">15,226</span>
+							<span class="c-posts__info">Read</span>
+						</div>
+												
+											</div>
+				</a>
+			</li>
+								<li class="c-posts__item" data-post-id="11645353">
+				<a
+					href="https://globalnews.ca/news/11645353/catherine-o-hara-death-reports/"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:3}"
+				>
+					<div class="c-posts__rank">
+							<svg class="c-icon  c-posts__rankIcon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#4"></use>
+	</svg>
+						</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/01/9a8f30ed30397fd79edd0e960933eff9c0164282d2884d4a9a20e1d71b9d680a.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/9a8f30ed30397fd79edd0e960933eff9c0164282d2884d4a9a20e1d71b9d680a.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/9a8f30ed30397fd79edd0e960933eff9c0164282d2884d4a9a20e1d71b9d680a.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/9a8f30ed30397fd79edd0e960933eff9c0164282d2884d4a9a20e1d71b9d680a.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+							<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Catherine O&#8217;Hara, Canadian actor and &#8216;Schitt&#8217;s Creek&#8217; star, dead at 71" data-title>Catherine O&#8217;Hara, Canadian actor and &#8216;Schitt&#8217;s Creek&#8217; star, dead at 71</span>
+			</div>
+													<div class="c-posts__about">
+							<span class="c-posts__info c-posts__info--highlight">15,055</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2340,7 +2341,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Can Trump decertify aircraft? What experts say amid Bombardier threat" data-title>Can Trump decertify aircraft? What experts say amid Bombardier threat</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">4,817</span>
+							<span class="c-posts__info c-posts__info--highlight">7,317</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2443,7 +2444,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Canadian military member has died while deployed in Latvia, Ottawa says" data-title>Canadian military member has died while deployed in Latvia, Ottawa says</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">27,030</span>
+							<span class="c-posts__info c-posts__info--highlight">31,405</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2473,37 +2474,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Conservatives vote to keep Pierre Poilievre on as party leader" data-title>Conservatives vote to keep Pierre Poilievre on as party leader</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">18,169</span>
-							<span class="c-posts__info">Read</span>
-						</div>
-												
-											</div>
-				</a>
-			</li>
-								<li class="c-posts__item" data-post-id="11645353">
-				<a
-					href="https://globalnews.ca/news/11645353/catherine-o-hara-death-reports/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
-				>
-					<div class="c-posts__rank">
-							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#3"></use>
-	</svg>
-						</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/01/9a8f30ed30397fd79edd0e960933eff9c0164282d2884d4a9a20e1d71b9d680a.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/9a8f30ed30397fd79edd0e960933eff9c0164282d2884d4a9a20e1d71b9d680a.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/9a8f30ed30397fd79edd0e960933eff9c0164282d2884d4a9a20e1d71b9d680a.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/9a8f30ed30397fd79edd0e960933eff9c0164282d2884d4a9a20e1d71b9d680a.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-							<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Catherine O&#8217;Hara, Canadian actor and &#8216;Schitt&#8217;s Creek&#8217; star, dead at 71" data-title>Catherine O&#8217;Hara, Canadian actor and &#8216;Schitt&#8217;s Creek&#8217; star, dead at 71</span>
-			</div>
-													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">12,251</span>
+							<span class="c-posts__info c-posts__info--highlight">21,795</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2513,11 +2484,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<li class="c-posts__item" data-post-id="11645329">
 				<a
 					href="https://globalnews.ca/news/11645329/toronto-stock-exchange-value-january-30/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:3}"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#4"></use>
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#3"></use>
 	</svg>
 						</div>
 					
@@ -2533,7 +2504,37 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Toronto Stock Exchange plunges due to massive precious metals sell-off" data-title>Toronto Stock Exchange plunges due to massive precious metals sell-off</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">11,498</span>
+							<span class="c-posts__info c-posts__info--highlight">15,226</span>
+							<span class="c-posts__info">Read</span>
+						</div>
+												
+											</div>
+				</a>
+			</li>
+								<li class="c-posts__item" data-post-id="11645353">
+				<a
+					href="https://globalnews.ca/news/11645353/catherine-o-hara-death-reports/"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:3}"
+				>
+					<div class="c-posts__rank">
+							<svg class="c-icon  c-posts__rankIcon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#4"></use>
+	</svg>
+						</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/01/9a8f30ed30397fd79edd0e960933eff9c0164282d2884d4a9a20e1d71b9d680a.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/9a8f30ed30397fd79edd0e960933eff9c0164282d2884d4a9a20e1d71b9d680a.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/9a8f30ed30397fd79edd0e960933eff9c0164282d2884d4a9a20e1d71b9d680a.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/9a8f30ed30397fd79edd0e960933eff9c0164282d2884d4a9a20e1d71b9d680a.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+							<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Catherine O&#8217;Hara, Canadian actor and &#8216;Schitt&#8217;s Creek&#8217; star, dead at 71" data-title>Catherine O&#8217;Hara, Canadian actor and &#8216;Schitt&#8217;s Creek&#8217; star, dead at 71</span>
+			</div>
+													<div class="c-posts__about">
+							<span class="c-posts__info c-posts__info--highlight">15,055</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2563,7 +2564,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Can Trump decertify aircraft? What experts say amid Bombardier threat" data-title>Can Trump decertify aircraft? What experts say amid Bombardier threat</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">4,817</span>
+							<span class="c-posts__info c-posts__info--highlight">7,317</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2972,8 +2973,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-miniplayer"
 			data-displayinline-video-id="11644363"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11644363,11646626,11644447,11646001,11646323/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F1hhq3o9qfz-dhsq2wqj83%2F6P_KIANO_VAFAEIAN_MAID__OM01P48S.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
-    		    			data-displayinline-playlist="11644363,11646626,11644447,11646001,11646323"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11644363,11646626,11646713,11646323,11644447/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F1hhq3o9qfz-dhsq2wqj83%2F6P_KIANO_VAFAEIAN_MAID__OM01P48S.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
+    		    			data-displayinline-playlist="11644363,11646626,11646713,11646323,11644447"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Family calls for changes to MAID&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;bc&quot;,&quot;canada&quot;,&quot;health&quot;],&quot;keywords&quot;:[&quot;health-care&quot;,&quot;maid&quot;,&quot;medical-assistance-in-dying&quot;,&quot;short-clip&quot;,&quot;terminally-ill&quot;,&quot;global-bc&quot;,&quot;global-news-hour-at-6-bc&quot;]}}"
 			    		>
@@ -3041,8 +3042,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11644363"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11644363,11646626,11644447,11646001,11646323/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11644363,11646626,11644447,11646001,11646323"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11644363,11646626,11646713,11646323,11644447/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11644363,11646626,11646713,11646323,11644447"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="An Ontario family is calling for changes to MAID after the death of their son in B.C. As Travis Prasad reports, they&#039;re raising questions about the approval process for people who are not terminally ill."
 			>
@@ -3068,8 +3069,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11646626"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11646626,11644447,11646001,11646323,11644363/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11646626,11644447,11646001,11646323,11644363"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11646626,11646713,11646323,11644447,11644363/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11646626,11646713,11646323,11644447,11644363"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="Members of the Conservative Party of Canada have overwhelmingly voted to keep Pierre Poilievre on as their leader, the party revealed Friday after a late-night vote at its annual convention in Calgary. More than 87 per cent of voting members cast their ballot for Poilievre to stay on as leader, the Conservative Party said in a statement. David Akin reports."
 			>
@@ -3090,18 +3091,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Trump threatens Canada with 50% tariff on aircraft sold to U.S." data-slide-index="2">
-	<a href="https://globalnews.ca/video/11644447/trump-threatens-canada-with-50-tariff-on-aircraft-sold-to-u-s/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Canadian Armed Forces member dies while deployed in Latvia" data-slide-index="2">
+	<a href="https://globalnews.ca/video/11646713/canadian-armed-forces-member-dies-while-deployed-in-latvia/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11644447"
+					data-video-id="11646713"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11644447,11646001,11646323,11644363,11646626/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11644447,11646001,11646323,11644363,11646626"
-			data-video-carousel-label="Economy"
-			data-video-carousel-content="U.S. President Donald Trump wrote in a Truth Social post Friday he will slap a 50 per cent tariff on all aircraft sold into the United States from Canada unless the country “immediately” certifies business jets made by American planemaker Gulfstream."
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11646713,11646323,11644447,11644363,11646626/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11646713,11646323,11644447,11644363,11646626"
+			data-video-carousel-label="Politics"
+			data-video-carousel-content="A Canadian Armed Forces member deployed with NATO’s mission in Latvia has died, the Department of National Defence said Friday. Gunner Sebastian Halmagean, from Hamilton, Ont.,  died Thursday near Riga during Operation Reassurance, his first overseas deployment. Military police in Latvia and Canada are investigating, with officials saying there is no threat to other deployed personnel."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/0mjhuucnxd-zh392jvl7r/TRUMP_CARNEY_VMS.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/0n3711588k-w45rnzvoa7/lativa.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3110,47 +3111,20 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>
 		<div class="l-videoCarousel__details c-posts__details">
 							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Economy</div>
+					<div class="c-posts__info c-posts__info--highlight">Politics</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Trump threatens Canada with 50% tariff on aircraft sold to U.S.</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Canadian Armed Forces member dies while deployed in Latvia</span></div>
 					</div>
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Pattison Group says ICE warehouse sale won&#8217;t go ahead" data-slide-index="3">
-	<a href="https://globalnews.ca/video/11646001/pattison-group-says-ice-warehouse-sale-wont-go-ahead/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11646001"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11646001,11646323,11644363,11646626,11644447/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11646001,11646323,11644363,11646626,11644447"
-			data-video-carousel-label="Canada"
-			data-video-carousel-content="The Jim Pattison Development Group announced on Friday that the warehouse sale in Virginia will not go ahead. The organization said earlier this week that it did not know it was going to be used for an ICE processing facility."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/j2da4wkqk4-3515r2xgmb/PATTISON_thumbnail_1280x720_.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Pattison Group says ICE warehouse sale won&#8217;t go ahead</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Iconic Canadian actor, ‘Schitt’s Creek’ star Catherine O’Hara dead at 71" data-slide-index="4">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Iconic Canadian actor, ‘Schitt’s Creek’ star Catherine O’Hara dead at 71" data-slide-index="3">
 	<a href="https://globalnews.ca/video/11646323/iconic-canadian-actor-schitts-creek-star-catherine-ohara-dead-at-71/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11646323"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11646323,11644363,11646626,11644447,11646001/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11646323,11644363,11646626,11644447,11646001"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11646323,11644447,11644363,11646626,11646713/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11646323,11644447,11644363,11646626,11646713"
 			data-video-carousel-label="Entertainment"
 			data-video-carousel-content="Legendary Canadian actor and comedian Catherine O&#039;Hara has died. The 71-year-old passed away at her home in Los Angeles following a brief illness, according to her agency. O&#039;Hara launched her extraordinary career at Second City in Toronto back in the 1970s. She would become a beloved, Emmy-winning Canadian icon with roles spanning genres and generations – from Kevin McAllister&#039;s mother in Home Alone, to Moira Rose in Schitt&#039;s Creek. Heidi Petracek reports on O&#039;Hara&#039;s life and legacy."
 			>
@@ -3167,6 +3141,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
 				</div>
 						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Iconic Canadian actor, ‘Schitt’s Creek’ star Catherine O’Hara dead at 71</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Trump threatens Canada with 50% tariff on aircraft sold to U.S." data-slide-index="4">
+	<a href="https://globalnews.ca/video/11644447/trump-threatens-canada-with-50-tariff-on-aircraft-sold-to-u-s/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11644447"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11644447,11644363,11646626,11646713,11646323/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11644447,11644363,11646626,11646713,11646323"
+			data-video-carousel-label="Economy"
+			data-video-carousel-content="U.S. President Donald Trump wrote in a Truth Social post Friday he will slap a 50 per cent tariff on all aircraft sold into the United States from Canada unless the country “immediately” certifies business jets made by American planemaker Gulfstream."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/0mjhuucnxd-zh392jvl7r/TRUMP_CARNEY_VMS.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Economy</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Trump threatens Canada with 50% tariff on aircraft sold to U.S.</span></div>
 					</div>
 	</a>
 </li>
@@ -3206,7 +3207,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11646626"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11646626,11644447,11646001,11646323/#autoplay&#038;stickyiframe=home-miniplayer_11646626"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11646626,11646713,11646323,11644447/#autoplay&#038;stickyiframe=home-miniplayer_11646626"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3258,17 +3259,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11644447"
+			data-displayinline-player-id="home-miniplayer_11646713"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11644447,11646001,11646323,11646626/#autoplay&#038;stickyiframe=home-miniplayer_11644447"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11646713,11646323,11644447,11646626/#autoplay&#038;stickyiframe=home-miniplayer_11646713"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/0mjhuucnxd-zh392jvl7r/TRUMP_CARNEY_VMS.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/0n3711588k-w45rnzvoa7/lativa.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Trump threatens Canada with 50% tariff on aircraft sold to U.S.'"
+					alt="Click to play video 'Canadian Armed Forces member dies while deployed in Latvia'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3277,43 +3278,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11644447/trump-threatens-canada-with-50-tariff-on-aircraft-sold-to-u-s/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11646713/canadian-armed-forces-member-dies-while-deployed-in-latvia/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Economy</div>
+					<div class="c-posts__info c-posts__info--highlight">Politics</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Trump threatens Canada with 50% tariff on aircraft sold to U.S.</span></div>
-		</a>
-	</div>
-</li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11646001"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11646001,11646323,11646626,11644447/#autoplay&#038;stickyiframe=home-miniplayer_11646001"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/j2da4wkqk4-3515r2xgmb/PATTISON_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Pattison Group says ICE warehouse sale won&#8217;t go ahead'"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/11646001/pattison-group-says-ice-warehouse-sale-wont-go-ahead/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Pattison Group says ICE warehouse sale won&#8217;t go ahead</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Canadian Armed Forces member dies while deployed in Latvia</span></div>
 		</a>
 	</div>
 </li>
@@ -3324,7 +3293,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11646323"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11646323,11646626,11644447,11646001/#autoplay&#038;stickyiframe=home-miniplayer_11646323"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11646323,11644447,11646626,11646713/#autoplay&#038;stickyiframe=home-miniplayer_11646323"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3349,6 +3318,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</div>
 </li>
+
+<li class="c-posts__item">
+	<div class="c-posts__inner">
+		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
+			data-displayinline-type="video"
+			data-displayinline-player-id="home-miniplayer_11644447"
+			data-displayinline-ratio="16:9"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11644447,11646626,11646713,11646323/#autoplay&#038;stickyiframe=home-miniplayer_11644447"
+			data-displayinline-sticky="true"
+			data-displayinline-expand="true">
+			<div class="c-video__placeholder">
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/0mjhuucnxd-zh392jvl7r/TRUMP_CARNEY_VMS.jpg?w=384&#038;quality=70&#038;strip=all"
+					width="236"
+					height="133"
+					class="c-posts__thumbnail c-video__image"
+					alt="Click to play video 'Trump threatens Canada with 50% tariff on aircraft sold to U.S.'"
+					loading="lazy" />
+				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+			</div>
+		</a>
+		<a href="https://globalnews.ca/video/11644447/trump-threatens-canada-with-50-tariff-on-aircraft-sold-to-u-s/" class="c-posts__details">
+				<div class="c-posts__about">
+					<div class="c-posts__info c-posts__info--highlight">Economy</div>
+				</div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Trump threatens Canada with 50% tariff on aircraft sold to U.S.</span></div>
+		</a>
+	</div>
+</li>
 	</ul>
 	
 	</section>
@@ -3367,23 +3368,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant"
-			data-displayinline-video-id="11646626"
+			data-displayinline-video-id="11644447"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11646626,11644447,11646451,11646323,11634541/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F4s268g1ue2-k4szxc1ft7%2FTHUMBS.00_00_09_02.Still003.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
-    		    			data-displayinline-playlist="11646626,11644447,11646451,11646323,11634541"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11644447,11646626,11646323,11634541,11646451/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F0mjhuucnxd-zh392jvl7r%2FTRUMP_CARNEY_VMS.jpg%3Fw%3D1200%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
+    		    			data-displayinline-playlist="11644447,11646626,11646323,11634541,11646451"
     												data-displayinline-sticky="true"
-													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Conservatives vote to keep Pierre Poilievre on as party leader&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;,&quot;politics&quot;],&quot;keywords&quot;:[&quot;conservative-party&quot;,&quot;leadership-review&quot;,&quot;pierre-poilievre&quot;,&quot;short-clip&quot;,&quot;vote&quot;]}}"
+													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Trump threatens Canada with 50% tariff on aircraft sold to U.S.&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;economy&quot;,&quot;politics&quot;],&quot;keywords&quot;:[&quot;canada-tariffs&quot;,&quot;cusma&quot;,&quot;donald-trump&quot;,&quot;gulfstream&quot;,&quot;mark-carney&quot;,&quot;new-tariffs&quot;,&quot;north-america&quot;,&quot;short-clip&quot;,&quot;tariffs&quot;,&quot;top-news&quot;,&quot;trade-war&quot;,&quot;trump&quot;,&quot;trump-tariffs&quot;,&quot;truth-social&quot;,&quot;u-s-president&quot;,&quot;u-s-canada-tensions&quot;,&quot;u-s-canada-trade&quot;,&quot;usmca&quot;]}}"
 			    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Conservatives vote to keep Pierre Poilievre on as party leader'"
+						alt="Click to play video: 'Trump threatens Canada with 50% tariff on aircraft sold to U.S.'"
 						width="640"
 						height="360"
-													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/4s268g1ue2-k4szxc1ft7/THUMBS.00_00_09_02.Still003.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/0mjhuucnxd-zh392jvl7r/TRUMP_CARNEY_VMS.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/4s268g1ue2-k4szxc1ft7/THUMBS.00_00_09_02.Still003.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/4s268g1ue2-k4szxc1ft7/THUMBS.00_00_09_02.Still003.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/4s268g1ue2-k4szxc1ft7/THUMBS.00_00_09_02.Still003.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
+								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/0mjhuucnxd-zh392jvl7r/TRUMP_CARNEY_VMS.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/0mjhuucnxd-zh392jvl7r/TRUMP_CARNEY_VMS.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/0mjhuucnxd-zh392jvl7r/TRUMP_CARNEY_VMS.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -3393,20 +3394,20 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">1:54</time>
-																									<span class="c-video__title">Conservatives vote to keep Pierre Poilievre on as party leader</span>
+																	<time class="c-video__duration">0:29</time>
+																									<span class="c-video__title">Trump threatens Canada with 50% tariff on aircraft sold to U.S.</span>
 															</div>
 						</span>
 											</span>
 				</div>
 							</div>
 								<div class="l-videoCarousel__sidebar">
-													<a href="https://globalnews.ca/video/11646626/conservatives-vote-to-keep-pierre-poilievre-on-as-party-leader/" class="l-videoCarousel__details">
-							<div class="l-videoCarousel__info">Canada</div>
+													<a href="https://globalnews.ca/video/11644447/trump-threatens-canada-with-50-tariff-on-aircraft-sold-to-u-s/" class="l-videoCarousel__details">
+							<div class="l-videoCarousel__info">Economy</div>
 								<div class="l-videoCarousel__fullTitle">
-								Conservatives vote to keep Pierre Poilievre on as party leader								</div>
+								Trump threatens Canada with 50% tariff on aircraft sold to U.S.								</div>
 								<div class="l-videoCarousel__description">
-								Members of the Conservative Party of Canada have overwhelmingly voted to keep Pierre Poilievre on as their leader, the party revealed Friday after a late-night vote at its annual convention in Calgary. More than 87 per cent of voting members cast their ballot for Poilievre to stay on as leader, the Conservative Party said in a statement. David Akin reports.								</div>
+								U.S. President Donald Trump wrote in a Truth Social post Friday he will slap a 50 per cent tariff on all aircraft sold into the United States from Canada unless the country “immediately” certifies business jets made by American planemaker Gulfstream.								</div>
 						</a>
 								<div class="c-ad c-ad--bigbox c-ad--dark l-videoCarousel__ad">							<div class="c-ad__label">Advertisement</div>
 			
@@ -3433,40 +3434,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-carousel__track glide__track" data-glide-el="track">
 						<ul class="c-posts c-posts--video c-posts--tile c-posts--horizontal c-posts--inverted glide__slides">
 							
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Conservatives vote to keep Pierre Poilievre on as party leader" data-slide-index="0">
-	<a href="https://globalnews.ca/video/11646626/conservatives-vote-to-keep-pierre-poilievre-on-as-party-leader/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11646626"
-			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11646626,11644447,11646451,11646323,11634541/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11646626,11644447,11646451,11646323,11634541"
-			data-video-carousel-label="Canada"
-			data-video-carousel-content="Members of the Conservative Party of Canada have overwhelmingly voted to keep Pierre Poilievre on as their leader, the party revealed Friday after a late-night vote at its annual convention in Calgary. More than 87 per cent of voting members cast their ballot for Poilievre to stay on as leader, the Conservative Party said in a statement. David Akin reports."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/4s268g1ue2-k4szxc1ft7/THUMBS.00_00_09_02.Still003.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Conservatives vote to keep Pierre Poilievre on as party leader</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Trump threatens Canada with 50% tariff on aircraft sold to U.S." data-slide-index="1">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Trump threatens Canada with 50% tariff on aircraft sold to U.S." data-slide-index="0">
 	<a href="https://globalnews.ca/video/11644447/trump-threatens-canada-with-50-tariff-on-aircraft-sold-to-u-s/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11644447"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11644447,11646451,11646323,11634541,11646626/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11644447,11646451,11646323,11634541,11646626"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11644447,11646626,11646323,11634541,11646451/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11644447,11646626,11646323,11634541,11646451"
 			data-video-carousel-label="Economy"
 			data-video-carousel-content="U.S. President Donald Trump wrote in a Truth Social post Friday he will slap a 50 per cent tariff on all aircraft sold into the United States from Canada unless the country “immediately” certifies business jets made by American planemaker Gulfstream."
 			>
@@ -3487,18 +3461,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Poilievre talks Alberta separatism, Arctic defence at Conservative convention amid leadership vote" data-slide-index="2">
-	<a href="https://globalnews.ca/video/11646451/poilievre-talks-alberta-separatism-arctic-defence-at-conservative-convention-amid-leadership-vote/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Conservatives vote to keep Pierre Poilievre on as party leader" data-slide-index="1">
+	<a href="https://globalnews.ca/video/11646626/conservatives-vote-to-keep-pierre-poilievre-on-as-party-leader/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11646451"
+					data-video-id="11646626"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11646451,11646323,11634541,11646626,11644447/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11646451,11646323,11634541,11646626,11644447"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11646626,11646323,11634541,11646451,11644447/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11646626,11646323,11634541,11646451,11644447"
 			data-video-carousel-label="Canada"
-			data-video-carousel-content="Surrounded by fellow Conservatives from across Canada on Friday evening, official opposition leader Pierre Poilievre delivered a speech about party unity, while vowing to unite Canadians amid economic pressures. At the biannual Conservative convention – this time held in Calgary – Poilievre also touched on topics like Arctic defence and the “resurgence” of separatist movements in Alberta and Quebec – blaming the latter on the Liberal party."
+			data-video-carousel-content="Members of the Conservative Party of Canada have overwhelmingly voted to keep Pierre Poilievre on as their leader, the party revealed Friday after a late-night vote at its annual convention in Calgary. More than 87 per cent of voting members cast their ballot for Poilievre to stay on as leader, the Conservative Party said in a statement. David Akin reports."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/kzvdwfpqnc-xyws8w4y8w/POILIEVRE_VMS_2.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/4s268g1ue2-k4szxc1ft7/THUMBS.00_00_09_02.Still003.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3509,18 +3483,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							<div class="l-videoCarousel__info">
 					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Poilievre talks Alberta separatism, Arctic defence at Conservative convention amid leadership vote</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Conservatives vote to keep Pierre Poilievre on as party leader</span></div>
 					</div>
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Iconic Canadian actor, ‘Schitt’s Creek’ star Catherine O’Hara dead at 71" data-slide-index="3">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Iconic Canadian actor, ‘Schitt’s Creek’ star Catherine O’Hara dead at 71" data-slide-index="2">
 	<a href="https://globalnews.ca/video/11646323/iconic-canadian-actor-schitts-creek-star-catherine-ohara-dead-at-71/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11646323"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11646323,11634541,11646626,11644447,11646451/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11646323,11634541,11646626,11644447,11646451"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11646323,11634541,11646451,11644447,11646626/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11646323,11634541,11646451,11644447,11646626"
 			data-video-carousel-label="Entertainment"
 			data-video-carousel-content="Legendary Canadian actor and comedian Catherine O&#039;Hara has died. The 71-year-old passed away at her home in Los Angeles following a brief illness, according to her agency. O&#039;Hara launched her extraordinary career at Second City in Toronto back in the 1970s. She would become a beloved, Emmy-winning Canadian icon with roles spanning genres and generations – from Kevin McAllister&#039;s mother in Home Alone, to Moira Rose in Schitt&#039;s Creek. Heidi Petracek reports on O&#039;Hara&#039;s life and legacy."
 			>
@@ -3541,13 +3515,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Ford says he offered Crown Royal company an &#8216;olive branch&#8217; on LCBO boycott" data-slide-index="4">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Ford says he offered Crown Royal company an &#8216;olive branch&#8217; on LCBO boycott" data-slide-index="3">
 	<a href="https://globalnews.ca/video/11634541/ford-says-he-offered-crown-royal-company-an-olive-branch-on-lcbo-boycott/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11634541"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11634541,11646626,11644447,11646451,11646323/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11634541,11646626,11644447,11646451,11646323"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11634541,11646451,11644447,11646626,11646323/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11634541,11646451,11644447,11646626,11646323"
 			data-video-carousel-label="Consumer"
 			data-video-carousel-content="Speaking at a press conference on Wednesday Ontario Premier Doug Ford said he was willing to back down from his threat to remove Crown Royal whisky from the LCBO. He said he offered the company Diageo an “olive branch” to present the government with a plan to replace the 160 jobs that were impacted by the closure of a Crown Royal bottling facility in Amherstburg to avoid a booze ban at the LCBO."
 			>
@@ -3564,6 +3538,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-posts__info c-posts__info--highlight">Consumer</div>
 				</div>
 						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Ford says he offered Crown Royal company an &#8216;olive branch&#8217; on LCBO boycott</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Poilievre talks Alberta separatism, Arctic defence at Conservative convention amid leadership vote" data-slide-index="4">
+	<a href="https://globalnews.ca/video/11646451/poilievre-talks-alberta-separatism-arctic-defence-at-conservative-convention-amid-leadership-vote/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11646451"
+			data-video-player-id="home-miniplayer-variant"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11646451,11644447,11646626,11646323,11634541/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11646451,11644447,11646626,11646323,11634541"
+			data-video-carousel-label="Canada"
+			data-video-carousel-content="Surrounded by fellow Conservatives from across Canada on Friday evening, official opposition leader Pierre Poilievre delivered a speech about party unity, while vowing to unite Canadians amid economic pressures. At the biannual Conservative convention – this time held in Calgary – Poilievre also touched on topics like Arctic defence and the “resurgence” of separatist movements in Alberta and Quebec – blaming the latter on the Liberal party."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/kzvdwfpqnc-xyws8w4y8w/POILIEVRE_VMS_2.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Poilievre talks Alberta separatism, Arctic defence at Conservative convention amid leadership vote</span></div>
 					</div>
 	</a>
 </li>
@@ -3601,17 +3602,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11644447"
+			data-displayinline-player-id="home-miniplayer-variant_11646626"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11644447,11646451,11646323,11634541/#autoplay&#038;stickyiframe=home-miniplayer-variant_11644447"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11646626,11646323,11634541,11646451/#autoplay&#038;stickyiframe=home-miniplayer-variant_11646626"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/0mjhuucnxd-zh392jvl7r/TRUMP_CARNEY_VMS.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/4s268g1ue2-k4szxc1ft7/THUMBS.00_00_09_02.Still003.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Trump threatens Canada with 50% tariff on aircraft sold to U.S.'"
+					alt="Click to play video 'Conservatives vote to keep Pierre Poilievre on as party leader'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3620,11 +3621,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11644447/trump-threatens-canada-with-50-tariff-on-aircraft-sold-to-u-s/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11646626/conservatives-vote-to-keep-pierre-poilievre-on-as-party-leader/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Economy</div>
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Trump threatens Canada with 50% tariff on aircraft sold to U.S.</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Conservatives vote to keep Pierre Poilievre on as party leader</span></div>
 		</a>
 	</div>
 </li>
@@ -3655,41 +3656,9 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11646451"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11646451,11646323,11634541,11644447/#autoplay&#038;stickyiframe=home-miniplayer-variant_11646451"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/kzvdwfpqnc-xyws8w4y8w/POILIEVRE_VMS_2.jpg?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Poilievre talks Alberta separatism, Arctic defence at Conservative convention amid leadership vote'"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/11646451/poilievre-talks-alberta-separatism-arctic-defence-at-conservative-convention-amid-leadership-vote/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Poilievre talks Alberta separatism, Arctic defence at Conservative convention amid leadership vote</span></div>
-		</a>
-	</div>
-</li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant_11646323"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11646323,11634541,11644447,11646451/#autoplay&#038;stickyiframe=home-miniplayer-variant_11646323"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11646323,11634541,11646451,11646626/#autoplay&#038;stickyiframe=home-miniplayer-variant_11646323"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3721,7 +3690,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant_11634541"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11634541,11644447,11646451,11646323/#autoplay&#038;stickyiframe=home-miniplayer-variant_11634541"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11634541,11646451,11646626,11646323/#autoplay&#038;stickyiframe=home-miniplayer-variant_11634541"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3743,6 +3712,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-posts__info c-posts__info--highlight">Consumer</div>
 				</div>
 			<div class="c-posts__headline"><span class="c-posts__headlineText">Ford says he offered Crown Royal company an &#8216;olive branch&#8217; on LCBO boycott</span></div>
+		</a>
+	</div>
+</li>
+
+<li class="c-posts__item">
+	<div class="c-posts__inner">
+		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
+			data-displayinline-type="video"
+			data-displayinline-player-id="home-miniplayer-variant_11646451"
+			data-displayinline-ratio="16:9"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11646451,11646626,11646323,11634541/#autoplay&#038;stickyiframe=home-miniplayer-variant_11646451"
+			data-displayinline-sticky="true"
+			data-displayinline-expand="true">
+			<div class="c-video__placeholder">
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/kzvdwfpqnc-xyws8w4y8w/POILIEVRE_VMS_2.jpg?w=384&#038;quality=70&#038;strip=all"
+					width="236"
+					height="133"
+					class="c-posts__thumbnail c-video__image"
+					alt="Click to play video 'Poilievre talks Alberta separatism, Arctic defence at Conservative convention amid leadership vote'"
+					loading="lazy" />
+				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+			</div>
+		</a>
+		<a href="https://globalnews.ca/video/11646451/poilievre-talks-alberta-separatism-arctic-defence-at-conservative-convention-amid-leadership-vote/" class="c-posts__details">
+				<div class="c-posts__about">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Poilievre talks Alberta separatism, Arctic defence at Conservative convention amid leadership vote</span></div>
 		</a>
 	</div>
 </li>
@@ -3807,33 +3808,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11644821"
+				data-post-id="11644818"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
-					href="https://globalnews.ca/news/11644821/donald-trump-tariffs-bombardier-aircraft/"
+					href="https://globalnews.ca/news/11644818/canada-gdp-november-2025/"
 					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Bombardier warns of &#8216;significant impact&#8217; to travellers from Trump&#8217;s threat" data-title>Bombardier warns of &#8216;significant impact&#8217; to travellers from Trump&#8217;s threat</span>
+					<span class="c-posts__headlineText" title="Canada&#8217;s GDP saw 0% growth in latest report, StatCan says" data-title>Canada&#8217;s GDP saw 0% growth in latest report, StatCan says</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						Transport Minister Steve MacKinnon also addressed the matter in a social media post on Friday afternoon, saying he has spoken with Bombardier&#039;s CEO.						</div>
+						The economy stalled in November 2025, according to Statistics Canada, which says GDP was measured at zero per cent following a 0.3 per cent drop in October.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Canada</div>
+															<div class="c-posts__info c-posts__info--highlight">Economy</div>
 																						<div class="c-posts__info">Jan 30</div>
 													</div>
 					</div>
 					
-		<div class="c-posts__media "  >
+		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/01/bombardier-tariff-threat.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2026/01/CP175700141.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=491 data-ratio=0.67									loading="lazy"
+								width="720" height="491" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/bombardier-tariff-threat.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/bombardier-tariff-threat.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/bombardier-tariff-threat.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/CP175700141.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/CP175700141.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/CP175700141.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -3871,97 +3872,65 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11644814"
+				data-post-id="11645115"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
-					href="https://globalnews.ca/news/11644814/don-lemon-arrested-by-federal-agents/"
+					href="https://globalnews.ca/news/11645115/jeffrey-epstein-files-release-jan-30-2026/"
 					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Journalist Don Lemon charged after arrest over Minnesota church protest" data-title>Journalist Don Lemon charged after arrest over Minnesota church protest</span>
+					<span class="c-posts__headlineText" title="Epstein files: Millions of documents and pages released by DOJ" data-title>Epstein files: Millions of documents and pages released by DOJ</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						U.S. Attorney General Pam Bondi wrote on X that Lemon and several others were arrested under her orders.						</div>
+						Among the latest released files are more than 2,000 videos and 180,000 images, some taken by Jeffrey Epstein himself, said Deputy Attorney General Todd Blanche.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Trending</div>
+															<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
 																						<div class="c-posts__info">Jan 30</div>
 													</div>
 					</div>
 					
 		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2023/04/Don-Lemon-CNN.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=489 data-ratio=0.67									loading="lazy"
-								width="720" height="489" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/e3d44784728a14554b113da78ea6ac05144a4d7f6880368fa295019cc0f9cc4f.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=552 data-ratio=0.67									loading="lazy"
+								width="720" height="552" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2023/04/Don-Lemon-CNN.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2023/04/Don-Lemon-CNN.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2023/04/Don-Lemon-CNN.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/e3d44784728a14554b113da78ea6ac05144a4d7f6880368fa295019cc0f9cc4f.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/e3d44784728a14554b113da78ea6ac05144a4d7f6880368fa295019cc0f9cc4f.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/e3d44784728a14554b113da78ea6ac05144a4d7f6880368fa295019cc0f9cc4f.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11645297"
+				data-post-id="11644902"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
-					href="https://globalnews.ca/news/11645297/corus-to-seek-court-approval-of-recapitalization-plan-after-shareholder-vote-narrowly-fails/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
+					href="https://globalnews.ca/news/11644902/trump-sues-irs-for-10-billion/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Corus to seek court approval of recapitalization plan after shareholder vote narrowly fails" data-title>Corus to seek court approval of recapitalization plan after shareholder vote narrowly fails</span>
+					<span class="c-posts__headlineText" title="Trump sues IRS and Treasury for $10 billion, cites leaked tax information" data-title>Trump sues IRS and Treasury for $10 billion, cites leaked tax information</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						Corus Entertainment, the parent company of Global News, said Friday the company intends to seek Court approval of a previously announced recapitalization plan.						</div>
+						Trump&#039;s tax returns were previously released in 2022 after immense pressure from Democrats, which detailed six years of Trump&#039;s life. 						</div>
 						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Money</div>
+															<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
 																						<div class="c-posts__info">Jan 30</div>
 													</div>
 					</div>
 					
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/01/efd848f7c1dac2a091d045e62f510e43c9ad0399d4291b840148ff8e86ccb852.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2026/01/CP175089322.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="473" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/efd848f7c1dac2a091d045e62f510e43c9ad0399d4291b840148ff8e86ccb852.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/efd848f7c1dac2a091d045e62f510e43c9ad0399d4291b840148ff8e86ccb852.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/efd848f7c1dac2a091d045e62f510e43c9ad0399d4291b840148ff8e86ccb852.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11643711"
-				data-sophi-feature=latest-news			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11643711/lottery-winner-jailed-john-eric-spiby-counterfeit-drugs/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="U.K. lottery winner, 80, jailed in $424-million counterfeit drugs bust" data-title>U.K. lottery winner, 80, jailed in $424-million counterfeit drugs bust</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						A prosecutor said the gang was involved in producing counterfeit drugs with an estimated street value of £288 million (C$424 million).						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Crime</div>
-																						<div class="c-posts__info">Jan 29</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/01/Untitled-design-3.png?w=720				data-width=720 data-height=563 data-ratio=0.67									loading="lazy"
-								width="720" height="563" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/Untitled-design-3.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/Untitled-design-3.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/Untitled-design-3.png?w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/CP175089322.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/CP175089322.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/CP175089322.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -3999,65 +3968,97 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11643131"
+				data-post-id="11644814"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
-					href="https://globalnews.ca/news/11643131/canadian-government-cheques-not-cashed/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
+					href="https://globalnews.ca/news/11644814/don-lemon-arrested-by-federal-agents/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Canadians have billions in uncashed cheques, rebates. Are you one of them?" data-title>Canadians have billions in uncashed cheques, rebates. Are you one of them?</span>
+					<span class="c-posts__headlineText" title="Journalist Don Lemon charged after arrest over Minnesota church protest" data-title>Journalist Don Lemon charged after arrest over Minnesota church protest</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						Millions of paper cheques from the government valued at more than $2 billion dollars since 2022 that have been sent out to Canadians -- and have not been cashed.						</div>
+						U.S. Attorney General Pam Bondi wrote on X that Lemon and several others were arrested under her orders.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Money</div>
-																						<div class="c-posts__info">Jan 29</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/01/signing-cheque.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/signing-cheque.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/signing-cheque.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/signing-cheque.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11643667"
-				data-sophi-feature=latest-news			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11643667/ns-missing-kids-stepfather-assault-charge-adult/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:8}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Stepfather of two missing N.S. kids charged with sexual assault of adult, forcible confinement" data-title>Stepfather of two missing N.S. kids charged with sexual assault of adult, forcible confinement</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						The stepfather of two children who have been missing for nearly nine months has been charged with assault, sexual assault and forcible confinement involving an adult victim. 						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																						<div class="c-posts__info">Jan 29</div>
+															<div class="c-posts__info c-posts__info--highlight">Trending</div>
+																						<div class="c-posts__info">Jan 30</div>
 													</div>
 					</div>
 					
 		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/01/daniel-martell.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=540 data-ratio=0.67									loading="lazy"
-								width="720" height="540" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2023/04/Don-Lemon-CNN.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=489 data-ratio=0.67									loading="lazy"
+								width="720" height="489" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/daniel-martell.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/daniel-martell.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/daniel-martell.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2023/04/Don-Lemon-CNN.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2023/04/Don-Lemon-CNN.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2023/04/Don-Lemon-CNN.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11645297"
+				data-sophi-feature=latest-news			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11645297/corus-to-seek-court-approval-of-recapitalization-plan-after-shareholder-vote-narrowly-fails/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Corus to seek court approval of recapitalization plan after shareholder vote narrowly fails" data-title>Corus to seek court approval of recapitalization plan after shareholder vote narrowly fails</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						Corus Entertainment, the parent company of Global News, said Friday the company intends to seek Court approval of a previously announced recapitalization plan.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Money</div>
+																						<div class="c-posts__info">Jan 30</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/01/efd848f7c1dac2a091d045e62f510e43c9ad0399d4291b840148ff8e86ccb852.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/efd848f7c1dac2a091d045e62f510e43c9ad0399d4291b840148ff8e86ccb852.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/efd848f7c1dac2a091d045e62f510e43c9ad0399d4291b840148ff8e86ccb852.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/efd848f7c1dac2a091d045e62f510e43c9ad0399d4291b840148ff8e86ccb852.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11644821"
+				data-sophi-feature=latest-news			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11644821/donald-trump-tariffs-bombardier-aircraft/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:8}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Bombardier warns of &#8216;significant impact&#8217; to travellers from Trump&#8217;s threat" data-title>Bombardier warns of &#8216;significant impact&#8217; to travellers from Trump&#8217;s threat</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						Transport Minister Steve MacKinnon also addressed the matter in a social media post on Friday afternoon, saying he has spoken with Bombardier&#039;s CEO.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Canada</div>
+																						<div class="c-posts__info">Jan 30</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/01/bombardier-tariff-threat.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/bombardier-tariff-threat.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/bombardier-tariff-threat.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/bombardier-tariff-threat.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -4140,8 +4141,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-playlist-miniplayer"
 			data-displayinline-video-id="11644363"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11644363,11646626,11644447,11646001,11646323/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F1hhq3o9qfz-dhsq2wqj83%2F6P_KIANO_VAFAEIAN_MAID__OM01P48S.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
-    		    			data-displayinline-playlist="11644363,11646626,11644447,11646001,11646323"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11644363,11646626,11646713,11646323,11644447/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F1hhq3o9qfz-dhsq2wqj83%2F6P_KIANO_VAFAEIAN_MAID__OM01P48S.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
+    		    			data-displayinline-playlist="11644363,11646626,11646713,11646323,11644447"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Family calls for changes to MAID&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;bc&quot;,&quot;canada&quot;,&quot;health&quot;],&quot;keywords&quot;:[&quot;health-care&quot;,&quot;maid&quot;,&quot;medical-assistance-in-dying&quot;,&quot;short-clip&quot;,&quot;terminally-ill&quot;,&quot;global-bc&quot;,&quot;global-news-hour-at-6-bc&quot;]}}"
 			    		>
@@ -4188,7 +4189,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11644363,11646626,11644447,11646001,11646323/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11644363,11646626,11646713,11646323,11644447/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Family calls for changes to MAID</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4216,7 +4217,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11646626,11644447,11646001,11646323/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11646626,11646713,11646323,11644447/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Conservatives vote to keep Pierre Poilievre on as party leader</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4237,23 +4238,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="3"
 	>
-	<a href="https://globalnews.ca/video/11644447/trump-threatens-canada-with-50-tariff-on-aircraft-sold-to-u-s/"
-		title="Trump threatens Canada with 50% tariff on aircraft sold to U.S."
+	<a href="https://globalnews.ca/video/11646713/canadian-armed-forces-member-dies-while-deployed-in-latvia/"
+		title="Canadian Armed Forces member dies while deployed in Latvia"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11644447"
-		data-video-label="Economy"
+		data-video-id="11646713"
+		data-video-label="Politics"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11644447,11646001,11646323,11646626/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11646713,11646323,11644447,11646626/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Trump threatens Canada with 50% tariff on aircraft sold to U.S.</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Canadian Armed Forces member dies while deployed in Latvia</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Economy					</div>
+						Politics					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/0mjhuucnxd-zh392jvl7r/TRUMP_CARNEY_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/0n3711588k-w45rnzvoa7/lativa.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4265,23 +4266,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="4"
 	>
-	<a href="https://globalnews.ca/video/11646001/pattison-group-says-ice-warehouse-sale-wont-go-ahead/"
-		title="Pattison Group says ICE warehouse sale won&#8217;t go ahead"
+	<a href="https://globalnews.ca/video/11646323/iconic-canadian-actor-schitts-creek-star-catherine-ohara-dead-at-71/"
+		title="Iconic Canadian actor, ‘Schitt’s Creek’ star Catherine O’Hara dead at 71"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11646001"
-		data-video-label="Canada"
+		data-video-id="11646323"
+		data-video-label="Entertainment"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11646001,11646323,11646626,11644447/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11646323,11644447,11646626,11646713/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Pattison Group says ICE warehouse sale won&#8217;t go ahead</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Iconic Canadian actor, ‘Schitt’s Creek’ star Catherine O’Hara dead at 71</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
+						Entertainment					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/j2da4wkqk4-3515r2xgmb/PATTISON_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/alkc2qbf7p-w7l03iq0t9/O_HARA_2_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4293,23 +4294,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="5"
 	>
-	<a href="https://globalnews.ca/video/11646323/iconic-canadian-actor-schitts-creek-star-catherine-ohara-dead-at-71/"
-		title="Iconic Canadian actor, ‘Schitt’s Creek’ star Catherine O’Hara dead at 71"
+	<a href="https://globalnews.ca/video/11644447/trump-threatens-canada-with-50-tariff-on-aircraft-sold-to-u-s/"
+		title="Trump threatens Canada with 50% tariff on aircraft sold to U.S."
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11646323"
-		data-video-label="Entertainment"
+		data-video-id="11644447"
+		data-video-label="Economy"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11646323,11646626,11644447,11646001/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11644447,11646626,11646713,11646323/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Iconic Canadian actor, ‘Schitt’s Creek’ star Catherine O’Hara dead at 71</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Trump threatens Canada with 50% tariff on aircraft sold to U.S.</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Entertainment					</div>
+						Economy					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/alkc2qbf7p-w7l03iq0t9/O_HARA_2_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/0mjhuucnxd-zh392jvl7r/TRUMP_CARNEY_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4334,23 +4335,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-playlist-miniplayer-variant"
-			data-displayinline-video-id="11646626"
+			data-displayinline-video-id="11644447"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11646626,11644447,11646451,11646323,11634541/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F4s268g1ue2-k4szxc1ft7%2FTHUMBS.00_00_09_02.Still003.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
-    		    			data-displayinline-playlist="11646626,11644447,11646451,11646323,11634541"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11644447,11646626,11646323,11634541,11646451/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F0mjhuucnxd-zh392jvl7r%2FTRUMP_CARNEY_VMS.jpg%3Fw%3D640%26%23038%3Bquality%3D70%26%23038%3Bstrip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
+    		    			data-displayinline-playlist="11644447,11646626,11646323,11634541,11646451"
     												data-displayinline-sticky="true"
-													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Conservatives vote to keep Pierre Poilievre on as party leader&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;,&quot;politics&quot;],&quot;keywords&quot;:[&quot;conservative-party&quot;,&quot;leadership-review&quot;,&quot;pierre-poilievre&quot;,&quot;short-clip&quot;,&quot;vote&quot;]}}"
+													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Trump threatens Canada with 50% tariff on aircraft sold to U.S.&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;economy&quot;,&quot;politics&quot;],&quot;keywords&quot;:[&quot;canada-tariffs&quot;,&quot;cusma&quot;,&quot;donald-trump&quot;,&quot;gulfstream&quot;,&quot;mark-carney&quot;,&quot;new-tariffs&quot;,&quot;north-america&quot;,&quot;short-clip&quot;,&quot;tariffs&quot;,&quot;top-news&quot;,&quot;trade-war&quot;,&quot;trump&quot;,&quot;trump-tariffs&quot;,&quot;truth-social&quot;,&quot;u-s-president&quot;,&quot;u-s-canada-tensions&quot;,&quot;u-s-canada-trade&quot;,&quot;usmca&quot;]}}"
 			    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Conservatives vote to keep Pierre Poilievre on as party leader'"
+						alt="Click to play video: 'Trump threatens Canada with 50% tariff on aircraft sold to U.S.'"
 						width="640"
 						height="360"
-													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/4s268g1ue2-k4szxc1ft7/THUMBS.00_00_09_02.Still003.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/0mjhuucnxd-zh392jvl7r/TRUMP_CARNEY_VMS.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/4s268g1ue2-k4szxc1ft7/THUMBS.00_00_09_02.Still003.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/4s268g1ue2-k4szxc1ft7/THUMBS.00_00_09_02.Still003.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/4s268g1ue2-k4szxc1ft7/THUMBS.00_00_09_02.Still003.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
+								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/0mjhuucnxd-zh392jvl7r/TRUMP_CARNEY_VMS.jpg?w=450#038;quality=70&#038;strip=all 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/0mjhuucnxd-zh392jvl7r/TRUMP_CARNEY_VMS.jpg?w=720#038;quality=70&#038;strip=all 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/0mjhuucnxd-zh392jvl7r/TRUMP_CARNEY_VMS.jpg?w=1040#038;quality=70&#038;strip=all 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -4360,8 +4361,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">1:54</time>
-																									<span class="c-video__title">Conservatives vote to keep Pierre Poilievre on as party leader</span>
+																	<time class="c-video__duration">0:29</time>
+																									<span class="c-video__title">Trump threatens Canada with 50% tariff on aircraft sold to U.S.</span>
 															</div>
 						</span>
 											</span>
@@ -4377,23 +4378,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="1"
 	>
-	<a href="https://globalnews.ca/video/11646626/conservatives-vote-to-keep-pierre-poilievre-on-as-party-leader/"
-		title="Conservatives vote to keep Pierre Poilievre on as party leader"
+	<a href="https://globalnews.ca/video/11644447/trump-threatens-canada-with-50-tariff-on-aircraft-sold-to-u-s/"
+		title="Trump threatens Canada with 50% tariff on aircraft sold to U.S."
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11646626"
-		data-video-label="Canada"
+		data-video-id="11644447"
+		data-video-label="Economy"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11646626,11644447,11646451,11646323,11634541/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11644447,11646626,11646323,11634541,11646451/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Conservatives vote to keep Pierre Poilievre on as party leader</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Trump threatens Canada with 50% tariff on aircraft sold to U.S.</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
+						Economy					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/4s268g1ue2-k4szxc1ft7/THUMBS.00_00_09_02.Still003.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/0mjhuucnxd-zh392jvl7r/TRUMP_CARNEY_VMS.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4405,23 +4406,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="2"
 	>
-	<a href="https://globalnews.ca/video/11644447/trump-threatens-canada-with-50-tariff-on-aircraft-sold-to-u-s/"
-		title="Trump threatens Canada with 50% tariff on aircraft sold to U.S."
+	<a href="https://globalnews.ca/video/11646626/conservatives-vote-to-keep-pierre-poilievre-on-as-party-leader/"
+		title="Conservatives vote to keep Pierre Poilievre on as party leader"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11644447"
-		data-video-label="Economy"
+		data-video-id="11646626"
+		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11644447,11646451,11646323,11634541/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11646626,11646323,11634541,11646451/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Trump threatens Canada with 50% tariff on aircraft sold to U.S.</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Conservatives vote to keep Pierre Poilievre on as party leader</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Economy					</div>
+						Canada					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/0mjhuucnxd-zh392jvl7r/TRUMP_CARNEY_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/4s268g1ue2-k4szxc1ft7/THUMBS.00_00_09_02.Still003.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4433,34 +4434,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="3"
 	>
-	<a href="https://globalnews.ca/video/11646451/poilievre-talks-alberta-separatism-arctic-defence-at-conservative-convention-amid-leadership-vote/"
-		title="Poilievre talks Alberta separatism, Arctic defence at Conservative convention amid leadership vote"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11646451"
-		data-video-label="Canada"
-		data-video-player-id="home-playlist-miniplayer-variant"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11646451,11646323,11634541,11644447/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Poilievre talks Alberta separatism, Arctic defence at Conservative convention amid leadership vote</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/kzvdwfpqnc-xyws8w4y8w/POILIEVRE_VMS_2.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="4"
-	>
 	<a href="https://globalnews.ca/video/11646323/iconic-canadian-actor-schitts-creek-star-catherine-ohara-dead-at-71/"
 		title="Iconic Canadian actor, ‘Schitt’s Creek’ star Catherine O’Hara dead at 71"
 		class="l-playlist__link c-posts__inner c-videoPlay"
@@ -4468,7 +4441,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Entertainment"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11646323,11634541,11644447,11646451/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11646323,11634541,11646451,11646626/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Iconic Canadian actor, ‘Schitt’s Creek’ star Catherine O’Hara dead at 71</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4487,7 +4460,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 <li class="c-posts__item l-playlist__item"
-			data-playlist-index="5"
+			data-playlist-index="4"
 	>
 	<a href="https://globalnews.ca/video/11634541/ford-says-he-offered-crown-royal-company-an-olive-branch-on-lcbo-boycott/"
 		title="Ford says he offered Crown Royal company an &#8216;olive branch&#8217; on LCBO boycott"
@@ -4496,7 +4469,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Consumer"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11634541,11644447,11646451,11646323/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11634541,11646451,11646626,11646323/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Ford says he offered Crown Royal company an &#8216;olive branch&#8217; on LCBO boycott</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4506,6 +4479,34 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					</div>
 		<div class="c-posts__media l-playlist__media">
 			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/2kpstapml8-9to7axyddw/FORD_CROWN_ROYAL_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="5"
+	>
+	<a href="https://globalnews.ca/video/11646451/poilievre-talks-alberta-separatism-arctic-defence-at-conservative-convention-amid-leadership-vote/"
+		title="Poilievre talks Alberta separatism, Arctic defence at Conservative convention amid leadership vote"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11646451"
+		data-video-label="Canada"
+		data-video-player-id="home-playlist-miniplayer-variant"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11646451,11646626,11646323,11634541/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Poilievre talks Alberta separatism, Arctic defence at Conservative convention amid leadership vote</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						Canada					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/kzvdwfpqnc-xyws8w4y8w/POILIEVRE_VMS_2.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4597,14 +4598,44 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=10											>
 	<li class="c-posts__item  glide__slide  "
 	data-container-id="stories-item-17"
-	data-post-id="11638901"
+	data-post-id="10805397"
 	data-slide-index="0"
+	data-caption="These useful gadgets make family dinners quick and painless"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/the-curator/10805397/useful-kitchen-gadgets/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2024/10/amber.png?w=336				data-width=336 data-height=252 data-ratio=0.67									loading="lazy"
+								width="336" height="252" alt="" 
+						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="These useful gadgets make family dinners quick and painless" data-title>These useful gadgets make family dinners quick and painless</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+											<div class="c-posts__info c-posts__info--highlight" data-label>The Curator</div>
+																								</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item  glide__slide  "
+	data-container-id="stories-item-18"
+	data-post-id="11638901"
+	data-slide-index="1"
 	data-caption="I tried the Ninja Crispi — here&#8217;s my honest review on whether it’s really worth the hype"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11638901/i-tried-the-ninja-crispi-is-it-really-worth-the-hype/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4626,15 +4657,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-18"
+	data-container-id="stories-item-19"
 	data-post-id="11644579"
-	data-slide-index="1"
+	data-slide-index="2"
 	data-caption="I tried the viral Medicube Age R Booster Pro—here’s my honest review"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11644579/medicube-age-r-booster-pro-review/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4656,15 +4687,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-19"
+	data-container-id="stories-item-20"
 	data-post-id="11621417"
-	data-slide-index="2"
+	data-slide-index="3"
 	data-caption="Seeing red: The ultimate &#8216;red everything&#8217; gift guide"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11621417/seeing-red-the-ultimate-red-everything-gift-guide/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4686,15 +4717,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-20"
+	data-container-id="stories-item-21"
 	data-post-id="11642608"
-	data-slide-index="3"
+	data-slide-index="4"
 	data-caption="Packing essentials when travelling to Quebec City this winter"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11642608/what-to-pack-quebec-city/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -4716,15 +4747,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-21"
+	data-container-id="stories-item-22"
 	data-post-id="11637480"
-	data-slide-index="4"
+	data-slide-index="5"
 	data-caption="Budget-friendly Valentine’s Day gifts under $50 she’ll love"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11637480/budget-friendly-valentines-day-gifts-under-50-shell-love/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4746,15 +4777,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-22"
+	data-container-id="stories-item-23"
 	data-post-id="11640963"
-	data-slide-index="5"
+	data-slide-index="6"
 	data-caption="Dry, cracked skin? You need these winter skincare staples"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11640963/winter-skincare-essentials/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4776,15 +4807,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-23"
+	data-container-id="stories-item-24"
 	data-post-id="11637854"
-	data-slide-index="6"
+	data-slide-index="7"
 	data-caption="Samsonite, Monos and more: The best deals on luggage and travel accessories"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11637854/travel-deals-top-discounts-on-suitcases-carry-ons-accessories/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4806,15 +4837,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-24"
+	data-container-id="stories-item-25"
 	data-post-id="11638945"
-	data-slide-index="7"
+	data-slide-index="8"
 	data-caption="These 2016 trends are back&#8211;and better than ever"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11638945/2016-beauty-fashion-trends/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4836,15 +4867,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-25"
+	data-container-id="stories-item-26"
 	data-post-id="11487218"
-	data-slide-index="8"
+	data-slide-index="9"
 	data-caption="Best beauty products under $30 available on Amazon right now"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11487218/best-beauty-products-under-30-available-on-amazon-right-now/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4856,36 +4887,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="Best beauty products under $30 available on Amazon right now" data-title>Best beauty products under $30 available on Amazon right now</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-											<div class="c-posts__info c-posts__info--highlight" data-label>The Curator</div>
-																								</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-26"
-	data-post-id="11455221"
-	data-slide-index="9"
-	data-caption="Game-changing travel accessories for your next vacation"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/the-curator/11455221/game-changing-travel-accessories/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/01/Frame-386-2.png?w=336				data-width=336 data-height=252 data-ratio=0.67									loading="lazy"
-								width="336" height="252" alt="" 
-						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Game-changing travel accessories for your next vacation" data-title>Game-changing travel accessories for your next vacation</span>
 			</div>
 	
 						
@@ -4979,6 +4980,37 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3											>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-27"
+	data-post-id="11643711"
+	data-slide-index=""
+	data-caption="U.K. lottery winner, 80, jailed in $424-million counterfeit drugs bust"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11643711/lottery-winner-jailed-john-eric-spiby-counterfeit-drugs/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/01/Untitled-design-3.png?w=720				data-width=720 data-height=563 data-ratio=0.67									loading="lazy"
+								width="720" height="563" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/Untitled-design-3.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/Untitled-design-3.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/Untitled-design-3.png?w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="U.K. lottery winner, 80, jailed in $424-million counterfeit drugs bust" data-title>U.K. lottery winner, 80, jailed in $424-million counterfeit drugs bust</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >Jan 29</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-28"
 	data-post-id="11643502"
 	data-slide-index=""
 	data-caption="Venezuela commercial airspace to reopen weeks after Maduro raid, Trump says"
@@ -4986,7 +5018,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11643502/venezuela-airspace-reopen-trump/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5009,7 +5041,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-28"
+	data-container-id="stories-item-29"
 	data-post-id="11643234"
 	data-slide-index=""
 	data-caption="B.C. premier calls meeting between Alberta separatists, Trump officials &#8216;treason&#8217;"
@@ -5017,7 +5049,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11643234/remier-eby-alberta-separation-treason/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -5030,37 +5062,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="B.C. premier calls meeting between Alberta separatists, Trump officials &#8216;treason&#8217;" data-title>B.C. premier calls meeting between Alberta separatists, Trump officials &#8216;treason&#8217;</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Jan 29</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-29"
-	data-post-id="11643436"
-	data-slide-index=""
-	data-caption="10 people abducted from Mexico mining site, confirms Vancouver-based firm"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11643436/vancouver-based-mine-firm-10-people-abducted-mexico/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2024/03/20240321130352-c5394b13db26f81d6197cd0a09cc68878e8c2d9713147140ebe4bed6e16bbd7c.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="434" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2024/03/20240321130352-c5394b13db26f81d6197cd0a09cc68878e8c2d9713147140ebe4bed6e16bbd7c.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2024/03/20240321130352-c5394b13db26f81d6197cd0a09cc68878e8c2d9713147140ebe4bed6e16bbd7c.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2024/03/20240321130352-c5394b13db26f81d6197cd0a09cc68878e8c2d9713147140ebe4bed6e16bbd7c.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="10 people abducted from Mexico mining site, confirms Vancouver-based firm" data-title>10 people abducted from Mexico mining site, confirms Vancouver-based firm</span>
 			</div>
 	
 						
@@ -5156,6 +5157,68 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3											>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-30"
+	data-post-id="11646678"
+	data-slide-index=""
+	data-caption="Major weather alerts issued for Saskatchewan, Toronto and N.S"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11646678/winter-alerts-saskatchewan-ontario-n-s/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/6a2497adaa9b403358bd3bd4143ed1dc9ff8504ddd87714f8edd7900e1f64dbc.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/6a2497adaa9b403358bd3bd4143ed1dc9ff8504ddd87714f8edd7900e1f64dbc.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/6a2497adaa9b403358bd3bd4143ed1dc9ff8504ddd87714f8edd7900e1f64dbc.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/6a2497adaa9b403358bd3bd4143ed1dc9ff8504ddd87714f8edd7900e1f64dbc.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Major weather alerts issued for Saskatchewan, Toronto and N.S" data-title>Major weather alerts issued for Saskatchewan, Toronto and N.S</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >36 mins</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-31"
+	data-post-id="11646625"
+	data-slide-index=""
+	data-caption="B.C. RCMP help 71-year-old find shelter after 14 years unhoused"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11646625/bc-rcmp-help-unhoused-senior/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/01/Screenshot-2026-01-31-103500.png?w=720				data-width=720 data-height=543 data-ratio=0.67									loading="lazy"
+								width="720" height="543" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/Screenshot-2026-01-31-103500.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/Screenshot-2026-01-31-103500.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/Screenshot-2026-01-31-103500.png?w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="B.C. RCMP help 71-year-old find shelter after 14 years unhoused" data-title>B.C. RCMP help 71-year-old find shelter after 14 years unhoused</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >2 hours</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-32"
 	data-post-id="11646622"
 	data-slide-index=""
 	data-caption="Seniors struggle with cold and loneliness in freezing temperatures and heavy snowfall"
@@ -5163,7 +5226,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11646622/seniors-helpline-toronto/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5180,69 +5243,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >2 hours</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-31"
-	data-post-id="11646619"
-	data-slide-index=""
-	data-caption="&#8216;Canada is not Minnesota,&#8217; minister says in reaction to U.S. immigration raids"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11646619/canada-minnesota-immigration-raids/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/01/dd7727f7ae4c9f52da14f892771637dfae6120ed6d4d5e7acf97a0c3d2c6142c.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/dd7727f7ae4c9f52da14f892771637dfae6120ed6d4d5e7acf97a0c3d2c6142c.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/dd7727f7ae4c9f52da14f892771637dfae6120ed6d4d5e7acf97a0c3d2c6142c.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/dd7727f7ae4c9f52da14f892771637dfae6120ed6d4d5e7acf97a0c3d2c6142c.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="&#8216;Canada is not Minnesota,&#8217; minister says in reaction to U.S. immigration raids" data-title>&#8216;Canada is not Minnesota,&#8217; minister says in reaction to U.S. immigration raids</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >2 hours</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-32"
-	data-post-id="11646083"
-	data-slide-index=""
-	data-caption="Jurisdictional gaps blamed for fire risk at, near Penticton homeless encampment"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11646083/jurisdictional-gaps-blamed-fire-risk-penticton-homeless-encampment/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/01/CAMP-PEN-FIRE.jpg?quality=65&#038;strip=all&#038;w=605				data-width=605 data-height=720 data-ratio=0.67									loading="lazy"
-								width="605" height="720" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/CAMP-PEN-FIRE.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/CAMP-PEN-FIRE.jpg?quality=65&#038;strip=all&#038;w=471 471w,https://globalnews.ca/wp-content/uploads/2026/01/CAMP-PEN-FIRE.jpg?quality=65&#038;strip=all&#038;w=605 605w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Jurisdictional gaps blamed for fire risk at, near Penticton homeless encampment" data-title>Jurisdictional gaps blamed for fire risk at, near Penticton homeless encampment</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Jan 30</div>
+																<div class="c-posts__info" data-date >4 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5312,6 +5313,37 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3											>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-33"
+	data-post-id="11645001"
+	data-slide-index=""
+	data-caption="Alberta Premier Danielle Smith speaks at Conservative Party convention"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11645001/danielle-smith-conservative-party-convention-calgary/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/12/446ae78f0e157e2a65d87523cca8b09a304fd8a049fa37daedf7cb4b0dbd0c03_2bc114.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/12/446ae78f0e157e2a65d87523cca8b09a304fd8a049fa37daedf7cb4b0dbd0c03_2bc114.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/12/446ae78f0e157e2a65d87523cca8b09a304fd8a049fa37daedf7cb4b0dbd0c03_2bc114.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/12/446ae78f0e157e2a65d87523cca8b09a304fd8a049fa37daedf7cb4b0dbd0c03_2bc114.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Alberta Premier Danielle Smith speaks at Conservative Party convention" data-title>Alberta Premier Danielle Smith speaks at Conservative Party convention</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >3 hours</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-34"
 	data-post-id="11645917"
 	data-slide-index=""
 	data-caption="Peel school board supervision a &#8216;smokescreen&#8217; for underfunding, chair says"
@@ -5319,7 +5351,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11645917/peel-dsb-takeover-smokescreen/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5342,7 +5374,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-34"
+	data-container-id="stories-item-35"
 	data-post-id="11645897"
 	data-slide-index=""
 	data-caption="Ontario PCs reverse course on media ban, will let reporters cover Doug Ford convention speech"
@@ -5350,7 +5382,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11645897/ontario-pcs-reverse-course-on-media-ban-will-let-reporters-cover-doug-ford-convention-speech/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5363,37 +5395,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="Ontario PCs reverse course on media ban, will let reporters cover Doug Ford convention speech" data-title>Ontario PCs reverse course on media ban, will let reporters cover Doug Ford convention speech</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Jan 30</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-35"
-	data-post-id="11645564"
-	data-slide-index=""
-	data-caption="Board of Metro Vancouver meets to address affordability, spending"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11645564/board-of-metro-vancouver-affordability-spending/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/06/6P-METRO-POLITICIANS-SA_OM01DWH0.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="405" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/06/6P-METRO-POLITICIANS-SA_OM01DWH0.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/06/6P-METRO-POLITICIANS-SA_OM01DWH0.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/06/6P-METRO-POLITICIANS-SA_OM01DWH0.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Board of Metro Vancouver meets to address affordability, spending" data-title>Board of Metro Vancouver meets to address affordability, spending</span>
 			</div>
 	
 						
@@ -5530,31 +5531,31 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-38"
-	data-post-id="11640205"
+	data-post-id="11643131"
 	data-slide-index=""
-	data-caption="Canada could increase real GDP by 7% if it drops all internal trade barriers: IMF"
+	data-caption="Canadians have billions in uncashed cheques, rebates. Are you one of them?"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11640205/canada-internal-trade-gdp-increase/"
+		href="https://globalnews.ca/news/11643131/canadian-government-cheques-not-cashed/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/01/canada-premiers.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/01/signing-cheque.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
 								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/canada-premiers.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/canada-premiers.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/canada-premiers.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/signing-cheque.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/signing-cheque.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/signing-cheque.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Canada could increase real GDP by 7% if it drops all internal trade barriers: IMF" data-title>Canada could increase real GDP by 7% if it drops all internal trade barriers: IMF</span>
+					<span class="c-posts__headlineText" title="Canadians have billions in uncashed cheques, rebates. Are you one of them?" data-title>Canadians have billions in uncashed cheques, rebates. Are you one of them?</span>
 			</div>
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Jan 27</div>
+																<div class="c-posts__info" data-date >Jan 29</div>
 																			</div>
 									</div>
 		</a>
@@ -5825,7 +5826,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >3 hours</div>
+																<div class="c-posts__info" data-date >5 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -6698,7 +6699,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			<script async src="//static.chartbeat.com/js/chartbeat_mab.js"></script>
 			<!-- Adobe Analytics code version: JS-2.6.0. -->
 		<script type="text/javascript">
-			var gnPageData = {"context_data":{"hourofday":"11","dayofweek":"Saturday","weekdayweekend":"Weekend","userregion":"national","region":"national"},"sections":["home"],"props":[]};
+			var gnPageData = {"context_data":{"hourofday":"13","dayofweek":"Saturday","weekdayweekend":"Weekend","userregion":"national","region":"national"},"sections":["home"],"props":[]};
 		</script>
 				<!-- End Adobe Analytics code -->
 			<script>
@@ -6763,5 +6764,5 @@ var GN_OneSignalSettings = {"isCurator":"","appId":"8beb7996-b996-4ce8-a474-d488
 		
 		<div class="l-dynamicElement"></div>
 
-			</body>
+			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75660ba8f4","applicationID":"418684855","transactionName":"Z1BWZxdTWkAHVExRXF4adVARW1tdSV9XVVY=","queueTime":0,"applicationTime":461,"atts":"SxdBEV9JSR9EVhoCSE1I","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
