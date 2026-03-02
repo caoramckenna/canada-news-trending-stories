@@ -184,7 +184,8 @@
         }
     </script>
     	<!-- Meta Tags -->
-	<meta charset="UTF-8">
+	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"75660ba8f4",applicationID:"418684855",browserID:"419993820"};;/*! For license information please see nr-loader-rum-1.310.1.min.js.LICENSE.txt */
+(()=>{var e,t,r={163:(e,t,r)=>{"use strict";r.d(t,{j:()=>E});var n=r(384),i=r(1741);var s=r(2555);r(860).K7.genericEvents;const a="experimental.resources",o="register",c=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(2614),u=r(944),l=r(8122);const f="[data-nr-mask]",g=e=>(0,l.a)(e,(()=>{const e={feature_flags:[],experimental:{allow_registered_children:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{get allow_registered_children(){return e.feature_flags.includes(o)||e.experimental.allow_registered_children},set allow_registered_children(t){e.experimental.allow_registered_children=t},duplicate_registered_data:!1},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(a)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:d.wk,inactiveMs:d.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){c(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,u.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){c(t)?e.block_selector+=",".concat(t):""!==t&&(0,u.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,u.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var p=r(6154),h=r(9324);let m=0;const v={buildEnv:h.F3,distMethod:h.Xs,version:h.xv,originTime:p.WN},b={consented:!1},y={appMetadata:{},get consented(){return this.session?.state?.consent||b.consented},set consented(e){b.consented=e},customTransaction:void 0,denyList:void 0,disabled:!1,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++m}},_=e=>{const t=(0,l.a)(e,y),r=Object.keys(v).reduce((e,t)=>(e[t]={value:v[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)};var w=r(5701);const x=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var k=r(7836),R=r(3241);const A={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},S=e=>(0,l.a)(e,A),T=new Set;function E(e,t={},r,a){let{init:o,info:c,loader_config:d,runtime:u={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();o=e.init,c=e.info,d=e.loader_config}e.init=g(o||{}),e.loader_config=S(d||{}),c.jsAttributes??={},p.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,s.D)(c);const f=e.init,h=[c.beacon,c.errorBeacon];T.has(e.agentIdentifier)||(f.proxy.assets&&(x(f.proxy.assets),h.push(f.proxy.assets)),f.proxy.beacon&&h.push(f.proxy.beacon),e.beacons=[...h],function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach(r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let s=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return s?s(...t):n})})}(e),(0,n.US)("activatedFeatures",w.B)),u.denyList=[...f.ajax.deny_list||[],...f.ajax.block_internal?h:[]],u.ptid=e.agentIdentifier,u.loaderType=r,e.runtime=_(u),T.has(e.agentIdentifier)||(e.ee=k.ee.get(e.agentIdentifier),e.exposed=l,(0,R.W)({agentIdentifier:e.agentIdentifier,drained:!!w.B?.[e.agentIdentifier],type:"lifecycle",name:"initialize",feature:void 0,data:e.config})),T.add(e.agentIdentifier)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>o,US:()=>l,Zm:()=>c,bQ:()=>u,dV:()=>d,pV:()=>f});var n=r(6154),i=r(1863),s=r(944),a=r(1910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function d(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,a.i)(...Object.values(e.o))),e}function u(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,s.R)(69)}function l(e,t){c()[e]=t}function f(){return function(){let e=c();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),d(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>u,K7:()=>c,P3:()=>d,XX:()=>i,Yy:()=>o,df:()=>s,qY:()=>n,v4:()=>a});const n="events",i="jserrors",s="browser/blobs",a="rum",o="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},d={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.softNav]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.sessionReplay]:8,[c.logging]:9,[c.genericEvents]:10},u={[c.pageViewEvent]:a,[c.pageViewTiming]:n,[c.ajax]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:s,[c.sessionReplay]:s,[c.logging]:o,[c.genericEvents]:"ins"}},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({agentIdentifier:null,drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},1687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>d,Ze:()=>f,x3:()=>u});var n=r(3241),i=r(7836),s=r(3606),a=r(860),o=r(2646);const c={};function d(e,t){const r={staged:!1,priority:a.P3[t]||0};l(e),c[e].get(t)||c[e].set(t,r)}function u(e,t){e&&c[e]&&(c[e].get(t)&&c[e].delete(t),p(e,t,!1),c[e].size&&g(e))}function l(e){if(!e)throw new Error("agentIdentifier required");c[e]||(c[e]=new Map)}function f(e="",t="feature",r=!1){if(l(e),!e||!c[e].get(t)||r)return p(e,t);c[e].get(t).staged=!0,g(e)}function g(e){const t=Array.from(c[e]);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{c[e].delete(t),p(e,t)}))}function p(e,t,r=!0){const a=e?i.ee.get(e):i.ee,c=s.i.handlers;if(!a.aborted&&a.backlog&&c){if((0,n.W)({agentIdentifier:e,type:"lifecycle",name:"drain",feature:t}),r){const e=a.backlog[t],r=c[t];if(r){for(let t=0;e&&t<e.length;++t)h(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof o.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}a.isolatedBacklog||delete c[t],a.backlog[t]=null,a.emit("drain-"+t,[])}}function h(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],s=e[2];n.apply(i,s)}})}},1738:(e,t,r)=>{"use strict";r.d(t,{U:()=>g,Y:()=>f});var n=r(3241),i=r(9908),s=r(1863),a=r(944),o=r(5701),c=r(3969),d=r(8362),u=r(860),l=r(4261);function f(e,t,r,s){const f=s||r;!f||f[e]&&f[e]!==d.d.prototype[e]||(f[e]=function(){(0,i.p)(c.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({agentIdentifier:r.agentIdentifier,drained:!!o.B?.[r.agentIdentifier],type:"data",name:"api",feature:l.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,a.R)(23,e)}})}function g(e,t,r,n,a){const o=e.info;null===r?delete o.jsAttributes[t]:o.jsAttributes[t]=r,(a||null===r)&&(0,i.p)(l.Pl+n,[(0,s.t)(),t,r],void 0,"session",e.ee)}},1741:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(944),i=r(4261);class s{#e(e,...t){if(this[e]!==s.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},1863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},1910:(e,t,r)=>{"use strict";r.d(t,{i:()=>s});var n=r(944);const i=new Map;function s(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),s=t.includes("nrWrapper");return r||s||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},2555:(e,t,r)=>{"use strict";r.d(t,{D:()=>o,f:()=>a});var n=r(384),i=r(8122);const s={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function a(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const o=e=>(0,i.a)(e,s)},2614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>a,H3:()=>n,g:()=>d,iL:()=>c,tS:()=>o,uh:()=>i,wk:()=>s});const n="NRBA",i="SESSION",s=144e5,a=18e5,o={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},d={OFF:0,FULL:1,ERROR:2}},2646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},2843:(e,t,r)=>{"use strict";r.d(t,{G:()=>s,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function s(e,t,r){(0,n.sp)("pagehide",e,t,r)}},3241:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(6154);const i="newrelic";function s(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},3606:(e,t,r)=>{"use strict";r.d(t,{i:()=>s});var n=r(9908);s.on=a;var i=s.handlers={};function s(e,t,r,s){a(s||n.d,i,e,t,r)}function a(e,t,r,i,s){s||(s="feature"),e||(e=n.d);var a=t[s]=t[s]||{};(a[r]=a[r]||[]).push([e,i])}},3878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function s(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>s,jT:()=>n,sp:()=>i})},3969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>o,rs:()=>i,xV:()=>a,z_:()=>s});const n=r(860).K7.metrics,i="sm",s="cm",a="storeSupportabilityMetrics",o="storeEventMetrics"},4234:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(7836),i=r(1687);class s{constructor(e,t){this.agentIdentifier=e,this.ee=n.ee.get(e),this.featureName=t,this.blocked=!1}deregisterDrain(){(0,i.x3)(this.agentIdentifier,this.featureName)}}},4261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>d,BL:()=>o,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>m,Pl:()=>n,Pv:()=>R,Tb:()=>l,U2:()=>s,V1:()=>k,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>a,nb:()=>h,o5:()=>u});const n="api-",i="addPageAction",s="addToTrace",a="addRelease",o="finished",c="interaction",d="log",u="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",h="setApplicationVersion",m="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",k="measure",R="consent"},5289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>a,Qr:()=>c,sB:()=>o});var n=r(3878),i=r(6389);function s(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(s())return e();const r=(0,i.J)(e),a=setInterval(()=>{s()&&(clearInterval(a),r())},500);(0,n.sp)("load",r,t)}function o(e){if(s())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(s())return e();(0,n.sp)("popstate",e)}},5607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},5701:(e,t,r)=>{"use strict";r.d(t,{B:()=>s,t:()=>a});var n=r(3241);const i=new Set,s={};function a(e,t){const r=t.agentIdentifier;s[r]??={},e&&"object"==typeof e&&(i.has(r)||(t.ee.emit("rumresp",[e]),s[r]=e,i.add(r),(0,n.W)({agentIdentifier:r,loaded:!0,drained:!0,type:"lifecycle",name:"load",feature:void 0,data:e})))}},6154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>c,RI:()=>i,WN:()=>u,bv:()=>s,eN:()=>l,gm:()=>a,mw:()=>o,sb:()=>d});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,s="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===a?.document?.visibilityState),c=/iPad|iPhone|iPod/.test(a.navigator?.userAgent),d=c&&"undefined"==typeof SharedWorker,u=((()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)()),l=()=>"undefined"!=typeof PerformanceNavigationTiming&&a?.performance?.getEntriesByType("navigation")?.[0]?.responseStart},6389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},6630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},7699:(e,t,r)=>{"use strict";r.d(t,{It:()=>s,KC:()=>o,No:()=>i,qh:()=>a});var n=r(860);const i=16e3,s=1e6,a="SESSION_ERROR",o={[n.K7.logging]:!0,[n.K7.genericEvents]:!1,[n.K7.jserrors]:!1,[n.K7.ajax]:!1}},7836:(e,t,r)=>{"use strict";r.d(t,{P:()=>o,ee:()=>c});var n=r(384),i=r(8990),s=r(2646),a=r(5607);const o="nr@context:".concat(a.W),c=function e(t,r){var n={},a={},u={},l=!1;try{l=16===r.length&&d.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,s){!1!==s&&(s=!0);if(c.aborted&&!i)return;t&&s&&t.emit(e,r,n);var o=g(n);h(e).forEach(e=>{e.apply(o,r)});var d=v()[a[e]];d&&d.push([f,e,r,o]);return o},get:m,listeners:h,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{a[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[a[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof s.y?e:e?(0,i.I)(e,o,()=>new s.y(o)):new s.y(o)}function p(e,t){n[e]=h(e).concat(t)}function h(e){return n[e]||[]}function m(t){return u[t]=u[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),d=(0,n.Zm)();d.ee||(d.ee=c)},8122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),s=0===Object.keys(r).length?e:r;for(let a in s)if(void 0!==e[a])try{if(null===e[a]){r[a]=null;continue}Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){r[a]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},8362:(e,t,r)=>{"use strict";r.d(t,{d:()=>s});var n=r(9566),i=r(1741);class s extends i.W{agentIdentifier=(0,n.LA)(16)}},8374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},8990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},9324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>s,xv:()=>n});const n="1.310.1",i="PROD",s="CDN"},9566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>o,bz:()=>a});var n=r(6154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function s(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map(e=>"x"===e?s(t,r++).toString(16):"y"===e?(3&s()|8).toString(16):e).join("")}function o(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var o=0;o<e;o++)a.push(s(r,i++).toString(16));return a.join("")}},9908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,s){s?(s.buffer([e],i),s.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var s=n[e]={exports:{}};return r[e](s,s.exports,i),s.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce((t,r)=>(i.f[r](e,t),t),[])),i.u=e=>"nr-rum-1.310.1.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.310.1.PROD:",i.l=(r,n,s,a)=>{if(e[r])e[r].push(n);else{var o,c;if(void 0!==s)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+s){o=l;break}}if(!o){c=!0;var f={296:"sha512-8LEsRObgfHgVhp/OH+e1LIJ8trYoEGGugVcM4cNSUs2rZ3CNt/VHMq+3wUpYKaA5/dW4oR9cdBp7CsljXO+9fA=="};(o=document.createElement("script")).charset="utf-8",i.nc&&o.setAttribute("nonce",i.nc),o.setAttribute("data-webpack",t+s),o.src=r,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),f[a]&&(o.integrity=f[a])}e[r]=[n];var g=(t,n)=>{o.onerror=o.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],o.parentNode&&o.parentNode.removeChild(o),i&&i.forEach(e=>e(n)),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=g.bind(null,o.onerror),o.onload=g.bind(null,o.onload),c&&document.head.appendChild(o)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var s=new Promise((r,i)=>n=e[t]=[r,i]);r.push(n[2]=s);var a=i.p+i.u(t),o=new Error;i.l(a,r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var s=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;o.message="Loading chunk "+t+" failed: ("+s+": "+a+")",o.name="ChunkLoadError",o.type=s,o.request=a,n[1](o)}},"chunk-"+t,t)}};var t=(t,r)=>{var n,s,[a,o,c]=r,d=0;if(a.some(t=>0!==e[t])){for(n in o)i.o(o,n)&&(i.m[n]=o[n]);if(c)c(i)}for(t&&t(r);d<a.length;d++)s=a[d],i.o(e,s)&&e[s]&&e[s][0](),e[s]=0},r=self["webpackChunk:NRBA-1.310.1.PROD"]=self["webpackChunk:NRBA-1.310.1.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(8362),t=i(860);const r=Object.values(t.K7);var n=i(163);var s=i(9908),a=i(1863),o=i(4261),c=i(1738);var d=i(1687),u=i(4234),l=i(5289),f=i(6154),g=i(944),p=i(384);const h=e=>f.RI&&!0===e?.privacy.cookies_enabled;function m(e){return!!(0,p.dV)().o.MO&&h(e)&&!0===e?.session_trace.enabled}var v=i(6389),b=i(7699);class y extends u.W{constructor(e,t){super(e.agentIdentifier,t),this.agentRef=e,this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,v.J)(()=>{(0,d.Ak)(e.agentIdentifier,this.featureName),t()}))}):(0,d.Ak)(e.agentIdentifier,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;const n=async()=>{let n;await this.deferred;try{if(h(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,3305));n=t(e)}}catch(e){(0,g.R)(20,e),this.ee.emit("internal-error",[e]),(0,s.p)(b.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#t(this.featureName,n,e.init))return(0,d.Ze)(this.agentIdentifier,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,g.R)(34,e),this.abortHandler?.(),(0,d.Ze)(this.agentIdentifier,this.featureName,!0),this.loadedSuccessfully(!1),this.ee&&this.ee.abort()}};f.RI?(0,l.GG)(()=>n(),!0):n()}#t(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return m(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}}var _=i(6630),w=i(2614),x=i(3241);class k extends y{static featureName=_.T;constructor(e){var t;super(e,_.T),this.setupInspectionEvents(e.agentIdentifier),t=e,(0,c.Y)(o.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,s.p)(o.Pl+o.Fw,[(0,a.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>i.e(296).then(i.bind(i,3943)))}setupInspectionEvents(e){const t=(t,r)=>{t&&(0,x.W)({agentIdentifier:e,timeStamp:t.timeStamp,loaded:"complete"===t.target.readyState,type:"window",name:r,data:t.target.location+""})};(0,l.sB)(e=>{t(e,"DOMContentLoaded")}),(0,l.GG)(e=>{t(e,"load")}),(0,l.Qr)(e=>{t(e,"navigate")}),this.ee.on(w.tS.UPDATE,(t,r)=>{(0,x.W)({agentIdentifier:e,type:"lifecycle",name:"session",data:r})})}}class R extends e.d{constructor(e){var t;(super(),f.gm)?(this.features={},(0,p.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(k),(0,n.j)(this,e,e.loaderType||"agent"),t=this,(0,c.Y)(o.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,c.U)(t,e,r,o.cD,n);(0,g.R)(40,typeof r)}else(0,g.R)(39,typeof e)},t),function(e){(0,c.Y)(o.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,g.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,s.p)(o.Pl+"setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,c.U)(e,"enduser.id",t,o.Dl,!0)},e)}(this),function(e){(0,c.Y)(o.nb,function(t){if("string"==typeof t||null===t)return(0,c.U)(e,"application.version",t,o.nb,!1);(0,g.R)(42,typeof t)},e)}(this),function(e){(0,c.Y)(o.d3,function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,c.Y)(o.Pv,function(t=!0){if("boolean"==typeof t){if((0,s.p)(o.Pl+o.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum()})}}else(0,g.R)(65,typeof t)},e)}(this),this.run()):(0,g.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return r.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),n=[...this.desiredFeatures];n.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),n.forEach(r=>{if(!e[r.featureName]&&r.featureName!==t.K7.pageViewEvent)return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,g.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,g.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,p.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var A=i(2843),S=i(782);class T extends y{static featureName=S.T;constructor(e){super(e,S.T),f.RI&&((0,A.u)(()=>(0,s.p)("docHidden",[(0,a.t)()],void 0,S.T,this.ee),!0),(0,A.G)(()=>(0,s.p)("winPagehide",[(0,a.t)()],void 0,S.T,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,2117))))}}var E=i(3969);class j extends y{static featureName=E.TZ;constructor(e){super(e,E.TZ),f.RI&&document.addEventListener("securitypolicyviolation",e=>{(0,s.p)(E.xV,["Generic/CSPViolation/Detected"],void 0,this.featureName,this.ee)}),this.importAggregator(e,()=>i.e(296).then(i.bind(i,9623)))}}new R({features:[k,T,j],loaderType:"lite"})})()})();</script>
 	<meta name="theme-color" content="#231F20">
 
 			<meta name="msvalidate.01" content="9E5C74811CA48CCCC61A2CF3C0A1BA6A">
@@ -480,7 +481,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 
 				
 
-				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"-11","weatherprec":"x","weathercode":"33","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
+				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"-11","weatherprec":"x","weathercode":"34","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
 		</script>
 			<script>
 				// Load the APS JavaScript Library
@@ -1524,10 +1525,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay=""
 						data-displayinline-featured="false"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_11711582_69a565f9587f7"
+			data-displayinline-player-id="miniplayer_11711582_69a58547d484b"
 			data-displayinline-video-id="11711582"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/11711582/#autoplay&#038;stickyiframe=miniplayer_11711582_69a565f9587f7"
+    		data-displayinline="https://globalnews.ca/video/embed/11711582/#autoplay&#038;stickyiframe=miniplayer_11711582_69a58547d484b"
     									data-displayinline-container="stories-1-0"
 										data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;politics&quot;,&quot;us-news&quot;,&quot;world&quot;],&quot;keywords&quot;:[&quot;short-clip&quot;,&quot;top-news&quot;]}}"
@@ -1592,7 +1593,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			</div>
 								<div class="c-posts__about c-posts__about--multiple">
 																<div class="c-posts__info c-posts__info--highlight">World</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">11 hours</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Mar 1</div>
 																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 															</div>
 						</div>
@@ -1727,39 +1728,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-3"
-	data-post-id="11712030"
-	data-slide-index=""
-	data-caption="Khamenei’s death met with ‘jubilation’ among Iranian-Canadians: Liberal MP"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11712030/khamenei-death-iranian-canadians-reaction/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/02/CP175712154.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/02/CP175712154.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/02/CP175712154.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/02/CP175712154.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Khamenei’s death met with ‘jubilation’ among Iranian-Canadians: Liberal MP" data-title>Khamenei’s death met with ‘jubilation’ among Iranian-Canadians: Liberal MP</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Mar 1</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-4"
 	data-post-id="11711968"
 	data-slide-index=""
 	data-caption="Iran begins search for new leader; U.S. military says 3 service members killed"
@@ -1767,7 +1735,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11711968/iran-new-supreme-leader-selection-us-forces-killed/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1785,6 +1753,39 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Mar 1</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-4"
+	data-post-id="11712030"
+	data-slide-index=""
+	data-caption="Khamenei’s death met with ‘jubilation’ among Iranian-Canadians: Liberal MP"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11712030/khamenei-death-iranian-canadians-reaction/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/02/CP175712154.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/02/CP175712154.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/02/CP175712154.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/02/CP175712154.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Khamenei’s death met with ‘jubilation’ among Iranian-Canadians: Liberal MP" data-title>Khamenei’s death met with ‘jubilation’ among Iranian-Canadians: Liberal MP</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Mar 1</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
@@ -2089,10 +2090,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay="true"
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69a565f95a9ce"
+			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69a58547d8158"
 			data-displayinline-video-id="49a91e7f-1023-430f-8d66-561055f3d0f7"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69a565f95a9ce"
+    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69a58547d8158"
     		    			data-displayinline-playlist="49a91e7f-1023-430f-8d66-561055f3d0f7"
     									data-displayinline-container="mini-ott"
 																data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;recent_terms_datastore&quot;,&quot;type&quot;:&quot;wlo_option&quot;}}"
@@ -2223,7 +2224,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="As U.S. and Israel trade blows with Iran, what&#8217;s next?" data-title>As U.S. and Israel trade blows with Iran, what&#8217;s next?</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">3,551</span>
+							<span class="c-posts__info c-posts__info--highlight">6,186</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2253,7 +2254,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="&#8216;Something just went off&#8217;: Canadians in Middle East describe &#8216;surreal&#8217; Iran missile strikes" data-title>&#8216;Something just went off&#8217;: Canadians in Middle East describe &#8216;surreal&#8217; Iran missile strikes</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">3,551</span>
+							<span class="c-posts__info c-posts__info--highlight">5,122</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2283,7 +2284,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="At least 2 dead, 14 injured in Texas bar shooting" data-title>At least 2 dead, 14 injured in Texas bar shooting</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,764</span>
+							<span class="c-posts__info c-posts__info--highlight">3,677</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2313,7 +2314,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="&#8216;At first I cried&#8217;: How Iranian Canadians are reacting to the U.S. strikes in Iran" data-title>&#8216;At first I cried&#8217;: How Iranian Canadians are reacting to the U.S. strikes in Iran</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,382</span>
+							<span class="c-posts__info c-posts__info--highlight">3,289</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2343,7 +2344,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="After decades of streaming and digital, music fans returning to some old-school ways" data-title>After decades of streaming and digital, music fans returning to some old-school ways</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">1,189</span>
+							<span class="c-posts__info c-posts__info--highlight">1,781</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2451,7 +2452,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="As U.S. and Israel trade blows with Iran, what&#8217;s next?" data-title>As U.S. and Israel trade blows with Iran, what&#8217;s next?</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">3,551</span>
+							<span class="c-posts__info c-posts__info--highlight">6,186</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2481,7 +2482,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="&#8216;Something just went off&#8217;: Canadians in Middle East describe &#8216;surreal&#8217; Iran missile strikes" data-title>&#8216;Something just went off&#8217;: Canadians in Middle East describe &#8216;surreal&#8217; Iran missile strikes</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">3,551</span>
+							<span class="c-posts__info c-posts__info--highlight">5,122</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2511,7 +2512,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="At least 2 dead, 14 injured in Texas bar shooting" data-title>At least 2 dead, 14 injured in Texas bar shooting</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,764</span>
+							<span class="c-posts__info c-posts__info--highlight">3,677</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2541,7 +2542,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="&#8216;At first I cried&#8217;: How Iranian Canadians are reacting to the U.S. strikes in Iran" data-title>&#8216;At first I cried&#8217;: How Iranian Canadians are reacting to the U.S. strikes in Iran</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,382</span>
+							<span class="c-posts__info c-posts__info--highlight">3,289</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2571,7 +2572,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="After decades of streaming and digital, music fans returning to some old-school ways" data-title>After decades of streaming and digital, music fans returning to some old-school ways</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">1,189</span>
+							<span class="c-posts__info c-posts__info--highlight">1,781</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -3136,7 +3137,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel l-videoCarousel--standalone c-carousel"
 					data-video-carousel-play-inline="true"
 				data-video-carousel-init="false" 
-		aria-label="Video carousel contains 6 videos."
+		aria-label="Video carousel contains 4 videos."
 		data-sophi-feature=video		data-gnca-ab-test="chartbeat-trending-replacement" data-gnca-ab-variation="control"	>
 				<div class="l-videoCarousel__inner">
 							<div class="l-videoCarousel__featured">
@@ -3146,23 +3147,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer"
-			data-displayinline-video-id="11712110"
+			data-displayinline-video-id="11711582"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11712110,11711582,11712025,11712450,11712187,11711757/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Forcy0304sj-2dmro7mnb0%2FJG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
-    		    			data-displayinline-playlist="11712110,11711582,11712025,11712450,11712187,11711757"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11711582,11712110,11711757,11712187/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fjpdl687ben-9m123g2g79%2Fduabi_vms.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
+    		    			data-displayinline-playlist="11711582,11712110,11711757,11712187"
     												data-displayinline-sticky="true"
-													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;What comes next for the Iranian regime?&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;politics&quot;,&quot;world&quot;],&quot;keywords&quot;:[&quot;ali-khamenei&quot;,&quot;iran-supreme-leader&quot;,&quot;regional-conflict&quot;,&quot;ross-harrison&quot;,&quot;short-clip&quot;]}}"
+													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;politics&quot;,&quot;us-news&quot;,&quot;world&quot;],&quot;keywords&quot;:[&quot;short-clip&quot;,&quot;top-news&quot;]}}"
 			    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'What comes next for the Iranian regime?'"
+						alt="Click to play video: 'Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault'"
 						width="640"
 						height="360"
-													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/orcy0304sj-2dmro7mnb0/JG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/jpdl687ben-9m123g2g79/duabi_vms.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/orcy0304sj-2dmro7mnb0/JG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/orcy0304sj-2dmro7mnb0/JG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/orcy0304sj-2dmro7mnb0/JG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
+								data-srcset="https://i2.wp.com/media.globalnews.ca/videostatic/news/jpdl687ben-9m123g2g79/duabi_vms.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i2.wp.com/media.globalnews.ca/videostatic/news/jpdl687ben-9m123g2g79/duabi_vms.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i2.wp.com/media.globalnews.ca/videostatic/news/jpdl687ben-9m123g2g79/duabi_vms.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -3172,20 +3173,20 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">7:45</time>
-																									<span class="c-video__title">What comes next for the Iranian regime?</span>
+																	<time class="c-video__duration">1:46</time>
+																									<span class="c-video__title">Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault</span>
 															</div>
 						</span>
 											</span>
 				</div>
 							</div>
 								<div class="l-videoCarousel__sidebar">
-													<a href="https://globalnews.ca/video/11712110/what-comes-next-for-the-iranian-regime/" class="l-videoCarousel__details">
+													<a href="https://globalnews.ca/video/11711582/missiles-strike-bahrain-uae-as-iran-retaliates-for-us-israel-assault/" class="l-videoCarousel__details">
 							<div class="l-videoCarousel__info">Politics</div>
 								<div class="l-videoCarousel__fullTitle">
-								What comes next for the Iranian regime?								</div>
+								Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault								</div>
 								<div class="l-videoCarousel__description">
-								Fears of a widening regional conflict persist following the killing of Iran&#039;s Supreme Leader, Ayatollah Ali Khamenei. Global&#039;s Jazan Grewal speaks with Ross Harrison, a Senior Fellow with the Middle East Institute and author of Decoding Iran&#039;s Foreign Policy about the Iranian regime and its future. 								</div>
+								Iran launched missile and drone strikes across the Gulf on Saturday in retaliation for U.S. and Israeli attacks targeting Tehran’s leadership and military infrastructure. Bahrain’s government said the service centre of the U.S. Fifth Fleet in Manama was hit, while the United Arab Emirates reported intercepting incoming projectiles. Kuwait, Qatar and Jordan also reported intercepting missiles as Iran’s retaliation extended to Gulf states that host U.S. military forces.								</div>
 						</a>
 								<div class="c-ad c-ad--bigbox c-ad--dark l-videoCarousel__ad">							<div class="c-ad__label">Advertisement</div>
 			
@@ -3212,40 +3213,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-carousel__track glide__track" data-glide-el="track">
 						<ul class="c-posts c-posts--video c-posts--tile c-posts--horizontal c-posts--inverted glide__slides">
 							
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="What comes next for the Iranian regime?" data-slide-index="0">
-	<a href="https://globalnews.ca/video/11712110/what-comes-next-for-the-iranian-regime/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11712110"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11712110,11711582,11712025,11712450,11712187,11711757/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11712110,11711582,11712025,11712450,11712187,11711757"
-			data-video-carousel-label="Politics"
-			data-video-carousel-content="Fears of a widening regional conflict persist following the killing of Iran&#039;s Supreme Leader, Ayatollah Ali Khamenei. Global&#039;s Jazan Grewal speaks with Ross Harrison, a Senior Fellow with the Middle East Institute and author of Decoding Iran&#039;s Foreign Policy about the Iranian regime and its future. "
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/orcy0304sj-2dmro7mnb0/JG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Politics</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">What comes next for the Iranian regime?</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault" data-slide-index="1">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault" data-slide-index="0">
 	<a href="https://globalnews.ca/video/11711582/missiles-strike-bahrain-uae-as-iran-retaliates-for-us-israel-assault/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11711582"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11711582,11712025,11712450,11712187,11711757,11712110/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11711582,11712025,11712450,11712187,11711757,11712110"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11711582,11712110,11711757,11712187/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11711582,11712110,11711757,11712187"
 			data-video-carousel-label="Politics"
 			data-video-carousel-content="Iran launched missile and drone strikes across the Gulf on Saturday in retaliation for U.S. and Israeli attacks targeting Tehran’s leadership and military infrastructure. Bahrain’s government said the service centre of the U.S. Fifth Fleet in Manama was hit, while the United Arab Emirates reported intercepting incoming projectiles. Kuwait, Qatar and Jordan also reported intercepting missiles as Iran’s retaliation extended to Gulf states that host U.S. military forces."
 			>
@@ -3266,18 +3240,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="U.S. confirms first American deaths in Iran strikes as retaliation spreads" data-slide-index="2">
-	<a href="https://globalnews.ca/video/11712025/u-s-confirms-first-american-deaths-in-iran-strikes-as-retaliation-spreads/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="What comes next for the Iranian regime?" data-slide-index="1">
+	<a href="https://globalnews.ca/video/11712110/what-comes-next-for-the-iranian-regime/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11712025"
+					data-video-id="11712110"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11712025,11712450,11712187,11711757,11712110,11711582/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11712025,11712450,11712187,11711757,11712110,11711582"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11712110,11711757,11712187,11711582/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11712110,11711757,11712187,11711582"
 			data-video-carousel-label="Politics"
-			data-video-carousel-content="Three U.S. service members have been killed and five seriously wounded in Operation Epic Fury, according to U.S. Central Command, marking the first confirmed American deaths since strikes on Iran began. The update comes as Iran launches retaliatory missile and drone attacks across the Gulf, hitting targets in the UAE, Kuwait, Bahrain and Saudi Arabia. In Washington, lawmakers are weighing whether to rein in President Donald Trump’s use of war powers amid concerns about escalation and the political fallout ahead of the midterm elections. Reggie Cicchini reports."
+			data-video-carousel-content="Fears of a widening regional conflict persist following the killing of Iran&#039;s Supreme Leader, Ayatollah Ali Khamenei. Global&#039;s Jazan Grewal speaks with Ross Harrison, a Senior Fellow with the Middle East Institute and author of Decoding Iran&#039;s Foreign Policy about the Iranian regime and its future. "
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/sywbyo33uc-d6qrme2uvx/IRAN_VMS.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/orcy0304sj-2dmro7mnb0/JG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3288,72 +3262,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							<div class="l-videoCarousel__info">
 					<div class="c-posts__info c-posts__info--highlight">Politics</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">U.S. confirms first American deaths in Iran strikes as retaliation spreads</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">What comes next for the Iranian regime?</span></div>
 					</div>
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="&#8216;Tears of joy&#8217;, Iranian-Canadians continue to celebrate, and push for regime change" data-slide-index="3">
-	<a href="https://globalnews.ca/video/11712450/tears-of-joy-iranian-canadians-continue-to-celebrate-and-push-for-regime-change/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11712450"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11712450,11712187,11711757,11712110,11711582,11712025/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11712450,11712187,11711757,11712110,11711582,11712025"
-			data-video-carousel-label="Politics"
-			data-video-carousel-content="Throughout the weekend, Iranian-Canadians took to the streets to celebrate the death of Iran&#039;s Supreme Leader, Ayatollah Ali Khamenei. The Iranian regime says it has appointed an interim committee to run the country, until a successor is chosen, but as Lexy Benedict reports, those here in Toronto believe an end to the oppressive regime and transition towards democracy is within reach. "
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/obj0n9kk1t-gy6ddp5pso/Lexy-web_thumbnail_1280x720_.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Politics</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">&#8216;Tears of joy&#8217;, Iranian-Canadians continue to celebrate, and push for regime change</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Texas shooting: At least 3 dead, 14 injured at a bar in Austin" data-slide-index="4">
-	<a href="https://globalnews.ca/video/11712187/texas-shooting-at-least-3-dead-14-injured-at-a-bar-in-austin/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11712187"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11712187,11711757,11712110,11711582,11712025,11712450/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11712187,11711757,11712110,11711582,11712025,11712450"
-			data-video-carousel-label="Crime"
-			data-video-carousel-content="At least three people are dead and 14 injured after a male gunman opened fire from a vehicle in front of a bar in Austin, Texas on Saturday. The suspect was later killed in an exchange of fire with police at a different downtown location, police said."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/anmu1u7bg8-g4px4ywkcr/SUN0029_AustinShootingSILENTManOpensFire.mpg.00_00_17_18.Still001.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Crime</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Texas shooting: At least 3 dead, 14 injured at a bar in Austin</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="BC&#8217;s Iranian community raising concerns for loved ones amid celebrations over strikes in Iran" data-slide-index="5">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="BC&#8217;s Iranian community raising concerns for loved ones amid celebrations over strikes in Iran" data-slide-index="2">
 	<a href="https://globalnews.ca/video/11711757/bcs-iranian-community-raising-concerns-for-loved-ones-amid-celebrations-over-strikes-in-iran/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11711757"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11711757,11712110,11711582,11712025,11712450,11712187/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11711757,11712110,11711582,11712025,11712450,11712187"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11711757,11712187,11711582,11712110/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11711757,11712187,11711582,11712110"
 			data-video-carousel-label="U.S. News"
 			data-video-carousel-content="Some in BC&#039;s Iranian community celebrated Saturday&#039;s strikes in Iran, expressing jubilation at the prospect of regime change, after nearly five decades of dictatorial rule. But all are concerned about the safety of loved ones back in their homeland. Paul Johnson reports."
 			>
@@ -3373,7 +3293,39 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					</div>
 	</a>
 </li>
-						</ul>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Texas shooting: At least 3 dead, 14 injured at a bar in Austin" data-slide-index="3">
+	<a href="https://globalnews.ca/video/11712187/texas-shooting-at-least-3-dead-14-injured-at-a-bar-in-austin/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11712187"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11712187,11711582,11712110,11711757/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11712187,11711582,11712110,11711757"
+			data-video-carousel-label="Crime"
+			data-video-carousel-content="At least three people are dead and 14 injured after a male gunman opened fire from a vehicle in front of a bar in Austin, Texas on Saturday. The suspect was later killed in an exchange of fire with police at a different downtown location, police said."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/anmu1u7bg8-g4px4ywkcr/SUN0029_AustinShootingSILENTManOpensFire.mpg.00_00_17_18.Still001.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Crime</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Texas shooting: At least 3 dead, 14 injured at a bar in Austin</span></div>
+					</div>
+	</a>
+</li>
+								<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Watch more videos" data-slide-index="4">
+									<a href="https://globalnews.ca/videos/" title="Watch more videos" class="l-videoCarousel__link l-videoCarousel__link--page c-posts__inner">
+										<span class="l-videoCarousel__linkLabel">Watch more videos</span>
+									</a>
+								</li>
+													</ul>
 					</div>
 
 					
@@ -3406,19 +3358,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11711582,11712025,11712450,11712187,11711757/#autoplay&#038;stickyiframe=home-miniplayer_11711582"
+			href="https://globalnews.ca/video/embed/playlist/11712110,11711757,11712187/#autoplay&#038;stickyiframe=home-miniplayer_11712110"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11711582"
+			data-displayinline-player-id="home-miniplayer_11712110"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11711582,11712025,11712450,11712187,11711757/#autoplay&#038;stickyiframe=home-miniplayer_11711582"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11712110,11711757,11712187/#autoplay&#038;stickyiframe=home-miniplayer_11712110"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/jpdl687ben-9m123g2g79/duabi_vms.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/orcy0304sj-2dmro7mnb0/JG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault'"
+					alt="Click to play video 'What comes next for the Iranian regime?'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3427,11 +3379,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11711582/missiles-strike-bahrain-uae-as-iran-retaliates-for-us-israel-assault/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11712110/what-comes-next-for-the-iranian-regime/" class="c-posts__details">
 				<div class="c-posts__about">
 					<div class="c-posts__info c-posts__info--highlight">Politics</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">What comes next for the Iranian regime?</span></div>
 		</a>
 	</div>
 </li>
@@ -3461,19 +3413,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11712025,11712450,11712187,11711757,11711582/#autoplay&#038;stickyiframe=home-miniplayer_11712025"
+			href="https://globalnews.ca/video/embed/playlist/11711757,11712187,11712110/#autoplay&#038;stickyiframe=home-miniplayer_11711757"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11712025"
+			data-displayinline-player-id="home-miniplayer_11711757"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11712025,11712450,11712187,11711757,11711582/#autoplay&#038;stickyiframe=home-miniplayer_11712025"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11711757,11712187,11712110/#autoplay&#038;stickyiframe=home-miniplayer_11711757"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/sywbyo33uc-d6qrme2uvx/IRAN_VMS.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/pn5i517h0k-2g9n06c7fs/6P_BC_IRAN_ACTION_FALLO_OM01QR7H.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'U.S. confirms first American deaths in Iran strikes as retaliation spreads'"
+					alt="Click to play video 'BC&#8217;s Iranian community raising concerns for loved ones amid celebrations over strikes in Iran'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3482,11 +3434,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11712025/u-s-confirms-first-american-deaths-in-iran-strikes-as-retaliation-spreads/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11711757/bcs-iranian-community-raising-concerns-for-loved-ones-amid-celebrations-over-strikes-in-iran/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Politics</div>
+					<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">U.S. confirms first American deaths in Iran strikes as retaliation spreads</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">BC&#8217;s Iranian community raising concerns for loved ones amid celebrations over strikes in Iran</span></div>
 		</a>
 	</div>
 </li>
@@ -3494,44 +3446,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11712450,11712187,11711757,11711582,11712025/#autoplay&#038;stickyiframe=home-miniplayer_11712450"
-			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11712450"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11712450,11712187,11711757,11711582,11712025/#autoplay&#038;stickyiframe=home-miniplayer_11712450"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/obj0n9kk1t-gy6ddp5pso/Lexy-web_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video '&#8216;Tears of joy&#8217;, Iranian-Canadians continue to celebrate, and push for regime change'"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/11712450/tears-of-joy-iranian-canadians-continue-to-celebrate-and-push-for-regime-change/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Politics</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">&#8216;Tears of joy&#8217;, Iranian-Canadians continue to celebrate, and push for regime change</span></div>
-		</a>
-	</div>
-</li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11712187,11711757,11711582,11712025,11712450/#autoplay&#038;stickyiframe=home-miniplayer_11712187"
+			href="https://globalnews.ca/video/embed/playlist/11712187,11712110,11711757/#autoplay&#038;stickyiframe=home-miniplayer_11712187"
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11712187"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11712187,11711757,11711582,11712025,11712450/#autoplay&#038;stickyiframe=home-miniplayer_11712187"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11712187,11712110,11711757/#autoplay&#038;stickyiframe=home-miniplayer_11712187"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3574,23 +3493,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant"
-			data-displayinline-video-id="11711582"
+			data-displayinline-video-id="11712110"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11711582,11712110,3332731,11712187,11712025/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fjpdl687ben-9m123g2g79%2Fduabi_vms.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
-    		    			data-displayinline-playlist="11711582,11712110,3332731,11712187,11712025"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11712110,11711582,11712187,11712433,11285912/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Forcy0304sj-2dmro7mnb0%2FJG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
+    		    			data-displayinline-playlist="11712110,11711582,11712187,11712433,11285912"
     												data-displayinline-sticky="true"
-													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;politics&quot;,&quot;us-news&quot;,&quot;world&quot;],&quot;keywords&quot;:[&quot;short-clip&quot;,&quot;top-news&quot;]}}"
+													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;What comes next for the Iranian regime?&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;politics&quot;,&quot;world&quot;],&quot;keywords&quot;:[&quot;ali-khamenei&quot;,&quot;iran-supreme-leader&quot;,&quot;regional-conflict&quot;,&quot;ross-harrison&quot;,&quot;short-clip&quot;]}}"
 			    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault'"
+						alt="Click to play video: 'What comes next for the Iranian regime?'"
 						width="640"
 						height="360"
-													data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/jpdl687ben-9m123g2g79/duabi_vms.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/orcy0304sj-2dmro7mnb0/JG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i2.wp.com/media.globalnews.ca/videostatic/news/jpdl687ben-9m123g2g79/duabi_vms.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i2.wp.com/media.globalnews.ca/videostatic/news/jpdl687ben-9m123g2g79/duabi_vms.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i2.wp.com/media.globalnews.ca/videostatic/news/jpdl687ben-9m123g2g79/duabi_vms.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
+								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/orcy0304sj-2dmro7mnb0/JG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/orcy0304sj-2dmro7mnb0/JG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/orcy0304sj-2dmro7mnb0/JG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -3600,20 +3519,20 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">1:46</time>
-																									<span class="c-video__title">Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault</span>
+																	<time class="c-video__duration">7:45</time>
+																									<span class="c-video__title">What comes next for the Iranian regime?</span>
 															</div>
 						</span>
 											</span>
 				</div>
 							</div>
 								<div class="l-videoCarousel__sidebar">
-													<a href="https://globalnews.ca/video/11711582/missiles-strike-bahrain-uae-as-iran-retaliates-for-us-israel-assault/" class="l-videoCarousel__details">
+													<a href="https://globalnews.ca/video/11712110/what-comes-next-for-the-iranian-regime/" class="l-videoCarousel__details">
 							<div class="l-videoCarousel__info">Politics</div>
 								<div class="l-videoCarousel__fullTitle">
-								Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault								</div>
+								What comes next for the Iranian regime?								</div>
 								<div class="l-videoCarousel__description">
-								Iran launched missile and drone strikes across the Gulf on Saturday in retaliation for U.S. and Israeli attacks targeting Tehran’s leadership and military infrastructure. Bahrain’s government said the service centre of the U.S. Fifth Fleet in Manama was hit, while the United Arab Emirates reported intercepting incoming projectiles. Kuwait, Qatar and Jordan also reported intercepting missiles as Iran’s retaliation extended to Gulf states that host U.S. military forces.								</div>
+								Fears of a widening regional conflict persist following the killing of Iran&#039;s Supreme Leader, Ayatollah Ali Khamenei. Global&#039;s Jazan Grewal speaks with Ross Harrison, a Senior Fellow with the Middle East Institute and author of Decoding Iran&#039;s Foreign Policy about the Iranian regime and its future. 								</div>
 						</a>
 								<div class="c-ad c-ad--bigbox c-ad--dark l-videoCarousel__ad">							<div class="c-ad__label">Advertisement</div>
 			
@@ -3640,40 +3559,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-carousel__track glide__track" data-glide-el="track">
 						<ul class="c-posts c-posts--video c-posts--tile c-posts--horizontal c-posts--inverted glide__slides">
 							
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault" data-slide-index="0">
-	<a href="https://globalnews.ca/video/11711582/missiles-strike-bahrain-uae-as-iran-retaliates-for-us-israel-assault/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11711582"
-			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11711582,11712110,3332731,11712187,11712025/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11711582,11712110,3332731,11712187,11712025"
-			data-video-carousel-label="Politics"
-			data-video-carousel-content="Iran launched missile and drone strikes across the Gulf on Saturday in retaliation for U.S. and Israeli attacks targeting Tehran’s leadership and military infrastructure. Bahrain’s government said the service centre of the U.S. Fifth Fleet in Manama was hit, while the United Arab Emirates reported intercepting incoming projectiles. Kuwait, Qatar and Jordan also reported intercepting missiles as Iran’s retaliation extended to Gulf states that host U.S. military forces."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/jpdl687ben-9m123g2g79/duabi_vms.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Politics</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="What comes next for the Iranian regime?" data-slide-index="1">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="What comes next for the Iranian regime?" data-slide-index="0">
 	<a href="https://globalnews.ca/video/11712110/what-comes-next-for-the-iranian-regime/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11712110"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11712110,3332731,11712187,11712025,11711582/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11712110,3332731,11712187,11712025,11711582"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11712110,11711582,11712187,11712433,11285912/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11712110,11711582,11712187,11712433,11285912"
 			data-video-carousel-label="Politics"
 			data-video-carousel-content="Fears of a widening regional conflict persist following the killing of Iran&#039;s Supreme Leader, Ayatollah Ali Khamenei. Global&#039;s Jazan Grewal speaks with Ross Harrison, a Senior Fellow with the Middle East Institute and author of Decoding Iran&#039;s Foreign Policy about the Iranian regime and its future. "
 			>
@@ -3694,18 +3586,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Ukraine military clears ammo warehouse in east after deadly blast" data-slide-index="2">
-	<a href="https://globalnews.ca/video/3332731/ukraine-military-clears-ammo-warehouse-in-east-after-deadly-blast/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault" data-slide-index="1">
+	<a href="https://globalnews.ca/video/11711582/missiles-strike-bahrain-uae-as-iran-retaliates-for-us-israel-assault/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="3332731"
+					data-video-id="11711582"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/3332731,11712187,11712025,11711582,11712110/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="3332731,11712187,11712025,11711582,11712110"
-			data-video-carousel-label="World"
-			data-video-carousel-content="Ukrainian officials say around 20,000 people have been evacuated in the Kharkiv region near the border with Russia after a massive fire at a military ammunition depot."
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11711582,11712187,11712433,11285912,11712110/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11711582,11712187,11712433,11285912,11712110"
+			data-video-carousel-label="Politics"
+			data-video-carousel-content="Iran launched missile and drone strikes across the Gulf on Saturday in retaliation for U.S. and Israeli attacks targeting Tehran’s leadership and military infrastructure. Bahrain’s government said the service centre of the U.S. Fifth Fleet in Manama was hit, while the United Arab Emirates reported intercepting incoming projectiles. Kuwait, Qatar and Jordan also reported intercepting missiles as Iran’s retaliation extended to Gulf states that host U.S. military forces."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/491/739/Ukraine_Explosion_for_WEB_848x480_905680963658.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/jpdl687ben-9m123g2g79/duabi_vms.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3714,20 +3606,20 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>
 		<div class="l-videoCarousel__details c-posts__details">
 							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">World</div>
+					<div class="c-posts__info c-posts__info--highlight">Politics</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Ukraine military clears ammo warehouse in east after deadly blast</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault</span></div>
 					</div>
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Texas shooting: At least 3 dead, 14 injured at a bar in Austin" data-slide-index="3">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Texas shooting: At least 3 dead, 14 injured at a bar in Austin" data-slide-index="2">
 	<a href="https://globalnews.ca/video/11712187/texas-shooting-at-least-3-dead-14-injured-at-a-bar-in-austin/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11712187"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11712187,11712025,11711582,11712110,3332731/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11712187,11712025,11711582,11712110,3332731"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11712187,11712433,11285912,11712110,11711582/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11712187,11712433,11285912,11712110,11711582"
 			data-video-carousel-label="Crime"
 			data-video-carousel-content="At least three people are dead and 14 injured after a male gunman opened fire from a vehicle in front of a bar in Austin, Texas on Saturday. The suspect was later killed in an exchange of fire with police at a different downtown location, police said."
 			>
@@ -3748,18 +3640,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="U.S. confirms first American deaths in Iran strikes as retaliation spreads" data-slide-index="4">
-	<a href="https://globalnews.ca/video/11712025/u-s-confirms-first-american-deaths-in-iran-strikes-as-retaliation-spreads/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Global National: March 1" data-slide-index="3">
+	<a href="https://globalnews.ca/video/11712433/global-national-march-1-3/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11712025"
+					data-video-id="11712433"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11712025,11711582,11712110,3332731,11712187/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11712025,11711582,11712110,3332731,11712187"
-			data-video-carousel-label="Politics"
-			data-video-carousel-content="Three U.S. service members have been killed and five seriously wounded in Operation Epic Fury, according to U.S. Central Command, marking the first confirmed American deaths since strikes on Iran began. The update comes as Iran launches retaliatory missile and drone attacks across the Gulf, hitting targets in the UAE, Kuwait, Bahrain and Saudi Arabia. In Washington, lawmakers are weighing whether to rein in President Donald Trump’s use of war powers amid concerns about escalation and the political fallout ahead of the midterm elections. Reggie Cicchini reports."
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11712433,11285912,11712110,11711582,11712187/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11712433,11285912,11712110,11711582,11712187"
+			data-video-carousel-label="Canada"
+			data-video-carousel-content="The death of Ali Khamenei, Iran’s supreme leader, has left many in mourning, while others celebrate on Sunday. As Redmond Shannon reports, strikes have continued across Iran and neighbouring Middle Eastern countries. In the aftermath of the US-Israeli airstrikes, the future of Iran’s leadership remains unclear. More than 40 Iranian officials have been reportedly killed in the strikes, including some of Khamenei’s top brass. Candice Cole has more. Meanwhile, the impact of the conflict in the Middle East is being felt at home as thousands of Iranians gathered across Canada to celebrate the death of Iran’s supreme leader. Heidi Petracek explains. Plus, Mackenzie Gray reports from Delhi where Canadian Prime Minister Mark Carney is set to meet with India&#039;s Prime Minister Narendra Modi to discuss trade."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/sywbyo33uc-d6qrme2uvx/IRAN_VMS.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/0es50618u0-ker2fln91k/NATIONAL-WEB.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3768,9 +3660,36 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>
 		<div class="l-videoCarousel__details c-posts__details">
 							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Politics</div>
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">U.S. confirms first American deaths in Iran strikes as retaliation spreads</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Global National: March 1</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Police accused of &#8216;stonewalling&#8217; family of man who died after making 911 call" data-slide-index="4">
+	<a href="https://globalnews.ca/video/11285912/police-accused-of-stonewalling-family-of-man-who-died-after-making-911-call/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11285912"
+			data-video-player-id="home-miniplayer-variant"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11285912,11712110,11711582,11712187,11712433/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11285912,11712110,11711582,11712187,11712433"
+			data-video-carousel-label="Crime"
+			data-video-carousel-content="On the morning of Aug. 30, 2024, Rick Buerger was awoken by the daughter of his brother, Ralph Buerger, in Fonthill, Ont., who said Ralph died overnight at just 59 years old. The family later learned Ralph had contacted 911 at 2:56 a.m., apparently to ask for help, but he’d been unable to speak. The call lasted 35 seconds. The family wants to know why nobody came to check on him, but they say the police are stalling the search. Global&#039;s Sean O&#039;Shea has the story. "
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/kap572zael-5uxc48sw26/SEAN_STONE_WALL_SITE.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Crime</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Police accused of &#8216;stonewalling&#8217; family of man who died after making 911 call</span></div>
 					</div>
 	</a>
 </li>
@@ -3807,19 +3726,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11712110,3332731,11712187,11712025/#autoplay&#038;stickyiframe=home-miniplayer-variant_11712110"
+			href="https://globalnews.ca/video/embed/playlist/11711582,11712187,11712433,11285912/#autoplay&#038;stickyiframe=home-miniplayer-variant_11711582"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11712110"
+			data-displayinline-player-id="home-miniplayer-variant_11711582"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11712110,3332731,11712187,11712025/#autoplay&#038;stickyiframe=home-miniplayer-variant_11712110"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11711582,11712187,11712433,11285912/#autoplay&#038;stickyiframe=home-miniplayer-variant_11711582"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/orcy0304sj-2dmro7mnb0/JG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/jpdl687ben-9m123g2g79/duabi_vms.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'What comes next for the Iranian regime?'"
+					alt="Click to play video 'Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3828,11 +3747,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11712110/what-comes-next-for-the-iranian-regime/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11711582/missiles-strike-bahrain-uae-as-iran-retaliates-for-us-israel-assault/" class="c-posts__details">
 				<div class="c-posts__about">
 					<div class="c-posts__info c-posts__info--highlight">Politics</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">What comes next for the Iranian regime?</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault</span></div>
 		</a>
 	</div>
 </li>
@@ -3862,44 +3781,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/3332731,11712187,11712025,11712110/#autoplay&#038;stickyiframe=home-miniplayer-variant_3332731"
-			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_3332731"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/3332731,11712187,11712025,11712110/#autoplay&#038;stickyiframe=home-miniplayer-variant_3332731"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/491/739/Ukraine_Explosion_for_WEB_848x480_905680963658.jpg?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Ukraine military clears ammo warehouse in east after deadly blast'"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/3332731/ukraine-military-clears-ammo-warehouse-in-east-after-deadly-blast/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">World</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Ukraine military clears ammo warehouse in east after deadly blast</span></div>
-		</a>
-	</div>
-</li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11712187,11712025,11712110,3332731/#autoplay&#038;stickyiframe=home-miniplayer-variant_11712187"
+			href="https://globalnews.ca/video/embed/playlist/11712187,11712433,11285912,11711582/#autoplay&#038;stickyiframe=home-miniplayer-variant_11712187"
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant_11712187"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11712187,11712025,11712110,3332731/#autoplay&#038;stickyiframe=home-miniplayer-variant_11712187"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11712187,11712433,11285912,11711582/#autoplay&#038;stickyiframe=home-miniplayer-variant_11712187"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3928,19 +3814,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11712025,11712110,3332731,11712187/#autoplay&#038;stickyiframe=home-miniplayer-variant_11712025"
+			href="https://globalnews.ca/video/embed/playlist/11712433,11285912,11711582,11712187/#autoplay&#038;stickyiframe=home-miniplayer-variant_11712433"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11712025"
+			data-displayinline-player-id="home-miniplayer-variant_11712433"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11712025,11712110,3332731,11712187/#autoplay&#038;stickyiframe=home-miniplayer-variant_11712025"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11712433,11285912,11711582,11712187/#autoplay&#038;stickyiframe=home-miniplayer-variant_11712433"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/sywbyo33uc-d6qrme2uvx/IRAN_VMS.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/0es50618u0-ker2fln91k/NATIONAL-WEB.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'U.S. confirms first American deaths in Iran strikes as retaliation spreads'"
+					alt="Click to play video 'Global National: March 1'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3949,11 +3835,44 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11712025/u-s-confirms-first-american-deaths-in-iran-strikes-as-retaliation-spreads/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11712433/global-national-march-1-3/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Politics</div>
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">U.S. confirms first American deaths in Iran strikes as retaliation spreads</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Global National: March 1</span></div>
+		</a>
+	</div>
+</li>
+
+<li class="c-posts__item">
+	<div class="c-posts__inner">
+		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
+			href="https://globalnews.ca/video/embed/playlist/11285912,11711582,11712187,11712433/#autoplay&#038;stickyiframe=home-miniplayer-variant_11285912"
+			data-displayinline-type="video"
+			data-displayinline-player-id="home-miniplayer-variant_11285912"
+			data-displayinline-ratio="16:9"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11285912,11711582,11712187,11712433/#autoplay&#038;stickyiframe=home-miniplayer-variant_11285912"
+			data-displayinline-sticky="true"
+			data-displayinline-expand="true">
+			<div class="c-video__placeholder">
+				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/kap572zael-5uxc48sw26/SEAN_STONE_WALL_SITE.jpg?w=384&#038;quality=70&#038;strip=all"
+					width="236"
+					height="133"
+					class="c-posts__thumbnail c-video__image"
+					alt="Click to play video 'Police accused of &#8216;stonewalling&#8217; family of man who died after making 911 call'"
+					loading="lazy" />
+				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+			</div>
+		</a>
+		<a href="https://globalnews.ca/video/11285912/police-accused-of-stonewalling-family-of-man-who-died-after-making-911-call/" class="c-posts__details">
+				<div class="c-posts__about">
+					<div class="c-posts__info c-posts__info--highlight">Crime</div>
+				</div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Police accused of &#8216;stonewalling&#8217; family of man who died after making 911 call</span></div>
 		</a>
 	</div>
 </li>
@@ -4018,44 +3937,12 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11710322"
-				data-sophi-feature=latest-news			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11710322/ai-layoffs-future-experts/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Could Block&#8217;s AI-fueled layoffs be a &#8216;tipping point&#8217; for white-collar jobs?" data-title>Could Block&#8217;s AI-fueled layoffs be a &#8216;tipping point&#8217; for white-collar jobs?</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						Experts say Jack Dorsey&#039;s acknowledgement that AI is fueling layoffs could be a tipping point that sees a spike in companies taking the same approach.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Tech</div>
-																						<div class="c-posts__info">Feb 28</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/02/Worker-at-laptop-e1772237092841.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=532 data-ratio=0.67									loading="lazy"
-								width="720" height="532" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/02/Worker-at-laptop-e1772237092841.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/02/Worker-at-laptop-e1772237092841.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/02/Worker-at-laptop-e1772237092841.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
 				data-post-id="11711065"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11711065/quebec-politician-praised-menopause-hot-flash-legislature/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -4087,7 +3974,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11711293/carney-iran-u-s-attack/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -4114,21 +4001,53 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11711314"
+				data-post-id="11710322"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
-					href="https://globalnews.ca/news/11711314/donald-trump-iran-strike-video/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
+					href="https://globalnews.ca/news/11710322/ai-layoffs-future-experts/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Read the full transcript of Donald Trump’s statement on Iran strikes" data-title>Read the full transcript of Donald Trump’s statement on Iran strikes</span>
+					<span class="c-posts__headlineText" title="Could Block&#8217;s AI-fueled layoffs be a &#8216;tipping point&#8217; for white-collar jobs?" data-title>Could Block&#8217;s AI-fueled layoffs be a &#8216;tipping point&#8217; for white-collar jobs?</span>
 			</div>
 	
 												
 						<div class="c-posts__excerpt">
-						U.S. President Donald Trump said in an right-minute video posted on his Truth Social that the U.S. has begun “major combat operations in Iran.”						</div>
+						Experts say Jack Dorsey&#039;s acknowledgement that AI is fueling layoffs could be a tipping point that sees a spike in companies taking the same approach.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Tech</div>
+																						<div class="c-posts__info">Feb 28</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/02/Worker-at-laptop-e1772237092841.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=532 data-ratio=0.67									loading="lazy"
+								width="720" height="532" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/02/Worker-at-laptop-e1772237092841.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/02/Worker-at-laptop-e1772237092841.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/02/Worker-at-laptop-e1772237092841.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11711227"
+				data-sophi-feature=latest-news			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11711227/us-israel-attack-iran/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="U.S., Israel attack Iran as Trump urges Iranians to &#8216;take over your government&#8217;" data-title>U.S., Israel attack Iran as Trump urges Iranians to &#8216;take over your government&#8217;</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						The United States and Israel carried out major military strikes in Iran Saturday as U.S. President Donald Trump called on the Iranian people to &quot;take over your government.&quot; 						</div>
 						<div class="c-posts__about c-posts__about--multiple">
 															<div class="c-posts__info c-posts__info--highlight">World</div>
 																						<div class="c-posts__info">Feb 28</div>
@@ -4137,10 +4056,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/02/Donald-Trump-4.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/02/Iran-attack-6.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
 								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/02/Donald-Trump-4.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/02/Donald-Trump-4.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/02/Donald-Trump-4.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/02/Iran-attack-6.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/02/Iran-attack-6.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/02/Iran-attack-6.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -4151,7 +4070,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11711097/canadians-middle-east-conflict-evacuation-safety-guidelines/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -4178,12 +4097,44 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11711314"
+				data-sophi-feature=latest-news			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11711314/donald-trump-iran-strike-video/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Read the full transcript of Donald Trump’s statement on Iran strikes" data-title>Read the full transcript of Donald Trump’s statement on Iran strikes</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						U.S. President Donald Trump said in an right-minute video posted on his Truth Social that the U.S. has begun “major combat operations in Iran.”						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">World</div>
+																						<div class="c-posts__info">Feb 28</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/02/Donald-Trump-4.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/02/Donald-Trump-4.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/02/Donald-Trump-4.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/02/Donald-Trump-4.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
 				data-post-id="11710673"
 				data-sophi-feature=latest-news			>
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11710673/wwe-hall-of-fame-ring-belonging-to-wrestling-legend-recovered-after-stolen/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -4205,38 +4156,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								width="540" height="720" alt="" 
 												srcset='' sizes=''
 								data-srcset="https://globalnews.ca/wp-content/uploads/2026/02/643031593_18196590679339302_1127571266576644776_n.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/02/643031593_18196590679339302_1127571266576644776_n.jpg?quality=65&#038;strip=all&#038;w=420 420w,https://globalnews.ca/wp-content/uploads/2026/02/643031593_18196590679339302_1127571266576644776_n.jpg?quality=65&#038;strip=all&#038;w=540 540w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11710402"
-				data-sophi-feature=latest-news			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11710402/david-bowie-daughter-lexi-jones-doesnt-blame-parents-rehab/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="David Bowie&#8217;s daughter says she doesn&#8217;t &#8216;place blame&#8217; on parents for rehab stints" data-title>David Bowie&#8217;s daughter says she doesn&#8217;t &#8216;place blame&#8217; on parents for rehab stints</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						&#039;They were trying to help a child who was struggling in ways none of us fully understood at the time. I never shared this to create a narrative of family conflict,&#039; she wrote.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
-																						<div class="c-posts__info">Feb 27</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/02/david-bowie-daughter-lexi.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
-								width="720" height="504" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/02/david-bowie-daughter-lexi.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/02/david-bowie-daughter-lexi.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/02/david-bowie-daughter-lexi.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -4349,206 +4268,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-playlist-miniplayer"
-			data-displayinline-video-id="11712110"
-    		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11712110,11711582,11712025,11712450,11712187/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Forcy0304sj-2dmro7mnb0%2FJG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
-    		    			data-displayinline-playlist="11712110,11711582,11712025,11712450,11712187"
-    												data-displayinline-sticky="true"
-													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;What comes next for the Iranian regime?&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;politics&quot;,&quot;world&quot;],&quot;keywords&quot;:[&quot;ali-khamenei&quot;,&quot;iran-supreme-leader&quot;,&quot;regional-conflict&quot;,&quot;ross-harrison&quot;,&quot;short-clip&quot;]}}"
-			    		>
-				<div class="c-video__inner ">
-					<span class="c-video__placeholder">
-						<img class="c-video__image"
-						alt="Click to play video: 'What comes next for the Iranian regime?'"
-						width="640"
-						height="360"
-													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/orcy0304sj-2dmro7mnb0/JG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
-															srcset=""
-								sizes=""
-								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/orcy0304sj-2dmro7mnb0/JG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/orcy0304sj-2dmro7mnb0/JG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/orcy0304sj-2dmro7mnb0/JG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
-								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
-													>
-												<span class="c-video__overlay">
-							<div class="c-button c-video__icon c-videoPlay__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-							<div class="c-video__data">
-																	<time class="c-video__duration">7:45</time>
-																									<span class="c-video__title">What comes next for the Iranian regime?</span>
-															</div>
-						</span>
-											</span>
-				</div>
-							</div>
-						</div>
-			</div>
-		</div>
-
-		<!-- video stream item -->
-					<ul class="l-playlist__list c-posts c-posts--equalIcon c-posts--video">
-				
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="1"
-	>
-	<a href="https://globalnews.ca/video/11712110/what-comes-next-for-the-iranian-regime/"
-		title="What comes next for the Iranian regime?"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11712110"
-		data-video-label="Politics"
-		data-video-player-id="home-playlist-miniplayer"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11712110,11711582,11712025,11712450,11712187/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">What comes next for the Iranian regime?</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Politics					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/orcy0304sj-2dmro7mnb0/JG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="2"
-	>
-	<a href="https://globalnews.ca/video/11711582/missiles-strike-bahrain-uae-as-iran-retaliates-for-us-israel-assault/"
-		title="Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11711582"
-		data-video-label="Politics"
-		data-video-player-id="home-playlist-miniplayer"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11711582,11712025,11712450,11712187/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Politics					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/jpdl687ben-9m123g2g79/duabi_vms.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="3"
-	>
-	<a href="https://globalnews.ca/video/11712025/u-s-confirms-first-american-deaths-in-iran-strikes-as-retaliation-spreads/"
-		title="U.S. confirms first American deaths in Iran strikes as retaliation spreads"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11712025"
-		data-video-label="Politics"
-		data-video-player-id="home-playlist-miniplayer"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11712025,11712450,11712187,11711582/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">U.S. confirms first American deaths in Iran strikes as retaliation spreads</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Politics					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/sywbyo33uc-d6qrme2uvx/IRAN_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="4"
-	>
-	<a href="https://globalnews.ca/video/11712450/tears-of-joy-iranian-canadians-continue-to-celebrate-and-push-for-regime-change/"
-		title="&#8216;Tears of joy&#8217;, Iranian-Canadians continue to celebrate, and push for regime change"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11712450"
-		data-video-label="Politics"
-		data-video-player-id="home-playlist-miniplayer"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11712450,11712187,11711582,11712025/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">&#8216;Tears of joy&#8217;, Iranian-Canadians continue to celebrate, and push for regime change</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Politics					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/obj0n9kk1t-gy6ddp5pso/Lexy-web_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="5"
-	>
-	<a href="https://globalnews.ca/video/11712187/texas-shooting-at-least-3-dead-14-injured-at-a-bar-in-austin/"
-		title="Texas shooting: At least 3 dead, 14 injured at a bar in Austin"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11712187"
-		data-video-label="Crime"
-		data-video-player-id="home-playlist-miniplayer"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11712187,11711582,11712025,11712450/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Texas shooting: At least 3 dead, 14 injured at a bar in Austin</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Crime					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/anmu1u7bg8-g4px4ywkcr/SUN0029_AustinShootingSILENTManOpensFire.mpg.00_00_17_18.Still001.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>			</ul>
-				</div>
-
-
-	<div 
-		id="home-playlist-miniplayer-variant-playlist" 
-		class="l-playlist u-show-tablet-landscape"
-		data-sophi-feature=video		data-gnca-ab-test="chartbeat-trending-replacement" data-gnca-ab-variation="test"	>
-		<div class="l-playlist__main c-posts c-posts--tile c-posts--video" data-container-of-video="home-playlist-miniplayer-variant">
-			<div class="l-playlist__inner">
-				<div class="l-playlist__player">
-					    	<div class="c-video c-videoPlay c-video--small"
-    		data-iframe-receiver
-    		data-autoplay=""
-						data-displayinline-featured="true"
-    		data-displayinline-type="video"
-			data-displayinline-player-id="home-playlist-miniplayer-variant"
 			data-displayinline-video-id="11711582"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11711582,11712110,3332731,11712187,11712025/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fjpdl687ben-9m123g2g79%2Fduabi_vms.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
-    		    			data-displayinline-playlist="11711582,11712110,3332731,11712187,11712025"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11711582,11712110,11711757,11712187/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fjpdl687ben-9m123g2g79%2Fduabi_vms.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
+    		    			data-displayinline-playlist="11711582,11712110,11711757,11712187"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;politics&quot;,&quot;us-news&quot;,&quot;world&quot;],&quot;keywords&quot;:[&quot;short-clip&quot;,&quot;top-news&quot;]}}"
 			    		>
@@ -4593,9 +4316,9 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-playlist__link c-posts__inner c-videoPlay"
 		data-video-id="11711582"
 		data-video-label="Politics"
-		data-video-player-id="home-playlist-miniplayer-variant"
+		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11711582,11712110,3332731,11712187,11712025/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11711582,11712110,11711757,11712187/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4621,9 +4344,9 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-playlist__link c-posts__inner c-videoPlay"
 		data-video-id="11712110"
 		data-video-label="Politics"
-		data-video-player-id="home-playlist-miniplayer-variant"
+		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11712110,3332731,11712187,11712025/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11712110,11711757,11712187/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">What comes next for the Iranian regime?</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4644,23 +4367,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="3"
 	>
-	<a href="https://globalnews.ca/video/3332731/ukraine-military-clears-ammo-warehouse-in-east-after-deadly-blast/"
-		title="Ukraine military clears ammo warehouse in east after deadly blast"
+	<a href="https://globalnews.ca/video/11711757/bcs-iranian-community-raising-concerns-for-loved-ones-amid-celebrations-over-strikes-in-iran/"
+		title="BC&#8217;s Iranian community raising concerns for loved ones amid celebrations over strikes in Iran"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="3332731"
-		data-video-label="World"
-		data-video-player-id="home-playlist-miniplayer-variant"
+		data-video-id="11711757"
+		data-video-label="U.S. News"
+		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/3332731,11712187,11712025,11712110/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11711757,11712187,11712110/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Ukraine military clears ammo warehouse in east after deadly blast</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">BC&#8217;s Iranian community raising concerns for loved ones amid celebrations over strikes in Iran</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						World					</div>
+						U.S. News					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/491/739/Ukraine_Explosion_for_WEB_848x480_905680963658.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/pn5i517h0k-2g9n06c7fs/6P_BC_IRAN_ACTION_FALLO_OM01QR7H.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4677,9 +4400,149 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-playlist__link c-posts__inner c-videoPlay"
 		data-video-id="11712187"
 		data-video-label="Crime"
+		data-video-player-id="home-playlist-miniplayer"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11712187,11712110,11711757/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Texas shooting: At least 3 dead, 14 injured at a bar in Austin</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						Crime					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/anmu1u7bg8-g4px4ywkcr/SUN0029_AustinShootingSILENTManOpensFire.mpg.00_00_17_18.Still001.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>			</ul>
+				</div>
+
+
+	<div 
+		id="home-playlist-miniplayer-variant-playlist" 
+		class="l-playlist u-show-tablet-landscape"
+		data-sophi-feature=video		data-gnca-ab-test="chartbeat-trending-replacement" data-gnca-ab-variation="test"	>
+		<div class="l-playlist__main c-posts c-posts--tile c-posts--video" data-container-of-video="home-playlist-miniplayer-variant">
+			<div class="l-playlist__inner">
+				<div class="l-playlist__player">
+					    	<div class="c-video c-videoPlay c-video--small"
+    		data-iframe-receiver
+    		data-autoplay=""
+						data-displayinline-featured="true"
+    		data-displayinline-type="video"
+			data-displayinline-player-id="home-playlist-miniplayer-variant"
+			data-displayinline-video-id="11712110"
+    		data-displayinline-ratio="16:9"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11712110,11711582,11712187,11712433,11285912/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Forcy0304sj-2dmro7mnb0%2FJG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
+    		    			data-displayinline-playlist="11712110,11711582,11712187,11712433,11285912"
+    												data-displayinline-sticky="true"
+													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;What comes next for the Iranian regime?&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;politics&quot;,&quot;world&quot;],&quot;keywords&quot;:[&quot;ali-khamenei&quot;,&quot;iran-supreme-leader&quot;,&quot;regional-conflict&quot;,&quot;ross-harrison&quot;,&quot;short-clip&quot;]}}"
+			    		>
+				<div class="c-video__inner ">
+					<span class="c-video__placeholder">
+						<img class="c-video__image"
+						alt="Click to play video: 'What comes next for the Iranian regime?'"
+						width="640"
+						height="360"
+													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/orcy0304sj-2dmro7mnb0/JG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
+															srcset=""
+								sizes=""
+								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/orcy0304sj-2dmro7mnb0/JG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/orcy0304sj-2dmro7mnb0/JG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/orcy0304sj-2dmro7mnb0/JG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
+								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
+													>
+												<span class="c-video__overlay">
+							<div class="c-button c-video__icon c-videoPlay__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+							<div class="c-video__data">
+																	<time class="c-video__duration">7:45</time>
+																									<span class="c-video__title">What comes next for the Iranian regime?</span>
+															</div>
+						</span>
+											</span>
+				</div>
+							</div>
+						</div>
+			</div>
+		</div>
+
+		<!-- video stream item -->
+					<ul class="l-playlist__list c-posts c-posts--equalIcon c-posts--video">
+				
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="1"
+	>
+	<a href="https://globalnews.ca/video/11712110/what-comes-next-for-the-iranian-regime/"
+		title="What comes next for the Iranian regime?"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11712110"
+		data-video-label="Politics"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11712187,11712025,11712110,3332731/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11712110,11711582,11712187,11712433,11285912/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">What comes next for the Iranian regime?</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						Politics					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/orcy0304sj-2dmro7mnb0/JG_RH_OTT_IRAN_STRIKES__OM01QRVP_thumbnail_1280x720_.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="2"
+	>
+	<a href="https://globalnews.ca/video/11711582/missiles-strike-bahrain-uae-as-iran-retaliates-for-us-israel-assault/"
+		title="Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11711582"
+		data-video-label="Politics"
+		data-video-player-id="home-playlist-miniplayer-variant"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11711582,11712187,11712433,11285912/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Missiles strike Bahrain, UAE as Iran retaliates for US-Israel assault</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						Politics					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/jpdl687ben-9m123g2g79/duabi_vms.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="3"
+	>
+	<a href="https://globalnews.ca/video/11712187/texas-shooting-at-least-3-dead-14-injured-at-a-bar-in-austin/"
+		title="Texas shooting: At least 3 dead, 14 injured at a bar in Austin"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11712187"
+		data-video-label="Crime"
+		data-video-player-id="home-playlist-miniplayer-variant"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11712187,11712433,11285912,11711582/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Texas shooting: At least 3 dead, 14 injured at a bar in Austin</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4698,25 +4561,53 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 <li class="c-posts__item l-playlist__item"
-			data-playlist-index="5"
+			data-playlist-index="4"
 	>
-	<a href="https://globalnews.ca/video/11712025/u-s-confirms-first-american-deaths-in-iran-strikes-as-retaliation-spreads/"
-		title="U.S. confirms first American deaths in Iran strikes as retaliation spreads"
+	<a href="https://globalnews.ca/video/11712433/global-national-march-1-3/"
+		title="Global National: March 1"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11712025"
-		data-video-label="Politics"
+		data-video-id="11712433"
+		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11712025,11712110,3332731,11712187/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11712433,11285912,11711582,11712187/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">U.S. confirms first American deaths in Iran strikes as retaliation spreads</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Global National: March 1</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Politics					</div>
+						Canada					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/sywbyo33uc-d6qrme2uvx/IRAN_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/0es50618u0-ker2fln91k/NATIONAL-WEB.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="5"
+	>
+	<a href="https://globalnews.ca/video/11285912/police-accused-of-stonewalling-family-of-man-who-died-after-making-911-call/"
+		title="Police accused of &#8216;stonewalling&#8217; family of man who died after making 911 call"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11285912"
+		data-video-label="Crime"
+		data-video-player-id="home-playlist-miniplayer-variant"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11285912,11711582,11712187,11712433/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Police accused of &#8216;stonewalling&#8217; family of man who died after making 911 call</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						Crime					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/kap572zael-5uxc48sw26/SEAN_STONE_WALL_SITE.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4808,14 +4699,44 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=10											>
 	<li class="c-posts__item  glide__slide  "
 	data-container-id="stories-item-21"
-	data-post-id="10916996"
+	data-post-id="11711592"
 	data-slide-index="0"
+	data-caption="11 best face serums for post-winter skin recovery"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/the-curator/11711592/best-post-winter-face-serums-2026/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/02/Frame-416-4.png?w=336				data-width=336 data-height=252 data-ratio=0.67									loading="lazy"
+								width="336" height="252" alt="" 
+						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="11 best face serums for post-winter skin recovery" data-title>11 best face serums for post-winter skin recovery</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+											<div class="c-posts__info c-posts__info--highlight" data-label>The Curator</div>
+																								</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item  glide__slide  "
+	data-container-id="stories-item-22"
+	data-post-id="10916996"
+	data-slide-index="1"
 	data-caption="The ultimate humidifier guide: Best picks for every room"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/10916996/best-humidifiers/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4837,15 +4758,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-22"
+	data-container-id="stories-item-23"
 	data-post-id="11024306"
-	data-slide-index="1"
+	data-slide-index="2"
 	data-caption="Best Amazon pre-spring cleaning tools"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11024306/pre-spring-cleaning-hacks/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4867,15 +4788,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-23"
+	data-container-id="stories-item-24"
 	data-post-id="11709533"
-	data-slide-index="2"
+	data-slide-index="3"
 	data-caption="I tried the Shark CryoGlow LED Face Mask—here&#8217;s my honest review"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11709533/shark-cryglow-led-face-mask-review/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4897,15 +4818,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-24"
+	data-container-id="stories-item-25"
 	data-post-id="11679164"
-	data-slide-index="3"
+	data-slide-index="4"
 	data-caption="Everything you need for Reformer Pilates at home – equipment, accessories and apparel"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11679164/everything-you-need-for-reformer-pilates-at-home-equipment-accessories-and-apparel/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4927,15 +4848,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-25"
+	data-container-id="stories-item-26"
 	data-post-id="11707624"
-	data-slide-index="4"
+	data-slide-index="5"
 	data-caption="Spring 2026 fashion trends you need to know"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11707624/spring-2026-fashion-trends/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4957,15 +4878,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-26"
+	data-container-id="stories-item-27"
 	data-post-id="11678666"
-	data-slide-index="5"
+	data-slide-index="6"
 	data-caption="The best leakproof underwear available in Canada"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11678666/best-leakproof-underwear-canada/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4987,15 +4908,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-27"
+	data-container-id="stories-item-28"
 	data-post-id="11667032"
-	data-slide-index="6"
+	data-slide-index="7"
 	data-caption="Here&#8217;s how to recreate Carolyn Bessette-Kennedy&#8217;s iconic &#8217;90s style"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11667032/carolyn-bessette-inspired-fashion-looks/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -5017,15 +4938,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-28"
+	data-container-id="stories-item-29"
 	data-post-id="11679236"
-	data-slide-index="7"
+	data-slide-index="8"
 	data-caption="Best pillows in Canada for side, back &amp; stomach sleepers"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11679236/pillow-talk-best-pillows-in-canada-for-every-sleep-style/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -5047,15 +4968,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-29"
+	data-container-id="stories-item-30"
 	data-post-id="11678526"
-	data-slide-index="8"
+	data-slide-index="9"
 	data-caption="Spring home decor trends 2026: Fresh ideas to refresh your space"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11678526/spring-home-decor-trends-2026-fresh-ideas-to-refresh-your-space/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -5067,36 +4988,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="Spring home decor trends 2026: Fresh ideas to refresh your space" data-title>Spring home decor trends 2026: Fresh ideas to refresh your space</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-											<div class="c-posts__info c-posts__info--highlight" data-label>The Curator</div>
-																								</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-30"
-	data-post-id="11667027"
-	data-slide-index="9"
-	data-caption="5 unexpected cleaning secrets hiding in your home right now"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/the-curator/11667027/home-cleaning-hacks/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/02/laundry.png?w=336				data-width=336 data-height=252 data-ratio=0.67									loading="lazy"
-								width="336" height="252" alt="" 
-						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="5 unexpected cleaning secrets hiding in your home right now" data-title>5 unexpected cleaning secrets hiding in your home right now</span>
 			</div>
 	
 						
@@ -5190,37 +5081,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3											>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-31"
-	data-post-id="11711227"
-	data-slide-index=""
-	data-caption="U.S., Israel attack Iran as Trump urges Iranians to &#8216;take over your government&#8217;"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11711227/us-israel-attack-iran/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/02/Iran-attack-6.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/02/Iran-attack-6.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/02/Iran-attack-6.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/02/Iran-attack-6.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="U.S., Israel attack Iran as Trump urges Iranians to &#8216;take over your government&#8217;" data-title>U.S., Israel attack Iran as Trump urges Iranians to &#8216;take over your government&#8217;</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Feb 28</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-32"
 	data-post-id="11711139"
 	data-slide-index=""
 	data-caption="Cargo plane carrying money crashes in Bolivia, killing at least 15 people, official says"
@@ -5228,7 +5088,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11711139/plane-carrying-money-crashes-bolivia/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5251,7 +5111,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-33"
+	data-container-id="stories-item-32"
 	data-post-id="11710473"
 	data-slide-index=""
 	data-caption="China will suspend tariffs on some Canadian agricultural goods"
@@ -5259,7 +5119,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11710473/canada-china-tariffs/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5272,6 +5132,37 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="China will suspend tariffs on some Canadian agricultural goods" data-title>China will suspend tariffs on some Canadian agricultural goods</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >Feb 27</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-33"
+	data-post-id="11710383"
+	data-slide-index=""
+	data-caption="Trump &#8216;not happy&#8217; with Iran nuclear talks as fears of Middle East war grow"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11710383/trump-iran-nuclear-talks-strike-travel/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/02/afa690de483f25d9bfbb12c0feea2ca2ceb60ce14cb6e228cf957c9ed61e0f1c.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/02/afa690de483f25d9bfbb12c0feea2ca2ceb60ce14cb6e228cf957c9ed61e0f1c.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/02/afa690de483f25d9bfbb12c0feea2ca2ceb60ce14cb6e228cf957c9ed61e0f1c.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/02/afa690de483f25d9bfbb12c0feea2ca2ceb60ce14cb6e228cf957c9ed61e0f1c.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Trump &#8216;not happy&#8217; with Iran nuclear talks as fears of Middle East war grow" data-title>Trump &#8216;not happy&#8217; with Iran nuclear talks as fears of Middle East war grow</span>
 			</div>
 	
 						
@@ -5391,7 +5282,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >10 hours</div>
+																<div class="c-posts__info" data-date >Mar 1</div>
 																			</div>
 									</div>
 		</a>
@@ -5422,7 +5313,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >11 hours</div>
+																<div class="c-posts__info" data-date >Mar 1</div>
 																			</div>
 									</div>
 		</a>
@@ -5523,6 +5414,37 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3											>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-37"
+	data-post-id="11710773"
+	data-slide-index=""
+	data-caption="Moving metrics: How the Ford government pulled back reporting its successes and failures"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11710773/ford-government-public-targets-reporting/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/02/CP175880073.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/02/CP175880073.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/02/CP175880073.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/02/CP175880073.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Moving metrics: How the Ford government pulled back reporting its successes and failures" data-title>Moving metrics: How the Ford government pulled back reporting its successes and failures</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >2 hours</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-38"
 	data-post-id="11710997"
 	data-slide-index=""
 	data-caption="Manitoba premier says U.S. men&#8217;s hockey team offside on Trump phone call"
@@ -5530,7 +5452,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11710997/manitoba-premier-says-u-s-mens-hockey-team-offside-on-trump-phone-call/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -5553,7 +5475,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-38"
+	data-container-id="stories-item-39"
 	data-post-id="11710898"
 	data-slide-index=""
 	data-caption="Half the recall petitions against Alberta governing caucus fail, more fizzle"
@@ -5561,7 +5483,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11710898/more-alberta-mla-recall-petitions-fail/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5574,37 +5496,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="Half the recall petitions against Alberta governing caucus fail, more fizzle" data-title>Half the recall petitions against Alberta governing caucus fail, more fizzle</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Feb 27</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-39"
-	data-post-id="11710471"
-	data-slide-index=""
-	data-caption="&#8216;Embarrassing&#8217;: Vancouver councillor calls out mayor over drugs comment controversy"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11710471/embarrassing-vancouver-councillor-sean-orr-mayor-ken-sim-drugs-comments/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/02/6d6c6052d77ed5525eea66a88106aecc77945d39811be6594fecb57f90721077.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=540 data-ratio=0.67									loading="lazy"
-								width="720" height="540" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/02/6d6c6052d77ed5525eea66a88106aecc77945d39811be6594fecb57f90721077.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/02/6d6c6052d77ed5525eea66a88106aecc77945d39811be6594fecb57f90721077.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/02/6d6c6052d77ed5525eea66a88106aecc77945d39811be6594fecb57f90721077.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="&#8216;Embarrassing&#8217;: Vancouver councillor calls out mayor over drugs comment controversy" data-title>&#8216;Embarrassing&#8217;: Vancouver councillor calls out mayor over drugs comment controversy</span>
 			</div>
 	
 						
@@ -6073,31 +5964,31 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-48"
-	data-post-id="11708644"
+	data-post-id="11710402"
 	data-slide-index=""
-	data-caption="Shia LaBeouf ordered to attend rehab following New Orleans fight"
+	data-caption="David Bowie&#8217;s daughter says she doesn&#8217;t &#8216;place blame&#8217; on parents for rehab stints"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11708644/shia-labeouf-released-bond-rehab-new-orleans-fight/"
+		href="https://globalnews.ca/news/11710402/david-bowie-daughter-lexi-jones-doesnt-blame-parents-rehab/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/02/shia-labeouf-arrested-new-orleans.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/02/david-bowie-daughter-lexi.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
 								width="720" height="504" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/02/shia-labeouf-arrested-new-orleans.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/02/shia-labeouf-arrested-new-orleans.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/02/shia-labeouf-arrested-new-orleans.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/02/david-bowie-daughter-lexi.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/02/david-bowie-daughter-lexi.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/02/david-bowie-daughter-lexi.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Shia LaBeouf ordered to attend rehab following New Orleans fight" data-title>Shia LaBeouf ordered to attend rehab following New Orleans fight</span>
+					<span class="c-posts__headlineText" title="David Bowie&#8217;s daughter says she doesn&#8217;t &#8216;place blame&#8217; on parents for rehab stints" data-title>David Bowie&#8217;s daughter says she doesn&#8217;t &#8216;place blame&#8217; on parents for rehab stints</span>
 			</div>
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Feb 26</div>
+																<div class="c-posts__info" data-date >Feb 27</div>
 																			</div>
 									</div>
 		</a>
@@ -6908,7 +6799,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			<script async src="//static.chartbeat.com/js/chartbeat_mab.js"></script>
 			<!-- Adobe Analytics code version: JS-2.6.0. -->
 		<script type="text/javascript">
-			var gnPageData = {"context_data":{"hourofday":"5","dayofweek":"Monday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
+			var gnPageData = {"context_data":{"hourofday":"7","dayofweek":"Monday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
 		</script>
 				<!-- End Adobe Analytics code -->
 			<script>
@@ -6973,5 +6864,5 @@ var GN_OneSignalSettings = {"isCurator":"","appId":"8beb7996-b996-4ce8-a474-d488
 		
 		<div class="l-dynamicElement"></div>
 
-			</body>
+			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75660ba8f4","applicationID":"418684855","transactionName":"Z1BWZxdTWkAHVExRXF4adVARW1tdSV9XVVY=","queueTime":0,"applicationTime":380,"atts":"SxdBEV9JSR9EVhoCSE1I","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
