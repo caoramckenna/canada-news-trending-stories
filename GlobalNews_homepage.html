@@ -184,8 +184,7 @@
         }
     </script>
     	<!-- Meta Tags -->
-	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"75660ba8f4",applicationID:"418684855",browserID:"419993820"};;/*! For license information please see nr-loader-rum-1.310.1.min.js.LICENSE.txt */
-(()=>{var e,t,r={163:(e,t,r)=>{"use strict";r.d(t,{j:()=>E});var n=r(384),i=r(1741);var s=r(2555);r(860).K7.genericEvents;const a="experimental.resources",o="register",c=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(2614),u=r(944),l=r(8122);const f="[data-nr-mask]",g=e=>(0,l.a)(e,(()=>{const e={feature_flags:[],experimental:{allow_registered_children:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{get allow_registered_children(){return e.feature_flags.includes(o)||e.experimental.allow_registered_children},set allow_registered_children(t){e.experimental.allow_registered_children=t},duplicate_registered_data:!1},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(a)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:d.wk,inactiveMs:d.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){c(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,u.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){c(t)?e.block_selector+=",".concat(t):""!==t&&(0,u.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,u.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var p=r(6154),h=r(9324);let m=0;const v={buildEnv:h.F3,distMethod:h.Xs,version:h.xv,originTime:p.WN},b={consented:!1},y={appMetadata:{},get consented(){return this.session?.state?.consent||b.consented},set consented(e){b.consented=e},customTransaction:void 0,denyList:void 0,disabled:!1,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++m}},_=e=>{const t=(0,l.a)(e,y),r=Object.keys(v).reduce((e,t)=>(e[t]={value:v[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)};var w=r(5701);const x=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var k=r(7836),R=r(3241);const A={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},S=e=>(0,l.a)(e,A),T=new Set;function E(e,t={},r,a){let{init:o,info:c,loader_config:d,runtime:u={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();o=e.init,c=e.info,d=e.loader_config}e.init=g(o||{}),e.loader_config=S(d||{}),c.jsAttributes??={},p.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,s.D)(c);const f=e.init,h=[c.beacon,c.errorBeacon];T.has(e.agentIdentifier)||(f.proxy.assets&&(x(f.proxy.assets),h.push(f.proxy.assets)),f.proxy.beacon&&h.push(f.proxy.beacon),e.beacons=[...h],function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach(r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let s=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return s?s(...t):n})})}(e),(0,n.US)("activatedFeatures",w.B)),u.denyList=[...f.ajax.deny_list||[],...f.ajax.block_internal?h:[]],u.ptid=e.agentIdentifier,u.loaderType=r,e.runtime=_(u),T.has(e.agentIdentifier)||(e.ee=k.ee.get(e.agentIdentifier),e.exposed=l,(0,R.W)({agentIdentifier:e.agentIdentifier,drained:!!w.B?.[e.agentIdentifier],type:"lifecycle",name:"initialize",feature:void 0,data:e.config})),T.add(e.agentIdentifier)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>o,US:()=>l,Zm:()=>c,bQ:()=>u,dV:()=>d,pV:()=>f});var n=r(6154),i=r(1863),s=r(944),a=r(1910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function d(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,a.i)(...Object.values(e.o))),e}function u(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,s.R)(69)}function l(e,t){c()[e]=t}function f(){return function(){let e=c();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),d(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>u,K7:()=>c,P3:()=>d,XX:()=>i,Yy:()=>o,df:()=>s,qY:()=>n,v4:()=>a});const n="events",i="jserrors",s="browser/blobs",a="rum",o="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},d={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.softNav]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.sessionReplay]:8,[c.logging]:9,[c.genericEvents]:10},u={[c.pageViewEvent]:a,[c.pageViewTiming]:n,[c.ajax]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:s,[c.sessionReplay]:s,[c.logging]:o,[c.genericEvents]:"ins"}},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({agentIdentifier:null,drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},1687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>d,Ze:()=>f,x3:()=>u});var n=r(3241),i=r(7836),s=r(3606),a=r(860),o=r(2646);const c={};function d(e,t){const r={staged:!1,priority:a.P3[t]||0};l(e),c[e].get(t)||c[e].set(t,r)}function u(e,t){e&&c[e]&&(c[e].get(t)&&c[e].delete(t),p(e,t,!1),c[e].size&&g(e))}function l(e){if(!e)throw new Error("agentIdentifier required");c[e]||(c[e]=new Map)}function f(e="",t="feature",r=!1){if(l(e),!e||!c[e].get(t)||r)return p(e,t);c[e].get(t).staged=!0,g(e)}function g(e){const t=Array.from(c[e]);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{c[e].delete(t),p(e,t)}))}function p(e,t,r=!0){const a=e?i.ee.get(e):i.ee,c=s.i.handlers;if(!a.aborted&&a.backlog&&c){if((0,n.W)({agentIdentifier:e,type:"lifecycle",name:"drain",feature:t}),r){const e=a.backlog[t],r=c[t];if(r){for(let t=0;e&&t<e.length;++t)h(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof o.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}a.isolatedBacklog||delete c[t],a.backlog[t]=null,a.emit("drain-"+t,[])}}function h(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],s=e[2];n.apply(i,s)}})}},1738:(e,t,r)=>{"use strict";r.d(t,{U:()=>g,Y:()=>f});var n=r(3241),i=r(9908),s=r(1863),a=r(944),o=r(5701),c=r(3969),d=r(8362),u=r(860),l=r(4261);function f(e,t,r,s){const f=s||r;!f||f[e]&&f[e]!==d.d.prototype[e]||(f[e]=function(){(0,i.p)(c.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({agentIdentifier:r.agentIdentifier,drained:!!o.B?.[r.agentIdentifier],type:"data",name:"api",feature:l.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,a.R)(23,e)}})}function g(e,t,r,n,a){const o=e.info;null===r?delete o.jsAttributes[t]:o.jsAttributes[t]=r,(a||null===r)&&(0,i.p)(l.Pl+n,[(0,s.t)(),t,r],void 0,"session",e.ee)}},1741:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(944),i=r(4261);class s{#e(e,...t){if(this[e]!==s.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},1863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},1910:(e,t,r)=>{"use strict";r.d(t,{i:()=>s});var n=r(944);const i=new Map;function s(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),s=t.includes("nrWrapper");return r||s||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},2555:(e,t,r)=>{"use strict";r.d(t,{D:()=>o,f:()=>a});var n=r(384),i=r(8122);const s={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function a(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const o=e=>(0,i.a)(e,s)},2614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>a,H3:()=>n,g:()=>d,iL:()=>c,tS:()=>o,uh:()=>i,wk:()=>s});const n="NRBA",i="SESSION",s=144e5,a=18e5,o={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},d={OFF:0,FULL:1,ERROR:2}},2646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},2843:(e,t,r)=>{"use strict";r.d(t,{G:()=>s,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function s(e,t,r){(0,n.sp)("pagehide",e,t,r)}},3241:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(6154);const i="newrelic";function s(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},3606:(e,t,r)=>{"use strict";r.d(t,{i:()=>s});var n=r(9908);s.on=a;var i=s.handlers={};function s(e,t,r,s){a(s||n.d,i,e,t,r)}function a(e,t,r,i,s){s||(s="feature"),e||(e=n.d);var a=t[s]=t[s]||{};(a[r]=a[r]||[]).push([e,i])}},3878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function s(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>s,jT:()=>n,sp:()=>i})},3969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>o,rs:()=>i,xV:()=>a,z_:()=>s});const n=r(860).K7.metrics,i="sm",s="cm",a="storeSupportabilityMetrics",o="storeEventMetrics"},4234:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(7836),i=r(1687);class s{constructor(e,t){this.agentIdentifier=e,this.ee=n.ee.get(e),this.featureName=t,this.blocked=!1}deregisterDrain(){(0,i.x3)(this.agentIdentifier,this.featureName)}}},4261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>d,BL:()=>o,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>m,Pl:()=>n,Pv:()=>R,Tb:()=>l,U2:()=>s,V1:()=>k,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>a,nb:()=>h,o5:()=>u});const n="api-",i="addPageAction",s="addToTrace",a="addRelease",o="finished",c="interaction",d="log",u="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",h="setApplicationVersion",m="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",k="measure",R="consent"},5289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>a,Qr:()=>c,sB:()=>o});var n=r(3878),i=r(6389);function s(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(s())return e();const r=(0,i.J)(e),a=setInterval(()=>{s()&&(clearInterval(a),r())},500);(0,n.sp)("load",r,t)}function o(e){if(s())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(s())return e();(0,n.sp)("popstate",e)}},5607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},5701:(e,t,r)=>{"use strict";r.d(t,{B:()=>s,t:()=>a});var n=r(3241);const i=new Set,s={};function a(e,t){const r=t.agentIdentifier;s[r]??={},e&&"object"==typeof e&&(i.has(r)||(t.ee.emit("rumresp",[e]),s[r]=e,i.add(r),(0,n.W)({agentIdentifier:r,loaded:!0,drained:!0,type:"lifecycle",name:"load",feature:void 0,data:e})))}},6154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>c,RI:()=>i,WN:()=>u,bv:()=>s,eN:()=>l,gm:()=>a,mw:()=>o,sb:()=>d});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,s="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===a?.document?.visibilityState),c=/iPad|iPhone|iPod/.test(a.navigator?.userAgent),d=c&&"undefined"==typeof SharedWorker,u=((()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)()),l=()=>"undefined"!=typeof PerformanceNavigationTiming&&a?.performance?.getEntriesByType("navigation")?.[0]?.responseStart},6389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},6630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},7699:(e,t,r)=>{"use strict";r.d(t,{It:()=>s,KC:()=>o,No:()=>i,qh:()=>a});var n=r(860);const i=16e3,s=1e6,a="SESSION_ERROR",o={[n.K7.logging]:!0,[n.K7.genericEvents]:!1,[n.K7.jserrors]:!1,[n.K7.ajax]:!1}},7836:(e,t,r)=>{"use strict";r.d(t,{P:()=>o,ee:()=>c});var n=r(384),i=r(8990),s=r(2646),a=r(5607);const o="nr@context:".concat(a.W),c=function e(t,r){var n={},a={},u={},l=!1;try{l=16===r.length&&d.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,s){!1!==s&&(s=!0);if(c.aborted&&!i)return;t&&s&&t.emit(e,r,n);var o=g(n);h(e).forEach(e=>{e.apply(o,r)});var d=v()[a[e]];d&&d.push([f,e,r,o]);return o},get:m,listeners:h,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{a[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[a[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof s.y?e:e?(0,i.I)(e,o,()=>new s.y(o)):new s.y(o)}function p(e,t){n[e]=h(e).concat(t)}function h(e){return n[e]||[]}function m(t){return u[t]=u[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),d=(0,n.Zm)();d.ee||(d.ee=c)},8122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),s=0===Object.keys(r).length?e:r;for(let a in s)if(void 0!==e[a])try{if(null===e[a]){r[a]=null;continue}Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){r[a]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},8362:(e,t,r)=>{"use strict";r.d(t,{d:()=>s});var n=r(9566),i=r(1741);class s extends i.W{agentIdentifier=(0,n.LA)(16)}},8374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},8990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},9324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>s,xv:()=>n});const n="1.310.1",i="PROD",s="CDN"},9566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>o,bz:()=>a});var n=r(6154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function s(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map(e=>"x"===e?s(t,r++).toString(16):"y"===e?(3&s()|8).toString(16):e).join("")}function o(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var o=0;o<e;o++)a.push(s(r,i++).toString(16));return a.join("")}},9908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,s){s?(s.buffer([e],i),s.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var s=n[e]={exports:{}};return r[e](s,s.exports,i),s.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce((t,r)=>(i.f[r](e,t),t),[])),i.u=e=>"nr-rum-1.310.1.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.310.1.PROD:",i.l=(r,n,s,a)=>{if(e[r])e[r].push(n);else{var o,c;if(void 0!==s)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+s){o=l;break}}if(!o){c=!0;var f={296:"sha512-8LEsRObgfHgVhp/OH+e1LIJ8trYoEGGugVcM4cNSUs2rZ3CNt/VHMq+3wUpYKaA5/dW4oR9cdBp7CsljXO+9fA=="};(o=document.createElement("script")).charset="utf-8",i.nc&&o.setAttribute("nonce",i.nc),o.setAttribute("data-webpack",t+s),o.src=r,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),f[a]&&(o.integrity=f[a])}e[r]=[n];var g=(t,n)=>{o.onerror=o.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],o.parentNode&&o.parentNode.removeChild(o),i&&i.forEach(e=>e(n)),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=g.bind(null,o.onerror),o.onload=g.bind(null,o.onload),c&&document.head.appendChild(o)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var s=new Promise((r,i)=>n=e[t]=[r,i]);r.push(n[2]=s);var a=i.p+i.u(t),o=new Error;i.l(a,r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var s=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;o.message="Loading chunk "+t+" failed: ("+s+": "+a+")",o.name="ChunkLoadError",o.type=s,o.request=a,n[1](o)}},"chunk-"+t,t)}};var t=(t,r)=>{var n,s,[a,o,c]=r,d=0;if(a.some(t=>0!==e[t])){for(n in o)i.o(o,n)&&(i.m[n]=o[n]);if(c)c(i)}for(t&&t(r);d<a.length;d++)s=a[d],i.o(e,s)&&e[s]&&e[s][0](),e[s]=0},r=self["webpackChunk:NRBA-1.310.1.PROD"]=self["webpackChunk:NRBA-1.310.1.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(8362),t=i(860);const r=Object.values(t.K7);var n=i(163);var s=i(9908),a=i(1863),o=i(4261),c=i(1738);var d=i(1687),u=i(4234),l=i(5289),f=i(6154),g=i(944),p=i(384);const h=e=>f.RI&&!0===e?.privacy.cookies_enabled;function m(e){return!!(0,p.dV)().o.MO&&h(e)&&!0===e?.session_trace.enabled}var v=i(6389),b=i(7699);class y extends u.W{constructor(e,t){super(e.agentIdentifier,t),this.agentRef=e,this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,v.J)(()=>{(0,d.Ak)(e.agentIdentifier,this.featureName),t()}))}):(0,d.Ak)(e.agentIdentifier,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;const n=async()=>{let n;await this.deferred;try{if(h(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,3305));n=t(e)}}catch(e){(0,g.R)(20,e),this.ee.emit("internal-error",[e]),(0,s.p)(b.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#t(this.featureName,n,e.init))return(0,d.Ze)(this.agentIdentifier,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,g.R)(34,e),this.abortHandler?.(),(0,d.Ze)(this.agentIdentifier,this.featureName,!0),this.loadedSuccessfully(!1),this.ee&&this.ee.abort()}};f.RI?(0,l.GG)(()=>n(),!0):n()}#t(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return m(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}}var _=i(6630),w=i(2614),x=i(3241);class k extends y{static featureName=_.T;constructor(e){var t;super(e,_.T),this.setupInspectionEvents(e.agentIdentifier),t=e,(0,c.Y)(o.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,s.p)(o.Pl+o.Fw,[(0,a.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>i.e(296).then(i.bind(i,3943)))}setupInspectionEvents(e){const t=(t,r)=>{t&&(0,x.W)({agentIdentifier:e,timeStamp:t.timeStamp,loaded:"complete"===t.target.readyState,type:"window",name:r,data:t.target.location+""})};(0,l.sB)(e=>{t(e,"DOMContentLoaded")}),(0,l.GG)(e=>{t(e,"load")}),(0,l.Qr)(e=>{t(e,"navigate")}),this.ee.on(w.tS.UPDATE,(t,r)=>{(0,x.W)({agentIdentifier:e,type:"lifecycle",name:"session",data:r})})}}class R extends e.d{constructor(e){var t;(super(),f.gm)?(this.features={},(0,p.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(k),(0,n.j)(this,e,e.loaderType||"agent"),t=this,(0,c.Y)(o.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,c.U)(t,e,r,o.cD,n);(0,g.R)(40,typeof r)}else(0,g.R)(39,typeof e)},t),function(e){(0,c.Y)(o.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,g.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,s.p)(o.Pl+"setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,c.U)(e,"enduser.id",t,o.Dl,!0)},e)}(this),function(e){(0,c.Y)(o.nb,function(t){if("string"==typeof t||null===t)return(0,c.U)(e,"application.version",t,o.nb,!1);(0,g.R)(42,typeof t)},e)}(this),function(e){(0,c.Y)(o.d3,function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,c.Y)(o.Pv,function(t=!0){if("boolean"==typeof t){if((0,s.p)(o.Pl+o.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum()})}}else(0,g.R)(65,typeof t)},e)}(this),this.run()):(0,g.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return r.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),n=[...this.desiredFeatures];n.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),n.forEach(r=>{if(!e[r.featureName]&&r.featureName!==t.K7.pageViewEvent)return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,g.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,g.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,p.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var A=i(2843),S=i(782);class T extends y{static featureName=S.T;constructor(e){super(e,S.T),f.RI&&((0,A.u)(()=>(0,s.p)("docHidden",[(0,a.t)()],void 0,S.T,this.ee),!0),(0,A.G)(()=>(0,s.p)("winPagehide",[(0,a.t)()],void 0,S.T,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,2117))))}}var E=i(3969);class j extends y{static featureName=E.TZ;constructor(e){super(e,E.TZ),f.RI&&document.addEventListener("securitypolicyviolation",e=>{(0,s.p)(E.xV,["Generic/CSPViolation/Detected"],void 0,this.featureName,this.ee)}),this.importAggregator(e,()=>i.e(296).then(i.bind(i,9623)))}}new R({features:[k,T,j],loaderType:"lite"})})()})();</script>
+	<meta charset="UTF-8">
 	<meta name="theme-color" content="#231F20">
 
 			<meta name="msvalidate.01" content="9E5C74811CA48CCCC61A2CF3C0A1BA6A">
@@ -481,7 +480,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 
 				
 
-				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"16","weatherprec":"x","weathercode":"28","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
+				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"16","weatherprec":"x","weathercode":"26","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
 		</script>
 			<script>
 				// Load the APS JavaScript Library
@@ -1534,7 +1533,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 									Abbas Omidi is one of 28 ‘senior officials’ of Iran’s regime immigration officers have found in Canada.									</div>
 																<div class="c-posts__about c-posts__about--multiple">
 																		<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">34 mins</div>
+																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">3 hours</div>
 																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 																	</div>
 														</div>
@@ -1564,7 +1563,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			</div>
 								<div class="c-posts__about c-posts__about--multiple">
 																<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">3 hours</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">5 hours</div>
 																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 															</div>
 						</div>
@@ -1593,7 +1592,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			</div>
 								<div class="c-posts__about c-posts__about--multiple">
 																<div class="c-posts__info c-posts__info--highlight">Crime</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">9 hours</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">11 hours</div>
 																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
 															</div>
 						</div>
@@ -1636,7 +1635,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Economy</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">3 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">5 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
@@ -1669,7 +1668,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Economy</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">1 hour</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">3 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
 									</div>
@@ -1724,8 +1723,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">4 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">6 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1757,7 +1756,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>U.S. News</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">4 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">6 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 														</div>
 									</div>
@@ -1790,7 +1789,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">6 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">8 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 														</div>
 									</div>
@@ -1823,7 +1822,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">6 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">8 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
 									</div>
@@ -1853,14 +1852,146 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-7"
-	data-post-id="11724255"
+	data-post-id="11724665"
 	data-slide-index=""
-	data-caption="&#8216;Dawson&#8217;s Creek&#8217; star Joshua Jackson breaks silence on James Van Der Beek&#8217;s death"
+	data-caption="Partial remains of 12 Canadian WWI soldiers returned by U.S. museum"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11724255/joshua-jackson-breaks-silence-james-van-der-beek-death/"
+		href="https://globalnews.ca/news/11724665/canadian-soldiers-remains-returned-us-france/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/03/dce4c5c4138a6fc9989e9fa33b5ad688011c4eeea91f265508314d23a78deac3.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/dce4c5c4138a6fc9989e9fa33b5ad688011c4eeea91f265508314d23a78deac3.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/dce4c5c4138a6fc9989e9fa33b5ad688011c4eeea91f265508314d23a78deac3.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/dce4c5c4138a6fc9989e9fa33b5ad688011c4eeea91f265508314d23a78deac3.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Partial remains of 12 Canadian WWI soldiers returned by U.S. museum" data-title>Partial remains of 12 Canadian WWI soldiers returned by U.S. museum</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">23 mins</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-8"
+	data-post-id="11724600"
+	data-slide-index=""
+	data-caption="LNG Canada ramping up production, exports amid Iran war, data suggests"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11724600/iran-war-oil-energy-lng-canada/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/03/LNG-Canada-March-10-e1773177866875.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/LNG-Canada-March-10-e1773177866875.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/LNG-Canada-March-10-e1773177866875.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/LNG-Canada-March-10-e1773177866875.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="LNG Canada ramping up production, exports amid Iran war, data suggests" data-title>LNG Canada ramping up production, exports amid Iran war, data suggests</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Economy</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">54 mins</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-9"
+	data-post-id="11724574"
+	data-slide-index=""
+	data-caption="Conservatives want to make it easier to mail alcohol between provinces"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11724574/interprovincial-trade-alcohol-canada-post-conservatives/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/03/65d8d48795fb6d56ed81e933d2e7c96a7e8b0c1d474f17fa34f7d7c1738fc664.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=510 data-ratio=0.67									loading="lazy"
+								width="720" height="510" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/65d8d48795fb6d56ed81e933d2e7c96a7e8b0c1d474f17fa34f7d7c1738fc664.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/65d8d48795fb6d56ed81e933d2e7c96a7e8b0c1d474f17fa34f7d7c1738fc664.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/65d8d48795fb6d56ed81e933d2e7c96a7e8b0c1d474f17fa34f7d7c1738fc664.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Conservatives want to make it easier to mail alcohol between provinces" data-title>Conservatives want to make it easier to mail alcohol between provinces</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">1 hour</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-10"
+	data-post-id="11724487"
+	data-slide-index=""
+	data-caption="U.S. says 140 troops injured in Iran war as both sides sharpen threats"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11724487/iran-war-latest-march-10-us-injuries/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/03/Iran-Lebanon-Israel-war-March-10-e1773175915570.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/Iran-Lebanon-Israel-war-March-10-e1773175915570.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/Iran-Lebanon-Israel-war-March-10-e1773175915570.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/Iran-Lebanon-Israel-war-March-10-e1773175915570.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="U.S. says 140 troops injured in Iran war as both sides sharpen threats" data-title>U.S. says 140 troops injured in Iran war as both sides sharpen threats</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">1 hour</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    is-hidden"
+	data-container-id="stories-item-11"
+	data-post-id="11724255"
+	data-slide-index=""
+	data-caption="&#8216;Dawson&#8217;s Creek&#8217; star Joshua Jackson breaks silence on James Van Der Beek&#8217;s death"
+		data-ad-fallback=false>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11724255/joshua-jackson-breaks-silence-james-van-der-beek-death/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -1878,22 +2009,22 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Entertainment</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">1 hour</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">3 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
 		</a>
 	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-8"
+<li class="c-posts__item    is-hidden"
+	data-container-id="stories-item-12"
 	data-post-id="11722605"
 	data-slide-index=""
 	data-caption="Ultra-processed foods may be linked to behavioural issues in kids: study"
-		>
+		data-ad-fallback=false>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11722605/ultra-processed-foods-children-study/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:11}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1911,139 +2042,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Health</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">1 hour</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-9"
-	data-post-id="11724151"
-	data-slide-index=""
-	data-caption="Florida man, 22, dies after snorkelling incident in state&#8217;s St. Johns River"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11724151/florida-man-samuel-oche-dead-snorkelling-incident-st-johns-river/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/03/florida-man-drowns-st-johns-river.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
-								width="720" height="504" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/florida-man-drowns-st-johns-river.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/florida-man-drowns-st-johns-river.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/florida-man-drowns-st-johns-river.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Florida man, 22, dies after snorkelling incident in state&#8217;s St. Johns River" data-title>Florida man, 22, dies after snorkelling incident in state&#8217;s St. Johns River</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>U.S. News</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-10"
-	data-post-id="11723579"
-	data-slide-index=""
-	data-caption="Reports of UFO sightings in Canada jumped last year. What&#8217;s going on?"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11723579/ufo-sightings-in-canada-2025/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/03/alien-posing.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/alien-posing.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/alien-posing.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/alien-posing.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Reports of UFO sightings in Canada jumped last year. What&#8217;s going on?" data-title>Reports of UFO sightings in Canada jumped last year. What&#8217;s going on?</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Trending</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    is-hidden"
-	data-container-id="stories-item-11"
-	data-post-id="11724079"
-	data-slide-index=""
-	data-caption="Why the Iran war is making mortgage renewal feel like a ‘roller-coaster’"
-		data-ad-fallback=false>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11724079/iran-war-mortgage-renewal/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/03/Mortgage-renewal-Canada.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/Mortgage-renewal-Canada.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/Mortgage-renewal-Canada.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/Mortgage-renewal-Canada.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Why the Iran war is making mortgage renewal feel like a ‘roller-coaster’" data-title>Why the Iran war is making mortgage renewal feel like a ‘roller-coaster’</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Consumer</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">3 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    is-hidden"
-	data-container-id="stories-item-12"
-	data-post-id="11723638"
-	data-slide-index=""
-	data-caption="Zorro Ranch: New Mexico authorities search former Epstein property"
-		data-ad-fallback=false>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11723638/jeffrey-epstein-zorro-ranch-new-mexico-property-search/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:11}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/03/zorro-ranch-search.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
-								width="720" height="504" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/zorro-ranch-search.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/zorro-ranch-search.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/zorro-ranch-search.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Zorro Ranch: New Mexico authorities search former Epstein property" data-title>Zorro Ranch: New Mexico authorities search former Epstein property</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Crime</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">6 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
@@ -2061,10 +2060,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay="true"
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69b07e2240893"
+			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69b0995538480"
 			data-displayinline-video-id="49a91e7f-1023-430f-8d66-561055f3d0f7"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69b07e2240893"
+    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69b0995538480"
     		    			data-displayinline-playlist="49a91e7f-1023-430f-8d66-561055f3d0f7"
     									data-displayinline-container="mini-ott"
 																data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;recent_terms_datastore&quot;,&quot;type&quot;:&quot;wlo_option&quot;}}"
@@ -2195,7 +2194,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Georgia teacher dies after high school toilet paper prank: U.S. reports" data-title>Georgia teacher dies after high school toilet paper prank: U.S. reports</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">24,369</span>
+							<span class="c-posts__info c-posts__info--highlight">25,116</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2225,7 +2224,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Family of Tumbler Ridge shooting survivor sues OpenAI" data-title>Family of Tumbler Ridge shooting survivor sues OpenAI</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">19,302</span>
+							<span class="c-posts__info c-posts__info--highlight">19,839</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2255,7 +2254,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Canada &#8216;will not be participating&#8217; in Iran war, defence minister says" data-title>Canada &#8216;will not be participating&#8217; in Iran war, defence minister says</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">14,032</span>
+							<span class="c-posts__info c-posts__info--highlight">14,356</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2285,7 +2284,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Trump says Iran war to end soon, &#8216;disappointed&#8217; in new supreme leader pick" data-title>Trump says Iran war to end soon, &#8216;disappointed&#8217; in new supreme leader pick</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">9,618</span>
+							<span class="c-posts__info c-posts__info--highlight">9,876</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2315,7 +2314,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Boston lead singer Tommy DeCarlo dead at 60" data-title>Boston lead singer Tommy DeCarlo dead at 60</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">7,593</span>
+							<span class="c-posts__info c-posts__info--highlight">7,777</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2423,7 +2422,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Georgia teacher dies after high school toilet paper prank: U.S. reports" data-title>Georgia teacher dies after high school toilet paper prank: U.S. reports</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">24,369</span>
+							<span class="c-posts__info c-posts__info--highlight">25,116</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2453,7 +2452,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Family of Tumbler Ridge shooting survivor sues OpenAI" data-title>Family of Tumbler Ridge shooting survivor sues OpenAI</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">19,302</span>
+							<span class="c-posts__info c-posts__info--highlight">19,839</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2483,7 +2482,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Canada &#8216;will not be participating&#8217; in Iran war, defence minister says" data-title>Canada &#8216;will not be participating&#8217; in Iran war, defence minister says</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">14,032</span>
+							<span class="c-posts__info c-posts__info--highlight">14,356</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2513,7 +2512,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Trump says Iran war to end soon, &#8216;disappointed&#8217; in new supreme leader pick" data-title>Trump says Iran war to end soon, &#8216;disappointed&#8217; in new supreme leader pick</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">9,618</span>
+							<span class="c-posts__info c-posts__info--highlight">9,876</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2543,7 +2542,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Boston lead singer Tommy DeCarlo dead at 60" data-title>Boston lead singer Tommy DeCarlo dead at 60</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">7,593</span>
+							<span class="c-posts__info c-posts__info--highlight">7,777</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2651,6 +2650,106 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=4								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-13"
+	data-post-id="11724643"
+	data-slide-index=""
+	data-caption="Poilievre suggests &#8216;Liberal open borders&#8217; have allowed criminals to enter Canada"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/video/11724643/poilievre-suggests-liberal-open-borders-have-allowed-criminals-to-enter-canada/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://i0.wp.com/media.globalnews.ca/videostatic/news/1ctr9evp92-cdtn8mv7bi/Carney-qp-web.jpg?h=article-hero-560-keepratio&#038;w=article-hero-small-keepratio&#038;crop=1&#038;quality=70&#038;strip=all													loading="lazy"
+								width="article-hero-small-keepratio" height="article-hero-560-keepratio" alt="" 
+						/>
+									<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon c-posts__icon--video">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+				</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Poilievre suggests &#8216;Liberal open borders&#8217; have allowed criminals to enter Canada" data-title>Poilievre suggests &#8216;Liberal open borders&#8217; have allowed criminals to enter Canada</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
+																<div class="c-posts__info" data-date >46 mins</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-14"
+	data-post-id="11724600"
+	data-slide-index=""
+	data-caption="LNG Canada ramping up production, exports amid Iran war, data suggests"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11724600/iran-war-oil-energy-lng-canada/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/03/LNG-Canada-March-10-e1773177866875.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/LNG-Canada-March-10-e1773177866875.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/LNG-Canada-March-10-e1773177866875.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/LNG-Canada-March-10-e1773177866875.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="LNG Canada ramping up production, exports amid Iran war, data suggests" data-title>LNG Canada ramping up production, exports amid Iran war, data suggests</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Economy</div>
+																<div class="c-posts__info" data-date >54 mins</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-15"
+	data-post-id="11724487"
+	data-slide-index=""
+	data-caption="U.S. says 140 troops injured in Iran war as both sides sharpen threats"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11724487/iran-war-latest-march-10-us-injuries/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/03/Iran-Lebanon-Israel-war-March-10-e1773175915570.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/Iran-Lebanon-Israel-war-March-10-e1773175915570.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/Iran-Lebanon-Israel-war-March-10-e1773175915570.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/Iran-Lebanon-Israel-war-March-10-e1773175915570.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="U.S. says 140 troops injured in Iran war as both sides sharpen threats" data-title>U.S. says 140 troops injured in Iran war as both sides sharpen threats</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
+																<div class="c-posts__info" data-date >1 hour</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-16"
 	data-post-id="11724357"
 	data-slide-index=""
 	data-caption="&#8216;Absolutely unacceptable&#8217;: Ford condemns shooting of Toronto synagogues, US consulate"
@@ -2658,7 +2757,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/video/11724357/sleeper-cells-all-over-the-world-ford-reacts-to-shootings-of-synagogues-us-consulate/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -2680,106 +2779,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
-																<div class="c-posts__info" data-date >1 hour</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-14"
-	data-post-id="11724079"
-	data-slide-index=""
-	data-caption="Why the Iran war is making mortgage renewal feel like a ‘roller-coaster’"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11724079/iran-war-mortgage-renewal/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/03/Mortgage-renewal-Canada.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/Mortgage-renewal-Canada.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/Mortgage-renewal-Canada.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/Mortgage-renewal-Canada.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Why the Iran war is making mortgage renewal feel like a ‘roller-coaster’" data-title>Why the Iran war is making mortgage renewal feel like a ‘roller-coaster’</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Consumer</div>
-																<div class="c-posts__info" data-date >3 hours</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-15"
-	data-post-id="11724176"
-	data-slide-index=""
-	data-caption="Poilievre cites Global News investigation that found 700 agents of Iran operating in Canada"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/video/11724176/poilievre-cites-global-news-investigation-that-found-700-agents-of-iran-operating-in-canada/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://i0.wp.com/media.globalnews.ca/videostatic/news/n82aldinru-j5ld8iqrke/Pierre-Global-debate-Shoutout_thumbnail_720x1280_.jpg?h=article-hero-560-keepratio&#038;w=article-hero-small-keepratio&#038;crop=1&#038;quality=70&#038;strip=all													loading="lazy"
-								width="article-hero-small-keepratio" height="article-hero-560-keepratio" alt="" 
-						/>
-									<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon c-posts__icon--video">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-				</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Poilievre cites Global News investigation that found 700 agents of Iran operating in Canada" data-title>Poilievre cites Global News investigation that found 700 agents of Iran operating in Canada</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
-																<div class="c-posts__info" data-date >3 hours</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-16"
-	data-post-id="11723965"
-	data-slide-index=""
-	data-caption="Fewer Canadians abroad seeking help as thousands flee Middle East: Anand"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11723965/iran-war-middle-east-canadians-update/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/03/Iran-Turkey-border-march-10-e1773160037428.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/Iran-Turkey-border-march-10-e1773160037428.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/Iran-Turkey-border-march-10-e1773160037428.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/Iran-Turkey-border-march-10-e1773160037428.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Fewer Canadians abroad seeking help as thousands flee Middle East: Anand" data-title>Fewer Canadians abroad seeking help as thousands flee Middle East: Anand</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
 																<div class="c-posts__info" data-date >3 hours</div>
 																			</div>
 									</div>
@@ -2953,8 +2952,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-miniplayer"
 			data-displayinline-video-id="11724018"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11724018,11723272,11723336,11723462,11723824/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F4obq7g45es-cwvgofx49s%2FTPS_THUMB.mp4.00_00_01_21.Still001.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
-    		    			data-displayinline-playlist="11724018,11723272,11723336,11723462,11723824"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11724018,11723336,11723281,11723272,11723824/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F4obq7g45es-cwvgofx49s%2FTPS_THUMB.mp4.00_00_01_21.Still001.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
+    		    			data-displayinline-playlist="11724018,11723336,11723281,11723272,11723824"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;&#039;Definitely a national security incident&#039;: Police investigating after shots fired at US consulate&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;toronto&quot;,&quot;crime&quot;],&quot;keywords&quot;:[&quot;police&quot;,&quot;shooting&quot;,&quot;short-clip&quot;,&quot;top-news&quot;,&quot;us-consulate&quot;]}}"
 			    		>
@@ -3022,8 +3021,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11724018"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11724018,11723272,11723336,11723462,11723824/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11724018,11723272,11723336,11723462,11723824"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11724018,11723336,11723281,11723272,11723824/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11724018,11723336,11723281,11723272,11723824"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="Toronto police and RCMP are investigating after a shooting outside the U.S. consulate in the city’s downtown core, calling it a national security incident.  "
 			>
@@ -3044,40 +3043,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Tumbler Ridge family sues OpenAI" data-slide-index="1">
-	<a href="https://globalnews.ca/video/11723272/tumbler-ridge-family-sues-openai/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11723272"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11723272,11723336,11723462,11723824,11724018/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11723272,11723336,11723462,11723824,11724018"
-			data-video-carousel-label="Crime"
-			data-video-carousel-content="A Tumbler Ridge family is suing tech giant OpenAI over the mass shooting that killed eight people and injured two others last month. In a Global News exclusive, Catherine Urquhart reports that the company behind ChatGPT is accused of not doing enough to prevent the attack that left 12-year old Maya Gebala critically injured."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/9j5sbmolkt-4qcg93zen1/WEB_TR_PIC.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Crime</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Tumbler Ridge family sues OpenAI</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Iran war: How rising oil prices will affect Canadian grocery prices, mortgages" data-slide-index="2">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Iran war: How rising oil prices will affect Canadian grocery prices, mortgages" data-slide-index="1">
 	<a href="https://globalnews.ca/video/11723336/iran-war-how-rising-oil-prices-will-affect-canadian-grocery-prices-mortgages/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11723336"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11723336,11723462,11723824,11724018,11723272/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11723336,11723462,11723824,11724018,11723272"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11723336,11723281,11723272,11723824,11724018/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11723336,11723281,11723272,11723824,11724018"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="Oil prices have risen since the start of the U.S. and Israel&#039;s war on Iran, and the repercussions go beyond increasing gas prices. Anne Gaviola explains how the violent conflict will also affect grocery prices and mortgages in Canada."
 			>
@@ -3098,18 +3070,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Fire breaks out at Mission seniors&#8217; home" data-slide-index="3">
-	<a href="https://globalnews.ca/video/11723462/fire-breaks-out-at-mission-seniors-home/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Unfinished YVR parkade could be demolished" data-slide-index="2">
+	<a href="https://globalnews.ca/video/11723281/unfinished-yvr-parkade-could-be-demolished/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11723462"
+					data-video-id="11723281"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11723462,11723824,11724018,11723272,11723336/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11723462,11723824,11724018,11723272,11723336"
-			data-video-carousel-label="Fire"
-			data-video-carousel-content="A huge fire broke out at Chartwell Carrington House in Mission on Monday evening. Residents were forced to evacuate as black smoke and flames filled the sky. Kareem Gouda has the latest. "
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11723281,11723272,11723824,11724018,11723336/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11723281,11723272,11723824,11724018,11723336"
+			data-video-carousel-label="Money"
+			data-video-carousel-content="Six years after construction was halted, the new parkade at Vancouver International Airport will likely never see a parked car, and in fact could be heading for an appointment with the wrecking ball.  Jordan Armstrong reports."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/a2te6cnhsz-n9n2ypa3uq/mission_fire_thumbnail_1280x720_.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/y9movwptda-75iavldesm/WEB_YVR_NEW_PARKADE_TEAR_DOWN.png?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3118,9 +3090,36 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>
 		<div class="l-videoCarousel__details c-posts__details">
 							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Fire</div>
+					<div class="c-posts__info c-posts__info--highlight">Money</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Fire breaks out at Mission seniors&#8217; home</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Unfinished YVR parkade could be demolished</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Tumbler Ridge family sues OpenAI" data-slide-index="3">
+	<a href="https://globalnews.ca/video/11723272/tumbler-ridge-family-sues-openai/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11723272"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11723272,11723824,11724018,11723336,11723281/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11723272,11723824,11724018,11723336,11723281"
+			data-video-carousel-label="Crime"
+			data-video-carousel-content="A Tumbler Ridge family is suing tech giant OpenAI over the mass shooting that killed eight people and injured two others last month. In a Global News exclusive, Catherine Urquhart reports that the company behind ChatGPT is accused of not doing enough to prevent the attack that left 12-year old Maya Gebala critically injured."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/9j5sbmolkt-4qcg93zen1/WEB_TR_PIC.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Crime</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Tumbler Ridge family sues OpenAI</span></div>
 					</div>
 	</a>
 </li>
@@ -3130,8 +3129,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11723824"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11723824,11724018,11723272,11723336,11723462/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11723824,11724018,11723272,11723336,11723462"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11723824,11724018,11723336,11723281,11723272/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11723824,11724018,11723336,11723281,11723272"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="In a take-note House of Commons debate on Monday in Ottawa, Foreign Affairs Minister Anita Anand established Canada&#039;s position that it would &quot;not get involved&quot; in the United States and Israel&#039;s war in Iran. She added that &quot;the US strikes come as a result of a failure of the international order.&quot;"
 			>
@@ -3184,19 +3183,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11723272,11723336,11723462,11723824/#autoplay&#038;stickyiframe=home-miniplayer_11723272"
+			href="https://globalnews.ca/video/embed/playlist/11723336,11723281,11723272,11723824/#autoplay&#038;stickyiframe=home-miniplayer_11723336"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11723272"
+			data-displayinline-player-id="home-miniplayer_11723336"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11723272,11723336,11723462,11723824/#autoplay&#038;stickyiframe=home-miniplayer_11723272"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11723336,11723281,11723272,11723824/#autoplay&#038;stickyiframe=home-miniplayer_11723336"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/9j5sbmolkt-4qcg93zen1/WEB_TR_PIC.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/nkyaa4vyil-nwtq7byu24/260309-ANNE.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Tumbler Ridge family sues OpenAI'"
+					alt="Click to play video 'Iran war: How rising oil prices will affect Canadian grocery prices, mortgages'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3205,11 +3204,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11723272/tumbler-ridge-family-sues-openai/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11723336/iran-war-how-rising-oil-prices-will-affect-canadian-grocery-prices-mortgages/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Crime</div>
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Tumbler Ridge family sues OpenAI</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Iran war: How rising oil prices will affect Canadian grocery prices, mortgages</span></div>
 		</a>
 	</div>
 </li>
@@ -3239,19 +3238,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11723336,11723462,11723824,11723272/#autoplay&#038;stickyiframe=home-miniplayer_11723336"
+			href="https://globalnews.ca/video/embed/playlist/11723281,11723272,11723824,11723336/#autoplay&#038;stickyiframe=home-miniplayer_11723281"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11723336"
+			data-displayinline-player-id="home-miniplayer_11723281"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11723336,11723462,11723824,11723272/#autoplay&#038;stickyiframe=home-miniplayer_11723336"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11723281,11723272,11723824,11723336/#autoplay&#038;stickyiframe=home-miniplayer_11723281"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/nkyaa4vyil-nwtq7byu24/260309-ANNE.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/y9movwptda-75iavldesm/WEB_YVR_NEW_PARKADE_TEAR_DOWN.png?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Iran war: How rising oil prices will affect Canadian grocery prices, mortgages'"
+					alt="Click to play video 'Unfinished YVR parkade could be demolished'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3260,11 +3259,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11723336/iran-war-how-rising-oil-prices-will-affect-canadian-grocery-prices-mortgages/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11723281/unfinished-yvr-parkade-could-be-demolished/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+					<div class="c-posts__info c-posts__info--highlight">Money</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Iran war: How rising oil prices will affect Canadian grocery prices, mortgages</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Unfinished YVR parkade could be demolished</span></div>
 		</a>
 	</div>
 </li>
@@ -3272,19 +3271,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11723462,11723824,11723272,11723336/#autoplay&#038;stickyiframe=home-miniplayer_11723462"
+			href="https://globalnews.ca/video/embed/playlist/11723272,11723824,11723336,11723281/#autoplay&#038;stickyiframe=home-miniplayer_11723272"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11723462"
+			data-displayinline-player-id="home-miniplayer_11723272"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11723462,11723824,11723272,11723336/#autoplay&#038;stickyiframe=home-miniplayer_11723462"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11723272,11723824,11723336,11723281/#autoplay&#038;stickyiframe=home-miniplayer_11723272"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/a2te6cnhsz-n9n2ypa3uq/mission_fire_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/9j5sbmolkt-4qcg93zen1/WEB_TR_PIC.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Fire breaks out at Mission seniors&#8217; home'"
+					alt="Click to play video 'Tumbler Ridge family sues OpenAI'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3293,11 +3292,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11723462/fire-breaks-out-at-mission-seniors-home/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11723272/tumbler-ridge-family-sues-openai/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Fire</div>
+					<div class="c-posts__info c-posts__info--highlight">Crime</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Fire breaks out at Mission seniors&#8217; home</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Tumbler Ridge family sues OpenAI</span></div>
 		</a>
 	</div>
 </li>
@@ -3305,11 +3304,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11723824,11723272,11723336,11723462/#autoplay&#038;stickyiframe=home-miniplayer_11723824"
+			href="https://globalnews.ca/video/embed/playlist/11723824,11723336,11723281,11723272/#autoplay&#038;stickyiframe=home-miniplayer_11723824"
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11723824"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11723824,11723272,11723336,11723462/#autoplay&#038;stickyiframe=home-miniplayer_11723824"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11723824,11723336,11723281,11723272/#autoplay&#038;stickyiframe=home-miniplayer_11723824"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3354,8 +3353,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-miniplayer-variant"
 			data-displayinline-video-id="11724018"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11724018,11723336,11724260,11723324,11723824/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F4obq7g45es-cwvgofx49s%2FTPS_THUMB.mp4.00_00_01_21.Still001.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
-    		    			data-displayinline-playlist="11724018,11723336,11724260,11723324,11723824"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11724018,11724260,11723336,11723985,11723824/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F4obq7g45es-cwvgofx49s%2FTPS_THUMB.mp4.00_00_01_21.Still001.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
+    		    			data-displayinline-playlist="11724018,11724260,11723336,11723985,11723824"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;&#039;Definitely a national security incident&#039;: Police investigating after shots fired at US consulate&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;toronto&quot;,&quot;crime&quot;],&quot;keywords&quot;:[&quot;police&quot;,&quot;shooting&quot;,&quot;short-clip&quot;,&quot;top-news&quot;,&quot;us-consulate&quot;]}}"
 			    		>
@@ -3423,8 +3422,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11724018"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11724018,11723336,11724260,11723324,11723824/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11724018,11723336,11724260,11723324,11723824"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11724018,11724260,11723336,11723985,11723824/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11724018,11724260,11723336,11723985,11723824"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="Toronto police and RCMP are investigating after a shooting outside the U.S. consulate in the city’s downtown core, calling it a national security incident.  "
 			>
@@ -3445,40 +3444,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Iran war: How rising oil prices will affect Canadian grocery prices, mortgages" data-slide-index="1">
-	<a href="https://globalnews.ca/video/11723336/iran-war-how-rising-oil-prices-will-affect-canadian-grocery-prices-mortgages/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11723336"
-			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11723336,11724260,11723324,11723824,11724018/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11723336,11724260,11723324,11723824,11724018"
-			data-video-carousel-label="Canada"
-			data-video-carousel-content="Oil prices have risen since the start of the U.S. and Israel&#039;s war on Iran, and the repercussions go beyond increasing gas prices. Anne Gaviola explains how the violent conflict will also affect grocery prices and mortgages in Canada."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/nkyaa4vyil-nwtq7byu24/260309-ANNE.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Iran war: How rising oil prices will affect Canadian grocery prices, mortgages</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Allan Legere, New Brunswick’s infamous ‘Monster of the Miramichi,’ dies in prison" data-slide-index="2">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Allan Legere, New Brunswick’s infamous ‘Monster of the Miramichi,’ dies in prison" data-slide-index="1">
 	<a href="https://globalnews.ca/video/11724260/allan-legere-new-brunswicks-infamous-monster-of-the-miramichi-dies-in-prison/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11724260"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11724260,11723324,11723824,11724018,11723336/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11724260,11723324,11723824,11724018,11723336"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11724260,11723336,11723985,11723824,11724018/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11724260,11723336,11723985,11723824,11724018"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="Correctional Service Canada has confirmed that Allan Legere — one of Canada’s most notorious, violent offenders — has died while serving a life sentence at the Edmonton Institution. The 78-year-old convicted murderer and rapist known as the &quot;Monster of the Miramichi&quot; killed five people in New Brunswick in the late 1980s."
 			>
@@ -3499,18 +3471,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="No sign of Iran war de-escalation as oil prices rise" data-slide-index="3">
-	<a href="https://globalnews.ca/video/11723324/no-sign-of-iran-war-de-escalation-as-oil-prices-rise/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Iran war: How rising oil prices will affect Canadian grocery prices, mortgages" data-slide-index="2">
+	<a href="https://globalnews.ca/video/11723336/iran-war-how-rising-oil-prices-will-affect-canadian-grocery-prices-mortgages/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11723324"
+					data-video-id="11723336"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11723324,11723824,11724018,11723336,11724260/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11723324,11723824,11724018,11723336,11724260"
-			data-video-carousel-label="Politics"
-			data-video-carousel-content="The U.S. and Israel have not let up on their intense attacks against Iran, which is not backing down either. Redmond Shannon looks at the relentless airstrikes across the Middle East, and the growing concerns about rising oil prices."
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11723336,11723985,11723824,11724018,11724260/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11723336,11723985,11723824,11724018,11724260"
+			data-video-carousel-label="Canada"
+			data-video-carousel-content="Oil prices have risen since the start of the U.S. and Israel&#039;s war on Iran, and the repercussions go beyond increasing gas prices. Anne Gaviola explains how the violent conflict will also affect grocery prices and mortgages in Canada."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/c52nwuy265-qr6hb8g4ja/260309-REDMOND.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/nkyaa4vyil-nwtq7byu24/260309-ANNE.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3519,9 +3491,36 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>
 		<div class="l-videoCarousel__details c-posts__details">
 							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Politics</div>
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">No sign of Iran war de-escalation as oil prices rise</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Iran war: How rising oil prices will affect Canadian grocery prices, mortgages</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Wait times costing Canadians billions according to new research from the Fraser Institute" data-slide-index="3">
+	<a href="https://globalnews.ca/video/11723985/wait-times-costing-canadians-billions-according-to-new-research-from-the-fraser-institute/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11723985"
+			data-video-player-id="home-miniplayer-variant"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11723985,11723824,11724018,11724260,11723336/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11723985,11723824,11724018,11724260,11723336"
+			data-video-carousel-label="Canada"
+			data-video-carousel-content="Wait times for medical care are costing Canadians billions of dollars, according to research from the Fraser Institute. A new study says patients lost more than $4.2 billion in wages and productivity last year while waiting for treatment. Katherine Ward has this story and more in health matters for March 10, 2026. "
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/m3xisd3lpd-7nyaowr241/HEALTH_MATTERS_MARCH_10TH_ONLINE_STILL.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Wait times costing Canadians billions according to new research from the Fraser Institute</span></div>
 					</div>
 	</a>
 </li>
@@ -3531,8 +3530,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11723824"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11723824,11724018,11723336,11724260,11723324/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11723824,11724018,11723336,11724260,11723324"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11723824,11724018,11724260,11723336,11723985/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11723824,11724018,11724260,11723336,11723985"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="In a take-note House of Commons debate on Monday in Ottawa, Foreign Affairs Minister Anita Anand established Canada&#039;s position that it would &quot;not get involved&quot; in the United States and Israel&#039;s war in Iran. She added that &quot;the US strikes come as a result of a failure of the international order.&quot;"
 			>
@@ -3585,19 +3584,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11723336,11724260,11723324,11723824/#autoplay&#038;stickyiframe=home-miniplayer-variant_11723336"
+			href="https://globalnews.ca/video/embed/playlist/11724260,11723336,11723985,11723824/#autoplay&#038;stickyiframe=home-miniplayer-variant_11724260"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11723336"
+			data-displayinline-player-id="home-miniplayer-variant_11724260"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11723336,11724260,11723324,11723824/#autoplay&#038;stickyiframe=home-miniplayer-variant_11723336"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11724260,11723336,11723985,11723824/#autoplay&#038;stickyiframe=home-miniplayer-variant_11724260"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/nkyaa4vyil-nwtq7byu24/260309-ANNE.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/skyxsjbztg-qq6j8jkue9/TUE_LEGERE_SITE_THUMB_100326.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Iran war: How rising oil prices will affect Canadian grocery prices, mortgages'"
+					alt="Click to play video 'Allan Legere, New Brunswick’s infamous ‘Monster of the Miramichi,’ dies in prison'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3606,11 +3605,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11723336/iran-war-how-rising-oil-prices-will-affect-canadian-grocery-prices-mortgages/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11724260/allan-legere-new-brunswicks-infamous-monster-of-the-miramichi-dies-in-prison/" class="c-posts__details">
 				<div class="c-posts__about">
 					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Iran war: How rising oil prices will affect Canadian grocery prices, mortgages</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Allan Legere, New Brunswick’s infamous ‘Monster of the Miramichi,’ dies in prison</span></div>
 		</a>
 	</div>
 </li>
@@ -3640,19 +3639,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11724260,11723324,11723824,11723336/#autoplay&#038;stickyiframe=home-miniplayer-variant_11724260"
+			href="https://globalnews.ca/video/embed/playlist/11723336,11723985,11723824,11724260/#autoplay&#038;stickyiframe=home-miniplayer-variant_11723336"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11724260"
+			data-displayinline-player-id="home-miniplayer-variant_11723336"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11724260,11723324,11723824,11723336/#autoplay&#038;stickyiframe=home-miniplayer-variant_11724260"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11723336,11723985,11723824,11724260/#autoplay&#038;stickyiframe=home-miniplayer-variant_11723336"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/skyxsjbztg-qq6j8jkue9/TUE_LEGERE_SITE_THUMB_100326.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/nkyaa4vyil-nwtq7byu24/260309-ANNE.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Allan Legere, New Brunswick’s infamous ‘Monster of the Miramichi,’ dies in prison'"
+					alt="Click to play video 'Iran war: How rising oil prices will affect Canadian grocery prices, mortgages'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3661,11 +3660,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11724260/allan-legere-new-brunswicks-infamous-monster-of-the-miramichi-dies-in-prison/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11723336/iran-war-how-rising-oil-prices-will-affect-canadian-grocery-prices-mortgages/" class="c-posts__details">
 				<div class="c-posts__about">
 					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Allan Legere, New Brunswick’s infamous ‘Monster of the Miramichi,’ dies in prison</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Iran war: How rising oil prices will affect Canadian grocery prices, mortgages</span></div>
 		</a>
 	</div>
 </li>
@@ -3673,19 +3672,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11723324,11723824,11723336,11724260/#autoplay&#038;stickyiframe=home-miniplayer-variant_11723324"
+			href="https://globalnews.ca/video/embed/playlist/11723985,11723824,11724260,11723336/#autoplay&#038;stickyiframe=home-miniplayer-variant_11723985"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11723324"
+			data-displayinline-player-id="home-miniplayer-variant_11723985"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11723324,11723824,11723336,11724260/#autoplay&#038;stickyiframe=home-miniplayer-variant_11723324"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11723985,11723824,11724260,11723336/#autoplay&#038;stickyiframe=home-miniplayer-variant_11723985"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/c52nwuy265-qr6hb8g4ja/260309-REDMOND.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/m3xisd3lpd-7nyaowr241/HEALTH_MATTERS_MARCH_10TH_ONLINE_STILL.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'No sign of Iran war de-escalation as oil prices rise'"
+					alt="Click to play video 'Wait times costing Canadians billions according to new research from the Fraser Institute'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3694,11 +3693,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11723324/no-sign-of-iran-war-de-escalation-as-oil-prices-rise/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11723985/wait-times-costing-canadians-billions-according-to-new-research-from-the-fraser-institute/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Politics</div>
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">No sign of Iran war de-escalation as oil prices rise</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Wait times costing Canadians billions according to new research from the Fraser Institute</span></div>
 		</a>
 	</div>
 </li>
@@ -3706,11 +3705,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11723824,11723336,11724260,11723324/#autoplay&#038;stickyiframe=home-miniplayer-variant_11723824"
+			href="https://globalnews.ca/video/embed/playlist/11723824,11724260,11723336,11723985/#autoplay&#038;stickyiframe=home-miniplayer-variant_11723824"
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant_11723824"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11723824,11723336,11724260,11723324/#autoplay&#038;stickyiframe=home-miniplayer-variant_11723824"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11723824,11724260,11723336,11723985/#autoplay&#038;stickyiframe=home-miniplayer-variant_11723824"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3796,12 +3795,141 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11723638"
+			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11723638/jeffrey-epstein-zorro-ranch-new-mexico-property-search/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Zorro Ranch: New Mexico authorities search former Epstein property" data-title>Zorro Ranch: New Mexico authorities search former Epstein property</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						The New Mexico property was purchased by Epstein in 1993, and the property was sold by Epstein&#039;s estate in 2023 to the family of Texas businessman and politician Don Huffines.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Crime</div>
+																						<div class="c-posts__info">8 hours</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/03/zorro-ranch-search.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
+								width="720" height="504" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/zorro-ranch-search.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/zorro-ranch-search.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/zorro-ranch-search.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11723630"
+			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11723630/stock-markets-oil-prices-iran-war/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Oil prices, stocks cool Tuesday morning on hopes for early end to Iran war" data-title>Oil prices, stocks cool Tuesday morning on hopes for early end to Iran war</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						Tech shares led U.S. stocks modestly higher on Tuesday as hopes for an earlier-than-expected end to the U.S.-Israeli war on Iran persisted.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Money</div>
+																						<div class="c-posts__info">9 hours</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/03/Wall-Street-Tuesday.jpg.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/Wall-Street-Tuesday.jpg.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/Wall-Street-Tuesday.jpg.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/Wall-Street-Tuesday.jpg.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11722318"
+			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11722318/drone-attacks-iran-war-erbil-iraq/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Iraq wants to stay out of Iran war, but drone strikes are dragging it in" data-title>Iraq wants to stay out of Iran war, but drone strikes are dragging it in</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						The hub of Iraq’s northern Kurdistan region, Erbil is not involved in the Iran war but is being targeted anyway.
+						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">World</div>
+																						<div class="c-posts__info">Mar 10</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/03/Erbil-iraq-drone-attack.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/Erbil-iraq-drone-attack.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/Erbil-iraq-drone-attack.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/Erbil-iraq-drone-attack.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11722941"
+			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11722941/family-tumbler-ridge-shooting-survivor-sues-openai/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Family of Tumbler Ridge shooting survivor sues OpenAI" data-title>Family of Tumbler Ridge shooting survivor sues OpenAI</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						Eight people were killed and two others, including Maya Gebala, 12, were hurt in the tragedy. She was trying to lock the library door to protect other students when she was shot.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Crime</div>
+																						<div class="c-posts__info">Mar 9</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/02/Maya-Gebala-in-hospital-FB-Cia-Later.jpg?quality=65&#038;strip=all&#038;w=540				data-width=540 data-height=720 data-ratio=0.67									loading="lazy"
+								width="540" height="720" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/02/Maya-Gebala-in-hospital-FB-Cia-Later.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/02/Maya-Gebala-in-hospital-FB-Cia-Later.jpg?quality=65&#038;strip=all&#038;w=420 420w,https://globalnews.ca/wp-content/uploads/2026/02/Maya-Gebala-in-hospital-FB-Cia-Later.jpg?quality=65&#038;strip=all&#038;w=540 540w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
 				data-post-id="11722985"
 			>
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11722985/tiktok-canada-national-security-rules/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3833,7 +3961,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11722981/trump-iran-war-timeline-us-march-9/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3865,7 +3993,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11722703/jewish-leaders-toronto-synagogue-shootings/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3897,7 +4025,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11722866/iran-oil-prices-g7-finance-ministers/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3919,134 +4047,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								width="720" height="480" alt="" 
 												srcset='' sizes=''
 								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/Champagne-March-9-e1773090901774.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/Champagne-March-9-e1773090901774.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/Champagne-March-9-e1773090901774.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11722716"
-			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11722716/alexander-butterfield-dies/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Alexander Butterfield, White House aide who unveiled Watergate tapes, dies" data-title>Alexander Butterfield, White House aide who unveiled Watergate tapes, dies</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						Butterfield oversaw the taping system connected to voice-activated listening devices secretly placed in four locations across the White House.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
-																						<div class="c-posts__info">Mar 9</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/03/alexander-butterfield.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=578 data-ratio=0.67									loading="lazy"
-								width="720" height="578" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/alexander-butterfield.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/alexander-butterfield.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/alexander-butterfield.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11722130"
-			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11722130/iran-oil-gas-canada/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Oil price spikes will hit Canadians &#8216;throughout our economy,&#8217; experts say" data-title>Oil price spikes will hit Canadians &#8216;throughout our economy,&#8217; experts say</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						Canadian consumers are going to feel it in their wallets just about everywhere the longer the Iran war goes on, while some parts of the economy could see benefits.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Consumer</div>
-																						<div class="c-posts__info">Mar 9</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/03/Oil-Iran.jpg.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/Oil-Iran.jpg.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/Oil-Iran.jpg.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/Oil-Iran.jpg.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11722718"
-			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11722718/automaker-canadian-production-tariff-free-us-imports/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Automaker with higher Canadian production to get more tariff-free U.S. imports" data-title>Automaker with higher Canadian production to get more tariff-free U.S. imports</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						Ottawa allows automakers to import a certain quota of vehicles made in the United States tariff-free, based in part on their level of automotive assembly in Canada.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																						<div class="c-posts__info">Mar 9</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/03/Automaker-tariff-free.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/Automaker-tariff-free.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/Automaker-tariff-free.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/Automaker-tariff-free.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11722494"
-			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11722494/boston-tommy-decarlo-dead/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Boston lead singer Tommy DeCarlo dead at 60" data-title>Boston lead singer Tommy DeCarlo dead at 60</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						&#039;After being diagnosed with brain cancer last September, he fought with incredible strength and courage, right up until the very end,&#039; DeCarlo&#039;s family said in a statement.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
-																						<div class="c-posts__info">Mar 9</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/03/tommy-decarlo-dead.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
-								width="720" height="504" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/tommy-decarlo-dead.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/tommy-decarlo-dead.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/tommy-decarlo-dead.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -4129,8 +4129,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-playlist-miniplayer"
 			data-displayinline-video-id="11724018"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11724018,11723272,11723336,11723462,11723824/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F4obq7g45es-cwvgofx49s%2FTPS_THUMB.mp4.00_00_01_21.Still001.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
-    		    			data-displayinline-playlist="11724018,11723272,11723336,11723462,11723824"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11724018,11723336,11723281,11723272,11723824/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F4obq7g45es-cwvgofx49s%2FTPS_THUMB.mp4.00_00_01_21.Still001.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
+    		    			data-displayinline-playlist="11724018,11723336,11723281,11723272,11723824"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;&#039;Definitely a national security incident&#039;: Police investigating after shots fired at US consulate&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;toronto&quot;,&quot;crime&quot;],&quot;keywords&quot;:[&quot;police&quot;,&quot;shooting&quot;,&quot;short-clip&quot;,&quot;top-news&quot;,&quot;us-consulate&quot;]}}"
 			    		>
@@ -4177,7 +4177,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11724018,11723272,11723336,11723462,11723824/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11724018,11723336,11723281,11723272,11723824/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">&#8216;Definitely a national security incident&#8217;: Police investigating after shots fired at US consulate</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4198,34 +4198,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="2"
 	>
-	<a href="https://globalnews.ca/video/11723272/tumbler-ridge-family-sues-openai/"
-		title="Tumbler Ridge family sues OpenAI"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11723272"
-		data-video-label="Crime"
-		data-video-player-id="home-playlist-miniplayer"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11723272,11723336,11723462,11723824/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Tumbler Ridge family sues OpenAI</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Crime					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/9j5sbmolkt-4qcg93zen1/WEB_TR_PIC.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="3"
-	>
 	<a href="https://globalnews.ca/video/11723336/iran-war-how-rising-oil-prices-will-affect-canadian-grocery-prices-mortgages/"
 		title="Iran war: How rising oil prices will affect Canadian grocery prices, mortgages"
 		class="l-playlist__link c-posts__inner c-videoPlay"
@@ -4233,7 +4205,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11723336,11723462,11723824,11723272/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11723336,11723281,11723272,11723824/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Iran war: How rising oil prices will affect Canadian grocery prices, mortgages</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4252,25 +4224,53 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 <li class="c-posts__item l-playlist__item"
-			data-playlist-index="4"
+			data-playlist-index="3"
 	>
-	<a href="https://globalnews.ca/video/11723462/fire-breaks-out-at-mission-seniors-home/"
-		title="Fire breaks out at Mission seniors&#8217; home"
+	<a href="https://globalnews.ca/video/11723281/unfinished-yvr-parkade-could-be-demolished/"
+		title="Unfinished YVR parkade could be demolished"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11723462"
-		data-video-label="Fire"
+		data-video-id="11723281"
+		data-video-label="Money"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11723462,11723824,11723272,11723336/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11723281,11723272,11723824,11723336/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Fire breaks out at Mission seniors&#8217; home</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Unfinished YVR parkade could be demolished</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Fire					</div>
+						Money					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/a2te6cnhsz-n9n2ypa3uq/mission_fire_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/y9movwptda-75iavldesm/WEB_YVR_NEW_PARKADE_TEAR_DOWN.png?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="4"
+	>
+	<a href="https://globalnews.ca/video/11723272/tumbler-ridge-family-sues-openai/"
+		title="Tumbler Ridge family sues OpenAI"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11723272"
+		data-video-label="Crime"
+		data-video-player-id="home-playlist-miniplayer"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11723272,11723824,11723336,11723281/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Tumbler Ridge family sues OpenAI</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						Crime					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/9j5sbmolkt-4qcg93zen1/WEB_TR_PIC.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4289,7 +4289,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11723824,11723272,11723336,11723462/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11723824,11723336,11723281,11723272/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">U.S. strikes on Iran come as a result of &#8216;failure of international order&#8217;: Anand</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4325,8 +4325,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-playlist-miniplayer-variant"
 			data-displayinline-video-id="11724018"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11724018,11723336,11724260,11723324,11723824/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F4obq7g45es-cwvgofx49s%2FTPS_THUMB.mp4.00_00_01_21.Still001.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
-    		    			data-displayinline-playlist="11724018,11723336,11724260,11723324,11723824"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11724018,11724260,11723336,11723985,11723824/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F4obq7g45es-cwvgofx49s%2FTPS_THUMB.mp4.00_00_01_21.Still001.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
+    		    			data-displayinline-playlist="11724018,11724260,11723336,11723985,11723824"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;&#039;Definitely a national security incident&#039;: Police investigating after shots fired at US consulate&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;toronto&quot;,&quot;crime&quot;],&quot;keywords&quot;:[&quot;police&quot;,&quot;shooting&quot;,&quot;short-clip&quot;,&quot;top-news&quot;,&quot;us-consulate&quot;]}}"
 			    		>
@@ -4373,7 +4373,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11724018,11723336,11724260,11723324,11723824/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11724018,11724260,11723336,11723985,11723824/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">&#8216;Definitely a national security incident&#8217;: Police investigating after shots fired at US consulate</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4394,34 +4394,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="2"
 	>
-	<a href="https://globalnews.ca/video/11723336/iran-war-how-rising-oil-prices-will-affect-canadian-grocery-prices-mortgages/"
-		title="Iran war: How rising oil prices will affect Canadian grocery prices, mortgages"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11723336"
-		data-video-label="Canada"
-		data-video-player-id="home-playlist-miniplayer-variant"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11723336,11724260,11723324,11723824/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Iran war: How rising oil prices will affect Canadian grocery prices, mortgages</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/nkyaa4vyil-nwtq7byu24/260309-ANNE.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="3"
-	>
 	<a href="https://globalnews.ca/video/11724260/allan-legere-new-brunswicks-infamous-monster-of-the-miramichi-dies-in-prison/"
 		title="Allan Legere, New Brunswick’s infamous ‘Monster of the Miramichi,’ dies in prison"
 		class="l-playlist__link c-posts__inner c-videoPlay"
@@ -4429,7 +4401,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11724260,11723324,11723824,11723336/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11724260,11723336,11723985,11723824/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Allan Legere, New Brunswick’s infamous ‘Monster of the Miramichi,’ dies in prison</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4448,25 +4420,53 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 <li class="c-posts__item l-playlist__item"
-			data-playlist-index="4"
+			data-playlist-index="3"
 	>
-	<a href="https://globalnews.ca/video/11723324/no-sign-of-iran-war-de-escalation-as-oil-prices-rise/"
-		title="No sign of Iran war de-escalation as oil prices rise"
+	<a href="https://globalnews.ca/video/11723336/iran-war-how-rising-oil-prices-will-affect-canadian-grocery-prices-mortgages/"
+		title="Iran war: How rising oil prices will affect Canadian grocery prices, mortgages"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11723324"
-		data-video-label="Politics"
+		data-video-id="11723336"
+		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11723324,11723824,11723336,11724260/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11723336,11723985,11723824,11724260/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">No sign of Iran war de-escalation as oil prices rise</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Iran war: How rising oil prices will affect Canadian grocery prices, mortgages</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Politics					</div>
+						Canada					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/c52nwuy265-qr6hb8g4ja/260309-REDMOND.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/nkyaa4vyil-nwtq7byu24/260309-ANNE.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="4"
+	>
+	<a href="https://globalnews.ca/video/11723985/wait-times-costing-canadians-billions-according-to-new-research-from-the-fraser-institute/"
+		title="Wait times costing Canadians billions according to new research from the Fraser Institute"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11723985"
+		data-video-label="Canada"
+		data-video-player-id="home-playlist-miniplayer-variant"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11723985,11723824,11724260,11723336/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Wait times costing Canadians billions according to new research from the Fraser Institute</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						Canada					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/m3xisd3lpd-7nyaowr241/HEALTH_MATTERS_MARCH_10TH_ONLINE_STILL.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4485,7 +4485,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11723824,11723336,11724260,11723324/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11723824,11724260,11723336,11723985/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">U.S. strikes on Iran come as a result of &#8216;failure of international order&#8217;: Anand</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4586,14 +4586,44 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=10								>
 	<li class="c-posts__item  glide__slide  "
 	data-container-id="stories-item-17"
-	data-post-id="11664218"
+	data-post-id="11720772"
 	data-slide-index="0"
+	data-caption="6 best sleep accessories of 2026"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/the-curator/11720772/best-sleep-accessories-2026/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/03/Frame-428.png?w=336				data-width=336 data-height=252 data-ratio=0.67									loading="lazy"
+								width="336" height="252" alt="" 
+						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="6 best sleep accessories of 2026" data-title>6 best sleep accessories of 2026</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+											<div class="c-posts__info c-posts__info--highlight" data-label>The Curator</div>
+																								</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item  glide__slide  "
+	data-container-id="stories-item-18"
+	data-post-id="11664218"
+	data-slide-index="1"
 	data-caption="End-of-season winter sales: Best mattress &amp; bedding deals in Canada"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11664218/best-mattress-bedding-deals-canada/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4615,15 +4645,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-18"
+	data-container-id="stories-item-19"
 	data-post-id="11721758"
-	data-slide-index="1"
+	data-slide-index="2"
 	data-caption="20 under-$100 picks for a better night’s sleep"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11721758/sleep-picks-under-100/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4645,15 +4675,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-19"
+	data-container-id="stories-item-20"
 	data-post-id="11271469"
-	data-slide-index="2"
+	data-slide-index="3"
 	data-caption="Best mattresses in Canada for every sleep style"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11271469/best-mattresses-in-canada-for-every-sleep-style/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4675,15 +4705,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-20"
+	data-container-id="stories-item-21"
 	data-post-id="11721389"
-	data-slide-index="3"
+	data-slide-index="4"
 	data-caption="I tried the Oura Ring 4—here’s why it’s worth the hype"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11721389/oura-ring-4-review/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4705,15 +4735,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-21"
+	data-container-id="stories-item-22"
 	data-post-id="11710713"
-	data-slide-index="4"
+	data-slide-index="5"
 	data-caption="Here&#8217;s how to deep clean your bedroom"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11710713/how-to-deep-clean-your-bedding/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4735,15 +4765,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-22"
+	data-container-id="stories-item-23"
 	data-post-id="10343729"
-	data-slide-index="5"
+	data-slide-index="6"
 	data-caption="Meet 11 women trailblazers and their best-selling brands"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/10343729/international-womens-day-2026/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4765,15 +4795,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-23"
+	data-container-id="stories-item-24"
 	data-post-id="11124660"
-	data-slide-index="6"
+	data-slide-index="7"
 	data-caption="The best carry-on luggage for 2026 travel"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11124660/best-carry-on-luggage/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4795,15 +4825,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-24"
+	data-container-id="stories-item-25"
 	data-post-id="11712223"
-	data-slide-index="7"
+	data-slide-index="8"
 	data-caption="8 best fitness trackers for every budget and fitness level"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/11712223/best-fitness-trackers-2026/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4825,15 +4855,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-25"
+	data-container-id="stories-item-26"
 	data-post-id="10861365"
-	data-slide-index="8"
+	data-slide-index="9"
 	data-caption="23 best self-care gifts for at-home pampering"
 		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/the-curator/10861365/best-self-care-gifts-2026/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4845,36 +4875,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="23 best self-care gifts for at-home pampering" data-title>23 best self-care gifts for at-home pampering</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-											<div class="c-posts__info c-posts__info--highlight" data-label>The Curator</div>
-																								</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item  glide__slide  "
-	data-container-id="stories-item-26"
-	data-post-id="11321922"
-	data-slide-index="9"
-	data-caption="11 best bed frames for every style and budget"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/the-curator/11321922/best-bed-frames/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/08/Frame-424-2.png?w=336				data-width=336 data-height=252 data-ratio=0.67									loading="lazy"
-								width="336" height="252" alt="" 
-						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="11 best bed frames for every style and budget" data-title>11 best bed frames for every style and budget</span>
 			</div>
 	
 						
@@ -4968,6 +4968,68 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-27"
+	data-post-id="11722130"
+	data-slide-index=""
+	data-caption="Oil price spikes will hit Canadians &#8216;throughout our economy,&#8217; experts say"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11722130/iran-oil-gas-canada/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/03/Oil-Iran.jpg.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/Oil-Iran.jpg.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/Oil-Iran.jpg.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/Oil-Iran.jpg.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Oil price spikes will hit Canadians &#8216;throughout our economy,&#8217; experts say" data-title>Oil price spikes will hit Canadians &#8216;throughout our economy,&#8217; experts say</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >Mar 9</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-28"
+	data-post-id="11721872"
+	data-slide-index=""
+	data-caption="How Iran war is hitting fertilizer supplies: &#8216;Timing is pretty detrimental&#8217;"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11721872/fertilizer-iran-supply/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/03/potash-mine-canada.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="481" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/potash-mine-canada.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/potash-mine-canada.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/potash-mine-canada.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="How Iran war is hitting fertilizer supplies: &#8216;Timing is pretty detrimental&#8217;" data-title>How Iran war is hitting fertilizer supplies: &#8216;Timing is pretty detrimental&#8217;</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >Mar 9</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-29"
 	data-post-id="11722309"
 	data-slide-index=""
 	data-caption="Canada &#8216;will not be participating&#8217; in Iran war, defence minister says"
@@ -4975,7 +5037,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11722309/canada-iran-military-participation-mcguinty/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4988,68 +5050,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="Canada &#8216;will not be participating&#8217; in Iran war, defence minister says" data-title>Canada &#8216;will not be participating&#8217; in Iran war, defence minister says</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Mar 9</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-28"
-	data-post-id="11722509"
-	data-slide-index=""
-	data-caption="Hungary to cap gas prices as Iran war fuels global oil shocks, Orban says"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11722509/iran-oil-prices-hungary-gas-cap-orban/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/03/Viktor-Orban-file-March-9-e1773081580928.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/Viktor-Orban-file-March-9-e1773081580928.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/Viktor-Orban-file-March-9-e1773081580928.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/Viktor-Orban-file-March-9-e1773081580928.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Hungary to cap gas prices as Iran war fuels global oil shocks, Orban says" data-title>Hungary to cap gas prices as Iran war fuels global oil shocks, Orban says</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Mar 9</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-29"
-	data-post-id="11722095"
-	data-slide-index=""
-	data-caption="How the Iran war impacts your grocery bills: ‘Everything is going to go up’"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11722095/iran-war-grocery-bills-rice/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/03/Iran-war-grocery-prices.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/Iran-war-grocery-prices.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/Iran-war-grocery-prices.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/Iran-war-grocery-prices.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="How the Iran war impacts your grocery bills: ‘Everything is going to go up’" data-title>How the Iran war impacts your grocery bills: ‘Everything is going to go up’</span>
 			</div>
 	
 						
@@ -5145,6 +5145,68 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-30"
+	data-post-id="11724413"
+	data-slide-index=""
+	data-caption="&#8216;A pleasant discovery&#8217;: Historic mural restored at Edmonton housing conversion site"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11724413/historic-mural-edmonton-housing-alex-von-svoboa/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/03/mural.png?w=720													loading="lazy"
+								width="720" height="401" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/mural.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/mural.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/mural.png?w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="&#8216;A pleasant discovery&#8217;: Historic mural restored at Edmonton housing conversion site" data-title>&#8216;A pleasant discovery&#8217;: Historic mural restored at Edmonton housing conversion site</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >34 mins</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-31"
+	data-post-id="11724490"
+	data-slide-index=""
+	data-caption="Ontario&#8217;s 1st cases of another mpox variant reported in Toronto"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11724490/toronto-mpox-travel-cases-new-strain/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/03/eec72aae9155ab03ee7cfb82410b5b8cc422dd31908d5c31474a056ab5a297de.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/eec72aae9155ab03ee7cfb82410b5b8cc422dd31908d5c31474a056ab5a297de.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/eec72aae9155ab03ee7cfb82410b5b8cc422dd31908d5c31474a056ab5a297de.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/eec72aae9155ab03ee7cfb82410b5b8cc422dd31908d5c31474a056ab5a297de.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Ontario&#8217;s 1st cases of another mpox variant reported in Toronto" data-title>Ontario&#8217;s 1st cases of another mpox variant reported in Toronto</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >2 hours</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-32"
 	data-post-id="11724447"
 	data-slide-index=""
 	data-caption="High River RCMP responding to bomb threat at Notre Dame Collegiate"
@@ -5152,15 +5214,15 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11724447/notre-dame-collegiate-bomb-threat-high-river/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
-		<div class="c-posts__media  c-imageContainer"  >
+		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2013/10/high-river-school-portables.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=540 data-ratio=0.67									loading="lazy"
-								width="720" height="540" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2026/03/HIGH-RIVER-BOMB-THREAT-THUMB.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="405" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2013/10/high-river-school-portables.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2013/10/high-river-school-portables.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2013/10/high-river-school-portables.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/HIGH-RIVER-BOMB-THREAT-THUMB.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/HIGH-RIVER-BOMB-THREAT-THUMB.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/HIGH-RIVER-BOMB-THREAT-THUMB.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
@@ -5169,69 +5231,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >12 mins</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-31"
-	data-post-id="11724033"
-	data-slide-index=""
-	data-caption="Landfill search progressing for Ashlee Shingoose; Tanya Nepinak family hopeful for second search"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11724033/progress-landfill-search-ashlee-shingoose-tanya-nepinak/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/03/brady-road-landfill.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="405" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/brady-road-landfill.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/brady-road-landfill.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/brady-road-landfill.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Landfill search progressing for Ashlee Shingoose; Tanya Nepinak family hopeful for second search" data-title>Landfill search progressing for Ashlee Shingoose; Tanya Nepinak family hopeful for second search</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >14 mins</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-32"
-	data-post-id="11724455"
-	data-slide-index=""
-	data-caption="Saskatchewan to allow killings of rampant elk as last resort, if they get permits"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11724455/saskatchewan-elk-problems-kill-off/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/03/bull-elk-getty.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=576 data-ratio=0.67									loading="lazy"
-								width="720" height="576" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/bull-elk-getty.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/bull-elk-getty.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/bull-elk-getty.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Saskatchewan to allow killings of rampant elk as last resort, if they get permits" data-title>Saskatchewan to allow killings of rampant elk as last resort, if they get permits</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >21 mins</div>
+																<div class="c-posts__info" data-date >2 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5325,7 +5325,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >30 mins</div>
+																<div class="c-posts__info" data-date >2 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5356,7 +5356,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >4 hours</div>
+																<div class="c-posts__info" data-date >6 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5387,7 +5387,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >4 hours</div>
+																<div class="c-posts__info" data-date >6 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5658,7 +5658,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >8 hours</div>
+																<div class="c-posts__info" data-date >10 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5790,6 +5790,37 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-42"
+	data-post-id="11722494"
+	data-slide-index=""
+	data-caption="Boston lead singer Tommy DeCarlo dead at 60"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11722494/boston-tommy-decarlo-dead/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/03/tommy-decarlo-dead.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=504 data-ratio=0.67									loading="lazy"
+								width="720" height="504" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/tommy-decarlo-dead.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/tommy-decarlo-dead.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/tommy-decarlo-dead.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Boston lead singer Tommy DeCarlo dead at 60" data-title>Boston lead singer Tommy DeCarlo dead at 60</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >Mar 9</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-43"
 	data-post-id="11722163"
 	data-slide-index=""
 	data-caption="Live Nation, U.S. DOJ to settle lawsuit alleging music industry monopoly"
@@ -5797,7 +5828,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11722163/live-nation-ticketmaster-us-antitrust-settlement/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5820,7 +5851,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-43"
+	data-container-id="stories-item-44"
 	data-post-id="11721886"
 	data-slide-index=""
 	data-caption="Woman arrested after shots fired at Rihanna&#8217;s house while singer inside: reports"
@@ -5828,7 +5859,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11721886/rihanna-home-shooting-woman-arrested-firing-gun-beverly-hills/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -5846,37 +5877,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about ">
 																<div class="c-posts__info" data-date >Mar 9</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-44"
-	data-post-id="11717962"
-	data-slide-index=""
-	data-caption="What&#8217;s the longest song title? Ask the Rock &#8216;n&#8217; Roll Book of World Records"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11717962/rock-n-roll-book-of-world-records/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/03/CP29619608.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="443" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/CP29619608.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/CP29619608.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/CP29619608.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="What&#8217;s the longest song title? Ask the Rock &#8216;n&#8217; Roll Book of World Records" data-title>What&#8217;s the longest song title? Ask the Rock &#8216;n&#8217; Roll Book of World Records</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Mar 8</div>
 																			</div>
 									</div>
 		</a>
@@ -6687,7 +6687,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			<script async src="//static.chartbeat.com/js/chartbeat_mab.js"></script>
 			<!-- Adobe Analytics code version: JS-2.6.0. -->
 		<script type="text/javascript">
-			var gnPageData = {"context_data":{"hourofday":"16","dayofweek":"Tuesday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
+			var gnPageData = {"context_data":{"hourofday":"18","dayofweek":"Tuesday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
 		</script>
 				<!-- End Adobe Analytics code -->
 			<script>
@@ -6746,5 +6746,5 @@ var GN_OneSignalSettings = {"isCurator":"","appId":"8beb7996-b996-4ce8-a474-d488
 		
 		<div class="l-dynamicElement"></div>
 
-			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75660ba8f4","applicationID":"418684855","transactionName":"Z1BWZxdTWkAHVExRXF4adVARW1tdSV9XVVY=","queueTime":0,"applicationTime":534,"atts":"SxdBEV9JSR9EVhoCSE1I","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+			</body>
 </html>
