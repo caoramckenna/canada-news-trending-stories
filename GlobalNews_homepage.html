@@ -184,7 +184,8 @@
         }
     </script>
     	<!-- Meta Tags -->
-	<meta charset="UTF-8">
+	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"75660ba8f4",applicationID:"418684855",browserID:"419993820"};;/*! For license information please see nr-loader-rum-1.310.1.min.js.LICENSE.txt */
+(()=>{var e,t,r={163:(e,t,r)=>{"use strict";r.d(t,{j:()=>E});var n=r(384),i=r(1741);var s=r(2555);r(860).K7.genericEvents;const a="experimental.resources",o="register",c=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(2614),u=r(944),l=r(8122);const f="[data-nr-mask]",g=e=>(0,l.a)(e,(()=>{const e={feature_flags:[],experimental:{allow_registered_children:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{get allow_registered_children(){return e.feature_flags.includes(o)||e.experimental.allow_registered_children},set allow_registered_children(t){e.experimental.allow_registered_children=t},duplicate_registered_data:!1},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(a)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:d.wk,inactiveMs:d.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){c(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,u.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){c(t)?e.block_selector+=",".concat(t):""!==t&&(0,u.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,u.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var p=r(6154),h=r(9324);let m=0;const v={buildEnv:h.F3,distMethod:h.Xs,version:h.xv,originTime:p.WN},b={consented:!1},y={appMetadata:{},get consented(){return this.session?.state?.consent||b.consented},set consented(e){b.consented=e},customTransaction:void 0,denyList:void 0,disabled:!1,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++m}},_=e=>{const t=(0,l.a)(e,y),r=Object.keys(v).reduce((e,t)=>(e[t]={value:v[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)};var w=r(5701);const x=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var k=r(7836),R=r(3241);const A={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},S=e=>(0,l.a)(e,A),T=new Set;function E(e,t={},r,a){let{init:o,info:c,loader_config:d,runtime:u={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();o=e.init,c=e.info,d=e.loader_config}e.init=g(o||{}),e.loader_config=S(d||{}),c.jsAttributes??={},p.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,s.D)(c);const f=e.init,h=[c.beacon,c.errorBeacon];T.has(e.agentIdentifier)||(f.proxy.assets&&(x(f.proxy.assets),h.push(f.proxy.assets)),f.proxy.beacon&&h.push(f.proxy.beacon),e.beacons=[...h],function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach(r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let s=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return s?s(...t):n})})}(e),(0,n.US)("activatedFeatures",w.B)),u.denyList=[...f.ajax.deny_list||[],...f.ajax.block_internal?h:[]],u.ptid=e.agentIdentifier,u.loaderType=r,e.runtime=_(u),T.has(e.agentIdentifier)||(e.ee=k.ee.get(e.agentIdentifier),e.exposed=l,(0,R.W)({agentIdentifier:e.agentIdentifier,drained:!!w.B?.[e.agentIdentifier],type:"lifecycle",name:"initialize",feature:void 0,data:e.config})),T.add(e.agentIdentifier)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>o,US:()=>l,Zm:()=>c,bQ:()=>u,dV:()=>d,pV:()=>f});var n=r(6154),i=r(1863),s=r(944),a=r(1910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function d(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,a.i)(...Object.values(e.o))),e}function u(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,s.R)(69)}function l(e,t){c()[e]=t}function f(){return function(){let e=c();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),d(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>u,K7:()=>c,P3:()=>d,XX:()=>i,Yy:()=>o,df:()=>s,qY:()=>n,v4:()=>a});const n="events",i="jserrors",s="browser/blobs",a="rum",o="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},d={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.softNav]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.sessionReplay]:8,[c.logging]:9,[c.genericEvents]:10},u={[c.pageViewEvent]:a,[c.pageViewTiming]:n,[c.ajax]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:s,[c.sessionReplay]:s,[c.logging]:o,[c.genericEvents]:"ins"}},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({agentIdentifier:null,drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},1687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>d,Ze:()=>f,x3:()=>u});var n=r(3241),i=r(7836),s=r(3606),a=r(860),o=r(2646);const c={};function d(e,t){const r={staged:!1,priority:a.P3[t]||0};l(e),c[e].get(t)||c[e].set(t,r)}function u(e,t){e&&c[e]&&(c[e].get(t)&&c[e].delete(t),p(e,t,!1),c[e].size&&g(e))}function l(e){if(!e)throw new Error("agentIdentifier required");c[e]||(c[e]=new Map)}function f(e="",t="feature",r=!1){if(l(e),!e||!c[e].get(t)||r)return p(e,t);c[e].get(t).staged=!0,g(e)}function g(e){const t=Array.from(c[e]);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{c[e].delete(t),p(e,t)}))}function p(e,t,r=!0){const a=e?i.ee.get(e):i.ee,c=s.i.handlers;if(!a.aborted&&a.backlog&&c){if((0,n.W)({agentIdentifier:e,type:"lifecycle",name:"drain",feature:t}),r){const e=a.backlog[t],r=c[t];if(r){for(let t=0;e&&t<e.length;++t)h(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof o.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}a.isolatedBacklog||delete c[t],a.backlog[t]=null,a.emit("drain-"+t,[])}}function h(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],s=e[2];n.apply(i,s)}})}},1738:(e,t,r)=>{"use strict";r.d(t,{U:()=>g,Y:()=>f});var n=r(3241),i=r(9908),s=r(1863),a=r(944),o=r(5701),c=r(3969),d=r(8362),u=r(860),l=r(4261);function f(e,t,r,s){const f=s||r;!f||f[e]&&f[e]!==d.d.prototype[e]||(f[e]=function(){(0,i.p)(c.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({agentIdentifier:r.agentIdentifier,drained:!!o.B?.[r.agentIdentifier],type:"data",name:"api",feature:l.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,a.R)(23,e)}})}function g(e,t,r,n,a){const o=e.info;null===r?delete o.jsAttributes[t]:o.jsAttributes[t]=r,(a||null===r)&&(0,i.p)(l.Pl+n,[(0,s.t)(),t,r],void 0,"session",e.ee)}},1741:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(944),i=r(4261);class s{#e(e,...t){if(this[e]!==s.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},1863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},1910:(e,t,r)=>{"use strict";r.d(t,{i:()=>s});var n=r(944);const i=new Map;function s(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),s=t.includes("nrWrapper");return r||s||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},2555:(e,t,r)=>{"use strict";r.d(t,{D:()=>o,f:()=>a});var n=r(384),i=r(8122);const s={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function a(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const o=e=>(0,i.a)(e,s)},2614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>a,H3:()=>n,g:()=>d,iL:()=>c,tS:()=>o,uh:()=>i,wk:()=>s});const n="NRBA",i="SESSION",s=144e5,a=18e5,o={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},d={OFF:0,FULL:1,ERROR:2}},2646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},2843:(e,t,r)=>{"use strict";r.d(t,{G:()=>s,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function s(e,t,r){(0,n.sp)("pagehide",e,t,r)}},3241:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(6154);const i="newrelic";function s(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},3606:(e,t,r)=>{"use strict";r.d(t,{i:()=>s});var n=r(9908);s.on=a;var i=s.handlers={};function s(e,t,r,s){a(s||n.d,i,e,t,r)}function a(e,t,r,i,s){s||(s="feature"),e||(e=n.d);var a=t[s]=t[s]||{};(a[r]=a[r]||[]).push([e,i])}},3878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function s(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>s,jT:()=>n,sp:()=>i})},3969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>o,rs:()=>i,xV:()=>a,z_:()=>s});const n=r(860).K7.metrics,i="sm",s="cm",a="storeSupportabilityMetrics",o="storeEventMetrics"},4234:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(7836),i=r(1687);class s{constructor(e,t){this.agentIdentifier=e,this.ee=n.ee.get(e),this.featureName=t,this.blocked=!1}deregisterDrain(){(0,i.x3)(this.agentIdentifier,this.featureName)}}},4261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>d,BL:()=>o,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>m,Pl:()=>n,Pv:()=>R,Tb:()=>l,U2:()=>s,V1:()=>k,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>a,nb:()=>h,o5:()=>u});const n="api-",i="addPageAction",s="addToTrace",a="addRelease",o="finished",c="interaction",d="log",u="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",h="setApplicationVersion",m="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",k="measure",R="consent"},5289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>a,Qr:()=>c,sB:()=>o});var n=r(3878),i=r(6389);function s(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(s())return e();const r=(0,i.J)(e),a=setInterval(()=>{s()&&(clearInterval(a),r())},500);(0,n.sp)("load",r,t)}function o(e){if(s())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(s())return e();(0,n.sp)("popstate",e)}},5607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},5701:(e,t,r)=>{"use strict";r.d(t,{B:()=>s,t:()=>a});var n=r(3241);const i=new Set,s={};function a(e,t){const r=t.agentIdentifier;s[r]??={},e&&"object"==typeof e&&(i.has(r)||(t.ee.emit("rumresp",[e]),s[r]=e,i.add(r),(0,n.W)({agentIdentifier:r,loaded:!0,drained:!0,type:"lifecycle",name:"load",feature:void 0,data:e})))}},6154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>c,RI:()=>i,WN:()=>u,bv:()=>s,eN:()=>l,gm:()=>a,mw:()=>o,sb:()=>d});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,s="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===a?.document?.visibilityState),c=/iPad|iPhone|iPod/.test(a.navigator?.userAgent),d=c&&"undefined"==typeof SharedWorker,u=((()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)()),l=()=>"undefined"!=typeof PerformanceNavigationTiming&&a?.performance?.getEntriesByType("navigation")?.[0]?.responseStart},6389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},6630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},7699:(e,t,r)=>{"use strict";r.d(t,{It:()=>s,KC:()=>o,No:()=>i,qh:()=>a});var n=r(860);const i=16e3,s=1e6,a="SESSION_ERROR",o={[n.K7.logging]:!0,[n.K7.genericEvents]:!1,[n.K7.jserrors]:!1,[n.K7.ajax]:!1}},7836:(e,t,r)=>{"use strict";r.d(t,{P:()=>o,ee:()=>c});var n=r(384),i=r(8990),s=r(2646),a=r(5607);const o="nr@context:".concat(a.W),c=function e(t,r){var n={},a={},u={},l=!1;try{l=16===r.length&&d.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,s){!1!==s&&(s=!0);if(c.aborted&&!i)return;t&&s&&t.emit(e,r,n);var o=g(n);h(e).forEach(e=>{e.apply(o,r)});var d=v()[a[e]];d&&d.push([f,e,r,o]);return o},get:m,listeners:h,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{a[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[a[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof s.y?e:e?(0,i.I)(e,o,()=>new s.y(o)):new s.y(o)}function p(e,t){n[e]=h(e).concat(t)}function h(e){return n[e]||[]}function m(t){return u[t]=u[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),d=(0,n.Zm)();d.ee||(d.ee=c)},8122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),s=0===Object.keys(r).length?e:r;for(let a in s)if(void 0!==e[a])try{if(null===e[a]){r[a]=null;continue}Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){r[a]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},8362:(e,t,r)=>{"use strict";r.d(t,{d:()=>s});var n=r(9566),i=r(1741);class s extends i.W{agentIdentifier=(0,n.LA)(16)}},8374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},8990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},9324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>s,xv:()=>n});const n="1.310.1",i="PROD",s="CDN"},9566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>o,bz:()=>a});var n=r(6154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function s(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map(e=>"x"===e?s(t,r++).toString(16):"y"===e?(3&s()|8).toString(16):e).join("")}function o(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var o=0;o<e;o++)a.push(s(r,i++).toString(16));return a.join("")}},9908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,s){s?(s.buffer([e],i),s.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var s=n[e]={exports:{}};return r[e](s,s.exports,i),s.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce((t,r)=>(i.f[r](e,t),t),[])),i.u=e=>"nr-rum-1.310.1.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.310.1.PROD:",i.l=(r,n,s,a)=>{if(e[r])e[r].push(n);else{var o,c;if(void 0!==s)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+s){o=l;break}}if(!o){c=!0;var f={296:"sha512-8LEsRObgfHgVhp/OH+e1LIJ8trYoEGGugVcM4cNSUs2rZ3CNt/VHMq+3wUpYKaA5/dW4oR9cdBp7CsljXO+9fA=="};(o=document.createElement("script")).charset="utf-8",i.nc&&o.setAttribute("nonce",i.nc),o.setAttribute("data-webpack",t+s),o.src=r,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),f[a]&&(o.integrity=f[a])}e[r]=[n];var g=(t,n)=>{o.onerror=o.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],o.parentNode&&o.parentNode.removeChild(o),i&&i.forEach(e=>e(n)),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=g.bind(null,o.onerror),o.onload=g.bind(null,o.onload),c&&document.head.appendChild(o)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var s=new Promise((r,i)=>n=e[t]=[r,i]);r.push(n[2]=s);var a=i.p+i.u(t),o=new Error;i.l(a,r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var s=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;o.message="Loading chunk "+t+" failed: ("+s+": "+a+")",o.name="ChunkLoadError",o.type=s,o.request=a,n[1](o)}},"chunk-"+t,t)}};var t=(t,r)=>{var n,s,[a,o,c]=r,d=0;if(a.some(t=>0!==e[t])){for(n in o)i.o(o,n)&&(i.m[n]=o[n]);if(c)c(i)}for(t&&t(r);d<a.length;d++)s=a[d],i.o(e,s)&&e[s]&&e[s][0](),e[s]=0},r=self["webpackChunk:NRBA-1.310.1.PROD"]=self["webpackChunk:NRBA-1.310.1.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(8362),t=i(860);const r=Object.values(t.K7);var n=i(163);var s=i(9908),a=i(1863),o=i(4261),c=i(1738);var d=i(1687),u=i(4234),l=i(5289),f=i(6154),g=i(944),p=i(384);const h=e=>f.RI&&!0===e?.privacy.cookies_enabled;function m(e){return!!(0,p.dV)().o.MO&&h(e)&&!0===e?.session_trace.enabled}var v=i(6389),b=i(7699);class y extends u.W{constructor(e,t){super(e.agentIdentifier,t),this.agentRef=e,this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,v.J)(()=>{(0,d.Ak)(e.agentIdentifier,this.featureName),t()}))}):(0,d.Ak)(e.agentIdentifier,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;const n=async()=>{let n;await this.deferred;try{if(h(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,3305));n=t(e)}}catch(e){(0,g.R)(20,e),this.ee.emit("internal-error",[e]),(0,s.p)(b.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#t(this.featureName,n,e.init))return(0,d.Ze)(this.agentIdentifier,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,g.R)(34,e),this.abortHandler?.(),(0,d.Ze)(this.agentIdentifier,this.featureName,!0),this.loadedSuccessfully(!1),this.ee&&this.ee.abort()}};f.RI?(0,l.GG)(()=>n(),!0):n()}#t(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return m(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}}var _=i(6630),w=i(2614),x=i(3241);class k extends y{static featureName=_.T;constructor(e){var t;super(e,_.T),this.setupInspectionEvents(e.agentIdentifier),t=e,(0,c.Y)(o.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,s.p)(o.Pl+o.Fw,[(0,a.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>i.e(296).then(i.bind(i,3943)))}setupInspectionEvents(e){const t=(t,r)=>{t&&(0,x.W)({agentIdentifier:e,timeStamp:t.timeStamp,loaded:"complete"===t.target.readyState,type:"window",name:r,data:t.target.location+""})};(0,l.sB)(e=>{t(e,"DOMContentLoaded")}),(0,l.GG)(e=>{t(e,"load")}),(0,l.Qr)(e=>{t(e,"navigate")}),this.ee.on(w.tS.UPDATE,(t,r)=>{(0,x.W)({agentIdentifier:e,type:"lifecycle",name:"session",data:r})})}}class R extends e.d{constructor(e){var t;(super(),f.gm)?(this.features={},(0,p.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(k),(0,n.j)(this,e,e.loaderType||"agent"),t=this,(0,c.Y)(o.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,c.U)(t,e,r,o.cD,n);(0,g.R)(40,typeof r)}else(0,g.R)(39,typeof e)},t),function(e){(0,c.Y)(o.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,g.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,s.p)(o.Pl+"setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,c.U)(e,"enduser.id",t,o.Dl,!0)},e)}(this),function(e){(0,c.Y)(o.nb,function(t){if("string"==typeof t||null===t)return(0,c.U)(e,"application.version",t,o.nb,!1);(0,g.R)(42,typeof t)},e)}(this),function(e){(0,c.Y)(o.d3,function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,c.Y)(o.Pv,function(t=!0){if("boolean"==typeof t){if((0,s.p)(o.Pl+o.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum()})}}else(0,g.R)(65,typeof t)},e)}(this),this.run()):(0,g.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return r.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),n=[...this.desiredFeatures];n.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),n.forEach(r=>{if(!e[r.featureName]&&r.featureName!==t.K7.pageViewEvent)return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,g.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,g.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,p.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var A=i(2843),S=i(782);class T extends y{static featureName=S.T;constructor(e){super(e,S.T),f.RI&&((0,A.u)(()=>(0,s.p)("docHidden",[(0,a.t)()],void 0,S.T,this.ee),!0),(0,A.G)(()=>(0,s.p)("winPagehide",[(0,a.t)()],void 0,S.T,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,2117))))}}var E=i(3969);class j extends y{static featureName=E.TZ;constructor(e){super(e,E.TZ),f.RI&&document.addEventListener("securitypolicyviolation",e=>{(0,s.p)(E.xV,["Generic/CSPViolation/Detected"],void 0,this.featureName,this.ee)}),this.importAggregator(e,()=>i.e(296).then(i.bind(i,9623)))}}new R({features:[k,T,j],loaderType:"lite"})})()})();</script>
 	<meta name="theme-color" content="#231F20">
 
 			<meta name="msvalidate.01" content="9E5C74811CA48CCCC61A2CF3C0A1BA6A">
@@ -480,7 +481,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 
 				
 
-				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"1","weatherprec":"x","weathercode":"27","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
+				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"2","weatherprec":"x","weathercode":"11","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
 		</script>
 			<script>
 				// Load the APS JavaScript Library
@@ -1525,10 +1526,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay=""
 						data-displayinline-featured="false"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_11734609_69bd02673a2dc"
+			data-displayinline-player-id="miniplayer_11734609_69bd1f58c7d10"
 			data-displayinline-video-id="11734609"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/11734609/#autoplay&#038;stickyiframe=miniplayer_11734609_69bd02673a2dc"
+    		data-displayinline="https://globalnews.ca/video/embed/11734609/#autoplay&#038;stickyiframe=miniplayer_11734609_69bd1f58c7d10"
     									data-displayinline-container="stories-1-0"
 										data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Trump pressures NATO to help reopen Strait of Hormuz&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;bc&quot;,&quot;canada&quot;,&quot;economy&quot;,&quot;politics&quot;,&quot;world&quot;],&quot;keywords&quot;:[&quot;donald-trump&quot;,&quot;eric-miller&quot;,&quot;hormuz&quot;,&quot;international&quot;,&quot;investigative&quot;,&quot;iran&quot;,&quot;nato&quot;,&quot;oil&quot;,&quot;shipping&quot;,&quot;short-clip&quot;,&quot;u-s&quot;,&quot;war&quot;,&quot;global-news-morning-bc&quot;]}}"
@@ -1594,7 +1595,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			</div>
 								<div class="c-posts__about c-posts__about--multiple">
 																<div class="c-posts__info c-posts__info--highlight">World</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">11 hours</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Mar 19</div>
 																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">6 min read</div>
 															</div>
 						</div>
@@ -1668,7 +1669,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">12 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Mar 19</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 														</div>
 									</div>
@@ -1702,7 +1703,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">10 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Mar 19</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 														</div>
 									</div>
@@ -1792,7 +1793,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Entertainment</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">12 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Mar 19</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
 														</div>
 									</div>
@@ -2018,7 +2019,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Crime</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">9 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">11 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">6 min read</div>
 														</div>
 									</div>
@@ -2052,7 +2053,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">9 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">12 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
 									</div>
@@ -2086,7 +2087,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Money</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">9 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">12 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
 									</div>
@@ -2104,10 +2105,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay="true"
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69bd02673d79f"
+			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69bd1f58cc10e"
 			data-displayinline-video-id="49a91e7f-1023-430f-8d66-561055f3d0f7"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69bd02673d79f"
+    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69bd1f58cc10e"
     		    			data-displayinline-playlist="49a91e7f-1023-430f-8d66-561055f3d0f7"
     									data-displayinline-container="mini-ott"
 																data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;recent_terms_datastore&quot;,&quot;type&quot;:&quot;wlo_option&quot;}}"
@@ -2308,38 +2309,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="So long, Jay-Z: Rapper officially changes name to JAŸ-Z" data-title>So long, Jay-Z: Rapper officially changes name to JAŸ-Z</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">19,025</span>
-							<span class="c-posts__info">Read</span>
-						</div>
-												
-											</div>
-				</a>
-			</li>
-								<li class="c-posts__item" data-post-id="11737475">
-				<a
-					href="https://globalnews.ca/news/11737475/iran-attacks-gulf-oil-israel-strike-gas-field/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:1}"
-				>
-					<div class="c-posts__rank">
-							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#2"></use>
-	</svg>
-						</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/03/Qatar-oil.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="466" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/Qatar-oil.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/Qatar-oil.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/Qatar-oil.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-							<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Trump threatens to &#8216;massively blow up&#8217; world&#8217;s largest natural gas field" data-title>Trump threatens to &#8216;massively blow up&#8217; world&#8217;s largest natural gas field</span>
-			</div>
-													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">5,152</span>
+							<span class="c-posts__info c-posts__info--highlight">29,621</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2349,11 +2319,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<li class="c-posts__item" data-post-id="11737460">
 				<a
 					href="https://globalnews.ca/news/11737460/mark-carney-spending-plans-cuts/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:1}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#3"></use>
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#2"></use>
 	</svg>
 						</div>
 					
@@ -2370,7 +2340,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="To chop spending, Ottawa will cut science, tourism, foreign aid programs" data-title>To chop spending, Ottawa will cut science, tourism, foreign aid programs</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">3,690</span>
+							<span class="c-posts__info c-posts__info--highlight">6,747</span>
+							<span class="c-posts__info">Read</span>
+						</div>
+												
+											</div>
+				</a>
+			</li>
+								<li class="c-posts__item" data-post-id="11737475">
+				<a
+					href="https://globalnews.ca/news/11737475/iran-attacks-gulf-oil-israel-strike-gas-field/"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
+				>
+					<div class="c-posts__rank">
+							<svg class="c-icon  c-posts__rankIcon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#3"></use>
+	</svg>
+						</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/03/Qatar-oil.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="466" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/Qatar-oil.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/Qatar-oil.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/Qatar-oil.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+							<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Trump threatens to &#8216;massively blow up&#8217; world&#8217;s largest natural gas field" data-title>Trump threatens to &#8216;massively blow up&#8217; world&#8217;s largest natural gas field</span>
+			</div>
+													<div class="c-posts__about">
+							<span class="c-posts__info c-posts__info--highlight">5,918</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2401,7 +2402,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Algorithmic pricing is being used in Canada. Why many want it banned" data-title>Algorithmic pricing is being used in Canada. Why many want it banned</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">3,145</span>
+							<span class="c-posts__info c-posts__info--highlight">5,353</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2432,7 +2433,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Taylor Frankie Paul &#8216;Bachelorette&#8217; season cancelled 3 days before premiere" data-title>Taylor Frankie Paul &#8216;Bachelorette&#8217; season cancelled 3 days before premiere</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,584</span>
+							<span class="c-posts__info c-posts__info--highlight">3,358</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2541,38 +2542,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="So long, Jay-Z: Rapper officially changes name to JAŸ-Z" data-title>So long, Jay-Z: Rapper officially changes name to JAŸ-Z</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">19,025</span>
-							<span class="c-posts__info">Read</span>
-						</div>
-												
-											</div>
-				</a>
-			</li>
-								<li class="c-posts__item" data-post-id="11737475">
-				<a
-					href="https://globalnews.ca/news/11737475/iran-attacks-gulf-oil-israel-strike-gas-field/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:1}"
-				>
-					<div class="c-posts__rank">
-							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#2"></use>
-	</svg>
-						</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/03/Qatar-oil.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="466" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/Qatar-oil.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/Qatar-oil.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/Qatar-oil.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-							<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Trump threatens to &#8216;massively blow up&#8217; world&#8217;s largest natural gas field" data-title>Trump threatens to &#8216;massively blow up&#8217; world&#8217;s largest natural gas field</span>
-			</div>
-													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">5,152</span>
+							<span class="c-posts__info c-posts__info--highlight">29,621</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2582,11 +2552,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<li class="c-posts__item" data-post-id="11737460">
 				<a
 					href="https://globalnews.ca/news/11737460/mark-carney-spending-plans-cuts/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:1}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#3"></use>
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#2"></use>
 	</svg>
 						</div>
 					
@@ -2603,7 +2573,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="To chop spending, Ottawa will cut science, tourism, foreign aid programs" data-title>To chop spending, Ottawa will cut science, tourism, foreign aid programs</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">3,690</span>
+							<span class="c-posts__info c-posts__info--highlight">6,747</span>
+							<span class="c-posts__info">Read</span>
+						</div>
+												
+											</div>
+				</a>
+			</li>
+								<li class="c-posts__item" data-post-id="11737475">
+				<a
+					href="https://globalnews.ca/news/11737475/iran-attacks-gulf-oil-israel-strike-gas-field/"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
+				>
+					<div class="c-posts__rank">
+							<svg class="c-icon  c-posts__rankIcon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#3"></use>
+	</svg>
+						</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/03/Qatar-oil.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="466" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/Qatar-oil.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/Qatar-oil.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/Qatar-oil.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+							<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Trump threatens to &#8216;massively blow up&#8217; world&#8217;s largest natural gas field" data-title>Trump threatens to &#8216;massively blow up&#8217; world&#8217;s largest natural gas field</span>
+			</div>
+													<div class="c-posts__about">
+							<span class="c-posts__info c-posts__info--highlight">5,918</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2634,7 +2635,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Algorithmic pricing is being used in Canada. Why many want it banned" data-title>Algorithmic pricing is being used in Canada. Why many want it banned</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">3,145</span>
+							<span class="c-posts__info c-posts__info--highlight">5,353</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2665,7 +2666,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Taylor Frankie Paul &#8216;Bachelorette&#8217; season cancelled 3 days before premiere" data-title>Taylor Frankie Paul &#8216;Bachelorette&#8217; season cancelled 3 days before premiere</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,584</span>
+							<span class="c-posts__info c-posts__info--highlight">3,358</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2803,7 +2804,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Global National</div>
-																<div class="c-posts__info" data-date >8 hours</div>
+																<div class="c-posts__info" data-date >10 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -2840,7 +2841,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Global National</div>
-																<div class="c-posts__info" data-date >8 hours</div>
+																<div class="c-posts__info" data-date >10 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -2877,7 +2878,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
-																<div class="c-posts__info" data-date >10 hours</div>
+																<div class="c-posts__info" data-date >Mar 19</div>
 																			</div>
 									</div>
 		</a>
@@ -2914,7 +2915,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
-																<div class="c-posts__info" data-date >10 hours</div>
+																<div class="c-posts__info" data-date >Mar 19</div>
 																			</div>
 									</div>
 		</a>
@@ -3087,8 +3088,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-miniplayer"
 			data-displayinline-video-id="11737221"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11737221,11738254,11738848,10331295,11738730,11735129/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Ficdyv5uzsg-3940w2c9jt%2F5P_KEL_TICK_BITE_WARNIN_OM01ROXH.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
-    		    			data-displayinline-playlist="11737221,11738254,11738848,10331295,11738730,11735129"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11737221,10331295,11738848,11734609,11738730,11738254/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Ficdyv5uzsg-3940w2c9jt%2F5P_KEL_TICK_BITE_WARNIN_OM01ROXH.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
+    		    			data-displayinline-playlist="11737221,10331295,11738848,11734609,11738730,11738254"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Merritt tick bite warning&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;okanagan&quot;,&quot;canada&quot;,&quot;health&quot;,&quot;science&quot;,&quot;trending&quot;],&quot;keywords&quot;:[&quot;enviornment&quot;,&quot;family-parenting&quot;,&quot;merritt&quot;,&quot;nature&quot;,&quot;okanagan-news&quot;,&quot;short-clip&quot;,&quot;smart-living&quot;,&quot;tick&quot;,&quot;tick-bite&quot;,&quot;top-news&quot;,&quot;global-news-at-530-okanagan&quot;]}}"
 			    		>
@@ -3156,8 +3157,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11737221"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11737221,11738254,11738848,10331295,11738730,11735129/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11737221,11738254,11738848,10331295,11738730,11735129"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11737221,10331295,11738848,11734609,11738730,11738254/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11737221,10331295,11738848,11734609,11738730,11738254"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="A Merritt father has a warning for others after a tick bit his son, triggering a frightening health crisis. Klaudia Van Emmerik reports."
 			>
@@ -3178,67 +3179,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Iran&#8217;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates" data-slide-index="1">
-	<a href="https://globalnews.ca/video/11738254/irans-regime-strikes-gulf-energy-infrastructure-as-conflict-with-us-israel-escalates/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11738254"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11738254,11738848,10331295,11738730,11735129,11737221/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11738254,11738848,10331295,11738730,11735129,11737221"
-			data-video-carousel-label="Economy"
-			data-video-carousel-content="Iran launched strikes on energy infrastructure across the Gulf, targeting sites in Saudi Arabia, Qatar and the UAE as the conflict escalates. One of the facilities in Qatar supplies about one-fifth of the world’s natural gas, raising concerns about global energy disruption.  In Tehran, one resident described mounting fear and daily disruption, saying &quot;there is fear and anxiety for ourselves, for our children… nothing is the same and things have changed very much.&quot; "
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/z1qgfxg8xq-9beuxs44kf/iran_vsssm.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Economy</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Iran&#8217;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Rutland residents criticize lack of patrols" data-slide-index="2">
-	<a href="https://globalnews.ca/video/11738848/rutland-residents-criticize-lack-of-patrols/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11738848"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11738848,10331295,11738730,11735129,11737221,11738254/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11738848,10331295,11738730,11735129,11737221,11738254"
-			data-video-carousel-label="Consumer"
-			data-video-carousel-content="Residents of the Kelowna neighbourhood of Rutland say they&#039;re being short-changed when it comes to controlling crime and public disorder.  Klaudia Van Emmerik reports."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/rds25w4hcg-zjjz6bdqc2/web_still_5P_KEL_RUTLAND_PATROL_Q_OM01RR41.png?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Consumer</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Rutland residents criticize lack of patrols</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Wendy&#8217;s to adopt dynamic pricing &#8211; could the practice be coming to Canada?" data-slide-index="3">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Wendy&#8217;s to adopt dynamic pricing &#8211; could the practice be coming to Canada?" data-slide-index="1">
 	<a href="https://globalnews.ca/video/10331295/wendys-to-adopt-dynamic-pricing-could-the-practice-be-coming-to-canada/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="10331295"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/10331295,11738730,11735129,11737221,11738254,11738848/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="10331295,11738730,11735129,11737221,11738254,11738848"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/10331295,11738848,11734609,11738730,11738254,11737221/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="10331295,11738848,11734609,11738730,11738254,11737221"
 			data-video-carousel-label="Consumer"
 			data-video-carousel-content="We have heard of dynamic pricing being used for concert tickets and hotels and now it&#039;s being tested in the food industry. 
  Joining us to discuss this further is Dr. Sylvain Charlebois, Senior Director at the Agri-food Analytics Lab, Dalhousie University."
@@ -3260,13 +3207,67 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Rutland residents criticize lack of patrols" data-slide-index="2">
+	<a href="https://globalnews.ca/video/11738848/rutland-residents-criticize-lack-of-patrols/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11738848"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11738848,11734609,11738730,11738254,11737221,10331295/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11738848,11734609,11738730,11738254,11737221,10331295"
+			data-video-carousel-label="Consumer"
+			data-video-carousel-content="Residents of the Kelowna neighbourhood of Rutland say they&#039;re being short-changed when it comes to controlling crime and public disorder.  Klaudia Van Emmerik reports."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/rds25w4hcg-zjjz6bdqc2/web_still_5P_KEL_RUTLAND_PATROL_Q_OM01RR41.png?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Consumer</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Rutland residents criticize lack of patrols</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Trump pressures NATO to help reopen Strait of Hormuz" data-slide-index="3">
+	<a href="https://globalnews.ca/video/11734609/trump-pressures-nato-to-help-reopen-strait-of-hormuz/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11734609"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11734609,11738730,11738254,11737221,10331295,11738848/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11734609,11738730,11738254,11737221,10331295,11738848"
+			data-video-carousel-label="Canada"
+			data-video-carousel-content="Donald Trump is pushing NATO allies to help reopen the Strait of Hormuz, warning it would be very bad for the future of NATO if they don&#039;t. Global News Morning speaks with Rideau Potomac Strategy Group President Eric Miller about the U.S. President&#039;s demands and what could happen if NATO allies refuse to help."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/w6l3bvwhwf-cv5bi6zgpx/2026_03_17_TRUMP_ASKS_NATO_FOR_HELP_WEB.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Trump pressures NATO to help reopen Strait of Hormuz</span></div>
+					</div>
+	</a>
+</li>
+
 <li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Prolific offender released on bail" data-slide-index="4">
 	<a href="https://globalnews.ca/video/11738730/prolific-offender-released-on-bail/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11738730"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11738730,11735129,11737221,11738254,11738848,10331295/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11738730,11735129,11737221,11738254,11738848,10331295"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11738730,11738254,11737221,10331295,11738848,11734609/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11738730,11738254,11737221,10331295,11738848,11734609"
 			data-video-carousel-label="Crime"
 			data-video-carousel-content="A prolific offender with a record of dozens of criminal charges have been released back into the community after being given bail. Victoria Femia reports. "
 			>
@@ -3287,18 +3288,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Iran war price shock forces countries to ration fuel consumption" data-slide-index="5">
-	<a href="https://globalnews.ca/video/11735129/iran-war-price-shock-forces-countries-to-ration-fuel-consumption/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Iran&#8217;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates" data-slide-index="5">
+	<a href="https://globalnews.ca/video/11738254/irans-regime-strikes-gulf-energy-infrastructure-as-conflict-with-us-israel-escalates/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11735129"
+					data-video-id="11738254"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11735129,11737221,11738254,11738848,10331295,11738730/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11735129,11737221,11738254,11738848,10331295,11738730"
-			data-video-carousel-label="Canada"
-			data-video-carousel-content="It&#039;s been more than two weeks since the U.S. and Israel launched the Iran war, pushing the price of oil and gas higher and higher. Skyrocketing energy prices have forced countries around the world to draw on their emergency reserves and triage fuel needs. Anne Gaviola has more on how you can conserve as the energy crisis unfolds."
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11738254,11737221,10331295,11738848,11734609,11738730/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11738254,11737221,10331295,11738848,11734609,11738730"
+			data-video-carousel-label="Economy"
+			data-video-carousel-content="Iran launched strikes on energy infrastructure across the Gulf, targeting sites in Saudi Arabia, Qatar and the UAE as the conflict escalates. One of the facilities in Qatar supplies about one-fifth of the world’s natural gas, raising concerns about global energy disruption.  In Tehran, one resident described mounting fear and daily disruption, saying &quot;there is fear and anxiety for ourselves, for our children… nothing is the same and things have changed very much.&quot; "
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/f0w786srtu-38qiyqbxcr/AFF_IRAN_ENERGY_PRICE_SPIKE_ONLINE_STILL.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/z1qgfxg8xq-9beuxs44kf/iran_vsssm.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3307,9 +3308,9 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>
 		<div class="l-videoCarousel__details c-posts__details">
 							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+					<div class="c-posts__info c-posts__info--highlight">Economy</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Iran war price shock forces countries to ration fuel consumption</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Iran&#8217;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates</span></div>
 					</div>
 	</a>
 </li>
@@ -3346,19 +3347,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11738254,11738848,10331295,11738730,11735129/#autoplay&#038;stickyiframe=home-miniplayer_11738254"
+			href="https://globalnews.ca/video/embed/playlist/10331295,11738848,11734609,11738730,11738254/#autoplay&#038;stickyiframe=home-miniplayer_10331295"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11738254"
+			data-displayinline-player-id="home-miniplayer_10331295"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11738254,11738848,10331295,11738730,11735129/#autoplay&#038;stickyiframe=home-miniplayer_11738254"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/10331295,11738848,11734609,11738730,11738254/#autoplay&#038;stickyiframe=home-miniplayer_10331295"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/z1qgfxg8xq-9beuxs44kf/iran_vsssm.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/9mzl0mh7s5-sy01ah27tn/2024_03_02_WENDYS_DYNAMIC_PRICING.png?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Iran&#8217;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates'"
+					alt="Click to play video 'Wendy&#8217;s to adopt dynamic pricing &#8211; could the practice be coming to Canada?'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3367,11 +3368,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11738254/irans-regime-strikes-gulf-energy-infrastructure-as-conflict-with-us-israel-escalates/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/10331295/wendys-to-adopt-dynamic-pricing-could-the-practice-be-coming-to-canada/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Economy</div>
+					<div class="c-posts__info c-posts__info--highlight">Consumer</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Iran&#8217;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Wendy&#8217;s to adopt dynamic pricing &#8211; could the practice be coming to Canada?</span></div>
 		</a>
 	</div>
 </li>
@@ -3401,11 +3402,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11738848,10331295,11738730,11735129,11738254/#autoplay&#038;stickyiframe=home-miniplayer_11738848"
+			href="https://globalnews.ca/video/embed/playlist/11738848,11734609,11738730,11738254,10331295/#autoplay&#038;stickyiframe=home-miniplayer_11738848"
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11738848"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11738848,10331295,11738730,11735129,11738254/#autoplay&#038;stickyiframe=home-miniplayer_11738848"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11738848,11734609,11738730,11738254,10331295/#autoplay&#038;stickyiframe=home-miniplayer_11738848"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3434,19 +3435,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/10331295,11738730,11735129,11738254,11738848/#autoplay&#038;stickyiframe=home-miniplayer_10331295"
+			href="https://globalnews.ca/video/embed/playlist/11734609,11738730,11738254,10331295,11738848/#autoplay&#038;stickyiframe=home-miniplayer_11734609"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_10331295"
+			data-displayinline-player-id="home-miniplayer_11734609"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/10331295,11738730,11735129,11738254,11738848/#autoplay&#038;stickyiframe=home-miniplayer_10331295"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11734609,11738730,11738254,10331295,11738848/#autoplay&#038;stickyiframe=home-miniplayer_11734609"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/9mzl0mh7s5-sy01ah27tn/2024_03_02_WENDYS_DYNAMIC_PRICING.png?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/w6l3bvwhwf-cv5bi6zgpx/2026_03_17_TRUMP_ASKS_NATO_FOR_HELP_WEB.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Wendy&#8217;s to adopt dynamic pricing &#8211; could the practice be coming to Canada?'"
+					alt="Click to play video 'Trump pressures NATO to help reopen Strait of Hormuz'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3455,11 +3456,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/10331295/wendys-to-adopt-dynamic-pricing-could-the-practice-be-coming-to-canada/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11734609/trump-pressures-nato-to-help-reopen-strait-of-hormuz/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Consumer</div>
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Wendy&#8217;s to adopt dynamic pricing &#8211; could the practice be coming to Canada?</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Trump pressures NATO to help reopen Strait of Hormuz</span></div>
 		</a>
 	</div>
 </li>
@@ -3467,11 +3468,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11738730,11735129,11738254,11738848,10331295/#autoplay&#038;stickyiframe=home-miniplayer_11738730"
+			href="https://globalnews.ca/video/embed/playlist/11738730,11738254,10331295,11738848,11734609/#autoplay&#038;stickyiframe=home-miniplayer_11738730"
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11738730"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11738730,11735129,11738254,11738848,10331295/#autoplay&#038;stickyiframe=home-miniplayer_11738730"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11738730,11738254,10331295,11738848,11734609/#autoplay&#038;stickyiframe=home-miniplayer_11738730"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3514,23 +3515,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant"
-			data-displayinline-video-id="11738254"
+			data-displayinline-video-id="11738777"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11738254,11738777,11736703,3226216,11735129/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fz1qgfxg8xq-9beuxs44kf%2Firan_vsssm.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
-    		    			data-displayinline-playlist="11738254,11738777,11736703,3226216,11735129"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11738777,11738254,11736703,11734857,11738784/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fd5mnj8fujn-39ywvqp2xu%2F260319-HEIDI.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer-variant"
+    		    			data-displayinline-playlist="11738777,11738254,11736703,11734857,11738784"
     												data-displayinline-sticky="true"
-													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Iran&#039;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;economy&quot;,&quot;politics&quot;,&quot;world&quot;],&quot;keywords&quot;:[&quot;energy-infrastructure&quot;,&quot;gulf-oil-and-gas&quot;,&quot;international&quot;,&quot;iran&quot;,&quot;middle-east-conflict&quot;,&quot;reuters&quot;,&quot;short-clip&quot;,&quot;top-news&quot;]}}"
+													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Manitoba, Nova Scotia communities &#039;shaken&#039; over alleged school attack plot&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;,&quot;crime&quot;],&quot;keywords&quot;:[&quot;blue-hills&quot;,&quot;bridgewater&quot;,&quot;canada-school-attack-plot&quot;,&quot;manitoba&quot;,&quot;nova-scotia&quot;,&quot;park-view-education-centre&quot;,&quot;rivers&quot;,&quot;rivers-collegiate&quot;,&quot;rivers-manitoba&quot;,&quot;short-clip&quot;,&quot;global-national&quot;]}}"
 			    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Iran&#8217;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates'"
+						alt="Click to play video: 'Manitoba, Nova Scotia communities &#8216;shaken&#8217; over alleged school attack plot'"
 						width="640"
 						height="360"
-													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/z1qgfxg8xq-9beuxs44kf/iran_vsssm.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/d5mnj8fujn-39ywvqp2xu/260319-HEIDI.jpg?w=1200&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/z1qgfxg8xq-9beuxs44kf/iran_vsssm.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/z1qgfxg8xq-9beuxs44kf/iran_vsssm.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/z1qgfxg8xq-9beuxs44kf/iran_vsssm.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
+								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/d5mnj8fujn-39ywvqp2xu/260319-HEIDI.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/d5mnj8fujn-39ywvqp2xu/260319-HEIDI.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/d5mnj8fujn-39ywvqp2xu/260319-HEIDI.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -3540,20 +3541,20 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">2:29</time>
-																									<span class="c-video__title">Iran&#8217;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates</span>
+																	<time class="c-video__duration">1:57</time>
+																									<span class="c-video__title">Manitoba, Nova Scotia communities &#8216;shaken&#8217; over alleged school attack plot</span>
 															</div>
 						</span>
 											</span>
 				</div>
 							</div>
 								<div class="l-videoCarousel__sidebar">
-													<a href="https://globalnews.ca/video/11738254/irans-regime-strikes-gulf-energy-infrastructure-as-conflict-with-us-israel-escalates/" class="l-videoCarousel__details">
-							<div class="l-videoCarousel__info">Economy</div>
+													<a href="https://globalnews.ca/video/11738777/manitoba-nova-scotia-communites-shaken-over-alleged-school-attack-plot/" class="l-videoCarousel__details">
+							<div class="l-videoCarousel__info">Canada</div>
 								<div class="l-videoCarousel__fullTitle">
-								Iran&#8217;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates								</div>
+								Manitoba, Nova Scotia communities &#8216;shaken&#8217; over alleged school attack plot								</div>
 								<div class="l-videoCarousel__description">
-								Iran launched strikes on energy infrastructure across the Gulf, targeting sites in Saudi Arabia, Qatar and the UAE as the conflict escalates. One of the facilities in Qatar supplies about one-fifth of the world’s natural gas, raising concerns about global energy disruption.  In Tehran, one resident described mounting fear and daily disruption, saying &quot;there is fear and anxiety for ourselves, for our children… nothing is the same and things have changed very much.&quot; 								</div>
+								People in Bridgewater, N.S., and Rivers, Man., are looking for answers after two teenagers were arrested and accused of plotting simultaneous attacks on schools in their towns. Heidi Petracek speaks with some parents about their fears, and what they&#039;d like to see next.								</div>
 						</a>
 								<div class="c-ad c-ad--bigbox c-ad--dark l-videoCarousel__ad">							<div class="c-ad__label">Advertisement</div>
 			
@@ -3580,40 +3581,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-carousel__track glide__track" data-glide-el="track">
 						<ul class="c-posts c-posts--video c-posts--tile c-posts--horizontal c-posts--inverted glide__slides">
 							
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Iran&#8217;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates" data-slide-index="0">
-	<a href="https://globalnews.ca/video/11738254/irans-regime-strikes-gulf-energy-infrastructure-as-conflict-with-us-israel-escalates/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11738254"
-			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11738254,11738777,11736703,3226216,11735129/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11738254,11738777,11736703,3226216,11735129"
-			data-video-carousel-label="Economy"
-			data-video-carousel-content="Iran launched strikes on energy infrastructure across the Gulf, targeting sites in Saudi Arabia, Qatar and the UAE as the conflict escalates. One of the facilities in Qatar supplies about one-fifth of the world’s natural gas, raising concerns about global energy disruption.  In Tehran, one resident described mounting fear and daily disruption, saying &quot;there is fear and anxiety for ourselves, for our children… nothing is the same and things have changed very much.&quot; "
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/z1qgfxg8xq-9beuxs44kf/iran_vsssm.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Economy</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Iran&#8217;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Manitoba, Nova Scotia communities &#8216;shaken&#8217; over alleged school attack plot" data-slide-index="1">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Manitoba, Nova Scotia communities &#8216;shaken&#8217; over alleged school attack plot" data-slide-index="0">
 	<a href="https://globalnews.ca/video/11738777/manitoba-nova-scotia-communites-shaken-over-alleged-school-attack-plot/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11738777"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11738777,11736703,3226216,11735129,11738254/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11738777,11736703,3226216,11735129,11738254"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11738777,11738254,11736703,11734857,11738784/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11738777,11738254,11736703,11734857,11738784"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="People in Bridgewater, N.S., and Rivers, Man., are looking for answers after two teenagers were arrested and accused of plotting simultaneous attacks on schools in their towns. Heidi Petracek speaks with some parents about their fears, and what they&#039;d like to see next."
 			>
@@ -3634,13 +3608,40 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Iran&#8217;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates" data-slide-index="1">
+	<a href="https://globalnews.ca/video/11738254/irans-regime-strikes-gulf-energy-infrastructure-as-conflict-with-us-israel-escalates/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11738254"
+			data-video-player-id="home-miniplayer-variant"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11738254,11736703,11734857,11738784,11738777/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11738254,11736703,11734857,11738784,11738777"
+			data-video-carousel-label="Economy"
+			data-video-carousel-content="Iran launched strikes on energy infrastructure across the Gulf, targeting sites in Saudi Arabia, Qatar and the UAE as the conflict escalates. One of the facilities in Qatar supplies about one-fifth of the world’s natural gas, raising concerns about global energy disruption.  In Tehran, one resident described mounting fear and daily disruption, saying &quot;there is fear and anxiety for ourselves, for our children… nothing is the same and things have changed very much.&quot; "
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/z1qgfxg8xq-9beuxs44kf/iran_vsssm.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Economy</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Iran&#8217;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates</span></div>
+					</div>
+	</a>
+</li>
+
 <li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Cult leader Romana Didulo no longer facing charges after Saskatchewan school occupation" data-slide-index="2">
 	<a href="https://globalnews.ca/video/11736703/cult-leader-romana-didulo-no-longer-facing-charges-after-saskatchewan-school-occupation/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11736703"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11736703,3226216,11735129,11738254,11738777/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11736703,3226216,11735129,11738254,11738777"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11736703,11734857,11738784,11738777,11738254/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11736703,11734857,11738784,11738777,11738254"
 			data-video-carousel-label="Crime"
 			data-video-carousel-content=" A self-proclaimed ‘queen of Canada’ who led a group occupying a former school in a Saskatchewan village is no longer facing criminal charges. Romana Didulo had been accused of breaching a court order and intimidating a justice system participant following a police raid last September. Prosecutors have not said why the charges were halted, but they could be re-initiated within a year."
 			>
@@ -3661,18 +3662,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Knife-wielding man holds 13-year-old girl hostage in Russia" data-slide-index="3">
-	<a href="https://globalnews.ca/video/3226216/knife-wielding-man-holds-13-year-old-girl-hostage-in-russia/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="The Morning Show: March 17" data-slide-index="3">
+	<a href="https://globalnews.ca/video/11734857/the-morning-show-march-17-5/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="3226216"
+					data-video-id="11734857"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/3226216,11735129,11738254,11738777,11736703/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="3226216,11735129,11738254,11738777,11736703"
-			data-video-carousel-label="Crime"
-			data-video-carousel-content="Police in Russia have released dramatic video of a tense hostage situation involving a 13-year-old girl and a knife-wielding man they say was high on heroin."
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11734857,11738784,11738777,11738254,11736703/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11734857,11738784,11738777,11738254,11736703"
+			data-video-carousel-label="Entertainment"
+			data-video-carousel-content="Happy St. Patty&#039;s to you! Celebrate St. Patrick&#039;s Day with some festive green cocktails before we ease into tax season talk, telling you about the facts and common scams. Later, we’re joined by a Cirque du Soleil contortionist and football freestyler who show off their moves in studio!"
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/924/431/KnifeThumber_848x480_869631043769.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i1.wp.com/assets.news.corusappservices.com/upload/news/GTMS031726STILL.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3681,25 +3682,25 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>
 		<div class="l-videoCarousel__details c-posts__details">
 							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Crime</div>
+					<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Knife-wielding man holds 13-year-old girl hostage in Russia</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">The Morning Show: March 17</span></div>
 					</div>
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Iran war price shock forces countries to ration fuel consumption" data-slide-index="4">
-	<a href="https://globalnews.ca/video/11735129/iran-war-price-shock-forces-countries-to-ration-fuel-consumption/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Takeaways from Poilievre&#8217;s appearance on Joe Rogan&#8217;s podcast" data-slide-index="4">
+	<a href="https://globalnews.ca/video/11738784/takeaways-from-poilievres-appearance-on-joe-rogans-podcast/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11735129"
+					data-video-id="11738784"
 			data-video-player-id="home-miniplayer-variant"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11735129,11738254,11738777,11736703,3226216/#autoplay&#038;stickyiframe=home-miniplayer-variant"
-			data-video-carousel-playlist="11735129,11738254,11738777,11736703,3226216"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11738784,11738777,11738254,11736703,11734857/#autoplay&#038;stickyiframe=home-miniplayer-variant"
+			data-video-carousel-playlist="11738784,11738777,11738254,11736703,11734857"
 			data-video-carousel-label="Canada"
-			data-video-carousel-content="It&#039;s been more than two weeks since the U.S. and Israel launched the Iran war, pushing the price of oil and gas higher and higher. Skyrocketing energy prices have forced countries around the world to draw on their emergency reserves and triage fuel needs. Anne Gaviola has more on how you can conserve as the energy crisis unfolds."
+			data-video-carousel-content="Conservative Leader Pierre Poilievre took his message to the American public by sitting down for a lengthy interview on &#039;The Joe Rogan Experience,&#039; one of the world&#039;s most popular podcasts. Mackenzie Gray looks at what Poilievre said, and what he&#039;s hoping it accomplished."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/f0w786srtu-38qiyqbxcr/AFF_IRAN_ENERGY_PRICE_SPIKE_ONLINE_STILL.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/bt3yijh958-v9fxuwcqs7/260319-MACKENZIE.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3710,7 +3711,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							<div class="l-videoCarousel__info">
 					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Iran war price shock forces countries to ration fuel consumption</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Takeaways from Poilievre&#8217;s appearance on Joe Rogan&#8217;s podcast</span></div>
 					</div>
 	</a>
 </li>
@@ -3747,19 +3748,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11738777,11736703,3226216,11735129/#autoplay&#038;stickyiframe=home-miniplayer-variant_11738777"
+			href="https://globalnews.ca/video/embed/playlist/11738254,11736703,11734857,11738784/#autoplay&#038;stickyiframe=home-miniplayer-variant_11738254"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11738777"
+			data-displayinline-player-id="home-miniplayer-variant_11738254"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11738777,11736703,3226216,11735129/#autoplay&#038;stickyiframe=home-miniplayer-variant_11738777"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11738254,11736703,11734857,11738784/#autoplay&#038;stickyiframe=home-miniplayer-variant_11738254"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/d5mnj8fujn-39ywvqp2xu/260319-HEIDI.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/z1qgfxg8xq-9beuxs44kf/iran_vsssm.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Manitoba, Nova Scotia communities &#8216;shaken&#8217; over alleged school attack plot'"
+					alt="Click to play video 'Iran&#8217;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3768,11 +3769,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11738777/manitoba-nova-scotia-communites-shaken-over-alleged-school-attack-plot/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11738254/irans-regime-strikes-gulf-energy-infrastructure-as-conflict-with-us-israel-escalates/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+					<div class="c-posts__info c-posts__info--highlight">Economy</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Manitoba, Nova Scotia communities &#8216;shaken&#8217; over alleged school attack plot</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Iran&#8217;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates</span></div>
 		</a>
 	</div>
 </li>
@@ -3802,11 +3803,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11736703,3226216,11735129,11738777/#autoplay&#038;stickyiframe=home-miniplayer-variant_11736703"
+			href="https://globalnews.ca/video/embed/playlist/11736703,11734857,11738784,11738254/#autoplay&#038;stickyiframe=home-miniplayer-variant_11736703"
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer-variant_11736703"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11736703,3226216,11735129,11738777/#autoplay&#038;stickyiframe=home-miniplayer-variant_11736703"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11736703,11734857,11738784,11738254/#autoplay&#038;stickyiframe=home-miniplayer-variant_11736703"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3835,19 +3836,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/3226216,11735129,11738777,11736703/#autoplay&#038;stickyiframe=home-miniplayer-variant_3226216"
+			href="https://globalnews.ca/video/embed/playlist/11734857,11738784,11738254,11736703/#autoplay&#038;stickyiframe=home-miniplayer-variant_11734857"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_3226216"
+			data-displayinline-player-id="home-miniplayer-variant_11734857"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/3226216,11735129,11738777,11736703/#autoplay&#038;stickyiframe=home-miniplayer-variant_3226216"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11734857,11738784,11738254,11736703/#autoplay&#038;stickyiframe=home-miniplayer-variant_11734857"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/924/431/KnifeThumber_848x480_869631043769.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/assets.news.corusappservices.com/upload/news/GTMS031726STILL.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Knife-wielding man holds 13-year-old girl hostage in Russia'"
+					alt="Click to play video 'The Morning Show: March 17'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3856,11 +3857,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/3226216/knife-wielding-man-holds-13-year-old-girl-hostage-in-russia/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11734857/the-morning-show-march-17-5/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Crime</div>
+					<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Knife-wielding man holds 13-year-old girl hostage in Russia</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">The Morning Show: March 17</span></div>
 		</a>
 	</div>
 </li>
@@ -3868,19 +3869,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11735129,11738777,11736703,3226216/#autoplay&#038;stickyiframe=home-miniplayer-variant_11735129"
+			href="https://globalnews.ca/video/embed/playlist/11738784,11738254,11736703,11734857/#autoplay&#038;stickyiframe=home-miniplayer-variant_11738784"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer-variant_11735129"
+			data-displayinline-player-id="home-miniplayer-variant_11738784"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11735129,11738777,11736703,3226216/#autoplay&#038;stickyiframe=home-miniplayer-variant_11735129"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11738784,11738254,11736703,11734857/#autoplay&#038;stickyiframe=home-miniplayer-variant_11738784"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/f0w786srtu-38qiyqbxcr/AFF_IRAN_ENERGY_PRICE_SPIKE_ONLINE_STILL.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/bt3yijh958-v9fxuwcqs7/260319-MACKENZIE.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Iran war price shock forces countries to ration fuel consumption'"
+					alt="Click to play video 'Takeaways from Poilievre&#8217;s appearance on Joe Rogan&#8217;s podcast'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3889,11 +3890,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11735129/iran-war-price-shock-forces-countries-to-ration-fuel-consumption/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11738784/takeaways-from-poilievres-appearance-on-joe-rogans-podcast/" class="c-posts__details">
 				<div class="c-posts__about">
 					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Iran war price shock forces countries to ration fuel consumption</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Takeaways from Poilievre&#8217;s appearance on Joe Rogan&#8217;s podcast</span></div>
 		</a>
 	</div>
 </li>
@@ -4299,8 +4300,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-playlist-miniplayer"
 			data-displayinline-video-id="11737221"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11737221,11738254,11738848,10331295,11738730/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Ficdyv5uzsg-3940w2c9jt%2F5P_KEL_TICK_BITE_WARNIN_OM01ROXH.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
-    		    			data-displayinline-playlist="11737221,11738254,11738848,10331295,11738730"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11737221,10331295,11738848,11734609,11738730/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Ficdyv5uzsg-3940w2c9jt%2F5P_KEL_TICK_BITE_WARNIN_OM01ROXH.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
+    		    			data-displayinline-playlist="11737221,10331295,11738848,11734609,11738730"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Merritt tick bite warning&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;okanagan&quot;,&quot;canada&quot;,&quot;health&quot;,&quot;science&quot;,&quot;trending&quot;],&quot;keywords&quot;:[&quot;enviornment&quot;,&quot;family-parenting&quot;,&quot;merritt&quot;,&quot;nature&quot;,&quot;okanagan-news&quot;,&quot;short-clip&quot;,&quot;smart-living&quot;,&quot;tick&quot;,&quot;tick-bite&quot;,&quot;top-news&quot;,&quot;global-news-at-530-okanagan&quot;]}}"
 			    		>
@@ -4347,7 +4348,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11737221,11738254,11738848,10331295,11738730/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11737221,10331295,11738848,11734609,11738730/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Merritt tick bite warning</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4368,23 +4369,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="2"
 	>
-	<a href="https://globalnews.ca/video/11738254/irans-regime-strikes-gulf-energy-infrastructure-as-conflict-with-us-israel-escalates/"
-		title="Iran&#8217;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates"
+	<a href="https://globalnews.ca/video/10331295/wendys-to-adopt-dynamic-pricing-could-the-practice-be-coming-to-canada/"
+		title="Wendy&#8217;s to adopt dynamic pricing &#8211; could the practice be coming to Canada?"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11738254"
-		data-video-label="Economy"
+		data-video-id="10331295"
+		data-video-label="Consumer"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11738254,11738848,10331295,11738730/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/10331295,11738848,11734609,11738730/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Iran&#8217;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Wendy&#8217;s to adopt dynamic pricing &#8211; could the practice be coming to Canada?</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Economy					</div>
+						Consumer					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/z1qgfxg8xq-9beuxs44kf/iran_vsssm.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/9mzl0mh7s5-sy01ah27tn/2024_03_02_WENDYS_DYNAMIC_PRICING.png?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4403,7 +4404,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Consumer"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11738848,10331295,11738730,11738254/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11738848,11734609,11738730,10331295/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Rutland residents criticize lack of patrols</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4424,23 +4425,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="4"
 	>
-	<a href="https://globalnews.ca/video/10331295/wendys-to-adopt-dynamic-pricing-could-the-practice-be-coming-to-canada/"
-		title="Wendy&#8217;s to adopt dynamic pricing &#8211; could the practice be coming to Canada?"
+	<a href="https://globalnews.ca/video/11734609/trump-pressures-nato-to-help-reopen-strait-of-hormuz/"
+		title="Trump pressures NATO to help reopen Strait of Hormuz"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="10331295"
-		data-video-label="Consumer"
+		data-video-id="11734609"
+		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/10331295,11738730,11738254,11738848/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11734609,11738730,10331295,11738848/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Wendy&#8217;s to adopt dynamic pricing &#8211; could the practice be coming to Canada?</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Trump pressures NATO to help reopen Strait of Hormuz</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Consumer					</div>
+						Canada					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/9mzl0mh7s5-sy01ah27tn/2024_03_02_WENDYS_DYNAMIC_PRICING.png?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/w6l3bvwhwf-cv5bi6zgpx/2026_03_17_TRUMP_ASKS_NATO_FOR_HELP_WEB.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4459,7 +4460,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Crime"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11738730,11738254,11738848,10331295/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11738730,10331295,11738848,11734609/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Prolific offender released on bail</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4493,23 +4494,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-playlist-miniplayer-variant"
-			data-displayinline-video-id="11738254"
+			data-displayinline-video-id="11738777"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11738254,11738777,11736703,3226216,11735129/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fz1qgfxg8xq-9beuxs44kf%2Firan_vsssm.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
-    		    			data-displayinline-playlist="11738254,11738777,11736703,3226216,11735129"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11738777,11738254,11736703,11734857,11738784/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fd5mnj8fujn-39ywvqp2xu%2F260319-HEIDI.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant"
+    		    			data-displayinline-playlist="11738777,11738254,11736703,11734857,11738784"
     												data-displayinline-sticky="true"
-													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Iran&#039;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;economy&quot;,&quot;politics&quot;,&quot;world&quot;],&quot;keywords&quot;:[&quot;energy-infrastructure&quot;,&quot;gulf-oil-and-gas&quot;,&quot;international&quot;,&quot;iran&quot;,&quot;middle-east-conflict&quot;,&quot;reuters&quot;,&quot;short-clip&quot;,&quot;top-news&quot;]}}"
+													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Manitoba, Nova Scotia communities &#039;shaken&#039; over alleged school attack plot&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;,&quot;crime&quot;],&quot;keywords&quot;:[&quot;blue-hills&quot;,&quot;bridgewater&quot;,&quot;canada-school-attack-plot&quot;,&quot;manitoba&quot;,&quot;nova-scotia&quot;,&quot;park-view-education-centre&quot;,&quot;rivers&quot;,&quot;rivers-collegiate&quot;,&quot;rivers-manitoba&quot;,&quot;short-clip&quot;,&quot;global-national&quot;]}}"
 			    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Iran&#8217;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates'"
+						alt="Click to play video: 'Manitoba, Nova Scotia communities &#8216;shaken&#8217; over alleged school attack plot'"
 						width="640"
 						height="360"
-													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/z1qgfxg8xq-9beuxs44kf/iran_vsssm.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/d5mnj8fujn-39ywvqp2xu/260319-HEIDI.jpg?w=640&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/z1qgfxg8xq-9beuxs44kf/iran_vsssm.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/z1qgfxg8xq-9beuxs44kf/iran_vsssm.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/z1qgfxg8xq-9beuxs44kf/iran_vsssm.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
+								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/d5mnj8fujn-39ywvqp2xu/260319-HEIDI.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/d5mnj8fujn-39ywvqp2xu/260319-HEIDI.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/d5mnj8fujn-39ywvqp2xu/260319-HEIDI.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -4519,8 +4520,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">2:29</time>
-																									<span class="c-video__title">Iran&#8217;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates</span>
+																	<time class="c-video__duration">1:57</time>
+																									<span class="c-video__title">Manitoba, Nova Scotia communities &#8216;shaken&#8217; over alleged school attack plot</span>
 															</div>
 						</span>
 											</span>
@@ -4536,23 +4537,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="1"
 	>
-	<a href="https://globalnews.ca/video/11738254/irans-regime-strikes-gulf-energy-infrastructure-as-conflict-with-us-israel-escalates/"
-		title="Iran&#8217;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates"
+	<a href="https://globalnews.ca/video/11738777/manitoba-nova-scotia-communites-shaken-over-alleged-school-attack-plot/"
+		title="Manitoba, Nova Scotia communities &#8216;shaken&#8217; over alleged school attack plot"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11738254"
-		data-video-label="Economy"
+		data-video-id="11738777"
+		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11738254,11738777,11736703,3226216,11735129/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11738777,11738254,11736703,11734857,11738784/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Iran&#8217;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Manitoba, Nova Scotia communities &#8216;shaken&#8217; over alleged school attack plot</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Economy					</div>
+						Canada					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/z1qgfxg8xq-9beuxs44kf/iran_vsssm.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/d5mnj8fujn-39ywvqp2xu/260319-HEIDI.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4564,23 +4565,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="2"
 	>
-	<a href="https://globalnews.ca/video/11738777/manitoba-nova-scotia-communites-shaken-over-alleged-school-attack-plot/"
-		title="Manitoba, Nova Scotia communities &#8216;shaken&#8217; over alleged school attack plot"
+	<a href="https://globalnews.ca/video/11738254/irans-regime-strikes-gulf-energy-infrastructure-as-conflict-with-us-israel-escalates/"
+		title="Iran&#8217;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11738777"
-		data-video-label="Canada"
+		data-video-id="11738254"
+		data-video-label="Economy"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11738777,11736703,3226216,11735129/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11738254,11736703,11734857,11738784/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Manitoba, Nova Scotia communities &#8216;shaken&#8217; over alleged school attack plot</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Iran&#8217;s regime strikes Gulf energy infrastructure as conflict with US, Israel escalates</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
+						Economy					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/d5mnj8fujn-39ywvqp2xu/260319-HEIDI.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/z1qgfxg8xq-9beuxs44kf/iran_vsssm.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4599,7 +4600,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Crime"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11736703,3226216,11735129,11738777/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11736703,11734857,11738784,11738254/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Cult leader Romana Didulo no longer facing charges after Saskatchewan school occupation</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4620,23 +4621,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="4"
 	>
-	<a href="https://globalnews.ca/video/3226216/knife-wielding-man-holds-13-year-old-girl-hostage-in-russia/"
-		title="Knife-wielding man holds 13-year-old girl hostage in Russia"
+	<a href="https://globalnews.ca/video/11734857/the-morning-show-march-17-5/"
+		title="The Morning Show: March 17"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="3226216"
-		data-video-label="Crime"
+		data-video-id="11734857"
+		data-video-label="Entertainment"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/3226216,11735129,11738777,11736703/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11734857,11738784,11738254,11736703/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Knife-wielding man holds 13-year-old girl hostage in Russia</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">The Morning Show: March 17</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Crime					</div>
+						Entertainment					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/924/431/KnifeThumber_848x480_869631043769.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/assets.news.corusappservices.com/upload/news/GTMS031726STILL.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4648,23 +4649,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="5"
 	>
-	<a href="https://globalnews.ca/video/11735129/iran-war-price-shock-forces-countries-to-ration-fuel-consumption/"
-		title="Iran war price shock forces countries to ration fuel consumption"
+	<a href="https://globalnews.ca/video/11738784/takeaways-from-poilievres-appearance-on-joe-rogans-podcast/"
+		title="Takeaways from Poilievre&#8217;s appearance on Joe Rogan&#8217;s podcast"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11735129"
+		data-video-id="11738784"
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer-variant"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11735129,11738777,11736703,3226216/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11738784,11738254,11736703,11734857/#autoplay&#038;stickyiframe=home-playlist-miniplayer-variant">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Iran war price shock forces countries to ration fuel consumption</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Takeaways from Poilievre&#8217;s appearance on Joe Rogan&#8217;s podcast</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
 						Canada					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/f0w786srtu-38qiyqbxcr/AFF_IRAN_ENERGY_PRICE_SPIKE_ONLINE_STILL.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/bt3yijh958-v9fxuwcqs7/260319-MACKENZIE.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -5358,6 +5359,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-30"
+	data-post-id="11738529"
+	data-slide-index=""
+	data-caption="Amherstburg mayor says Crown Royal ban should have stayed until plant was sold"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11738529/amherstburg-mayor-crown-royal-plant-sales/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/03/CP174942837-2.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/CP174942837-2.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/CP174942837-2.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/CP174942837-2.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Amherstburg mayor says Crown Royal ban should have stayed until plant was sold" data-title>Amherstburg mayor says Crown Royal ban should have stayed until plant was sold</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >20 mins</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-31"
 	data-post-id="11738661"
 	data-slide-index=""
 	data-caption="Warm weather brings melting snow, potholes to Saskatchewan roads"
@@ -5365,7 +5398,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11738661/warm-weather-melting-snow-potholes-saskatchewan/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5383,13 +5416,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >6 hours</div>
+																<div class="c-posts__info" data-date >8 hours</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-31"
+	data-container-id="stories-item-32"
 	data-post-id="11738691"
 	data-slide-index=""
 	data-caption="Patrol disparity sparks concerns in Kelowna&#8217;s Rutland neighbourhood"
@@ -5397,7 +5430,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11738691/patrol-disparity-concerns-kelowna-rutland/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5415,39 +5448,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >6 hours</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-32"
-	data-post-id="11738654"
-	data-slide-index=""
-	data-caption="After more than 400 police files, Kelowna reoffender released on bail"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11738654/after-more-than-400-police-files-kelowna-reoffender-released-on-bail/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/03/Still0319_00000.png?w=720													loading="lazy"
-								width="720" height="405" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/Still0319_00000.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/Still0319_00000.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/Still0319_00000.png?w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="After more than 400 police files, Kelowna reoffender released on bail" data-title>After more than 400 police files, Kelowna reoffender released on bail</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >6 hours</div>
+																<div class="c-posts__info" data-date >8 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5542,7 +5543,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >6 hours</div>
+																<div class="c-posts__info" data-date >8 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5574,7 +5575,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >7 hours</div>
+																<div class="c-posts__info" data-date >10 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5606,7 +5607,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >8 hours</div>
+																<div class="c-posts__info" data-date >10 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5881,7 +5882,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >8 hours</div>
+																<div class="c-posts__info" data-date >10 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5913,7 +5914,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >10 hours</div>
+																<div class="c-posts__info" data-date >Mar 19</div>
 																			</div>
 									</div>
 		</a>
@@ -5945,7 +5946,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >11 hours</div>
+																<div class="c-posts__info" data-date >Mar 19</div>
 																			</div>
 									</div>
 		</a>
@@ -6199,7 +6200,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >11 hours</div>
+																<div class="c-posts__info" data-date >Mar 19</div>
 																			</div>
 									</div>
 		</a>
@@ -6538,7 +6539,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >5 hours</div>
+																<div class="c-posts__info" data-date >7 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -6570,7 +6571,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >6 hours</div>
+																<div class="c-posts__info" data-date >8 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -6602,7 +6603,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >7 hours</div>
+																<div class="c-posts__info" data-date >9 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -6924,7 +6925,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			<script async src="//static.chartbeat.com/js/chartbeat_mab.js"></script>
 			<!-- Adobe Analytics code version: JS-2.6.0. -->
 		<script type="text/javascript">
-			var gnPageData = {"context_data":{"hourofday":"4","dayofweek":"Friday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
+			var gnPageData = {"context_data":{"hourofday":"6","dayofweek":"Friday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
 		</script>
 				<!-- End Adobe Analytics code -->
 			<script>
@@ -6983,5 +6984,5 @@ var GN_OneSignalSettings = {"isCurator":"","appId":"8beb7996-b996-4ce8-a474-d488
 		
 		<div class="l-dynamicElement"></div>
 
-			</body>
+			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75660ba8f4","applicationID":"418684855","transactionName":"Z1BWZxdTWkAHVExRXF4adVARW1tdSV9XVVY=","queueTime":0,"applicationTime":656,"atts":"SxdBEV9JSR9EVhoCSE1I","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
