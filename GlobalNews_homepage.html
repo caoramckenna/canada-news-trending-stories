@@ -184,8 +184,7 @@
         }
     </script>
     	<!-- Meta Tags -->
-	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"75660ba8f4",applicationID:"418684855",browserID:"419993820"};;/*! For license information please see nr-loader-rum-1.312.1.min.js.LICENSE.txt */
-(()=>{var e,t,r={163:(e,t,r)=>{"use strict";r.d(t,{j:()=>T});var n=r(384),i=r(1741);var s=r(2555);r(860).K7.genericEvents;const o="experimental.resources",a="register",c=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var u=r(2614),d=r(944),l=r(8122);const f="[data-nr-mask]",g=e=>(0,l.a)(e,(()=>{const e={feature_flags:[],experimental:{allow_registered_children:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{get allow_registered_children(){return e.feature_flags.includes(a)||e.experimental.allow_registered_children},set allow_registered_children(t){e.experimental.allow_registered_children=t},duplicate_registered_data:!1},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(o)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:u.wk,inactiveMs:u.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){c(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,d.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){c(t)?e.block_selector+=",".concat(t):""!==t&&(0,d.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,d.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var p=r(6154),m=r(9324);let h=0;const v={buildEnv:m.F3,distMethod:m.Xs,version:m.xv,originTime:p.WN},b={consented:!1},y={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||b.consented},set consented(e){b.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++h}},_=e=>{const t=(0,l.a)(e,y),r=Object.keys(v).reduce((e,t)=>(e[t]={value:v[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)},w=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var x=r(7836),R=r(3241);const k={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A=e=>(0,l.a)(e,k);function T(e,t={},r,o){let{init:a,info:c,loader_config:u,runtime:d={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();a=e.init,c=e.info,u=e.loader_config}e.init=g(a||{}),e.loader_config=A(u||{}),c.jsAttributes??={},p.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,s.D)(c);const f=e.init;e.runtime??=_(d),f.proxy.assets&&w(f.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach(r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let s=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return s?s(...t):n})})}(e),e.runtime.loaderType=r,e.ee=x.ee.get(e.agentIdentifier),e.exposed=l,(0,R.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.runtime.configured=!0)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>a,Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),s=r(944),o=r(1910);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,o.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,s.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>d,K7:()=>c,P3:()=>u,XX:()=>i,Yy:()=>a,df:()=>s,qY:()=>n,v4:()=>o});const n="events",i="jserrors",s="browser/blobs",o="rum",a="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},u={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.softNav]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.sessionReplay]:8,[c.logging]:9,[c.genericEvents]:10},d={[c.pageViewEvent]:o,[c.pageViewTiming]:n,[c.ajax]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:s,[c.sessionReplay]:s,[c.logging]:a,[c.genericEvents]:"ins"}},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},1687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>a,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),s=r(860),o=r(2646);function a(e,t){if(!e)return;const r={staged:!1,priority:s.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const s=e.ee,a=i.i.handlers;if(s&&!s.aborted&&s.backlog&&a){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=s.backlog[t],r=a[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof o.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}s.isolatedBacklog||delete a[t],s.backlog[t]=null,s.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],s=e[2];n.apply(i,s)}})}},1738:(e,t,r)=>{"use strict";r.d(t,{U:()=>f,Y:()=>l});var n=r(3241),i=r(9908),s=r(1863),o=r(944),a=r(3969),c=r(8362),u=r(860),d=r(4261);function l(e,t,r,s){const l=s||r;!l||l[e]&&l[e]!==c.d.prototype[e]||(l[e]=function(){(0,i.p)(a.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:d.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,o.R)(23,e)}})}function f(e,t,r,n,o){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(o||null===r)&&(0,i.p)(d.Pl+n,[(0,s.t)(),t,r],void 0,"session",e.ee)}},1741:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(944),i=r(4261);class s{#e(e,...t){if(this[e]!==s.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},1863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},1910:(e,t,r)=>{"use strict";r.d(t,{i:()=>s});var n=r(944);const i=new Map;function s(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),s=t.includes("nrWrapper");return r||s||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},2555:(e,t,r)=>{"use strict";r.d(t,{D:()=>a,f:()=>o});var n=r(384),i=r(8122);const s={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function o(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const a=e=>(0,i.a)(e,s)},2614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>o,H3:()=>n,g:()=>u,iL:()=>c,tS:()=>a,uh:()=>i,wk:()=>s});const n="NRBA",i="SESSION",s=144e5,o=18e5,a={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},2646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},2843:(e,t,r)=>{"use strict";r.d(t,{G:()=>s,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function s(e,t,r){(0,n.sp)("pagehide",e,t,r)}},3241:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(6154);const i="newrelic";function s(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},3606:(e,t,r)=>{"use strict";r.d(t,{i:()=>s});var n=r(9908);s.on=o;var i=s.handlers={};function s(e,t,r,s){o(s||n.d,i,e,t,r)}function o(e,t,r,i,s){s||(s="feature"),e||(e=n.d);var o=t[s]=t[s]||{};(o[r]=o[r]||[]).push([e,i])}},3878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function s(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>s,jT:()=>n,sp:()=>i})},3969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>a,rs:()=>i,xV:()=>o,z_:()=>s});const n=r(860).K7.metrics,i="sm",s="cm",o="storeSupportabilityMetrics",a="storeEventMetrics"},4234:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},4261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>u,BL:()=>a,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>h,Pl:()=>n,Pv:()=>k,Tb:()=>l,U2:()=>s,V1:()=>R,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>o,nb:()=>m,o5:()=>d});const n="api-",i="addPageAction",s="addToTrace",o="addRelease",a="finished",c="interaction",u="log",d="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",m="setApplicationVersion",h="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",R="measure",k="consent"},5289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>o,Qr:()=>c,sB:()=>a});var n=r(3878),i=r(6389);function s(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(s())return e();const r=(0,i.J)(e),o=setInterval(()=>{s()&&(clearInterval(o),r())},500);(0,n.sp)("load",r,t)}function a(e){if(s())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(s())return e();(0,n.sp)("popstate",e)}},5607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},6154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>u,RI:()=>i,WN:()=>l,bv:()=>s,gm:()=>o,m:()=>c,mw:()=>a,sb:()=>d,zk:()=>f});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,s="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),c=""+o?.location,u=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)()),f=()=>{const e=o?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<o.performance.now())return e}},6389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},6630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},7699:(e,t,r)=>{"use strict";r.d(t,{It:()=>s,KC:()=>a,No:()=>i,qh:()=>o});var n=r(860);const i=16e3,s=1e6,o="SESSION_ERROR",a={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0}},7836:(e,t,r)=>{"use strict";r.d(t,{P:()=>a,ee:()=>c});var n=r(384),i=r(8990),s=r(2646),o=r(5607);const a="nr@context:".concat(o.W),c=function e(t,r){var n={},o={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,s){!1!==s&&(s=!0);if(c.aborted&&!i)return;t&&s&&t.emit(e,r,n);var a=g(n);m(e).forEach(e=>{e.apply(a,r)});var u=v()[o[e]];u&&u.push([f,e,r,a]);return a},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{o[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[o[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof s.y?e:e?(0,i.I)(e,a,()=>new s.y(a)):new s.y(a)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c)},8122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),s=0===Object.keys(r).length?e:r;for(let o in s)if(void 0!==e[o])try{if(null===e[o]){r[o]=null;continue}Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):e[o]instanceof Map||e[o]instanceof Set||e[o]instanceof Date||e[o]instanceof RegExp?r[o]=e[o]:"object"==typeof e[o]&&"object"==typeof t[o]?r[o]=i(e[o],t[o]):r[o]=e[o]}catch(e){r[o]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},8362:(e,t,r)=>{"use strict";r.d(t,{d:()=>s});var n=r(9566),i=r(1741);class s extends i.W{agentIdentifier=(0,n.LA)(16)}},8374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},8990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},9324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>s,xv:()=>n});const n="1.312.1",i="PROD",s="CDN"},9566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>a,bz:()=>o});var n=r(6154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function s(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map(e=>"x"===e?s(t,r++).toString(16):"y"===e?(3&s()|8).toString(16):e).join("")}function a(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const o=[];for(var a=0;a<e;a++)o.push(s(r,i++).toString(16));return o.join("")}},9908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,s){s?(s.buffer([e],i),s.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var s=n[e]={exports:{}};return r[e](s,s.exports,i),s.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce((t,r)=>(i.f[r](e,t),t),[])),i.u=e=>"nr-rum-1.312.1.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.312.1.PROD:",i.l=(r,n,s,o)=>{if(e[r])e[r].push(n);else{var a,c;if(void 0!==s)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+s){a=l;break}}if(!a){c=!0;var f={296:"sha512-EBevTx+IXLhfp3rcdB/+2IBkydvAvYO85Bg7o/JAfe5/1BHeAY6HkMhclfLvNo4yjovWHNXDKPvq85KQM98H1Q=="};(a=document.createElement("script")).charset="utf-8",i.nc&&a.setAttribute("nonce",i.nc),a.setAttribute("data-webpack",t+s),a.src=r,0!==a.src.indexOf(window.location.origin+"/")&&(a.crossOrigin="anonymous"),f[o]&&(a.integrity=f[o])}e[r]=[n];var g=(t,n)=>{a.onerror=a.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],a.parentNode&&a.parentNode.removeChild(a),i&&i.forEach(e=>e(n)),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:a}),12e4);a.onerror=g.bind(null,a.onerror),a.onload=g.bind(null,a.onload),c&&document.head.appendChild(a)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var s=new Promise((r,i)=>n=e[t]=[r,i]);r.push(n[2]=s);var o=i.p+i.u(t),a=new Error;i.l(o,r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var s=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;a.message="Loading chunk "+t+" failed: ("+s+": "+o+")",a.name="ChunkLoadError",a.type=s,a.request=o,n[1](a)}},"chunk-"+t,t)}};var t=(t,r)=>{var n,s,[o,a,c]=r,u=0;if(o.some(t=>0!==e[t])){for(n in a)i.o(a,n)&&(i.m[n]=a[n]);if(c)c(i)}for(t&&t(r);u<o.length;u++)s=o[u],i.o(e,s)&&e[s]&&e[s][0](),e[s]=0},r=self["webpackChunk:NRBA-1.312.1.PROD"]=self["webpackChunk:NRBA-1.312.1.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(8362),t=i(860);const r=Object.values(t.K7);var n=i(163);var s=i(9908),o=i(1863),a=i(4261),c=i(1738);var u=i(1687),d=i(4234),l=i(5289),f=i(6154),g=i(944),p=i(384);const m=e=>f.RI&&!0===e?.privacy.cookies_enabled;function h(e){return!!(0,p.dV)().o.MO&&m(e)&&!0===e?.session_trace.enabled}var v=i(6389),b=i(7699);class y extends d.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,v.J)(()=>{(0,u.Ak)(e,this.featureName),t()}))}):(0,u.Ak)(e,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;const n=async()=>{let n;await this.deferred;try{if(m(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,3521));n=t(e)}}catch(e){(0,g.R)(20,e),this.ee.emit("internal-error",[e]),(0,s.p)(b.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#t(this.featureName,n,e.init))return(0,u.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,g.R)(34,e),this.abortHandler?.(),(0,u.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1),this.ee&&this.ee.abort()}};f.RI?(0,l.GG)(()=>n(),!0):n()}#t(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return h(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}}var _=i(6630),w=i(2614),x=i(3241);class R extends y{static featureName=_.T;constructor(e){var t;super(e,_.T),this.setupInspectionEvents(),t=e,(0,c.Y)(a.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,s.p)(a.Pl+a.Fw,[(0,o.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>i.e(296).then(i.bind(i,146)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,x.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,l.sB)(t=>{e(t,"DOMContentLoaded")}),(0,l.GG)(t=>{e(t,"load")}),(0,l.Qr)(t=>{e(t,"navigate")}),this.ee.on(w.tS.UPDATE,(e,t)=>{(0,x.W)({type:"lifecycle",name:"session",data:t})})}}class k extends e.d{constructor(e){var t;(super(),f.gm)?(this.features={},(0,p.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(R),(0,n.j)(this,e,e.loaderType||"agent"),t=this,(0,c.Y)(a.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,c.U)(t,e,r,a.cD,n);(0,g.R)(40,typeof r)}else(0,g.R)(39,typeof e)},t),function(e){(0,c.Y)(a.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,g.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,s.p)(a.Pl+"setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,c.U)(e,"enduser.id",t,a.Dl,!0)},e)}(this),function(e){(0,c.Y)(a.nb,function(t){if("string"==typeof t||null===t)return(0,c.U)(e,"application.version",t,a.nb,!1);(0,g.R)(42,typeof t)},e)}(this),function(e){(0,c.Y)(a.d3,function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,c.Y)(a.Pv,function(t=!0){if("boolean"==typeof t){if((0,s.p)(a.Pl+a.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum()})}}else(0,g.R)(65,typeof t)},e)}(this),this.run()):(0,g.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return r.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),n=[...this.desiredFeatures];n.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),n.forEach(r=>{if(!e[r.featureName]&&r.featureName!==t.K7.pageViewEvent)return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,g.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,g.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,p.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var A=i(2843),T=i(782);class E extends y{static featureName=T.T;constructor(e){super(e,T.T),f.RI&&((0,A.u)(()=>(0,s.p)("docHidden",[(0,o.t)()],void 0,T.T,this.ee),!0),(0,A.G)(()=>(0,s.p)("winPagehide",[(0,o.t)()],void 0,T.T,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,2117))))}}var S=i(3969);class j extends y{static featureName=S.TZ;constructor(e){super(e,S.TZ),f.RI&&document.addEventListener("securitypolicyviolation",e=>{(0,s.p)(S.xV,["Generic/CSPViolation/Detected"],void 0,this.featureName,this.ee)}),this.importAggregator(e,()=>i.e(296).then(i.bind(i,9623)))}}new k({features:[R,E,j],loaderType:"lite"})})()})();</script>
+	<meta charset="UTF-8">
 	<meta name="theme-color" content="#231F20">
 
 			<meta name="msvalidate.01" content="9E5C74811CA48CCCC61A2CF3C0A1BA6A">
@@ -462,7 +461,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 
 				
 
-				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"9","weatherprec":"x","weathercode":"32","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
+				gnAdSettings = {"adPath":"\/6872\/shaw.globalnews.ca\/homepage","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"13","weatherprec":"x","weathercode":"26","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
 		</script>
 			<script>
 				// Load the APS JavaScript Library
@@ -547,23 +546,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-trendingTopics__title">In the news</div>
 				<ul class="c-trendingTopics__list">
 							<li class="c-trendingTopics__item">
+					<a href="https://globalnews.ca/news/11771037/liberals-for-policy-convention-carney-majority/" class="c-trendingTopics__link l-header__button c-headerButton">
+						<span>Carney</span>
+					</a>
+				</li>
+							<li class="c-trendingTopics__item">
 					<a href="https://globalnews.ca/news/11769468/conservative-mp-marilyn-gladu-crosses-floor-liberals/" class="c-trendingTopics__link l-header__button c-headerButton">
 						<span>Marilyn Gladu</span>
 					</a>
 				</li>
 							<li class="c-trendingTopics__item">
-					<a href="https://globalnews.ca/news/11769227/iran-war-ceasefire-terms/" class="c-trendingTopics__link l-header__button c-headerButton">
-						<span>Iran</span>
+					<a href="https://globalnews.ca/news/11771031/hawaii-doctor-gerhardt-konig-guilty-attempted-manslaughter-kill-wife-hike/" class="c-trendingTopics__link l-header__button c-headerButton">
+						<span>Hawaii Doctor</span>
 					</a>
 				</li>
 							<li class="c-trendingTopics__item">
-					<a href="https://globalnews.ca/news/11769253/ketamine-queen-jasveen-sangha-drugs-matthew-perry-sentencing/" class="c-trendingTopics__link l-header__button c-headerButton">
-						<span>Ketamine Queen</span>
-					</a>
-				</li>
-							<li class="c-trendingTopics__item">
-					<a href="https://globalnews.ca/news/11767341/lotto-max-2026-changes/" class="c-trendingTopics__link l-header__button c-headerButton">
-						<span>Lotto Max</span>
+					<a href="https://globalnews.ca/news/11769904/husband-arrested-wife-missing-bahamas-boat-trip-lynette-brian-hooker/" class="c-trendingTopics__link l-header__button c-headerButton">
+						<span>Bahamas</span>
 					</a>
 				</li>
 					</ul>
@@ -1504,10 +1503,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay=""
 						data-displayinline-featured="false"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_11728400_69d7a43410830"
+			data-displayinline-player-id="miniplayer_11728400_69d7c28ecd0c4"
 			data-displayinline-video-id="11728400"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/11728400/#autoplay&#038;stickyiframe=miniplayer_11728400_69d7a43410830"
+    		data-displayinline="https://globalnews.ca/video/embed/11728400/#autoplay&#038;stickyiframe=miniplayer_11728400_69d7c28ecd0c4"
     									data-displayinline-container="stories-1-0"
 										data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Terrebonne candidates expect a tight race leading up to April 13 federal byelection&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;montreal&quot;,&quot;canada&quot;],&quot;keywords&quot;:[&quot;bloc-quebecois&quot;,&quot;byelection&quot;,&quot;election&quot;,&quot;federal&quot;,&quot;liberal&quot;,&quot;liberals&quot;,&quot;riding&quot;,&quot;short-clip&quot;,&quot;terrebonne&quot;]}}"
@@ -1577,7 +1576,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			</div>
 								<div class="c-posts__about c-posts__about--multiple">
 																<div class="c-posts__info c-posts__info--highlight">World</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">44 mins</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">3 hours</div>
 																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">6 min read</div>
 															</div>
 						</div>
@@ -1589,26 +1588,26 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				>
 					<a
 						class="c-posts__inner"
-						href="https://globalnews.ca/news/11771037/liberals-for-policy-convention-carney-majority/"
+						href="https://globalnews.ca/news/11771040/sobeys-recall-cheese-listeria/"
 						data-analytics="{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:2}"
 					>
 						
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/Liberal-convention-Montreal.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="484" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/sobeys-recall.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="405" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/Liberal-convention-Montreal.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/Liberal-convention-Montreal.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/Liberal-convention-Montreal.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/sobeys-recall.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/sobeys-recall.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/sobeys-recall.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 								<div class="c-posts__details">
 										<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Liberals huddle for policy convention with Carney on verge of majority" data-title>Liberals huddle for policy convention with Carney on verge of majority</span>
+					<span class="c-posts__headlineText" title="Sobeys-owned stores recalling multiple cheese products for listeria risks" data-title>Sobeys-owned stores recalling multiple cheese products for listeria risks</span>
 			</div>
 								<div class="c-posts__about c-posts__about--multiple">
-																<div class="c-posts__info c-posts__info--highlight">Politics</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">32 mins</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
+																<div class="c-posts__info c-posts__info--highlight">Health</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 															</div>
 						</div>
 					</a>
@@ -1627,6 +1626,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=12			data-parent-id=home-topStories					>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-1"
+	data-post-id="11771037"
+	data-slide-index=""
+	data-caption="Liberals huddle for policy convention with Carney on verge of majority"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11771037/liberals-for-policy-convention-carney-majority/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				src=https://globalnews.ca/wp-content/uploads/2026/04/Liberal-convention-Montreal.jpg?quality=65&#038;strip=all&#038;w=720												width="720" height="484" alt="" 
+											srcset="https://globalnews.ca/wp-content/uploads/2026/04/Liberal-convention-Montreal.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/Liberal-convention-Montreal.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/Liberal-convention-Montreal.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Liberals huddle for policy convention with Carney on verge of majority" data-title>Liberals huddle for policy convention with Carney on verge of majority</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">3 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-2"
 	data-post-id="11769468"
 	data-slide-index=""
 	data-caption="Ex-Conservative MP Marilyn Gladu crosses floor to Liberals"
@@ -1634,14 +1665,16 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11769468/conservative-mp-marilyn-gladu-crosses-floor-liberals/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				src=https://globalnews.ca/wp-content/uploads/2026/04/Marilyn-Gladu.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=499 data-ratio=0.67								width="720" height="499" alt="" 
-											srcset="https://globalnews.ca/wp-content/uploads/2026/04/Marilyn-Gladu.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/Marilyn-Gladu.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/Marilyn-Gladu.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"						/>
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/Marilyn-Gladu.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=499 data-ratio=0.67									loading="lazy"
+								width="720" height="499" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/Marilyn-Gladu.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/Marilyn-Gladu.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/Marilyn-Gladu.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
@@ -1653,40 +1686,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Apr 8</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-2"
-	data-post-id="11770658"
-	data-slide-index=""
-	data-caption="Carney praises Hansen, calls hearing French from space a point of pride"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11770658/carney-hansen-french-space-call/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=519 data-ratio=0.67									loading="lazy"
-								width="720" height="519" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Carney praises Hansen, calls hearing French from space a point of pride" data-title>Carney praises Hansen, calls hearing French from space a point of pride</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">11 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1715,6 +1714,40 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-3"
+	data-post-id="11770658"
+	data-slide-index=""
+	data-caption="Carney praises Hansen, calls hearing French from space a point of pride"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11770658/carney-hansen-french-space-call/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=519 data-ratio=0.67									loading="lazy"
+								width="720" height="519" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Carney praises Hansen, calls hearing French from space a point of pride" data-title>Carney praises Hansen, calls hearing French from space a point of pride</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Apr 8</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-4"
 	data-post-id="11769227"
 	data-slide-index=""
 	data-caption="U.S. claims ‘victory’ in Iran. What&#8217;s the situation on the ground?"
@@ -1722,7 +1755,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11769227/iran-war-ceasefire-terms/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1748,7 +1781,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-4"
+	data-container-id="stories-item-5"
 	data-post-id="11769376"
 	data-slide-index=""
 	data-caption="Poilievre set to lose communications director seen as an agent of change"
@@ -1756,7 +1789,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11769376/poilievre-communications-director-seen-as-an-agent-of-change-set-to-depart/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -1782,7 +1815,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-5"
+	data-container-id="stories-item-6"
 	data-post-id="11769253"
 	data-slide-index=""
 	data-caption="&#8216;Ketamine Queen,&#8217; who supplied drugs to Matthew Perry, sentenced to 15 years"
@@ -1790,7 +1823,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11769253/ketamine-queen-jasveen-sangha-drugs-matthew-perry-sentencing/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -1811,40 +1844,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 											<div class="c-posts__info c-posts__info--highlight" data-label>Entertainment</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Apr 8</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-6"
-	data-post-id="11769920"
-	data-slide-index=""
-	data-caption="JD Vance will lead U.S. delegation in Iran peace talks in Pakistan"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11769920/jd-vance-us-delegation-iran-peace-talks-pakistan/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/JD-Vance-Pakistan-Iran.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/JD-Vance-Pakistan-Iran.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/JD-Vance-Pakistan-Iran.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/JD-Vance-Pakistan-Iran.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="JD Vance will lead U.S. delegation in Iran peace talks in Pakistan" data-title>JD Vance will lead U.S. delegation in Iran peace talks in Pakistan</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Apr 8</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1873,6 +1872,40 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-7"
+	data-post-id="11769920"
+	data-slide-index=""
+	data-caption="JD Vance will lead U.S. delegation in Iran peace talks in Pakistan"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11769920/jd-vance-us-delegation-iran-peace-talks-pakistan/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/JD-Vance-Pakistan-Iran.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/JD-Vance-Pakistan-Iran.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/JD-Vance-Pakistan-Iran.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/JD-Vance-Pakistan-Iran.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="JD Vance will lead U.S. delegation in Iran peace talks in Pakistan" data-title>JD Vance will lead U.S. delegation in Iran peace talks in Pakistan</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Apr 8</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-8"
 	data-post-id="11769218"
 	data-slide-index=""
 	data-caption="Trump complains NATO &#8216;wasn&#8217;t there when we needed them&#8217; after talks with alliance leader"
@@ -1880,7 +1913,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11769218/donald-trump-nato-meeting/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1906,7 +1939,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-8"
+	data-container-id="stories-item-9"
 	data-post-id="11767784"
 	data-slide-index=""
 	data-caption="Russia, China veto UN Security Council measure to reopen Strait of Hormuz"
@@ -1914,7 +1947,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11767784/iran-strait-of-hormuz-un-security-council-russia-china/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1940,102 +1973,68 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-9"
-	data-post-id="11770414"
+	data-container-id="stories-item-10"
+	data-post-id="11771279"
 	data-slide-index=""
-	data-caption="Gilgo Beach serial killing suspect admits to 8 murders, pleads guilty"
+	data-caption="Don’t want NATO to split over U.S.-Iran war, German chancellor says"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11770414/gilgo-beach-serial-killer-guilty-plea/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
+		href="https://globalnews.ca/news/11771279/nato-split-us-iran-war/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/95bb36711a3bc4adac096661733ebeea5d4a02be56115f8d0e64aea9e5e9029d.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="437" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/Friedrich-Merz.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/95bb36711a3bc4adac096661733ebeea5d4a02be56115f8d0e64aea9e5e9029d.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/95bb36711a3bc4adac096661733ebeea5d4a02be56115f8d0e64aea9e5e9029d.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/95bb36711a3bc4adac096661733ebeea5d4a02be56115f8d0e64aea9e5e9029d.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/Friedrich-Merz.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/Friedrich-Merz.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/Friedrich-Merz.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Gilgo Beach serial killing suspect admits to 8 murders, pleads guilty" data-title>Gilgo Beach serial killing suspect admits to 8 murders, pleads guilty</span>
+					<span class="c-posts__headlineText" title="Don’t want NATO to split over U.S.-Iran war, German chancellor says" data-title>Don’t want NATO to split over U.S.-Iran war, German chancellor says</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>U.S. News</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Apr 8</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-10"
-	data-post-id="11770099"
-	data-slide-index=""
-	data-caption="U.K. animal charity forced to clarify image of 250 abandoned dogs isn&#8217;t AI"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11770099/abandoned-dogs-ai-images-rescue-uk/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/Untitled-design-34.png?w=720				data-width=720 data-height=563 data-ratio=0.67									loading="lazy"
-								width="720" height="563" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/Untitled-design-34.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/Untitled-design-34.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/Untitled-design-34.png?w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="U.K. animal charity forced to clarify image of 250 abandoned dogs isn&#8217;t AI" data-title>U.K. animal charity forced to clarify image of 250 abandoned dogs isn&#8217;t AI</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Trending</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Apr 8</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">39 mins</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 														</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    is-hidden"
 	data-container-id="stories-item-11"
-	data-post-id="11770220"
+	data-post-id="11771273"
 	data-slide-index=""
-	data-caption="CAE laying off roughly 280 workers amid aviation headwinds"
+	data-caption="Lebanon hospitals may run out of vital supplies within days, WHO says"
 		data-ad-fallback=false>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11770220/cae-lays-off-280-workers/"
+		href="https://globalnews.ca/news/11771273/lebanon-hospitals-vital-supplies-who/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/3cd83cd00eb364285b8c641e90409bf87039dcfeba42463609bb064fbbabe0d6.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=499 data-ratio=0.67									loading="lazy"
-								width="720" height="499" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/Lebanon-hospitals.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=540 data-ratio=0.67									loading="lazy"
+								width="720" height="540" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/3cd83cd00eb364285b8c641e90409bf87039dcfeba42463609bb064fbbabe0d6.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/3cd83cd00eb364285b8c641e90409bf87039dcfeba42463609bb064fbbabe0d6.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/3cd83cd00eb364285b8c641e90409bf87039dcfeba42463609bb064fbbabe0d6.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/Lebanon-hospitals.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/Lebanon-hospitals.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/Lebanon-hospitals.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="CAE laying off roughly 280 workers amid aviation headwinds" data-title>CAE laying off roughly 280 workers amid aviation headwinds</span>
+					<span class="c-posts__headlineText" title="Lebanon hospitals may run out of vital supplies within days, WHO says" data-title>Lebanon hospitals may run out of vital supplies within days, WHO says</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Apr 8</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">55 mins</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
 														</div>
 									</div>
@@ -2043,34 +2042,34 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    is-hidden"
 	data-container-id="stories-item-12"
-	data-post-id="11767759"
+	data-post-id="11771031"
 	data-slide-index=""
-	data-caption="Are Trump&#8217;s Iran threats and attacks war crimes? What international law says"
+	data-caption="Hawaii doctor accused of trying to kill wife found guilty of attempted manslaughter"
 		data-ad-fallback=false>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11767759/trump-iran-war-crimes-international-law/"
+		href="https://globalnews.ca/news/11771031/hawaii-doctor-gerhardt-konig-guilty-attempted-manslaughter-kill-wife-hike/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:11}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/eafb7530dc3e8b6b9cbdfe6d75a7b1876813e94dd691c52b9de09c959f6b7ebf_9ae209.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="479" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/Gerhardt-Konig-Guilty.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/eafb7530dc3e8b6b9cbdfe6d75a7b1876813e94dd691c52b9de09c959f6b7ebf_9ae209.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/eafb7530dc3e8b6b9cbdfe6d75a7b1876813e94dd691c52b9de09c959f6b7ebf_9ae209.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/eafb7530dc3e8b6b9cbdfe6d75a7b1876813e94dd691c52b9de09c959f6b7ebf_9ae209.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/Gerhardt-Konig-Guilty.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/Gerhardt-Konig-Guilty.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/Gerhardt-Konig-Guilty.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Are Trump&#8217;s Iran threats and attacks war crimes? What international law says" data-title>Are Trump&#8217;s Iran threats and attacks war crimes? What international law says</span>
+					<span class="c-posts__headlineText" title="Hawaii doctor accused of trying to kill wife found guilty of attempted manslaughter" data-title>Hawaii doctor accused of trying to kill wife found guilty of attempted manslaughter</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Apr 8</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">8 min read</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Crime</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
 														</div>
 									</div>
 		</a>
@@ -2087,10 +2086,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay="true"
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69d7a43413b02"
+			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69d7c28ed33e1"
 			data-displayinline-video-id="49a91e7f-1023-430f-8d66-561055f3d0f7"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69d7a43413b02"
+    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69d7c28ed33e1"
     		    			data-displayinline-playlist="49a91e7f-1023-430f-8d66-561055f3d0f7"
     									data-displayinline-container="mini-ott"
 																data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;recent_terms_datastore&quot;,&quot;type&quot;:&quot;wlo_option&quot;}}"
@@ -2202,45 +2201,14 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<ul 
 		class="c-posts c-posts--numbered"
 		data-ad-empty=true	>
-					<li class="c-posts__item" data-post-id="11769254">
+					<li class="c-posts__item" data-post-id="11769376">
 				<a
-					href="https://globalnews.ca/news/11769254/israel-beirut-iran-ceasefire-lebanon/"
+					href="https://globalnews.ca/news/11769376/poilievre-communications-director-seen-as-an-agent-of-change-set-to-depart/"
 					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:0}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#1"></use>
-	</svg>
-						</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-							<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Iran ceasefire in jeopardy after U.S., Israel accused of violating truce" data-title>Iran ceasefire in jeopardy after U.S., Israel accused of violating truce</span>
-			</div>
-													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">3,187</span>
-							<span class="c-posts__info">Read</span>
-						</div>
-												
-											</div>
-				</a>
-			</li>
-								<li class="c-posts__item" data-post-id="11769376">
-				<a
-					href="https://globalnews.ca/news/11769376/poilievre-communications-director-seen-as-an-agent-of-change-set-to-depart/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:1}"
-				>
-					<div class="c-posts__rank">
-							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#2"></use>
 	</svg>
 						</div>
 					
@@ -2257,38 +2225,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Poilievre set to lose communications director seen as an agent of change" data-title>Poilievre set to lose communications director seen as an agent of change</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,852</span>
+							<span class="c-posts__info c-posts__info--highlight">3,835</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
 											</div>
 				</a>
 			</li>
-								<li class="c-posts__item" data-post-id="11770658">
+								<li class="c-posts__item" data-post-id="11769254">
 				<a
-					href="https://globalnews.ca/news/11770658/carney-hansen-french-space-call/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
+					href="https://globalnews.ca/news/11769254/israel-beirut-iran-ceasefire-lebanon/"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:1}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#3"></use>
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#2"></use>
 	</svg>
 						</div>
 					
-		<div class="c-posts__media  c-imageContainer"  >
+		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=519 data-ratio=0.67									loading="lazy"
-								width="720" height="519" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 							<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Carney praises Hansen, calls hearing French from space a point of pride" data-title>Carney praises Hansen, calls hearing French from space a point of pride</span>
+					<span class="c-posts__headlineText" title="Iran ceasefire in jeopardy after U.S., Israel accused of violating truce" data-title>Iran ceasefire in jeopardy after U.S., Israel accused of violating truce</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,694</span>
+							<span class="c-posts__info c-posts__info--highlight">3,532</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2298,11 +2266,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<li class="c-posts__item" data-post-id="11770099">
 				<a
 					href="https://globalnews.ca/news/11770099/abandoned-dogs-ai-images-rescue-uk/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:3}"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#4"></use>
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#3"></use>
 	</svg>
 						</div>
 					
@@ -2319,7 +2287,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="U.K. animal charity forced to clarify image of 250 abandoned dogs isn&#8217;t AI" data-title>U.K. animal charity forced to clarify image of 250 abandoned dogs isn&#8217;t AI</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,555</span>
+							<span class="c-posts__info c-posts__info--highlight">3,357</span>
+							<span class="c-posts__info">Read</span>
+						</div>
+												
+											</div>
+				</a>
+			</li>
+								<li class="c-posts__item" data-post-id="11770658">
+				<a
+					href="https://globalnews.ca/news/11770658/carney-hansen-french-space-call/"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:3}"
+				>
+					<div class="c-posts__rank">
+							<svg class="c-icon  c-posts__rankIcon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#4"></use>
+	</svg>
+						</div>
+					
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=519 data-ratio=0.67									loading="lazy"
+								width="720" height="519" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+							<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Carney praises Hansen, calls hearing French from space a point of pride" data-title>Carney praises Hansen, calls hearing French from space a point of pride</span>
+			</div>
+													<div class="c-posts__about">
+							<span class="c-posts__info c-posts__info--highlight">3,297</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2350,7 +2349,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="&#8216;Ketamine Queen,&#8217; who supplied drugs to Matthew Perry, sentenced to 15 years" data-title>&#8216;Ketamine Queen,&#8217; who supplied drugs to Matthew Perry, sentenced to 15 years</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,517</span>
+							<span class="c-posts__info c-posts__info--highlight">3,086</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2435,45 +2434,14 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							<ul 
 		class="c-posts c-posts--tile c-posts--horizontal"
 		data-ad-empty=true	>
-					<li class="c-posts__item" data-post-id="11769254">
+					<li class="c-posts__item" data-post-id="11769376">
 				<a
-					href="https://globalnews.ca/news/11769254/israel-beirut-iran-ceasefire-lebanon/"
+					href="https://globalnews.ca/news/11769376/poilievre-communications-director-seen-as-an-agent-of-change-set-to-depart/"
 					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:0}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#1"></use>
-	</svg>
-						</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-							<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Iran ceasefire in jeopardy after U.S., Israel accused of violating truce" data-title>Iran ceasefire in jeopardy after U.S., Israel accused of violating truce</span>
-			</div>
-													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">3,187</span>
-							<span class="c-posts__info">Read</span>
-						</div>
-												
-											</div>
-				</a>
-			</li>
-								<li class="c-posts__item" data-post-id="11769376">
-				<a
-					href="https://globalnews.ca/news/11769376/poilievre-communications-director-seen-as-an-agent-of-change-set-to-depart/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:1}"
-				>
-					<div class="c-posts__rank">
-							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#2"></use>
 	</svg>
 						</div>
 					
@@ -2490,38 +2458,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Poilievre set to lose communications director seen as an agent of change" data-title>Poilievre set to lose communications director seen as an agent of change</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,852</span>
+							<span class="c-posts__info c-posts__info--highlight">3,835</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
 											</div>
 				</a>
 			</li>
-								<li class="c-posts__item" data-post-id="11770658">
+								<li class="c-posts__item" data-post-id="11769254">
 				<a
-					href="https://globalnews.ca/news/11770658/carney-hansen-french-space-call/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
+					href="https://globalnews.ca/news/11769254/israel-beirut-iran-ceasefire-lebanon/"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:1}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#3"></use>
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#2"></use>
 	</svg>
 						</div>
 					
-		<div class="c-posts__media  c-imageContainer"  >
+		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=519 data-ratio=0.67									loading="lazy"
-								width="720" height="519" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 							<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Carney praises Hansen, calls hearing French from space a point of pride" data-title>Carney praises Hansen, calls hearing French from space a point of pride</span>
+					<span class="c-posts__headlineText" title="Iran ceasefire in jeopardy after U.S., Israel accused of violating truce" data-title>Iran ceasefire in jeopardy after U.S., Israel accused of violating truce</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,694</span>
+							<span class="c-posts__info c-posts__info--highlight">3,532</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2531,11 +2499,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<li class="c-posts__item" data-post-id="11770099">
 				<a
 					href="https://globalnews.ca/news/11770099/abandoned-dogs-ai-images-rescue-uk/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:3}"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#4"></use>
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#3"></use>
 	</svg>
 						</div>
 					
@@ -2552,7 +2520,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="U.K. animal charity forced to clarify image of 250 abandoned dogs isn&#8217;t AI" data-title>U.K. animal charity forced to clarify image of 250 abandoned dogs isn&#8217;t AI</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,555</span>
+							<span class="c-posts__info c-posts__info--highlight">3,357</span>
+							<span class="c-posts__info">Read</span>
+						</div>
+												
+											</div>
+				</a>
+			</li>
+								<li class="c-posts__item" data-post-id="11770658">
+				<a
+					href="https://globalnews.ca/news/11770658/carney-hansen-french-space-call/"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:3}"
+				>
+					<div class="c-posts__rank">
+							<svg class="c-icon  c-posts__rankIcon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#4"></use>
+	</svg>
+						</div>
+					
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=519 data-ratio=0.67									loading="lazy"
+								width="720" height="519" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/a0b7bf8cf6232c36067d1e27fcc970d80b1948f842fe00e0a408e30c92628d6d.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+							<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Carney praises Hansen, calls hearing French from space a point of pride" data-title>Carney praises Hansen, calls hearing French from space a point of pride</span>
+			</div>
+													<div class="c-posts__about">
+							<span class="c-posts__info c-posts__info--highlight">3,297</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2583,7 +2582,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="&#8216;Ketamine Queen,&#8217; who supplied drugs to Matthew Perry, sentenced to 15 years" data-title>&#8216;Ketamine Queen,&#8217; who supplied drugs to Matthew Perry, sentenced to 15 years</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,517</span>
+							<span class="c-posts__info c-posts__info--highlight">3,086</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2717,7 +2716,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
-																<div class="c-posts__info" data-date >44 mins</div>
+																<div class="c-posts__info" data-date >3 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -2754,7 +2753,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Global National</div>
-																<div class="c-posts__info" data-date >12 hours</div>
+																<div class="c-posts__info" data-date >Apr 8</div>
 																			</div>
 									</div>
 		</a>
@@ -2791,7 +2790,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Global National</div>
-																<div class="c-posts__info" data-date >12 hours</div>
+																<div class="c-posts__info" data-date >Apr 8</div>
 																			</div>
 									</div>
 		</a>
@@ -2963,23 +2962,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer"
-			data-displayinline-video-id="11770669"
+			data-displayinline-video-id="11767934"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11770669,11770361,11738784,11769609,11769956/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fzhekgvo9fa-69eckxjyue%2F260408-ERIC.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
-    		    			data-displayinline-playlist="11770669,11770361,11738784,11769609,11769956"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11767934,11738784,11770669,11770400,11769609/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F5xh313gcxu-17qgvkbrga%2FBahamasWomanPKGthumber.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
+    		    			data-displayinline-playlist="11767934,11738784,11770669,11770400,11769609"
     												data-displayinline-sticky="true"
-													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Carney speaks with Hansen, Artemis II astronauts&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;,&quot;science&quot;,&quot;world&quot;],&quot;keywords&quot;:[&quot;artemis-2&quot;,&quot;artemis-ii&quot;,&quot;artemis-ii-launch&quot;,&quot;carney&quot;,&quot;carney-artemis-ii&quot;,&quot;carney-hansen&quot;,&quot;hansen&quot;,&quot;international&quot;,&quot;jeremy-hansen&quot;,&quot;lunar-mission&quot;,&quot;mark-carney&quot;,&quot;moon-mission&quot;,&quot;short-clip&quot;,&quot;space&quot;,&quot;space-mission&quot;,&quot;global-national&quot;]}}"
+													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;U.S. woman missing after husband says she fell from boat on Bahamas trip&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;trending&quot;,&quot;us-news&quot;,&quot;world&quot;],&quot;keywords&quot;:[&quot;bahamas&quot;,&quot;bahamas-missing-woman&quot;,&quot;cbs&quot;,&quot;international&quot;,&quot;missing-woman&quot;,&quot;short-clip&quot;,&quot;travel&quot;]}}"
 			    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Carney speaks with Hansen, Artemis II astronauts'"
+						alt="Click to play video: 'U.S. woman missing after husband says she fell from boat on Bahamas trip'"
 						width="640"
 						height="360"
-													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/zhekgvo9fa-69eckxjyue/260408-ERIC.jpg?w=1040&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/5xh313gcxu-17qgvkbrga/BahamasWomanPKGthumber.jpg?w=1040&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/zhekgvo9fa-69eckxjyue/260408-ERIC.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/zhekgvo9fa-69eckxjyue/260408-ERIC.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/zhekgvo9fa-69eckxjyue/260408-ERIC.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
+								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/5xh313gcxu-17qgvkbrga/BahamasWomanPKGthumber.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/5xh313gcxu-17qgvkbrga/BahamasWomanPKGthumber.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/5xh313gcxu-17qgvkbrga/BahamasWomanPKGthumber.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -2989,20 +2988,20 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">2:07</time>
-																									<span class="c-video__title">Carney speaks with Hansen, Artemis II astronauts</span>
+																	<time class="c-video__duration">1:22</time>
+																									<span class="c-video__title">U.S. woman missing after husband says she fell from boat on Bahamas trip</span>
 															</div>
 						</span>
 											</span>
 				</div>
 							</div>
 								<div class="l-videoCarousel__sidebar">
-													<a href="https://globalnews.ca/video/11770669/carney-speaks-with-hansen-artemis-ii-astronauts/" class="l-videoCarousel__details">
-							<div class="l-videoCarousel__info">Canada</div>
+													<a href="https://globalnews.ca/video/11767934/u-s-woman-missing-after-husband-says-she-fell-from-boat-on-bahamas-trip/" class="l-videoCarousel__details">
+							<div class="l-videoCarousel__info">Trending</div>
 								<div class="l-videoCarousel__fullTitle">
-								Carney speaks with Hansen, Artemis II astronauts								</div>
+								U.S. woman missing after husband says she fell from boat on Bahamas trip								</div>
 								<div class="l-videoCarousel__description">
-								Prime Minister Mark Carney has spoken with Canadian astronaut Jeremy Hansen and the rest of the Artemis II crew after their historic orbit around the moon. Eric Sorensen looks at what they talked about, and the importance of this lunar mission.								</div>
+								An American woman was swept out to sea Saturday after falling overboard during a dinghy trip with her husband in the Bahamas, authorities said.								</div>
 						</a>
 								<div class="c-ad c-ad--bigbox c-ad--dark l-videoCarousel__ad">							<div class="c-ad__label">Advertisement</div>
 			
@@ -3029,18 +3028,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-carousel__track glide__track" data-glide-el="track">
 						<ul class="c-posts c-posts--video c-posts--tile c-posts--horizontal c-posts--inverted glide__slides">
 							
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Carney speaks with Hansen, Artemis II astronauts" data-slide-index="0">
-	<a href="https://globalnews.ca/video/11770669/carney-speaks-with-hansen-artemis-ii-astronauts/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="U.S. woman missing after husband says she fell from boat on Bahamas trip" data-slide-index="0">
+	<a href="https://globalnews.ca/video/11767934/u-s-woman-missing-after-husband-says-she-fell-from-boat-on-bahamas-trip/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11770669"
+					data-video-id="11767934"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11770669,11770361,11738784,11769609,11769956/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11770669,11770361,11738784,11769609,11769956"
-			data-video-carousel-label="Canada"
-			data-video-carousel-content="Prime Minister Mark Carney has spoken with Canadian astronaut Jeremy Hansen and the rest of the Artemis II crew after their historic orbit around the moon. Eric Sorensen looks at what they talked about, and the importance of this lunar mission."
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11767934,11738784,11770669,11770400,11769609/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11767934,11738784,11770669,11770400,11769609"
+			data-video-carousel-label="Trending"
+			data-video-carousel-content="An American woman was swept out to sea Saturday after falling overboard during a dinghy trip with her husband in the Bahamas, authorities said."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/zhekgvo9fa-69eckxjyue/260408-ERIC.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/5xh313gcxu-17qgvkbrga/BahamasWomanPKGthumber.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3049,47 +3048,20 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>
 		<div class="l-videoCarousel__details c-posts__details">
 							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+					<div class="c-posts__info c-posts__info--highlight">Trending</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Carney speaks with Hansen, Artemis II astronauts</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">U.S. woman missing after husband says she fell from boat on Bahamas trip</span></div>
 					</div>
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Gilgo Beach killer changes plea in murder of 7 women, admits he killed an 8th victim" data-slide-index="1">
-	<a href="https://globalnews.ca/video/11770361/gilgo-beach-killer-changes-plea-in-murder-of-7-women-admits-he-killed-an-8th-victim/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11770361"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11770361,11738784,11769609,11769956,11770669/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11770361,11738784,11769609,11769956,11770669"
-			data-video-carousel-label="Crime"
-			data-video-carousel-content="Rex Heuermann, the man accused in the infamous Gilgo Beach murders on New York&#039;s Long Island, has admitted to some of the crimes which took place between 1993 and 2010. Heuermann changed his plea from not guilty to guilty on Wednesday to the murder of seven out of 11 reportedly murdered women. The 62-year-old additionally admitted to an eighth murder."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/7rz3bxz84f-oq8ojgx4fm/REX_HEUERMANN_VMS.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Crime</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Gilgo Beach killer changes plea in murder of 7 women, admits he killed an 8th victim</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Takeaways from Poilievre&#8217;s appearance on Joe Rogan&#8217;s podcast" data-slide-index="2">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Takeaways from Poilievre&#8217;s appearance on Joe Rogan&#8217;s podcast" data-slide-index="1">
 	<a href="https://globalnews.ca/video/11738784/takeaways-from-poilievres-appearance-on-joe-rogans-podcast/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11738784"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11738784,11769609,11769956,11770669,11770361/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11738784,11769609,11769956,11770669,11770361"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11738784,11770669,11770400,11769609,11767934/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11738784,11770669,11770400,11769609,11767934"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="Conservative Leader Pierre Poilievre took his message to the American public by sitting down for a lengthy interview on &#039;The Joe Rogan Experience,&#039; one of the world&#039;s most popular podcasts. Mackenzie Gray looks at what Poilievre said, and what he&#039;s hoping it accomplished."
 			>
@@ -3110,13 +3082,67 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Hegseth says Iran &#8216;begged&#8217; for ceasefire after what he calls a decisive U.S. victory" data-slide-index="3">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Carney speaks with Hansen, Artemis II astronauts" data-slide-index="2">
+	<a href="https://globalnews.ca/video/11770669/carney-speaks-with-hansen-artemis-ii-astronauts/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11770669"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11770669,11770400,11769609,11767934,11738784/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11770669,11770400,11769609,11767934,11738784"
+			data-video-carousel-label="Canada"
+			data-video-carousel-content="Prime Minister Mark Carney has spoken with Canadian astronaut Jeremy Hansen and the rest of the Artemis II crew after their historic orbit around the moon. Eric Sorensen looks at what they talked about, and the importance of this lunar mission."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/zhekgvo9fa-69eckxjyue/260408-ERIC.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Carney speaks with Hansen, Artemis II astronauts</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Ketamine Queen’ who supplied Matthew Perry with drugs sentenced 15 years in prison" data-slide-index="3">
+	<a href="https://globalnews.ca/video/11770400/ketamine-queen-who-supplied-matthew-perry-with-drugs-sentenced-15-years-in-prison/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11770400"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11770400,11769609,11767934,11738784,11770669/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11770400,11769609,11767934,11738784,11770669"
+			data-video-carousel-label="Crime"
+			data-video-carousel-content="Jasveen Sangha, the Los Angeles woman who pleaded guilty to illegally selling Matthew Perry the drug that killed him in 2023, was sentenced 15 years in prison and three years’ supervised release on Wednesday. The so-called “Ketamine Queen” ran an elaborate high-end drug operation even after learning the cause of Perry’s death."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/f4cdjv4cw4-2oxnb170nk/KETAMINE_QUEEN_MATTHEW_PERRY_VMS.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Crime</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Ketamine Queen’ who supplied Matthew Perry with drugs sentenced 15 years in prison</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Hegseth says Iran &#8216;begged&#8217; for ceasefire after what he calls a decisive U.S. victory" data-slide-index="4">
 	<a href="https://globalnews.ca/video/11769609/hegseth-says-iran-begged-for-ceasefire-after-what-he-calls-a-decisive-us-victory/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11769609"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11769609,11769956,11770669,11770361,11738784/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11769609,11769956,11770669,11770361,11738784"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11769609,11767934,11738784,11770669,11770400/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11769609,11767934,11738784,11770669,11770400"
 			data-video-carousel-label="Politics"
 			data-video-carousel-content="U.S. Defence Secretary Pete Hegseth said on Wednesday that the Strait of Hormuz is open and the U.S. military would be &quot;hanging around&quot; in the Middle East to ensure Iran complies with the ceasefire. &quot;We&#039;re not going anywhere. We&#039;re going to make sure Iran complies with the ceasefire, and that ultimately comes to the table and makes a deal,&quot; he said. &quot;President Trump forged this moment. Iran begged for this ceasefire, and we all know it.&quot;"
 			>
@@ -3133,33 +3159,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-posts__info c-posts__info--highlight">Politics</div>
 				</div>
 						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Hegseth says Iran &#8216;begged&#8217; for ceasefire after what he calls a decisive U.S. victory</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Trump will hold Iran accountable for keeping Strait of Hormuz open, White House says" data-slide-index="4">
-	<a href="https://globalnews.ca/video/11769956/trump-will-hold-iran-accountable-for-keeping-strait-of-hormuz-open-white-house-says/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11769956"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11769956,11770669,11770361,11738784,11769609/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11769956,11770669,11770361,11738784,11769609"
-			data-video-carousel-label="News"
-			data-video-carousel-content="White House press secretary Karoline Leavitt briefed reporters on Wednesday after the U.S. and Iran reached a two-week ceasefire, saying Tehran has privately committed to keeping the Strait of Hormuz open to traffic, &quot;which the president will hold them accountable for.&quot;"
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/o8tltofty1-8dbfi4lq0x/WHITE_HOUSE_SITE_thumbnail_1280x720_.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">News</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Trump will hold Iran accountable for keeping Strait of Hormuz open, White House says</span></div>
 					</div>
 	</a>
 </li>
@@ -3196,19 +3195,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11770361,11738784,11769609,11769956/#autoplay&#038;stickyiframe=home-miniplayer_11770361"
+			href="https://globalnews.ca/video/embed/playlist/11738784,11770669,11770400,11769609/#autoplay&#038;stickyiframe=home-miniplayer_11738784"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11770361"
+			data-displayinline-player-id="home-miniplayer_11738784"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11770361,11738784,11769609,11769956/#autoplay&#038;stickyiframe=home-miniplayer_11770361"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11738784,11770669,11770400,11769609/#autoplay&#038;stickyiframe=home-miniplayer_11738784"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/7rz3bxz84f-oq8ojgx4fm/REX_HEUERMANN_VMS.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/bt3yijh958-v9fxuwcqs7/260319-MACKENZIE.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Gilgo Beach killer changes plea in murder of 7 women, admits he killed an 8th victim'"
+					alt="Click to play video 'Takeaways from Poilievre&#8217;s appearance on Joe Rogan&#8217;s podcast'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3217,11 +3216,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11770361/gilgo-beach-killer-changes-plea-in-murder-of-7-women-admits-he-killed-an-8th-victim/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11738784/takeaways-from-poilievres-appearance-on-joe-rogans-podcast/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Crime</div>
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Gilgo Beach killer changes plea in murder of 7 women, admits he killed an 8th victim</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Takeaways from Poilievre&#8217;s appearance on Joe Rogan&#8217;s podcast</span></div>
 		</a>
 	</div>
 </li>
@@ -3251,19 +3250,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11738784,11769609,11769956,11770361/#autoplay&#038;stickyiframe=home-miniplayer_11738784"
+			href="https://globalnews.ca/video/embed/playlist/11770669,11770400,11769609,11738784/#autoplay&#038;stickyiframe=home-miniplayer_11770669"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11738784"
+			data-displayinline-player-id="home-miniplayer_11770669"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11738784,11769609,11769956,11770361/#autoplay&#038;stickyiframe=home-miniplayer_11738784"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11770669,11770400,11769609,11738784/#autoplay&#038;stickyiframe=home-miniplayer_11770669"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/bt3yijh958-v9fxuwcqs7/260319-MACKENZIE.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/zhekgvo9fa-69eckxjyue/260408-ERIC.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Takeaways from Poilievre&#8217;s appearance on Joe Rogan&#8217;s podcast'"
+					alt="Click to play video 'Carney speaks with Hansen, Artemis II astronauts'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3272,11 +3271,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11738784/takeaways-from-poilievres-appearance-on-joe-rogans-podcast/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11770669/carney-speaks-with-hansen-artemis-ii-astronauts/" class="c-posts__details">
 				<div class="c-posts__about">
 					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Takeaways from Poilievre&#8217;s appearance on Joe Rogan&#8217;s podcast</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Carney speaks with Hansen, Artemis II astronauts</span></div>
 		</a>
 	</div>
 </li>
@@ -3284,11 +3283,44 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11769609,11769956,11770361,11738784/#autoplay&#038;stickyiframe=home-miniplayer_11769609"
+			href="https://globalnews.ca/video/embed/playlist/11770400,11769609,11738784,11770669/#autoplay&#038;stickyiframe=home-miniplayer_11770400"
+			data-displayinline-type="video"
+			data-displayinline-player-id="home-miniplayer_11770400"
+			data-displayinline-ratio="16:9"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11770400,11769609,11738784,11770669/#autoplay&#038;stickyiframe=home-miniplayer_11770400"
+			data-displayinline-sticky="true"
+			data-displayinline-expand="true">
+			<div class="c-video__placeholder">
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/f4cdjv4cw4-2oxnb170nk/KETAMINE_QUEEN_MATTHEW_PERRY_VMS.jpg?w=384&#038;quality=70&#038;strip=all"
+					width="236"
+					height="133"
+					class="c-posts__thumbnail c-video__image"
+					alt="Click to play video 'Ketamine Queen’ who supplied Matthew Perry with drugs sentenced 15 years in prison'"
+					loading="lazy" />
+				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+			</div>
+		</a>
+		<a href="https://globalnews.ca/video/11770400/ketamine-queen-who-supplied-matthew-perry-with-drugs-sentenced-15-years-in-prison/" class="c-posts__details">
+				<div class="c-posts__about">
+					<div class="c-posts__info c-posts__info--highlight">Crime</div>
+				</div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Ketamine Queen’ who supplied Matthew Perry with drugs sentenced 15 years in prison</span></div>
+		</a>
+	</div>
+</li>
+
+<li class="c-posts__item">
+	<div class="c-posts__inner">
+		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
+			href="https://globalnews.ca/video/embed/playlist/11769609,11738784,11770669,11770400/#autoplay&#038;stickyiframe=home-miniplayer_11769609"
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11769609"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11769609,11769956,11770361,11738784/#autoplay&#038;stickyiframe=home-miniplayer_11769609"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11769609,11738784,11770669,11770400/#autoplay&#038;stickyiframe=home-miniplayer_11769609"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3310,39 +3342,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-posts__info c-posts__info--highlight">Politics</div>
 				</div>
 			<div class="c-posts__headline"><span class="c-posts__headlineText">Hegseth says Iran &#8216;begged&#8217; for ceasefire after what he calls a decisive U.S. victory</span></div>
-		</a>
-	</div>
-</li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11769956,11770361,11738784,11769609/#autoplay&#038;stickyiframe=home-miniplayer_11769956"
-			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11769956"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11769956,11770361,11738784,11769609/#autoplay&#038;stickyiframe=home-miniplayer_11769956"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/o8tltofty1-8dbfi4lq0x/WHITE_HOUSE_SITE_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Trump will hold Iran accountable for keeping Strait of Hormuz open, White House says'"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/11769956/trump-will-hold-iran-accountable-for-keeping-strait-of-hormuz-open-white-house-says/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">News</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Trump will hold Iran accountable for keeping Strait of Hormuz open, White House says</span></div>
 		</a>
 	</div>
 </li>
@@ -3407,12 +3406,177 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11770220"
+			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11770220/cae-lays-off-280-workers/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="CAE laying off roughly 280 workers amid aviation headwinds" data-title>CAE laying off roughly 280 workers amid aviation headwinds</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						The company says nearly two-thirds of the roughly 280 positions affected are in Quebec, mainly in the Montreal area where it&#039;s headquartered.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Canada</div>
+																						<div class="c-posts__info">Apr 8</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/3cd83cd00eb364285b8c641e90409bf87039dcfeba42463609bb064fbbabe0d6.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=499 data-ratio=0.67									loading="lazy"
+								width="720" height="499" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/3cd83cd00eb364285b8c641e90409bf87039dcfeba42463609bb064fbbabe0d6.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/3cd83cd00eb364285b8c641e90409bf87039dcfeba42463609bb064fbbabe0d6.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/3cd83cd00eb364285b8c641e90409bf87039dcfeba42463609bb064fbbabe0d6.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11767759"
+			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11767759/trump-iran-war-crimes-international-law/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Are Trump&#8217;s Iran threats and attacks war crimes? What international law says" data-title>Are Trump&#8217;s Iran threats and attacks war crimes? What international law says</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						Trump on Tuesday warned that a &#039;whole civilization will die tonight&#039; if Iran fails to meet his latest deadline to strike a deal that includes reopening the Strait of Hormuz. 						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">World</div>
+																						<div class="c-posts__info">Apr 8</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/eafb7530dc3e8b6b9cbdfe6d75a7b1876813e94dd691c52b9de09c959f6b7ebf_9ae209.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="479" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/eafb7530dc3e8b6b9cbdfe6d75a7b1876813e94dd691c52b9de09c959f6b7ebf_9ae209.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/eafb7530dc3e8b6b9cbdfe6d75a7b1876813e94dd691c52b9de09c959f6b7ebf_9ae209.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/eafb7530dc3e8b6b9cbdfe6d75a7b1876813e94dd691c52b9de09c959f6b7ebf_9ae209.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11769251"
+			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11769251/iran-war-ceasefire-gas-food-prices/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Iran ceasefire still holds &#8216;considerable uncertainty&#8217; for food, oil prices" data-title>Iran ceasefire still holds &#8216;considerable uncertainty&#8217; for food, oil prices</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						Experts are saying that Canadians are unlikely to see a notable change in food, fuel or oil prices in the near future as &#039;considerable uncertainty&#039; remains.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Economy</div>
+																						<div class="c-posts__info">Apr 8</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/credit-cards-canada.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=517 data-ratio=0.67									loading="lazy"
+								width="720" height="517" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/credit-cards-canada.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/credit-cards-canada.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/credit-cards-canada.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11769675"
+			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11769675/caitlyn-jenner-sophia-hutchins-owed-money-claim/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Caitlyn Jenner claims late friend Sophia Hutchins owed her over $600K" data-title>Caitlyn Jenner claims late friend Sophia Hutchins owed her over $600K</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						Sophia Hutchins, a longtime friend and manager of Jenner, died in an ATV crash in July 2025 when she collided with a moving car and was thrown 350 feet down a ravine.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
+																						<div class="c-posts__info">Apr 8</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/caitlyn-jenner-sophia-hutchins-estate.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/caitlyn-jenner-sophia-hutchins-estate.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/caitlyn-jenner-sophia-hutchins-estate.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/caitlyn-jenner-sophia-hutchins-estate.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11769779"
+			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11769779/fifa-canada-world-cup/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="FIFA releases plans for cross-Canada World Cup celebration tour" data-title>FIFA releases plans for cross-Canada World Cup celebration tour</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						A cross-country World Cup tour will bring events to 34 Canadian cities this summer as FIFA looks to build excitement ahead of the 2026 tournament.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Sports</div>
+																						<div class="c-posts__info">Apr 8</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/9ead6c95bcf8ab2147a77a2d9dce47bd1d203c17838acc958c4ac6075ad24b5d.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/9ead6c95bcf8ab2147a77a2d9dce47bd1d203c17838acc958c4ac6075ad24b5d.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/9ead6c95bcf8ab2147a77a2d9dce47bd1d203c17838acc958c4ac6075ad24b5d.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/9ead6c95bcf8ab2147a77a2d9dce47bd1d203c17838acc958c4ac6075ad24b5d.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
 				data-post-id="11769746"
 			>
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11769746/pam-bondi-deposition-epstein-investigation/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3445,7 +3609,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11769644/gregor-robertson-gst-tax-cut-new-homes-correction/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3478,7 +3642,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11769416/cardi-b-credit-card-thieves/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3501,171 +3665,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								width="720" height="540" alt="" 
 												srcset='' sizes=''
 								data-srcset="https://globalnews.ca/wp-content/uploads/2026/02/ed7430168cf182525801cf05b0ec8e1509df9de0b83bed4a8ab509a7cc19c44a.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/02/ed7430168cf182525801cf05b0ec8e1509df9de0b83bed4a8ab509a7cc19c44a.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/02/ed7430168cf182525801cf05b0ec8e1509df9de0b83bed4a8ab509a7cc19c44a.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11769462"
-			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11769462/parents-charged-child-endangerment-toddler-injured-wolf-zooamerica/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Parents charged with child endangerment after toddler injured by wolf at zoo" data-title>Parents charged with child endangerment after toddler injured by wolf at zoo</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						The parents of a 17-month-old toddler who was injured after sticking his hand into a wolf enclosure have been charged with child endangerment, police said.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Trending</div>
-																						<div class="c-posts__info">Apr 8</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/zooamerica-wolf-den.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/zooamerica-wolf-den.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/zooamerica-wolf-den.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/zooamerica-wolf-den.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11769283"
-			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11769283/oilers-goalie-ingram-finds-balance-and-success/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Oilers’ goalie Ingram finds balance and success" data-title>Oilers’ goalie Ingram finds balance and success</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						Connor Ingram went from being told not to report to Utah Mammoth training camp to starting in goal for the playoff-bound Edmonton Oilers.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Health</div>
-																						<div class="c-posts__info">Apr 8</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/ec784e91bed24294711e0c3b2c22ab6bf660555acab748d9c3071e45fb3dd9d2.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/ec784e91bed24294711e0c3b2c22ab6bf660555acab748d9c3071e45fb3dd9d2.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/ec784e91bed24294711e0c3b2c22ab6bf660555acab748d9c3071e45fb3dd9d2.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/ec784e91bed24294711e0c3b2c22ab6bf660555acab748d9c3071e45fb3dd9d2.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11769254"
-			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11769254/israel-beirut-iran-ceasefire-lebanon/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Iran ceasefire in jeopardy after U.S., Israel accused of violating truce" data-title>Iran ceasefire in jeopardy after U.S., Israel accused of violating truce</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						Iran closed the Strait of Hormuz again in response to Israeli attacks in Lebanon. The White House demanded that the channel be reopened and sought to keep peace talks on track.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">World</div>
-																						<div class="c-posts__info">Apr 8</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11769238"
-			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11769238/wall-street-global-markets-soar/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Wall Street surges, oil prices plunge on &#8216;fragile truce&#8217; of Iran ceasefire" data-title>Wall Street surges, oil prices plunge on &#8216;fragile truce&#8217; of Iran ceasefire</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						Oil prices plunged below US$95 per barrel, and stock markets surged worldwide Wednesday after U.S. President Donald Trump pulled back from his threat to destroy Iran.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">World</div>
-																						<div class="c-posts__info">Apr 8</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/03/stock-market-iran-war.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/stock-market-iran-war.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/stock-market-iran-war.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/stock-market-iran-war.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11769210"
-			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11769210/bc-drug-deaths-decade/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Decade of death: With 18K lives lost, B.C. counts cost of 10-year drug emergency" data-title>Decade of death: With 18K lives lost, B.C. counts cost of 10-year drug emergency</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						More than 18,000 people have died from toxic illicit drugs in British Columbia since a public health emergency was declared on April 14, 2016. 						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Health</div>
-																						<div class="c-posts__info">Apr 8</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/2878ee26d6622af5ab94123a14dd218d909fc1fe4663864c0af91459b30fbd4e.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="484" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/2878ee26d6622af5ab94123a14dd218d909fc1fe4663864c0af91459b30fbd4e.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/2878ee26d6622af5ab94123a14dd218d909fc1fe4663864c0af91459b30fbd4e.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/2878ee26d6622af5ab94123a14dd218d909fc1fe4663864c0af91459b30fbd4e.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -3746,23 +3745,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-playlist-miniplayer"
-			data-displayinline-video-id="11770669"
+			data-displayinline-video-id="11767934"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11770669,11770361,11738784,11769609,11769956/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fzhekgvo9fa-69eckxjyue%2F260408-ERIC.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
-    		    			data-displayinline-playlist="11770669,11770361,11738784,11769609,11769956"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11767934,11738784,11770669,11770400,11769609/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F5xh313gcxu-17qgvkbrga%2FBahamasWomanPKGthumber.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
+    		    			data-displayinline-playlist="11767934,11738784,11770669,11770400,11769609"
     												data-displayinline-sticky="true"
-													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Carney speaks with Hansen, Artemis II astronauts&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;,&quot;science&quot;,&quot;world&quot;],&quot;keywords&quot;:[&quot;artemis-2&quot;,&quot;artemis-ii&quot;,&quot;artemis-ii-launch&quot;,&quot;carney&quot;,&quot;carney-artemis-ii&quot;,&quot;carney-hansen&quot;,&quot;hansen&quot;,&quot;international&quot;,&quot;jeremy-hansen&quot;,&quot;lunar-mission&quot;,&quot;mark-carney&quot;,&quot;moon-mission&quot;,&quot;short-clip&quot;,&quot;space&quot;,&quot;space-mission&quot;,&quot;global-national&quot;]}}"
+													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;U.S. woman missing after husband says she fell from boat on Bahamas trip&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;trending&quot;,&quot;us-news&quot;,&quot;world&quot;],&quot;keywords&quot;:[&quot;bahamas&quot;,&quot;bahamas-missing-woman&quot;,&quot;cbs&quot;,&quot;international&quot;,&quot;missing-woman&quot;,&quot;short-clip&quot;,&quot;travel&quot;]}}"
 			    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Carney speaks with Hansen, Artemis II astronauts'"
+						alt="Click to play video: 'U.S. woman missing after husband says she fell from boat on Bahamas trip'"
 						width="640"
 						height="360"
-													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/zhekgvo9fa-69eckxjyue/260408-ERIC.jpg?w=1040&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/5xh313gcxu-17qgvkbrga/BahamasWomanPKGthumber.jpg?w=1040&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/zhekgvo9fa-69eckxjyue/260408-ERIC.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/zhekgvo9fa-69eckxjyue/260408-ERIC.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/zhekgvo9fa-69eckxjyue/260408-ERIC.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
+								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/5xh313gcxu-17qgvkbrga/BahamasWomanPKGthumber.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/5xh313gcxu-17qgvkbrga/BahamasWomanPKGthumber.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/5xh313gcxu-17qgvkbrga/BahamasWomanPKGthumber.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -3772,8 +3771,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">2:07</time>
-																									<span class="c-video__title">Carney speaks with Hansen, Artemis II astronauts</span>
+																	<time class="c-video__duration">1:22</time>
+																									<span class="c-video__title">U.S. woman missing after husband says she fell from boat on Bahamas trip</span>
 															</div>
 						</span>
 											</span>
@@ -3789,23 +3788,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="1"
 	>
-	<a href="https://globalnews.ca/video/11770669/carney-speaks-with-hansen-artemis-ii-astronauts/"
-		title="Carney speaks with Hansen, Artemis II astronauts"
+	<a href="https://globalnews.ca/video/11767934/u-s-woman-missing-after-husband-says-she-fell-from-boat-on-bahamas-trip/"
+		title="U.S. woman missing after husband says she fell from boat on Bahamas trip"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11770669"
-		data-video-label="Canada"
+		data-video-id="11767934"
+		data-video-label="Trending"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11770669,11770361,11738784,11769609,11769956/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11767934,11738784,11770669,11770400,11769609/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Carney speaks with Hansen, Artemis II astronauts</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">U.S. woman missing after husband says she fell from boat on Bahamas trip</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
+						Trending					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/zhekgvo9fa-69eckxjyue/260408-ERIC.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/5xh313gcxu-17qgvkbrga/BahamasWomanPKGthumber.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3817,34 +3816,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="2"
 	>
-	<a href="https://globalnews.ca/video/11770361/gilgo-beach-killer-changes-plea-in-murder-of-7-women-admits-he-killed-an-8th-victim/"
-		title="Gilgo Beach killer changes plea in murder of 7 women, admits he killed an 8th victim"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11770361"
-		data-video-label="Crime"
-		data-video-player-id="home-playlist-miniplayer"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11770361,11738784,11769609,11769956/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Gilgo Beach killer changes plea in murder of 7 women, admits he killed an 8th victim</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Crime					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/7rz3bxz84f-oq8ojgx4fm/REX_HEUERMANN_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="3"
-	>
 	<a href="https://globalnews.ca/video/11738784/takeaways-from-poilievres-appearance-on-joe-rogans-podcast/"
 		title="Takeaways from Poilievre&#8217;s appearance on Joe Rogan&#8217;s podcast"
 		class="l-playlist__link c-posts__inner c-videoPlay"
@@ -3852,7 +3823,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11738784,11769609,11769956,11770361/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11738784,11770669,11770400,11769609/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Takeaways from Poilievre&#8217;s appearance on Joe Rogan&#8217;s podcast</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -3871,25 +3842,53 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 <li class="c-posts__item l-playlist__item"
-			data-playlist-index="4"
+			data-playlist-index="3"
 	>
-	<a href="https://globalnews.ca/video/11769609/hegseth-says-iran-begged-for-ceasefire-after-what-he-calls-a-decisive-us-victory/"
-		title="Hegseth says Iran &#8216;begged&#8217; for ceasefire after what he calls a decisive U.S. victory"
+	<a href="https://globalnews.ca/video/11770669/carney-speaks-with-hansen-artemis-ii-astronauts/"
+		title="Carney speaks with Hansen, Artemis II astronauts"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11769609"
-		data-video-label="Politics"
+		data-video-id="11770669"
+		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11769609,11769956,11770361,11738784/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11770669,11770400,11769609,11738784/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Hegseth says Iran &#8216;begged&#8217; for ceasefire after what he calls a decisive U.S. victory</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Carney speaks with Hansen, Artemis II astronauts</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Politics					</div>
+						Canada					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/p8xhbp9qt-bs36kupyog/hegseth_SITE_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/zhekgvo9fa-69eckxjyue/260408-ERIC.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="4"
+	>
+	<a href="https://globalnews.ca/video/11770400/ketamine-queen-who-supplied-matthew-perry-with-drugs-sentenced-15-years-in-prison/"
+		title="Ketamine Queen’ who supplied Matthew Perry with drugs sentenced 15 years in prison"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11770400"
+		data-video-label="Crime"
+		data-video-player-id="home-playlist-miniplayer"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11770400,11769609,11738784,11770669/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Ketamine Queen’ who supplied Matthew Perry with drugs sentenced 15 years in prison</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						Crime					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/f4cdjv4cw4-2oxnb170nk/KETAMINE_QUEEN_MATTHEW_PERRY_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3901,23 +3900,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="5"
 	>
-	<a href="https://globalnews.ca/video/11769956/trump-will-hold-iran-accountable-for-keeping-strait-of-hormuz-open-white-house-says/"
-		title="Trump will hold Iran accountable for keeping Strait of Hormuz open, White House says"
+	<a href="https://globalnews.ca/video/11769609/hegseth-says-iran-begged-for-ceasefire-after-what-he-calls-a-decisive-us-victory/"
+		title="Hegseth says Iran &#8216;begged&#8217; for ceasefire after what he calls a decisive U.S. victory"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11769956"
-		data-video-label="News"
+		data-video-id="11769609"
+		data-video-label="Politics"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11769956,11770361,11738784,11769609/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11769609,11738784,11770669,11770400/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Trump will hold Iran accountable for keeping Strait of Hormuz open, White House says</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Hegseth says Iran &#8216;begged&#8217; for ceasefire after what he calls a decisive U.S. victory</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						News					</div>
+						Politics					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/o8tltofty1-8dbfi4lq0x/WHITE_HOUSE_SITE_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/p8xhbp9qt-bs36kupyog/hegseth_SITE_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4433,27 +4432,27 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-28"
-	data-post-id="11769136"
+	data-post-id="11769254"
 	data-slide-index=""
-	data-caption="Oil prices fall as Iran agrees to reopen Strait of Hormuz during ceasefire"
+	data-caption="Iran ceasefire in jeopardy after U.S., Israel accused of violating truce"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11769136/canada-oil-prices-strait-of-hormuz/"
+		href="https://globalnews.ca/news/11769254/israel-beirut-iran-ceasefire-lebanon/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/03/Strait-of-Hormuz-file-March-2-e1772484119635.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
 								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/Strait-of-Hormuz-file-March-2-e1772484119635.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/Strait-of-Hormuz-file-March-2-e1772484119635.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/Strait-of-Hormuz-file-March-2-e1772484119635.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/Beirut-Israel-bomb.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Oil prices fall as Iran agrees to reopen Strait of Hormuz during ceasefire" data-title>Oil prices fall as Iran agrees to reopen Strait of Hormuz during ceasefire</span>
+					<span class="c-posts__headlineText" title="Iran ceasefire in jeopardy after U.S., Israel accused of violating truce" data-title>Iran ceasefire in jeopardy after U.S., Israel accused of violating truce</span>
 			</div>
 	
 						
@@ -4465,32 +4464,32 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-29"
-	data-post-id="11768576"
+	data-post-id="11769238"
 	data-slide-index=""
-	data-caption="Iranian-Canadians voice fear, uncertainty after ceasefire announcement"
+	data-caption="Wall Street surges, oil prices plunge on &#8216;fragile truce&#8217; of Iran ceasefire"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11768576/iranian-canadians-ceasefire-reaction/"
+		href="https://globalnews.ca/news/11769238/wall-street-global-markets-soar/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/CP176107319.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/03/stock-market-iran-war.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
 								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/CP176107319.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/CP176107319.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/CP176107319.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/stock-market-iran-war.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/stock-market-iran-war.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/stock-market-iran-war.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Iranian-Canadians voice fear, uncertainty after ceasefire announcement" data-title>Iranian-Canadians voice fear, uncertainty after ceasefire announcement</span>
+					<span class="c-posts__headlineText" title="Wall Street surges, oil prices plunge on &#8216;fragile truce&#8217; of Iran ceasefire" data-title>Wall Street surges, oil prices plunge on &#8216;fragile truce&#8217; of Iran ceasefire</span>
 			</div>
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Apr 7</div>
+																<div class="c-posts__info" data-date >Apr 8</div>
 																			</div>
 									</div>
 		</a>
@@ -4581,96 +4580,96 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-30"
-	data-post-id="11770341"
+	data-post-id="11771282"
 	data-slide-index=""
-	data-caption="B.C. premier visits Kelowna soda producer to announce millions for other manufacturers"
+	data-caption="Kingston council passes pay raise, delays shift to full-time roles"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11770341/bc-premier-kelowna-announcement-manufacturers/"
+		href="https://globalnews.ca/news/11771282/kingston-council-passes-pay-raise-delays-shift-to-full-time-roles/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/karma-david-eby.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=540 data-ratio=0.67									loading="lazy"
-								width="720" height="540" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2022/08/kingston-city-hall.webp?w=640				data-width=640 data-height=480 data-ratio=0.67									loading="lazy"
+								width="640" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/karma-david-eby.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/karma-david-eby.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/karma-david-eby.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2022/08/kingston-city-hall.webp?w=336 336w,https://globalnews.ca/wp-content/uploads/2022/08/kingston-city-hall.webp?w=560 560w,https://globalnews.ca/wp-content/uploads/2022/08/kingston-city-hall.webp?w=640 640w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="B.C. premier visits Kelowna soda producer to announce millions for other manufacturers" data-title>B.C. premier visits Kelowna soda producer to announce millions for other manufacturers</span>
+					<span class="c-posts__headlineText" title="Kingston council passes pay raise, delays shift to full-time roles" data-title>Kingston council passes pay raise, delays shift to full-time roles</span>
 			</div>
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >10 hours</div>
+																<div class="c-posts__info" data-date >14 mins</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-31"
-	data-post-id="11770601"
+	data-post-id="11771105"
 	data-slide-index=""
-	data-caption="Proposed Quebec legislation targets custody rules in abuse cases"
+	data-caption="These are the faces of B.C.&#8217;s 10-year toxic drug emergency"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11770601/quebec-child-protection-abuse-bill/"
+		href="https://globalnews.ca/news/11771105/these-are-the-faces-of-b-c-s-10-year-toxic-drug-emergency/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
-		<div class="c-posts__media "  >
+		<div class="c-posts__media  c-imageContainer"  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/2656a052d8a73f504ff414176fc26aa7692c2104c1fbff1740b4d14ad4f6c0a9.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/e1eabdb60d82be4fab1afc6833902843f28f317cded772c5d97c5365499e5bcd.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=487 data-ratio=0.67									loading="lazy"
+								width="720" height="487" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/2656a052d8a73f504ff414176fc26aa7692c2104c1fbff1740b4d14ad4f6c0a9.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/2656a052d8a73f504ff414176fc26aa7692c2104c1fbff1740b4d14ad4f6c0a9.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/2656a052d8a73f504ff414176fc26aa7692c2104c1fbff1740b4d14ad4f6c0a9.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/e1eabdb60d82be4fab1afc6833902843f28f317cded772c5d97c5365499e5bcd.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/e1eabdb60d82be4fab1afc6833902843f28f317cded772c5d97c5365499e5bcd.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/e1eabdb60d82be4fab1afc6833902843f28f317cded772c5d97c5365499e5bcd.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Proposed Quebec legislation targets custody rules in abuse cases" data-title>Proposed Quebec legislation targets custody rules in abuse cases</span>
+					<span class="c-posts__headlineText" title="These are the faces of B.C.&#8217;s 10-year toxic drug emergency" data-title>These are the faces of B.C.&#8217;s 10-year toxic drug emergency</span>
 			</div>
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >11 hours</div>
+																<div class="c-posts__info" data-date >2 hours</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-32"
-	data-post-id="11770507"
+	data-post-id="11771099"
 	data-slide-index=""
-	data-caption="Saskatchewan covered in deep snow again after another false start to spring"
+	data-caption="Brain injury a shadow crisis amid overdose deaths in British Columbia"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11770507/saskatchewan-deep-snow-again-false-start-to-spring/"
+		href="https://globalnews.ca/news/11771099/brain-injury-a-shadow-crisis-amid-overdose-deaths-in-british-columbia/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/SNOWBLOWER.bmp?w=720													loading="lazy"
-								width="720" height="405" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/49e1db1e670037f72ad3e8c071b500227010ca452e6f7d1eb8ea0ba6cbc100c3.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="473" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/SNOWBLOWER.bmp?w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/SNOWBLOWER.bmp?w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/SNOWBLOWER.bmp?w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/49e1db1e670037f72ad3e8c071b500227010ca452e6f7d1eb8ea0ba6cbc100c3.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/49e1db1e670037f72ad3e8c071b500227010ca452e6f7d1eb8ea0ba6cbc100c3.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/49e1db1e670037f72ad3e8c071b500227010ca452e6f7d1eb8ea0ba6cbc100c3.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Saskatchewan covered in deep snow again after another false start to spring" data-title>Saskatchewan covered in deep snow again after another false start to spring</span>
+					<span class="c-posts__headlineText" title="Brain injury a shadow crisis amid overdose deaths in British Columbia" data-title>Brain injury a shadow crisis amid overdose deaths in British Columbia</span>
 			</div>
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Apr 8</div>
+																<div class="c-posts__info" data-date >2 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -4740,6 +4739,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-33"
+	data-post-id="11771111"
+	data-slide-index=""
+	data-caption="B.C. premier says reconciliation won&#8217;t stop despite DRIPA suspensions"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11771111/b-c-premier-says-reconciliation-wont-stop-despite-dripa-suspensions/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/dec5a82c54f8e796e35e787a174e7481161bee47beadb1b367cd085f2bfa726f.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="448" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/dec5a82c54f8e796e35e787a174e7481161bee47beadb1b367cd085f2bfa726f.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/dec5a82c54f8e796e35e787a174e7481161bee47beadb1b367cd085f2bfa726f.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/dec5a82c54f8e796e35e787a174e7481161bee47beadb1b367cd085f2bfa726f.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="B.C. premier says reconciliation won&#8217;t stop despite DRIPA suspensions" data-title>B.C. premier says reconciliation won&#8217;t stop despite DRIPA suspensions</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >1 hour</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-34"
 	data-post-id="11770269"
 	data-slide-index=""
 	data-caption="Ontario school board supervisors charging varying fees, some billing government HST"
@@ -4747,7 +4778,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11770269/ontario-school-board-supervisors-charging-varying-fees/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -4765,13 +4796,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >3 hours</div>
+																<div class="c-posts__info" data-date >5 hours</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-34"
+	data-container-id="stories-item-35"
 	data-post-id="11770263"
 	data-slide-index=""
 	data-caption="&#8216;Suffering&#8217;: B.C. family desperate to get gene therapy for son with rare condition"
@@ -4779,7 +4810,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11770263/bc-family-gene-therapy-son-rare-condition/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4797,39 +4828,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >11 hours</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-35"
-	data-post-id="11770190"
-	data-slide-index=""
-	data-caption="B.C. government clears Abbotsford rest stop homeless encampment"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11770190/bc-government-clears-abbotsford-rest-stop-homeless-encampment/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/abby-encampment-cleanup.png?w=720													loading="lazy"
-								width="720" height="405" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/abby-encampment-cleanup.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/abby-encampment-cleanup.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/abby-encampment-cleanup.png?w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="B.C. government clears Abbotsford rest stop homeless encampment" data-title>B.C. government clears Abbotsford rest stop homeless encampment</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >11 hours</div>
+																<div class="c-posts__info" data-date >Apr 8</div>
 																			</div>
 									</div>
 		</a>
@@ -5079,6 +5078,70 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-39"
+	data-post-id="11769283"
+	data-slide-index=""
+	data-caption="Oilers’ goalie Ingram finds balance and success"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11769283/oilers-goalie-ingram-finds-balance-and-success/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/ec784e91bed24294711e0c3b2c22ab6bf660555acab748d9c3071e45fb3dd9d2.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/ec784e91bed24294711e0c3b2c22ab6bf660555acab748d9c3071e45fb3dd9d2.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/ec784e91bed24294711e0c3b2c22ab6bf660555acab748d9c3071e45fb3dd9d2.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/ec784e91bed24294711e0c3b2c22ab6bf660555acab748d9c3071e45fb3dd9d2.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Oilers’ goalie Ingram finds balance and success" data-title>Oilers’ goalie Ingram finds balance and success</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >Apr 8</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-40"
+	data-post-id="11769210"
+	data-slide-index=""
+	data-caption="Decade of death: With 18K lives lost, B.C. counts cost of 10-year drug emergency"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11769210/bc-drug-deaths-decade/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/2878ee26d6622af5ab94123a14dd218d909fc1fe4663864c0af91459b30fbd4e.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="484" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/2878ee26d6622af5ab94123a14dd218d909fc1fe4663864c0af91459b30fbd4e.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/2878ee26d6622af5ab94123a14dd218d909fc1fe4663864c0af91459b30fbd4e.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/2878ee26d6622af5ab94123a14dd218d909fc1fe4663864c0af91459b30fbd4e.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Decade of death: With 18K lives lost, B.C. counts cost of 10-year drug emergency" data-title>Decade of death: With 18K lives lost, B.C. counts cost of 10-year drug emergency</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >Apr 8</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-41"
 	data-post-id="11768348"
 	data-slide-index=""
 	data-caption="Canadians are joining the Catholic church in record numbers, officials claim"
@@ -5086,7 +5149,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11768348/canadians-joining-catholic-church-in-record-numbers/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5100,70 +5163,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="Canadians are joining the Catholic church in record numbers, officials claim" data-title>Canadians are joining the Catholic church in record numbers, officials claim</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Apr 7</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-40"
-	data-post-id="11768186"
-	data-slide-index=""
-	data-caption="Green Shirt Day urges Canadians to register as organ donors"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11768186/green-shirt-day-2026-organ-donation-logan-boulet/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/boulet-green-shirt_1.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="405" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/boulet-green-shirt_1.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/boulet-green-shirt_1.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/boulet-green-shirt_1.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Green Shirt Day urges Canadians to register as organ donors" data-title>Green Shirt Day urges Canadians to register as organ donors</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Apr 7</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-41"
-	data-post-id="11767831"
-	data-slide-index=""
-	data-caption="Montreal care home faces approved class-action over COVID deaths"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11767831/quebec-long-term-care-home-class-action-lawsuit-covid/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/947ccf483c0e897ca0b5914e765950af0621131f484390de64b7aa6b3d7c3716.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=521 data-ratio=0.67									loading="lazy"
-								width="720" height="521" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/947ccf483c0e897ca0b5914e765950af0621131f484390de64b7aa6b3d7c3716.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/947ccf483c0e897ca0b5914e765950af0621131f484390de64b7aa6b3d7c3716.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/947ccf483c0e897ca0b5914e765950af0621131f484390de64b7aa6b3d7c3716.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Montreal care home faces approved class-action over COVID deaths" data-title>Montreal care home faces approved class-action over COVID deaths</span>
 			</div>
 	
 						
@@ -5761,7 +5760,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >8 hours</div>
+																<div class="c-posts__info" data-date >10 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5793,7 +5792,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >11 hours</div>
+																<div class="c-posts__info" data-date >Apr 8</div>
 																			</div>
 									</div>
 		</a>
@@ -6121,7 +6120,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 </script>
 		<!-- Adobe Analytics code version: JS-2.6.0. -->
 		<script type="text/javascript">
-			var gnPageData = {"context_data":{"hourofday":"9","dayofweek":"Thursday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
+			var gnPageData = {"context_data":{"hourofday":"11","dayofweek":"Thursday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
 		</script>
 				<!-- End Adobe Analytics code -->
 			<script>
@@ -6180,5 +6179,5 @@ var GN_OneSignalSettings = {"isCurator":"","appId":"8beb7996-b996-4ce8-a474-d488
 		
 		<div class="l-dynamicElement"></div>
 
-			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75660ba8f4","applicationID":"418684855","transactionName":"Z1BWZxdTWkAHVExRXF4adVARW1tdSV9XVVY=","queueTime":0,"applicationTime":315,"atts":"SxdBEV9JSR9EVhoCSE1I","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+			</body>
 </html>
