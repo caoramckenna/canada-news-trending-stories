@@ -184,8 +184,7 @@
         }
     </script>
     	<!-- Meta Tags -->
-	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"75660ba8f4",applicationID:"418684855",browserID:"419993820"};;/*! For license information please see nr-loader-rum-1.313.1.min.js.LICENSE.txt */
-(()=>{var e,t,r={163:(e,t,r)=>{"use strict";r.d(t,{j:()=>T});var n=r(384),i=r(1741);var s=r(2555);r(860).K7.genericEvents;const o="experimental.resources",a="register",c=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var u=r(2614),d=r(944),l=r(8122);const f="[data-nr-mask]",g=e=>(0,l.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{register:{get enabled(){return e.feature_flags.includes(a)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(o)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:u.wk,inactiveMs:u.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){c(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,d.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){c(t)?e.block_selector+=",".concat(t):""!==t&&(0,d.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,d.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var p=r(6154),m=r(9324);let h=0;const v={buildEnv:m.F3,distMethod:m.Xs,version:m.xv,originTime:p.WN},b={consented:!1},y={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||b.consented},set consented(e){b.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++h}},_=e=>{const t=(0,l.a)(e,y),r=Object.keys(v).reduce((e,t)=>(e[t]={value:v[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)},w=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var x=r(7836),R=r(3241);const k={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A=e=>(0,l.a)(e,k);function T(e,t={},r,o){let{init:a,info:c,loader_config:u,runtime:d={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();a=e.init,c=e.info,u=e.loader_config}e.init=g(a||{}),e.loader_config=A(u||{}),c.jsAttributes??={},p.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,s.D)(c);const f=e.init;e.runtime??=_(d),f.proxy.assets&&w(f.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach(r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let s=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return s?s(...t):n})})}(e),e.runtime.loaderType=r,e.ee=x.ee.get(e.agentIdentifier),e.exposed=l,(0,R.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.runtime.configured=!0)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>a,Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),s=r(944),o=r(1910);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,o.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,s.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>d,K7:()=>c,P3:()=>u,XX:()=>i,Yy:()=>a,df:()=>s,qY:()=>n,v4:()=>o});const n="events",i="jserrors",s="browser/blobs",o="rum",a="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},u={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.softNav]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.sessionReplay]:8,[c.logging]:9,[c.genericEvents]:10},d={[c.pageViewEvent]:o,[c.pageViewTiming]:n,[c.ajax]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:s,[c.sessionReplay]:s,[c.logging]:a,[c.genericEvents]:"ins"}},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},1687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>a,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),s=r(860),o=r(2646);function a(e,t){if(!e)return;const r={staged:!1,priority:s.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const s=e.ee,a=i.i.handlers;if(s&&!s.aborted&&s.backlog&&a){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=s.backlog[t],r=a[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof o.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}s.isolatedBacklog||delete a[t],s.backlog[t]=null,s.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],s=e[2];n.apply(i,s)}})}},1738:(e,t,r)=>{"use strict";r.d(t,{U:()=>f,Y:()=>l});var n=r(3241),i=r(9908),s=r(1863),o=r(944),a=r(3969),c=r(8362),u=r(860),d=r(4261);function l(e,t,r,s){const l=s||r;!l||l[e]&&l[e]!==c.d.prototype[e]||(l[e]=function(){(0,i.p)(a.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:d.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,o.R)(23,e)}})}function f(e,t,r,n,o){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(o||null===r)&&(0,i.p)(d.Pl+n,[(0,s.t)(),t,r],void 0,"session",e.ee)}},1741:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(944),i=r(4261);class s{#e(e,...t){if(this[e]!==s.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},1863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},1910:(e,t,r)=>{"use strict";r.d(t,{i:()=>s});var n=r(944);const i=new Map;function s(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),s=t.includes("nrWrapper");return r||s||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},2555:(e,t,r)=>{"use strict";r.d(t,{D:()=>a,f:()=>o});var n=r(384),i=r(8122);const s={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function o(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const a=e=>(0,i.a)(e,s)},2614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>o,H3:()=>n,g:()=>u,iL:()=>c,tS:()=>a,uh:()=>i,wk:()=>s});const n="NRBA",i="SESSION",s=144e5,o=18e5,a={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},2646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},2843:(e,t,r)=>{"use strict";r.d(t,{G:()=>s,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function s(e,t,r){(0,n.sp)("pagehide",e,t,r)}},3241:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(6154);const i="newrelic";function s(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},3606:(e,t,r)=>{"use strict";r.d(t,{i:()=>s});var n=r(9908);s.on=o;var i=s.handlers={};function s(e,t,r,s){o(s||n.d,i,e,t,r)}function o(e,t,r,i,s){s||(s="feature"),e||(e=n.d);var o=t[s]=t[s]||{};(o[r]=o[r]||[]).push([e,i])}},3878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function s(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>s,jT:()=>n,sp:()=>i})},3969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>a,rs:()=>i,xV:()=>o,z_:()=>s});const n=r(860).K7.metrics,i="sm",s="cm",o="storeSupportabilityMetrics",a="storeEventMetrics"},4234:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},4261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>u,BL:()=>a,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>h,Pl:()=>n,Pv:()=>k,Tb:()=>l,U2:()=>s,V1:()=>R,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>o,nb:()=>m,o5:()=>d});const n="api-",i="addPageAction",s="addToTrace",o="addRelease",a="finished",c="interaction",u="log",d="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",m="setApplicationVersion",h="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",R="measure",k="consent"},5289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>o,Qr:()=>c,sB:()=>a});var n=r(3878),i=r(6389);function s(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(s())return e();const r=(0,i.J)(e),o=setInterval(()=>{s()&&(clearInterval(o),r())},500);(0,n.sp)("load",r,t)}function a(e){if(s())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(s())return e();(0,n.sp)("popstate",e)}},5607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},6154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>u,RI:()=>i,WN:()=>l,bv:()=>s,gm:()=>o,m:()=>c,mw:()=>a,sb:()=>d,zk:()=>f});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,s="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),c=""+o?.location,u=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)()),f=()=>{const e=o?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<o.performance.now())return e}},6389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},6630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},7699:(e,t,r)=>{"use strict";r.d(t,{It:()=>s,KC:()=>a,No:()=>i,qh:()=>o});var n=r(860);const i=16e3,s=1e6,o="SESSION_ERROR",a={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0}},7836:(e,t,r)=>{"use strict";r.d(t,{P:()=>a,ee:()=>c});var n=r(384),i=r(8990),s=r(2646),o=r(5607);const a="nr@context:".concat(o.W),c=function e(t,r){var n={},o={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,s){!1!==s&&(s=!0);if(c.aborted&&!i)return;t&&s&&t.emit(e,r,n);var a=g(n);m(e).forEach(e=>{e.apply(a,r)});var u=v()[o[e]];u&&u.push([f,e,r,a]);return a},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{o[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[o[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof s.y?e:e?(0,i.I)(e,a,()=>new s.y(a)):new s.y(a)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c)},8122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),s=0===Object.keys(r).length?e:r;for(let o in s)if(void 0!==e[o])try{if(null===e[o]){r[o]=null;continue}Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):e[o]instanceof Map||e[o]instanceof Set||e[o]instanceof Date||e[o]instanceof RegExp?r[o]=e[o]:"object"==typeof e[o]&&"object"==typeof t[o]?r[o]=i(e[o],t[o]):r[o]=e[o]}catch(e){r[o]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},8362:(e,t,r)=>{"use strict";r.d(t,{d:()=>s});var n=r(9566),i=r(1741);class s extends i.W{agentIdentifier=(0,n.LA)(16)}},8374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},8990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},9324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>s,xv:()=>n});const n="1.313.1",i="PROD",s="CDN"},9566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>a,bz:()=>o});var n=r(6154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function s(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map(e=>"x"===e?s(t,r++).toString(16):"y"===e?(3&s()|8).toString(16):e).join("")}function a(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const o=[];for(var a=0;a<e;a++)o.push(s(r,i++).toString(16));return o.join("")}},9908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,s){s?(s.buffer([e],i),s.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var s=n[e]={exports:{}};return r[e](s,s.exports,i),s.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce((t,r)=>(i.f[r](e,t),t),[])),i.u=e=>"nr-rum-1.313.1.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.313.1.PROD:",i.l=(r,n,s,o)=>{if(e[r])e[r].push(n);else{var a,c;if(void 0!==s)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+s){a=l;break}}if(!a){c=!0;var f={296:"sha512-E5cgo9olCDb1hfo75P7xhy70qTRBv8iv81Oo0YOB6CVixq6QiRl0uXoiNuwXFWgcz3w9/S/CpI4Zm4ai5G4h3w=="};(a=document.createElement("script")).charset="utf-8",i.nc&&a.setAttribute("nonce",i.nc),a.setAttribute("data-webpack",t+s),a.src=r,0!==a.src.indexOf(window.location.origin+"/")&&(a.crossOrigin="anonymous"),f[o]&&(a.integrity=f[o])}e[r]=[n];var g=(t,n)=>{a.onerror=a.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],a.parentNode&&a.parentNode.removeChild(a),i&&i.forEach(e=>e(n)),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:a}),12e4);a.onerror=g.bind(null,a.onerror),a.onload=g.bind(null,a.onload),c&&document.head.appendChild(a)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var s=new Promise((r,i)=>n=e[t]=[r,i]);r.push(n[2]=s);var o=i.p+i.u(t),a=new Error;i.l(o,r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var s=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;a.message="Loading chunk "+t+" failed: ("+s+": "+o+")",a.name="ChunkLoadError",a.type=s,a.request=o,n[1](a)}},"chunk-"+t,t)}};var t=(t,r)=>{var n,s,[o,a,c]=r,u=0;if(o.some(t=>0!==e[t])){for(n in a)i.o(a,n)&&(i.m[n]=a[n]);if(c)c(i)}for(t&&t(r);u<o.length;u++)s=o[u],i.o(e,s)&&e[s]&&e[s][0](),e[s]=0},r=self["webpackChunk:NRBA-1.313.1.PROD"]=self["webpackChunk:NRBA-1.313.1.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(8362),t=i(860);const r=Object.values(t.K7);var n=i(163);var s=i(9908),o=i(1863),a=i(4261),c=i(1738);var u=i(1687),d=i(4234),l=i(5289),f=i(6154),g=i(944),p=i(384);const m=e=>f.RI&&!0===e?.privacy.cookies_enabled;function h(e){return!!(0,p.dV)().o.MO&&m(e)&&!0===e?.session_trace.enabled}var v=i(6389),b=i(7699);class y extends d.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,v.J)(()=>{(0,u.Ak)(e,this.featureName),t()}))}):(0,u.Ak)(e,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;const n=async()=>{let n;await this.deferred;try{if(m(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,2612));n=t(e)}}catch(e){(0,g.R)(20,e),this.ee.emit("internal-error",[e]),(0,s.p)(b.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#t(this.featureName,n,e.init))return(0,u.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,g.R)(34,e),this.abortHandler?.(),(0,u.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1),this.ee&&this.ee.abort()}};f.RI?(0,l.GG)(()=>n(),!0):n()}#t(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return h(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}}var _=i(6630),w=i(2614),x=i(3241);class R extends y{static featureName=_.T;constructor(e){var t;super(e,_.T),this.setupInspectionEvents(),t=e,(0,c.Y)(a.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,s.p)(a.Pl+a.Fw,[(0,o.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>i.e(296).then(i.bind(i,146)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,x.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,l.sB)(t=>{e(t,"DOMContentLoaded")}),(0,l.GG)(t=>{e(t,"load")}),(0,l.Qr)(t=>{e(t,"navigate")}),this.ee.on(w.tS.UPDATE,(e,t)=>{(0,x.W)({type:"lifecycle",name:"session",data:t})})}}class k extends e.d{constructor(e){var t;(super(),f.gm)?(this.features={},(0,p.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(R),(0,n.j)(this,e,e.loaderType||"agent"),t=this,(0,c.Y)(a.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,c.U)(t,e,r,a.cD,n);(0,g.R)(40,typeof r)}else(0,g.R)(39,typeof e)},t),function(e){(0,c.Y)(a.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,g.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,s.p)(a.Pl+"setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,c.U)(e,"enduser.id",t,a.Dl,!0)},e)}(this),function(e){(0,c.Y)(a.nb,function(t){if("string"==typeof t||null===t)return(0,c.U)(e,"application.version",t,a.nb,!1);(0,g.R)(42,typeof t)},e)}(this),function(e){(0,c.Y)(a.d3,function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,c.Y)(a.Pv,function(t=!0){if("boolean"==typeof t){if((0,s.p)(a.Pl+a.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum()})}}else(0,g.R)(65,typeof t)},e)}(this),this.run()):(0,g.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return r.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),n=[...this.desiredFeatures];n.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),n.forEach(r=>{if(!e[r.featureName]&&r.featureName!==t.K7.pageViewEvent)return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,g.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,g.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,p.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var A=i(2843),T=i(782);class E extends y{static featureName=T.T;constructor(e){super(e,T.T),f.RI&&((0,A.u)(()=>(0,s.p)("docHidden",[(0,o.t)()],void 0,T.T,this.ee),!0),(0,A.G)(()=>(0,s.p)("winPagehide",[(0,o.t)()],void 0,T.T,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,2117))))}}var S=i(3969);class j extends y{static featureName=S.TZ;constructor(e){super(e,S.TZ),this.importAggregator(e,()=>i.e(296).then(i.bind(i,9623)))}}new k({features:[R,E,j],loaderType:"lite"})})()})();</script>
+	<meta charset="UTF-8">
 	<meta name="theme-color" content="#231F20">
 
 			<meta name="msvalidate.01" content="9E5C74811CA48CCCC61A2CF3C0A1BA6A">
@@ -447,7 +446,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 
 				
 
-				gnAdSettings = {"adPath":"\/6872\/globalnews\/website","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"11","weatherprec":"x","weathercode":"28","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
+				gnAdSettings = {"adPath":"\/6872\/globalnews\/website","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"10","weatherprec":"x","weathercode":"26","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
 		</script>
 			<script>
 				// Load the APS JavaScript Library
@@ -1489,10 +1488,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay=""
 						data-displayinline-featured="false"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_11814718_69f3db4672424"
+			data-displayinline-player-id="miniplayer_11814718_69f40f4013420"
 			data-displayinline-video-id="11814718"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/11814718/#autoplay&#038;stickyiframe=miniplayer_11814718_69f3db4672424"
+    		data-displayinline="https://globalnews.ca/video/embed/11814718/#autoplay&#038;stickyiframe=miniplayer_11814718_69f40f4013420"
     									data-displayinline-container="stories-1-0"
 										data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Toronto Police make arrests in text-message cyber attack, 13M affected&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;toronto&quot;,&quot;crime&quot;,&quot;tech&quot;],&quot;keywords&quot;:[&quot;arrests&quot;,&quot;cybersecurity&quot;,&quot;short-clip&quot;,&quot;sms&quot;,&quot;sms-blaster&quot;,&quot;texts&quot;]}}"
@@ -1531,7 +1530,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 									The RCMP has long warned that national security investigations and protective policing operations have pulled resources away from financial crime enforcement.									</div>
 																<div class="c-posts__about c-posts__about--multiple">
 																		<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">1 hour</div>
+																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">5 hours</div>
 																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 																	</div>
 														</a>
@@ -1544,8 +1543,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				>
 					<a
 						class="c-posts__inner"
-						href="https://globalnews.ca/news/11824047/ai-strategy-concerns-jim-balsillie-economy/"
+						href="https://globalnews.ca/news/11823997/alberta-elector-list-breach/"
 						data-analytics="{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:1}"
+					>
+						
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/05/alberta-election_1.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="405" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/05/alberta-election_1.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/05/alberta-election_1.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/05/alberta-election_1.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+								<div class="c-posts__details">
+										<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Alberta separatist group ordered to take down list of voters, RCMP investigating" data-title>Alberta separatist group ordered to take down list of voters, RCMP investigating</span>
+			</div>
+								<div class="c-posts__about c-posts__about--multiple">
+																<div class="c-posts__info c-posts__info--highlight">Politics</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">11 hours</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">10 min read</div>
+															</div>
+						</div>
+					</a>
+				</li>
+									<li 
+					class="c-posts__item " 
+					data-container-id="stories-1-2"
+				>
+					<a
+						class="c-posts__inner"
+						href="https://globalnews.ca/news/11824047/ai-strategy-concerns-jim-balsillie-economy/"
+						data-analytics="{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:2}"
 					>
 						
 		<div class="c-posts__media  c-imageContainer"  >
@@ -1562,38 +1591,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			</div>
 								<div class="c-posts__about c-posts__about--multiple">
 																<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">6 hours</div>
 																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">6 min read</div>
-															</div>
-						</div>
-					</a>
-				</li>
-									<li 
-					class="c-posts__item " 
-					data-container-id="stories-1-2"
-				>
-					<a
-						class="c-posts__inner"
-						href="https://globalnews.ca/news/11824682/trump-bridgers-canada-wyoming-crude-oil-pipeline/"
-						data-analytics="{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:2}"
-					>
-						
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/Trump-oil-pipeline-Wyoming-Canada.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/Trump-oil-pipeline-Wyoming-Canada.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/Trump-oil-pipeline-Wyoming-Canada.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/Trump-oil-pipeline-Wyoming-Canada.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-								<div class="c-posts__details">
-										<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Trump approves Canada-Wyoming oil pipeline that revives part of Keystone XL" data-title>Trump approves Canada-Wyoming oil pipeline that revives part of Keystone XL</span>
-			</div>
-								<div class="c-posts__about c-posts__about--multiple">
-																<div class="c-posts__info c-posts__info--highlight">Economy</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">3 hours</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 															</div>
 						</div>
 					</a>
@@ -1612,32 +1611,32 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=12			data-parent-id=home-topStories					>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-1"
-	data-post-id="11823997"
+	data-post-id="11824682"
 	data-slide-index=""
-	data-caption="Outside party may have gained access to Alberta’s elector’s list, agency warns"
+	data-caption="Trump approves Canada-Wyoming oil pipeline that revives part of Keystone XL"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11823997/alberta-elector-list-breach/"
+		href="https://globalnews.ca/news/11824682/trump-bridgers-canada-wyoming-crude-oil-pipeline/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				src=https://globalnews.ca/wp-content/uploads/2025/05/alberta-election_1.jpg?quality=65&#038;strip=all&#038;w=720												width="720" height="405" alt="" 
-											srcset="https://globalnews.ca/wp-content/uploads/2025/05/alberta-election_1.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/05/alberta-election_1.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/05/alberta-election_1.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"						/>
+				src=https://globalnews.ca/wp-content/uploads/2026/04/Trump-oil-pipeline-Wyoming-Canada.jpg?quality=65&#038;strip=all&#038;w=720												width="720" height="480" alt="" 
+											srcset="https://globalnews.ca/wp-content/uploads/2026/04/Trump-oil-pipeline-Wyoming-Canada.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/Trump-oil-pipeline-Wyoming-Canada.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/Trump-oil-pipeline-Wyoming-Canada.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Outside party may have gained access to Alberta’s elector’s list, agency warns" data-title>Outside party may have gained access to Alberta’s elector’s list, agency warns</span>
+					<span class="c-posts__headlineText" title="Trump approves Canada-Wyoming oil pipeline that revives part of Keystone XL" data-title>Trump approves Canada-Wyoming oil pipeline that revives part of Keystone XL</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Economy</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">7 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1670,7 +1669,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Health</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">3 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">6 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
@@ -1726,7 +1725,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">4 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">8 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
 														</div>
 									</div>
@@ -1734,40 +1733,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-4"
-	data-post-id="11823838"
-	data-slide-index=""
-	data-caption="&#8216;Days of Our Lives&#8217; actor Patrick Muldoon&#8217;s cause of death revealed: report"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11823838/patrick-muldoon-cause-of-death-report/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/patrick-muldoon-cause-of-death.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/patrick-muldoon-cause-of-death.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/patrick-muldoon-cause-of-death.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/patrick-muldoon-cause-of-death.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="&#8216;Days of Our Lives&#8217; actor Patrick Muldoon&#8217;s cause of death revealed: report" data-title>&#8216;Days of Our Lives&#8217; actor Patrick Muldoon&#8217;s cause of death revealed: report</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Entertainment</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">8 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-5"
 	data-post-id="11824595"
 	data-slide-index=""
 	data-caption="2 children found dead in Calgary vehicle, homicide team investigating"
@@ -1775,7 +1740,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11824595/calgary-homicide-investigation-children-vehicle/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1794,42 +1759,76 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Crime</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">3 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">7 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
 														</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-6"
-	data-post-id="11823847"
+	data-container-id="stories-item-5"
+	data-post-id="11824238"
 	data-slide-index=""
-	data-caption="Canadian manufacturing just saw largest monthly growth in 3 years: StatCan"
+	data-caption="‘There&#8217;s one negotiator,&#8217; Carney says as Conservatives meet U.S. on trade"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11823847/canada-economy-manufacturing-data-statistics-canada/"
+		href="https://globalnews.ca/news/11824238/mark-carney-cusma-talks-conservatives/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/Carney-conservatives-trade.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=531 data-ratio=0.67									loading="lazy"
+								width="720" height="531" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/Carney-conservatives-trade.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/Carney-conservatives-trade.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/Carney-conservatives-trade.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="‘There&#8217;s one negotiator,&#8217; Carney says as Conservatives meet U.S. on trade" data-title>‘There&#8217;s one negotiator,&#8217; Carney says as Conservatives meet U.S. on trade</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">8 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-6"
+	data-post-id="11824044"
+	data-slide-index=""
+	data-caption="The CRA says it&#8217;s using AI — but not for personal tax return decisions"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11824044/tax-season-2026-cra-ai/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/GDP-April-2026.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/CRA-AI-use.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
 								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/GDP-April-2026.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/GDP-April-2026.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/GDP-April-2026.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/CRA-AI-use.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/CRA-AI-use.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/CRA-AI-use.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Canadian manufacturing just saw largest monthly growth in 3 years: StatCan" data-title>Canadian manufacturing just saw largest monthly growth in 3 years: StatCan</span>
+					<span class="c-posts__headlineText" title="The CRA says it&#8217;s using AI — but not for personal tax return decisions" data-title>The CRA says it&#8217;s using AI — but not for personal tax return decisions</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Economy</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">9 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1858,108 +1857,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-7"
-	data-post-id="11824238"
-	data-slide-index=""
-	data-caption="‘There&#8217;s one negotiator,&#8217; Carney says as Conservatives meet U.S. on trade"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11824238/mark-carney-cusma-talks-conservatives/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/Carney-conservatives-trade.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=531 data-ratio=0.67									loading="lazy"
-								width="720" height="531" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/Carney-conservatives-trade.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/Carney-conservatives-trade.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/Carney-conservatives-trade.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="‘There&#8217;s one negotiator,&#8217; Carney says as Conservatives meet U.S. on trade" data-title>‘There&#8217;s one negotiator,&#8217; Carney says as Conservatives meet U.S. on trade</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">5 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-8"
-	data-post-id="11824044"
-	data-slide-index=""
-	data-caption="The CRA says it&#8217;s using AI — but not for personal tax return decisions"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11824044/tax-season-2026-cra-ai/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/CRA-AI-use.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/CRA-AI-use.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/CRA-AI-use.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/CRA-AI-use.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="The CRA says it&#8217;s using AI — but not for personal tax return decisions" data-title>The CRA says it&#8217;s using AI — but not for personal tax return decisions</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">6 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-9"
-	data-post-id="11823824"
-	data-slide-index=""
-	data-caption="Ottawa announces multinational defence bank to be headquartered in Canada"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11823824/defence-bank-will-be-headquartered-in-canada/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/02/e6ce2e6e324f2c57318df0dc2d3c29a3a404cc274b61fe60175f87723e7e2d50.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=494 data-ratio=0.67									loading="lazy"
-								width="720" height="494" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/02/e6ce2e6e324f2c57318df0dc2d3c29a3a404cc274b61fe60175f87723e7e2d50.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/02/e6ce2e6e324f2c57318df0dc2d3c29a3a404cc274b61fe60175f87723e7e2d50.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/02/e6ce2e6e324f2c57318df0dc2d3c29a3a404cc274b61fe60175f87723e7e2d50.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Ottawa announces multinational defence bank to be headquartered in Canada" data-title>Ottawa announces multinational defence bank to be headquartered in Canada</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">10 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-10"
 	data-post-id="11824540"
 	data-slide-index=""
 	data-caption="Archbishop calls on Carney to stop extension of MAID for mental illness"
@@ -1967,7 +1864,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11824540/archbishop-carney-maid-mental-illness/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -1986,22 +1883,22 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">4 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">7 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
 		</a>
 	</li>
-<li class="c-posts__item    is-hidden"
-	data-container-id="stories-item-11"
+<li class="c-posts__item    "
+	data-container-id="stories-item-8"
 	data-post-id="11825035"
 	data-slide-index=""
 	data-caption="Record-long DHS shutdown ends as Trump signs funding bill that excludes ICE"
-		data-ad-fallback=false>
+		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11825035/trump-dhs-ice-shutdown-funding-bill-signed/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -2020,22 +1917,22 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>U.S. News</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">40 mins</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">4 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
 														</div>
 									</div>
 		</a>
 	</li>
-<li class="c-posts__item    is-hidden"
-	data-container-id="stories-item-12"
+<li class="c-posts__item    "
+	data-container-id="stories-item-9"
 	data-post-id="11824993"
 	data-slide-index=""
 	data-caption="Carney, ministers say IRGC members barred from Canada after visa granted"
-		data-ad-fallback=false>
+		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11824993/iran-irgc-entry-canada-carney-ministers/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:11}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -2054,8 +1951,110 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">56 mins</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">5 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-10"
+	data-post-id="11824946"
+	data-slide-index=""
+	data-caption="Spring economic update lacks details on spending targets, results: PBO"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11824946/spring-economic-update-pbo-analysis-spending/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/8aa1fd4659555ab60913a02fdb9fe3f1af327d5977e358484ced346886e7167b_8cd206.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=494 data-ratio=0.67									loading="lazy"
+								width="720" height="494" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/8aa1fd4659555ab60913a02fdb9fe3f1af327d5977e358484ced346886e7167b_8cd206.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/8aa1fd4659555ab60913a02fdb9fe3f1af327d5977e358484ced346886e7167b_8cd206.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/8aa1fd4659555ab60913a02fdb9fe3f1af327d5977e358484ced346886e7167b_8cd206.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Spring economic update lacks details on spending targets, results: PBO" data-title>Spring economic update lacks details on spending targets, results: PBO</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Economy</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">5 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    is-hidden"
+	data-container-id="stories-item-11"
+	data-post-id="11824891"
+	data-slide-index=""
+	data-caption="Hegseth says Trump doesn&#8217;t need Iran war approval while ceasefire in place"
+		data-ad-fallback=false>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11824891/iran-pete-hegseth-senate-testimony/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/aab74e9475ebdf5d6e380214d198453b8ca3e52c04324a716155779ff514fb3d.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="478" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/aab74e9475ebdf5d6e380214d198453b8ca3e52c04324a716155779ff514fb3d.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/aab74e9475ebdf5d6e380214d198453b8ca3e52c04324a716155779ff514fb3d.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/aab74e9475ebdf5d6e380214d198453b8ca3e52c04324a716155779ff514fb3d.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Hegseth says Trump doesn&#8217;t need Iran war approval while ceasefire in place" data-title>Hegseth says Trump doesn&#8217;t need Iran war approval while ceasefire in place</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>U.S. News</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">5 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    is-hidden"
+	data-container-id="stories-item-12"
+	data-post-id="11824188"
+	data-slide-index=""
+	data-caption="Uber to introduce hotel booking feature and &#8216;room service&#8217; options"
+		data-ad-fallback=false>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11824188/uber-new-features-hotel-bookings-room-service/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:11}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/69e2533571c9390e8de80486879aaf04b5dfce79979598bd44541fb7885e5b77.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/69e2533571c9390e8de80486879aaf04b5dfce79979598bd44541fb7885e5b77.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/69e2533571c9390e8de80486879aaf04b5dfce79979598bd44541fb7885e5b77.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/69e2533571c9390e8de80486879aaf04b5dfce79979598bd44541fb7885e5b77.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Uber to introduce hotel booking feature and &#8216;room service&#8217; options" data-title>Uber to introduce hotel booking feature and &#8216;room service&#8217; options</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Trending</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">5 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
 									</div>
 		</a>
@@ -2072,10 +2071,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay="true"
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69f3db46762cc"
+			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69f40f40164b5"
 			data-displayinline-video-id="49a91e7f-1023-430f-8d66-561055f3d0f7"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69f3db46762cc"
+    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_69f40f40164b5"
     		    			data-displayinline-playlist="49a91e7f-1023-430f-8d66-561055f3d0f7"
     									data-displayinline-container="mini-ott"
 																data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;recent_terms_datastore&quot;,&quot;type&quot;:&quot;wlo_option&quot;}}"
@@ -2211,7 +2210,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="2 children found dead in Calgary vehicle, homicide team investigating" data-title>2 children found dead in Calgary vehicle, homicide team investigating</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">20,728</span>
+							<span class="c-posts__info c-posts__info--highlight">51,111</span>
+							<span class="c-posts__info">Read</span>
+						</div>
+												
+											</div>
+				</a>
+			</li>
+								<li class="c-posts__item" data-post-id="11824238">
+				<a
+					href="https://globalnews.ca/news/11824238/mark-carney-cusma-talks-conservatives/"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:1}"
+				>
+					<div class="c-posts__rank">
+							<svg class="c-icon  c-posts__rankIcon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#2"></use>
+	</svg>
+						</div>
+					
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/Carney-conservatives-trade.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=531 data-ratio=0.67									loading="lazy"
+								width="720" height="531" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/Carney-conservatives-trade.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/Carney-conservatives-trade.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/Carney-conservatives-trade.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+							<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="‘There&#8217;s one negotiator,&#8217; Carney says as Conservatives meet U.S. on trade" data-title>‘There&#8217;s one negotiator,&#8217; Carney says as Conservatives meet U.S. on trade</span>
+			</div>
+													<div class="c-posts__about">
+							<span class="c-posts__info c-posts__info--highlight">25,047</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2221,11 +2251,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<li class="c-posts__item" data-post-id="11823838">
 				<a
 					href="https://globalnews.ca/news/11823838/patrick-muldoon-cause-of-death-report/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:1}"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#2"></use>
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#3"></use>
 	</svg>
 						</div>
 					
@@ -2242,47 +2272,16 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="&#8216;Days of Our Lives&#8217; actor Patrick Muldoon&#8217;s cause of death revealed: report" data-title>&#8216;Days of Our Lives&#8217; actor Patrick Muldoon&#8217;s cause of death revealed: report</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">18,731</span>
+							<span class="c-posts__info c-posts__info--highlight">24,743</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
 											</div>
 				</a>
 			</li>
-								<li class="c-posts__item" data-post-id="11821993">
+								<li class="c-posts__item" data-post-id="11823902">
 				<a
-					href="https://globalnews.ca/news/11821993/william-and-kate-wedding-anniversary-family-photo/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
-				>
-					<div class="c-posts__rank">
-							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#3"></use>
-	</svg>
-						</div>
-					
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/Untitled-design-48.png?w=720				data-width=720 data-height=563 data-ratio=0.67									loading="lazy"
-								width="720" height="563" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/Untitled-design-48.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/Untitled-design-48.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/Untitled-design-48.png?w=720 720w,"				data-sizes="auto"						/>
-													</div>
-							<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="William and Kate share new family photo on 15th wedding anniversary" data-title>William and Kate share new family photo on 15th wedding anniversary</span>
-			</div>
-													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">9,627</span>
-							<span class="c-posts__info">Read</span>
-						</div>
-												
-											</div>
-				</a>
-			</li>
-								<li class="c-posts__item" data-post-id="11820779">
-				<a
-					href="https://globalnews.ca/news/11820779/canada-approves-1st-generic-ozempic-market/"
+					href="https://globalnews.ca/news/11823902/jack-and-lilly-investigation-factual-tips-needed/"
 					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:3}"
 				>
 					<div class="c-posts__rank">
@@ -2294,26 +2293,26 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/04/GettyImages-2200929680.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/3cec34b8e8b0dc171070f55e4b3523ce1738920d4fcb534e955d25490a647f13.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="454" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/04/GettyImages-2200929680.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/04/GettyImages-2200929680.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/04/GettyImages-2200929680.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/3cec34b8e8b0dc171070f55e4b3523ce1738920d4fcb534e955d25490a647f13.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/3cec34b8e8b0dc171070f55e4b3523ce1738920d4fcb534e955d25490a647f13.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/3cec34b8e8b0dc171070f55e4b3523ce1738920d4fcb534e955d25490a647f13.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 							<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="With Canada approving 1st generic semaglutide, how will costs compare?" data-title>With Canada approving 1st generic semaglutide, how will costs compare?</span>
+					<span class="c-posts__headlineText" title="N.S. missing kids: RCMP &#8216;want answers&#8217; 1 year after Lilly and Jack&#8217;s disappearance" data-title>N.S. missing kids: RCMP &#8216;want answers&#8217; 1 year after Lilly and Jack&#8217;s disappearance</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">8,459</span>
+							<span class="c-posts__info c-posts__info--highlight">13,017</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
 											</div>
 				</a>
 			</li>
-								<li class="c-posts__item" data-post-id="11823847">
+								<li class="c-posts__item" data-post-id="11823997">
 				<a
-					href="https://globalnews.ca/news/11823847/canada-economy-manufacturing-data-statistics-canada/"
+					href="https://globalnews.ca/news/11823997/alberta-elector-list-breach/"
 					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:4}"
 				>
 					<div class="c-posts__rank">
@@ -2325,17 +2324,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/GDP-April-2026.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/05/alberta-election_1.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="405" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/GDP-April-2026.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/GDP-April-2026.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/GDP-April-2026.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/05/alberta-election_1.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/05/alberta-election_1.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/05/alberta-election_1.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 							<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Canadian manufacturing just saw largest monthly growth in 3 years: StatCan" data-title>Canadian manufacturing just saw largest monthly growth in 3 years: StatCan</span>
+					<span class="c-posts__headlineText" title="Outside party may have gained access to Alberta’s elector’s list, agency warns" data-title>Outside party may have gained access to Alberta’s elector’s list, agency warns</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">7,220</span>
+							<span class="c-posts__info c-posts__info--highlight">12,983</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2444,7 +2443,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="2 children found dead in Calgary vehicle, homicide team investigating" data-title>2 children found dead in Calgary vehicle, homicide team investigating</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">20,728</span>
+							<span class="c-posts__info c-posts__info--highlight">51,111</span>
+							<span class="c-posts__info">Read</span>
+						</div>
+												
+											</div>
+				</a>
+			</li>
+								<li class="c-posts__item" data-post-id="11824238">
+				<a
+					href="https://globalnews.ca/news/11824238/mark-carney-cusma-talks-conservatives/"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:1}"
+				>
+					<div class="c-posts__rank">
+							<svg class="c-icon  c-posts__rankIcon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#2"></use>
+	</svg>
+						</div>
+					
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/Carney-conservatives-trade.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=531 data-ratio=0.67									loading="lazy"
+								width="720" height="531" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/Carney-conservatives-trade.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/Carney-conservatives-trade.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/Carney-conservatives-trade.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+							<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="‘There&#8217;s one negotiator,&#8217; Carney says as Conservatives meet U.S. on trade" data-title>‘There&#8217;s one negotiator,&#8217; Carney says as Conservatives meet U.S. on trade</span>
+			</div>
+													<div class="c-posts__about">
+							<span class="c-posts__info c-posts__info--highlight">25,047</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2454,11 +2484,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<li class="c-posts__item" data-post-id="11823838">
 				<a
 					href="https://globalnews.ca/news/11823838/patrick-muldoon-cause-of-death-report/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:1}"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#2"></use>
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#3"></use>
 	</svg>
 						</div>
 					
@@ -2475,47 +2505,16 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="&#8216;Days of Our Lives&#8217; actor Patrick Muldoon&#8217;s cause of death revealed: report" data-title>&#8216;Days of Our Lives&#8217; actor Patrick Muldoon&#8217;s cause of death revealed: report</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">18,731</span>
+							<span class="c-posts__info c-posts__info--highlight">24,743</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
 											</div>
 				</a>
 			</li>
-								<li class="c-posts__item" data-post-id="11821993">
+								<li class="c-posts__item" data-post-id="11823902">
 				<a
-					href="https://globalnews.ca/news/11821993/william-and-kate-wedding-anniversary-family-photo/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
-				>
-					<div class="c-posts__rank">
-							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#3"></use>
-	</svg>
-						</div>
-					
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/Untitled-design-48.png?w=720				data-width=720 data-height=563 data-ratio=0.67									loading="lazy"
-								width="720" height="563" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/Untitled-design-48.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/Untitled-design-48.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/Untitled-design-48.png?w=720 720w,"				data-sizes="auto"						/>
-													</div>
-							<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="William and Kate share new family photo on 15th wedding anniversary" data-title>William and Kate share new family photo on 15th wedding anniversary</span>
-			</div>
-													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">9,627</span>
-							<span class="c-posts__info">Read</span>
-						</div>
-												
-											</div>
-				</a>
-			</li>
-								<li class="c-posts__item" data-post-id="11820779">
-				<a
-					href="https://globalnews.ca/news/11820779/canada-approves-1st-generic-ozempic-market/"
+					href="https://globalnews.ca/news/11823902/jack-and-lilly-investigation-factual-tips-needed/"
 					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:3}"
 				>
 					<div class="c-posts__rank">
@@ -2527,26 +2526,26 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/04/GettyImages-2200929680.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/3cec34b8e8b0dc171070f55e4b3523ce1738920d4fcb534e955d25490a647f13.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="454" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/04/GettyImages-2200929680.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/04/GettyImages-2200929680.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/04/GettyImages-2200929680.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/3cec34b8e8b0dc171070f55e4b3523ce1738920d4fcb534e955d25490a647f13.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/3cec34b8e8b0dc171070f55e4b3523ce1738920d4fcb534e955d25490a647f13.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/3cec34b8e8b0dc171070f55e4b3523ce1738920d4fcb534e955d25490a647f13.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 							<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="With Canada approving 1st generic semaglutide, how will costs compare?" data-title>With Canada approving 1st generic semaglutide, how will costs compare?</span>
+					<span class="c-posts__headlineText" title="N.S. missing kids: RCMP &#8216;want answers&#8217; 1 year after Lilly and Jack&#8217;s disappearance" data-title>N.S. missing kids: RCMP &#8216;want answers&#8217; 1 year after Lilly and Jack&#8217;s disappearance</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">8,459</span>
+							<span class="c-posts__info c-posts__info--highlight">13,017</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
 											</div>
 				</a>
 			</li>
-								<li class="c-posts__item" data-post-id="11823847">
+								<li class="c-posts__item" data-post-id="11823997">
 				<a
-					href="https://globalnews.ca/news/11823847/canada-economy-manufacturing-data-statistics-canada/"
+					href="https://globalnews.ca/news/11823997/alberta-elector-list-breach/"
 					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:4}"
 				>
 					<div class="c-posts__rank">
@@ -2558,17 +2557,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/GDP-April-2026.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2025/05/alberta-election_1.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="405" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/GDP-April-2026.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/GDP-April-2026.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/GDP-April-2026.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/05/alberta-election_1.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/05/alberta-election_1.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/05/alberta-election_1.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 							<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Canadian manufacturing just saw largest monthly growth in 3 years: StatCan" data-title>Canadian manufacturing just saw largest monthly growth in 3 years: StatCan</span>
+					<span class="c-posts__headlineText" title="Outside party may have gained access to Alberta’s elector’s list, agency warns" data-title>Outside party may have gained access to Alberta’s elector’s list, agency warns</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">7,220</span>
+							<span class="c-posts__info c-posts__info--highlight">12,983</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2702,7 +2701,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date >56 mins</div>
+																<div class="c-posts__info" data-date >5 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -2735,7 +2734,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>U.S. News</div>
-																<div class="c-posts__info" data-date >2 hours</div>
+																<div class="c-posts__info" data-date >5 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -2768,7 +2767,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
-																<div class="c-posts__info" data-date >4 hours</div>
+																<div class="c-posts__info" data-date >8 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -2801,7 +2800,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
-																<div class="c-posts__info" data-date >4 hours</div>
+																<div class="c-posts__info" data-date >8 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -2942,8 +2941,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-miniplayer"
 			data-displayinline-video-id="11824656"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11824656,11824208,11824727,11824139,11822942/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fl84vjor10b-vtecb6oyhe%2FCARNEY_NEGOTIATORS_thumbnail_1280x720_.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
-    		    			data-displayinline-playlist="11824656,11824208,11824727,11824139,11822942"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11824656,11824727,11825034,11736864,11824208/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fl84vjor10b-vtecb6oyhe%2FCARNEY_NEGOTIATORS_thumbnail_1280x720_.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
+    		    			data-displayinline-playlist="11824656,11824727,11825034,11736864,11824208"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;\u2018There\u2019s one negotiator,\u2019 Carney says as Conservatives meet U.S. officials on trade&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;],&quot;keywords&quot;:[&quot;cusma&quot;,&quot;short-clip&quot;,&quot;usmca&quot;]}}"
 			    		>
@@ -3011,8 +3010,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11824656"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11824656,11824208,11824727,11824139,11822942/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11824656,11824208,11824727,11824139,11822942"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11824656,11824727,11825034,11736864,11824208/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11824656,11824727,11825034,11736864,11824208"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="There is only one trade negotiator for Canada, and it’s the federal government, Prime Minister Mark Carney said Thursday in Oakville, Ont., when asked about Conservative MPs meeting U.S. trade representatives."
 			>
@@ -3033,40 +3032,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Business Matters: Canadian economy grew by 0.2% in February" data-slide-index="1">
-	<a href="https://globalnews.ca/video/11824208/business-matters-canadian-economy-grew-by-0-2-in-february/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11824208"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11824208,11824727,11824139,11822942,11824656/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11824208,11824727,11824139,11822942,11824656"
-			data-video-carousel-label="Economy"
-			data-video-carousel-content="Canada&#039;s economy grew by 0.2 per cent month-on-month in February, marking a fourth consecutive month of economic growth. Goods-producing industries led the way, with expansions in manufacturing, mining and oil and gas extraction. Nivrita Ganguly has this story and more in Business Matters for April 30, 2026."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/q0it0s7csx-xcid4ts9r7/gdp.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Economy</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Business Matters: Canadian economy grew by 0.2% in February</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Elections Alberta investigating if voter list posted online was illegal" data-slide-index="2">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Elections Alberta investigating if voter list posted online was illegal" data-slide-index="1">
 	<a href="https://globalnews.ca/video/11824727/elections-alberta-investigating-if-voter-list-posted-online-was-illegal/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11824727"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11824727,11824139,11822942,11824656,11824208/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11824727,11824139,11822942,11824656,11824208"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11824727,11825034,11736864,11824208,11824656/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11824727,11825034,11736864,11824208,11824656"
 			data-video-carousel-label="Politics"
 			data-video-carousel-content="Elections Alberta is investigating the possibility a provincial party or official illegally used or shared an official voter list containing the names and addresses of millions of residents across the province. As Jasmine King reports, a database on a website for separatist group, The Centurion Project, is no longer publicly available as the issue was addressed in court on Thursday. "
 			>
@@ -3087,18 +3059,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Trump bids farewell to King Charles, Queen Camilla in ceremony at the White House" data-slide-index="3">
-	<a href="https://globalnews.ca/video/11824139/trump-bids-farewell-to-king-charles-queen-camilla-in-ceremony-at-the-white-house/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Biden “wouldn’t sign”: Trump signs Presidential Permit for Bridger pipeline accessing Canadian oil" data-slide-index="2">
+	<a href="https://globalnews.ca/video/11825034/biden-wouldnt-sign-trump-signs-presidential-permit-for-bridger-pipeline-accessing-canadian-oil/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11824139"
+					data-video-id="11825034"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11824139,11822942,11824656,11824208,11824727/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11824139,11822942,11824656,11824208,11824727"
-			data-video-carousel-label="Politics"
-			data-video-carousel-content="United States President Donald Trump bid farewell to King Charles and his wife, Queen Camilla, in a ceremony at the White House Thursday morning that was also attended by First Lady Melania Trump"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11825034,11736864,11824208,11824656,11824727/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11825034,11736864,11824208,11824656,11824727"
+			data-video-carousel-label="Economy"
+			data-video-carousel-content="U.S. President Donald Trump signed a Presidential Permit that will allow U.S. company Bridger Pipeline LLC’s cross-border project using leftover infrastructure from the Keystone XL pipeline. Trump also took a swipe at the previous Biden administration saying they wouldn’t sign a pipeline deal.” By the way. They’re way underground, they’re not a problem, no one knows they are even there,” remarked Trump."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/ct9nxggu0o-d6cw6kgo3w/king_thumbs_yt.mp4.00_00_00_19.Still001.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/54wn4cm5k2-luka0ejbxq/THU_TRUMP_PIPELINE_SITE_THUMB_300426.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3107,25 +3079,25 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>
 		<div class="l-videoCarousel__details c-posts__details">
 							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Politics</div>
+					<div class="c-posts__info c-posts__info--highlight">Economy</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Trump bids farewell to King Charles, Queen Camilla in ceremony at the White House</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Biden “wouldn’t sign”: Trump signs Presidential Permit for Bridger pipeline accessing Canadian oil</span></div>
 					</div>
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Health Canada approves generic semaglutide for adults with type 2 diabetes" data-slide-index="4">
-	<a href="https://globalnews.ca/video/11822942/health-canada-approves-generic-semaglutide-for-adults-with-type-2-diabetes/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Majority of Canadians support MAID for mental illness patients, research says" data-slide-index="3">
+	<a href="https://globalnews.ca/video/11736864/majority-of-canadians-support-maid-for-mental-illness-patients-research-says/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11822942"
+					data-video-id="11736864"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11822942,11824656,11824208,11824727,11824139/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11822942,11824656,11824208,11824727,11824139"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11736864,11824208,11824656,11824727,11825034/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11736864,11824208,11824656,11824727,11825034"
 			data-video-carousel-label="Canada"
-			data-video-carousel-content="The first generic semaglutide has been authorized for use in Canada. Health reporter Katherine Ward looks at how the move could help more Canadians gain access to the medication. "
+			data-video-carousel-content="A growing number of Canadians say they support Medical Assistance in Dying (MAID) for people in certain circumstances. Health reporter Katherine Ward breaks down this latest research and has more on how public opinion could impact policy going forward."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/1b60hq0zf2-aufqm4vslt/AFF_GENERIC_OZEMPIC_APPROVAL_ONLINE_still.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/pntzxgueav-myyrjnahvs/MAID_MENTAL_HEALTH.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3136,7 +3108,34 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							<div class="l-videoCarousel__info">
 					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Health Canada approves generic semaglutide for adults with type 2 diabetes</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Majority of Canadians support MAID for mental illness patients, research says</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Business Matters: Canadian economy grew by 0.2% in February" data-slide-index="4">
+	<a href="https://globalnews.ca/video/11824208/business-matters-canadian-economy-grew-by-0-2-in-february/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11824208"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11824208,11824656,11824727,11825034,11736864/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11824208,11824656,11824727,11825034,11736864"
+			data-video-carousel-label="Economy"
+			data-video-carousel-content="Canada&#039;s economy grew by 0.2 per cent month-on-month in February, marking a fourth consecutive month of economic growth. Goods-producing industries led the way, with expansions in manufacturing, mining and oil and gas extraction. Nivrita Ganguly has this story and more in Business Matters for April 30, 2026."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/q0it0s7csx-xcid4ts9r7/gdp.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Economy</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Business Matters: Canadian economy grew by 0.2% in February</span></div>
 					</div>
 	</a>
 </li>
@@ -3173,19 +3172,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11824208,11824727,11824139,11822942/#autoplay&#038;stickyiframe=home-miniplayer_11824208"
+			href="https://globalnews.ca/video/embed/playlist/11824727,11825034,11736864,11824208/#autoplay&#038;stickyiframe=home-miniplayer_11824727"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11824208"
+			data-displayinline-player-id="home-miniplayer_11824727"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11824208,11824727,11824139,11822942/#autoplay&#038;stickyiframe=home-miniplayer_11824208"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11824727,11825034,11736864,11824208/#autoplay&#038;stickyiframe=home-miniplayer_11824727"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/q0it0s7csx-xcid4ts9r7/gdp.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/9ecj73tl1c-mzrsb67wm0/JASMINE-NOON.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Business Matters: Canadian economy grew by 0.2% in February'"
+					alt="Click to play video 'Elections Alberta investigating if voter list posted online was illegal'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3194,11 +3193,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11824208/business-matters-canadian-economy-grew-by-0-2-in-february/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11824727/elections-alberta-investigating-if-voter-list-posted-online-was-illegal/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Economy</div>
+					<div class="c-posts__info c-posts__info--highlight">Politics</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Business Matters: Canadian economy grew by 0.2% in February</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Elections Alberta investigating if voter list posted online was illegal</span></div>
 		</a>
 	</div>
 </li>
@@ -3228,19 +3227,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11824727,11824139,11822942,11824208/#autoplay&#038;stickyiframe=home-miniplayer_11824727"
+			href="https://globalnews.ca/video/embed/playlist/11825034,11736864,11824208,11824727/#autoplay&#038;stickyiframe=home-miniplayer_11825034"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11824727"
+			data-displayinline-player-id="home-miniplayer_11825034"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11824727,11824139,11822942,11824208/#autoplay&#038;stickyiframe=home-miniplayer_11824727"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11825034,11736864,11824208,11824727/#autoplay&#038;stickyiframe=home-miniplayer_11825034"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/9ecj73tl1c-mzrsb67wm0/JASMINE-NOON.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/54wn4cm5k2-luka0ejbxq/THU_TRUMP_PIPELINE_SITE_THUMB_300426.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Elections Alberta investigating if voter list posted online was illegal'"
+					alt="Click to play video 'Biden “wouldn’t sign”: Trump signs Presidential Permit for Bridger pipeline accessing Canadian oil'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3249,11 +3248,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11824727/elections-alberta-investigating-if-voter-list-posted-online-was-illegal/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11825034/biden-wouldnt-sign-trump-signs-presidential-permit-for-bridger-pipeline-accessing-canadian-oil/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Politics</div>
+					<div class="c-posts__info c-posts__info--highlight">Economy</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Elections Alberta investigating if voter list posted online was illegal</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Biden “wouldn’t sign”: Trump signs Presidential Permit for Bridger pipeline accessing Canadian oil</span></div>
 		</a>
 	</div>
 </li>
@@ -3261,19 +3260,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11824139,11822942,11824208,11824727/#autoplay&#038;stickyiframe=home-miniplayer_11824139"
+			href="https://globalnews.ca/video/embed/playlist/11736864,11824208,11824727,11825034/#autoplay&#038;stickyiframe=home-miniplayer_11736864"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11824139"
+			data-displayinline-player-id="home-miniplayer_11736864"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11824139,11822942,11824208,11824727/#autoplay&#038;stickyiframe=home-miniplayer_11824139"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11736864,11824208,11824727,11825034/#autoplay&#038;stickyiframe=home-miniplayer_11736864"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/ct9nxggu0o-d6cw6kgo3w/king_thumbs_yt.mp4.00_00_00_19.Still001.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/pntzxgueav-myyrjnahvs/MAID_MENTAL_HEALTH.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Trump bids farewell to King Charles, Queen Camilla in ceremony at the White House'"
+					alt="Click to play video 'Majority of Canadians support MAID for mental illness patients, research says'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3282,44 +3281,44 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11824139/trump-bids-farewell-to-king-charles-queen-camilla-in-ceremony-at-the-white-house/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Politics</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Trump bids farewell to King Charles, Queen Camilla in ceremony at the White House</span></div>
-		</a>
-	</div>
-</li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11822942,11824208,11824727,11824139/#autoplay&#038;stickyiframe=home-miniplayer_11822942"
-			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11822942"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11822942,11824208,11824727,11824139/#autoplay&#038;stickyiframe=home-miniplayer_11822942"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/1b60hq0zf2-aufqm4vslt/AFF_GENERIC_OZEMPIC_APPROVAL_ONLINE_still.jpg?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Health Canada approves generic semaglutide for adults with type 2 diabetes'"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/11822942/health-canada-approves-generic-semaglutide-for-adults-with-type-2-diabetes/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11736864/majority-of-canadians-support-maid-for-mental-illness-patients-research-says/" class="c-posts__details">
 				<div class="c-posts__about">
 					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Health Canada approves generic semaglutide for adults with type 2 diabetes</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Majority of Canadians support MAID for mental illness patients, research says</span></div>
+		</a>
+	</div>
+</li>
+
+<li class="c-posts__item">
+	<div class="c-posts__inner">
+		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
+			href="https://globalnews.ca/video/embed/playlist/11824208,11824727,11825034,11736864/#autoplay&#038;stickyiframe=home-miniplayer_11824208"
+			data-displayinline-type="video"
+			data-displayinline-player-id="home-miniplayer_11824208"
+			data-displayinline-ratio="16:9"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11824208,11824727,11825034,11736864/#autoplay&#038;stickyiframe=home-miniplayer_11824208"
+			data-displayinline-sticky="true"
+			data-displayinline-expand="true">
+			<div class="c-video__placeholder">
+				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/q0it0s7csx-xcid4ts9r7/gdp.jpg?w=384&#038;quality=70&#038;strip=all"
+					width="236"
+					height="133"
+					class="c-posts__thumbnail c-video__image"
+					alt="Click to play video 'Business Matters: Canadian economy grew by 0.2% in February'"
+					loading="lazy" />
+				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+			</div>
+		</a>
+		<a href="https://globalnews.ca/video/11824208/business-matters-canadian-economy-grew-by-0-2-in-february/" class="c-posts__details">
+				<div class="c-posts__about">
+					<div class="c-posts__info c-posts__info--highlight">Economy</div>
+				</div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Business Matters: Canadian economy grew by 0.2% in February</span></div>
 		</a>
 	</div>
 </li>
@@ -3384,111 +3383,12 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11824854"
-			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11824854/britney-spears-dui-charge/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Britney Spears charged with driving under influence of alcohol, drugs" data-title>Britney Spears charged with driving under influence of alcohol, drugs</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						The singer was charged with a single misdemeanor count of driving under the combined influence of alcohol and at least one drug, the Ventura County District Attorney’s Office said.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
-																						<div class="c-posts__info">2 hours</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/53b0e43a3a7e65130f833756073d2a24b90d3312378ffb9a66a70e5abcc959c4_c1dd4a.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=509 data-ratio=0.67									loading="lazy"
-								width="720" height="509" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/53b0e43a3a7e65130f833756073d2a24b90d3312378ffb9a66a70e5abcc959c4_c1dd4a.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/53b0e43a3a7e65130f833756073d2a24b90d3312378ffb9a66a70e5abcc959c4_c1dd4a.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/53b0e43a3a7e65130f833756073d2a24b90d3312378ffb9a66a70e5abcc959c4_c1dd4a.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11824828"
-			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11824828/donald-trump-tariffs-scotch-whiskey-king-charles/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Trump says he&#8217;ll remove some tariffs on Scotch whiskey after King&#8217;s visit" data-title>Trump says he&#8217;ll remove some tariffs on Scotch whiskey after King&#8217;s visit</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						Trump later said the tariffs were lifted to specifically enhance the trade of barrels between Scotland and Kentucky, which produces almost all of the world&#039;s bourbon.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
-																						<div class="c-posts__info">2 hours</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/54216fe5ab33910e3b44428609b123e257dc05a2646b1e8513778595a8427863.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/54216fe5ab33910e3b44428609b123e257dc05a2646b1e8513778595a8427863.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/54216fe5ab33910e3b44428609b123e257dc05a2646b1e8513778595a8427863.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/54216fe5ab33910e3b44428609b123e257dc05a2646b1e8513778595a8427863.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11824457"
-			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11824457/camp-mystic-licence-withdrawn-flooding-texas/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Camp Mystic, site of deadly Texas flood, withdraws application to reopen" data-title>Camp Mystic, site of deadly Texas flood, withdraws application to reopen</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						The decision comes in the wake of mounting public pressure in which lawmakers and victims&#039; family members challenged the owner&#039;s intent to welcome campers this year.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Trending</div>
-																						<div class="c-posts__info">3 hours</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/d072f302d82d59f463abd36d2f758ff1e0e01f717d1783288acd36fe246c184f_9d0e3b.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/d072f302d82d59f463abd36d2f758ff1e0e01f717d1783288acd36fe246c184f_9d0e3b.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/d072f302d82d59f463abd36d2f758ff1e0e01f717d1783288acd36fe246c184f_9d0e3b.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/d072f302d82d59f463abd36d2f758ff1e0e01f717d1783288acd36fe246c184f_9d0e3b.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
 				data-post-id="11824164"
 			>
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11824164/church-of-scientology-officials-condemn-speed-running-trend/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3500,7 +3400,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						Groups of people have filmed themselves opening the doors to the Church of Scientology&#039;s Hollywood locations and running around the building before being escorted off the property.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
 															<div class="c-posts__info c-posts__info--highlight">Trending</div>
-																						<div class="c-posts__info">4 hours</div>
+																						<div class="c-posts__info">8 hours</div>
 													</div>
 					</div>
 					
@@ -3521,7 +3421,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11824420/iran-world-cup-games-us/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3533,7 +3433,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						Infantino made the remarks at the 76th FIFA Congress in Vancouver on Thursday, saying &#039;we must unite&#039; through soccer. Iran is the only nation not at the meeting.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
 															<div class="c-posts__info c-posts__info--highlight">World</div>
-																						<div class="c-posts__info">4 hours</div>
+																						<div class="c-posts__info">8 hours</div>
 													</div>
 					</div>
 					
@@ -3554,7 +3454,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11824269/supreme-court-churchill-portrait-thief/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3566,7 +3466,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						The man who stole the &quot;Roaring Lion&quot; portrait of Winston Churchill from the Château Laurier in Ottawa will have a chance to appeal his sentence in the Supreme Court of Canada.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
 															<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																						<div class="c-posts__info">5 hours</div>
+																						<div class="c-posts__info">9 hours</div>
 													</div>
 					</div>
 					
@@ -3587,7 +3487,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11823890/oil-prices-easing-us-iran-stalled-talks/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3596,10 +3496,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 												
 						<div class="c-posts__excerpt">
-						U.S. markets ticked higher before the bell with some of the country’s biggest technology companies posting first quarter earns this week.						</div>
+						Wall Street’s strength followed manic swings in the oil market, where prices surged overnight on worries that the Iran war will affect the flow of crude for a long time.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
 															<div class="c-posts__info c-posts__info--highlight">World</div>
-																						<div class="c-posts__info">6 hours</div>
+																						<div class="c-posts__info">9 hours</div>
 													</div>
 					</div>
 					
@@ -3620,7 +3520,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11823821/father-daughter-selling-fake-picasso-banksy/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3632,7 +3532,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						Between 2020 and 2025, the defendants conspired to auction more than 200 counterfeit artworks they said were painted by revered artists.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
 															<div class="c-posts__info c-posts__info--highlight">Trending</div>
-																						<div class="c-posts__info">6 hours</div>
+																						<div class="c-posts__info">10 hours</div>
 													</div>
 					</div>
 					
@@ -3643,6 +3543,72 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								width="720" height="563" alt="" 
 												srcset='' sizes=''
 								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/1.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/1.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/1.png?w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11823913"
+			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11823913/new-orleans-sheriff-susan-hutson-indicted-investigation-jailbreak-escape/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="New Orleans sheriff indicted after investigation into escape of 10 inmates" data-title>New Orleans sheriff indicted after investigation into escape of 10 inmates</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						Orleans Parish Sheriff Susan Hutson faces 30 counts of misconduct in office following the May 2025 jailbreak that set off a monthslong search before all the escapees were captured.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
+																						<div class="c-posts__info">11 hours</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/sheriff-susan-hutson-new-orleans-jailbreak-indicted.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/sheriff-susan-hutson-new-orleans-jailbreak-indicted.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/sheriff-susan-hutson-new-orleans-jailbreak-indicted.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/sheriff-susan-hutson-new-orleans-jailbreak-indicted.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11823983"
+			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11823983/young-canadians-ai-report/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Young Canadians want AI companies to make chatbots less addictive: report" data-title>Young Canadians want AI companies to make chatbots less addictive: report</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						A new report focusing on the perspectives of young people says the government should order AI companies to take steps to curb the addictive aspects of their AI chatbots.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Politics</div>
+																						<div class="c-posts__info">11 hours</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/AI-chatbot.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/AI-chatbot.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/AI-chatbot.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/AI-chatbot.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -3725,8 +3691,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-playlist-miniplayer"
 			data-displayinline-video-id="11824656"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11824656,11824208,11824727,11824139,11822942/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fl84vjor10b-vtecb6oyhe%2FCARNEY_NEGOTIATORS_thumbnail_1280x720_.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
-    		    			data-displayinline-playlist="11824656,11824208,11824727,11824139,11822942"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11824656,11824727,11825034,11736864,11824208/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fl84vjor10b-vtecb6oyhe%2FCARNEY_NEGOTIATORS_thumbnail_1280x720_.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
+    		    			data-displayinline-playlist="11824656,11824727,11825034,11736864,11824208"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;\u2018There\u2019s one negotiator,\u2019 Carney says as Conservatives meet U.S. officials on trade&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;],&quot;keywords&quot;:[&quot;cusma&quot;,&quot;short-clip&quot;,&quot;usmca&quot;]}}"
 			    		>
@@ -3773,7 +3739,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11824656,11824208,11824727,11824139,11822942/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11824656,11824727,11825034,11736864,11824208/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">‘There’s one negotiator,’ Carney says as Conservatives meet U.S. officials on trade</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -3794,34 +3760,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="2"
 	>
-	<a href="https://globalnews.ca/video/11824208/business-matters-canadian-economy-grew-by-0-2-in-february/"
-		title="Business Matters: Canadian economy grew by 0.2% in February"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11824208"
-		data-video-label="Economy"
-		data-video-player-id="home-playlist-miniplayer"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11824208,11824727,11824139,11822942/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Business Matters: Canadian economy grew by 0.2% in February</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Economy					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/q0it0s7csx-xcid4ts9r7/gdp.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="3"
-	>
 	<a href="https://globalnews.ca/video/11824727/elections-alberta-investigating-if-voter-list-posted-online-was-illegal/"
 		title="Elections Alberta investigating if voter list posted online was illegal"
 		class="l-playlist__link c-posts__inner c-videoPlay"
@@ -3829,7 +3767,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Politics"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11824727,11824139,11822942,11824208/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11824727,11825034,11736864,11824208/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Elections Alberta investigating if voter list posted online was illegal</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -3848,25 +3786,53 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 <li class="c-posts__item l-playlist__item"
-			data-playlist-index="4"
+			data-playlist-index="3"
 	>
-	<a href="https://globalnews.ca/video/11824139/trump-bids-farewell-to-king-charles-queen-camilla-in-ceremony-at-the-white-house/"
-		title="Trump bids farewell to King Charles, Queen Camilla in ceremony at the White House"
+	<a href="https://globalnews.ca/video/11825034/biden-wouldnt-sign-trump-signs-presidential-permit-for-bridger-pipeline-accessing-canadian-oil/"
+		title="Biden “wouldn’t sign”: Trump signs Presidential Permit for Bridger pipeline accessing Canadian oil"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11824139"
-		data-video-label="Politics"
+		data-video-id="11825034"
+		data-video-label="Economy"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11824139,11822942,11824208,11824727/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11825034,11736864,11824208,11824727/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Trump bids farewell to King Charles, Queen Camilla in ceremony at the White House</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Biden “wouldn’t sign”: Trump signs Presidential Permit for Bridger pipeline accessing Canadian oil</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Politics					</div>
+						Economy					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/ct9nxggu0o-d6cw6kgo3w/king_thumbs_yt.mp4.00_00_00_19.Still001.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/54wn4cm5k2-luka0ejbxq/THU_TRUMP_PIPELINE_SITE_THUMB_300426.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="4"
+	>
+	<a href="https://globalnews.ca/video/11736864/majority-of-canadians-support-maid-for-mental-illness-patients-research-says/"
+		title="Majority of Canadians support MAID for mental illness patients, research says"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11736864"
+		data-video-label="Canada"
+		data-video-player-id="home-playlist-miniplayer"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11736864,11824208,11824727,11825034/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Majority of Canadians support MAID for mental illness patients, research says</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						Canada					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/pntzxgueav-myyrjnahvs/MAID_MENTAL_HEALTH.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3878,23 +3844,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="5"
 	>
-	<a href="https://globalnews.ca/video/11822942/health-canada-approves-generic-semaglutide-for-adults-with-type-2-diabetes/"
-		title="Health Canada approves generic semaglutide for adults with type 2 diabetes"
+	<a href="https://globalnews.ca/video/11824208/business-matters-canadian-economy-grew-by-0-2-in-february/"
+		title="Business Matters: Canadian economy grew by 0.2% in February"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11822942"
-		data-video-label="Canada"
+		data-video-id="11824208"
+		data-video-label="Economy"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11822942,11824208,11824727,11824139/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11824208,11824727,11825034,11736864/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Health Canada approves generic semaglutide for adults with type 2 diabetes</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Business Matters: Canadian economy grew by 0.2% in February</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
+						Economy					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/1b60hq0zf2-aufqm4vslt/AFF_GENERIC_OZEMPIC_APPROVAL_ONLINE_still.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/q0it0s7csx-xcid4ts9r7/gdp.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4403,7 +4369,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >1 hour</div>
+																<div class="c-posts__info" data-date >5 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -4558,96 +4524,96 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-30"
-	data-post-id="11824743"
+	data-post-id="11825197"
 	data-slide-index=""
-	data-caption="Québec Solidaire urges CAQ to invest in Montreal&#8217;s Métro network"
+	data-caption="Peter Gabriel wades in on lifeguard debate at Vancouver&#8217;s beaches"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11824743/quebec-solidaire-urges-caq-to-invest-montreal-metro/"
+		href="https://globalnews.ca/news/11825197/peter-gabriel-lifeguard-debate-vancouver-beaches/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/02/24aa8bd60742701cfc81e5ad3bc7f27324bf39b7174bb1f46ef07824f6ddec47.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2021/02/GettyImages-543383560.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="479" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/02/24aa8bd60742701cfc81e5ad3bc7f27324bf39b7174bb1f46ef07824f6ddec47.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/02/24aa8bd60742701cfc81e5ad3bc7f27324bf39b7174bb1f46ef07824f6ddec47.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/02/24aa8bd60742701cfc81e5ad3bc7f27324bf39b7174bb1f46ef07824f6ddec47.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2021/02/GettyImages-543383560.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2021/02/GettyImages-543383560.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2021/02/GettyImages-543383560.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Québec Solidaire urges CAQ to invest in Montreal&#8217;s Métro network" data-title>Québec Solidaire urges CAQ to invest in Montreal&#8217;s Métro network</span>
+					<span class="c-posts__headlineText" title="Peter Gabriel wades in on lifeguard debate at Vancouver&#8217;s beaches" data-title>Peter Gabriel wades in on lifeguard debate at Vancouver&#8217;s beaches</span>
 			</div>
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >1 hour</div>
+																<div class="c-posts__info" data-date >13 mins</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-31"
-	data-post-id="11824703"
+	data-post-id="11824838"
 	data-slide-index=""
-	data-caption="Saskatchewan to give ER closure updates twice a day"
+	data-caption="Kelowna business hit hard amid an increase in dumpster fires"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11824703/saskatchewan-er-closures-status-updates/"
+		href="https://globalnews.ca/news/11824838/kelowna-business-hit-hard-increase-dumpster-fires/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2019/11/hospital-overcrowding-folo-pic-e1573083699428.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="405" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/DUMPSTER-DAMAGE.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="410" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2019/11/hospital-overcrowding-folo-pic-e1573083699428.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2019/11/hospital-overcrowding-folo-pic-e1573083699428.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2019/11/hospital-overcrowding-folo-pic-e1573083699428.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/DUMPSTER-DAMAGE.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/DUMPSTER-DAMAGE.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/DUMPSTER-DAMAGE.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Saskatchewan to give ER closure updates twice a day" data-title>Saskatchewan to give ER closure updates twice a day</span>
+					<span class="c-posts__headlineText" title="Kelowna business hit hard amid an increase in dumpster fires" data-title>Kelowna business hit hard amid an increase in dumpster fires</span>
 			</div>
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >1 hour</div>
+																<div class="c-posts__info" data-date >13 mins</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-32"
-	data-post-id="11824630"
+	data-post-id="11823796"
 	data-slide-index=""
-	data-caption="Former RCMP officer who killed lover has sentence reduced"
+	data-caption="Amnesty International sounds alarm on state of housing in Manawan, Que."
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11824630/saskatchewan-sentence-shortened-police-officer-killed-lover/"
+		href="https://globalnews.ca/news/11823796/amnesty-international-sounds-alarm-on-state-of-housing-in-manawan-que/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2024/01/20240123110124-b0b21489fa66a71517b75154be9390880a5d6fd022f460e693581332a8648a13_121ec6.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/MANAWAN-2A.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="405" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2024/01/20240123110124-b0b21489fa66a71517b75154be9390880a5d6fd022f460e693581332a8648a13_121ec6.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2024/01/20240123110124-b0b21489fa66a71517b75154be9390880a5d6fd022f460e693581332a8648a13_121ec6.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2024/01/20240123110124-b0b21489fa66a71517b75154be9390880a5d6fd022f460e693581332a8648a13_121ec6.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/MANAWAN-2A.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/MANAWAN-2A.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/MANAWAN-2A.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Former RCMP officer who killed lover has sentence reduced" data-title>Former RCMP officer who killed lover has sentence reduced</span>
+					<span class="c-posts__headlineText" title="Amnesty International sounds alarm on state of housing in Manawan, Que." data-title>Amnesty International sounds alarm on state of housing in Manawan, Que.</span>
 			</div>
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >2 hours</div>
+																<div class="c-posts__info" data-date >18 mins</div>
 																			</div>
 									</div>
 		</a>
@@ -4717,6 +4683,70 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-33"
+	data-post-id="11825285"
+	data-slide-index=""
+	data-caption="Manitoba government taking Sobeys to municipal board over property controls"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11825285/manitoba-government-taking-sobeys-to-municipal-board-over-property-controls/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2022/11/20221111081140-636e511609de413e1480f4bdjpeg-1.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=538 data-ratio=0.67									loading="lazy"
+								width="720" height="538" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2022/11/20221111081140-636e511609de413e1480f4bdjpeg-1.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2022/11/20221111081140-636e511609de413e1480f4bdjpeg-1.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2022/11/20221111081140-636e511609de413e1480f4bdjpeg-1.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Manitoba government taking Sobeys to municipal board over property controls" data-title>Manitoba government taking Sobeys to municipal board over property controls</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >2 hours</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-34"
+	data-post-id="11825099"
+	data-slide-index=""
+	data-caption="Metro Vancouver moves to strict water restrictions on May 1, Stage 3 expected in June"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11825099/metro-vancouver-strict-water-restrictions-may-1-stage-3-june/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2023/08/Chilliwack-golden-lawn.png?w=720													loading="lazy"
+								width="720" height="472" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2023/08/Chilliwack-golden-lawn.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2023/08/Chilliwack-golden-lawn.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2023/08/Chilliwack-golden-lawn.png?w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Metro Vancouver moves to strict water restrictions on May 1, Stage 3 expected in June" data-title>Metro Vancouver moves to strict water restrictions on May 1, Stage 3 expected in June</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >3 hours</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-35"
 	data-post-id="11824997"
 	data-slide-index=""
 	data-caption="Phase 2 of Burnaby Hospital redevelopment cancelled by provincial government"
@@ -4724,7 +4754,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11824997/phase-2-burnaby-hospital-redevelopment-cancelled-government/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -4742,71 +4772,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >29 mins</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-34"
-	data-post-id="11824648"
-	data-slide-index=""
-	data-caption="Group preparing legal challenge to Ford government freedom of information clampdown"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11824648/democracy-watch-legal-challenge-foi-budget/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/CP176170413.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="459" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/CP176170413.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/CP176170413.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/CP176170413.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Group preparing legal challenge to Ford government freedom of information clampdown" data-title>Group preparing legal challenge to Ford government freedom of information clampdown</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >52 mins</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-35"
-	data-post-id="11824454"
-	data-slide-index=""
-	data-caption="Search for remains in Manitoba landfill over as crews shift to Winnipeg site"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11824454/search-remains-manitoba-landfill-over/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/08/17a6caafc31b82952aba352f3eb363876852a41069ffe0912097ceda1d36139c.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="458" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/08/17a6caafc31b82952aba352f3eb363876852a41069ffe0912097ceda1d36139c.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/08/17a6caafc31b82952aba352f3eb363876852a41069ffe0912097ceda1d36139c.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/08/17a6caafc31b82952aba352f3eb363876852a41069ffe0912097ceda1d36139c.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Search for remains in Manitoba landfill over as crews shift to Winnipeg site" data-title>Search for remains in Manitoba landfill over as crews shift to Winnipeg site</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >3 hours</div>
+																<div class="c-posts__info" data-date >4 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -4901,7 +4867,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >4 hours</div>
+																<div class="c-posts__info" data-date >8 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5056,6 +5022,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-39"
+	data-post-id="11824797"
+	data-slide-index=""
+	data-caption="University of Alberta Hospital rehab space offers help for neurology patients sooner"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11824797/university-of-alberta-hospital-rehab-space-neurology-patients/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/Image-42.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=540 data-ratio=0.67									loading="lazy"
+								width="720" height="540" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/Image-42.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/Image-42.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/Image-42.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="University of Alberta Hospital rehab space offers help for neurology patients sooner" data-title>University of Alberta Hospital rehab space offers help for neurology patients sooner</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >34 mins</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-40"
 	data-post-id="11824839"
 	data-slide-index=""
 	data-caption="N.B. health minister says province considering regional travel nurse agency"
@@ -5063,7 +5061,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11824839/maritime-travel-nurse-agency/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5081,71 +5079,39 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >1 hour</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-40"
-	data-post-id="11824275"
-	data-slide-index=""
-	data-caption="Public health issues drug poisoning alert for Haliburton County"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11824275/drug-poisoning-alert-haliburton-county/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2024/12/20241203101244-20241203091236-869e31ec0dfc47d5ef0dbeedd4c6d3a5d628115dacf784ac9ee631d1714e5bb5_d2995f.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2024/12/20241203101244-20241203091236-869e31ec0dfc47d5ef0dbeedd4c6d3a5d628115dacf784ac9ee631d1714e5bb5_d2995f.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2024/12/20241203101244-20241203091236-869e31ec0dfc47d5ef0dbeedd4c6d3a5d628115dacf784ac9ee631d1714e5bb5_d2995f.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2024/12/20241203101244-20241203091236-869e31ec0dfc47d5ef0dbeedd4c6d3a5d628115dacf784ac9ee631d1714e5bb5_d2995f.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Public health issues drug poisoning alert for Haliburton County" data-title>Public health issues drug poisoning alert for Haliburton County</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >4 hours</div>
+																<div class="c-posts__info" data-date >5 hours</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-41"
-	data-post-id="11823183"
+	data-post-id="11824703"
 	data-slide-index=""
-	data-caption="McGill researchers develop &#8216;life-saving&#8217; way to stop bleeding fast"
+	data-caption="Saskatchewan to give ER closure updates twice a day"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11823183/blood-clotting-research-mcgill/"
+		href="https://globalnews.ca/news/11824703/saskatchewan-er-closures-status-updates/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/blood-clotting.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="479" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2019/11/hospital-overcrowding-folo-pic-e1573083699428.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="405" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/blood-clotting.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/blood-clotting.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/blood-clotting.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2019/11/hospital-overcrowding-folo-pic-e1573083699428.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2019/11/hospital-overcrowding-folo-pic-e1573083699428.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2019/11/hospital-overcrowding-folo-pic-e1573083699428.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="McGill researchers develop &#8216;life-saving&#8217; way to stop bleeding fast" data-title>McGill researchers develop &#8216;life-saving&#8217; way to stop bleeding fast</span>
+					<span class="c-posts__headlineText" title="Saskatchewan to give ER closure updates twice a day" data-title>Saskatchewan to give ER closure updates twice a day</span>
 			</div>
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >8 hours</div>
+																<div class="c-posts__info" data-date >5 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5215,6 +5181,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-42"
+	data-post-id="11823838"
+	data-slide-index=""
+	data-caption="&#8216;Days of Our Lives&#8217; actor Patrick Muldoon&#8217;s cause of death revealed: report"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11823838/patrick-muldoon-cause-of-death-report/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/patrick-muldoon-cause-of-death.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/patrick-muldoon-cause-of-death.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/patrick-muldoon-cause-of-death.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/patrick-muldoon-cause-of-death.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="&#8216;Days of Our Lives&#8217; actor Patrick Muldoon&#8217;s cause of death revealed: report" data-title>&#8216;Days of Our Lives&#8217; actor Patrick Muldoon&#8217;s cause of death revealed: report</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >Apr 30</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-43"
 	data-post-id="11822084"
 	data-slide-index=""
 	data-caption="Prosecutors say singer D4vd stabbed Celeste Rivas Hernandez to death"
@@ -5222,7 +5220,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11822084/d4vd-court-apperance-update-celeste-rivas-hernandez/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5246,7 +5244,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-43"
+	data-container-id="stories-item-44"
 	data-post-id="11822392"
 	data-slide-index=""
 	data-caption="Blake Lively&#8217;s lawyers claim she lost millions in earnings ahead of trial"
@@ -5254,7 +5252,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11822392/blake-lively-lawyers-lost-millions-pretrial-meeting-justin-baldoni/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5268,38 +5266,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="Blake Lively&#8217;s lawyers claim she lost millions in earnings ahead of trial" data-title>Blake Lively&#8217;s lawyers claim she lost millions in earnings ahead of trial</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Apr 29</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-44"
-	data-post-id="11822056"
-	data-slide-index=""
-	data-caption="Nick Reiner appears briefly in court, murder case delayed to September"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11822056/nick-reiner-brief-court-appearance-case-delayed-september/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/nick-reiner-preliminary-hearing.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/nick-reiner-preliminary-hearing.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/nick-reiner-preliminary-hearing.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/nick-reiner-preliminary-hearing.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Nick Reiner appears briefly in court, murder case delayed to September" data-title>Nick Reiner appears briefly in court, murder case delayed to September</span>
 			</div>
 	
 						
@@ -5374,6 +5340,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-45"
+	data-post-id="11824712"
+	data-slide-index=""
+	data-caption="Heroes Challenge at West Edmonton Mall supports Make-A-Wish Canada"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11824712/heroes-challenge-make-a-wish-canada-2026/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/make-wish-e1777585002599.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="405" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/make-wish-e1777585002599.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/make-wish-e1777585002599.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/make-wish-e1777585002599.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Heroes Challenge at West Edmonton Mall supports Make-A-Wish Canada" data-title>Heroes Challenge at West Edmonton Mall supports Make-A-Wish Canada</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >3 hours</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-46"
 	data-post-id="11821836"
 	data-slide-index=""
 	data-caption="Davis Schneider&#8217;s brother died of an overdose. The Blue Jay says naloxone can save others"
@@ -5381,7 +5379,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11821836/davis-schneiders-brother-died-of-an-overdose-the-blue-jay-says-naloxone-can-save-others/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5405,7 +5403,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-46"
+	data-container-id="stories-item-47"
 	data-post-id="11821012"
 	data-slide-index=""
 	data-caption="Mississauga man who survived the Holodomor celebrates 107th birthday"
@@ -5413,7 +5411,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11821012/mississauga-man-who-survived-holodomor-107th-birthday/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5432,38 +5430,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about ">
 																<div class="c-posts__info" data-date >Apr 29</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-47"
-	data-post-id="11820610"
-	data-slide-index=""
-	data-caption="Recipe: Spice Fam&#8217;s fish jook"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11820610/recipe-spice-fams-fish-jook/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/2026-04-28-CONGEE-COOKING-WEB.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="405" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/2026-04-28-CONGEE-COOKING-WEB.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/2026-04-28-CONGEE-COOKING-WEB.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/2026-04-28-CONGEE-COOKING-WEB.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Recipe: Spice Fam&#8217;s fish jook" data-title>Recipe: Spice Fam&#8217;s fish jook</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Apr 28</div>
 																			</div>
 									</div>
 		</a>
@@ -5713,6 +5679,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-51"
+	data-post-id="11824888"
+	data-slide-index=""
+	data-caption="Winnipeg Sea Bears back in action"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11824888/winnipeg-sea-bears-back-in-action/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/04/sea-bears-web.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="405" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/sea-bears-web.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/sea-bears-web.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/sea-bears-web.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Winnipeg Sea Bears back in action" data-title>Winnipeg Sea Bears back in action</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >2 hours</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-52"
 	data-post-id="11824960"
 	data-slide-index=""
 	data-caption="U of S Huskies football team hosts breakfast gala to raise funds for scholarships"
@@ -5720,7 +5718,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11824960/huskies-football-hosts-annual-breakfast-gala-funds-scholarships/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5738,13 +5736,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >44 mins</div>
+																<div class="c-posts__info" data-date >4 hours</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-52"
+	data-container-id="stories-item-53"
 	data-post-id="11824873"
 	data-slide-index=""
 	data-caption="Salomonsson, Chibrikov out of playoffs for Manitoba Moose after season-ending injuries"
@@ -5752,7 +5750,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11824873/salomonsson-chibrikov-out-playoffs-manitoba-moose/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5770,39 +5768,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >2 hours</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-53"
-	data-post-id="11824808"
-	data-slide-index=""
-	data-caption="No question mark around McDavid for Game 6"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11824808/no-question-mark-around-mcdavid-for-game-6/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/04/db5fd5233cd767f36f703f520b660d3548f91e242c66173e237498e310f1948f.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/db5fd5233cd767f36f703f520b660d3548f91e242c66173e237498e310f1948f.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/db5fd5233cd767f36f703f520b660d3548f91e242c66173e237498e310f1948f.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/db5fd5233cd767f36f703f520b660d3548f91e242c66173e237498e310f1948f.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="No question mark around McDavid for Game 6" data-title>No question mark around McDavid for Game 6</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >2 hours</div>
+																<div class="c-posts__info" data-date >5 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -6098,7 +6064,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 </script>
 		<!-- Adobe Analytics code version: JS-2.6.0. -->
 		<script type="text/javascript">
-			var gnPageData = {"context_data":{"hourofday":"18","dayofweek":"Thursday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
+			var gnPageData = {"context_data":{"hourofday":"22","dayofweek":"Thursday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
 		</script>
 				<!-- End Adobe Analytics code -->
 			<script>
@@ -6157,5 +6123,5 @@ var GN_OneSignalSettings = {"isCurator":"","appId":"8beb7996-b996-4ce8-a474-d488
 		
 		<div class="l-dynamicElement"></div>
 
-			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75660ba8f4","applicationID":"418684855","transactionName":"Z1BWZxdTWkAHVExRXF4adVARW1tdSV9XVVY=","queueTime":0,"applicationTime":475,"atts":"SxdBEV9JSR9EVhoCSE1I","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+			</body>
 </html>
