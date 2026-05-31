@@ -184,7 +184,8 @@
         }
     </script>
     	<!-- Meta Tags -->
-	<meta charset="UTF-8">
+	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"75660ba8f4",applicationID:"418684855",browserID:"419993820"};;/*! For license information please see nr-loader-rum-1.315.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={163:(e,t,r)=>{"use strict";r.d(t,{j:()=>T});var n=r(384),i=r(1741);var s=r(2555);r(860).K7.genericEvents;const o="experimental.resources",a="register",c=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var u=r(2614),d=r(944),l=r(8122);const f="[data-nr-mask]",g=e=>(0,l.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{register:{get enabled(){return e.feature_flags.includes(a)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(o)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:u.wk,inactiveMs:u.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){c(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,d.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){c(t)?e.block_selector+=",".concat(t):""!==t&&(0,d.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,d.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var p=r(6154),m=r(9324);let h=0;const v={buildEnv:m.F3,distMethod:m.Xs,version:m.xv,originTime:p.WN},b={consented:!1},y={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||b.consented},set consented(e){b.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++h}},_=e=>{const t=(0,l.a)(e,y),r=Object.keys(v).reduce((e,t)=>(e[t]={value:v[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)},w=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var x=r(7836),R=r(3241);const k={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A=e=>(0,l.a)(e,k);function T(e,t={},r,o){let{init:a,info:c,loader_config:u,runtime:d={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();a=e.init,c=e.info,u=e.loader_config}e.init=g(a||{}),e.loader_config=A(u||{}),c.jsAttributes??={},p.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,s.D)(c);const f=e.init;e.runtime??=_(d),f.proxy.assets&&w(f.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach(r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let s=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return s?s(...t):n})})}(e),e.runtime.loaderType=r,e.ee=x.ee.get(e.agentIdentifier),e.exposed=l,(0,R.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.runtime.configured=!0)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>a,Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),s=r(944),o=r(1910);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,o.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,s.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>d,K7:()=>c,P3:()=>u,XX:()=>i,Yy:()=>a,df:()=>s,qY:()=>n,v4:()=>o});const n="events",i="jserrors",s="browser/blobs",o="rum",a="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},u={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.softNav]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.sessionReplay]:8,[c.logging]:9,[c.genericEvents]:10},d={[c.pageViewEvent]:o,[c.pageViewTiming]:n,[c.ajax]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:s,[c.sessionReplay]:s,[c.logging]:a,[c.genericEvents]:"ins"}},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},1687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>a,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),s=r(860),o=r(2646);function a(e,t){if(!e)return;const r={staged:!1,priority:s.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const s=e.ee,a=i.i.handlers;if(s&&!s.aborted&&s.backlog&&a){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=s.backlog[t],r=a[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof o.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}s.isolatedBacklog||delete a[t],s.backlog[t]=null,s.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],s=e[2];n.apply(i,s)}})}},1738:(e,t,r)=>{"use strict";r.d(t,{U:()=>f,Y:()=>l});var n=r(3241),i=r(9908),s=r(1863),o=r(944),a=r(3969),c=r(8362),u=r(860),d=r(4261);function l(e,t,r,s){const l=s||r;!l||l[e]&&l[e]!==c.d.prototype[e]||(l[e]=function(){(0,i.p)(a.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:d.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,o.R)(23,e)}})}function f(e,t,r,n,o){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(o||null===r)&&(0,i.p)(d.Pl+n,[(0,s.t)(),t,r],void 0,"session",e.ee)}},1741:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(944),i=r(4261);class s{#e(e,...t){if(this[e]!==s.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},1863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},1910:(e,t,r)=>{"use strict";r.d(t,{i:()=>s});var n=r(944);const i=new Map;function s(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),s=t.includes("nrWrapper");return r||s||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},2555:(e,t,r)=>{"use strict";r.d(t,{D:()=>a,f:()=>o});var n=r(384),i=r(8122);const s={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function o(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const a=e=>(0,i.a)(e,s)},2614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>o,H3:()=>n,g:()=>u,iL:()=>c,tS:()=>a,uh:()=>i,wk:()=>s});const n="NRBA",i="SESSION",s=144e5,o=18e5,a={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},2646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},2843:(e,t,r)=>{"use strict";r.d(t,{G:()=>s,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function s(e,t,r){(0,n.sp)("pagehide",e,t,r)}},3241:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(6154);const i="newrelic";function s(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},3606:(e,t,r)=>{"use strict";r.d(t,{i:()=>s});var n=r(9908);s.on=o;var i=s.handlers={};function s(e,t,r,s){o(s||n.d,i,e,t,r)}function o(e,t,r,i,s){s||(s="feature"),e||(e=n.d);var o=t[s]=t[s]||{};(o[r]=o[r]||[]).push([e,i])}},3878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function s(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>s,jT:()=>n,sp:()=>i})},3969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>a,rs:()=>i,xV:()=>o,z_:()=>s});const n=r(860).K7.metrics,i="sm",s="cm",o="storeSupportabilityMetrics",a="storeEventMetrics"},4234:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},4261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>u,BL:()=>a,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>h,Pl:()=>n,Pv:()=>k,Tb:()=>l,U2:()=>s,V1:()=>R,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>o,nb:()=>m,o5:()=>d});const n="api-",i="addPageAction",s="addToTrace",o="addRelease",a="finished",c="interaction",u="log",d="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",m="setApplicationVersion",h="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",R="measure",k="consent"},5289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>o,Qr:()=>c,sB:()=>a});var n=r(3878),i=r(6389);function s(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(s())return e();const r=(0,i.J)(e),o=setInterval(()=>{s()&&(clearInterval(o),r())},500);(0,n.sp)("load",r,t)}function a(e){if(s())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(s())return e();(0,n.sp)("popstate",e)}},5607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},6154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>u,RI:()=>i,WN:()=>l,bv:()=>s,gm:()=>o,m:()=>c,mw:()=>a,sb:()=>d,zk:()=>f});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,s="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),c=""+o?.location,u=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)()),f=()=>{const e=o?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<o.performance.now())return e}},6389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},6630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},7699:(e,t,r)=>{"use strict";r.d(t,{It:()=>s,KC:()=>a,No:()=>i,qh:()=>o});var n=r(860);const i=16e3,s=1e6,o="SESSION_ERROR",a={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0}},7836:(e,t,r)=>{"use strict";r.d(t,{P:()=>a,ee:()=>c});var n=r(384),i=r(8990),s=r(2646),o=r(5607);const a="nr@context:".concat(o.W),c=function e(t,r){var n={},o={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,s){!1!==s&&(s=!0);if(c.aborted&&!i)return;t&&s&&t.emit(e,r,n);var a=g(n);m(e).forEach(e=>{e.apply(a,r)});var u=v()[o[e]];u&&u.push([f,e,r,a]);return a},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{o[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[o[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof s.y?e:e?(0,i.I)(e,a,()=>new s.y(a)):new s.y(a)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c)},8122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),s=0===Object.keys(r).length?e:r;for(let o in s)if(void 0!==e[o])try{if(null===e[o]){r[o]=null;continue}Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):e[o]instanceof Map||e[o]instanceof Set||e[o]instanceof Date||e[o]instanceof RegExp?r[o]=e[o]:"object"==typeof e[o]&&"object"==typeof t[o]?r[o]=i(e[o],t[o]):r[o]=e[o]}catch(e){r[o]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},8362:(e,t,r)=>{"use strict";r.d(t,{d:()=>s});var n=r(9566),i=r(1741);class s extends i.W{agentIdentifier=(0,n.LA)(16)}},8374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},8990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},9324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>s,xv:()=>n});const n="1.315.0",i="PROD",s="CDN"},9566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>a,bz:()=>o});var n=r(6154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function s(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map(e=>"x"===e?s(t,r++).toString(16):"y"===e?(3&s()|8).toString(16):e).join("")}function a(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const o=[];for(var a=0;a<e;a++)o.push(s(r,i++).toString(16));return o.join("")}},9908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,s){s?(s.buffer([e],i),s.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var s=n[e]={exports:{}};return r[e](s,s.exports,i),s.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce((t,r)=>(i.f[r](e,t),t),[])),i.u=e=>"nr-rum-1.315.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.315.0.PROD:",i.l=(r,n,s,o)=>{if(e[r])e[r].push(n);else{var a,c;if(void 0!==s)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+s){a=l;break}}if(!a){c=!0;var f={296:"sha512-ObF9c4QHmo5ftQ6Rqp3BOAyyeC8lNAimyA4lPQTw4Y4IbSHIBgtGnFN8JCGoF4CCCQ+Jy2pTaXkNDUlcCY0Bxg=="};(a=document.createElement("script")).charset="utf-8",i.nc&&a.setAttribute("nonce",i.nc),a.setAttribute("data-webpack",t+s),a.src=r,0!==a.src.indexOf(window.location.origin+"/")&&(a.crossOrigin="anonymous"),f[o]&&(a.integrity=f[o])}e[r]=[n];var g=(t,n)=>{a.onerror=a.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],a.parentNode&&a.parentNode.removeChild(a),i&&i.forEach(e=>e(n)),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:a}),12e4);a.onerror=g.bind(null,a.onerror),a.onload=g.bind(null,a.onload),c&&document.head.appendChild(a)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var s=new Promise((r,i)=>n=e[t]=[r,i]);r.push(n[2]=s);var o=i.p+i.u(t),a=new Error;i.l(o,r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var s=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;a.message="Loading chunk "+t+" failed: ("+s+": "+o+")",a.name="ChunkLoadError",a.type=s,a.request=o,n[1](a)}},"chunk-"+t,t)}};var t=(t,r)=>{var n,s,[o,a,c]=r,u=0;if(o.some(t=>0!==e[t])){for(n in a)i.o(a,n)&&(i.m[n]=a[n]);if(c)c(i)}for(t&&t(r);u<o.length;u++)s=o[u],i.o(e,s)&&e[s]&&e[s][0](),e[s]=0},r=self["webpackChunk:NRBA-1.315.0.PROD"]=self["webpackChunk:NRBA-1.315.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(8362),t=i(860);const r=Object.values(t.K7);var n=i(163);var s=i(9908),o=i(1863),a=i(4261),c=i(1738);var u=i(1687),d=i(4234),l=i(5289),f=i(6154),g=i(944),p=i(384);const m=e=>f.RI&&!0===e?.privacy.cookies_enabled;function h(e){return!!(0,p.dV)().o.MO&&m(e)&&!0===e?.session_trace.enabled}var v=i(6389),b=i(7699);class y extends d.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,v.J)(()=>{(0,u.Ak)(e,this.featureName),t()}))}):(0,u.Ak)(e,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;const n=async()=>{let n;await this.deferred;try{if(m(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,2612));n=t(e)}}catch(e){(0,g.R)(20,e),this.ee.emit("internal-error",[e]),(0,s.p)(b.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#t(this.featureName,n,e.init))return(0,u.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,g.R)(34,e),this.abortHandler?.(),(0,u.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1),this.ee&&this.ee.abort()}};f.RI?(0,l.GG)(()=>n(),!0):n()}#t(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return h(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}}var _=i(6630),w=i(2614),x=i(3241);class R extends y{static featureName=_.T;constructor(e){var t;super(e,_.T),this.setupInspectionEvents(),t=e,(0,c.Y)(a.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,s.p)(a.Pl+a.Fw,[(0,o.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>i.e(296).then(i.bind(i,146)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,x.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,l.sB)(t=>{e(t,"DOMContentLoaded")}),(0,l.GG)(t=>{e(t,"load")}),(0,l.Qr)(t=>{e(t,"navigate")}),this.ee.on(w.tS.UPDATE,(e,t)=>{(0,x.W)({type:"lifecycle",name:"session",data:t})})}}class k extends e.d{constructor(e){var t;(super(),f.gm)?(this.features={},(0,p.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(R),(0,n.j)(this,e,e.loaderType||"agent"),t=this,(0,c.Y)(a.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,c.U)(t,e,r,a.cD,n);(0,g.R)(40,typeof r)}else(0,g.R)(39,typeof e)},t),function(e){(0,c.Y)(a.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,g.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,s.p)(a.Pl+"setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,c.U)(e,"enduser.id",t,a.Dl,!0)},e)}(this),function(e){(0,c.Y)(a.nb,function(t){if("string"==typeof t||null===t)return(0,c.U)(e,"application.version",t,a.nb,!1);(0,g.R)(42,typeof t)},e)}(this),function(e){(0,c.Y)(a.d3,function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,c.Y)(a.Pv,function(t=!0){if("boolean"==typeof t){if((0,s.p)(a.Pl+a.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum()})}}else(0,g.R)(65,typeof t)},e)}(this),this.run()):(0,g.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return r.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),n=[...this.desiredFeatures];n.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),n.forEach(r=>{if(!e[r.featureName]&&r.featureName!==t.K7.pageViewEvent)return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,g.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,g.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,p.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var A=i(2843),T=i(782);class E extends y{static featureName=T.T;constructor(e){super(e,T.T),f.RI&&((0,A.u)(()=>(0,s.p)("docHidden",[(0,o.t)()],void 0,T.T,this.ee),!0),(0,A.G)(()=>(0,s.p)("winPagehide",[(0,o.t)()],void 0,T.T,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,2117))))}}var S=i(3969);class j extends y{static featureName=S.TZ;constructor(e){super(e,S.TZ),this.importAggregator(e,()=>i.e(296).then(i.bind(i,9623)))}}new k({features:[R,E,j],loaderType:"lite"})})()})();</script>
 	<meta name="theme-color" content="#231F20">
 
 			<meta name="msvalidate.01" content="9E5C74811CA48CCCC61A2CF3C0A1BA6A">
@@ -448,7 +449,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 
 				
 
-				gnAdSettings = {"adPath":"\/6872\/globalnews\/website","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"21","weatherprec":"x","weathercode":"32","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
+				gnAdSettings = {"adPath":"\/6872\/globalnews\/website","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"24","weatherprec":"x","weathercode":"32","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
 		</script>
 			<script>
 				// Load the APS JavaScript Library
@@ -1456,10 +1457,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay=""
 						data-displayinline-featured="false"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_11874794_6a1c68e112a73"
+			data-displayinline-player-id="miniplayer_11874794_6a1c85734fa7e"
 			data-displayinline-video-id="11874794"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/11874794/#autoplay&#038;stickyiframe=miniplayer_11874794_6a1c68e112a73"
+    		data-displayinline="https://globalnews.ca/video/embed/11874794/#autoplay&#038;stickyiframe=miniplayer_11874794_6a1c85734fa7e"
     									data-displayinline-container="stories-1-0"
 										data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Latest GDP numbers show \u201ctechnical recession\u201d in Canada&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;,&quot;economy&quot;],&quot;keywords&quot;:[&quot;gdp&quot;,&quot;short-clip&quot;,&quot;statistics-canada&quot;]}}"
@@ -1498,7 +1499,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 									Conservative Leader Pierre Poilievre is calling on Prime Minister Mark Carney to reverse years of government policy as job losses mount and national economic growth turns negative.									</div>
 																<div class="c-posts__about c-posts__about--multiple">
 																		<div class="c-posts__info c-posts__info--highlight">Politics</div>
-																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">1 hour</div>
+																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">3 hours</div>
 																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 																	</div>
 														</a>
@@ -1511,8 +1512,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				>
 					<a
 						class="c-posts__inner"
-						href="https://globalnews.ca/news/11875388/two-men-found-guilty-of-second-degree-murder-in-random-roadside-shooting-near-calgary/"
+						href="https://globalnews.ca/news/11875585/canada-submarine-builders-race-nearing-end/"
 						data-analytics="{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:1}"
+					>
+						
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/05/cee2d699c97f94618f2568f5ec1e63cf1528174a7a78d8ace6bdcb5c05c850c6.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=501 data-ratio=0.67									loading="lazy"
+								width="720" height="501" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/05/cee2d699c97f94618f2568f5ec1e63cf1528174a7a78d8ace6bdcb5c05c850c6.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/05/cee2d699c97f94618f2568f5ec1e63cf1528174a7a78d8ace6bdcb5c05c850c6.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/05/cee2d699c97f94618f2568f5ec1e63cf1528174a7a78d8ace6bdcb5c05c850c6.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+								<div class="c-posts__details">
+										<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Race to build Canada&#8217;s next submarine fleet enters its final stretch" data-title>Race to build Canada&#8217;s next submarine fleet enters its final stretch</span>
+			</div>
+								<div class="c-posts__about c-posts__about--multiple">
+																<div class="c-posts__info c-posts__info--highlight">Canada</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">6 min read</div>
+															</div>
+						</div>
+					</a>
+				</li>
+									<li 
+					class="c-posts__item " 
+					data-container-id="stories-1-2"
+				>
+					<a
+						class="c-posts__inner"
+						href="https://globalnews.ca/news/11875388/two-men-found-guilty-of-second-degree-murder-in-random-roadside-shooting-near-calgary/"
+						data-analytics="{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:2}"
 					>
 						
 		<div class="c-posts__media "  >
@@ -1535,36 +1566,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						</div>
 					</a>
 				</li>
-									<li 
-					class="c-posts__item " 
-					data-container-id="stories-1-2"
-				>
-					<a
-						class="c-posts__inner"
-						href="https://globalnews.ca/news/11875342/kerry-lynne-findlay-voted-new-leader-of-the-bc-conservative-party/"
-						data-analytics="{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:2}"
-					>
-						
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/05/1bb64561c06b551cd90d75a9db5219c2a5a679c90bfa4aac87abfc7f8d699897.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="485" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/05/1bb64561c06b551cd90d75a9db5219c2a5a679c90bfa4aac87abfc7f8d699897.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/05/1bb64561c06b551cd90d75a9db5219c2a5a679c90bfa4aac87abfc7f8d699897.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/05/1bb64561c06b551cd90d75a9db5219c2a5a679c90bfa4aac87abfc7f8d699897.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-								<div class="c-posts__details">
-										<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Kerry-Lynne Findlay voted new leader of the BC Conservative Party" data-title>Kerry-Lynne Findlay voted new leader of the BC Conservative Party</span>
-			</div>
-								<div class="c-posts__about c-posts__about--multiple">
-																<div class="c-posts__info c-posts__info--highlight">Politics</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">May 30</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
-															</div>
-						</div>
-					</a>
-				</li>
 						</ul>
 					</div>
 			</section>
@@ -1579,66 +1580,66 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=12			data-parent-id=home-topStories					>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-1"
-	data-post-id="11875068"
+	data-post-id="11875586"
 	data-slide-index=""
-	data-caption="Toronto police seek suspects after 27-year-old fatally shot &#8216;steps from home&#8217;"
+	data-caption="Feds order audit of Indigenous languages office after complaints made"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11875068/toronto-police-shooting/"
+		href="https://globalnews.ca/news/11875586/canada-indigenous-languages-office-audit/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				src=https://globalnews.ca/wp-content/uploads/2026/05/Image-57.jpg?quality=65&#038;strip=all&#038;w=720												width="720" height="405" alt="" 
-											srcset="https://globalnews.ca/wp-content/uploads/2026/05/Image-57.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/05/Image-57.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/05/Image-57.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"						/>
+				src=https://globalnews.ca/wp-content/uploads/2026/05/8f483308b6eab370b8c757d49490dac51651f815a044e4528029795a20e8a828_ac6aea.jpg?quality=65&#038;strip=all&#038;w=720												width="720" height="418" alt="" 
+											srcset="https://globalnews.ca/wp-content/uploads/2026/05/8f483308b6eab370b8c757d49490dac51651f815a044e4528029795a20e8a828_ac6aea.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/05/8f483308b6eab370b8c757d49490dac51651f815a044e4528029795a20e8a828_ac6aea.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/05/8f483308b6eab370b8c757d49490dac51651f815a044e4528029795a20e8a828_ac6aea.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Toronto police seek suspects after 27-year-old fatally shot &#8216;steps from home&#8217;" data-title>Toronto police seek suspects after 27-year-old fatally shot &#8216;steps from home&#8217;</span>
+					<span class="c-posts__headlineText" title="Feds order audit of Indigenous languages office after complaints made" data-title>Feds order audit of Indigenous languages office after complaints made</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Crime</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">May 30</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">7 min read</div>
 														</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-2"
-	data-post-id="11875113"
+	data-post-id="11875342"
 	data-slide-index=""
-	data-caption="Fast-moving wildfire prompts evacuation order near Shellbrook, Sask."
+	data-caption="Kerry-Lynne Findlay voted new leader of the BC Conservative Party"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11875113/sask-wildfire-evacuation/"
+		href="https://globalnews.ca/news/11875342/kerry-lynne-findlay-voted-new-leader-of-the-bc-conservative-party/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/05/Screenshot-2026-05-30-130443.png?w=720													loading="lazy"
-								width="720" height="436" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2026/05/1bb64561c06b551cd90d75a9db5219c2a5a679c90bfa4aac87abfc7f8d699897.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="485" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/05/Screenshot-2026-05-30-130443.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2026/05/Screenshot-2026-05-30-130443.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2026/05/Screenshot-2026-05-30-130443.png?w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/05/1bb64561c06b551cd90d75a9db5219c2a5a679c90bfa4aac87abfc7f8d699897.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/05/1bb64561c06b551cd90d75a9db5219c2a5a679c90bfa4aac87abfc7f8d699897.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/05/1bb64561c06b551cd90d75a9db5219c2a5a679c90bfa4aac87abfc7f8d699897.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Fast-moving wildfire prompts evacuation order near Shellbrook, Sask." data-title>Fast-moving wildfire prompts evacuation order near Shellbrook, Sask.</span>
+					<span class="c-posts__headlineText" title="Kerry-Lynne Findlay voted new leader of the BC Conservative Party" data-title>Kerry-Lynne Findlay voted new leader of the BC Conservative Party</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Fire</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">May 30</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1667,6 +1668,74 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-3"
+	data-post-id="11875068"
+	data-slide-index=""
+	data-caption="Toronto police seek suspects after 27-year-old fatally shot &#8216;steps from home&#8217;"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11875068/toronto-police-shooting/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/05/Image-57.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="405" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/05/Image-57.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/05/Image-57.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/05/Image-57.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Toronto police seek suspects after 27-year-old fatally shot &#8216;steps from home&#8217;" data-title>Toronto police seek suspects after 27-year-old fatally shot &#8216;steps from home&#8217;</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Crime</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">May 30</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-4"
+	data-post-id="11875113"
+	data-slide-index=""
+	data-caption="Fast-moving wildfire prompts evacuation order near Shellbrook, Sask."
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11875113/sask-wildfire-evacuation/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/05/Screenshot-2026-05-30-130443.png?w=720													loading="lazy"
+								width="720" height="436" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/05/Screenshot-2026-05-30-130443.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2026/05/Screenshot-2026-05-30-130443.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2026/05/Screenshot-2026-05-30-130443.png?w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Fast-moving wildfire prompts evacuation order near Shellbrook, Sask." data-title>Fast-moving wildfire prompts evacuation order near Shellbrook, Sask.</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Fire</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">May 30</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-5"
 	data-post-id="11875192"
 	data-slide-index=""
 	data-caption="Environment Canada issues rainfall warnings, special statement for B.C., and Alberta"
@@ -1674,7 +1743,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11875192/alta-weather/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1700,7 +1769,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-4"
+	data-container-id="stories-item-6"
 	data-post-id="11874149"
 	data-slide-index=""
 	data-caption="Canada’s spy agency didn&#8217;t report potentially unlawful activity to feds: watchdog"
@@ -1708,7 +1777,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11874149/spy-agency-didnt-report-unlawful-activity-watchdog/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -1729,74 +1798,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">May 29</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-5"
-	data-post-id="11873420"
-	data-slide-index=""
-	data-caption="Anand calls China ties &#8216;significant,&#8217; says Canada must safeguard &#8216;values&#8217;"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11873420/wang-yi-ottawa-meeting-anita-anand-mark-carney/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/05/anand-yi-visit-e1780075427922.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/05/anand-yi-visit-e1780075427922.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/05/anand-yi-visit-e1780075427922.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/05/anand-yi-visit-e1780075427922.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Anand calls China ties &#8216;significant,&#8217; says Canada must safeguard &#8216;values&#8217;" data-title>Anand calls China ties &#8216;significant,&#8217; says Canada must safeguard &#8216;values&#8217;</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">May 29</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-6"
-	data-post-id="11874679"
-	data-slide-index=""
-	data-caption="Alphonso Davies headlines Canada&#8217;s 26-player World Cup roster"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11874679/alphonso-davies-canada-world-cup-roster/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2024/06/20240617110644-7ad21aa09a6a478be29a00d26dcf9b819d635e1223d08a17ac087b834bb3a7a0.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2024/06/20240617110644-7ad21aa09a6a478be29a00d26dcf9b819d635e1223d08a17ac087b834bb3a7a0.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2024/06/20240617110644-7ad21aa09a6a478be29a00d26dcf9b819d635e1223d08a17ac087b834bb3a7a0.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2024/06/20240617110644-7ad21aa09a6a478be29a00d26dcf9b819d635e1223d08a17ac087b834bb3a7a0.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Alphonso Davies headlines Canada&#8217;s 26-player World Cup roster" data-title>Alphonso Davies headlines Canada&#8217;s 26-player World Cup roster</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Sports</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">May 29</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1825,40 +1826,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-7"
-	data-post-id="11875586"
-	data-slide-index=""
-	data-caption="Feds order audit of Indigenous languages office after complaints made"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11875586/canada-indigenous-languages-office-audit/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/05/8f483308b6eab370b8c757d49490dac51651f815a044e4528029795a20e8a828_ac6aea.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="418" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/05/8f483308b6eab370b8c757d49490dac51651f815a044e4528029795a20e8a828_ac6aea.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/05/8f483308b6eab370b8c757d49490dac51651f815a044e4528029795a20e8a828_ac6aea.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/05/8f483308b6eab370b8c757d49490dac51651f815a044e4528029795a20e8a828_ac6aea.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Feds order audit of Indigenous languages office after complaints made" data-title>Feds order audit of Indigenous languages office after complaints made</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">24 mins</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">7 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-8"
 	data-post-id="11875082"
 	data-slide-index=""
 	data-caption="Leadership vote to be announced for B.C. Conservative Party after Rustad ouster"
@@ -1866,7 +1833,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11875082/leadership-vote-bc-conservatives/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1892,7 +1859,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-9"
+	data-container-id="stories-item-8"
 	data-post-id="11875043"
 	data-slide-index=""
 	data-caption="Immigration lawyers say automation is partly driving a massive Federal Court backlog"
@@ -1900,7 +1867,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11875043/immigration-lawyers-say-automation-is-partly-driving-a-massive-federal-court-backlog/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1926,7 +1893,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-10"
+	data-container-id="stories-item-9"
 	data-post-id="11875040"
 	data-slide-index=""
 	data-caption="Ottawa under increasing pressure to show how policy changes are affecting emissions"
@@ -1934,7 +1901,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11875040/ottawa-pressure-policy-emissions/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1959,16 +1926,16 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 									</div>
 		</a>
 	</li>
-<li class="c-posts__item    is-hidden"
-	data-container-id="stories-item-11"
+<li class="c-posts__item    "
+	data-container-id="stories-item-10"
 	data-post-id="11875034"
 	data-slide-index=""
 	data-caption="Canada Post workers set to wrap up voting on new tentative deal"
-		data-ad-fallback=false>
+		>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11875034/canada-post-ratification-vote/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1989,6 +1956,40 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">May 30</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    is-hidden"
+	data-container-id="stories-item-11"
+	data-post-id="11874679"
+	data-slide-index=""
+	data-caption="Alphonso Davies headlines Canada&#8217;s 26-player World Cup roster"
+		data-ad-fallback=false>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11874679/alphonso-davies-canada-world-cup-roster/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2024/06/20240617110644-7ad21aa09a6a478be29a00d26dcf9b819d635e1223d08a17ac087b834bb3a7a0.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2024/06/20240617110644-7ad21aa09a6a478be29a00d26dcf9b819d635e1223d08a17ac087b834bb3a7a0.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2024/06/20240617110644-7ad21aa09a6a478be29a00d26dcf9b819d635e1223d08a17ac087b834bb3a7a0.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2024/06/20240617110644-7ad21aa09a6a478be29a00d26dcf9b819d635e1223d08a17ac087b834bb3a7a0.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Alphonso Davies headlines Canada&#8217;s 26-player World Cup roster" data-title>Alphonso Davies headlines Canada&#8217;s 26-player World Cup roster</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Sports</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">May 29</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
 									</div>
 		</a>
@@ -2039,10 +2040,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay="true"
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6a1c68e115260"
+			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6a1c8573542a3"
 			data-displayinline-video-id="49a91e7f-1023-430f-8d66-561055f3d0f7"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6a1c68e115260"
+    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6a1c8573542a3"
     		    			data-displayinline-playlist="49a91e7f-1023-430f-8d66-561055f3d0f7"
     									data-displayinline-container="mini-ott"
 																data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;recent_terms_datastore&quot;,&quot;type&quot;:&quot;wlo_option&quot;}}"
@@ -2178,7 +2179,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Bishnoi extortion gang sent letter to Canadian police warning it had 1,000 gunmen" data-title>Bishnoi extortion gang sent letter to Canadian police warning it had 1,000 gunmen</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">19,363</span>
+							<span class="c-posts__info c-posts__info--highlight">23,186</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2209,7 +2210,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="U.S. envoy says Carney&#8217;s trade message &#8216;worth repeating&#8217;" data-title>U.S. envoy says Carney&#8217;s trade message &#8216;worth repeating&#8217;</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">11,244</span>
+							<span class="c-posts__info c-posts__info--highlight">11,573</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2240,7 +2241,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Environment Canada issues rainfall warnings, special statement for B.C., and Alberta" data-title>Environment Canada issues rainfall warnings, special statement for B.C., and Alberta</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">9,213</span>
+							<span class="c-posts__info c-posts__info--highlight">10,476</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2271,7 +2272,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Aboriginal title can&#8217;t be declared over private land; Supreme Court of Canada refuses appeal" data-title>Aboriginal title can&#8217;t be declared over private land; Supreme Court of Canada refuses appeal</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">7,787</span>
+							<span class="c-posts__info c-posts__info--highlight">8,992</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2302,7 +2303,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="King Arthur manuscript in private hands for 700 years to go on public sale" data-title>King Arthur manuscript in private hands for 700 years to go on public sale</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">5,126</span>
+							<span class="c-posts__info c-posts__info--highlight">5,932</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2369,8 +2370,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<input type="hidden" id="s_brand" name="s_brand" value="gn" />
 				<input type="hidden" id="s_gn_daily_national" name="s_gn_daily_national" value="100" data-newsletter-inline-code />
 				<input type="hidden" id="s_collector" name="s_collector" value="" />
-				<input type="hidden" id="s_create_date" name="s_create_date" value="2026-05-31 16:59:13" />
-				<input type="hidden" id="s_last_modified" name="s_last_modified" value="2026-05-31 16:59:13" />
+				<input type="hidden" id="s_create_date" name="s_create_date" value="2026-05-31 19:01:07" />
+				<input type="hidden" id="s_last_modified" name="s_last_modified" value="2026-05-31 19:01:07" />
 			</fieldset>
 			<label for="ns-region-home-email-input" class="sr-only">Sign up for National newsletter</label>
 			<input id="ns-region-home-email-input" type="text" class="c-newsletterSignup__input" placeholder="Email address" data-newsletter-inline-email />
@@ -2417,7 +2418,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Bishnoi extortion gang sent letter to Canadian police warning it had 1,000 gunmen" data-title>Bishnoi extortion gang sent letter to Canadian police warning it had 1,000 gunmen</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">19,363</span>
+							<span class="c-posts__info c-posts__info--highlight">23,186</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2448,7 +2449,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="U.S. envoy says Carney&#8217;s trade message &#8216;worth repeating&#8217;" data-title>U.S. envoy says Carney&#8217;s trade message &#8216;worth repeating&#8217;</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">11,244</span>
+							<span class="c-posts__info c-posts__info--highlight">11,573</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2479,7 +2480,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Environment Canada issues rainfall warnings, special statement for B.C., and Alberta" data-title>Environment Canada issues rainfall warnings, special statement for B.C., and Alberta</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">9,213</span>
+							<span class="c-posts__info c-posts__info--highlight">10,476</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2510,7 +2511,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Aboriginal title can&#8217;t be declared over private land; Supreme Court of Canada refuses appeal" data-title>Aboriginal title can&#8217;t be declared over private land; Supreme Court of Canada refuses appeal</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">7,787</span>
+							<span class="c-posts__info c-posts__info--highlight">8,992</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2541,7 +2542,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="King Arthur manuscript in private hands for 700 years to go on public sale" data-title>King Arthur manuscript in private hands for 700 years to go on public sale</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">5,126</span>
+							<span class="c-posts__info c-posts__info--highlight">5,932</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2903,8 +2904,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-miniplayer"
 			data-displayinline-video-id="11875530"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11875530,11874794,3226216,11875446,11872302/?poster=https%3A%2F%2Fi0.wp.com%2Fassets.news.corusappservices.com%2Fupload%2Fnews%2FGlobal_National_web.webp%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
-    		    			data-displayinline-playlist="11875530,11874794,3226216,11875446,11872302"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11875530,11874794,3226216,11863264,11875446/?poster=https%3A%2F%2Fi0.wp.com%2Fassets.news.corusappservices.com%2Fupload%2Fnews%2FGlobal_National_web.webp%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
+    		    			data-displayinline-playlist="11875530,11874794,3226216,11863264,11875446"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Global National: May 30&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;,&quot;crime&quot;,&quot;world&quot;],&quot;keywords&quot;:[&quot;bishnoi-gang&quot;,&quot;extortion&quot;,&quot;full-show&quot;,&quot;global-news&quot;,&quot;ice&quot;,&quot;ice-protests&quot;,&quot;immigration&quot;,&quot;iran-war&quot;,&quot;lawrence-bishnoi-gang&quot;,&quot;new-jersey-ice-protests&quot;,&quot;other&quot;,&quot;pwhl&quot;,&quot;trump-immigration-crackdown&quot;,&quot;u-s-politics&quot;,&quot;us-iran-conflict&quot;,&quot;us-iran-war&quot;,&quot;us-iran-ceasefire&quot;,&quot;us-iran-peace-deal&quot;,&quot;victoire&quot;,&quot;walter-cup&quot;]}}"
 			    		>
@@ -2972,8 +2973,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11875530"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11875530,11874794,3226216,11875446,11872302/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11875530,11874794,3226216,11875446,11872302"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11875530,11874794,3226216,11863264,11875446/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11875530,11874794,3226216,11863264,11875446"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="Three months into the U.S. and Israel’s war on Iran, the prospect of a peace deal remains precarious. We have the latest on the standoff over Iran’s nuclear program, control of the Strait of Hormuz and the ongoing violence in Lebanon. An ICE detention centre in New Jersey has become the latest flashpoint in the Trump administration’s immigration crackdown. Plus, a sobering claim by a notorious Indian gang has taken the extortion crisis in the South Asian community to the next level."
 			>
@@ -2999,8 +3000,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11874794"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11874794,3226216,11875446,11872302,11875530/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11874794,3226216,11875446,11872302,11875530"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11874794,3226216,11863264,11875446,11875530/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11874794,3226216,11863264,11875446,11875530"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="Latest figures from Statistics Canada have put the country into what&#039;s known as a &#039;technical recession.&#039; That means economic drivers like trade and spending have floundered, as individuals, businesses and even government spending slowed. Heidi Petracek explains what it means for Canadians."
 			>
@@ -3026,8 +3027,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="3226216"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/3226216,11875446,11872302,11875530,11874794/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="3226216,11875446,11872302,11875530,11874794"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/3226216,11863264,11875446,11875530,11874794/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="3226216,11863264,11875446,11875530,11874794"
 			data-video-carousel-label="Crime"
 			data-video-carousel-content="Police in Russia have released dramatic video of a tense hostage situation involving a 13-year-old girl and a knife-wielding man they say was high on heroin."
 			>
@@ -3048,13 +3049,40 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Global National: May 30" data-slide-index="3">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="South Korean submarine takes part in joint naval exercises in BC" data-slide-index="3">
+	<a href="https://globalnews.ca/video/11863264/south-korean-submarine-takes-part-in-joint-naval-exercises-in-bc/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11863264"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11863264,11875446,11875530,11874794,3226216/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11863264,11875446,11875530,11874794,3226216"
+			data-video-carousel-label="Canada"
+			data-video-carousel-content="A South Korean Naval submarine is in B.C., as the Asian country seeks a procurement deal with the federal government. The vessel will be taking part in anti-submarine warfare exercises with the Royal Canadian Navy."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/et65wvcf8b-c4mfyt2a02/ONLINE_STILL_KOREAN_SUBMARINE.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">South Korean submarine takes part in joint naval exercises in BC</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Global National: May 30" data-slide-index="4">
 	<a href="https://globalnews.ca/video/11875446/global-national-may-30-13/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11875446"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11875446,11872302,11875530,11874794,3226216/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11875446,11872302,11875530,11874794,3226216"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11875446,11875530,11874794,3226216,11863264/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11875446,11875530,11874794,3226216,11863264"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="Three months into the U.S. and Israel’s war on Iran, the prospect of a peace deal remains precarious. We have the latest on the standoff over Iran’s nuclear program, control of the Strait of Hormuz and the ongoing violence in Lebanon. An ICE detention centre in New Jersey has become the latest flashpoint in the Trump administration’s immigration crackdown. Plus, a sobering claim by a notorious Indian gang has taken the extortion crisis in the South Asian community to the next level."
 			>
@@ -3071,33 +3099,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
 						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Global National: May 30</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="&#8220;Canada strong will help make American great again”: Carney pitches to Economic Club of New York" data-slide-index="4">
-	<a href="https://globalnews.ca/video/11872302/canada-strong-will-help-make-american-great-again-carney-pitches-to-economic-club-of-new-york/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11872302"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11872302,11875530,11874794,3226216,11875446/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11872302,11875530,11874794,3226216,11875446"
-			data-video-carousel-label="Economy"
-			data-video-carousel-content="In a brief visit south of the border to New York City on Thursday, Canadian Prime Minister Mark Carney told the Economic Club of New York that &quot;Canada strong will help make America great again.” &quot;We have made specific, practical proposals to the U.S. administration,&quot; Carney said. He continued: &quot;Consider aluminum. It&#039;s basically electricity... In Canadian exports to the United States, are the energy equivalent to ten Hoover dams. With America&#039;s growing energy needs because of the incredible transformation here, does it really make sense to build the gigawatts here needed to replace Canada.” On auto manufacturing, Carney added, “Canada is by far and away America&#039;s biggest customer, and an integrated North American market is the best and most durable way to confront intense — truly intense global competition.&quot; Additionally, Carney said Canada has what the U.S. needs to &quot;meet the exploding demand to power AI.”"
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/ns0wf33zpg-uzjozml768/THU_CARNEY_SITE_THUMB_280526.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Economy</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">&#8220;Canada strong will help make American great again”: Carney pitches to Economic Club of New York</span></div>
 					</div>
 	</a>
 </li>
@@ -3134,11 +3135,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11874794,3226216,11875446,11872302/#autoplay&#038;stickyiframe=home-miniplayer_11874794"
+			href="https://globalnews.ca/video/embed/playlist/11874794,3226216,11863264,11875446/#autoplay&#038;stickyiframe=home-miniplayer_11874794"
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11874794"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11874794,3226216,11875446,11872302/#autoplay&#038;stickyiframe=home-miniplayer_11874794"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11874794,3226216,11863264,11875446/#autoplay&#038;stickyiframe=home-miniplayer_11874794"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3189,11 +3190,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/3226216,11875446,11872302,11874794/#autoplay&#038;stickyiframe=home-miniplayer_3226216"
+			href="https://globalnews.ca/video/embed/playlist/3226216,11863264,11875446,11874794/#autoplay&#038;stickyiframe=home-miniplayer_3226216"
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_3226216"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/3226216,11875446,11872302,11874794/#autoplay&#038;stickyiframe=home-miniplayer_3226216"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/3226216,11863264,11875446,11874794/#autoplay&#038;stickyiframe=home-miniplayer_3226216"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3222,11 +3223,44 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11875446,11872302,11874794,3226216/#autoplay&#038;stickyiframe=home-miniplayer_11875446"
+			href="https://globalnews.ca/video/embed/playlist/11863264,11875446,11874794,3226216/#autoplay&#038;stickyiframe=home-miniplayer_11863264"
+			data-displayinline-type="video"
+			data-displayinline-player-id="home-miniplayer_11863264"
+			data-displayinline-ratio="16:9"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11863264,11875446,11874794,3226216/#autoplay&#038;stickyiframe=home-miniplayer_11863264"
+			data-displayinline-sticky="true"
+			data-displayinline-expand="true">
+			<div class="c-video__placeholder">
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/et65wvcf8b-c4mfyt2a02/ONLINE_STILL_KOREAN_SUBMARINE.jpg?w=384&#038;quality=70&#038;strip=all"
+					width="236"
+					height="133"
+					class="c-posts__thumbnail c-video__image"
+					alt="Click to play video 'South Korean submarine takes part in joint naval exercises in BC'"
+					loading="lazy" />
+				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+			</div>
+		</a>
+		<a href="https://globalnews.ca/video/11863264/south-korean-submarine-takes-part-in-joint-naval-exercises-in-bc/" class="c-posts__details">
+				<div class="c-posts__about">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">South Korean submarine takes part in joint naval exercises in BC</span></div>
+		</a>
+	</div>
+</li>
+
+<li class="c-posts__item">
+	<div class="c-posts__inner">
+		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
+			href="https://globalnews.ca/video/embed/playlist/11875446,11874794,3226216,11863264/#autoplay&#038;stickyiframe=home-miniplayer_11875446"
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11875446"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11875446,11872302,11874794,3226216/#autoplay&#038;stickyiframe=home-miniplayer_11875446"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11875446,11874794,3226216,11863264/#autoplay&#038;stickyiframe=home-miniplayer_11875446"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3248,39 +3282,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
 			<div class="c-posts__headline"><span class="c-posts__headlineText">Global National: May 30</span></div>
-		</a>
-	</div>
-</li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11872302,11874794,3226216,11875446/#autoplay&#038;stickyiframe=home-miniplayer_11872302"
-			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11872302"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11872302,11874794,3226216,11875446/#autoplay&#038;stickyiframe=home-miniplayer_11872302"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/ns0wf33zpg-uzjozml768/THU_CARNEY_SITE_THUMB_280526.jpg?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video '&#8220;Canada strong will help make American great again”: Carney pitches to Economic Club of New York'"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/11872302/canada-strong-will-help-make-american-great-again-carney-pitches-to-economic-club-of-new-york/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Economy</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">&#8220;Canada strong will help make American great again”: Carney pitches to Economic Club of New York</span></div>
 		</a>
 	</div>
 </li>
@@ -3686,8 +3687,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-playlist-miniplayer"
 			data-displayinline-video-id="11875530"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11875530,11874794,3226216,11875446,11872302/?poster=https%3A%2F%2Fi0.wp.com%2Fassets.news.corusappservices.com%2Fupload%2Fnews%2FGlobal_National_web.webp%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
-    		    			data-displayinline-playlist="11875530,11874794,3226216,11875446,11872302"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11875530,11874794,3226216,11863264,11875446/?poster=https%3A%2F%2Fi0.wp.com%2Fassets.news.corusappservices.com%2Fupload%2Fnews%2FGlobal_National_web.webp%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
+    		    			data-displayinline-playlist="11875530,11874794,3226216,11863264,11875446"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Global National: May 30&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;,&quot;crime&quot;,&quot;world&quot;],&quot;keywords&quot;:[&quot;bishnoi-gang&quot;,&quot;extortion&quot;,&quot;full-show&quot;,&quot;global-news&quot;,&quot;ice&quot;,&quot;ice-protests&quot;,&quot;immigration&quot;,&quot;iran-war&quot;,&quot;lawrence-bishnoi-gang&quot;,&quot;new-jersey-ice-protests&quot;,&quot;other&quot;,&quot;pwhl&quot;,&quot;trump-immigration-crackdown&quot;,&quot;u-s-politics&quot;,&quot;us-iran-conflict&quot;,&quot;us-iran-war&quot;,&quot;us-iran-ceasefire&quot;,&quot;us-iran-peace-deal&quot;,&quot;victoire&quot;,&quot;walter-cup&quot;]}}"
 			    		>
@@ -3734,7 +3735,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11875530,11874794,3226216,11875446,11872302/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11875530,11874794,3226216,11863264,11875446/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Global National: May 30</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -3762,7 +3763,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11874794,3226216,11875446,11872302/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11874794,3226216,11863264,11875446/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Latest GDP numbers show “technical recession” in Canada</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -3790,7 +3791,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Crime"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/3226216,11875446,11872302,11874794/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/3226216,11863264,11875446,11874794/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Knife-wielding man holds 13-year-old girl hostage in Russia</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -3811,23 +3812,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="4"
 	>
-	<a href="https://globalnews.ca/video/11875446/global-national-may-30-13/"
-		title="Global National: May 30"
+	<a href="https://globalnews.ca/video/11863264/south-korean-submarine-takes-part-in-joint-naval-exercises-in-bc/"
+		title="South Korean submarine takes part in joint naval exercises in BC"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11875446"
+		data-video-id="11863264"
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11875446,11872302,11874794,3226216/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11863264,11875446,11874794,3226216/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Global National: May 30</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">South Korean submarine takes part in joint naval exercises in BC</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
 						Canada					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/q7sj4i7kp7-ixp14f5d27/Global_National_web.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/et65wvcf8b-c4mfyt2a02/ONLINE_STILL_KOREAN_SUBMARINE.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3839,23 +3840,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="5"
 	>
-	<a href="https://globalnews.ca/video/11872302/canada-strong-will-help-make-american-great-again-carney-pitches-to-economic-club-of-new-york/"
-		title="&#8220;Canada strong will help make American great again”: Carney pitches to Economic Club of New York"
+	<a href="https://globalnews.ca/video/11875446/global-national-may-30-13/"
+		title="Global National: May 30"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11872302"
-		data-video-label="Economy"
+		data-video-id="11875446"
+		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11872302,11874794,3226216,11875446/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11875446,11874794,3226216,11863264/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">&#8220;Canada strong will help make American great again”: Carney pitches to Economic Club of New York</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Global National: May 30</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Economy					</div>
+						Canada					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/ns0wf33zpg-uzjozml768/THU_CARNEY_SITE_THUMB_280526.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/q7sj4i7kp7-ixp14f5d27/Global_National_web.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4339,6 +4340,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-27"
+	data-post-id="11873420"
+	data-slide-index=""
+	data-caption="Anand calls China ties &#8216;significant,&#8217; says Canada must safeguard &#8216;values&#8217;"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11873420/wang-yi-ottawa-meeting-anita-anand-mark-carney/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/05/anand-yi-visit-e1780075427922.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/05/anand-yi-visit-e1780075427922.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/05/anand-yi-visit-e1780075427922.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/05/anand-yi-visit-e1780075427922.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Anand calls China ties &#8216;significant,&#8217; says Canada must safeguard &#8216;values&#8217;" data-title>Anand calls China ties &#8216;significant,&#8217; says Canada must safeguard &#8216;values&#8217;</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >May 29</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-28"
 	data-post-id="11872259"
 	data-slide-index=""
 	data-caption="King Arthur manuscript in private hands for 700 years to go on public sale"
@@ -4346,7 +4379,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11872259/king-arthur-manuscript-christies-auction/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4370,7 +4403,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-28"
+	data-container-id="stories-item-29"
 	data-post-id="11873598"
 	data-slide-index=""
 	data-caption="Trump says U.S. blockade on Strait of Hormuz ‘will now be lifted&#8217;"
@@ -4378,7 +4411,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11873598/strait-of-hormuz-open-trump/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -4392,38 +4425,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="Trump says U.S. blockade on Strait of Hormuz ‘will now be lifted&#8217;" data-title>Trump says U.S. blockade on Strait of Hormuz ‘will now be lifted&#8217;</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >May 29</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-29"
-	data-post-id="11873497"
-	data-slide-index=""
-	data-caption="Ebola outbreak is &#8216;very complex,&#8217; but &#8216;can be stopped&#8217;, WHO chief says"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11873497/head-of-who-says-ebola-outbreak-very-complex-can-be-stopped/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/05/who-director-congo-visit-e1780064123108.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=540 data-ratio=0.67									loading="lazy"
-								width="720" height="540" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/05/who-director-congo-visit-e1780064123108.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/05/who-director-congo-visit-e1780064123108.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/05/who-director-congo-visit-e1780064123108.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Ebola outbreak is &#8216;very complex,&#8217; but &#8216;can be stopped&#8217;, WHO chief says" data-title>Ebola outbreak is &#8216;very complex,&#8217; but &#8216;can be stopped&#8217;, WHO chief says</span>
 			</div>
 	
 						
@@ -4519,6 +4520,70 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-30"
+	data-post-id="11875635"
+	data-slide-index=""
+	data-caption="Winning Lotto 6/49 Gold Ball jackpot ticket worth $16M sold in Peterborough"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11875635/ontario-lotto-649-jackpot-winner-peterborough/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2022/09/Screen-Shot-2022-09-26-at-8.08.47-AM.png?w=720													loading="lazy"
+								width="720" height="398" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2022/09/Screen-Shot-2022-09-26-at-8.08.47-AM.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2022/09/Screen-Shot-2022-09-26-at-8.08.47-AM.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2022/09/Screen-Shot-2022-09-26-at-8.08.47-AM.png?w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Winning Lotto 6/49 Gold Ball jackpot ticket worth $16M sold in Peterborough" data-title>Winning Lotto 6/49 Gold Ball jackpot ticket worth $16M sold in Peterborough</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >12 mins</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-31"
+	data-post-id="11875629"
+	data-slide-index=""
+	data-caption="Quebec&#8217;s national library moves ahead with AI cultural databank project"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11875629/quebec-national-library-ai-databank/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/05/quebec-library.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="460" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/05/quebec-library.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/05/quebec-library.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/05/quebec-library.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Quebec&#8217;s national library moves ahead with AI cultural databank project" data-title>Quebec&#8217;s national library moves ahead with AI cultural databank project</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >1 hour</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-32"
 	data-post-id="11875565"
 	data-slide-index=""
 	data-caption="Smoke, heat, rain and flooding; what to expect from Western weather"
@@ -4526,7 +4591,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11875565/western-canada-rain-heat-warnings-air-quality-wildfires/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -4544,71 +4609,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >7 mins</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-31"
-	data-post-id="11875288"
-	data-slide-index=""
-	data-caption="Running back Anderson Jr. among Riders’ final cuts"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11875288/running-back-anderson-jr-among-riders-final-cuts/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/05/6a385e0024005de4f4326366a93268d4c80ddb3ceeee51a506db3d2cc90a037f_813c7a.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="456" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/05/6a385e0024005de4f4326366a93268d4c80ddb3ceeee51a506db3d2cc90a037f_813c7a.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/05/6a385e0024005de4f4326366a93268d4c80ddb3ceeee51a506db3d2cc90a037f_813c7a.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/05/6a385e0024005de4f4326366a93268d4c80ddb3ceeee51a506db3d2cc90a037f_813c7a.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Running back Anderson Jr. among Riders’ final cuts" data-title>Running back Anderson Jr. among Riders’ final cuts</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >May 30</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-32"
-	data-post-id="11875103"
-	data-slide-index=""
-	data-caption="Program brings trauma-informed and cultural sensitivity training to Saskatoon"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11875103/trauma-informed-and-cultural-sensitivity-training-saskatoon/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/05/TACT-training.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=540 data-ratio=0.67									loading="lazy"
-								width="720" height="540" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/05/TACT-training.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/05/TACT-training.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/05/TACT-training.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Program brings trauma-informed and cultural sensitivity training to Saskatoon" data-title>Program brings trauma-informed and cultural sensitivity training to Saskatoon</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >May 30</div>
+																<div class="c-posts__info" data-date >2 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5201,7 +5202,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >3 hours</div>
+																<div class="c-posts__info" data-date >5 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5360,7 +5361,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >2 hours</div>
+																<div class="c-posts__info" data-date >4 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5674,6 +5675,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-51"
+	data-post-id="11875288"
+	data-slide-index=""
+	data-caption="Running back Anderson Jr. among Riders’ final cuts"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11875288/running-back-anderson-jr-among-riders-final-cuts/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/05/6a385e0024005de4f4326366a93268d4c80ddb3ceeee51a506db3d2cc90a037f_813c7a.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="456" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/05/6a385e0024005de4f4326366a93268d4c80ddb3ceeee51a506db3d2cc90a037f_813c7a.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/05/6a385e0024005de4f4326366a93268d4c80ddb3ceeee51a506db3d2cc90a037f_813c7a.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/05/6a385e0024005de4f4326366a93268d4c80ddb3ceeee51a506db3d2cc90a037f_813c7a.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Running back Anderson Jr. among Riders’ final cuts" data-title>Running back Anderson Jr. among Riders’ final cuts</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >May 30</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-52"
 	data-post-id="11875187"
 	data-slide-index=""
 	data-caption="‘So much love’: Montreal Victoire celebrate Walter Cup win with downtown parade"
@@ -5681,7 +5714,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11875187/montreal-victoire-celebrate-win/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5705,7 +5738,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-52"
+	data-container-id="stories-item-53"
 	data-post-id="11874805"
 	data-slide-index=""
 	data-caption="Canadiens bounced by Hurricanes in East final"
@@ -5713,7 +5746,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11874805/canadiens-bounced-by-hurricanes-in-east-final/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5727,38 +5760,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="Canadiens bounced by Hurricanes in East final" data-title>Canadiens bounced by Hurricanes in East final</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >May 30</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-53"
-	data-post-id="11875015"
-	data-slide-index=""
-	data-caption="Memorial Cup: DuPont shines as Silvertips advance"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11875015/memorial-cup-dupont-shines-as-silvertips-advance/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/05/f2a8eb7dc1ae55553a84f857d6fa2b74f0d255d1f05a19c2af568772bbfe5be5.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="474" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/05/f2a8eb7dc1ae55553a84f857d6fa2b74f0d255d1f05a19c2af568772bbfe5be5.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/05/f2a8eb7dc1ae55553a84f857d6fa2b74f0d255d1f05a19c2af568772bbfe5be5.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/05/f2a8eb7dc1ae55553a84f857d6fa2b74f0d255d1f05a19c2af568772bbfe5be5.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Memorial Cup: DuPont shines as Silvertips advance" data-title>Memorial Cup: DuPont shines as Silvertips advance</span>
 			</div>
 	
 						
@@ -6059,7 +6060,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 </script>
 		<!-- Adobe Analytics code version: JS-2.6.0. -->
 		<script type="text/javascript">
-			var gnPageData = {"context_data":{"hourofday":"12","dayofweek":"Sunday","weekdayweekend":"Weekend","userregion":"national","region":"national"},"sections":["home"],"props":[]};
+			var gnPageData = {"context_data":{"hourofday":"15","dayofweek":"Sunday","weekdayweekend":"Weekend","userregion":"national","region":"national"},"sections":["home"],"props":[]};
 		</script>
 				<!-- End Adobe Analytics code -->
 			<script>
@@ -6110,5 +6111,5 @@ var GN_OneSignalSettings = {"isCurator":"","appId":"8beb7996-b996-4ce8-a474-d488
 		
 		<div class="l-dynamicElement"></div>
 
-			</body>
+			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75660ba8f4","applicationID":"418684855","transactionName":"Z1BWZxdTWkAHVExRXF4adVARW1tdSV9XVVY=","queueTime":0,"applicationTime":446,"atts":"SxdBEV9JSR9EVhoCSE1I","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
