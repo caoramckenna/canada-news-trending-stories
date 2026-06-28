@@ -184,8 +184,7 @@
         }
     </script>
     	<!-- Meta Tags -->
-	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"75660ba8f4",applicationID:"418684855",browserID:"419993820"};;/*! For license information please see nr-loader-rum-1.317.0.min.js.LICENSE.txt */
-(()=>{var e,t,r={384(e,t,r){"use strict";r.d(t,{NT:()=>a,Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),s=r(944),o=r(1910);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,o.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,s.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}},782(e,t,r){"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},860(e,t,r){"use strict";r.d(t,{$J:()=>d,K7:()=>c,P3:()=>u,XX:()=>i,Yy:()=>a,df:()=>s,qY:()=>n,v4:()=>o});const n="events",i="jserrors",s="browser/blobs",o="rum",a="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},u={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.softNav]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.sessionReplay]:8,[c.logging]:9,[c.genericEvents]:10},d={[c.pageViewEvent]:o,[c.pageViewTiming]:n,[c.ajax]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:s,[c.sessionReplay]:s,[c.logging]:a,[c.genericEvents]:"ins"}},944(e,t,r){"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},981(e,t,r){"use strict";r.d(t,{R:()=>n});const n={AJAX:"AjaxRequest",PA:"PageAction",UA:"UserAction",BP:"BrowserPerformance",WS:"WebSocket",SPV:"SecurityPolicyViolation",JSE:"JavaScriptError",LOG:"Log",PVE:"PageView",PVT:"PageViewTiming",SR:"SessionReplay",ST:"SessionTrace",BI:"BrowserInteraction"}},1687(e,t,r){"use strict";r.d(t,{Ak:()=>a,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),s=r(860),o=r(2646);function a(e,t){if(!e)return;const r={staged:!1,priority:s.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const s=e.ee,a=i.i.handlers;if(s&&!s.aborted&&s.backlog&&a){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=s.backlog[t],r=a[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof o.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}s.isolatedBacklog||delete a[t],s.backlog[t]=null,s.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],s=e[2];n.apply(i,s)}})}},1738(e,t,r){"use strict";r.d(t,{U:()=>f,Y:()=>l});var n=r(3241),i=r(9908),s=r(1863),o=r(944),a=r(3969),c=r(8362),u=r(860),d=r(4261);function l(e,t,r,s){const l=s||r;!l||l[e]&&l[e]!==c.d.prototype[e]||(l[e]=function(){(0,i.p)(a.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:d.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,o.R)(23,e)}})}function f(e,t,r,n,o){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(o||null===r)&&(0,i.p)(d.Pl+n,[(0,s.t)(),t,r],void 0,"session",e.ee)}},1741(e,t,r){"use strict";r.d(t,{W:()=>s});var n=r(944),i=r(4261);class s{#e(e,...t){if(this[e]!==s.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},1863(e,t,r){"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},1910(e,t,r){"use strict";r.d(t,{i:()=>s});var n=r(944);const i=new Map;function s(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),s=t.includes("nrWrapper");return r||s||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},2555(e,t,r){"use strict";r.d(t,{D:()=>a,f:()=>o});var n=r(384),i=r(8122);const s={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function o(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const a=e=>(0,i.a)(e,s)},2614(e,t,r){"use strict";r.d(t,{BB:()=>s,Wt:()=>n,g:()=>c,iL:()=>a,tS:()=>o,wk:()=>i});const n="NRBA_SESSION::",i=144e5,s=18e5,o={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},a={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},c={OFF:0,FULL:1,ERROR:2}},2646(e,t,r){"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},2843(e,t,r){"use strict";r.d(t,{G:()=>s,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function s(e,t,r){(0,n.sp)("pagehide",e,t,r)}},3241(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(6154);function i(e={}){try{n.gm.dispatchEvent(new CustomEvent("newrelic",{detail:e}))}catch(e){}}},3606(e,t,r){"use strict";r.d(t,{i:()=>s});var n=r(9908);s.on=o;var i=s.handlers={};function s(e,t,r,s){o(s||n.d,i,e,t,r)}function o(e,t,r,i,s){s||(s="feature"),e||(e=n.d);var o=t[s]=t[s]||{};(o[r]=o[r]||[]).push([e,i])}},3878(e,t,r){"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function s(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>s,jT:()=>n,sp:()=>i})},3969(e,t,r){"use strict";r.d(t,{TZ:()=>n,XG:()=>a,rs:()=>i,xV:()=>o,z_:()=>s});const n=r(860).K7.metrics,i="sm",s="cm",o="storeSupportabilityMetrics",a="storeEventMetrics"},4234(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},4261(e,t,r){"use strict";r.d(t,{$9:()=>u,BL:()=>a,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>h,Pl:()=>n,Pv:()=>A,Tb:()=>l,U2:()=>s,V1:()=>x,Wb:()=>R,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>o,nb:()=>m,o5:()=>d});const n="api-",i="addPageAction",s="addToTrace",o="addRelease",a="finished",c="interaction",u="log",d="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",m="setApplicationVersion",h="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",R="wrapLogger",x="measure",A="consent"},5289(e,t,r){"use strict";r.d(t,{GG:()=>o,Qr:()=>c,sB:()=>a});var n=r(3878),i=r(6389);function s(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(s())return e();const r=(0,i.J)(e),o=setInterval(()=>{s()&&(clearInterval(o),r())},500);(0,n.sp)("load",r,t)}function a(e){if(s())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(s())return e();(0,n.sp)("popstate",e)}},5607(e,t,r){"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},6154(e,t,r){"use strict";r.d(t,{OF:()=>u,RI:()=>i,WN:()=>l,bv:()=>s,gm:()=>o,m:()=>c,mw:()=>a,sb:()=>d,zk:()=>f});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,s="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),c=""+o?.location,u=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)()),f=()=>{const e=o?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<o.performance.now())return e}},6389(e,t,r){"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},6630(e,t,r){"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},7699(e,t,r){"use strict";r.d(t,{It:()=>s,KC:()=>a,No:()=>i,qh:()=>o});var n=r(860);const i=16e3,s=1e6,o="SESSION_ERROR",a={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0}},7836(e,t,r){"use strict";r.d(t,{P:()=>a,ee:()=>c});var n=r(384),i=r(8990),s=r(2646),o=r(5607);const a="nr@context:".concat(o.W),c=function e(t,r){var n={},o={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,s){!1!==s&&(s=!0);if(c.aborted&&!i)return;t&&s&&t.emit(e,r,n);var a=g(n);m(e).forEach(e=>{e.apply(a,r)});var u=v()[o[e]];u&&u.push([f,e,r,a]);return a},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{o[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[o[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof s.y?e:e?(0,i.I)(e,a,()=>new s.y(a)):new s.y(a)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c)},8122(e,t,r){"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),s=0===Object.keys(r).length?e:r;for(let o in s)if(void 0!==e[o])try{if(null===e[o]){r[o]=null;continue}Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):e[o]instanceof Map||e[o]instanceof Set||e[o]instanceof Date||e[o]instanceof RegExp?r[o]=e[o]:"object"==typeof e[o]&&"object"==typeof t[o]?r[o]=i(e[o],t[o]):r[o]=e[o]}catch(e){r[o]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},8362(e,t,r){"use strict";r.d(t,{d:()=>s});var n=r(9566),i=r(1741);class s extends i.W{agentIdentifier=(0,n.LA)(16)}},8374(e,t,r){r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},8990(e,t,r){"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},9324(e,t,r){"use strict";r.d(t,{F3:()=>i,Xs:()=>s,xv:()=>n});const n="1.317.0",i="PROD",s="CDN"},9566(e,t,r){"use strict";r.d(t,{LA:()=>o,bz:()=>s});var n=r(6154);function i(e,t){return e?15&e[t]:16*Math.random()|0}function s(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".split("").map(e=>"x"===e?i(t,r++).toString(16):"y"===e?(3&i()|8).toString(16):e).join("")}function o(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,s=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const o=[];for(var a=0;a<e;a++)o.push(i(r,s++).toString(16));return o.join("")}},9908(e,t,r){"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,s){s?(s.buffer([e],i),s.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var s=n[e]={exports:{}};return r[e](s,s.exports,i),s.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce((t,r)=>(i.f[r](e,t),t),[])),i.u=e=>"nr-rum-1.317.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.317.0.PROD:",i.l=(r,n,s,o)=>{if(e[r])e[r].push(n);else{var a,c;if(void 0!==s)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+s){a=l;break}}if(!a){c=!0;var f={296:"sha512-dDeLB65HNhC/52vAGvWxqlhzdrCMMyKyfDMLuD3glK6yvtLAoc7fLRa5TyYwZurrYnIgxKx6VGqcGByXhK/6SA=="};(a=document.createElement("script")).charset="utf-8",i.nc&&a.setAttribute("nonce",i.nc),a.setAttribute("data-webpack",t+s),a.src=r,0!==a.src.indexOf(window.location.origin+"/")&&(a.crossOrigin="anonymous"),f[o]&&(a.integrity=f[o])}e[r]=[n];var g=(t,n)=>{a.onerror=a.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],a.parentNode&&a.parentNode.removeChild(a),i&&i.forEach(e=>e(n)),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:a}),12e4);a.onerror=g.bind(null,a.onerror),a.onload=g.bind(null,a.onload),c&&document.head.appendChild(a)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var s=new Promise((r,i)=>n=e[t]=[r,i]);r.push(n[2]=s);var o=i.p+i.u(t),a=new Error;i.l(o,r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var s=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;a.message="Loading chunk "+t+" failed: ("+s+": "+o+")",a.name="ChunkLoadError",a.type=s,a.request=o,n[1](a)}},"chunk-"+t,t)}};var t=(t,r)=>{var n,s,[o,a,c]=r,u=0;if(o.some(t=>0!==e[t])){for(n in a)i.o(a,n)&&(i.m[n]=a[n]);if(c)c(i)}for(t&&t(r);u<o.length;u++)s=o[u],i.o(e,s)&&e[s]&&e[s][0](),e[s]=0},r=self["webpackChunk:NRBA-1.317.0.PROD"]=self["webpackChunk:NRBA-1.317.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(8362),t=i(860);const r=Object.values(t.K7);var n=i(384),s=i(1741);var o=i(2555),a=i(981);t.K7.genericEvents,a.R.PA,a.R.UA,a.R.BP;const c="experimental.resources",u="register",d=(t.K7.ajax,"none"),l=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var f=i(2614),g=i(944),p=i(8122);const m="[data-nr-mask]",h=e=>(0,p.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0,capture_payloads:d},api:{register:{get enabled(){return e.feature_flags.includes(u)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:f.wk,inactiveMs:f.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){l(t)?e.mask_selector="".concat(t,",").concat(m):""===t||null===t?e.mask_selector=m:(0,g.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){l(t)?e.block_selector+=",".concat(t):""!==t&&(0,g.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,g.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var v=i(6154),b=i(9324);let y=0;const _={buildEnv:b.F3,distMethod:b.Xs,version:b.xv,originTime:v.WN},w={consented:!1},R={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||w.consented},set consented(e){w.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++y}};var x=i(7836),A=i(3241);const k={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0};function S(e,t={},r,a){let{init:c,info:u,loader_config:d,runtime:l={},exposed:f=!0}=t;if(!u){const e=(0,n.pV)();c=e.init,u=e.info,d=e.loader_config}var g;e.init=h(c||{}),e.loader_config=(g=d||{},(0,p.a)(g,k)),u.jsAttributes??={},v.bv&&(u.jsAttributes.isWorker=!0),e.info=(0,o.D)(u);const m=e.init;e.runtime??=(e=>{const t=(0,p.a)(e,R),r=Object.keys(_).reduce((e,t)=>(e[t]={value:_[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)})(l),m.proxy.assets&&(e=>{const t=e.startsWith("http");e+="/",i.p=t?e:"https://"+e})(m.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(s.W.prototype).forEach(r=>{const n=s.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let i=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return i?i(...t):n})})}(e),e.runtime.loaderType=r,e.ee=x.ee.get(e.agentIdentifier),e.exposed=f,(0,A.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.runtime.configured=!0)}var T=i(9908),E=i(1863),j=i(4261),P=i(1738);var N=i(1687),O=i(4234),M=i(5289);const I=e=>v.RI&&!0===e?.privacy.cookies_enabled;function D(e){return!!(0,n.dV)().o.MO&&I(e)&&!0===e?.session_trace.enabled}var W=i(6389),V=i(7699);const B=new WeakSet;class K extends O.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,W.J)(()=>{(0,N.Ak)(e,this.featureName),t()}))}):(0,N.Ak)(e,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;const n=async()=>{if(await this.deferred,this.#t(e),!(0,o.f)(e.info))return(0,g.R)(43),e.ee.abort(),void this.loadedSuccessfully(!1);let n;try{if(I(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,8));n=t(e)}}catch(e){(0,g.R)(20,e),this.ee.emit("internal-error",[e]),(0,T.p)(V.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#r(this.featureName,n,e.init))return(0,N.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,g.R)(34,e),this.abortHandler?.(),(0,N.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1),this.ee&&this.ee.abort()}};v.RI?(0,M.GG)(()=>n(),!0):n()}#r(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return D(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}#t(e){if(!B.has(e)&&(B.add(e),!(0,o.f)(e.info))){const t=(0,n.pV)();let r={...t.info?.jsAttributes};try{r={...r,...e.info?.jsAttributes}}catch(e){}S(e,{...t,info:{...t.info,jsAttributes:r},runtime:e.runtime},e.runtime.loaderType)}}}var C=i(6630);class U extends K{static featureName=C.T;constructor(e){var t;super(e,C.T),this.setupInspectionEvents(),t=e,(0,P.Y)(j.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,T.p)(j.Pl+j.Fw,[(0,E.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>i.e(296).then(i.bind(i,1324)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,A.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,M.sB)(t=>{e(t,"DOMContentLoaded")}),(0,M.GG)(t=>{e(t,"load")}),(0,M.Qr)(t=>{e(t,"navigate")}),this.ee.on(f.tS.UPDATE,(e,t)=>{(0,A.W)({type:"lifecycle",name:"session",data:t})})}}class F extends e.d{constructor(e){var t;(super(),v.gm)?(this.features={},(0,n.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(U),S(this,e,e.loaderType||"agent"),t=this,(0,P.Y)(j.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,P.U)(t,e,r,j.cD,n);(0,g.R)(40,typeof r)}else(0,g.R)(39,typeof e)},t),function(e){(0,P.Y)(j.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,g.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,T.p)(j.Pl+"setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,P.U)(e,"enduser.id",t,j.Dl,!0)},e)}(this),function(e){(0,P.Y)(j.nb,function(t){if("string"==typeof t||null===t)return(0,P.U)(e,"application.version",t,j.nb,!1);(0,g.R)(42,typeof t)},e)}(this),function(e){(0,P.Y)(j.d3,function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,P.Y)(j.Pv,function(t=!0){if("boolean"==typeof t){if((0,T.p)(j.Pl+j.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum()})}}else(0,g.R)(65,typeof t)},e)}(this),this.run()):(0,g.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return r.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),n=[...this.desiredFeatures];n.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),n.forEach(r=>{if(!e[r.featureName]&&r.featureName!==t.K7.pageViewEvent)return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,g.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,g.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,n.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var L=i(2843),G=i(782);class H extends K{static featureName=G.T;constructor(e){super(e,G.T),v.RI&&((0,L.u)(()=>(0,T.p)("docHidden",[(0,E.t)()],void 0,G.T,this.ee),!0),(0,L.G)(()=>(0,T.p)("winPagehide",[(0,E.t)()],void 0,G.T,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,2117))))}}var z=i(3969);class Y extends K{static featureName=z.TZ;constructor(e){super(e,z.TZ),this.importAggregator(e,()=>i.e(296).then(i.bind(i,9623)))}}new F({features:[U,H,Y],loaderType:"lite"})})()})();</script>
+	<meta charset="UTF-8">
 	<meta name="theme-color" content="#231F20">
 
 			<meta name="msvalidate.01" content="4F7DAF158EF3A8C47C9D2218FFF0FD40" />
@@ -243,8 +242,8 @@
 
 <!-- twitter: ends here -->
 
-			<link rel="preload" fetchpriority="high" as="image" href="https://globalnews.ca/wp-content/uploads/2026/06/poilievre-latest.jpg?quality=65&#038;strip=all&#038;w=336"
-					imagesrcset="https://globalnews.ca/wp-content/uploads/2026/06/poilievre-latest.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/poilievre-latest.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/poilievre-latest.jpg?quality=65&#038;strip=all&#038;w=720 720w,"
+			<link rel="preload" fetchpriority="high" as="image" href="https://globalnews.ca/wp-content/uploads/2026/06/canada-switzerland-world-cup-e1782500110207.jpg?quality=65&#038;strip=all&#038;w=336"
+					imagesrcset="https://globalnews.ca/wp-content/uploads/2026/06/canada-switzerland-world-cup-e1782500110207.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/canada-switzerland-world-cup-e1782500110207.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/canada-switzerland-world-cup-e1782500110207.jpg?quality=65&#038;strip=all&#038;w=720 720w,"
 							imagesizes="auto"
 		/>
 	
@@ -1448,45 +1447,45 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 											<div>
 														<a
 								class="c-posts__headlineLink"
-								href="https://globalnews.ca/news/11942050/poilievre-bc-condo-plan-ethics-committee-probe-request/"
+								href="https://globalnews.ca/news/11938024/canada-south-africa-world-cup-fifa/"
 								data-analytics="
 								{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:0}								"
 							>
 																		<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Poilievre asks ethics committee to probe plan to buy unsold B.C. condos" data-title>Poilievre asks ethics committee to probe plan to buy unsold B.C. condos</span>
+					<span class="c-posts__headlineText" title="Canada eyes victory over South Africa in 1st World Cup elimination match" data-title>Canada eyes victory over South Africa in 1st World Cup elimination match</span>
 			</div>
 															</a>
 													</div>
 						
-		<div class="c-posts__media  c-posts__media--video c-videoPlay c-videoPlay--standard c-imageContainer" tabindex=0 >
+		<div class="c-posts__media  c-posts__media--video c-videoPlay c-videoPlay--standard" tabindex=0 >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				src=https://globalnews.ca/wp-content/uploads/2026/06/poilievre-latest.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=528 data-ratio=0.67								width="720" height="528" alt="" 
-											srcset="https://globalnews.ca/wp-content/uploads/2026/06/poilievre-latest.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/poilievre-latest.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/poilievre-latest.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"						/>
+				src=https://globalnews.ca/wp-content/uploads/2026/06/canada-switzerland-world-cup-e1782500110207.jpg?quality=65&#038;strip=all&#038;w=720												width="720" height="480" alt="" 
+											srcset="https://globalnews.ca/wp-content/uploads/2026/06/canada-switzerland-world-cup-e1782500110207.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/canada-switzerland-world-cup-e1782500110207.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/canada-switzerland-world-cup-e1782500110207.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"						/>
 									<div class="c-posts__video">
 						    	<div class="c-video c-videoPlay  c-video--contained"
     		data-iframe-receiver
     		data-autoplay=""
 						data-displayinline-featured="false"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_11938873_6a41709fbab1f"
-			data-displayinline-video-id="11938873"
+			data-displayinline-player-id="miniplayer_11937596_6a4189da5733d"
+			data-displayinline-video-id="11937596"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/11938873/#autoplay&#038;stickyiframe=miniplayer_11938873_6a41709fbab1f"
+    		data-displayinline="https://globalnews.ca/video/embed/11937596/#autoplay&#038;stickyiframe=miniplayer_11937596_6a4189da5733d"
     									data-displayinline-container="stories-1-0"
 										data-displayinline-sticky="true"
-													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Developers didn\u2019t ask \u2018directly\u2019 for B.C. vacant condo plan, Carney says&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;bc&quot;,&quot;national&quot;,&quot;politics&quot;],&quot;keywords&quot;:[&quot;bc-condo-developers&quot;,&quot;short-clip&quot;,&quot;vacant-condo-plan&quot;]}}"
+													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;What Canada&#039;s loss to Switzerland means for its World Cup prospects&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;,&quot;sports&quot;,&quot;world&quot;],&quot;keywords&quot;:[&quot;2026-world-cup&quot;,&quot;canada-world-cup&quot;,&quot;fifa&quot;,&quot;fifa-world-cup&quot;,&quot;football&quot;,&quot;international&quot;,&quot;round-of-32&quot;,&quot;short-clip&quot;,&quot;soccer&quot;,&quot;who-is-canada-playing-in-world-cup&quot;,&quot;who-is-canada-playing-next&quot;,&quot;world-cup&quot;,&quot;world-cup-round-of-32-canada-round-of-32&quot;,&quot;global-national&quot;]}}"
 			    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Developers didn’t ask ‘directly’ for B.C. vacant condo plan, Carney says'"
+						alt="Click to play video: 'What Canada&#8217;s loss to Switzerland means for its World Cup prospects'"
 						width="640"
 						height="360"
-													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/ztd2jdz77p-enixto5u7t/TH_FED_PM_PRESSER_NATL_PRESS_THEATRE_1_thumbnail_1280x720_.jpg?w=1040&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/0xjlfbip0t-ypp2ytgj7z/260624-ERIC.jpg?w=1040&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/ztd2jdz77p-enixto5u7t/TH_FED_PM_PRESSER_NATL_PRESS_THEATRE_1_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/ztd2jdz77p-enixto5u7t/TH_FED_PM_PRESSER_NATL_PRESS_THEATRE_1_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/ztd2jdz77p-enixto5u7t/TH_FED_PM_PRESSER_NATL_PRESS_THEATRE_1_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
+								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/0xjlfbip0t-ypp2ytgj7z/260624-ERIC.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/0xjlfbip0t-ypp2ytgj7z/260624-ERIC.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/0xjlfbip0t-ypp2ytgj7z/260624-ERIC.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 											</span>
@@ -1505,18 +1504,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						<div class="c-posts__details">
 														<a
 								class="c-posts__detailsLink"
-								href="https://globalnews.ca/news/11942050/poilievre-bc-condo-plan-ethics-committee-probe-request/"
+								href="https://globalnews.ca/news/11938024/canada-south-africa-world-cup-fifa/"
 								data-analytics="
 								{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:0}								"
 							>
 																		<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Poilievre asks ethics committee to probe plan to buy unsold B.C. condos" data-title>Poilievre asks ethics committee to probe plan to buy unsold B.C. condos</span>
+					<span class="c-posts__headlineText" title="Canada eyes victory over South Africa in 1st World Cup elimination match" data-title>Canada eyes victory over South Africa in 1st World Cup elimination match</span>
 			</div>
 																		<div class="c-posts__excerpt">
-									Conservative leader Pierre Poilievre is criticizing a plan by Ottawa and the B.C. government to buy unsold condos for affordable housing, calling it a bail-out for developers.									</div>
+									Canada now enters uncharted territory, playing in its first FIFA World Cup elimination match and marking the furthest the men&#039;s team has gone in a World Cup.									</div>
 																<div class="c-posts__about c-posts__about--multiple">
-																		<div class="c-posts__info c-posts__info--highlight">Politics</div>
-																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">3 hours</div>
+																		<div class="c-posts__info c-posts__info--highlight">Canada</div>
+																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">11 hours</div>
 																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 																	</div>
 														</a>
@@ -1529,8 +1528,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				>
 					<a
 						class="c-posts__inner"
-						href="https://globalnews.ca/news/11942036/toronto-pride-parade-mark-carney-attends-2026/"
+						href="https://globalnews.ca/news/11942050/poilievre-bc-condo-plan-ethics-committee-probe-request/"
 						data-analytics="{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:1}"
+					>
+						
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/06/poilievre-latest.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=528 data-ratio=0.67									loading="lazy"
+								width="720" height="528" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/poilievre-latest.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/poilievre-latest.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/poilievre-latest.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+								<div class="c-posts__details">
+										<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Poilievre asks ethics committee to probe plan to buy unsold B.C. condos" data-title>Poilievre asks ethics committee to probe plan to buy unsold B.C. condos</span>
+			</div>
+								<div class="c-posts__about c-posts__about--multiple">
+																<div class="c-posts__info c-posts__info--highlight">Politics</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">5 hours</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+															</div>
+						</div>
+					</a>
+				</li>
+									<li 
+					class="c-posts__item " 
+					data-container-id="stories-1-2"
+				>
+					<a
+						class="c-posts__inner"
+						href="https://globalnews.ca/news/11942036/toronto-pride-parade-mark-carney-attends-2026/"
+						data-analytics="{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:2}"
 					>
 						
 		<div class="c-posts__media "  >
@@ -1543,42 +1572,12 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 													</div>
 								<div class="c-posts__details">
 										<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Pride Parade set to hit Toronto streets with PM Mark Carney to attend" data-title>Pride Parade set to hit Toronto streets with PM Mark Carney to attend</span>
+					<span class="c-posts__headlineText" title="Pride Parade hits Toronto&#8217;s streets with PM Mark Carney marching" data-title>Pride Parade hits Toronto&#8217;s streets with PM Mark Carney marching</span>
 			</div>
 								<div class="c-posts__about c-posts__about--multiple">
 																<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">4 hours</div>
 																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
-															</div>
-						</div>
-					</a>
-				</li>
-									<li 
-					class="c-posts__item " 
-					data-container-id="stories-1-2"
-				>
-					<a
-						class="c-posts__inner"
-						href="https://globalnews.ca/news/11918470/advocates-see-bias-parliament-renters/"
-						data-analytics="{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:2}"
-					>
-						
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/03/renting-sign_1.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="405" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/renting-sign_1.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/renting-sign_1.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/renting-sign_1.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-								<div class="c-posts__details">
-										<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Landlords in the House: Advocates see a bias in Parliament against renters" data-title>Landlords in the House: Advocates see a bias in Parliament against renters</span>
-			</div>
-								<div class="c-posts__about c-posts__about--multiple">
-																<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">9 hours</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">6 min read</div>
 															</div>
 						</div>
 					</a>
@@ -1597,6 +1596,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=12			data-parent-id=home-topStories					>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-1"
+	data-post-id="11918470"
+	data-slide-index=""
+	data-caption="Landlords in the House: Advocates see a bias in Parliament against renters"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11918470/advocates-see-bias-parliament-renters/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				src=https://globalnews.ca/wp-content/uploads/2026/03/renting-sign_1.jpg?quality=65&#038;strip=all&#038;w=720												width="720" height="405" alt="" 
+											srcset="https://globalnews.ca/wp-content/uploads/2026/03/renting-sign_1.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/renting-sign_1.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/renting-sign_1.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Landlords in the House: Advocates see a bias in Parliament against renters" data-title>Landlords in the House: Advocates see a bias in Parliament against renters</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">11 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">6 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-2"
 	data-post-id="11941453"
 	data-slide-index=""
 	data-caption="Canadian teacher in Venezuela describes chaos as earthquakes&#8217; death toll climbs"
@@ -1604,14 +1635,16 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11941453/canada-venezuela-earthquakes/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				src=https://globalnews.ca/wp-content/uploads/2026/06/Screenshot-2026-06-27-111417.png?w=720												width="720" height="436" alt="" 
-											srcset="https://globalnews.ca/wp-content/uploads/2026/06/Screenshot-2026-06-27-111417.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/Screenshot-2026-06-27-111417.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/Screenshot-2026-06-27-111417.png?w=720 720w,"				sizes="auto"						/>
+				data-src=https://globalnews.ca/wp-content/uploads/2026/06/Screenshot-2026-06-27-111417.png?w=720													loading="lazy"
+								width="720" height="436" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/Screenshot-2026-06-27-111417.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/Screenshot-2026-06-27-111417.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/Screenshot-2026-06-27-111417.png?w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
@@ -1623,40 +1656,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jun 27</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-2"
-	data-post-id="11942024"
-	data-slide-index=""
-	data-caption="France records around 1,000 additional deaths amid extreme heat wave leading to European records"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11942024/france-deaths-extreme-heat/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/06/c25642e3812112d55b2da44fa1db036a0bbd5efabbc8b4ac8d6057a1c9b3e654.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/c25642e3812112d55b2da44fa1db036a0bbd5efabbc8b4ac8d6057a1c9b3e654.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/c25642e3812112d55b2da44fa1db036a0bbd5efabbc8b4ac8d6057a1c9b3e654.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/c25642e3812112d55b2da44fa1db036a0bbd5efabbc8b4ac8d6057a1c9b3e654.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="France records around 1,000 additional deaths amid extreme heat wave leading to European records" data-title>France records around 1,000 additional deaths amid extreme heat wave leading to European records</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Environment</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">7 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1685,6 +1684,40 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-3"
+	data-post-id="11942024"
+	data-slide-index=""
+	data-caption="France records around 1,000 additional deaths amid extreme heat wave leading to European records"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11942024/france-deaths-extreme-heat/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/06/c25642e3812112d55b2da44fa1db036a0bbd5efabbc8b4ac8d6057a1c9b3e654.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/c25642e3812112d55b2da44fa1db036a0bbd5efabbc8b4ac8d6057a1c9b3e654.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/c25642e3812112d55b2da44fa1db036a0bbd5efabbc8b4ac8d6057a1c9b3e654.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/c25642e3812112d55b2da44fa1db036a0bbd5efabbc8b4ac8d6057a1c9b3e654.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="France records around 1,000 additional deaths amid extreme heat wave leading to European records" data-title>France records around 1,000 additional deaths amid extreme heat wave leading to European records</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Environment</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">9 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-4"
 	data-post-id="11940775"
 	data-slide-index=""
 	data-caption="Lawyers &#8216;shocked&#8217; by lack of answers on &#8216;Lost Canadian&#8217; citizenship recalls"
@@ -1692,7 +1725,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11940775/lost-canadian-citizenship-recalls-lawyers/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -1711,42 +1744,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">8 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">10 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-4"
-	data-post-id="11938024"
-	data-slide-index=""
-	data-caption="Canada eyes victory over South Africa in 1st World Cup elimination match"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11938024/canada-south-africa-world-cup-fifa/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/06/canada-switzerland-world-cup-e1782500110207.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/canada-switzerland-world-cup-e1782500110207.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/canada-switzerland-world-cup-e1782500110207.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/canada-switzerland-world-cup-e1782500110207.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Canada eyes victory over South Africa in 1st World Cup elimination match" data-title>Canada eyes victory over South Africa in 1st World Cup elimination match</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">9 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1787,34 +1786,34 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-6"
-	data-post-id="11936748"
+	data-post-id="11942239"
 	data-slide-index=""
-	data-caption="Is listening to FM radio in the car endangered? It just might be"
+	data-caption="Skydiving plane crashes in France killing 11: officials"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11936748/is-listening-to-fm-radio-in-the-car-endangered/"
+		href="https://globalnews.ca/news/11942239/skydiving-plane-crash-france-deaths/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
 			>
 			
-		<div class="c-posts__media  c-imageContainer"  >
+		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2020/06/car-radio.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=540 data-ratio=0.67									loading="lazy"
-								width="720" height="540" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2026/06/skydiving-crash.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2020/06/car-radio.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2020/06/car-radio.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2020/06/car-radio.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/skydiving-crash.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/skydiving-crash.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/skydiving-crash.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Is listening to FM radio in the car endangered? It just might be" data-title>Is listening to FM radio in the car endangered? It just might be</span>
+					<span class="c-posts__headlineText" title="Skydiving plane crashes in France killing 11: officials" data-title>Skydiving plane crashes in France killing 11: officials</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Entertainment</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">5 hours</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">18 mins</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1843,6 +1842,74 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-7"
+	data-post-id="11942234"
+	data-slide-index=""
+	data-caption="Rescue teams race against clock to find Venezuela earthquake survivors"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11942234/venezuela-survivor-rescue-teams/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/06/venezuela-earthquake-rescue.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/venezuela-earthquake-rescue.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/venezuela-earthquake-rescue.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/venezuela-earthquake-rescue.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Rescue teams race against clock to find Venezuela earthquake survivors" data-title>Rescue teams race against clock to find Venezuela earthquake survivors</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">26 mins</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-8"
+	data-post-id="11936748"
+	data-slide-index=""
+	data-caption="Is listening to FM radio in the car endangered? It just might be"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11936748/is-listening-to-fm-radio-in-the-car-endangered/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2020/06/car-radio.jpg?quality=65&#038;strip=all&#038;w=720				data-width=720 data-height=540 data-ratio=0.67									loading="lazy"
+								width="720" height="540" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2020/06/car-radio.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2020/06/car-radio.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2020/06/car-radio.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Is listening to FM radio in the car endangered? It just might be" data-title>Is listening to FM radio in the car endangered? It just might be</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Entertainment</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">7 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-9"
 	data-post-id="11942021"
 	data-slide-index=""
 	data-caption="Will new CRTC rules truly lead to lower bills?"
@@ -1850,7 +1917,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11942021/crtc-rules-lower-bills/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1869,14 +1936,14 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Economy</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">7 hours</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">9 hours</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
 														</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-8"
+	data-container-id="stories-item-10"
 	data-post-id="11941707"
 	data-slide-index=""
 	data-caption="Flooding concerns, tornado threats sweep across Canadian Prairies"
@@ -1884,7 +1951,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11941707/canada-weather-outlook/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -1909,16 +1976,16 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 									</div>
 		</a>
 	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-9"
+<li class="c-posts__item    is-hidden"
+	data-container-id="stories-item-11"
 	data-post-id="11941666"
 	data-slide-index=""
 	data-caption="Manitoba wildfire forces mandatory evacuation of Lynn Lake"
-		>
+		data-ad-fallback=false>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11941666/wildfire-mandatory-evacuation-lynn-lake/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -1943,16 +2010,16 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 									</div>
 		</a>
 	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-10"
+<li class="c-posts__item    is-hidden"
+	data-container-id="stories-item-12"
 	data-post-id="11941663"
 	data-slide-index=""
 	data-caption="B.C. premier visiting China to pitch LNG project as province&#8217;s &#8216;really big fish&#8217;"
-		>
+		data-ad-fallback=false>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11941663/eby-china-trip/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:11}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1977,74 +2044,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 									</div>
 		</a>
 	</li>
-<li class="c-posts__item    is-hidden"
-	data-container-id="stories-item-11"
-	data-post-id="11941636"
-	data-slide-index=""
-	data-caption="Canada&#8217;s first offshore wind farms move closer to reality as regulator clears bidders"
-		data-ad-fallback=false>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11941636/ns-offshore-wind-farms/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/06/4638a602e21830fbf3c4a0f287abed7fc0c0bec79db08d9b064da5d205515c07_bf2d63.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/4638a602e21830fbf3c4a0f287abed7fc0c0bec79db08d9b064da5d205515c07_bf2d63.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/4638a602e21830fbf3c4a0f287abed7fc0c0bec79db08d9b064da5d205515c07_bf2d63.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/4638a602e21830fbf3c4a0f287abed7fc0c0bec79db08d9b064da5d205515c07_bf2d63.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Canada&#8217;s first offshore wind farms move closer to reality as regulator clears bidders" data-title>Canada&#8217;s first offshore wind farms move closer to reality as regulator clears bidders</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jun 27</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    is-hidden"
-	data-container-id="stories-item-12"
-	data-post-id="11941415"
-	data-slide-index=""
-	data-caption="Museum exhibit on displaced Palestinians to open"
-		data-ad-fallback=false>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11941415/museum-exhibit-palestinians/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:11}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/06/7e5a60cc0119c5a2506e4efc4dc4b8441dde7e952e077973c8c9b456e7f6ae61.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/7e5a60cc0119c5a2506e4efc4dc4b8441dde7e952e077973c8c9b456e7f6ae61.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/7e5a60cc0119c5a2506e4efc4dc4b8441dde7e952e077973c8c9b456e7f6ae61.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/7e5a60cc0119c5a2506e4efc4dc4b8441dde7e952e077973c8c9b456e7f6ae61.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Museum exhibit on displaced Palestinians to open" data-title>Museum exhibit on displaced Palestinians to open</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Entertainment</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jun 27</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
 			</ul>
 						</div>
 			</section>
@@ -2062,10 +2061,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay="true"
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6a41709fbe4e4"
+			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6a4189da59e52"
 			data-displayinline-video-id="49a91e7f-1023-430f-8d66-561055f3d0f7"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6a41709fbe4e4"
+    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6a4189da59e52"
     		    			data-displayinline-playlist="49a91e7f-1023-430f-8d66-561055f3d0f7"
     									data-displayinline-container="mini-ott"
 																data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;recent_terms_datastore&quot;,&quot;type&quot;:&quot;wlo_option&quot;}}"
@@ -2207,7 +2206,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Asteroid set to be nearest to Earth since 1600s can be seen from Canada" data-title>Asteroid set to be nearest to Earth since 1600s can be seen from Canada</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">9,225</span>
+							<span class="c-posts__info c-posts__info--highlight">10,219</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2238,7 +2237,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Canadian teacher in Venezuela describes chaos as earthquakes&#8217; death toll climbs" data-title>Canadian teacher in Venezuela describes chaos as earthquakes&#8217; death toll climbs</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">8,859</span>
+							<span class="c-posts__info c-posts__info--highlight">10,105</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2269,7 +2268,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Alberta woman catches close encounter with Kananaskis grizzly bear on camera" data-title>Alberta woman catches close encounter with Kananaskis grizzly bear on camera</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">7,615</span>
+							<span class="c-posts__info c-posts__info--highlight">8,685</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2300,16 +2299,16 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Canada eyes victory over South Africa in 1st World Cup elimination match" data-title>Canada eyes victory over South Africa in 1st World Cup elimination match</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">6,353</span>
+							<span class="c-posts__info c-posts__info--highlight">7,646</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
 											</div>
 				</a>
 			</li>
-								<li class="c-posts__item" data-post-id="11940283">
+								<li class="c-posts__item" data-post-id="11918470">
 				<a
-					href="https://globalnews.ca/news/11940283/omega-block-europe-heatwave-canada-explainer/"
+					href="https://globalnews.ca/news/11918470/advocates-see-bias-parliament-renters/"
 					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:4}"
 				>
 					<div class="c-posts__rank">
@@ -2321,17 +2320,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/06/9c1a13f553a425f68b9382c76453e16af7226547aa20791553fd9c2f46ba6295.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2026/03/renting-sign_1.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="405" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/9c1a13f553a425f68b9382c76453e16af7226547aa20791553fd9c2f46ba6295.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/9c1a13f553a425f68b9382c76453e16af7226547aa20791553fd9c2f46ba6295.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/9c1a13f553a425f68b9382c76453e16af7226547aa20791553fd9c2f46ba6295.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/renting-sign_1.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/renting-sign_1.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/renting-sign_1.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 							<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="An &#8216;Omega block&#8217; is behind Europe&#8217;s heat wave — can it happen in Canada?" data-title>An &#8216;Omega block&#8217; is behind Europe&#8217;s heat wave — can it happen in Canada?</span>
+					<span class="c-posts__headlineText" title="Landlords in the House: Advocates see a bias in Parliament against renters" data-title>Landlords in the House: Advocates see a bias in Parliament against renters</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">5,109</span>
+							<span class="c-posts__info c-posts__info--highlight">6,217</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2402,8 +2401,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<input type="hidden" id="s_brand" name="s_brand" value="gn" />
 				<input type="hidden" id="s_gn_daily_national" name="s_gn_daily_national" value="100" data-newsletter-inline-code />
 				<input type="hidden" id="s_collector" name="s_collector" value="" />
-				<input type="hidden" id="s_create_date" name="s_create_date" value="2026-06-28 19:06:07" />
-				<input type="hidden" id="s_last_modified" name="s_last_modified" value="2026-06-28 19:06:07" />
+				<input type="hidden" id="s_create_date" name="s_create_date" value="2026-06-28 20:53:46" />
+				<input type="hidden" id="s_last_modified" name="s_last_modified" value="2026-06-28 20:53:46" />
 			</fieldset>
 			<label for="ns-region-home-email-input" class="sr-only">Sign up for National newsletter</label>
 			<input id="ns-region-home-email-input" type="text" class="c-newsletterSignup__input" placeholder="Email address" data-newsletter-inline-email />
@@ -2452,7 +2451,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Asteroid set to be nearest to Earth since 1600s can be seen from Canada" data-title>Asteroid set to be nearest to Earth since 1600s can be seen from Canada</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">9,225</span>
+							<span class="c-posts__info c-posts__info--highlight">10,219</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2483,7 +2482,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Canadian teacher in Venezuela describes chaos as earthquakes&#8217; death toll climbs" data-title>Canadian teacher in Venezuela describes chaos as earthquakes&#8217; death toll climbs</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">8,859</span>
+							<span class="c-posts__info c-posts__info--highlight">10,105</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2514,7 +2513,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Alberta woman catches close encounter with Kananaskis grizzly bear on camera" data-title>Alberta woman catches close encounter with Kananaskis grizzly bear on camera</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">7,615</span>
+							<span class="c-posts__info c-posts__info--highlight">8,685</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2545,16 +2544,16 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Canada eyes victory over South Africa in 1st World Cup elimination match" data-title>Canada eyes victory over South Africa in 1st World Cup elimination match</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">6,353</span>
+							<span class="c-posts__info c-posts__info--highlight">7,646</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
 											</div>
 				</a>
 			</li>
-								<li class="c-posts__item" data-post-id="11940283">
+								<li class="c-posts__item" data-post-id="11918470">
 				<a
-					href="https://globalnews.ca/news/11940283/omega-block-europe-heatwave-canada-explainer/"
+					href="https://globalnews.ca/news/11918470/advocates-see-bias-parliament-renters/"
 					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:4}"
 				>
 					<div class="c-posts__rank">
@@ -2566,17 +2565,17 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<div class="c-posts__media "  >
 						<img class="c-posts__thumbnail"
 				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/06/9c1a13f553a425f68b9382c76453e16af7226547aa20791553fd9c2f46ba6295.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
+				data-src=https://globalnews.ca/wp-content/uploads/2026/03/renting-sign_1.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="405" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/9c1a13f553a425f68b9382c76453e16af7226547aa20791553fd9c2f46ba6295.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/9c1a13f553a425f68b9382c76453e16af7226547aa20791553fd9c2f46ba6295.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/9c1a13f553a425f68b9382c76453e16af7226547aa20791553fd9c2f46ba6295.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/renting-sign_1.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/renting-sign_1.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/renting-sign_1.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
 													</div>
 							<div class="c-posts__details">
 									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="An &#8216;Omega block&#8217; is behind Europe&#8217;s heat wave — can it happen in Canada?" data-title>An &#8216;Omega block&#8217; is behind Europe&#8217;s heat wave — can it happen in Canada?</span>
+					<span class="c-posts__headlineText" title="Landlords in the House: Advocates see a bias in Parliament against renters" data-title>Landlords in the House: Advocates see a bias in Parliament against renters</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">5,109</span>
+							<span class="c-posts__info c-posts__info--highlight">6,217</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2952,8 +2951,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-miniplayer"
 			data-displayinline-video-id="11940848"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11940848,11937596,11941873,11941559,3226216/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fwh2oviqeh6-f3rxajqusz%2Fgrizz.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
-    		    			data-displayinline-playlist="11940848,11937596,11941873,11941559,3226216"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11940848,11938873,11941873,3226216,11941559/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fwh2oviqeh6-f3rxajqusz%2Fgrizz.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
+    		    			data-displayinline-playlist="11940848,11938873,11941873,3226216,11941559"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Woman has terrifying encounter with a grizzly bear while walking her dog in Alberta&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;],&quot;keywords&quot;:[&quot;bear-attack&quot;,&quot;grizzly-bear&quot;,&quot;grizzly-bear-attack&quot;,&quot;nature&quot;,&quot;short-clip&quot;]}}"
 			    		>
@@ -3021,8 +3020,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11940848"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11940848,11937596,11941873,11941559,3226216/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11940848,11937596,11941873,11941559,3226216"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11940848,11938873,11941873,3226216,11941559/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11940848,11938873,11941873,3226216,11941559"
 			data-video-carousel-label="News"
 			data-video-carousel-content="A woman had a frighteningly close encounter with a grizzly bear as she was walking her dog at a wilderness camp in Alberta, Canada, on Wednesday. Jelmer de Blois, a licensed hiking and wilderness guide with Wilderness Escape Adventures, said the woman, Jessie, had just stepped outside with her morning coffee in hand to walk her dog Skoki down the gravel driveway when the bear appeared. "
 			>
@@ -3043,18 +3042,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="What Canada&#8217;s loss to Switzerland means for its World Cup prospects" data-slide-index="1">
-	<a href="https://globalnews.ca/video/11937596/what-canadas-loss-to-switzerland-means-for-its-world-cup-prospects/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Developers didn’t ask ‘directly’ for B.C. vacant condo plan, Carney says" data-slide-index="1">
+	<a href="https://globalnews.ca/video/11938873/developers-didnt-ask-directly-for-b-c-vacant-condo-plan-carney-says/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11937596"
+					data-video-id="11938873"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11937596,11941873,11941559,3226216,11940848/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11937596,11941873,11941559,3226216,11940848"
-			data-video-carousel-label="Canada"
-			data-video-carousel-content="Canada is advancing to the knockout rounds of the World Cup, but the team&#039;s immediate outlook is now different after losing to Switzerland. Eric Sorensen recaps Canada&#039;s loss in the final group stage game, and what it means for the Round of 32."
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11938873,11941873,3226216,11941559,11940848/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11938873,11941873,3226216,11941559,11940848"
+			data-video-carousel-label="Politics"
+			data-video-carousel-content="Converting British Columbia&#039;s glut of unsold condos into affordable housing is about supporting Canadians, not distressed developers, Prime Minister Mark Carney said Thursday, as he defended his government&#039;s proposal in a press conference in Ottawa. He said the developers did not “directly” ask him to pursue the plan."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/0xjlfbip0t-ypp2ytgj7z/260624-ERIC.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/ztd2jdz77p-enixto5u7t/TH_FED_PM_PRESSER_NATL_PRESS_THEATRE_1_thumbnail_1280x720_.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3063,9 +3062,9 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>
 		<div class="l-videoCarousel__details c-posts__details">
 							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+					<div class="c-posts__info c-posts__info--highlight">Politics</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">What Canada&#8217;s loss to Switzerland means for its World Cup prospects</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Developers didn’t ask ‘directly’ for B.C. vacant condo plan, Carney says</span></div>
 					</div>
 	</a>
 </li>
@@ -3075,8 +3074,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11941873"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11941873,11941559,3226216,11940848,11937596/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11941873,11941559,3226216,11940848,11937596"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11941873,3226216,11941559,11940848,11938873/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11941873,3226216,11941559,11940848,11938873"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="After much debate and discussion, the Canadian government’s signature housing legislation is now law. But the legislation, which received royal assent last week, is facing heavy criticism for ignoring demands from renters. Canada’s Parliament is full of landlords and homeowners. And as David Akin reports, advocates say that introduces an unacknowledged bias against Canadian renters. "
 			>
@@ -3097,40 +3096,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Death toll climbs in Venezuela after two devastating quakes, Red Cross races to help" data-slide-index="3">
-	<a href="https://globalnews.ca/video/11941559/death-toll-climbs-in-venezuela-after-two-devastating-quakes-red-cross-races-to-help/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11941559"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11941559,3226216,11940848,11937596,11941873/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11941559,3226216,11940848,11937596,11941873"
-			data-video-carousel-label="World"
-			data-video-carousel-content="The death toll in Venezuela continues to climb by the hour, with more than fifty thousand people still missing after two massive quakes devastated northern Venezuela. Global&#039;s Jazan Grewal is joined by Juliana Bravo, Head of Region for the Americas with the Canadian Red Cross to discuss the dire humanitarian response. "
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/97nhfsztwq-uk448cpn64/SAT_JAZAN_SITE_THUIMB_270626.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">World</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Death toll climbs in Venezuela after two devastating quakes, Red Cross races to help</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Knife-wielding man holds 13-year-old girl hostage in Russia" data-slide-index="4">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Knife-wielding man holds 13-year-old girl hostage in Russia" data-slide-index="3">
 	<a href="https://globalnews.ca/video/3226216/knife-wielding-man-holds-13-year-old-girl-hostage-in-russia/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="3226216"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/3226216,11940848,11937596,11941873,11941559/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="3226216,11940848,11937596,11941873,11941559"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/3226216,11941559,11940848,11938873,11941873/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="3226216,11941559,11940848,11938873,11941873"
 			data-video-carousel-label="Crime"
 			data-video-carousel-content="Police in Russia have released dramatic video of a tense hostage situation involving a 13-year-old girl and a knife-wielding man they say was high on heroin."
 			>
@@ -3147,6 +3119,33 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-posts__info c-posts__info--highlight">Crime</div>
 				</div>
 						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Knife-wielding man holds 13-year-old girl hostage in Russia</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Death toll climbs in Venezuela after two devastating quakes, Red Cross races to help" data-slide-index="4">
+	<a href="https://globalnews.ca/video/11941559/death-toll-climbs-in-venezuela-after-two-devastating-quakes-red-cross-races-to-help/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11941559"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11941559,11940848,11938873,11941873,3226216/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11941559,11940848,11938873,11941873,3226216"
+			data-video-carousel-label="World"
+			data-video-carousel-content="The death toll in Venezuela continues to climb by the hour, with more than fifty thousand people still missing after two massive quakes devastated northern Venezuela. Global&#039;s Jazan Grewal is joined by Juliana Bravo, Head of Region for the Americas with the Canadian Red Cross to discuss the dire humanitarian response. "
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/97nhfsztwq-uk448cpn64/SAT_JAZAN_SITE_THUIMB_270626.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">World</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Death toll climbs in Venezuela after two devastating quakes, Red Cross races to help</span></div>
 					</div>
 	</a>
 </li>
@@ -3183,19 +3182,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11937596,11941873,11941559,3226216/#autoplay&#038;stickyiframe=home-miniplayer_11937596"
+			href="https://globalnews.ca/video/embed/playlist/11938873,11941873,3226216,11941559/#autoplay&#038;stickyiframe=home-miniplayer_11938873"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11937596"
+			data-displayinline-player-id="home-miniplayer_11938873"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11937596,11941873,11941559,3226216/#autoplay&#038;stickyiframe=home-miniplayer_11937596"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11938873,11941873,3226216,11941559/#autoplay&#038;stickyiframe=home-miniplayer_11938873"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/0xjlfbip0t-ypp2ytgj7z/260624-ERIC.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/ztd2jdz77p-enixto5u7t/TH_FED_PM_PRESSER_NATL_PRESS_THEATRE_1_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'What Canada&#8217;s loss to Switzerland means for its World Cup prospects'"
+					alt="Click to play video 'Developers didn’t ask ‘directly’ for B.C. vacant condo plan, Carney says'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3204,11 +3203,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11937596/what-canadas-loss-to-switzerland-means-for-its-world-cup-prospects/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/11938873/developers-didnt-ask-directly-for-b-c-vacant-condo-plan-carney-says/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+					<div class="c-posts__info c-posts__info--highlight">Politics</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">What Canada&#8217;s loss to Switzerland means for its World Cup prospects</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Developers didn’t ask ‘directly’ for B.C. vacant condo plan, Carney says</span></div>
 		</a>
 	</div>
 </li>
@@ -3238,11 +3237,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11941873,11941559,3226216,11937596/#autoplay&#038;stickyiframe=home-miniplayer_11941873"
+			href="https://globalnews.ca/video/embed/playlist/11941873,3226216,11941559,11938873/#autoplay&#038;stickyiframe=home-miniplayer_11941873"
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11941873"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11941873,11941559,3226216,11937596/#autoplay&#038;stickyiframe=home-miniplayer_11941873"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11941873,3226216,11941559,11938873/#autoplay&#038;stickyiframe=home-miniplayer_11941873"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3271,44 +3270,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11941559,3226216,11937596,11941873/#autoplay&#038;stickyiframe=home-miniplayer_11941559"
-			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11941559"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11941559,3226216,11937596,11941873/#autoplay&#038;stickyiframe=home-miniplayer_11941559"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/97nhfsztwq-uk448cpn64/SAT_JAZAN_SITE_THUIMB_270626.jpg?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Death toll climbs in Venezuela after two devastating quakes, Red Cross races to help'"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/11941559/death-toll-climbs-in-venezuela-after-two-devastating-quakes-red-cross-races-to-help/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">World</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Death toll climbs in Venezuela after two devastating quakes, Red Cross races to help</span></div>
-		</a>
-	</div>
-</li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/3226216,11937596,11941873,11941559/#autoplay&#038;stickyiframe=home-miniplayer_3226216"
+			href="https://globalnews.ca/video/embed/playlist/3226216,11941559,11938873,11941873/#autoplay&#038;stickyiframe=home-miniplayer_3226216"
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_3226216"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/3226216,11937596,11941873,11941559/#autoplay&#038;stickyiframe=home-miniplayer_3226216"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/3226216,11941559,11938873,11941873/#autoplay&#038;stickyiframe=home-miniplayer_3226216"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3330,6 +3296,39 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-posts__info c-posts__info--highlight">Crime</div>
 				</div>
 			<div class="c-posts__headline"><span class="c-posts__headlineText">Knife-wielding man holds 13-year-old girl hostage in Russia</span></div>
+		</a>
+	</div>
+</li>
+
+<li class="c-posts__item">
+	<div class="c-posts__inner">
+		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
+			href="https://globalnews.ca/video/embed/playlist/11941559,11938873,11941873,3226216/#autoplay&#038;stickyiframe=home-miniplayer_11941559"
+			data-displayinline-type="video"
+			data-displayinline-player-id="home-miniplayer_11941559"
+			data-displayinline-ratio="16:9"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11941559,11938873,11941873,3226216/#autoplay&#038;stickyiframe=home-miniplayer_11941559"
+			data-displayinline-sticky="true"
+			data-displayinline-expand="true">
+			<div class="c-video__placeholder">
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/97nhfsztwq-uk448cpn64/SAT_JAZAN_SITE_THUIMB_270626.jpg?w=384&#038;quality=70&#038;strip=all"
+					width="236"
+					height="133"
+					class="c-posts__thumbnail c-video__image"
+					alt="Click to play video 'Death toll climbs in Venezuela after two devastating quakes, Red Cross races to help'"
+					loading="lazy" />
+				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+			</div>
+		</a>
+		<a href="https://globalnews.ca/video/11941559/death-toll-climbs-in-venezuela-after-two-devastating-quakes-red-cross-races-to-help/" class="c-posts__details">
+				<div class="c-posts__about">
+					<div class="c-posts__info c-posts__info--highlight">World</div>
+				</div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Death toll climbs in Venezuela after two devastating quakes, Red Cross races to help</span></div>
 		</a>
 	</div>
 </li>
@@ -3394,12 +3393,78 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11941420"
+			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11941420/more-haitian-asylum-seekers/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="More Haitian asylum seekers to come, advocate says" data-title>More Haitian asylum seekers to come, advocate says</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						A Montreal-based advocate for asylum seekers says Canada should expect a new wave of Haitians trying to enter from the United States.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Politics</div>
+																						<div class="c-posts__info">Jun 27</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/06/b6f054977bfbe8ebe41c6358012a34d1259e92980a0a7a9362d0e231dea96777.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="485" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/b6f054977bfbe8ebe41c6358012a34d1259e92980a0a7a9362d0e231dea96777.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/b6f054977bfbe8ebe41c6358012a34d1259e92980a0a7a9362d0e231dea96777.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/b6f054977bfbe8ebe41c6358012a34d1259e92980a0a7a9362d0e231dea96777.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11941422"
+			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11941422/scratching-bug-bite-bad-idea/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Scratching that bug bite might feel good at first but science explains why it’s a bad idea" data-title>Scratching that bug bite might feel good at first but science explains why it’s a bad idea</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						WASHINGTON (AP) — You&#039;ve likely heard it since childhood: Don&#039;t scratch that bug bite or rash, you&#039;ll make it worse. But why would something that feels so good be bad?						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Health</div>
+																						<div class="c-posts__info">Jun 27</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/06/0fc900e9b706af8dcafbd4f7d66657f91dc84e2b7230be98cca237fb2034486a.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/0fc900e9b706af8dcafbd4f7d66657f91dc84e2b7230be98cca237fb2034486a.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/0fc900e9b706af8dcafbd4f7d66657f91dc84e2b7230be98cca237fb2034486a.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/0fc900e9b706af8dcafbd4f7d66657f91dc84e2b7230be98cca237fb2034486a.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
 				data-post-id="11940711"
 			>
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11940711/hiker-grizzly-bear-encounter-alberta-kananaskis-rocky-mountains/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3432,7 +3497,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11940283/omega-block-europe-heatwave-canada-explainer/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3465,7 +3530,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11940598/israel-lebanon-us-peace-framework-hezbollah/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3498,7 +3563,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11940282/large-asteroid-earth-canada/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3531,7 +3596,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11940501/trump-threatens-tariffs-europe-digital-services-tax/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3564,7 +3629,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11939969/king-charles-tax-bill-royal-family-finances/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3587,72 +3652,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								width="720" height="481" alt="" 
 												srcset='' sizes=''
 								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/King-Charles-crown.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/King-Charles-crown.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/King-Charles-crown.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11940238"
-			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11940238/canada-iran-venezuela-embassy/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Canada has no plans to open embassies in Venezuela and Iran, Anand says" data-title>Canada has no plans to open embassies in Venezuela and Iran, Anand says</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						While Ottawa is not looking to re-establish diplomatic relations with Iran, Prime Minister Mark Carney said the lack of diplomatic presence puts Canada &#039;at a disadvantage.&#039;						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																						<div class="c-posts__info">Jun 26</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/06/Carney-Anand-embassy.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/Carney-Anand-embassy.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/Carney-Anand-embassy.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/Carney-Anand-embassy.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11938222"
-			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11938222/emergency-room-wait-times-cihi-report/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Canadians spending more time waiting for emergency health care: CIHI" data-title>Canadians spending more time waiting for emergency health care: CIHI</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						One in 10 admitted patients, equalling around 180,000 people, spent more than 48 hours in the emergency department waiting for an inpatient bed.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Health</div>
-																						<div class="c-posts__info">Jun 26</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/03/involuntary-care.webp?w=720													loading="lazy"
-								width="720" height="405" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/03/involuntary-care.webp?w=336 336w,https://globalnews.ca/wp-content/uploads/2025/03/involuntary-care.webp?w=560 560w,https://globalnews.ca/wp-content/uploads/2025/03/involuntary-care.webp?w=720 720w,"				data-sizes="auto"						/>
 													</div>
 										</a>
 							</li>
@@ -3739,8 +3738,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-playlist-miniplayer"
 			data-displayinline-video-id="11940848"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/11940848,11937596,11941873,11941559,3226216/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fwh2oviqeh6-f3rxajqusz%2Fgrizz.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
-    		    			data-displayinline-playlist="11940848,11937596,11941873,11941559,3226216"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11940848,11938873,11941873,3226216,11941559/?poster=https%3A%2F%2Fi2.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Fwh2oviqeh6-f3rxajqusz%2Fgrizz.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
+    		    			data-displayinline-playlist="11940848,11938873,11941873,3226216,11941559"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Woman has terrifying encounter with a grizzly bear while walking her dog in Alberta&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;],&quot;keywords&quot;:[&quot;bear-attack&quot;,&quot;grizzly-bear&quot;,&quot;grizzly-bear-attack&quot;,&quot;nature&quot;,&quot;short-clip&quot;]}}"
 			    		>
@@ -3787,7 +3786,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="News"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11940848,11937596,11941873,11941559,3226216/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11940848,11938873,11941873,3226216,11941559/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Woman has terrifying encounter with a grizzly bear while walking her dog in Alberta</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -3808,23 +3807,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="2"
 	>
-	<a href="https://globalnews.ca/video/11937596/what-canadas-loss-to-switzerland-means-for-its-world-cup-prospects/"
-		title="What Canada&#8217;s loss to Switzerland means for its World Cup prospects"
+	<a href="https://globalnews.ca/video/11938873/developers-didnt-ask-directly-for-b-c-vacant-condo-plan-carney-says/"
+		title="Developers didn’t ask ‘directly’ for B.C. vacant condo plan, Carney says"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11937596"
-		data-video-label="Canada"
+		data-video-id="11938873"
+		data-video-label="Politics"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11937596,11941873,11941559,3226216/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11938873,11941873,3226216,11941559/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">What Canada&#8217;s loss to Switzerland means for its World Cup prospects</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Developers didn’t ask ‘directly’ for B.C. vacant condo plan, Carney says</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
+						Politics					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/0xjlfbip0t-ypp2ytgj7z/260624-ERIC.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/ztd2jdz77p-enixto5u7t/TH_FED_PM_PRESSER_NATL_PRESS_THEATRE_1_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3843,7 +3842,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11941873,11941559,3226216,11937596/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11941873,3226216,11941559,11938873/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Canadian government accused of bias against renters in signature housing legislation</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -3864,23 +3863,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="4"
 	>
-	<a href="https://globalnews.ca/video/11941559/death-toll-climbs-in-venezuela-after-two-devastating-quakes-red-cross-races-to-help/"
-		title="Death toll climbs in Venezuela after two devastating quakes, Red Cross races to help"
+	<a href="https://globalnews.ca/video/3226216/knife-wielding-man-holds-13-year-old-girl-hostage-in-russia/"
+		title="Knife-wielding man holds 13-year-old girl hostage in Russia"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11941559"
-		data-video-label="World"
+		data-video-id="3226216"
+		data-video-label="Crime"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11941559,3226216,11937596,11941873/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/3226216,11941559,11938873,11941873/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Death toll climbs in Venezuela after two devastating quakes, Red Cross races to help</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Knife-wielding man holds 13-year-old girl hostage in Russia</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						World					</div>
+						Crime					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/97nhfsztwq-uk448cpn64/SAT_JAZAN_SITE_THUIMB_270626.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/924/431/KnifeThumber_848x480_869631043769.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3892,23 +3891,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="5"
 	>
-	<a href="https://globalnews.ca/video/3226216/knife-wielding-man-holds-13-year-old-girl-hostage-in-russia/"
-		title="Knife-wielding man holds 13-year-old girl hostage in Russia"
+	<a href="https://globalnews.ca/video/11941559/death-toll-climbs-in-venezuela-after-two-devastating-quakes-red-cross-races-to-help/"
+		title="Death toll climbs in Venezuela after two devastating quakes, Red Cross races to help"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="3226216"
-		data-video-label="Crime"
+		data-video-id="11941559"
+		data-video-label="World"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/3226216,11937596,11941873,11941559/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11941559,11938873,11941873,3226216/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Knife-wielding man holds 13-year-old girl hostage in Russia</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Death toll climbs in Venezuela after two devastating quakes, Red Cross races to help</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Crime					</div>
+						World					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/924/431/KnifeThumber_848x480_869631043769.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/97nhfsztwq-uk448cpn64/SAT_JAZAN_SITE_THUIMB_270626.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4367,6 +4366,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-26"
+	data-post-id="11938920"
+	data-slide-index=""
+	data-caption="How 24 Sussex compares to official residences in other G7 countries"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11938920/24-sussex-official-residences-g7-countries/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/06/24-sussex-side-view-e1782486203898.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/24-sussex-side-view-e1782486203898.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/24-sussex-side-view-e1782486203898.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/24-sussex-side-view-e1782486203898.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="How 24 Sussex compares to official residences in other G7 countries" data-title>How 24 Sussex compares to official residences in other G7 countries</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >Jun 26</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-27"
 	data-post-id="11940116"
 	data-slide-index=""
 	data-caption="U.S. strikes Iran after Trump claims &#8216;foolish violation&#8217; of ceasefire"
@@ -4374,7 +4405,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11940116/trump-iran-ceasefire-violation/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -4388,38 +4419,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="U.S. strikes Iran after Trump claims &#8216;foolish violation&#8217; of ceasefire" data-title>U.S. strikes Iran after Trump claims &#8216;foolish violation&#8217; of ceasefire</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Jun 26</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-27"
-	data-post-id="11939958"
-	data-slide-index=""
-	data-caption="Sherritt shutting down Alberta refinery as feed from Moa mine in Cuba runs out"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11939958/shutting-down-alberta-refinery/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/02/8b909e6a5910683e6a5af4149491ea326f77b5b15b0856aab82e17bc6c6d7b7f.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/02/8b909e6a5910683e6a5af4149491ea326f77b5b15b0856aab82e17bc6c6d7b7f.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/02/8b909e6a5910683e6a5af4149491ea326f77b5b15b0856aab82e17bc6c6d7b7f.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/02/8b909e6a5910683e6a5af4149491ea326f77b5b15b0856aab82e17bc6c6d7b7f.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Sherritt shutting down Alberta refinery as feed from Moa mine in Cuba runs out" data-title>Sherritt shutting down Alberta refinery as feed from Moa mine in Cuba runs out</span>
 			</div>
 	
 						
@@ -4515,6 +4514,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-28"
+	data-post-id="11940446"
+	data-slide-index=""
+	data-caption="Swiss collector working with First Nations leaders to repatriate Indigenous artifacts"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11940446/swiss-collector-working-with-first-nations-leaders-to-repatriate-indigenous-artifacts/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2026/06/artifact-owner.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
+								width="720" height="405" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/artifact-owner.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/artifact-owner.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/artifact-owner.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Swiss collector working with First Nations leaders to repatriate Indigenous artifacts" data-title>Swiss collector working with First Nations leaders to repatriate Indigenous artifacts</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >52 mins</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-29"
 	data-post-id="11942128"
 	data-slide-index=""
 	data-caption="Concordia University shooter dies in prison at 86"
@@ -4522,7 +4553,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11942128/concordia-university-shooting-prison-death/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -4540,13 +4571,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >2 hours</div>
+																<div class="c-posts__info" data-date >4 hours</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-29"
+	data-container-id="stories-item-30"
 	data-post-id="11942041"
 	data-slide-index=""
 	data-caption="1 dead, 1 injured after fire at high-rise Toronto apartment building"
@@ -4554,7 +4585,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11942041/apartment-fire-toronto-death-victoria-park-ave/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -4572,39 +4603,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >6 hours</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-30"
-	data-post-id="11941670"
-	data-slide-index=""
-	data-caption="Edmonton police shoot man dead after alleged assaults during hit-and-runs"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11941670/edmonton-police-shooting-death/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2025/11/asirt.jpg?quality=65&#038;strip=all&#038;w=720													loading="lazy"
-								width="720" height="426" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/11/asirt.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/11/asirt.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/11/asirt.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Edmonton police shoot man dead after alleged assaults during hit-and-runs" data-title>Edmonton police shoot man dead after alleged assaults during hit-and-runs</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Jun 27</div>
+																<div class="c-posts__info" data-date >7 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -5045,6 +5044,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-38"
+	data-post-id="11938222"
+	data-slide-index=""
+	data-caption="Canadians spending more time waiting for emergency health care: CIHI"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11938222/emergency-room-wait-times-cihi-report/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+			>
+			
+		<div class="c-posts__media "  >
+						<img class="c-posts__thumbnail"
+				fetchpriority="high"
+				data-src=https://globalnews.ca/wp-content/uploads/2025/03/involuntary-care.webp?w=720													loading="lazy"
+								width="720" height="405" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/03/involuntary-care.webp?w=336 336w,https://globalnews.ca/wp-content/uploads/2025/03/involuntary-care.webp?w=560 560w,https://globalnews.ca/wp-content/uploads/2025/03/involuntary-care.webp?w=720 720w,"				data-sizes="auto"						/>
+													</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Canadians spending more time waiting for emergency health care: CIHI" data-title>Canadians spending more time waiting for emergency health care: CIHI</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >Jun 26</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-39"
 	data-post-id="11939096"
 	data-slide-index=""
 	data-caption="June brings on ALS Awareness Month"
@@ -5052,7 +5083,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11939096/june-brings-on-als-awareness-month/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5071,38 +5102,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about ">
 																<div class="c-posts__info" data-date >Jun 25</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-39"
-	data-post-id="11937330"
-	data-slide-index=""
-	data-caption="Red Deer high school students come together to help classmate fighting cancer"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11937330/red-deer-high-school-students-help-classmate-fight-cancer/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-						<img class="c-posts__thumbnail"
-				fetchpriority="high"
-				data-src=https://globalnews.ca/wp-content/uploads/2026/06/image00012.jpeg?quality=65&#038;strip=all&#038;w=540				data-width=540 data-height=720 data-ratio=0.67									loading="lazy"
-								width="540" height="720" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/image00012.jpeg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/image00012.jpeg?quality=65&#038;strip=all&#038;w=420 420w,https://globalnews.ca/wp-content/uploads/2026/06/image00012.jpeg?quality=65&#038;strip=all&#038;w=540 540w,"				data-sizes="auto"						/>
-													</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Red Deer high school students come together to help classmate fighting cancer" data-title>Red Deer high school students come together to help classmate fighting cancer</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Jun 24</div>
 																			</div>
 									</div>
 		</a>
@@ -5356,7 +5355,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >4 hours</div>
+																<div class="c-posts__info" data-date >6 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -6063,7 +6062,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 </script>
 		<!-- Adobe Analytics code version: JS-2.6.0. -->
 		<script type="text/javascript">
-			var gnPageData = {"context_data":{"hourofday":"15","dayofweek":"Sunday","weekdayweekend":"Weekend","userregion":"national","region":"national"},"sections":["home"],"props":[]};
+			var gnPageData = {"context_data":{"hourofday":"16","dayofweek":"Sunday","weekdayweekend":"Weekend","userregion":"national","region":"national"},"sections":["home"],"props":[]};
 		</script>
 				<!-- End Adobe Analytics code -->
 			<script>
@@ -6114,5 +6113,5 @@ var GN_OneSignalSettings = {"isCurator":"","appId":"8beb7996-b996-4ce8-a474-d488
 		
 		<div class="l-dynamicElement"></div>
 
-			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75660ba8f4","applicationID":"418684855","transactionName":"Z1BWZxdTWkAHVExRXF4adVARW1tdSV9XVVY=","queueTime":0,"applicationTime":447,"atts":"SxdBEV9JSR9EVhoCSE1I","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+			</body>
 </html>
