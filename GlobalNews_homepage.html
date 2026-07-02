@@ -184,8 +184,7 @@
         }
     </script>
     	<!-- Meta Tags -->
-	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"75660ba8f4",applicationID:"418684855",browserID:"419993820"};;/*! For license information please see nr-loader-rum-1.317.0.min.js.LICENSE.txt */
-(()=>{var e,t,r={384(e,t,r){"use strict";r.d(t,{NT:()=>a,Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),s=r(944),o=r(1910);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,o.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,s.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}},782(e,t,r){"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},860(e,t,r){"use strict";r.d(t,{$J:()=>d,K7:()=>c,P3:()=>u,XX:()=>i,Yy:()=>a,df:()=>s,qY:()=>n,v4:()=>o});const n="events",i="jserrors",s="browser/blobs",o="rum",a="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},u={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.softNav]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.sessionReplay]:8,[c.logging]:9,[c.genericEvents]:10},d={[c.pageViewEvent]:o,[c.pageViewTiming]:n,[c.ajax]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:s,[c.sessionReplay]:s,[c.logging]:a,[c.genericEvents]:"ins"}},944(e,t,r){"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},981(e,t,r){"use strict";r.d(t,{R:()=>n});const n={AJAX:"AjaxRequest",PA:"PageAction",UA:"UserAction",BP:"BrowserPerformance",WS:"WebSocket",SPV:"SecurityPolicyViolation",JSE:"JavaScriptError",LOG:"Log",PVE:"PageView",PVT:"PageViewTiming",SR:"SessionReplay",ST:"SessionTrace",BI:"BrowserInteraction"}},1687(e,t,r){"use strict";r.d(t,{Ak:()=>a,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),s=r(860),o=r(2646);function a(e,t){if(!e)return;const r={staged:!1,priority:s.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const s=e.ee,a=i.i.handlers;if(s&&!s.aborted&&s.backlog&&a){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=s.backlog[t],r=a[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof o.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}s.isolatedBacklog||delete a[t],s.backlog[t]=null,s.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],s=e[2];n.apply(i,s)}})}},1738(e,t,r){"use strict";r.d(t,{U:()=>f,Y:()=>l});var n=r(3241),i=r(9908),s=r(1863),o=r(944),a=r(3969),c=r(8362),u=r(860),d=r(4261);function l(e,t,r,s){const l=s||r;!l||l[e]&&l[e]!==c.d.prototype[e]||(l[e]=function(){(0,i.p)(a.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:d.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,o.R)(23,e)}})}function f(e,t,r,n,o){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(o||null===r)&&(0,i.p)(d.Pl+n,[(0,s.t)(),t,r],void 0,"session",e.ee)}},1741(e,t,r){"use strict";r.d(t,{W:()=>s});var n=r(944),i=r(4261);class s{#e(e,...t){if(this[e]!==s.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},1863(e,t,r){"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},1910(e,t,r){"use strict";r.d(t,{i:()=>s});var n=r(944);const i=new Map;function s(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),s=t.includes("nrWrapper");return r||s||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},2555(e,t,r){"use strict";r.d(t,{D:()=>a,f:()=>o});var n=r(384),i=r(8122);const s={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function o(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const a=e=>(0,i.a)(e,s)},2614(e,t,r){"use strict";r.d(t,{BB:()=>s,Wt:()=>n,g:()=>c,iL:()=>a,tS:()=>o,wk:()=>i});const n="NRBA_SESSION::",i=144e5,s=18e5,o={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},a={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},c={OFF:0,FULL:1,ERROR:2}},2646(e,t,r){"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},2843(e,t,r){"use strict";r.d(t,{G:()=>s,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function s(e,t,r){(0,n.sp)("pagehide",e,t,r)}},3241(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(6154);function i(e={}){try{n.gm.dispatchEvent(new CustomEvent("newrelic",{detail:e}))}catch(e){}}},3606(e,t,r){"use strict";r.d(t,{i:()=>s});var n=r(9908);s.on=o;var i=s.handlers={};function s(e,t,r,s){o(s||n.d,i,e,t,r)}function o(e,t,r,i,s){s||(s="feature"),e||(e=n.d);var o=t[s]=t[s]||{};(o[r]=o[r]||[]).push([e,i])}},3878(e,t,r){"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function s(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>s,jT:()=>n,sp:()=>i})},3969(e,t,r){"use strict";r.d(t,{TZ:()=>n,XG:()=>a,rs:()=>i,xV:()=>o,z_:()=>s});const n=r(860).K7.metrics,i="sm",s="cm",o="storeSupportabilityMetrics",a="storeEventMetrics"},4234(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},4261(e,t,r){"use strict";r.d(t,{$9:()=>u,BL:()=>a,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>h,Pl:()=>n,Pv:()=>A,Tb:()=>l,U2:()=>s,V1:()=>x,Wb:()=>R,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>o,nb:()=>m,o5:()=>d});const n="api-",i="addPageAction",s="addToTrace",o="addRelease",a="finished",c="interaction",u="log",d="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",m="setApplicationVersion",h="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",R="wrapLogger",x="measure",A="consent"},5289(e,t,r){"use strict";r.d(t,{GG:()=>o,Qr:()=>c,sB:()=>a});var n=r(3878),i=r(6389);function s(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(s())return e();const r=(0,i.J)(e),o=setInterval(()=>{s()&&(clearInterval(o),r())},500);(0,n.sp)("load",r,t)}function a(e){if(s())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(s())return e();(0,n.sp)("popstate",e)}},5607(e,t,r){"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},6154(e,t,r){"use strict";r.d(t,{OF:()=>u,RI:()=>i,WN:()=>l,bv:()=>s,gm:()=>o,m:()=>c,mw:()=>a,sb:()=>d,zk:()=>f});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,s="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),c=""+o?.location,u=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)()),f=()=>{const e=o?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<o.performance.now())return e}},6389(e,t,r){"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},6630(e,t,r){"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},7699(e,t,r){"use strict";r.d(t,{It:()=>s,KC:()=>a,No:()=>i,qh:()=>o});var n=r(860);const i=16e3,s=1e6,o="SESSION_ERROR",a={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0}},7836(e,t,r){"use strict";r.d(t,{P:()=>a,ee:()=>c});var n=r(384),i=r(8990),s=r(2646),o=r(5607);const a="nr@context:".concat(o.W),c=function e(t,r){var n={},o={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,s){!1!==s&&(s=!0);if(c.aborted&&!i)return;t&&s&&t.emit(e,r,n);var a=g(n);m(e).forEach(e=>{e.apply(a,r)});var u=v()[o[e]];u&&u.push([f,e,r,a]);return a},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{o[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[o[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof s.y?e:e?(0,i.I)(e,a,()=>new s.y(a)):new s.y(a)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c)},8122(e,t,r){"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),s=0===Object.keys(r).length?e:r;for(let o in s)if(void 0!==e[o])try{if(null===e[o]){r[o]=null;continue}Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):e[o]instanceof Map||e[o]instanceof Set||e[o]instanceof Date||e[o]instanceof RegExp?r[o]=e[o]:"object"==typeof e[o]&&"object"==typeof t[o]?r[o]=i(e[o],t[o]):r[o]=e[o]}catch(e){r[o]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},8362(e,t,r){"use strict";r.d(t,{d:()=>s});var n=r(9566),i=r(1741);class s extends i.W{agentIdentifier=(0,n.LA)(16)}},8374(e,t,r){r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},8990(e,t,r){"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},9324(e,t,r){"use strict";r.d(t,{F3:()=>i,Xs:()=>s,xv:()=>n});const n="1.317.0",i="PROD",s="CDN"},9566(e,t,r){"use strict";r.d(t,{LA:()=>o,bz:()=>s});var n=r(6154);function i(e,t){return e?15&e[t]:16*Math.random()|0}function s(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".split("").map(e=>"x"===e?i(t,r++).toString(16):"y"===e?(3&i()|8).toString(16):e).join("")}function o(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,s=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const o=[];for(var a=0;a<e;a++)o.push(i(r,s++).toString(16));return o.join("")}},9908(e,t,r){"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,s){s?(s.buffer([e],i),s.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var s=n[e]={exports:{}};return r[e](s,s.exports,i),s.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce((t,r)=>(i.f[r](e,t),t),[])),i.u=e=>"nr-rum-1.317.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.317.0.PROD:",i.l=(r,n,s,o)=>{if(e[r])e[r].push(n);else{var a,c;if(void 0!==s)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+s){a=l;break}}if(!a){c=!0;var f={296:"sha512-dDeLB65HNhC/52vAGvWxqlhzdrCMMyKyfDMLuD3glK6yvtLAoc7fLRa5TyYwZurrYnIgxKx6VGqcGByXhK/6SA=="};(a=document.createElement("script")).charset="utf-8",i.nc&&a.setAttribute("nonce",i.nc),a.setAttribute("data-webpack",t+s),a.src=r,0!==a.src.indexOf(window.location.origin+"/")&&(a.crossOrigin="anonymous"),f[o]&&(a.integrity=f[o])}e[r]=[n];var g=(t,n)=>{a.onerror=a.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],a.parentNode&&a.parentNode.removeChild(a),i&&i.forEach(e=>e(n)),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:a}),12e4);a.onerror=g.bind(null,a.onerror),a.onload=g.bind(null,a.onload),c&&document.head.appendChild(a)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var s=new Promise((r,i)=>n=e[t]=[r,i]);r.push(n[2]=s);var o=i.p+i.u(t),a=new Error;i.l(o,r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var s=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;a.message="Loading chunk "+t+" failed: ("+s+": "+o+")",a.name="ChunkLoadError",a.type=s,a.request=o,n[1](a)}},"chunk-"+t,t)}};var t=(t,r)=>{var n,s,[o,a,c]=r,u=0;if(o.some(t=>0!==e[t])){for(n in a)i.o(a,n)&&(i.m[n]=a[n]);if(c)c(i)}for(t&&t(r);u<o.length;u++)s=o[u],i.o(e,s)&&e[s]&&e[s][0](),e[s]=0},r=self["webpackChunk:NRBA-1.317.0.PROD"]=self["webpackChunk:NRBA-1.317.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(8362),t=i(860);const r=Object.values(t.K7);var n=i(384),s=i(1741);var o=i(2555),a=i(981);t.K7.genericEvents,a.R.PA,a.R.UA,a.R.BP;const c="experimental.resources",u="register",d=(t.K7.ajax,"none"),l=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var f=i(2614),g=i(944),p=i(8122);const m="[data-nr-mask]",h=e=>(0,p.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0,capture_payloads:d},api:{register:{get enabled(){return e.feature_flags.includes(u)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:f.wk,inactiveMs:f.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){l(t)?e.mask_selector="".concat(t,",").concat(m):""===t||null===t?e.mask_selector=m:(0,g.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){l(t)?e.block_selector+=",".concat(t):""!==t&&(0,g.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,g.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var v=i(6154),b=i(9324);let y=0;const _={buildEnv:b.F3,distMethod:b.Xs,version:b.xv,originTime:v.WN},w={consented:!1},R={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||w.consented},set consented(e){w.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++y}};var x=i(7836),A=i(3241);const k={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0};function S(e,t={},r,a){let{init:c,info:u,loader_config:d,runtime:l={},exposed:f=!0}=t;if(!u){const e=(0,n.pV)();c=e.init,u=e.info,d=e.loader_config}var g;e.init=h(c||{}),e.loader_config=(g=d||{},(0,p.a)(g,k)),u.jsAttributes??={},v.bv&&(u.jsAttributes.isWorker=!0),e.info=(0,o.D)(u);const m=e.init;e.runtime??=(e=>{const t=(0,p.a)(e,R),r=Object.keys(_).reduce((e,t)=>(e[t]={value:_[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)})(l),m.proxy.assets&&(e=>{const t=e.startsWith("http");e+="/",i.p=t?e:"https://"+e})(m.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(s.W.prototype).forEach(r=>{const n=s.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let i=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return i?i(...t):n})})}(e),e.runtime.loaderType=r,e.ee=x.ee.get(e.agentIdentifier),e.exposed=f,(0,A.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.runtime.configured=!0)}var T=i(9908),E=i(1863),j=i(4261),P=i(1738);var N=i(1687),O=i(4234),M=i(5289);const I=e=>v.RI&&!0===e?.privacy.cookies_enabled;function D(e){return!!(0,n.dV)().o.MO&&I(e)&&!0===e?.session_trace.enabled}var W=i(6389),V=i(7699);const B=new WeakSet;class K extends O.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,W.J)(()=>{(0,N.Ak)(e,this.featureName),t()}))}):(0,N.Ak)(e,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;const n=async()=>{if(await this.deferred,this.#t(e),!(0,o.f)(e.info))return(0,g.R)(43),e.ee.abort(),void this.loadedSuccessfully(!1);let n;try{if(I(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,8));n=t(e)}}catch(e){(0,g.R)(20,e),this.ee.emit("internal-error",[e]),(0,T.p)(V.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#r(this.featureName,n,e.init))return(0,N.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,g.R)(34,e),this.abortHandler?.(),(0,N.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1),this.ee&&this.ee.abort()}};v.RI?(0,M.GG)(()=>n(),!0):n()}#r(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return D(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}#t(e){if(!B.has(e)&&(B.add(e),!(0,o.f)(e.info))){const t=(0,n.pV)();let r={...t.info?.jsAttributes};try{r={...r,...e.info?.jsAttributes}}catch(e){}S(e,{...t,info:{...t.info,jsAttributes:r},runtime:e.runtime},e.runtime.loaderType)}}}var C=i(6630);class U extends K{static featureName=C.T;constructor(e){var t;super(e,C.T),this.setupInspectionEvents(),t=e,(0,P.Y)(j.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,T.p)(j.Pl+j.Fw,[(0,E.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>i.e(296).then(i.bind(i,1324)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,A.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,M.sB)(t=>{e(t,"DOMContentLoaded")}),(0,M.GG)(t=>{e(t,"load")}),(0,M.Qr)(t=>{e(t,"navigate")}),this.ee.on(f.tS.UPDATE,(e,t)=>{(0,A.W)({type:"lifecycle",name:"session",data:t})})}}class F extends e.d{constructor(e){var t;(super(),v.gm)?(this.features={},(0,n.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(U),S(this,e,e.loaderType||"agent"),t=this,(0,P.Y)(j.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,P.U)(t,e,r,j.cD,n);(0,g.R)(40,typeof r)}else(0,g.R)(39,typeof e)},t),function(e){(0,P.Y)(j.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,g.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,T.p)(j.Pl+"setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,P.U)(e,"enduser.id",t,j.Dl,!0)},e)}(this),function(e){(0,P.Y)(j.nb,function(t){if("string"==typeof t||null===t)return(0,P.U)(e,"application.version",t,j.nb,!1);(0,g.R)(42,typeof t)},e)}(this),function(e){(0,P.Y)(j.d3,function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,P.Y)(j.Pv,function(t=!0){if("boolean"==typeof t){if((0,T.p)(j.Pl+j.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum()})}}else(0,g.R)(65,typeof t)},e)}(this),this.run()):(0,g.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return r.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),n=[...this.desiredFeatures];n.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),n.forEach(r=>{if(!e[r.featureName]&&r.featureName!==t.K7.pageViewEvent)return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,g.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,g.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,n.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var L=i(2843),G=i(782);class H extends K{static featureName=G.T;constructor(e){super(e,G.T),v.RI&&((0,L.u)(()=>(0,T.p)("docHidden",[(0,E.t)()],void 0,G.T,this.ee),!0),(0,L.G)(()=>(0,T.p)("winPagehide",[(0,E.t)()],void 0,G.T,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,2117))))}}var z=i(3969);class Y extends K{static featureName=z.TZ;constructor(e){super(e,z.TZ),this.importAggregator(e,()=>i.e(296).then(i.bind(i,9623)))}}new F({features:[U,H,Y],loaderType:"lite"})})()})();</script>
+	<meta charset="UTF-8">
 	<meta name="theme-color" content="#231F20">
 
 			<meta name="msvalidate.01" content="4F7DAF158EF3A8C47C9D2218FFF0FD40" />
@@ -243,8 +242,8 @@
 
 <!-- twitter: ends here -->
 
-			<link rel="preload" fetchpriority="high" as="image" href="https://globalnews.ca/wp-content/uploads/2026/07/CUSMA-deadline-trump-carney.jpg?quality=65&#038;strip=all&#038;w=336"
-					imagesrcset="https://globalnews.ca/wp-content/uploads/2026/07/CUSMA-deadline-trump-carney.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/CUSMA-deadline-trump-carney.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/CUSMA-deadline-trump-carney.jpg?quality=65&#038;strip=all&#038;w=720 720w,"
+			<link rel="preload" fetchpriority="high" as="image" href="https://globalnews.ca/wp-content/uploads/2026/07/fbae87de635bde1cf40734503e73a0305ff46a3843580e4abaf8e0395102d7d9.jpg?quality=65&#038;strip=all&#038;w=336"
+					imagesrcset="https://globalnews.ca/wp-content/uploads/2026/07/fbae87de635bde1cf40734503e73a0305ff46a3843580e4abaf8e0395102d7d9.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/fbae87de635bde1cf40734503e73a0305ff46a3843580e4abaf8e0395102d7d9.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/fbae87de635bde1cf40734503e73a0305ff46a3843580e4abaf8e0395102d7d9.jpg?quality=65&#038;strip=all&#038;w=720 720w,"
 							imagesizes="auto"
 		/>
 	
@@ -460,7 +459,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 
 				
 
-				gnAdSettings = {"adPath":"\/6872\/globalnews\/website","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"23","weatherprec":"x","weathercode":"30","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
+				gnAdSettings = {"adPath":"\/6872\/globalnews\/website","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"27","weatherprec":"x","weathercode":"32","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
 		</script>
 			<script>
 				// Load the APS JavaScript Library
@@ -1448,45 +1447,45 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 											<div>
 														<a
 								class="c-posts__headlineLink"
-								href="https://globalnews.ca/news/11948893/cusma-talks-deadline/"
+								href="https://globalnews.ca/news/11949863/alberta-oil-pipeline-announcement-danielle-smith/"
 								data-analytics="
 								{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:0}								"
 							>
 																		<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="U.S. won&#8217;t renew CUSMA in current form, trade rep says" data-title>U.S. won&#8217;t renew CUSMA in current form, trade rep says</span>
+					<span class="c-posts__headlineText" title="Alberta&#8217;s Smith set to unveil details of proposed oil pipeline" data-title>Alberta&#8217;s Smith set to unveil details of proposed oil pipeline</span>
 			</div>
 															</a>
 													</div>
 						
-		<div class="c-posts__media  c-posts__media--video c-videoPlay c-videoPlay--standard" tabindex=0 >
+		<div class="c-posts__media  c-posts__media--video c-videoPlay c-videoPlay--standard c-imageContainer" tabindex=0 >
 			<img class="c-posts__thumbnail"
 			fetchpriority="high"
-			src=https://globalnews.ca/wp-content/uploads/2026/07/CUSMA-deadline-trump-carney.jpg?quality=65&#038;strip=all&#038;w=720									width="720" height="480" alt="" 
-											srcset="https://globalnews.ca/wp-content/uploads/2026/07/CUSMA-deadline-trump-carney.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/CUSMA-deadline-trump-carney.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/CUSMA-deadline-trump-carney.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"					/>
+			src=https://globalnews.ca/wp-content/uploads/2026/07/fbae87de635bde1cf40734503e73a0305ff46a3843580e4abaf8e0395102d7d9.jpg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=519 data-ratio=0.67						width="720" height="519" alt="" 
+											srcset="https://globalnews.ca/wp-content/uploads/2026/07/fbae87de635bde1cf40734503e73a0305ff46a3843580e4abaf8e0395102d7d9.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/fbae87de635bde1cf40734503e73a0305ff46a3843580e4abaf8e0395102d7d9.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/fbae87de635bde1cf40734503e73a0305ff46a3843580e4abaf8e0395102d7d9.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"					/>
 							<div class="c-posts__video">
 						    	<div class="c-video c-videoPlay  c-video--contained"
     		data-iframe-receiver
     		data-autoplay=""
 						data-displayinline-featured="false"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_11945736_6a463a2c53cd0"
-			data-displayinline-video-id="11945736"
+			data-displayinline-player-id="miniplayer_11945697_6a466af1d0f71"
+			data-displayinline-video-id="11945697"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/11945736/#autoplay&#038;stickyiframe=miniplayer_11945736_6a463a2c53cd0"
+    		data-displayinline="https://globalnews.ca/video/embed/11945697/#autoplay&#038;stickyiframe=miniplayer_11945697_6a466af1d0f71"
     									data-displayinline-container="stories-1-0"
 										data-displayinline-sticky="true"
-													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;U.S. expected to declare it won\u2019t extend CUSMA trade deal&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;,&quot;economy&quot;,&quot;politics&quot;],&quot;keywords&quot;:[&quot;canada-trade-partner&quot;,&quot;canada-u-s-relations&quot;,&quot;canadian-exports&quot;,&quot;cusma&quot;,&quot;cusma-review&quot;,&quot;free-trade&quot;,&quot;mackenzie-gray&quot;,&quot;mark-carney&quot;,&quot;mexico&quot;,&quot;nato-summit&quot;,&quot;saudi-arabia&quot;,&quot;short-clip&quot;,&quot;top-news&quot;,&quot;trump&quot;,&quot;u-s&quot;,&quot;global-national&quot;]}}"
+													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Alberta set to make major pipeline announcement Thursday&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;edmonton&quot;,&quot;canada&quot;,&quot;economy&quot;],&quot;keywords&quot;:[&quot;ipeline&quot;,&quot;major-projects-office&quot;,&quot;mark-carney&quot;,&quot;short-clip&quot;]}}"
 			    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'U.S. expected to declare it won’t extend CUSMA trade deal'"
+						alt="Click to play video: 'Alberta set to make major pipeline announcement Thursday'"
 						width="640"
 						height="360"
-													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/kvb8kbhkff-t396xqnqms/CUSMA_REVIEW_VMS.jpg?w=1040&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/asuo190upu-cesddhtf5d/TU_ALBERTA_PROMISES_MAJOR_PIPELINE_ANNOUNCEMENT_AFF_BAY_PKG_thumbnail_1280x720_.jpg?w=1040&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/kvb8kbhkff-t396xqnqms/CUSMA_REVIEW_VMS.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/kvb8kbhkff-t396xqnqms/CUSMA_REVIEW_VMS.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/kvb8kbhkff-t396xqnqms/CUSMA_REVIEW_VMS.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
+								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/asuo190upu-cesddhtf5d/TU_ALBERTA_PROMISES_MAJOR_PIPELINE_ANNOUNCEMENT_AFF_BAY_PKG_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/asuo190upu-cesddhtf5d/TU_ALBERTA_PROMISES_MAJOR_PIPELINE_ANNOUNCEMENT_AFF_BAY_PKG_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/asuo190upu-cesddhtf5d/TU_ALBERTA_PROMISES_MAJOR_PIPELINE_ANNOUNCEMENT_AFF_BAY_PKG_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 											</span>
@@ -1505,19 +1504,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						<div class="c-posts__details">
 														<a
 								class="c-posts__detailsLink"
-								href="https://globalnews.ca/news/11948893/cusma-talks-deadline/"
+								href="https://globalnews.ca/news/11949863/alberta-oil-pipeline-announcement-danielle-smith/"
 								data-analytics="
 								{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:0}								"
 							>
 																		<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="U.S. won&#8217;t renew CUSMA in current form, trade rep says" data-title>U.S. won&#8217;t renew CUSMA in current form, trade rep says</span>
+					<span class="c-posts__headlineText" title="Alberta&#8217;s Smith set to unveil details of proposed oil pipeline" data-title>Alberta&#8217;s Smith set to unveil details of proposed oil pipeline</span>
 			</div>
 																		<div class="c-posts__excerpt">
-									CUSMA remains in place unless one of the partners gives six months&#039; notice that it is pulling out. Canada and Mexico both have indicated they want to keep the deal in place.									</div>
+									The Alberta government is aiming for the pipeline to be designated a project of national interest by October and get shovels in the ground as early as September 2027.									</div>
 																<div class="c-posts__about c-posts__about--multiple">
-																		<div class="c-posts__info c-posts__info--highlight">Economy</div>
-																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jul 1</div>
-																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
+																		<div class="c-posts__info c-posts__info--highlight">Canada</div>
+																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
+																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 																	</div>
 														</a>
 													</div>
@@ -1529,26 +1528,26 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				>
 					<a
 						class="c-posts__inner"
-						href="https://globalnews.ca/news/11948889/canada-day-celebrations-2026-2/"
+						href="https://globalnews.ca/news/11948893/cusma-talks-deadline/"
 						data-analytics="{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:1}"
 					>
 						
 		<div class="c-posts__media "  >
 			<img class="c-posts__thumbnail"
 			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/07/canada-day-national-ceremony2026-e1782934477732.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="450" alt="" 
+			data-src=https://globalnews.ca/wp-content/uploads/2026/07/CUSMA-deadline-trump-carney.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+						width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/07/canada-day-national-ceremony2026-e1782934477732.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/canada-day-national-ceremony2026-e1782934477732.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/canada-day-national-ceremony2026-e1782934477732.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/07/CUSMA-deadline-trump-carney.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/CUSMA-deadline-trump-carney.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/CUSMA-deadline-trump-carney.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
 											</div>
 								<div class="c-posts__details">
 										<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Canada Day 2026: National evening show cancelled due to weather, conditions" data-title>Canada Day 2026: National evening show cancelled due to weather, conditions</span>
+					<span class="c-posts__headlineText" title="U.S. won&#8217;t renew CUSMA in current form, trade rep says" data-title>U.S. won&#8217;t renew CUSMA in current form, trade rep says</span>
 			</div>
 								<div class="c-posts__about c-posts__about--multiple">
-																<div class="c-posts__info c-posts__info--highlight">Canada</div>
+																<div class="c-posts__info c-posts__info--highlight">Economy</div>
 																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jul 1</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 															</div>
 						</div>
 					</a>
@@ -1559,26 +1558,26 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				>
 					<a
 						class="c-posts__inner"
-						href="https://globalnews.ca/news/11948899/canada-eurovision-song-contest-2027/"
+						href="https://globalnews.ca/news/11949853/russian-attack-kyiv-17-killed-ukraine-attacks-russia-oil/"
 						data-analytics="{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:2}"
 					>
 						
 		<div class="c-posts__media "  >
 			<img class="c-posts__thumbnail"
 			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/07/Canada-2027-Eurovision.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/07/c3473e67925fe6a4e07fd0051074abbaa6f222a3ec3f94f58568a33d4284442a.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
 						width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/07/Canada-2027-Eurovision.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/Canada-2027-Eurovision.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/Canada-2027-Eurovision.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/07/c3473e67925fe6a4e07fd0051074abbaa6f222a3ec3f94f58568a33d4284442a.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/c3473e67925fe6a4e07fd0051074abbaa6f222a3ec3f94f58568a33d4284442a.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/c3473e67925fe6a4e07fd0051074abbaa6f222a3ec3f94f58568a33d4284442a.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
 											</div>
 								<div class="c-posts__details">
 										<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Canada to compete in Eurovision song contest in 2027" data-title>Canada to compete in Eurovision song contest in 2027</span>
+					<span class="c-posts__headlineText" title="Major Russian attack kills 17 in Kyiv as Ukraine strikes batter Moscow&#8217;s oil sector" data-title>Major Russian attack kills 17 in Kyiv as Ukraine strikes batter Moscow&#8217;s oil sector</span>
 			</div>
 								<div class="c-posts__about c-posts__about--multiple">
-																<div class="c-posts__info c-posts__info--highlight">Entertainment</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jul 1</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
+																<div class="c-posts__info c-posts__info--highlight">World</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 															</div>
 						</div>
 					</a>
@@ -1597,66 +1596,66 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=12			data-parent-id=home-topStories					>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-1"
-	data-post-id="11948947"
+	data-post-id="11948889"
 	data-slide-index=""
-	data-caption="Canada Day fireworks and pets: How to keep your furry friend safe"
+	data-caption="Canada Day 2026: National evening show cancelled due to weather, conditions"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11948947/canada-day-fireworks-pets/"
+		href="https://globalnews.ca/news/11948889/canada-day-celebrations-2026-2/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
 			>
 			
 		<div class="c-posts__media "  >
 			<img class="c-posts__thumbnail"
 			fetchpriority="high"
-			src=https://globalnews.ca/wp-content/uploads/2026/07/fireworks-and-pets.jpg?quality=65&#038;strip=all&#038;w=720									width="720" height="479" alt="" 
-											srcset="https://globalnews.ca/wp-content/uploads/2026/07/fireworks-and-pets.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/fireworks-and-pets.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/fireworks-and-pets.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"					/>
+			src=https://globalnews.ca/wp-content/uploads/2026/07/canada-day-national-ceremony2026-e1782934477732.jpg?quality=65&#038;strip=all&#038;w=720									width="720" height="450" alt="" 
+											srcset="https://globalnews.ca/wp-content/uploads/2026/07/canada-day-national-ceremony2026-e1782934477732.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/canada-day-national-ceremony2026-e1782934477732.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/canada-day-national-ceremony2026-e1782934477732.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"					/>
 											</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Canada Day fireworks and pets: How to keep your furry friend safe" data-title>Canada Day fireworks and pets: How to keep your furry friend safe</span>
+					<span class="c-posts__headlineText" title="Canada Day 2026: National evening show cancelled due to weather, conditions" data-title>Canada Day 2026: National evening show cancelled due to weather, conditions</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jul 1</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 														</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-2"
-	data-post-id="11944372"
+	data-post-id="11949078"
 	data-slide-index=""
-	data-caption="What Canada&#8217;s colour-coded heat warnings mean as temperatures soar"
+	data-caption="Canada Day heat wave prompts warnings in several provinces"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11944372/guide-to-the-colour-coded-heat-warnings/"
+		href="https://globalnews.ca/news/11949078/heat-warnings-canada-day/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
-		<div class="c-posts__media  c-imageContainer"  >
+		<div class="c-posts__media "  >
 			<img class="c-posts__thumbnail"
 			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/06/heat-wave-e1782845100111.jpg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=504 data-ratio=0.67								loading="lazy"
-						width="720" height="504" alt="" 
+			data-src=https://globalnews.ca/wp-content/uploads/2026/07/extreme-heat.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+						width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/heat-wave-e1782845100111.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/heat-wave-e1782845100111.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/heat-wave-e1782845100111.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/07/extreme-heat.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/extreme-heat.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/extreme-heat.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
 											</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="What Canada&#8217;s colour-coded heat warnings mean as temperatures soar" data-title>What Canada&#8217;s colour-coded heat warnings mean as temperatures soar</span>
+					<span class="c-posts__headlineText" title="Canada Day heat wave prompts warnings in several provinces" data-title>Canada Day heat wave prompts warnings in several provinces</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Weather</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jun 30</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jul 1</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1685,32 +1684,100 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-3"
-	data-post-id="11944679"
+	data-post-id="11948899"
 	data-slide-index=""
-	data-caption="Carney says energy plan will unify Canada but &#8217;emissions will be higher&#8217;"
+	data-caption="Canada to compete in Eurovision song contest in 2027"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11944679/carney-energy-strategy-emissions-video/"
+		href="https://globalnews.ca/news/11948899/canada-eurovision-song-contest-2027/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
 			<img class="c-posts__thumbnail"
 			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/06/d1924423dee39fc22fd968280530124a17fbf010ab40cdfd6d932b96b118b315.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/07/Canada-2027-Eurovision.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
 						width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/d1924423dee39fc22fd968280530124a17fbf010ab40cdfd6d932b96b118b315.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/d1924423dee39fc22fd968280530124a17fbf010ab40cdfd6d932b96b118b315.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/d1924423dee39fc22fd968280530124a17fbf010ab40cdfd6d932b96b118b315.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/07/Canada-2027-Eurovision.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/Canada-2027-Eurovision.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/Canada-2027-Eurovision.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
 											</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Carney says energy plan will unify Canada but &#8217;emissions will be higher&#8217;" data-title>Carney says energy plan will unify Canada but &#8217;emissions will be higher&#8217;</span>
+					<span class="c-posts__headlineText" title="Canada to compete in Eurovision song contest in 2027" data-title>Canada to compete in Eurovision song contest in 2027</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Entertainment</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jul 1</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-4"
+	data-post-id="11948947"
+	data-slide-index=""
+	data-caption="Canada Day fireworks and pets: How to keep your furry friend safe"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11948947/canada-day-fireworks-pets/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
+			>
+			
+		<div class="c-posts__media "  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/07/fireworks-and-pets.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+						width="720" height="479" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/07/fireworks-and-pets.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/fireworks-and-pets.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/fireworks-and-pets.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Canada Day fireworks and pets: How to keep your furry friend safe" data-title>Canada Day fireworks and pets: How to keep your furry friend safe</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jul 1</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-5"
+	data-post-id="11944372"
+	data-slide-index=""
+	data-caption="What Canada&#8217;s colour-coded heat warnings mean as temperatures soar"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11944372/guide-to-the-colour-coded-heat-warnings/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/06/heat-wave-e1782845100111.jpg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=504 data-ratio=0.67								loading="lazy"
+						width="720" height="504" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/heat-wave-e1782845100111.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/heat-wave-e1782845100111.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/heat-wave-e1782845100111.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="What Canada&#8217;s colour-coded heat warnings mean as temperatures soar" data-title>What Canada&#8217;s colour-coded heat warnings mean as temperatures soar</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Weather</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jun 30</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
 														</div>
@@ -1718,103 +1785,35 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-4"
-	data-post-id="11944831"
-	data-slide-index=""
-	data-caption="China slaps 73.5% preliminary tariff on pea starch from Canada"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11944831/china-preliminary-tariff-imports-canadian-pea-starch/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
-			>
-			
-		<div class="c-posts__media "  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2025/03/Canada-China-flags.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2025/03/Canada-China-flags.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/03/Canada-China-flags.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/03/Canada-China-flags.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="China slaps 73.5% preliminary tariff on pea starch from Canada" data-title>China slaps 73.5% preliminary tariff on pea starch from Canada</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jun 30</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-5"
-	data-post-id="11942931"
-	data-slide-index=""
-	data-caption="What happens to CUSMA on July 1? The paths ahead as review set to begin"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11942931/cusma-review-july-1-explained/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
-			>
-			
-		<div class="c-posts__media "  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/06/canada-us-mexico-leaders-cusma-e1782759580724.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/canada-us-mexico-leaders-cusma-e1782759580724.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/canada-us-mexico-leaders-cusma-e1782759580724.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/canada-us-mexico-leaders-cusma-e1782759580724.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="What happens to CUSMA on July 1? The paths ahead as review set to begin" data-title>What happens to CUSMA on July 1? The paths ahead as review set to begin</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Economy</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jun 30</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">6 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
 	data-container-id="stories-item-6"
-	data-post-id="11944422"
+	data-post-id="11944912"
 	data-slide-index=""
-	data-caption="Carney to visit Saudi Arabia, meet with Crown Prince Mohammed bin Salman"
+	data-caption="Blake Lively seeks over $8M in legal fees from Justin Baldoni, his studio"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11944422/carney-saudi-arabia-crown-prince-mohammed-bin-salman/"
+		href="https://globalnews.ca/news/11944912/blake-lively-requests-legal-fees-justin-baldoni-wayfarer-studios/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
 			>
 			
 		<div class="c-posts__media "  >
 			<img class="c-posts__thumbnail"
 			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/06/Carney-Saudi-Prince.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/06/blake-lively-seeks-lawyer-fees-justin-baldoni.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
 						width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/Carney-Saudi-Prince.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/Carney-Saudi-Prince.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/Carney-Saudi-Prince.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/blake-lively-seeks-lawyer-fees-justin-baldoni.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/blake-lively-seeks-lawyer-fees-justin-baldoni.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/blake-lively-seeks-lawyer-fees-justin-baldoni.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
 											</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Carney to visit Saudi Arabia, meet with Crown Prince Mohammed bin Salman" data-title>Carney to visit Saudi Arabia, meet with Crown Prince Mohammed bin Salman</span>
+					<span class="c-posts__headlineText" title="Blake Lively seeks over $8M in legal fees from Justin Baldoni, his studio" data-title>Blake Lively seeks over $8M in legal fees from Justin Baldoni, his studio</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Entertainment</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jun 30</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">6 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1843,74 +1842,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-7"
-	data-post-id="11944274"
-	data-slide-index=""
-	data-caption="‘Elbows up’ is now part of the Oxford English Dictionary"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11944274/elbows-up-oxford-english-dictionary/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/06/Elbows-Up-dictionary.jpg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=500 data-ratio=0.67								loading="lazy"
-						width="720" height="500" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/Elbows-Up-dictionary.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/Elbows-Up-dictionary.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/Elbows-Up-dictionary.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="‘Elbows up’ is now part of the Oxford English Dictionary" data-title>‘Elbows up’ is now part of the Oxford English Dictionary</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jun 30</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-8"
-	data-post-id="11944912"
-	data-slide-index=""
-	data-caption="Blake Lively seeks over $8M in legal fees from Justin Baldoni, his studio"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11944912/blake-lively-requests-legal-fees-justin-baldoni-wayfarer-studios/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
-			>
-			
-		<div class="c-posts__media "  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/06/blake-lively-seeks-lawyer-fees-justin-baldoni.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/blake-lively-seeks-lawyer-fees-justin-baldoni.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/blake-lively-seeks-lawyer-fees-justin-baldoni.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/blake-lively-seeks-lawyer-fees-justin-baldoni.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Blake Lively seeks over $8M in legal fees from Justin Baldoni, his studio" data-title>Blake Lively seeks over $8M in legal fees from Justin Baldoni, his studio</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Entertainment</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jun 30</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">6 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-9"
 	data-post-id="11944454"
 	data-slide-index=""
 	data-caption="&#8216;The Ring&#8217; actor Daveigh Chase died of AIDS, medical examiner says"
@@ -1918,7 +1849,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11944454/daveigh-chase-cause-of-death-aids/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1944,7 +1875,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-10"
+	data-container-id="stories-item-8"
 	data-post-id="11944646"
 	data-slide-index=""
 	data-caption="Renting in a heat wave? What landlords owe tenants in extreme temperatures"
@@ -1952,7 +1883,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11944646/renting-heat-wave-landlord/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1977,70 +1908,138 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 									</div>
 		</a>
 	</li>
-<li class="c-posts__item    is-hidden"
-	data-container-id="stories-item-11"
-	data-post-id="11949078"
+<li class="c-posts__item    "
+	data-container-id="stories-item-9"
+	data-post-id="11949925"
 	data-slide-index=""
-	data-caption="Canada Day heat wave prompts warnings in several provinces"
-		data-ad-fallback=false>
+	data-caption="U.S. hiring slowed in June with 57,000 jobs added amid global turmoil"
+		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11949078/heat-warnings-canada-day/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
+		href="https://globalnews.ca/news/11949925/us-jobs-report-june-2026/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
 			>
 			
 		<div class="c-posts__media "  >
 			<img class="c-posts__thumbnail"
 			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/07/extreme-heat.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/07/US-Jobs-Report-June.jpg-e1782997669505.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
 						width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/07/extreme-heat.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/extreme-heat.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/extreme-heat.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/07/US-Jobs-Report-June.jpg-e1782997669505.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/US-Jobs-Report-June.jpg-e1782997669505.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/US-Jobs-Report-June.jpg-e1782997669505.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
 											</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Canada Day heat wave prompts warnings in several provinces" data-title>Canada Day heat wave prompts warnings in several provinces</span>
+					<span class="c-posts__headlineText" title="U.S. hiring slowed in June with 57,000 jobs added amid global turmoil" data-title>U.S. hiring slowed in June with 57,000 jobs added amid global turmoil</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Weather</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jul 1</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>U.S. News</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">18 mins</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-10"
+	data-post-id="11949895"
+	data-slide-index=""
+	data-caption="Heat wave heads to Maritime provinces after bearing down on Ontario, Quebec"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11949895/heat-wave-ontario-quebec-martitimes/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
+			>
+			
+		<div class="c-posts__media "  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/07/Heat-wave-canada-day.jpg-e1782995542498.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+						width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/07/Heat-wave-canada-day.jpg-e1782995542498.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/Heat-wave-canada-day.jpg-e1782995542498.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/Heat-wave-canada-day.jpg-e1782995542498.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Heat wave heads to Maritime provinces after bearing down on Ontario, Quebec" data-title>Heat wave heads to Maritime provinces after bearing down on Ontario, Quebec</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Environment</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">1 hour</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    is-hidden"
-	data-container-id="stories-item-12"
-	data-post-id="11949338"
+	data-container-id="stories-item-11"
+	data-post-id="11949883"
 	data-slide-index=""
-	data-caption="4 dead in Mexico City during World Cup celebrations"
+	data-caption="Canada&#8217;s UN ambassador says Carney&#8217;s Davos speech is being implemented"
 		data-ad-fallback=false>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11949338/4-dead-mexico-city-world-cup-celebrations/"
+		href="https://globalnews.ca/news/11949883/carney-davos-speech-un/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
+			>
+			
+		<div class="c-posts__media "  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/01/9e4f1e4e98b11ded07b96b69ae297baa5d689e8bb8c47f80bc84b85e92172f2b_aebc50.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+						width="720" height="458" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/01/9e4f1e4e98b11ded07b96b69ae297baa5d689e8bb8c47f80bc84b85e92172f2b_aebc50.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/01/9e4f1e4e98b11ded07b96b69ae297baa5d689e8bb8c47f80bc84b85e92172f2b_aebc50.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/01/9e4f1e4e98b11ded07b96b69ae297baa5d689e8bb8c47f80bc84b85e92172f2b_aebc50.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Canada&#8217;s UN ambassador says Carney&#8217;s Davos speech is being implemented" data-title>Canada&#8217;s UN ambassador says Carney&#8217;s Davos speech is being implemented</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">1 hour</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    is-hidden"
+	data-container-id="stories-item-12"
+	data-post-id="11949874"
+	data-slide-index=""
+	data-caption="Carney&#8217;s Davos speech being put in practice at UN, ambassador says"
+		data-ad-fallback=false>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11949874/carney-davos-speech-un-impact/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:11}"
 			>
 			
 		<div class="c-posts__media "  >
 			<img class="c-posts__thumbnail"
 			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/07/mexico-city-world-cup-e1782936206484.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="480" alt="" 
+			data-src=https://globalnews.ca/wp-content/uploads/2026/07/205c938cc119495576c194657eaa8cbc648df958f54956091a0d3268f6984497.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+						width="720" height="446" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/07/mexico-city-world-cup-e1782936206484.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/mexico-city-world-cup-e1782936206484.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/mexico-city-world-cup-e1782936206484.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/07/205c938cc119495576c194657eaa8cbc648df958f54956091a0d3268f6984497.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/205c938cc119495576c194657eaa8cbc648df958f54956091a0d3268f6984497.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/205c938cc119495576c194657eaa8cbc648df958f54956091a0d3268f6984497.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
 											</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="4 dead in Mexico City during World Cup celebrations" data-title>4 dead in Mexico City during World Cup celebrations</span>
+					<span class="c-posts__headlineText" title="Carney&#8217;s Davos speech being put in practice at UN, ambassador says" data-title>Carney&#8217;s Davos speech being put in practice at UN, ambassador says</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>World</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Jul 1</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 														</div>
 									</div>
 		</a>
@@ -2062,10 +2061,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay="true"
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6a463a2c57cbc"
+			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6a466af1d3ce1"
 			data-displayinline-video-id="49a91e7f-1023-430f-8d66-561055f3d0f7"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6a463a2c57cbc"
+    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6a466af1d3ce1"
     		    			data-displayinline-playlist="49a91e7f-1023-430f-8d66-561055f3d0f7"
     									data-displayinline-container="mini-ott"
 																data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;recent_terms_datastore&quot;,&quot;type&quot;:&quot;wlo_option&quot;}}"
@@ -2207,7 +2206,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="First Canada grocery benefit payment arrives this week" data-title>First Canada grocery benefit payment arrives this week</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">4,463</span>
+							<span class="c-posts__info c-posts__info--highlight">10,007</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2238,7 +2237,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="&#8216;The Ring&#8217; actor Daveigh Chase died of AIDS, medical examiner says" data-title>&#8216;The Ring&#8217; actor Daveigh Chase died of AIDS, medical examiner says</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">4,435</span>
+							<span class="c-posts__info c-posts__info--highlight">8,333</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2269,7 +2268,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="China slaps 73.5% preliminary tariff on pea starch from Canada" data-title>China slaps 73.5% preliminary tariff on pea starch from Canada</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,361</span>
+							<span class="c-posts__info c-posts__info--highlight">4,552</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2300,7 +2299,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Blake Lively seeks over $8M in legal fees from Justin Baldoni, his studio" data-title>Blake Lively seeks over $8M in legal fees from Justin Baldoni, his studio</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">1,394</span>
+							<span class="c-posts__info c-posts__info--highlight">2,297</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2331,7 +2330,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Canada Day 2026: National evening show cancelled due to weather, conditions" data-title>Canada Day 2026: National evening show cancelled due to weather, conditions</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">1,028</span>
+							<span class="c-posts__info c-posts__info--highlight">2,087</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2402,8 +2401,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<input type="hidden" id="s_brand" name="s_brand" value="gn" />
 				<input type="hidden" id="s_gn_daily_national" name="s_gn_daily_national" value="100" data-newsletter-inline-code />
 				<input type="hidden" id="s_collector" name="s_collector" value="" />
-				<input type="hidden" id="s_create_date" name="s_create_date" value="2026-07-02 10:15:08" />
-				<input type="hidden" id="s_last_modified" name="s_last_modified" value="2026-07-02 10:15:08" />
+				<input type="hidden" id="s_create_date" name="s_create_date" value="2026-07-02 13:43:13" />
+				<input type="hidden" id="s_last_modified" name="s_last_modified" value="2026-07-02 13:43:13" />
 			</fieldset>
 			<label for="ns-region-home-email-input" class="sr-only">Sign up for National newsletter</label>
 			<input id="ns-region-home-email-input" type="text" class="c-newsletterSignup__input" placeholder="Email address" data-newsletter-inline-email />
@@ -2452,7 +2451,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="First Canada grocery benefit payment arrives this week" data-title>First Canada grocery benefit payment arrives this week</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">4,463</span>
+							<span class="c-posts__info c-posts__info--highlight">10,007</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2483,7 +2482,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="&#8216;The Ring&#8217; actor Daveigh Chase died of AIDS, medical examiner says" data-title>&#8216;The Ring&#8217; actor Daveigh Chase died of AIDS, medical examiner says</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">4,435</span>
+							<span class="c-posts__info c-posts__info--highlight">8,333</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2514,7 +2513,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="China slaps 73.5% preliminary tariff on pea starch from Canada" data-title>China slaps 73.5% preliminary tariff on pea starch from Canada</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">2,361</span>
+							<span class="c-posts__info c-posts__info--highlight">4,552</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2545,7 +2544,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Blake Lively seeks over $8M in legal fees from Justin Baldoni, his studio" data-title>Blake Lively seeks over $8M in legal fees from Justin Baldoni, his studio</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">1,394</span>
+							<span class="c-posts__info c-posts__info--highlight">2,297</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2576,7 +2575,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Canada Day 2026: National evening show cancelled due to weather, conditions" data-title>Canada Day 2026: National evening show cancelled due to weather, conditions</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">1,028</span>
+							<span class="c-posts__info c-posts__info--highlight">2,087</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2954,23 +2953,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer"
-			data-displayinline-video-id="3226216"
+			data-displayinline-video-id="11942151"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/3226216,11945736,11942151,11949481,11949671/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2F924%2F431%2FKnifeThumber_848x480_869631043769.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
-    		    			data-displayinline-playlist="3226216,11945736,11942151,11949481,11949671"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11942151,11945736,11949481,3226216,11620764/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F9rnhq08mt9-k2l7s4416o%2Fheat_cad.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
+    		    			data-displayinline-playlist="11942151,11945736,11949481,3226216,11620764"
     												data-displayinline-sticky="true"
-													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Knife-wielding man holds 13-year-old girl hostage in Russia&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;crime&quot;,&quot;world&quot;],&quot;keywords&quot;:[&quot;caught-on-camera&quot;,&quot;russia&quot;]}}"
+													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;As Europe bakes, Southern Ontario prepares for its own heat wave\u00a0&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;,&quot;weather&quot;],&quot;keywords&quot;:[&quot;environment-canada&quot;,&quot;extreme-weather&quot;,&quot;heat-wave&quot;,&quot;short-clip&quot;,&quot;southern-ontario&quot;]}}"
 			    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Knife-wielding man holds 13-year-old girl hostage in Russia'"
+						alt="Click to play video: 'As Europe bakes, Southern Ontario prepares for its own heat wave '"
 						width="640"
 						height="360"
-													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/924/431/KnifeThumber_848x480_869631043769.jpg?w=1040&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/9rnhq08mt9-k2l7s4416o/heat_cad.jpg?w=1040&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/924/431/KnifeThumber_848x480_869631043769.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i0.wp.com/media.globalnews.ca/videostatic/924/431/KnifeThumber_848x480_869631043769.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i0.wp.com/media.globalnews.ca/videostatic/924/431/KnifeThumber_848x480_869631043769.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
+								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/9rnhq08mt9-k2l7s4416o/heat_cad.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/9rnhq08mt9-k2l7s4416o/heat_cad.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/9rnhq08mt9-k2l7s4416o/heat_cad.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -2980,20 +2979,20 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">1:29</time>
-																									<span class="c-video__title">Knife-wielding man holds 13-year-old girl hostage in Russia</span>
+																	<time class="c-video__duration">7:11</time>
+																									<span class="c-video__title">As Europe bakes, Southern Ontario prepares for its own heat wave </span>
 															</div>
 						</span>
 											</span>
 				</div>
 							</div>
 								<div class="l-videoCarousel__sidebar">
-													<a href="https://globalnews.ca/video/3226216/knife-wielding-man-holds-13-year-old-girl-hostage-in-russia/" class="l-videoCarousel__details">
-							<div class="l-videoCarousel__info">Crime</div>
+													<a href="https://globalnews.ca/video/11942151/as-europe-bakes-southern-ontario-prepares-for-its-own-heat-wave/" class="l-videoCarousel__details">
+							<div class="l-videoCarousel__info">Canada</div>
 								<div class="l-videoCarousel__fullTitle">
-								Knife-wielding man holds 13-year-old girl hostage in Russia								</div>
+								As Europe bakes, Southern Ontario prepares for its own heat wave 								</div>
 								<div class="l-videoCarousel__description">
-								Police in Russia have released dramatic video of a tense hostage situation involving a 13-year-old girl and a knife-wielding man they say was high on heroin.								</div>
+								A dangerous heat wave is expected to grip Southern Ontario this week as parts of Europe continue to ensure scorching temperatures. Global&#039;s Jazan Grewal is joined by David Philips, a Climatologist with Environment Canada to discuss what&#039;s driving this intense heat, and how people can stay safe in the days ahead. 								</div>
 						</a>
 								<div class="c-ad c-ad--bigbox c-ad--dark l-videoCarousel__ad">							<div class="c-ad__label">Advertisement</div>
 			
@@ -3020,67 +3019,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-carousel__track glide__track" data-glide-el="track">
 						<ul class="c-posts c-posts--video c-posts--tile c-posts--horizontal c-posts--inverted glide__slides">
 							
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Knife-wielding man holds 13-year-old girl hostage in Russia" data-slide-index="0">
-	<a href="https://globalnews.ca/video/3226216/knife-wielding-man-holds-13-year-old-girl-hostage-in-russia/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="3226216"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/3226216,11945736,11942151,11949481,11949671/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="3226216,11945736,11942151,11949481,11949671"
-			data-video-carousel-label="Crime"
-			data-video-carousel-content="Police in Russia have released dramatic video of a tense hostage situation involving a 13-year-old girl and a knife-wielding man they say was high on heroin."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/924/431/KnifeThumber_848x480_869631043769.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Crime</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Knife-wielding man holds 13-year-old girl hostage in Russia</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="U.S. expected to declare it won’t extend CUSMA trade deal" data-slide-index="1">
-	<a href="https://globalnews.ca/video/11945736/u-s-expected-to-declare-it-wont-extend-cusma-trade-deal/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11945736"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11945736,11942151,11949481,11949671,3226216/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11945736,11942151,11949481,11949671,3226216"
-			data-video-carousel-label="Canada"
-			data-video-carousel-content="Canada&#039;s trade tensions with the U.S. are about to come to a head. Tuesday marks the set date for the first formal review of CUSMA – Canada’s free trade agreement with the U.S. and Mexico, which President Donald Trump signed and celebrated during his first term six years ago. But the Trump administration is now expected to announce the U.S. does not want to extend the deal. Mackenzie Gray explains where it leaves Canada’s relationship with our largest trading partner."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/kvb8kbhkff-t396xqnqms/CUSMA_REVIEW_VMS.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">U.S. expected to declare it won’t extend CUSMA trade deal</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="As Europe bakes, Southern Ontario prepares for its own heat wave " data-slide-index="2">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="As Europe bakes, Southern Ontario prepares for its own heat wave " data-slide-index="0">
 	<a href="https://globalnews.ca/video/11942151/as-europe-bakes-southern-ontario-prepares-for-its-own-heat-wave/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11942151"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11942151,11949481,11949671,3226216,11945736/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11942151,11949481,11949671,3226216,11945736"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11942151,11945736,11949481,3226216,11620764/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11942151,11945736,11949481,3226216,11620764"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="A dangerous heat wave is expected to grip Southern Ontario this week as parts of Europe continue to ensure scorching temperatures. Global&#039;s Jazan Grewal is joined by David Philips, a Climatologist with Environment Canada to discuss what&#039;s driving this intense heat, and how people can stay safe in the days ahead. "
 			>
@@ -3101,13 +3046,40 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="National ceremony celebrates Canada Day 2026" data-slide-index="3">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="U.S. expected to declare it won’t extend CUSMA trade deal" data-slide-index="1">
+	<a href="https://globalnews.ca/video/11945736/u-s-expected-to-declare-it-wont-extend-cusma-trade-deal/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11945736"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11945736,11949481,3226216,11620764,11942151/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11945736,11949481,3226216,11620764,11942151"
+			data-video-carousel-label="Canada"
+			data-video-carousel-content="Canada&#039;s trade tensions with the U.S. are about to come to a head. Tuesday marks the set date for the first formal review of CUSMA – Canada’s free trade agreement with the U.S. and Mexico, which President Donald Trump signed and celebrated during his first term six years ago. But the Trump administration is now expected to announce the U.S. does not want to extend the deal. Mackenzie Gray explains where it leaves Canada’s relationship with our largest trading partner."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/kvb8kbhkff-t396xqnqms/CUSMA_REVIEW_VMS.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">U.S. expected to declare it won’t extend CUSMA trade deal</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="National ceremony celebrates Canada Day 2026" data-slide-index="2">
 	<a href="https://globalnews.ca/video/11949481/national-ceremony-celebrates-canada-day-2026/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="11949481"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11949481,11949671,3226216,11945736,11942151/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11949481,11949671,3226216,11945736,11942151"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11949481,3226216,11620764,11942151,11945736/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11949481,3226216,11620764,11942151,11945736"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="The national daytime ceremony at Ottawa&#039;s LeBreton Flats Park marked 159 years of Confederation. Notable figures spoke to the crowd, including Prime Minister Mark Carney, Canadian astronaut Col. Jeremy Hansen, Canadian Identity and Culture Minister Marc Miller, recently-appointed Governor General Louise Arbour and accessibility advocate Rick Hansen."
 			>
@@ -3128,18 +3100,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Sudan&#8217;s RSF accused of crimes against humanity, ethnic cleansing in el-Fasher" data-slide-index="4">
-	<a href="https://globalnews.ca/video/11949671/sudans-rsf-accused-of-crimes-against-humanity-ethnic-cleansing-in-el-fasher/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Knife-wielding man holds 13-year-old girl hostage in Russia" data-slide-index="3">
+	<a href="https://globalnews.ca/video/3226216/knife-wielding-man-holds-13-year-old-girl-hostage-in-russia/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="11949671"
+					data-video-id="3226216"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11949671,3226216,11945736,11942151,11949481/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="11949671,3226216,11945736,11942151,11949481"
-			data-video-carousel-label="Politics"
-			data-video-carousel-content="New accusations of war crimes are being made against Sudan&#039;s Rapid Support Forces (RSF) during the country&#039;s devestating civil war, which has raged on for more than three years. Redmond Shannon reports on what an Amnesty International report is accusing RSF of, and the calls for outside intervention in Sudan."
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/3226216,11620764,11942151,11945736,11949481/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="3226216,11620764,11942151,11945736,11949481"
+			data-video-carousel-label="Crime"
+			data-video-carousel-content="Police in Russia have released dramatic video of a tense hostage situation involving a 13-year-old girl and a knife-wielding man they say was high on heroin."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/zjcbom5u44-7necbvivpx/260701-REDMOND.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/924/431/KnifeThumber_848x480_869631043769.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3148,9 +3120,36 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>
 		<div class="l-videoCarousel__details c-posts__details">
 							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Politics</div>
+					<div class="c-posts__info c-posts__info--highlight">Crime</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Sudan&#8217;s RSF accused of crimes against humanity, ethnic cleansing in el-Fasher</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Knife-wielding man holds 13-year-old girl hostage in Russia</span></div>
+					</div>
+	</a>
+</li>
+
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Carney to speak about &#8216;new world order&#8217; at World Economic Forum" data-slide-index="4">
+	<a href="https://globalnews.ca/video/11620764/carney-to-speak-about-new-world-order-at-world-economic-forum/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="11620764"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/11620764,11942151,11945736,11949481,3226216/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="11620764,11942151,11945736,11949481,3226216"
+			data-video-carousel-label="Canada"
+			data-video-carousel-content="Prime Minister Mark Carney will deliver a speech Tuesday to the annual World Economic Forum (WEF) summit in Davos, Switzerland. As chief political correspondent David Akin previews, Carney will describe what he&#039;s called a &quot;new world order.&quot;"
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/eo1l21z8yv-vtv3fzc00s/CARNEY_VMS.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Carney to speak about &#8216;new world order&#8217; at World Economic Forum</span></div>
 					</div>
 	</a>
 </li>
@@ -3187,11 +3186,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11945736,11942151,11949481,11949671/#autoplay&#038;stickyiframe=home-miniplayer_11945736"
+			href="https://globalnews.ca/video/embed/playlist/11945736,11949481,3226216,11620764/#autoplay&#038;stickyiframe=home-miniplayer_11945736"
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11945736"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11945736,11942151,11949481,11949671/#autoplay&#038;stickyiframe=home-miniplayer_11945736"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11945736,11949481,3226216,11620764/#autoplay&#038;stickyiframe=home-miniplayer_11945736"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3242,44 +3241,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11942151,11949481,11949671,11945736/#autoplay&#038;stickyiframe=home-miniplayer_11942151"
-			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11942151"
-			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11942151,11949481,11949671,11945736/#autoplay&#038;stickyiframe=home-miniplayer_11942151"
-			data-displayinline-sticky="true"
-			data-displayinline-expand="true">
-			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/9rnhq08mt9-k2l7s4416o/heat_cad.jpg?w=384&#038;quality=70&#038;strip=all"
-					width="236"
-					height="133"
-					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'As Europe bakes, Southern Ontario prepares for its own heat wave '"
-					loading="lazy" />
-				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-			</div>
-		</a>
-		<a href="https://globalnews.ca/video/11942151/as-europe-bakes-southern-ontario-prepares-for-its-own-heat-wave/" class="c-posts__details">
-				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">As Europe bakes, Southern Ontario prepares for its own heat wave </span></div>
-		</a>
-	</div>
-</li>
-
-<li class="c-posts__item">
-	<div class="c-posts__inner">
-		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11949481,11949671,11945736,11942151/#autoplay&#038;stickyiframe=home-miniplayer_11949481"
+			href="https://globalnews.ca/video/embed/playlist/11949481,3226216,11620764,11945736/#autoplay&#038;stickyiframe=home-miniplayer_11949481"
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_11949481"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11949481,11949671,11945736,11942151/#autoplay&#038;stickyiframe=home-miniplayer_11949481"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11949481,3226216,11620764,11945736/#autoplay&#038;stickyiframe=home-miniplayer_11949481"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3308,19 +3274,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/11949671,11945736,11942151,11949481/#autoplay&#038;stickyiframe=home-miniplayer_11949671"
+			href="https://globalnews.ca/video/embed/playlist/3226216,11620764,11945736,11949481/#autoplay&#038;stickyiframe=home-miniplayer_3226216"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_11949671"
+			data-displayinline-player-id="home-miniplayer_3226216"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/11949671,11945736,11942151,11949481/#autoplay&#038;stickyiframe=home-miniplayer_11949671"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/3226216,11620764,11945736,11949481/#autoplay&#038;stickyiframe=home-miniplayer_3226216"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/zjcbom5u44-7necbvivpx/260701-REDMOND.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/924/431/KnifeThumber_848x480_869631043769.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Sudan&#8217;s RSF accused of crimes against humanity, ethnic cleansing in el-Fasher'"
+					alt="Click to play video 'Knife-wielding man holds 13-year-old girl hostage in Russia'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3329,11 +3295,44 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/11949671/sudans-rsf-accused-of-crimes-against-humanity-ethnic-cleansing-in-el-fasher/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/3226216/knife-wielding-man-holds-13-year-old-girl-hostage-in-russia/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Politics</div>
+					<div class="c-posts__info c-posts__info--highlight">Crime</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Sudan&#8217;s RSF accused of crimes against humanity, ethnic cleansing in el-Fasher</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Knife-wielding man holds 13-year-old girl hostage in Russia</span></div>
+		</a>
+	</div>
+</li>
+
+<li class="c-posts__item">
+	<div class="c-posts__inner">
+		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
+			href="https://globalnews.ca/video/embed/playlist/11620764,11945736,11949481,3226216/#autoplay&#038;stickyiframe=home-miniplayer_11620764"
+			data-displayinline-type="video"
+			data-displayinline-player-id="home-miniplayer_11620764"
+			data-displayinline-ratio="16:9"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/11620764,11945736,11949481,3226216/#autoplay&#038;stickyiframe=home-miniplayer_11620764"
+			data-displayinline-sticky="true"
+			data-displayinline-expand="true">
+			<div class="c-video__placeholder">
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/eo1l21z8yv-vtv3fzc00s/CARNEY_VMS.jpg?w=384&#038;quality=70&#038;strip=all"
+					width="236"
+					height="133"
+					class="c-posts__thumbnail c-video__image"
+					alt="Click to play video 'Carney to speak about &#8216;new world order&#8217; at World Economic Forum'"
+					loading="lazy" />
+				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+			</div>
+		</a>
+		<a href="https://globalnews.ca/video/11620764/carney-to-speak-about-new-world-order-at-world-economic-forum/" class="c-posts__details">
+				<div class="c-posts__about">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Carney to speak about &#8216;new world order&#8217; at World Economic Forum</span></div>
 		</a>
 	</div>
 </li>
@@ -3398,12 +3397,45 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
+				data-post-id="11949003"
+			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/11949003/ontario-lowering-colorectal-cancer-screening-age-to-45/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Ontario now second province to lower colorectal cancer screening age to 45" data-title>Ontario now second province to lower colorectal cancer screening age to 45</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						As of July 1, Ontarians age 45 and up are eligible to receive the at-home fecal immunochemical screening test — or FIT — that detects traces of blood in the stool. 						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Health</div>
+																						<div class="c-posts__info">Jul 1</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/03/57b1afbc3cbb1eedadf0dff99ae3bd1b32aaba31d1fb500f20cc73c354ef570d.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+						width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/57b1afbc3cbb1eedadf0dff99ae3bd1b32aaba31d1fb500f20cc73c354ef570d.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/57b1afbc3cbb1eedadf0dff99ae3bd1b32aaba31d1fb500f20cc73c354ef570d.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/57b1afbc3cbb1eedadf0dff99ae3bd1b32aaba31d1fb500f20cc73c354ef570d.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
 				data-post-id="11948946"
 			>
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11948946/canada-groceries-and-essentials-benefit-payment-july-3/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3436,7 +3468,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/1148831/watch-global-national/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3469,7 +3501,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11945249/reports-raptors-nearing-trade-for-kawhi-leonard/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3502,7 +3534,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11944986/armie-hammer-citizen-vigilante-elon-musk-film-shared-on-x/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3535,7 +3567,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11945114/lost-canadians-citizenship-recall-review-update/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3568,7 +3600,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11944954/thermos-products-recalled-health-canada/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3601,7 +3633,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/11944697/explosion-monaco-ukrainian-vadym-lermolaiev/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3624,39 +3656,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						width="720" height="480" alt="" 
 												srcset='' sizes=''
 								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/monaco-apartment-building-bomb.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/monaco-apartment-building-bomb.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/monaco-apartment-building-bomb.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="11943548"
-			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/11943548/canada-morocco-confirmed-round-of-sixteen/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Canada&#8217;s opponent for the next big World Cup match is confirmed" data-title>Canada&#8217;s opponent for the next big World Cup match is confirmed</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						Canada’s next opponent in their historic FIFA World Cup run will be Morocco after that team beat the Netherlands in a 3-2 win Monday night.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																						<div class="c-posts__info">Jun 30</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/06/canada-beats-south-africa-world-cup-e1782822403201.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/canada-beats-south-africa-world-cup-e1782822403201.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/canada-beats-south-africa-world-cup-e1782822403201.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/canada-beats-south-africa-world-cup-e1782822403201.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
 											</div>
 										</a>
 							</li>
@@ -3741,23 +3740,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-playlist-miniplayer"
-			data-displayinline-video-id="3226216"
+			data-displayinline-video-id="11942151"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/3226216,11945736,11942151,11949481,11949671/?poster=https%3A%2F%2Fi0.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2F924%2F431%2FKnifeThumber_848x480_869631043769.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
-    		    			data-displayinline-playlist="3226216,11945736,11942151,11949481,11949671"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/11942151,11945736,11949481,3226216,11620764/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F9rnhq08mt9-k2l7s4416o%2Fheat_cad.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
+    		    			data-displayinline-playlist="11942151,11945736,11949481,3226216,11620764"
     												data-displayinline-sticky="true"
-													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Knife-wielding man holds 13-year-old girl hostage in Russia&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;crime&quot;,&quot;world&quot;],&quot;keywords&quot;:[&quot;caught-on-camera&quot;,&quot;russia&quot;]}}"
+													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;As Europe bakes, Southern Ontario prepares for its own heat wave\u00a0&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;,&quot;weather&quot;],&quot;keywords&quot;:[&quot;environment-canada&quot;,&quot;extreme-weather&quot;,&quot;heat-wave&quot;,&quot;short-clip&quot;,&quot;southern-ontario&quot;]}}"
 			    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Knife-wielding man holds 13-year-old girl hostage in Russia'"
+						alt="Click to play video: 'As Europe bakes, Southern Ontario prepares for its own heat wave '"
 						width="640"
 						height="360"
-													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/924/431/KnifeThumber_848x480_869631043769.jpg?w=1040&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/9rnhq08mt9-k2l7s4416o/heat_cad.jpg?w=1040&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/924/431/KnifeThumber_848x480_869631043769.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i0.wp.com/media.globalnews.ca/videostatic/924/431/KnifeThumber_848x480_869631043769.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i0.wp.com/media.globalnews.ca/videostatic/924/431/KnifeThumber_848x480_869631043769.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
+								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/9rnhq08mt9-k2l7s4416o/heat_cad.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/9rnhq08mt9-k2l7s4416o/heat_cad.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/9rnhq08mt9-k2l7s4416o/heat_cad.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -3767,8 +3766,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">1:29</time>
-																									<span class="c-video__title">Knife-wielding man holds 13-year-old girl hostage in Russia</span>
+																	<time class="c-video__duration">7:11</time>
+																									<span class="c-video__title">As Europe bakes, Southern Ontario prepares for its own heat wave </span>
 															</div>
 						</span>
 											</span>
@@ -3784,23 +3783,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="1"
 	>
-	<a href="https://globalnews.ca/video/3226216/knife-wielding-man-holds-13-year-old-girl-hostage-in-russia/"
-		title="Knife-wielding man holds 13-year-old girl hostage in Russia"
+	<a href="https://globalnews.ca/video/11942151/as-europe-bakes-southern-ontario-prepares-for-its-own-heat-wave/"
+		title="As Europe bakes, Southern Ontario prepares for its own heat wave "
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="3226216"
-		data-video-label="Crime"
+		data-video-id="11942151"
+		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/3226216,11945736,11942151,11949481,11949671/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11942151,11945736,11949481,3226216,11620764/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Knife-wielding man holds 13-year-old girl hostage in Russia</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">As Europe bakes, Southern Ontario prepares for its own heat wave </span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Crime					</div>
+						Canada					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/924/431/KnifeThumber_848x480_869631043769.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/9rnhq08mt9-k2l7s4416o/heat_cad.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -3819,7 +3818,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11945736,11942151,11949481,11949671/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11945736,11949481,3226216,11620764/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">U.S. expected to declare it won’t extend CUSMA trade deal</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -3840,34 +3839,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="3"
 	>
-	<a href="https://globalnews.ca/video/11942151/as-europe-bakes-southern-ontario-prepares-for-its-own-heat-wave/"
-		title="As Europe bakes, Southern Ontario prepares for its own heat wave "
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11942151"
-		data-video-label="Canada"
-		data-video-player-id="home-playlist-miniplayer"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11942151,11949481,11949671,11945736/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">As Europe bakes, Southern Ontario prepares for its own heat wave </span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Canada					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/9rnhq08mt9-k2l7s4416o/heat_cad.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="4"
-	>
 	<a href="https://globalnews.ca/video/11949481/national-ceremony-celebrates-canada-day-2026/"
 		title="National ceremony celebrates Canada Day 2026"
 		class="l-playlist__link c-posts__inner c-videoPlay"
@@ -3875,7 +3846,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11949481,11949671,11945736,11942151/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11949481,3226216,11620764,11945736/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">National ceremony celebrates Canada Day 2026</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -3894,25 +3865,53 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 <li class="c-posts__item l-playlist__item"
-			data-playlist-index="5"
+			data-playlist-index="4"
 	>
-	<a href="https://globalnews.ca/video/11949671/sudans-rsf-accused-of-crimes-against-humanity-ethnic-cleansing-in-el-fasher/"
-		title="Sudan&#8217;s RSF accused of crimes against humanity, ethnic cleansing in el-Fasher"
+	<a href="https://globalnews.ca/video/3226216/knife-wielding-man-holds-13-year-old-girl-hostage-in-russia/"
+		title="Knife-wielding man holds 13-year-old girl hostage in Russia"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="11949671"
-		data-video-label="Politics"
+		data-video-id="3226216"
+		data-video-label="Crime"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/11949671,11945736,11942151,11949481/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/3226216,11620764,11945736,11949481/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Sudan&#8217;s RSF accused of crimes against humanity, ethnic cleansing in el-Fasher</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Knife-wielding man holds 13-year-old girl hostage in Russia</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						Politics					</div>
+						Crime					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/zjcbom5u44-7necbvivpx/260701-REDMOND.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/924/431/KnifeThumber_848x480_869631043769.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
+			data-playlist-index="5"
+	>
+	<a href="https://globalnews.ca/video/11620764/carney-to-speak-about-new-world-order-at-world-economic-forum/"
+		title="Carney to speak about &#8216;new world order&#8217; at World Economic Forum"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="11620764"
+		data-video-label="Canada"
+		data-video-player-id="home-playlist-miniplayer"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/11620764,11945736,11949481,3226216/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Carney to speak about &#8216;new world order&#8217; at World Economic Forum</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						Canada					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/eo1l21z8yv-vtv3fzc00s/CARNEY_VMS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=03zxzk4qx#play"></use>
@@ -4465,27 +4464,27 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-29"
-	data-post-id="11944273"
+	data-post-id="11944831"
 	data-slide-index=""
-	data-caption="Ukraine drone strikes hit major Russian satellite centre near Moscow"
+	data-caption="China slaps 73.5% preliminary tariff on pea starch from Canada"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11944273/drone-strikes-moscow-russia-ukraine-war/"
+		href="https://globalnews.ca/news/11944831/china-preliminary-tariff-imports-canadian-pea-starch/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
 			<img class="c-posts__thumbnail"
 			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/06/drone-strike-russia-oil-refinery.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+			data-src=https://globalnews.ca/wp-content/uploads/2025/03/Canada-China-flags.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
 						width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/06/drone-strike-russia-oil-refinery.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/06/drone-strike-russia-oil-refinery.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/06/drone-strike-russia-oil-refinery.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2025/03/Canada-China-flags.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2025/03/Canada-China-flags.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2025/03/Canada-China-flags.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
 											</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Ukraine drone strikes hit major Russian satellite centre near Moscow" data-title>Ukraine drone strikes hit major Russian satellite centre near Moscow</span>
+					<span class="c-posts__headlineText" title="China slaps 73.5% preliminary tariff on pea starch from Canada" data-title>China slaps 73.5% preliminary tariff on pea starch from Canada</span>
 			</div>
 	
 						
@@ -4581,96 +4580,96 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-30"
-	data-post-id="11949472"
+	data-post-id="11949909"
 	data-slide-index=""
-	data-caption="World Cup fever engulfs Toronto for critical Ronaldo vs. Modric match"
+	data-caption="Toronto cancels World Cup broadcast at Nathan Phillips Square due to extreme heat"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11949472/portugal-croatia-toronto-world-cup/"
+		href="https://globalnews.ca/news/11949909/toronto-fifa-world-cup-broadcast-nathan-phillips-square-cancelled/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
 			>
 			
 		<div class="c-posts__media "  >
 			<img class="c-posts__thumbnail"
 			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/07/CP176513128-e1782944042746.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/07/nathan-phillips-watch.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
 						width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/07/CP176513128-e1782944042746.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/CP176513128-e1782944042746.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/CP176513128-e1782944042746.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/07/nathan-phillips-watch.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/nathan-phillips-watch.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/nathan-phillips-watch.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
 											</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="World Cup fever engulfs Toronto for critical Ronaldo vs. Modric match" data-title>World Cup fever engulfs Toronto for critical Ronaldo vs. Modric match</span>
+					<span class="c-posts__headlineText" title="Toronto cancels World Cup broadcast at Nathan Phillips Square due to extreme heat" data-title>Toronto cancels World Cup broadcast at Nathan Phillips Square due to extreme heat</span>
 			</div>
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >15 mins</div>
+																<div class="c-posts__info" data-date >28 mins</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-31"
-	data-post-id="11949584"
+	data-post-id="11949876"
 	data-slide-index=""
-	data-caption="Transit advocates call for low-income transit pass as TransLink fares increase"
+	data-caption="Montreal memorial marks end of shiva for shooting victim"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11949584/transit-advocates-low-income-transit-pass-translink-fares-increase/"
+		href="https://globalnews.ca/news/11949876/montreal-shooting-memorial-bystander-killed/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
-		<div class="c-posts__media "  >
+		<div class="c-posts__media  c-imageContainer"  >
 			<img class="c-posts__thumbnail"
 			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2024/01/SET-GFX-R6-RAPIDBUS-TRANSLINK-MONITOR.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="405" alt="" 
+			data-src=https://globalnews.ca/wp-content/uploads/2026/07/04ea0eaf5603360b9668c56248c20f48b6aff22d9605df899be5a5e7e9066d5d.jpg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=498 data-ratio=0.67								loading="lazy"
+						width="720" height="498" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2024/01/SET-GFX-R6-RAPIDBUS-TRANSLINK-MONITOR.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2024/01/SET-GFX-R6-RAPIDBUS-TRANSLINK-MONITOR.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2024/01/SET-GFX-R6-RAPIDBUS-TRANSLINK-MONITOR.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/07/04ea0eaf5603360b9668c56248c20f48b6aff22d9605df899be5a5e7e9066d5d.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/04ea0eaf5603360b9668c56248c20f48b6aff22d9605df899be5a5e7e9066d5d.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/04ea0eaf5603360b9668c56248c20f48b6aff22d9605df899be5a5e7e9066d5d.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
 											</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Transit advocates call for low-income transit pass as TransLink fares increase" data-title>Transit advocates call for low-income transit pass as TransLink fares increase</span>
+					<span class="c-posts__headlineText" title="Montreal memorial marks end of shiva for shooting victim" data-title>Montreal memorial marks end of shiva for shooting victim</span>
 			</div>
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >10 hours</div>
+																<div class="c-posts__info" data-date >2 hours</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-32"
-	data-post-id="11949476"
+	data-post-id="11949856"
 	data-slide-index=""
-	data-caption="Vancouver&#8217;s cruise ship season expected to be a record-breaking one"
+	data-caption="Toronto Zoo animals kept cool despite power outage during heat wave"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/11949476/vancouver-cruise-ship-season-record-breaking/"
+		href="https://globalnews.ca/news/11949856/toronto-zoo-power-outage-animals-kept-cool/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
 			<img class="c-posts__thumbnail"
 			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2016/04/vancouver-cruise-ship.jpg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=540 data-ratio=0.67								loading="lazy"
-						width="720" height="540" alt="" 
+			data-src=https://globalnews.ca/wp-content/uploads/2026/07/957ee846f66dfd6f7f481feb856ee01660c278b2572879fb6812200b40e665b8.jpg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=488 data-ratio=0.67								loading="lazy"
+						width="720" height="488" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2016/04/vancouver-cruise-ship.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2016/04/vancouver-cruise-ship.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2016/04/vancouver-cruise-ship.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/07/957ee846f66dfd6f7f481feb856ee01660c278b2572879fb6812200b40e665b8.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/957ee846f66dfd6f7f481feb856ee01660c278b2572879fb6812200b40e665b8.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/957ee846f66dfd6f7f481feb856ee01660c278b2572879fb6812200b40e665b8.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
 											</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Vancouver&#8217;s cruise ship season expected to be a record-breaking one" data-title>Vancouver&#8217;s cruise ship season expected to be a record-breaking one</span>
+					<span class="c-posts__headlineText" title="Toronto Zoo animals kept cool despite power outage during heat wave" data-title>Toronto Zoo animals kept cool despite power outage during heat wave</span>
 			</div>
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >12 hours</div>
+																<div class="c-posts__info" data-date >2 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -4765,7 +4764,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >10 hours</div>
+																<div class="c-posts__info" data-date >Jul 1</div>
 																			</div>
 									</div>
 		</a>
@@ -4797,7 +4796,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >12 hours</div>
+																<div class="c-posts__info" data-date >Jul 1</div>
 																			</div>
 									</div>
 		</a>
@@ -5736,6 +5735,70 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-51"
+	data-post-id="11949611"
+	data-slide-index=""
+	data-caption="Winnipeg Jets sign free-agent defenceman Mario Ferraro to multi-year deal"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11949611/winnipeg-jets-sign-mario-ferraro/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/03/3be55e8cb2f66c7a702f44d6cd2a6c2ecac16b13c142c19074722475c628b95f.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+						width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/03/3be55e8cb2f66c7a702f44d6cd2a6c2ecac16b13c142c19074722475c628b95f.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/03/3be55e8cb2f66c7a702f44d6cd2a6c2ecac16b13c142c19074722475c628b95f.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/03/3be55e8cb2f66c7a702f44d6cd2a6c2ecac16b13c142c19074722475c628b95f.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Winnipeg Jets sign free-agent defenceman Mario Ferraro to multi-year deal" data-title>Winnipeg Jets sign free-agent defenceman Mario Ferraro to multi-year deal</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >1 hour</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-52"
+	data-post-id="11949472"
+	data-slide-index=""
+	data-caption="World Cup fever engulfs Toronto for critical Ronaldo vs. Modric match"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/11949472/portugal-croatia-toronto-world-cup/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+			>
+			
+		<div class="c-posts__media "  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/07/CP176513128-e1782944042746.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+						width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/07/CP176513128-e1782944042746.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/CP176513128-e1782944042746.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/CP176513128-e1782944042746.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="World Cup fever engulfs Toronto for critical Ronaldo vs. Modric match" data-title>World Cup fever engulfs Toronto for critical Ronaldo vs. Modric match</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >4 hours</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-53"
 	data-post-id="11949492"
 	data-slide-index=""
 	data-caption="McAllister back in CFL groove with big returns"
@@ -5743,7 +5806,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/11949492/mcallister-back-in-cfl-groove-with-big-returns/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -5757,70 +5820,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="McAllister back in CFL groove with big returns" data-title>McAllister back in CFL groove with big returns</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Jul 1</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-52"
-	data-post-id="11949422"
-	data-slide-index=""
-	data-caption="Oilers trade Darnell Nurse to Sharks"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11949422/oilers-trade-darnell-nurse-to-sharks/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
-			>
-			
-		<div class="c-posts__media "  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/07/b508ba1bc8b29bfc14acc417975bb5f03f990a091dfe68ac81479eaadc61b6c8.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/07/b508ba1bc8b29bfc14acc417975bb5f03f990a091dfe68ac81479eaadc61b6c8.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/b508ba1bc8b29bfc14acc417975bb5f03f990a091dfe68ac81479eaadc61b6c8.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/b508ba1bc8b29bfc14acc417975bb5f03f990a091dfe68ac81479eaadc61b6c8.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Oilers trade Darnell Nurse to Sharks" data-title>Oilers trade Darnell Nurse to Sharks</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Jul 1</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-53"
-	data-post-id="11949379"
-	data-slide-index=""
-	data-caption="Stampeders confirm signing of receiver Ajou"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/11949379/stampeders-confirm-signing-of-receiver-ajou/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/07/97c74c1ebbe2829d609c23e11dd3a1c4368990ed60f667e498ef5d54199db3bc.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="471" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/07/97c74c1ebbe2829d609c23e11dd3a1c4368990ed60f667e498ef5d54199db3bc.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/07/97c74c1ebbe2829d609c23e11dd3a1c4368990ed60f667e498ef5d54199db3bc.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/07/97c74c1ebbe2829d609c23e11dd3a1c4368990ed60f667e498ef5d54199db3bc.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Stampeders confirm signing of receiver Ajou" data-title>Stampeders confirm signing of receiver Ajou</span>
 			</div>
 	
 						
@@ -6129,7 +6128,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 </script>
 		<!-- Adobe Analytics code version: JS-2.6.0. -->
 		<script type="text/javascript">
-			var gnPageData = {"context_data":{"hourofday":"6","dayofweek":"Thursday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
+			var gnPageData = {"context_data":{"hourofday":"9","dayofweek":"Thursday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
 		</script>
 				<!-- End Adobe Analytics code -->
 			<script>
@@ -6174,11 +6173,11 @@ _stq.push([ "clickTrackerInit", "176892389", "0" ]);
 var GN_OneSignalSettings = {"isCurator":"","appId":"8beb7996-b996-4ce8-a474-d488ab96be6b"};
 //# sourceURL=gnca-one-signal-js-extra
 </script>
-<script type="text/javascript" src="https://globalnews.ca/wp-content/themes/shaw-globalnews/js/one-signal.js?m=1777301159g" ></script>		<script>
+<script type="text/javascript" src="https://globalnews.ca/wp-content/themes/shaw-globalnews/js/one-signal.js?m=1779901049g" ></script>		<script>
 		if (window._satellite) { _satellite.track( 'track' ) };
 		</script>
 		
 		<div class="l-dynamicElement"></div>
 
-			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75660ba8f4","applicationID":"418684855","transactionName":"Z1BWZxdTWkAHVExRXF4adVARW1tdSV9XVVY=","queueTime":0,"applicationTime":483,"atts":"SxdBEV9JSR9EVhoCSE1I","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+			</body>
 </html>
