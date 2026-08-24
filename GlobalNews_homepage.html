@@ -184,8 +184,7 @@
         }
     </script>
     	<!-- Meta Tags -->
-	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"75660ba8f4",applicationID:"418684855",browserID:"419993820"};;/*! For license information please see nr-loader-rum-1.320.1.min.js.LICENSE.txt */
-(()=>{var e={8122(e,t,r){"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),s=0===Object.keys(r).length?e:r;for(let a in s)if(void 0!==e[a])try{if(null===e[a]){r[a]=null;continue}Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):e[a]instanceof Map||e[a]instanceof Set||e[a]instanceof Date||e[a]instanceof RegExp?r[a]=e[a]:"object"==typeof e[a]&&null!==t[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){r[a]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555(e,t,r){"use strict";r.d(t,{f:()=>a});var n=r(384),i=r(8122);const s={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function a(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}r.d(t,["D",0,e=>(0,i.a)(e,s)])},7699(e,t,r){"use strict";var n=r(860);const i={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0};r.d(t,["It",0,1e6,"KC",0,i,"qh",0,"SESSION_ERROR"])},9324(e,t,r){"use strict";r.d(t,["xv",0,"1.320.1"])},981(e,t,r){"use strict";r.d(t,["R",0,{AJAX:"AjaxRequest",PA:"PageAction",UA:"UserAction",BP:"BrowserPerformance",WS:"WebSocket",SPV:"SecurityPolicyViolation",JSE:"JavaScriptError",LOG:"Log",PVE:"PageView",PVT:"PageViewTiming",SR:"SessionReplay",ST:"SessionTrace",BI:"BrowserInteraction"}])},6154(e,t,r){"use strict";var n=r(1863);const i="undefined"!=typeof window&&!!window.document,s="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===a?.document?.visibilityState),c=""+a?.location,u=/iPad|iPhone|iPod/.test(a.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)());r.d(t,["OF",0,u,"RI",0,i,"WN",0,l,"bv",0,s,"gm",0,a,"m",0,c,"mw",0,o,"sb",0,d,"zk",0,()=>{const e=a?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<a.performance.now())return e}])},3241(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(6154);function i(e={}){try{n.gm.dispatchEvent(new CustomEvent("newrelic",{detail:e}))}catch(e){}}},1687(e,t,r){"use strict";r.d(t,{Ak:()=>o,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),s=r(860),a=r(2646);function o(e,t){if(!e)return;const r={staged:!1,priority:s.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const s=e.ee,o=i.i.handlers;if(s&&!s.aborted&&s.backlog&&o){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=s.backlog[t],r=o[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof a.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}s.isolatedBacklog||delete o[t],s.backlog[t]=null,s.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],s=e[2];n.apply(i,s)}})}},7836(e,t,r){"use strict";var n=r(384),i=r(8990),s=r(2646),a=r(5607);const o="nr@context:".concat(a.W),c=function e(t,r){var n={},a={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,s){!1!==s&&(s=!0);if(c.aborted&&!i)return;t&&s&&t.emit(e,r,n);var o=g(n);m(e).forEach(e=>{e.apply(o,r)});var u=v()[a[e]];u&&u.push([f,e,r,o]);return o},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{a[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[a[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof s.y?e:e?(0,i.I)(e,o,()=>new s.y(o)):new s.y(o)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c),r.d(t,["P",0,o,"ee",0,c])},2646(e,t,r){"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908(e,t,r){"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,s){s?(s.buffer([e],i),s.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606(e,t,r){"use strict";r.d(t,{i:()=>s});var n=r(9908);s.on=a;var i=s.handlers={};function s(e,t,r,s){a(s||n.d,i,e,t,r)}function a(e,t,r,i,s){s||(s="feature"),e||(e=n.d);var a=t[s]=t[s]||{};(a[r]=a[r]||[]).push([e,i])}},3878(e,t,r){"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function s(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>s,jT:()=>n,sp:()=>i})},5607(e,t,r){"use strict";const n=(0,r(9566).bz)();r.d(t,["W",0,n])},9566(e,t,r){"use strict";r.d(t,{LA:()=>a,bz:()=>s});var n=r(6154);function i(e,t){return e?15&e[t]:16*Math.random()|0}function s(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".split("").map(e=>"x"===e?i(t,r++).toString(16):"y"===e?(3&i()|8).toString(16):e).join("")}function a(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,s=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var o=0;o<e;o++)a.push(i(r,s++).toString(16));return a.join("")}},2614(e,t,r){"use strict";r.d(t,["BB",0,18e5,"Wt",0,"NRBA_SESSION::","iL",0,{SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},"tS",0,{STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},"wk",0,144e5])},1863(e,t,r){"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944(e,t,r){"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},8990(e,t,r){"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389(e,t,r){"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},1910(e,t,r){"use strict";r.d(t,{i:()=>s});var n=r(944);const i=new Map;function s(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),s=t.includes("nrWrapper");return r||s||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},5289(e,t,r){"use strict";r.d(t,{GG:()=>a,Qr:()=>c,sB:()=>o});var n=r(3878),i=r(6389);function s(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(s())return e();const r=(0,i.J)(e),a=setInterval(()=>{s()&&(clearInterval(a),r())},500);(0,n.sp)("load",r,t)}function o(e){if(s())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(s())return e();(0,n.sp)("popstate",e)}},384(e,t,r){"use strict";r.d(t,{Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),s=r(944),a=r(1910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,a.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,s.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}r.d(t,["NT",0,o])},2843(e,t,r){"use strict";r.d(t,{G:()=>s,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function s(e,t,r){(0,n.sp)("pagehide",e,t,r)}},9300(e,t,r){"use strict";r(860).K7.ajax;r.d(t,["mo",0,{NONE:"none",FAILURES:"failures",ALL:"all"}])},3969(e,t,r){"use strict";const n=r(860).K7.metrics;r.d(t,["TZ",0,n,"XG",0,"storeEventMetrics","xV",0,"storeSupportabilityMetrics"])},6630(e,t,r){"use strict";const n=r(860).K7.pageViewEvent;r.d(t,["T",0,n])},782(e,t,r){"use strict";const n=r(860).K7.pageViewTiming;r.d(t,["T",0,n])},4234(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},7767(e,t,r){"use strict";var n=r(6154);r.d(t,["V",0,e=>n.RI&&!0===e?.privacy.cookies_enabled])},8362(e,t,r){"use strict";r.d(t,{d:()=>s});var n=r(9566),i=r(1741);class s extends i.W{agentIdentifier=(0,n.LA)(16)}},1741(e,t,r){"use strict";r.d(t,{W:()=>s});var n=r(944),i=r(4261);class s{#e(e,...t){if(this[e]!==s.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e("log",e,t)}start(){return this.#e("start")}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},4261(e,t,r){"use strict";r.d(t,["BL",0,"finished","CH",0,"recordReplay","Dl",0,"setUserId","Fw",0,"setPageViewName","PA",0,"setCurrentRouteName","Pv",0,"consent","Tb",0,"pauseReplay","U2",0,"addToTrace","V1",0,"measure","Wb",0,"wrapLogger","bt",0,"setErrorHandler","cD",0,"setCustomAttribute","dT",0,"interaction","eY",0,"register","fF",0,"recordCustomEvent","hG",0,"addPageAction","k6",0,"addRelease","nb",0,"setApplicationVersion","o5",0,"noticeError"])},1738(e,t,r){"use strict";r.d(t,{U:()=>l,Y:()=>d});var n=r(3241),i=r(9908),s=r(1863),a=r(944),o=r(3969),c=r(8362),u=r(860);function d(e,t,r,s){const d=s||r;!d||d[e]&&d[e]!==c.d.prototype[e]||(d[e]=function(){(0,i.p)(o.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:"api-"+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,a.R)(23,e)}})}function l(e,t,r,n,a){const o=e.info;null===r?delete o.jsAttributes[t]:o.jsAttributes[t]=r,(a||null===r)&&(0,i.p)("api-"+n,[(0,s.t)(),t,r],void 0,"session",e.ee)}},8374(e,t,r){r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860(e,t,r){"use strict";const n="events",i="jserrors",s="browser/blobs",a="browser/logs",o={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},c={[o.pageViewEvent]:1,[o.pageViewTiming]:2,[o.metrics]:3,[o.jserrors]:4,[o.softNav]:5,[o.ajax]:6,[o.sessionTrace]:7,[o.sessionReplay]:8,[o.logging]:9,[o.genericEvents]:10},u={[o.pageViewEvent]:"rum",[o.pageViewTiming]:n,[o.ajax]:n,[o.softNav]:n,[o.metrics]:i,[o.jserrors]:i,[o.sessionTrace]:s,[o.sessionReplay]:s,[o.logging]:a,[o.genericEvents]:"ins"};r.d(t,["$J",0,u,"K7",0,o,"P3",0,c,"XX",0,i,"Yy",0,a,"df",0,s])}};const t={};function r(n){const i=t[n];if(void 0!==i)return i.exports;const s=t[n]={exports:{}};return e[n](s,s.exports,r),s.exports}r.m=e,r.d=(e,t)=>{if(Array.isArray(t))for(var n=0;n<t.length;){var i=t[n++],s=t[n++];r.o(e,i)?0===s&&n++:0===s?Object.defineProperty(e,i,{enumerable:!0,value:t[n++]}):Object.defineProperty(e,i,{enumerable:!0,get:s})}else for(var i in t)r.o(t,i)&&!r.o(e,i)&&Object.defineProperty(e,i,{enumerable:!0,get:t[i]})},r.f={},r.e=e=>Promise.all(Object.keys(r.f).reduce((t,n)=>(r.f[n](e,t),t),[])),r.u=e=>"nr-rum-1.320.1.min.js",r.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),(()=>{const e={},t="NRBA-1.320.1.PROD:";r.l=(n,i,s,a)=>{if(e[n])return void e[n].push(i);let o,c;if(void 0!==s){const e=document.getElementsByTagName("script");for(var u=0;u<e.length;u++){const r=e[u];if(r.getAttribute("src")==n||r.getAttribute("data-webpack")==t+s){o=r;break}}}if(!o){c=!0;var d={296:"sha512-tVt1vBEIdH0cbF0+FX2YAtMEq3dHpAui3eZmJce4ncISLbsfSol5l/6zmO5AGwZq7lhKosE9/EY+uwxfn03iYw=="};o=document.createElement("script"),o.charset="utf-8",r.nc&&o.setAttribute("nonce",r.nc),o.setAttribute("data-webpack",t+s),o.src=n,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),d[a]&&(o.integrity=d[a])}e[n]=[i];const l=(t,r)=>{o.onerror=o.onload=null,clearTimeout(f);const i=e[n];if(delete e[n],o.parentNode?.removeChild(o),i?.forEach(e=>e(r)),t)return t(r)},f=setTimeout(l.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=l.bind(null,o.onerror),o.onload=l.bind(null,o.onload),c&&document.head.appendChild(o)}})(),r.r=e=>{Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.p="https://js-agent.newrelic.com/",(()=>{const e={374:0,840:0};r.f.j=(t,n)=>{let i=r.o(e,t)?e[t]:void 0;if(0!==i)if(i)n.push(i[2]);else{const s=new Promise((r,n)=>i=e[t]=[r,n]);n.push(i[2]=s);const a=r.p+r.u(t),o=new Error,c=n=>{if(r.o(e,t)&&(i=e[t],0!==i&&(e[t]=void 0),i)){const e=n&&("load"===n.type?"missing":n.type),r=n&&n.target&&n.target.src;o.message="Loading chunk "+t+" failed: ("+e+": "+r+")",o.name="ChunkLoadError",o.type=e,o.request=r,i[1](o)}};r.l(a,c,"chunk-"+t,t)}};const t=(t,n)=>{let[i,s,a]=n;var o,c,u=0;if(i.some(t=>0!==e[t])){for(o in s)r.o(s,o)&&(r.m[o]=s[o]);if(a)a(r)}for(t&&t(n);u<i.length;u++)c=i[u],r.o(e,c)&&e[c]&&e[c][0](),e[c]=0},n=self["webpackChunk:NRBA-1.320.1.PROD"]=self["webpackChunk:NRBA-1.320.1.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{"use strict";r(8374);var e=r(8362),t=r(860);const n=Object.values(t.K7);var i=r(384),s=r(1741);var a=r(2555),o=r(981);t.K7.genericEvents,o.R.PA,o.R.UA,o.R.BP;const c={RESOURCES:"experimental.resources",REGISTER:"register"};var u=r(9300);const d=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var l=r(2614),f=r(944),g=r(8122);const p="[data-nr-mask]",m=e=>(0,g.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1,iframe_bridge:!1,iframe_domains:[]},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0,capture_payloads:u.mo.NONE},api:{register:{get enabled(){return e.feature_flags.includes(c.REGISTER)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1,get allow_iframe_bridge(){return e.feature_flags.includes(c.IFRAME_BRIDGE)||e.experimental.iframe_bridge},set allow_iframe_bridge(t){e.experimental.iframe_bridge=t},get iframe_domains(){return e.experimental.iframe_domains},set iframe_domains(t){Array.isArray(t)?e.experimental.iframe_domains=t:(0,f.R)(1,t)}}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c.RESOURCES)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:l.wk,inactiveMs:l.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){d(t)?e.mask_selector="".concat(t,",").concat(p):""===t||null===t?e.mask_selector=p:(0,f.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){d(t)?e.block_selector+=",".concat(t):""!==t&&(0,f.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,f.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]},web_sockets:{enabled:!1}}})());var h=r(6154),v=r(9324);let b=0;const y={buildEnv:"PROD",distMethod:"CDN",version:v.xv,originTime:h.WN},_={consented:!1},w={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||_.consented},set consented(e){_.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++b},listeningForIframeMessages:!1};var R=r(7836),A=r(3241);const x={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0};var E=r(9908);const S="newrelic-iframe-";function k(e,t={},n,o){let{init:c,info:u,loader_config:d,runtime:l={},exposed:f=!0}=t;if(!u){const e=(0,i.pV)();c=e.init,u=e.info,d=e.loader_config}var p;e.init=m(c||{}),e.loader_config=(p=d||{},(0,g.a)(p,x)),u.jsAttributes??={},h.bv&&(u.jsAttributes.isWorker=!0),e.info=(0,a.D)(u);const v=e.init;e.runtime??=(e=>{const t=(0,g.a)(e,w),r=Object.keys(y).reduce((e,t)=>(e[t]={value:y[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)})(l),v.proxy.assets&&(e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e})(v.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,i.pV)();Object.getOwnPropertyNames(s.W.prototype).forEach(r=>{const n=s.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let i=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return i?i(...t):n})})}(e),e.runtime.loaderType=n,e.ee=R.ee.get(e.agentIdentifier),e.exposed=f,(0,A.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.init.api.register.allow_iframe_bridge&&h.gm.addEventListener("message",t=>{"string"==typeof t.data?.type&&t.data.type.startsWith(S)&&(0,E.p)("iframe-message",[t],void 0,"IFRAME",e.ee)}),e.runtime.configured=!0)}var T=r(1863),j=r(4261),P=r(1738);var N=r(1687),O=r(4234),M=r(5289),I=r(7767);function D(e){return!!(0,i.dV)().o.MO&&(0,I.V)(e)&&!0===e?.session_trace.enabled}var V=r(6389),W=r(7699);const B=new WeakSet;class K extends O.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,V.J)(()=>{(0,N.Ak)(e,this.featureName),t()}))}):(0,N.Ak)(e,t)}importAggregator(e,t,n={}){if(this.featAggregate)return;const i=async()=>{if(await this.deferred,this.#t(e),!(0,a.f)(e.info))return(0,f.R)(43),e.ee.abort(),void this.loadedSuccessfully(!1);let i;try{if((0,I.V)(e.init)){const{setupAgentSession:t}=await r.e(296).then(r.bind(r,8391));i=t(e)}}catch(e){(0,f.R)(20,e),this.ee.emit("internal-error",[e]),(0,E.p)(W.qh,[e],void 0,this.featureName,this.ee)}if(e.init.api.register.allow_iframe_bridge)try{const{setupIframeMFEMessageListener:t}=await Promise.resolve().then(function(){const e=new Error("Cannot find module '../../loaders/configure/iframe-message-handler'");throw e.code="MODULE_NOT_FOUND",e});t(e)}catch(e){(0,f.R)(23,e)}try{if(!this.#r(this.featureName,i,e.init))return(0,N.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:r}=await t();this.featAggregate=new r(e,n),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,f.R)(34,e),this.abortHandler?.(),(0,N.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1),this.ee&&this.ee.abort()}};h.RI?(0,M.GG)(()=>i(),!0):i()}#r(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return D(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}#t(e){if(!B.has(e)&&(B.add(e),!(0,a.f)(e.info))){const t=(0,i.pV)();let r={...t.info?.jsAttributes};try{r={...r,...e.info?.jsAttributes}}catch(e){}k(e,{...t,info:{...t.info,jsAttributes:r},runtime:e.runtime},e.runtime.loaderType)}}}var C=r(6630);class U extends K{static featureName=C.T;constructor(e){var t;super(e,C.T),this.setupInspectionEvents(),t=e,(0,P.Y)(j.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,E.p)("api-"+j.Fw,[(0,T.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>r.e(296).then(r.bind(r,1324)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,A.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,M.sB)(t=>{e(t,"DOMContentLoaded")}),(0,M.GG)(t=>{e(t,"load")}),(0,M.Qr)(t=>{e(t,"navigate")}),this.ee.on(l.tS.UPDATE,(e,t)=>{(0,A.W)({type:"lifecycle",name:"session",data:t})})}}class L extends e.d{constructor(e){var t;(super(),h.gm)?(this.features={},(0,i.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(U),k(this,e,e.loaderType||"agent"),t=this,(0,P.Y)(j.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,P.U)(t,e,r,j.cD,n);(0,f.R)(40,typeof r)}else(0,f.R)(39,typeof e)},t),function(e){(0,P.Y)(j.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,f.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,E.p)("api-setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,P.U)(e,"enduser.id",t,j.Dl,!0)},e)}(this),function(e){(0,P.Y)(j.nb,function(t){if("string"==typeof t||null===t)return(0,P.U)(e,"application.version",t,j.nb,!1);(0,f.R)(42,typeof t)},e)}(this),function(e){(0,P.Y)("start",function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,P.Y)(j.Pv,function(t=!0){if("boolean"==typeof t){if((0,E.p)("api-"+j.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum()})}}else(0,f.R)(65,typeof t)},e)}(this),this.run()):(0,f.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return n.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),r=[...this.desiredFeatures];r.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),r.forEach(r=>{if(!e[r.featureName]&&r.featureName!==t.K7.pageViewEvent)return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,f.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,f.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,i.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var F=r(2843),G=r(782);class H extends K{static featureName=G.T;constructor(e){super(e,G.T),h.RI&&((0,F.u)(()=>(0,E.p)("docHidden",[(0,T.t)()],void 0,G.T,this.ee),!0),(0,F.G)(()=>(0,E.p)("winPagehide",[(0,T.t)()],void 0,G.T,this.ee)),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9981))))}}var z=r(3969);class Y extends K{static featureName=z.TZ;constructor(e){super(e,z.TZ),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9623)))}}new L({features:[U,H,Y],loaderType:"lite"})})()})();</script>
+	<meta charset="UTF-8">
 	<meta name="theme-color" content="#231F20">
 
 			<meta name="msvalidate.01" content="4F7DAF158EF3A8C47C9D2218FFF0FD40" />
@@ -243,8 +242,8 @@
 
 <!-- twitter: ends here -->
 
-			<link rel="preload" fetchpriority="high" as="image" href="https://globalnews.ca/wp-content/uploads/2026/08/carney-trump2.jpg?quality=65&#038;strip=all&#038;w=336"
-					imagesrcset="https://globalnews.ca/wp-content/uploads/2026/08/carney-trump2.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/carney-trump2.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/carney-trump2.jpg?quality=65&#038;strip=all&#038;w=720 720w,"
+			<link rel="preload" fetchpriority="high" as="image" href="https://globalnews.ca/wp-content/uploads/2026/08/6b5e815acd2e1cd673f5edc1c0af2b7c7cfc87f017b170598fe25b7b62a3207f.jpg?quality=65&#038;strip=all&#038;w=336"
+					imagesrcset="https://globalnews.ca/wp-content/uploads/2026/08/6b5e815acd2e1cd673f5edc1c0af2b7c7cfc87f017b170598fe25b7b62a3207f.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/6b5e815acd2e1cd673f5edc1c0af2b7c7cfc87f017b170598fe25b7b62a3207f.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/6b5e815acd2e1cd673f5edc1c0af2b7c7cfc87f017b170598fe25b7b62a3207f.jpg?quality=65&#038;strip=all&#038;w=720 720w,"
 							imagesizes="auto"
 		/>
 	
@@ -461,7 +460,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 
 				
 
-				gnAdSettings = {"adPath":"\/6872\/globalnews\/website","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"18","weatherprec":"x","weathercode":"11","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
+				gnAdSettings = {"adPath":"\/6872\/globalnews\/website","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"17","weatherprec":"x","weathercode":"28","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
 		</script>
 			<script>
 				// Load the APS JavaScript Library
@@ -1512,12 +1511,12 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 											<div>
 														<a
 								class="c-posts__headlineLink"
-								href="https://globalnews.ca/news/12031918/trump-first-comments-failed-us-canada-trade-deal/"
+								href="https://globalnews.ca/news/12032621/donald-trump-tariffs-automotive-steel/"
 								data-analytics="
 								{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:0}								"
 							>
 																		<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Trump says Canada wants &#8216;benefit&#8217; of U.S. state without being one as trade war escalates" data-title>Trump says Canada wants &#8216;benefit&#8217; of U.S. state without being one as trade war escalates</span>
+					<span class="c-posts__headlineText" title="Trump threatens more tariffs on Canadian automotive industry and steel" data-title>Trump threatens more tariffs on Canadian automotive industry and steel</span>
 			</div>
 															</a>
 													</div>
@@ -1525,32 +1524,32 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<div class="c-posts__media  c-posts__media--video c-videoPlay c-videoPlay--standard" tabindex=0 >
 			<img class="c-posts__thumbnail"
 			fetchpriority="high"
-			src=https://globalnews.ca/wp-content/uploads/2026/08/carney-trump2.jpg?quality=65&#038;strip=all&#038;w=720									width="720" height="405" alt="" 
-											srcset="https://globalnews.ca/wp-content/uploads/2026/08/carney-trump2.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/carney-trump2.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/carney-trump2.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"					/>
+			src=https://globalnews.ca/wp-content/uploads/2026/08/6b5e815acd2e1cd673f5edc1c0af2b7c7cfc87f017b170598fe25b7b62a3207f.jpg?quality=65&#038;strip=all&#038;w=720									width="720" height="480" alt="" 
+											srcset="https://globalnews.ca/wp-content/uploads/2026/08/6b5e815acd2e1cd673f5edc1c0af2b7c7cfc87f017b170598fe25b7b62a3207f.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/6b5e815acd2e1cd673f5edc1c0af2b7c7cfc87f017b170598fe25b7b62a3207f.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/6b5e815acd2e1cd673f5edc1c0af2b7c7cfc87f017b170598fe25b7b62a3207f.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"					/>
 							<div class="c-posts__video">
 						    	<div class="c-video c-videoPlay  c-video--contained"
     		data-iframe-receiver
     		data-autoplay=""
 						data-displayinline-featured="false"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_12032132_6a8c39f24f236"
-			data-displayinline-video-id="12032132"
+			data-displayinline-player-id="miniplayer_12031470_6a8c56621c70e"
+			data-displayinline-video-id="12031470"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/12032132/#autoplay&#038;stickyiframe=miniplayer_12032132_6a8c39f24f236"
+    		data-displayinline="https://globalnews.ca/video/embed/12031470/#autoplay&#038;stickyiframe=miniplayer_12031470_6a8c56621c70e"
     									data-displayinline-container="stories-1-0"
 										data-displayinline-sticky="true"
-													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Canada wants &#039;benefits&#039; of a U.S. state without being one, Trump says&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;],&quot;keywords&quot;:[&quot;51st-state&quot;,&quot;short-clip&quot;,&quot;top-news&quot;,&quot;trade-war&quot;,&quot;trumps-tariffs&quot;,&quot;usa&quot;]}}"
+													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Carney vows &#039;dollar-for-dollar&#039; retaliation after Canada-US trade talks collapse\u00a0&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;,&quot;politics&quot;,&quot;us-news&quot;],&quot;keywords&quot;:[&quot;canada-u-s-trade&quot;,&quot;canada-tariffs&quot;,&quot;canada-u-s-trade-deal&quot;,&quot;donald-trump-tariffs&quot;,&quot;mark-carney&quot;,&quot;short-clip&quot;]}}"
 			    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Canada wants &#8216;benefits&#8217; of a U.S. state without being one, Trump says'"
+						alt="Click to play video: 'Carney vows &#8216;dollar-for-dollar&#8217; retaliation after Canada-US trade talks collapse '"
 						width="640"
 						height="360"
-													data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/pcstx3nye4-m0rx6edjui/JG_AFF_TRUMP_ON_TADE_TA_OM01ZXTN_thumbnail_1280x720_.jpg?w=1040&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/4q283t0a49-r5r2siw69b/Sequence_01.00_00_02_10.Still002.jpg?w=1040&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i2.wp.com/media.globalnews.ca/videostatic/news/pcstx3nye4-m0rx6edjui/JG_AFF_TRUMP_ON_TADE_TA_OM01ZXTN_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i2.wp.com/media.globalnews.ca/videostatic/news/pcstx3nye4-m0rx6edjui/JG_AFF_TRUMP_ON_TADE_TA_OM01ZXTN_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i2.wp.com/media.globalnews.ca/videostatic/news/pcstx3nye4-m0rx6edjui/JG_AFF_TRUMP_ON_TADE_TA_OM01ZXTN_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
+								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/4q283t0a49-r5r2siw69b/Sequence_01.00_00_02_10.Still002.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/4q283t0a49-r5r2siw69b/Sequence_01.00_00_02_10.Still002.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/4q283t0a49-r5r2siw69b/Sequence_01.00_00_02_10.Still002.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 											</span>
@@ -1569,19 +1568,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						<div class="c-posts__details">
 														<a
 								class="c-posts__detailsLink"
-								href="https://globalnews.ca/news/12031918/trump-first-comments-failed-us-canada-trade-deal/"
+								href="https://globalnews.ca/news/12032621/donald-trump-tariffs-automotive-steel/"
 								data-analytics="
 								{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:0}								"
 							>
 																		<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Trump says Canada wants &#8216;benefit&#8217; of U.S. state without being one as trade war escalates" data-title>Trump says Canada wants &#8216;benefit&#8217; of U.S. state without being one as trade war escalates</span>
+					<span class="c-posts__headlineText" title="Trump threatens more tariffs on Canadian automotive industry and steel" data-title>Trump threatens more tariffs on Canadian automotive industry and steel</span>
 			</div>
 																		<div class="c-posts__excerpt">
-									U.S. President Donald Trump made his first comments on the failed trade agreement with Canada and appeared to revive his &quot;51st State&quot; rhetoric.									</div>
+									U.S. President Donald Trump has threatened additional tariffs onto Canadian automobiles, car parts and steel amid the trade war between the two nations.									</div>
 																<div class="c-posts__about c-posts__about--multiple">
 																		<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Aug 23</div>
-																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
+																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">10 mins</div>
+																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
 																	</div>
 														</a>
 													</div>
@@ -1593,8 +1592,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				>
 					<a
 						class="c-posts__inner"
-						href="https://globalnews.ca/news/12028246/jeff-rath-bullion-court-battles/"
+						href="https://globalnews.ca/news/12032550/trade-war-canada-dollar-for-dollar-response/"
 						data-analytics="{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:1}"
+					>
+						
+		<div class="c-posts__media "  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/08/Carney-Canada-response.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+						width="720" height="483" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/Carney-Canada-response.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/Carney-Canada-response.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/Carney-Canada-response.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+								<div class="c-posts__details">
+										<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Trade war enters new phase as Canada readies ‘dollar-for-dollar’ response" data-title>Trade war enters new phase as Canada readies ‘dollar-for-dollar’ response</span>
+			</div>
+								<div class="c-posts__about c-posts__about--multiple">
+																<div class="c-posts__info c-posts__info--highlight">Canada</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
+															</div>
+						</div>
+					</a>
+				</li>
+									<li 
+					class="c-posts__item " 
+					data-container-id="stories-1-2"
+				>
+					<a
+						class="c-posts__inner"
+						href="https://globalnews.ca/news/12028246/jeff-rath-bullion-court-battles/"
+						data-analytics="{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:2}"
 					>
 						
 		<div class="c-posts__media "  >
@@ -1611,38 +1640,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			</div>
 								<div class="c-posts__about c-posts__about--multiple">
 																<div class="c-posts__info c-posts__info--highlight">Investigations</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">4 hours</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">6 hours</div>
 																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">10 min read</div>
-															</div>
-						</div>
-					</a>
-				</li>
-									<li 
-					class="c-posts__item " 
-					data-container-id="stories-1-2"
-				>
-					<a
-						class="c-posts__inner"
-						href="https://globalnews.ca/news/12031983/conservatives-canada-us-deal-details/"
-						data-analytics="{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:2}"
-					>
-						
-		<div class="c-posts__media "  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/08/14a18773a1b9c783850e9129dd03206d248ca4351c06a344d813f03f56109cff.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="482" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/14a18773a1b9c783850e9129dd03206d248ca4351c06a344d813f03f56109cff.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/14a18773a1b9c783850e9129dd03206d248ca4351c06a344d813f03f56109cff.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/14a18773a1b9c783850e9129dd03206d248ca4351c06a344d813f03f56109cff.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-								<div class="c-posts__details">
-										<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Conservatives urge feds to release details of U.S. deal Canada walked away from" data-title>Conservatives urge feds to release details of U.S. deal Canada walked away from</span>
-			</div>
-								<div class="c-posts__about c-posts__about--multiple">
-																<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Aug 23</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 															</div>
 						</div>
 					</a>
@@ -1661,59 +1660,59 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=12			data-parent-id=home-topStories					>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-1"
-	data-post-id="12032086"
+	data-post-id="12032552"
 	data-slide-index=""
-	data-caption="Man arrested after shooting in N.W.T. prompts shelter-in-place order"
+	data-caption="&#8216;Very difficult&#8217;: Calgary jewelry maker set to lose customers amid trade war"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/12032086/northwest-territories-fort-smith-shooting-arrest/"
+		href="https://globalnews.ca/news/12032552/calgary-jewerly-maker-trade-war/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
 			>
 			
-		<div class="c-posts__media "  >
+		<div class="c-posts__media  c-imageContainer"  >
 			<img class="c-posts__thumbnail"
 			fetchpriority="high"
-			src=https://globalnews.ca/wp-content/uploads/2026/04/ff6ad29386b4528b402647c9b1bba053e5b30faaf04a796bcaa319c6cb7a49f4.jpg?quality=65&#038;strip=all&#038;w=720									width="720" height="480" alt="" 
-											srcset="https://globalnews.ca/wp-content/uploads/2026/04/ff6ad29386b4528b402647c9b1bba053e5b30faaf04a796bcaa319c6cb7a49f4.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/ff6ad29386b4528b402647c9b1bba053e5b30faaf04a796bcaa319c6cb7a49f4.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/ff6ad29386b4528b402647c9b1bba053e5b30faaf04a796bcaa319c6cb7a49f4.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"					/>
+			src=https://globalnews.ca/wp-content/uploads/2026/08/3b1533515bc4a63987469ac5d502c7695efa3a52e604ca9daa4d7840158517f5.jpg?quality=65&#038;strip=all&#038;w=540			data-width=540 data-height=720 data-ratio=0.67						width="540" height="720" alt="" 
+											srcset="https://globalnews.ca/wp-content/uploads/2026/08/3b1533515bc4a63987469ac5d502c7695efa3a52e604ca9daa4d7840158517f5.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/3b1533515bc4a63987469ac5d502c7695efa3a52e604ca9daa4d7840158517f5.jpg?quality=65&#038;strip=all&#038;w=420 420w,https://globalnews.ca/wp-content/uploads/2026/08/3b1533515bc4a63987469ac5d502c7695efa3a52e604ca9daa4d7840158517f5.jpg?quality=65&#038;strip=all&#038;w=540 540w,"				sizes="auto"					/>
 											</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Man arrested after shooting in N.W.T. prompts shelter-in-place order" data-title>Man arrested after shooting in N.W.T. prompts shelter-in-place order</span>
+					<span class="c-posts__headlineText" title="&#8216;Very difficult&#8217;: Calgary jewelry maker set to lose customers amid trade war" data-title>&#8216;Very difficult&#8217;: Calgary jewelry maker set to lose customers amid trade war</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Crime</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Aug 23</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">2 hours</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-2"
-	data-post-id="12031919"
+	data-post-id="12031918"
 	data-slide-index=""
-	data-caption="Mystery man &#8216;Lucky&#8217; found in Amsterdam is not missing person from B.C.: police"
+	data-caption="Trump says Canada wants &#8216;benefit&#8217; of U.S. state without being one as trade war escalates"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/12031919/unknown-man-amsterdam-police-not-vancouver-man/"
+		href="https://globalnews.ca/news/12031918/trump-first-comments-failed-us-canada-trade-deal/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
 			<img class="c-posts__thumbnail"
 			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/08/unknown-man.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/08/carney-trump2.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
 						width="720" height="405" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/unknown-man.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/unknown-man.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/unknown-man.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/carney-trump2.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/carney-trump2.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/carney-trump2.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
 											</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Mystery man &#8216;Lucky&#8217; found in Amsterdam is not missing person from B.C.: police" data-title>Mystery man &#8216;Lucky&#8217; found in Amsterdam is not missing person from B.C.: police</span>
+					<span class="c-posts__headlineText" title="Trump says Canada wants &#8216;benefit&#8217; of U.S. state without being one as trade war escalates" data-title>Trump says Canada wants &#8216;benefit&#8217; of U.S. state without being one as trade war escalates</span>
 			</div>
 	
 						
@@ -1749,6 +1748,108 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-3"
+	data-post-id="12031983"
+	data-slide-index=""
+	data-caption="Conservatives urge feds to release details of U.S. deal Canada walked away from"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/12031983/conservatives-canada-us-deal-details/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+			>
+			
+		<div class="c-posts__media "  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/08/14a18773a1b9c783850e9129dd03206d248ca4351c06a344d813f03f56109cff.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+						width="720" height="482" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/14a18773a1b9c783850e9129dd03206d248ca4351c06a344d813f03f56109cff.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/14a18773a1b9c783850e9129dd03206d248ca4351c06a344d813f03f56109cff.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/14a18773a1b9c783850e9129dd03206d248ca4351c06a344d813f03f56109cff.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Conservatives urge feds to release details of U.S. deal Canada walked away from" data-title>Conservatives urge feds to release details of U.S. deal Canada walked away from</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Aug 23</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-4"
+	data-post-id="12032086"
+	data-slide-index=""
+	data-caption="Man arrested after shooting in N.W.T. prompts shelter-in-place order"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/12032086/northwest-territories-fort-smith-shooting-arrest/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
+			>
+			
+		<div class="c-posts__media "  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/04/ff6ad29386b4528b402647c9b1bba053e5b30faaf04a796bcaa319c6cb7a49f4.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+						width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/04/ff6ad29386b4528b402647c9b1bba053e5b30faaf04a796bcaa319c6cb7a49f4.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/04/ff6ad29386b4528b402647c9b1bba053e5b30faaf04a796bcaa319c6cb7a49f4.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/04/ff6ad29386b4528b402647c9b1bba053e5b30faaf04a796bcaa319c6cb7a49f4.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Man arrested after shooting in N.W.T. prompts shelter-in-place order" data-title>Man arrested after shooting in N.W.T. prompts shelter-in-place order</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Crime</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Aug 23</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-5"
+	data-post-id="12031919"
+	data-slide-index=""
+	data-caption="Mystery man &#8216;Lucky&#8217; found in Amsterdam is not missing person from B.C.: police"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/12031919/unknown-man-amsterdam-police-not-vancouver-man/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
+			>
+			
+		<div class="c-posts__media "  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/08/unknown-man.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+						width="720" height="405" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/unknown-man.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/unknown-man.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/unknown-man.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Mystery man &#8216;Lucky&#8217; found in Amsterdam is not missing person from B.C.: police" data-title>Mystery man &#8216;Lucky&#8217; found in Amsterdam is not missing person from B.C.: police</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Aug 23</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-6"
 	data-post-id="12031582"
 	data-slide-index=""
 	data-caption="Canadian premiers appear to back Carney&#8217;s decision to abandon &#8216;bad deal&#8217; with United States"
@@ -1756,7 +1857,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/12031582/trade-talks-premiers-reaction/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1777,108 +1878,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Aug 22</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-4"
-	data-post-id="12031378"
-	data-slide-index=""
-	data-caption="Carney says Canada &#8216;walking away from a bad deal&#8217; as 50% tariffs hit"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/12031378/canada-united-states-trade-talks-tariffs-hit/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
-			>
-			
-		<div class="c-posts__media "  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/08/CP176369981.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="473" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/CP176369981.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/CP176369981.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/CP176369981.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Carney says Canada &#8216;walking away from a bad deal&#8217; as 50% tariffs hit" data-title>Carney says Canada &#8216;walking away from a bad deal&#8217; as 50% tariffs hit</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Aug 22</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-5"
-	data-post-id="12031388"
-	data-slide-index=""
-	data-caption="Unifor, General Motors reach tentative deal for thousands of Ontario auto workers"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/12031388/general-motors-unifor-tentative-deal/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
-			>
-			
-		<div class="c-posts__media "  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/08/CP176731544.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/CP176731544.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/CP176731544.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/CP176731544.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Unifor, General Motors reach tentative deal for thousands of Ontario auto workers" data-title>Unifor, General Motors reach tentative deal for thousands of Ontario auto workers</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Aug 22</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-6"
-	data-post-id="12031459"
-	data-slide-index=""
-	data-caption="U.S.-Canada trade talks have collapsed. Carney says these 3 issues torpedoed them"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/12031459/united-states-canada-trade-talks-issues/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
-			>
-			
-		<div class="c-posts__media "  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/08/CP176749781.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/CP176749781.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/CP176749781.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/CP176749781.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="U.S.-Canada trade talks have collapsed. Carney says these 3 issues torpedoed them" data-title>U.S.-Canada trade talks have collapsed. Carney says these 3 issues torpedoed them</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Aug 22</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1907,61 +1906,95 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-7"
-	data-post-id="12030311"
+	data-post-id="12031378"
 	data-slide-index=""
-	data-caption="Edmonton Sikh temple stabbing suspect just released from prison: &#8216;History of violent offences&#8217;"
+	data-caption="Carney says Canada &#8216;walking away from a bad deal&#8217; as 50% tariffs hit"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/12030311/edmonton-sikh-temple-nanaksar-gurdwara-stabbing/"
+		href="https://globalnews.ca/news/12031378/canada-united-states-trade-talks-tariffs-hit/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
 			>
 			
 		<div class="c-posts__media "  >
 			<img class="c-posts__thumbnail"
 			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/08/Temple-2.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="405" alt="" 
+			data-src=https://globalnews.ca/wp-content/uploads/2026/08/CP176369981.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+						width="720" height="473" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/Temple-2.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/Temple-2.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/Temple-2.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/CP176369981.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/CP176369981.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/CP176369981.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
 											</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Edmonton Sikh temple stabbing suspect just released from prison: &#8216;History of violent offences&#8217;" data-title>Edmonton Sikh temple stabbing suspect just released from prison: &#8216;History of violent offences&#8217;</span>
+					<span class="c-posts__headlineText" title="Carney says Canada &#8216;walking away from a bad deal&#8217; as 50% tariffs hit" data-title>Carney says Canada &#8216;walking away from a bad deal&#8217; as 50% tariffs hit</span>
 			</div>
 	
 						
 							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Crime</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Aug 21</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">7 min read</div>
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Aug 22</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
 														</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
 	data-container-id="stories-item-8"
-	data-post-id="12030351"
+	data-post-id="12031388"
 	data-slide-index=""
-	data-caption="Canada vows dollar-for-dollar response to Trump&#8217;s 50% tariffs"
+	data-caption="Unifor, General Motors reach tentative deal for thousands of Ontario auto workers"
 		>
 		<a
 		class="c-posts__inner"
-		href="https://globalnews.ca/news/12030351/donald-trump-tariffs-canada-trade-deal-deadline/"
+		href="https://globalnews.ca/news/12031388/general-motors-unifor-tentative-deal/"
 		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
 			>
 			
-		<div class="c-posts__media  c-imageContainer"  >
+		<div class="c-posts__media "  >
 			<img class="c-posts__thumbnail"
 			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/08/Carney-tariff-pause.jpg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=496 data-ratio=0.67								loading="lazy"
-						width="720" height="496" alt="" 
+			data-src=https://globalnews.ca/wp-content/uploads/2026/08/CP176731544.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+						width="720" height="480" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/Carney-tariff-pause.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/Carney-tariff-pause.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/Carney-tariff-pause.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/CP176731544.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/CP176731544.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/CP176731544.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
 											</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Canada vows dollar-for-dollar response to Trump&#8217;s 50% tariffs" data-title>Canada vows dollar-for-dollar response to Trump&#8217;s 50% tariffs</span>
+					<span class="c-posts__headlineText" title="Unifor, General Motors reach tentative deal for thousands of Ontario auto workers" data-title>Unifor, General Motors reach tentative deal for thousands of Ontario auto workers</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Aug 22</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">1 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-9"
+	data-post-id="12031459"
+	data-slide-index=""
+	data-caption="U.S.-Canada trade talks have collapsed. Carney says these 3 issues torpedoed them"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/12031459/united-states-canada-trade-talks-issues/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
+			>
+			
+		<div class="c-posts__media "  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/08/CP176749781.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+						width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/CP176749781.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/CP176749781.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/CP176749781.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="U.S.-Canada trade talks have collapsed. Carney says these 3 issues torpedoed them" data-title>U.S.-Canada trade talks have collapsed. Carney says these 3 issues torpedoed them</span>
 			</div>
 	
 						
@@ -1974,7 +2007,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-9"
+	data-container-id="stories-item-10"
 	data-post-id="12032138"
 	data-slide-index=""
 	data-caption="Eastern Canada premiers renew buy Canadian calls as U.S. trade war ramps up"
@@ -1982,7 +2015,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/12032138/eastern-canada-premiers-buy-canadian-calls-renewed/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -2007,16 +2040,16 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 									</div>
 		</a>
 	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-10"
+<li class="c-posts__item    is-hidden"
+	data-container-id="stories-item-11"
 	data-post-id="12031964"
 	data-slide-index=""
 	data-caption="‘We can’t run our businesses’: Canadian companies react to U.S. tariffs"
-		>
+		data-ad-fallback=false>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/12031964/canadian-companies-us-tariffs-reaction/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -2037,40 +2070,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Aug 23</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">4 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    is-hidden"
-	data-container-id="stories-item-11"
-	data-post-id="12031968"
-	data-slide-index=""
-	data-caption="The Bank of Canada&#8217;s worried about the rise of private credit. Here&#8217;s why"
-		data-ad-fallback=false>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/12031968/bank-of-canada-private-credit/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
-			>
-			
-		<div class="c-posts__media "  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/08/9c4676101f443bb0da993d0bb18bf8c3c59b4d5b1cd855fe4e4c5e5244c95cf7.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="463" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/9c4676101f443bb0da993d0bb18bf8c3c59b4d5b1cd855fe4e4c5e5244c95cf7.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/9c4676101f443bb0da993d0bb18bf8c3c59b4d5b1cd855fe4e4c5e5244c95cf7.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/9c4676101f443bb0da993d0bb18bf8c3c59b4d5b1cd855fe4e4c5e5244c95cf7.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="The Bank of Canada&#8217;s worried about the rise of private credit. Here&#8217;s why" data-title>The Bank of Canada&#8217;s worried about the rise of private credit. Here&#8217;s why</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Economy</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Aug 23</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
 														</div>
 									</div>
 		</a>
@@ -2126,10 +2125,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay="true"
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6a8c39f255728"
+			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6a8c566220028"
 			data-displayinline-video-id="49a91e7f-1023-430f-8d66-561055f3d0f7"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6a8c39f255728"
+    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6a8c566220028"
     		    			data-displayinline-playlist="49a91e7f-1023-430f-8d66-561055f3d0f7"
     									data-displayinline-container="mini-ott"
 																data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;recent_terms_datastore&quot;,&quot;type&quot;:&quot;wlo_option&quot;}}"
@@ -2271,7 +2270,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="‘We can’t run our businesses’: Canadian companies react to U.S. tariffs" data-title>‘We can’t run our businesses’: Canadian companies react to U.S. tariffs</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">15,231</span>
+							<span class="c-posts__info c-posts__info--highlight">20,022</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2302,7 +2301,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="U.S.-Canada trade talks have collapsed. Carney says these 3 issues torpedoed them" data-title>U.S.-Canada trade talks have collapsed. Carney says these 3 issues torpedoed them</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">3,539</span>
+							<span class="c-posts__info c-posts__info--highlight">6,704</span>
+							<span class="c-posts__info">Read</span>
+						</div>
+												
+											</div>
+				</a>
+			</li>
+								<li class="c-posts__item" data-post-id="12031333">
+				<a
+					href="https://globalnews.ca/news/12031333/heres-what-items-will-be-tariffed-by-the-u-s/"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
+				>
+					<div class="c-posts__rank">
+							<svg class="c-icon  c-posts__rankIcon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=j8jgz8uos#3"></use>
+	</svg>
+						</div>
+					
+		<div class="c-posts__media "  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/08/8b7752762fc7d33e7cdebf5cdbfb688fca45d30c3f04a4c3e258969dfdc91f4d.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+						width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/8b7752762fc7d33e7cdebf5cdbfb688fca45d30c3f04a4c3e258969dfdc91f4d.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/8b7752762fc7d33e7cdebf5cdbfb688fca45d30c3f04a4c3e258969dfdc91f4d.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/8b7752762fc7d33e7cdebf5cdbfb688fca45d30c3f04a4c3e258969dfdc91f4d.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+							<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Here’s what items will be tariffed by the U.S." data-title>Here’s what items will be tariffed by the U.S.</span>
+			</div>
+													<div class="c-posts__about">
+							<span class="c-posts__info c-posts__info--highlight">2,901</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2312,11 +2342,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<li class="c-posts__item" data-post-id="12031910">
 				<a
 					href="https://globalnews.ca/news/12031910/bank-of-canada-private-credit-risks/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:3}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=j8jgz8uos#3"></use>
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=j8jgz8uos#4"></use>
 	</svg>
 						</div>
 					
@@ -2333,7 +2363,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Bank of Canada concerned over private credit risks" data-title>Bank of Canada concerned over private credit risks</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">1,902</span>
+							<span class="c-posts__info c-posts__info--highlight">2,884</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2343,11 +2373,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<li class="c-posts__item" data-post-id="12031918">
 				<a
 					href="https://globalnews.ca/news/12031918/trump-first-comments-failed-us-canada-trade-deal/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:3}"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:4}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=j8jgz8uos#4"></use>
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=j8jgz8uos#5"></use>
 	</svg>
 						</div>
 					
@@ -2364,38 +2394,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Trump says Canada wants &#8216;benefit&#8217; of U.S. state without being one as trade war escalates" data-title>Trump says Canada wants &#8216;benefit&#8217; of U.S. state without being one as trade war escalates</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">1,883</span>
-							<span class="c-posts__info">Read</span>
-						</div>
-												
-											</div>
-				</a>
-			</li>
-								<li class="c-posts__item" data-post-id="12032138">
-				<a
-					href="https://globalnews.ca/news/12032138/eastern-canada-premiers-buy-canadian-calls-renewed/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:4}"
-				>
-					<div class="c-posts__rank">
-							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=j8jgz8uos#5"></use>
-	</svg>
-						</div>
-					
-		<div class="c-posts__media "  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/08/98af3c0f097306c842b68ca22c0c54bd558d8641bbc4508df8f442a9d3e74ff4.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/98af3c0f097306c842b68ca22c0c54bd558d8641bbc4508df8f442a9d3e74ff4.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/98af3c0f097306c842b68ca22c0c54bd558d8641bbc4508df8f442a9d3e74ff4.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/98af3c0f097306c842b68ca22c0c54bd558d8641bbc4508df8f442a9d3e74ff4.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-							<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Eastern Canada premiers renew buy Canadian calls as U.S. trade war ramps up" data-title>Eastern Canada premiers renew buy Canadian calls as U.S. trade war ramps up</span>
-			</div>
-													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">1,508</span>
+							<span class="c-posts__info c-posts__info--highlight">2,848</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2466,8 +2465,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<input type="hidden" id="s_brand" name="s_brand" value="gn" />
 				<input type="hidden" id="s_gn_daily_national" name="s_gn_daily_national" value="100" data-newsletter-inline-code />
 				<input type="hidden" id="s_collector" name="s_collector" value="" />
-				<input type="hidden" id="s_create_date" name="s_create_date" value="2026-08-24 12:32:50" />
-				<input type="hidden" id="s_last_modified" name="s_last_modified" value="2026-08-24 12:32:50" />
+				<input type="hidden" id="s_create_date" name="s_create_date" value="2026-08-24 14:34:10" />
+				<input type="hidden" id="s_last_modified" name="s_last_modified" value="2026-08-24 14:34:10" />
 			</fieldset>
 			<label for="ns-region-home-email-input" class="sr-only">Sign up for National newsletter</label>
 			<input id="ns-region-home-email-input" type="text" class="c-newsletterSignup__input" placeholder="Email address" data-newsletter-inline-email />
@@ -2516,7 +2515,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="‘We can’t run our businesses’: Canadian companies react to U.S. tariffs" data-title>‘We can’t run our businesses’: Canadian companies react to U.S. tariffs</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">15,231</span>
+							<span class="c-posts__info c-posts__info--highlight">20,022</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2547,7 +2546,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="U.S.-Canada trade talks have collapsed. Carney says these 3 issues torpedoed them" data-title>U.S.-Canada trade talks have collapsed. Carney says these 3 issues torpedoed them</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">3,539</span>
+							<span class="c-posts__info c-posts__info--highlight">6,704</span>
+							<span class="c-posts__info">Read</span>
+						</div>
+												
+											</div>
+				</a>
+			</li>
+								<li class="c-posts__item" data-post-id="12031333">
+				<a
+					href="https://globalnews.ca/news/12031333/heres-what-items-will-be-tariffed-by-the-u-s/"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
+				>
+					<div class="c-posts__rank">
+							<svg class="c-icon  c-posts__rankIcon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=j8jgz8uos#3"></use>
+	</svg>
+						</div>
+					
+		<div class="c-posts__media "  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/08/8b7752762fc7d33e7cdebf5cdbfb688fca45d30c3f04a4c3e258969dfdc91f4d.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+						width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/8b7752762fc7d33e7cdebf5cdbfb688fca45d30c3f04a4c3e258969dfdc91f4d.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/8b7752762fc7d33e7cdebf5cdbfb688fca45d30c3f04a4c3e258969dfdc91f4d.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/8b7752762fc7d33e7cdebf5cdbfb688fca45d30c3f04a4c3e258969dfdc91f4d.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+							<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Here’s what items will be tariffed by the U.S." data-title>Here’s what items will be tariffed by the U.S.</span>
+			</div>
+													<div class="c-posts__about">
+							<span class="c-posts__info c-posts__info--highlight">2,901</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2557,11 +2587,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<li class="c-posts__item" data-post-id="12031910">
 				<a
 					href="https://globalnews.ca/news/12031910/bank-of-canada-private-credit-risks/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:3}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=j8jgz8uos#3"></use>
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=j8jgz8uos#4"></use>
 	</svg>
 						</div>
 					
@@ -2578,7 +2608,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Bank of Canada concerned over private credit risks" data-title>Bank of Canada concerned over private credit risks</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">1,902</span>
+							<span class="c-posts__info c-posts__info--highlight">2,884</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2588,11 +2618,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<li class="c-posts__item" data-post-id="12031918">
 				<a
 					href="https://globalnews.ca/news/12031918/trump-first-comments-failed-us-canada-trade-deal/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:3}"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:4}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=j8jgz8uos#4"></use>
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=j8jgz8uos#5"></use>
 	</svg>
 						</div>
 					
@@ -2609,38 +2639,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Trump says Canada wants &#8216;benefit&#8217; of U.S. state without being one as trade war escalates" data-title>Trump says Canada wants &#8216;benefit&#8217; of U.S. state without being one as trade war escalates</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">1,883</span>
-							<span class="c-posts__info">Read</span>
-						</div>
-												
-											</div>
-				</a>
-			</li>
-								<li class="c-posts__item" data-post-id="12032138">
-				<a
-					href="https://globalnews.ca/news/12032138/eastern-canada-premiers-buy-canadian-calls-renewed/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:4}"
-				>
-					<div class="c-posts__rank">
-							<svg class="c-icon  c-posts__rankIcon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=j8jgz8uos#5"></use>
-	</svg>
-						</div>
-					
-		<div class="c-posts__media "  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/08/98af3c0f097306c842b68ca22c0c54bd558d8641bbc4508df8f442a9d3e74ff4.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/98af3c0f097306c842b68ca22c0c54bd558d8641bbc4508df8f442a9d3e74ff4.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/98af3c0f097306c842b68ca22c0c54bd558d8641bbc4508df8f442a9d3e74ff4.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/98af3c0f097306c842b68ca22c0c54bd558d8641bbc4508df8f442a9d3e74ff4.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-							<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Eastern Canada premiers renew buy Canadian calls as U.S. trade war ramps up" data-title>Eastern Canada premiers renew buy Canadian calls as U.S. trade war ramps up</span>
-			</div>
-													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">1,508</span>
+							<span class="c-posts__info c-posts__info--highlight">2,848</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2737,6 +2736,72 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=4								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-13"
+	data-post-id="12032550"
+	data-slide-index=""
+	data-caption="Trade war enters new phase as Canada readies ‘dollar-for-dollar’ response"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/12032550/trade-war-canada-dollar-for-dollar-response/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/08/Carney-Canada-response.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+						width="720" height="483" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/Carney-Canada-response.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/Carney-Canada-response.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/Carney-Canada-response.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Trade war enters new phase as Canada readies ‘dollar-for-dollar’ response" data-title>Trade war enters new phase as Canada readies ‘dollar-for-dollar’ response</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date >2 hours</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-14"
+	data-post-id="12032552"
+	data-slide-index=""
+	data-caption="&#8216;Very difficult&#8217;: Calgary jewelry maker set to lose customers amid trade war"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/12032552/calgary-jewerly-maker-trade-war/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/08/3b1533515bc4a63987469ac5d502c7695efa3a52e604ca9daa4d7840158517f5.jpg?quality=65&#038;strip=all&#038;w=540			data-width=540 data-height=720 data-ratio=0.67								loading="lazy"
+						width="540" height="720" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/3b1533515bc4a63987469ac5d502c7695efa3a52e604ca9daa4d7840158517f5.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/3b1533515bc4a63987469ac5d502c7695efa3a52e604ca9daa4d7840158517f5.jpg?quality=65&#038;strip=all&#038;w=420 420w,https://globalnews.ca/wp-content/uploads/2026/08/3b1533515bc4a63987469ac5d502c7695efa3a52e604ca9daa4d7840158517f5.jpg?quality=65&#038;strip=all&#038;w=540 540w,"				data-sizes="auto"					/>
+											</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="&#8216;Very difficult&#8217;: Calgary jewelry maker set to lose customers amid trade war" data-title>&#8216;Very difficult&#8217;: Calgary jewelry maker set to lose customers amid trade war</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date >2 hours</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-15"
 	data-post-id="12031964"
 	data-slide-index=""
 	data-caption="‘We can’t run our businesses’: Canadian companies react to U.S. tariffs"
@@ -2744,7 +2809,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/12031964/canadian-companies-us-tariffs-reaction/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -2769,7 +2834,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-14"
+	data-container-id="stories-item-16"
 	data-post-id="12031582"
 	data-slide-index=""
 	data-caption="Canadian premiers appear to back Carney&#8217;s decision to abandon &#8216;bad deal&#8217; with United States"
@@ -2777,7 +2842,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/12031582/trade-talks-premiers-reaction/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -2796,76 +2861,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
-																<div class="c-posts__info" data-date >Aug 22</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-15"
-	data-post-id="12031459"
-	data-slide-index=""
-	data-caption="U.S.-Canada trade talks have collapsed. Carney says these 3 issues torpedoed them"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/12031459/united-states-canada-trade-talks-issues/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/08/CP176749781.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/CP176749781.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/CP176749781.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/CP176749781.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="U.S.-Canada trade talks have collapsed. Carney says these 3 issues torpedoed them" data-title>U.S.-Canada trade talks have collapsed. Carney says these 3 issues torpedoed them</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Politics</div>
-																<div class="c-posts__info" data-date >Aug 22</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-16"
-	data-post-id="12031470"
-	data-slide-index=""
-	data-caption="Carney vows &#8216;dollar-for-dollar&#8217; retaliation after Canada-US trade talks collapse "
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/video/12031470/carney-vows-dollar-for-dollar-retaliation-after-canada-us-trade-talks-collapse/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
-			>
-			
-		<div class="c-posts__media "  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://i0.wp.com/media.globalnews.ca/videostatic/news/4q283t0a49-r5r2siw69b/Sequence_01.00_00_02_10.Still002.jpg?h=article-hero-560-keepratio&#038;w=article-hero-small-keepratio&#038;crop=1&#038;quality=70&#038;strip=all											loading="lazy"
-						width="article-hero-small-keepratio" height="article-hero-560-keepratio" alt="" 
-					/>
-							<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon c-posts__icon--video">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=j8jgz8uos#play"></use>
-	</svg>
-	</div>
-				</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Carney vows &#8216;dollar-for-dollar&#8217; retaliation after Canada-US trade talks collapse " data-title>Carney vows &#8216;dollar-for-dollar&#8217; retaliation after Canada-US trade talks collapse </span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
 																<div class="c-posts__info" data-date >Aug 22</div>
 																			</div>
 									</div>
@@ -3205,23 +3200,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer"
-			data-displayinline-video-id="12031734"
+			data-displayinline-video-id="12032377"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/12031734,12032377,12031470,12032132,12032371/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Faw607v7t0j-s3fplwnawr%2FONLINE_STILL_BUSINESS_TRADE.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
-    		    			data-displayinline-playlist="12031734,12032377,12031470,12032132,12032371"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/12032377,12031734,12031470,12031732,12032371/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F2v6s7flda8-oeewdpi15z%2FONLINE_STILL_TRADE_TALKS_TRUMP_CARNEY.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
+    		    			data-displayinline-playlist="12032377,12031734,12031470,12031732,12032371"
     												data-displayinline-sticky="true"
-													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Canadian businesses prepare for &#039;serious hit&#039; as Carney ends U.S. trade talks&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;],&quot;keywords&quot;:[&quot;business&quot;,&quot;canada-us-trade&quot;,&quot;canadian-businesses&quot;,&quot;short-clip&quot;,&quot;trade&quot;,&quot;trump-tariffs&quot;]}}"
+													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Trump slams Canada for walking away from trade deal&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;,&quot;politics&quot;,&quot;us-news&quot;],&quot;keywords&quot;:[&quot;canada-us-trade&quot;,&quot;donald-trump&quot;,&quot;short-clip&quot;,&quot;top-news&quot;,&quot;trump-tariffs&quot;,&quot;trump-trade-war&quot;]}}"
 			    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Canadian businesses prepare for &#8216;serious hit&#8217; as Carney ends U.S. trade talks'"
+						alt="Click to play video: 'Trump slams Canada for walking away from trade deal'"
 						width="640"
 						height="360"
-													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/aw607v7t0j-s3fplwnawr/ONLINE_STILL_BUSINESS_TRADE.jpg?w=1040&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/2v6s7flda8-oeewdpi15z/ONLINE_STILL_TRADE_TALKS_TRUMP_CARNEY.jpg?w=1040&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/aw607v7t0j-s3fplwnawr/ONLINE_STILL_BUSINESS_TRADE.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/aw607v7t0j-s3fplwnawr/ONLINE_STILL_BUSINESS_TRADE.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/aw607v7t0j-s3fplwnawr/ONLINE_STILL_BUSINESS_TRADE.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
+								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/2v6s7flda8-oeewdpi15z/ONLINE_STILL_TRADE_TALKS_TRUMP_CARNEY.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/2v6s7flda8-oeewdpi15z/ONLINE_STILL_TRADE_TALKS_TRUMP_CARNEY.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/2v6s7flda8-oeewdpi15z/ONLINE_STILL_TRADE_TALKS_TRUMP_CARNEY.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -3231,20 +3226,20 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">2:17</time>
-																									<span class="c-video__title">Canadian businesses prepare for &#8216;serious hit&#8217; as Carney ends U.S. trade talks</span>
+																	<time class="c-video__duration">2:33</time>
+																									<span class="c-video__title">Trump slams Canada for walking away from trade deal</span>
 															</div>
 						</span>
 											</span>
 				</div>
 							</div>
 								<div class="l-videoCarousel__sidebar">
-													<a href="https://globalnews.ca/video/12031734/canadian-businesses-prepare-for-serious-hit-as-carney-ends-us-trade-talks/" class="l-videoCarousel__details">
+													<a href="https://globalnews.ca/video/12032377/trump-slams-canada-for-walking-away-from-trade-deal/" class="l-videoCarousel__details">
 							<div class="l-videoCarousel__info">Canada</div>
 								<div class="l-videoCarousel__fullTitle">
-								Canadian businesses prepare for &#8216;serious hit&#8217; as Carney ends U.S. trade talks								</div>
+								Trump slams Canada for walking away from trade deal								</div>
 								<div class="l-videoCarousel__description">
-								The new 50 per cent tariff will make it much more expensive for many Canadian businesses to export to the U.S. – adding to the pain many sectors had already been feeling. Lumber, steel and auto producers had been hopeful that tariffs would be lowered because of these talks. As Jasmine King reports, the financial impact of the trade impasse is only beginning. 								</div>
+								Much uncertainty lies ahead for Canada and the United States after the collapse of Friday’s trade talks. The threatened 50 per cent tariffs are now in place and Canada is preparing its own dollar-for-dollar counter tariffs after Prime Minister Mark Carney slammed Trump’s negotiators for offering too little and asking too much. Now, the U.S. president is airing his grievances. Eric Sorensen reports.								</div>
 						</a>
 								<div class="c-ad c-ad--bigbox c-ad--dark l-videoCarousel__ad">							<div class="c-ad__label">Advertisement</div>
 			
@@ -3271,40 +3266,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<div class="c-carousel__track glide__track" data-glide-el="track">
 						<ul class="c-posts c-posts--video c-posts--tile c-posts--horizontal c-posts--inverted glide__slides">
 							
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Canadian businesses prepare for &#8216;serious hit&#8217; as Carney ends U.S. trade talks" data-slide-index="0">
-	<a href="https://globalnews.ca/video/12031734/canadian-businesses-prepare-for-serious-hit-as-carney-ends-us-trade-talks/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="12031734"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/12031734,12032377,12031470,12032132,12032371/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="12031734,12032377,12031470,12032132,12032371"
-			data-video-carousel-label="Canada"
-			data-video-carousel-content="The new 50 per cent tariff will make it much more expensive for many Canadian businesses to export to the U.S. – adding to the pain many sectors had already been feeling. Lumber, steel and auto producers had been hopeful that tariffs would be lowered because of these talks. As Jasmine King reports, the financial impact of the trade impasse is only beginning. "
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/aw607v7t0j-s3fplwnawr/ONLINE_STILL_BUSINESS_TRADE.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=j8jgz8uos#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Canadian businesses prepare for &#8216;serious hit&#8217; as Carney ends U.S. trade talks</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Trump slams Canada for walking away from trade deal" data-slide-index="1">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Trump slams Canada for walking away from trade deal" data-slide-index="0">
 	<a href="https://globalnews.ca/video/12032377/trump-slams-canada-for-walking-away-from-trade-deal/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="12032377"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/12032377,12031470,12032132,12032371,12031734/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="12032377,12031470,12032132,12032371,12031734"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/12032377,12031734,12031470,12031732,12032371/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="12032377,12031734,12031470,12031732,12032371"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="Much uncertainty lies ahead for Canada and the United States after the collapse of Friday’s trade talks. The threatened 50 per cent tariffs are now in place and Canada is preparing its own dollar-for-dollar counter tariffs after Prime Minister Mark Carney slammed Trump’s negotiators for offering too little and asking too much. Now, the U.S. president is airing his grievances. Eric Sorensen reports."
 			>
@@ -3325,13 +3293,40 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Canadian businesses prepare for &#8216;serious hit&#8217; as Carney ends U.S. trade talks" data-slide-index="1">
+	<a href="https://globalnews.ca/video/12031734/canadian-businesses-prepare-for-serious-hit-as-carney-ends-us-trade-talks/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="12031734"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/12031734,12031470,12031732,12032371,12032377/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="12031734,12031470,12031732,12032371,12032377"
+			data-video-carousel-label="Canada"
+			data-video-carousel-content="The new 50 per cent tariff will make it much more expensive for many Canadian businesses to export to the U.S. – adding to the pain many sectors had already been feeling. Lumber, steel and auto producers had been hopeful that tariffs would be lowered because of these talks. As Jasmine King reports, the financial impact of the trade impasse is only beginning. "
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/aw607v7t0j-s3fplwnawr/ONLINE_STILL_BUSINESS_TRADE.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=j8jgz8uos#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Canadian businesses prepare for &#8216;serious hit&#8217; as Carney ends U.S. trade talks</span></div>
+					</div>
+	</a>
+</li>
+
 <li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Carney vows &#8216;dollar-for-dollar&#8217; retaliation after Canada-US trade talks collapse " data-slide-index="2">
 	<a href="https://globalnews.ca/video/12031470/carney-vows-dollar-for-dollar-retaliation-after-canada-us-trade-talks-collapse/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="12031470"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/12031470,12032132,12032371,12031734,12032377/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="12031470,12032132,12032371,12031734,12032377"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/12031470,12031732,12032371,12032377,12031734/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="12031470,12031732,12032371,12032377,12031734"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="At a press conference on Saturday, Prime Minister Mark Carney said Canada will match new U.S. tariffs “dollar for dollar” after suspending trade negotiations with the United States. Carney said the U.S. introduced last-minute demands that would have hurt Canada’s auto sector, restricted its ability to pursue trade deals with other countries and weakened protections for Canadian culture and sovereignty. Canada’s retaliatory measures will target sectors including steel, dairy, appliances, agricultural equipment, pulp and paper, and electronics."
 			>
@@ -3352,18 +3347,18 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Canada wants &#8216;benefits&#8217; of a U.S. state without being one, Trump says" data-slide-index="3">
-	<a href="https://globalnews.ca/video/12032132/canada-wants-benefits-of-a-u-s-state-without-being-one-trump-says/"
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Canada to retaliate after U.S. tariff talks collapse" data-slide-index="3">
+	<a href="https://globalnews.ca/video/12031732/canada-to-retaliate-after-us-tariff-talks-collapse/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="12032132"
+					data-video-id="12031732"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/12032132,12032371,12031734,12032377,12031470/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="12032132,12032371,12031734,12032377,12031470"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/12031732,12032371,12032377,12031734,12031470/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="12031732,12032371,12032377,12031734,12031470"
 			data-video-carousel-label="Canada"
-			data-video-carousel-content="U.S. President Donald Trump said that Canada wants the benefits enjoyed by U.S. states without being a state itself. Trump made the comment in a Truth Social post early Sunday in his first remarks on the collapse of trade talks with Canada. Prime Minister Mark Carney said Saturday that Canada will impose tariffs on some U.S. goods in retaliation for 50 per cent levies on Canadian products ordered by Trump."
+			data-video-carousel-content="Late Friday night, Canada walked away from the negotiating table in Washington, D.C., ending the talks without a deal to avoid President Donald Trump’s threat of a 50 per cent tariff on Canadian goods. Prime Minister Mark Carney called the negotiating team home after the U.S. introduced last-minute demands, throwing into question the validity of any possible deal. Mackenzie Gray reports."
 			>
 		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/pcstx3nye4-m0rx6edjui/JG_AFF_TRUMP_ON_TADE_TA_OM01ZXTN_thumbnail_1280x720_.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+							<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/4t4p4noyn0-fufuy3ifh4/ONLINE_STILL_TRADE_TALKS.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=j8jgz8uos#play"></use>
@@ -3374,7 +3369,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							<div class="l-videoCarousel__info">
 					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Canada wants &#8216;benefits&#8217; of a U.S. state without being one, Trump says</span></div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Canada to retaliate after U.S. tariff talks collapse</span></div>
 					</div>
 	</a>
 </li>
@@ -3384,8 +3379,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="12032371"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/12032371,12031734,12032377,12031470,12032132/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="12032371,12031734,12032377,12031470,12032132"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/12032371,12032377,12031734,12031470,12031732/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="12032371,12032377,12031734,12031470,12031732"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="An annual competition in Winnipeg brings together arborists from across the Prairies, to show off their skills when it comes to scaling trees. Teagan Rasche reports. "
 			>
@@ -3438,19 +3433,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/12032377,12031470,12032132,12032371/#autoplay&#038;stickyiframe=home-miniplayer_12032377"
+			href="https://globalnews.ca/video/embed/playlist/12031734,12031470,12031732,12032371/#autoplay&#038;stickyiframe=home-miniplayer_12031734"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_12032377"
+			data-displayinline-player-id="home-miniplayer_12031734"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/12032377,12031470,12032132,12032371/#autoplay&#038;stickyiframe=home-miniplayer_12032377"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/12031734,12031470,12031732,12032371/#autoplay&#038;stickyiframe=home-miniplayer_12031734"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/2v6s7flda8-oeewdpi15z/ONLINE_STILL_TRADE_TALKS_TRUMP_CARNEY.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/aw607v7t0j-s3fplwnawr/ONLINE_STILL_BUSINESS_TRADE.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Trump slams Canada for walking away from trade deal'"
+					alt="Click to play video 'Canadian businesses prepare for &#8216;serious hit&#8217; as Carney ends U.S. trade talks'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3459,11 +3454,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/12032377/trump-slams-canada-for-walking-away-from-trade-deal/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/12031734/canadian-businesses-prepare-for-serious-hit-as-carney-ends-us-trade-talks/" class="c-posts__details">
 				<div class="c-posts__about">
 					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Trump slams Canada for walking away from trade deal</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Canadian businesses prepare for &#8216;serious hit&#8217; as Carney ends U.S. trade talks</span></div>
 		</a>
 	</div>
 </li>
@@ -3493,11 +3488,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/12031470,12032132,12032371,12032377/#autoplay&#038;stickyiframe=home-miniplayer_12031470"
+			href="https://globalnews.ca/video/embed/playlist/12031470,12031732,12032371,12031734/#autoplay&#038;stickyiframe=home-miniplayer_12031470"
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_12031470"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/12031470,12032132,12032371,12032377/#autoplay&#038;stickyiframe=home-miniplayer_12031470"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/12031470,12031732,12032371,12031734/#autoplay&#038;stickyiframe=home-miniplayer_12031470"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3526,19 +3521,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/12032132,12032371,12032377,12031470/#autoplay&#038;stickyiframe=home-miniplayer_12032132"
+			href="https://globalnews.ca/video/embed/playlist/12031732,12032371,12031734,12031470/#autoplay&#038;stickyiframe=home-miniplayer_12031732"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_12032132"
+			data-displayinline-player-id="home-miniplayer_12031732"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/12032132,12032371,12032377,12031470/#autoplay&#038;stickyiframe=home-miniplayer_12032132"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/12031732,12032371,12031734,12031470/#autoplay&#038;stickyiframe=home-miniplayer_12031732"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/pcstx3nye4-m0rx6edjui/JG_AFF_TRUMP_ON_TADE_TA_OM01ZXTN_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/4t4p4noyn0-fufuy3ifh4/ONLINE_STILL_TRADE_TALKS.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Canada wants &#8216;benefits&#8217; of a U.S. state without being one, Trump says'"
+					alt="Click to play video 'Canada to retaliate after U.S. tariff talks collapse'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false">
@@ -3547,11 +3542,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/12032132/canada-wants-benefits-of-a-u-s-state-without-being-one-trump-says/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/12031732/canada-to-retaliate-after-us-tariff-talks-collapse/" class="c-posts__details">
 				<div class="c-posts__about">
 					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Canada wants &#8216;benefits&#8217; of a U.S. state without being one, Trump says</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Canada to retaliate after U.S. tariff talks collapse</span></div>
 		</a>
 	</div>
 </li>
@@ -3559,11 +3554,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/12032371,12032377,12031470,12032132/#autoplay&#038;stickyiframe=home-miniplayer_12032371"
+			href="https://globalnews.ca/video/embed/playlist/12032371,12031734,12031470,12031732/#autoplay&#038;stickyiframe=home-miniplayer_12032371"
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_12032371"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/12032371,12032377,12031470,12032132/#autoplay&#038;stickyiframe=home-miniplayer_12032371"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/12032371,12031734,12031470,12031732/#autoplay&#038;stickyiframe=home-miniplayer_12032371"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3715,12 +3710,45 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							</li>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
+				data-post-id="12030351"
+			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/12030351/donald-trump-tariffs-canada-trade-deal-deadline/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Canada vows dollar-for-dollar response to Trump&#8217;s 50% tariffs" data-title>Canada vows dollar-for-dollar response to Trump&#8217;s 50% tariffs</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						Canada vowed retaliation and suspended trade talks with Washington after new U.S. tariffs took effect Saturday.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Politics</div>
+																						<div class="c-posts__info">Aug 22</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media  c-imageContainer"  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/08/Carney-tariff-pause.jpg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=496 data-ratio=0.67								loading="lazy"
+						width="720" height="496" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/Carney-tariff-pause.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/Carney-tariff-pause.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/Carney-tariff-pause.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
 				data-post-id="12030987"
 			>
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/12030987/pwhl-championship-walter-cup-trophy-missing/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3753,7 +3781,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/12030853/warrant-quebec-man-visa-fraud-scheme/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3786,7 +3814,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/12030616/trump-beef-tariffs-prices-cattle/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3819,7 +3847,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/12030604/18-year-old-sword-attack-school-sweden-1-dead-police/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3852,7 +3880,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/12030399/us-alcohol-returns-readers/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3875,39 +3903,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						width="720" height="447" alt="" 
 												srcset='' sizes=''
 								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/Readers-U.S.-booze.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/Readers-U.S.-booze.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/Readers-U.S.-booze.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="12030232"
-			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/12030232/mark-zuckerberg-buys-castle-in-ireland/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Mark Zuckerberg purchases castle estate in Ireland, close to Europe Meta HQ" data-title>Mark Zuckerberg purchases castle estate in Ireland, close to Europe Meta HQ</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						The Facebook founder bought Strancally Castle, built in 1830 and extensively renovated in 2003, according to a state heritage service.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Trending</div>
-																						<div class="c-posts__info">Aug 21</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media  c-imageContainer"  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/08/Strancally-Castle-ireland-mark-zuckerberg.png?w=720			data-width=720 data-height=563 data-ratio=0.67								loading="lazy"
-						width="720" height="563" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/Strancally-Castle-ireland-mark-zuckerberg.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/Strancally-Castle-ireland-mark-zuckerberg.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/Strancally-Castle-ireland-mark-zuckerberg.png?w=720 720w,"				data-sizes="auto"					/>
 											</div>
 										</a>
 							</li>
@@ -3992,23 +3987,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
 			data-displayinline-player-id="home-playlist-miniplayer"
-			data-displayinline-video-id="12031734"
+			data-displayinline-video-id="12032377"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/12031734,12032377,12031470,12032132,12032371/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Faw607v7t0j-s3fplwnawr%2FONLINE_STILL_BUSINESS_TRADE.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
-    		    			data-displayinline-playlist="12031734,12032377,12031470,12032132,12032371"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/12032377,12031734,12031470,12031732,12032371/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2F2v6s7flda8-oeewdpi15z%2FONLINE_STILL_TRADE_TALKS_TRUMP_CARNEY.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
+    		    			data-displayinline-playlist="12032377,12031734,12031470,12031732,12032371"
     												data-displayinline-sticky="true"
-													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Canadian businesses prepare for &#039;serious hit&#039; as Carney ends U.S. trade talks&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;],&quot;keywords&quot;:[&quot;business&quot;,&quot;canada-us-trade&quot;,&quot;canadian-businesses&quot;,&quot;short-clip&quot;,&quot;trade&quot;,&quot;trump-tariffs&quot;]}}"
+													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Trump slams Canada for walking away from trade deal&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;,&quot;politics&quot;,&quot;us-news&quot;],&quot;keywords&quot;:[&quot;canada-us-trade&quot;,&quot;donald-trump&quot;,&quot;short-clip&quot;,&quot;top-news&quot;,&quot;trump-tariffs&quot;,&quot;trump-trade-war&quot;]}}"
 			    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Canadian businesses prepare for &#8216;serious hit&#8217; as Carney ends U.S. trade talks'"
+						alt="Click to play video: 'Trump slams Canada for walking away from trade deal'"
 						width="640"
 						height="360"
-													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/aw607v7t0j-s3fplwnawr/ONLINE_STILL_BUSINESS_TRADE.jpg?w=1040&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/2v6s7flda8-oeewdpi15z/ONLINE_STILL_TRADE_TALKS_TRUMP_CARNEY.jpg?w=1040&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/aw607v7t0j-s3fplwnawr/ONLINE_STILL_BUSINESS_TRADE.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/aw607v7t0j-s3fplwnawr/ONLINE_STILL_BUSINESS_TRADE.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/aw607v7t0j-s3fplwnawr/ONLINE_STILL_BUSINESS_TRADE.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
+								data-srcset="https://i1.wp.com/media.globalnews.ca/videostatic/news/2v6s7flda8-oeewdpi15z/ONLINE_STILL_TRADE_TALKS_TRUMP_CARNEY.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i1.wp.com/media.globalnews.ca/videostatic/news/2v6s7flda8-oeewdpi15z/ONLINE_STILL_TRADE_TALKS_TRUMP_CARNEY.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i1.wp.com/media.globalnews.ca/videostatic/news/2v6s7flda8-oeewdpi15z/ONLINE_STILL_TRADE_TALKS_TRUMP_CARNEY.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 												<span class="c-video__overlay">
@@ -4018,8 +4013,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</svg>
 	</div>
 							<div class="c-video__data">
-																	<time class="c-video__duration">2:17</time>
-																									<span class="c-video__title">Canadian businesses prepare for &#8216;serious hit&#8217; as Carney ends U.S. trade talks</span>
+																	<time class="c-video__duration">2:33</time>
+																									<span class="c-video__title">Trump slams Canada for walking away from trade deal</span>
 															</div>
 						</span>
 											</span>
@@ -4035,23 +4030,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="1"
 	>
-	<a href="https://globalnews.ca/video/12031734/canadian-businesses-prepare-for-serious-hit-as-carney-ends-us-trade-talks/"
-		title="Canadian businesses prepare for &#8216;serious hit&#8217; as Carney ends U.S. trade talks"
+	<a href="https://globalnews.ca/video/12032377/trump-slams-canada-for-walking-away-from-trade-deal/"
+		title="Trump slams Canada for walking away from trade deal"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="12031734"
+		data-video-id="12032377"
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/12031734,12032377,12031470,12032132,12032371/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/12032377,12031734,12031470,12031732,12032371/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Canadian businesses prepare for &#8216;serious hit&#8217; as Carney ends U.S. trade talks</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Trump slams Canada for walking away from trade deal</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
 						Canada					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/aw607v7t0j-s3fplwnawr/ONLINE_STILL_BUSINESS_TRADE.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/2v6s7flda8-oeewdpi15z/ONLINE_STILL_TRADE_TALKS_TRUMP_CARNEY.jpg?w=640&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=j8jgz8uos#play"></use>
@@ -4063,23 +4058,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="2"
 	>
-	<a href="https://globalnews.ca/video/12032377/trump-slams-canada-for-walking-away-from-trade-deal/"
-		title="Trump slams Canada for walking away from trade deal"
+	<a href="https://globalnews.ca/video/12031734/canadian-businesses-prepare-for-serious-hit-as-carney-ends-us-trade-talks/"
+		title="Canadian businesses prepare for &#8216;serious hit&#8217; as Carney ends U.S. trade talks"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="12032377"
+		data-video-id="12031734"
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/12032377,12031470,12032132,12032371/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/12031734,12031470,12031732,12032371/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Trump slams Canada for walking away from trade deal</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Canadian businesses prepare for &#8216;serious hit&#8217; as Carney ends U.S. trade talks</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
 						Canada					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/2v6s7flda8-oeewdpi15z/ONLINE_STILL_TRADE_TALKS_TRUMP_CARNEY.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/aw607v7t0j-s3fplwnawr/ONLINE_STILL_BUSINESS_TRADE.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=j8jgz8uos#play"></use>
@@ -4098,7 +4093,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/12031470,12032132,12032371,12032377/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/12031470,12031732,12032371,12031734/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Carney vows &#8216;dollar-for-dollar&#8217; retaliation after Canada-US trade talks collapse </span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4119,23 +4114,23 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="4"
 	>
-	<a href="https://globalnews.ca/video/12032132/canada-wants-benefits-of-a-u-s-state-without-being-one-trump-says/"
-		title="Canada wants &#8216;benefits&#8217; of a U.S. state without being one, Trump says"
+	<a href="https://globalnews.ca/video/12031732/canada-to-retaliate-after-us-tariff-talks-collapse/"
+		title="Canada to retaliate after U.S. tariff talks collapse"
 		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="12032132"
+		data-video-id="12031732"
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/12032132,12032371,12032377,12031470/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/12031732,12032371,12031734,12031470/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Canada wants &#8216;benefits&#8217; of a U.S. state without being one, Trump says</span></div>
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Canada to retaliate after U.S. tariff talks collapse</span></div>
 							<div class="c-posts__about l-playlist__about">
 					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
 						Canada					</div>
 				</div>
 					</div>
 		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/pcstx3nye4-m0rx6edjui/JG_AFF_TRUMP_ON_TADE_TA_OM01ZXTN_thumbnail_1280x720_.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<img data-src="https://i2.wp.com/media.globalnews.ca/videostatic/news/4t4p4noyn0-fufuy3ifh4/ONLINE_STILL_TRADE_TALKS.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
 			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
 		<svg class="c-icon  c-button__icon" focusable="false">
 		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=j8jgz8uos#play"></use>
@@ -4154,7 +4149,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/12032371,12032377,12031470,12032132/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/12032371,12031734,12031470,12031732/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Arborists gather in Winnipeg for annual tree climbing competition</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4832,6 +4827,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-34"
+	data-post-id="12032543"
+	data-slide-index=""
+	data-caption="Percentage of Ontario youth struggling with mental health back to pre-COVID level, survey suggests"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/12032543/ontario-youth-mental-health-2026/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/08/8f4c4704e93b557fccb050387e4bd1fdac7f084f3b6ecee6edf4453cabe83a02.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+						width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/8f4c4704e93b557fccb050387e4bd1fdac7f084f3b6ecee6edf4453cabe83a02.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/8f4c4704e93b557fccb050387e4bd1fdac7f084f3b6ecee6edf4453cabe83a02.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/8f4c4704e93b557fccb050387e4bd1fdac7f084f3b6ecee6edf4453cabe83a02.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Percentage of Ontario youth struggling with mental health back to pre-COVID level, survey suggests" data-title>Percentage of Ontario youth struggling with mental health back to pre-COVID level, survey suggests</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >2 hours</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-35"
 	data-post-id="12032276"
 	data-slide-index=""
 	data-caption="Hundreds commemorate Edmonton correctional officer Ramandeep Kaur Maan"
@@ -4839,7 +4866,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/12032276/correctional-officer-ramandeep-kaur-maan-funeral/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -4857,13 +4884,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >1 hour</div>
+																<div class="c-posts__info" data-date >3 hours</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-35"
+	data-container-id="stories-item-36"
 	data-post-id="12032359"
 	data-slide-index=""
 	data-caption="Surging Lions roll past Roughriders 30-16"
@@ -4871,7 +4898,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/12032359/surging-lions-roll-past-roughriders-30-16/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -4885,38 +4912,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="Surging Lions roll past Roughriders 30-16" data-title>Surging Lions roll past Roughriders 30-16</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >10 hours</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-36"
-	data-post-id="12031626"
-	data-slide-index=""
-	data-caption="Hundreds gather for funeral of correctional officer Nicolae Serban"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/12031626/funeral-correctional-officer-nicolae-serban/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/08/Nicolae-Serban-funeral.jpg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=540 data-ratio=0.67								loading="lazy"
-						width="720" height="540" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/Nicolae-Serban-funeral.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/Nicolae-Serban-funeral.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/Nicolae-Serban-funeral.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Hundreds gather for funeral of correctional officer Nicolae Serban" data-title>Hundreds gather for funeral of correctional officer Nicolae Serban</span>
 			</div>
 	
 						
@@ -4991,6 +4986,70 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-37"
+	data-post-id="12032547"
+	data-slide-index=""
+	data-caption="Trump and referendum talk to mark a tough-to-predict Quebec election, analysts say"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/12032547/quebec-election-2026-predictions/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/08/ecd9d61549fe2c41209ba4e0d8d87dea193e5feca2a0cc6954328cbe9a76c799.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+						width="720" height="261" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/ecd9d61549fe2c41209ba4e0d8d87dea193e5feca2a0cc6954328cbe9a76c799.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/ecd9d61549fe2c41209ba4e0d8d87dea193e5feca2a0cc6954328cbe9a76c799.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/ecd9d61549fe2c41209ba4e0d8d87dea193e5feca2a0cc6954328cbe9a76c799.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Trump and referendum talk to mark a tough-to-predict Quebec election, analysts say" data-title>Trump and referendum talk to mark a tough-to-predict Quebec election, analysts say</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >2 hours</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-38"
+	data-post-id="12032545"
+	data-slide-index=""
+	data-caption="Montreal council to vote on motion calling for suspension of ties with Israel"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/12032545/montreal-council-israel-relations/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/08/074b9ca5edc045fd31fdbd167726404b602b403ee719f845f256c041f048cadc.jpg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=491 data-ratio=0.67								loading="lazy"
+						width="720" height="491" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/074b9ca5edc045fd31fdbd167726404b602b403ee719f845f256c041f048cadc.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/074b9ca5edc045fd31fdbd167726404b602b403ee719f845f256c041f048cadc.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/074b9ca5edc045fd31fdbd167726404b602b403ee719f845f256c041f048cadc.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Montreal council to vote on motion calling for suspension of ties with Israel" data-title>Montreal council to vote on motion calling for suspension of ties with Israel</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >2 hours</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-39"
 	data-post-id="12030922"
 	data-slide-index=""
 	data-caption="City of Edmonton considering return of controversial calcium chloride"
@@ -4998,7 +5057,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/12030922/edmonton-considering-return-of-calcium-chloride/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5012,70 +5071,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
 					<span class="c-posts__headlineText" title="City of Edmonton considering return of controversial calcium chloride" data-title>City of Edmonton considering return of controversial calcium chloride</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Aug 21</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-38"
-	data-post-id="12030723"
-	data-slide-index=""
-	data-caption="Ontario Premier Doug Ford silent on request to restock American alcohol"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/12030723/doug-ford-lcbo-alcohol-tariffs/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
-			>
-			
-		<div class="c-posts__media "  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/08/CP176663538.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/CP176663538.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/CP176663538.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/CP176663538.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Ontario Premier Doug Ford silent on request to restock American alcohol" data-title>Ontario Premier Doug Ford silent on request to restock American alcohol</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Aug 21</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-39"
-	data-post-id="12030633"
-	data-slide-index=""
-	data-caption="Incumbent Toronto councillor makes last-minute switch to run in vacant ward"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/12030633/dianne-saxe-toronto-danforth/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/08/CP24994092.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/CP24994092.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/CP24994092.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/CP24994092.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Incumbent Toronto councillor makes last-minute switch to run in vacant ward" data-title>Incumbent Toronto councillor makes last-minute switch to run in vacant ward</span>
 			</div>
 	
 						
@@ -5489,6 +5484,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-46"
+	data-post-id="12030412"
+	data-slide-index=""
+	data-caption="Tupac murder suspect told police his nephew fired fatal shots at rapper"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/12030412/tupac-murder-suspect-says-nephew-fired-fatal-shot-trial/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/08/keffe-d-tupac-murder-trial.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+						width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/keffe-d-tupac-murder-trial.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/keffe-d-tupac-murder-trial.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/keffe-d-tupac-murder-trial.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Tupac murder suspect told police his nephew fired fatal shots at rapper" data-title>Tupac murder suspect told police his nephew fired fatal shots at rapper</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >Aug 21</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-47"
 	data-post-id="12030224"
 	data-slide-index=""
 	data-caption="Ariana Grande granted expedited subpoenas to reveal alleged hackers&#8217; identities"
@@ -5496,7 +5523,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/12030224/ariana-grande-granted-expedited-subpoenas-alleged-hackers-lawsuit/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -5520,7 +5547,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-47"
+	data-container-id="stories-item-48"
 	data-post-id="12029918"
 	data-slide-index=""
 	data-caption="Neutrogena responds after handling of Hayden Panettiere deal draws scrutiny"
@@ -5528,7 +5555,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/12029918/neutrogena-adresses-backlash-hayden-panettiere-deal/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -5547,38 +5574,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						
 							<div class="c-posts__about ">
 																<div class="c-posts__info" data-date >Aug 21</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-48"
-	data-post-id="12028891"
-	data-slide-index=""
-	data-caption="10th anniversary of Tragically Hip&#8217;s final show celebrated in Kingston"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/12028891/10th-anniversary-of-tragically-hips-final-show-celebrated-in-kingston/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/08/Forever_Hip.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="405" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/08/Forever_Hip.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/08/Forever_Hip.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/08/Forever_Hip.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="10th anniversary of Tragically Hip&#8217;s final show celebrated in Kingston" data-title>10th anniversary of Tragically Hip&#8217;s final show celebrated in Kingston</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Aug 20</div>
 																			</div>
 									</div>
 		</a>
@@ -6012,7 +6007,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >1 hour</div>
+																<div class="c-posts__info" data-date >3 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -6384,7 +6379,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 </script>
 		<!-- Adobe Analytics code version: JS-2.6.0. -->
 		<script type="text/javascript">
-			var gnPageData = {"context_data":{"hourofday":"8","dayofweek":"Monday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
+			var gnPageData = {"context_data":{"hourofday":"10","dayofweek":"Monday","weekdayweekend":"Weekday","userregion":"national","region":"national"},"sections":["home"],"props":[]};
 		</script>
 				<!-- End Adobe Analytics code -->
 			<script>
@@ -6435,5 +6430,5 @@ var GN_OneSignalSettings = {"isCurator":"","appId":"8beb7996-b996-4ce8-a474-d488
 		
 		<div class="l-dynamicElement"></div>
 
-			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75660ba8f4","applicationID":"418684855","transactionName":"Z1BWZxdTWkAHVExRXF4adVARW1tdSV9XVVY=","queueTime":0,"applicationTime":594,"atts":"SxdBEV9JSR9EVhoCSE1I","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+			</body>
 </html>
