@@ -184,7 +184,8 @@
         }
     </script>
     	<!-- Meta Tags -->
-	<meta charset="UTF-8">
+	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"75660ba8f4",applicationID:"418684855",browserID:"419993820"};;/*! For license information please see nr-loader-rum-1.321.0.min.js.LICENSE.txt */
+(()=>{var e={8122(e,t,r){"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let s in a)if(void 0!==e[s])try{if(null===e[s]){r[s]=null;continue}Array.isArray(e[s])&&Array.isArray(t[s])?r[s]=Array.from(new Set([...e[s],...t[s]])):e[s]instanceof Map||e[s]instanceof Set||e[s]instanceof Date||e[s]instanceof RegExp?r[s]=e[s]:"object"==typeof e[s]&&null!==t[s]&&"object"==typeof t[s]?r[s]=i(e[s],t[s]):r[s]=e[s]}catch(e){r[s]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555(e,t,r){"use strict";r.d(t,{f:()=>s});var n=r(384),i=r(8122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function s(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}r.d(t,["D",0,e=>(0,i.a)(e,a)])},7699(e,t,r){"use strict";var n=r(860);const i={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0};r.d(t,["It",0,1e6,"KC",0,i,"qh",0,"SESSION_ERROR"])},9324(e,t,r){"use strict";r.d(t,["xv",0,"1.321.0"])},981(e,t,r){"use strict";r.d(t,["R",0,{AJAX:"AjaxRequest",PA:"PageAction",UA:"UserAction",BP:"BrowserPerformance",WS:"WebSocket",SPV:"SecurityPolicyViolation",JSE:"JavaScriptError",LOG:"Log",PVE:"PageView",PVT:"PageViewTiming",SR:"SessionReplay",ST:"SessionTrace",BI:"BrowserInteraction"}])},6154(e,t,r){"use strict";var n=r(1863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),s=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===s?.document?.visibilityState),c=""+s?.location,u=/iPad|iPhone|iPod/.test(s.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=s.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)());r.d(t,["OF",0,u,"RI",0,i,"WN",0,l,"bv",0,a,"gm",0,s,"m",0,c,"mw",0,o,"sb",0,d,"zk",0,()=>{const e=s?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<s.performance.now())return e}])},3241(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(6154);function i(e={}){try{n.gm.dispatchEvent(new CustomEvent("newrelic",{detail:e}))}catch(e){}}},1687(e,t,r){"use strict";r.d(t,{Ak:()=>o,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),a=r(860),s=r(2646);function o(e,t){if(!e)return;const r={staged:!1,priority:a.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const a=e.ee,o=i.i.handlers;if(a&&!a.aborted&&a.backlog&&o){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=a.backlog[t],r=o[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof s.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}a.isolatedBacklog||delete o[t],a.backlog[t]=null,a.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}})}},7836(e,t,r){"use strict";var n=r(384),i=r(8990),a=r(2646),s=r(5607);const o="nr@context:".concat(s.W),c=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var o=g(n);m(e).forEach(e=>{e.apply(o,r)});var u=v()[s[e]];u&&u.push([f,e,r,o]);return o},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{s[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,o,()=>new a.y(o)):new a.y(o)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c),r.d(t,["P",0,o,"ee",0,c])},2646(e,t,r){"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908(e,t,r){"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(9908);a.on=s;var i=a.handlers={};function a(e,t,r,a){s(a||n.d,i,e,t,r)}function s(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var s=t[a]=t[a]||{};(s[r]=s[r]||[]).push([e,i])}},3878(e,t,r){"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},5607(e,t,r){"use strict";const n=(0,r(9566).bz)();r.d(t,["W",0,n])},9566(e,t,r){"use strict";r.d(t,{LA:()=>s,bz:()=>a});var n=r(6154);function i(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".split("").map(e=>"x"===e?i(t,r++).toString(16):"y"===e?(3&i()|8).toString(16):e).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,a=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const s=[];for(var o=0;o<e;o++)s.push(i(r,a++).toString(16));return s.join("")}},2614(e,t,r){"use strict";r.d(t,["BB",0,18e5,"Wt",0,"NRBA_SESSION::","iL",0,{SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},"tS",0,{STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},"wk",0,144e5])},1863(e,t,r){"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944(e,t,r){"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},8990(e,t,r){"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389(e,t,r){"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},1910(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),a=t.includes("nrWrapper");return r||a||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},5289(e,t,r){"use strict";r.d(t,{GG:()=>s,Qr:()=>c,sB:()=>o});var n=r(3878),i=r(6389);function a(){return"undefined"==typeof document||"complete"===document.readyState}function s(e,t){if(a())return e();const r=(0,i.J)(e),s=setInterval(()=>{a()&&(clearInterval(s),r())},500);(0,n.sp)("load",r,t)}function o(e){if(a())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(a())return e();(0,n.sp)("popstate",e)}},384(e,t,r){"use strict";r.d(t,{Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),a=r(944),s=r(1910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,s.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,a.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}r.d(t,["NT",0,o])},2843(e,t,r){"use strict";r.d(t,{G:()=>a,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function a(e,t,r){(0,n.sp)("pagehide",e,t,r)}},9300(e,t,r){"use strict";r(860).K7.ajax;r.d(t,["mo",0,{NONE:"none",FAILURES:"failures",ALL:"all"}])},3969(e,t,r){"use strict";const n=r(860).K7.metrics;r.d(t,["TZ",0,n,"XG",0,"storeEventMetrics","xV",0,"storeSupportabilityMetrics"])},6630(e,t,r){"use strict";const n=r(860).K7.pageViewEvent;r.d(t,["T",0,n])},782(e,t,r){"use strict";const n=r(860).K7.pageViewTiming;r.d(t,["T",0,n])},4234(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},7767(e,t,r){"use strict";var n=r(6154);r.d(t,["V",0,e=>n.RI&&!0===e?.privacy.cookies_enabled])},8362(e,t,r){"use strict";r.d(t,{d:()=>a});var n=r(9566),i=r(1741);class a extends i.W{agentIdentifier=(0,n.LA)(16)}},1741(e,t,r){"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(4261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e("log",e,t)}start(){return this.#e("start")}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},4261(e,t,r){"use strict";r.d(t,["BL",0,"finished","CH",0,"recordReplay","Dl",0,"setUserId","Fw",0,"setPageViewName","PA",0,"setCurrentRouteName","Pv",0,"consent","Tb",0,"pauseReplay","U2",0,"addToTrace","V1",0,"measure","Wb",0,"wrapLogger","bt",0,"setErrorHandler","cD",0,"setCustomAttribute","dT",0,"interaction","eY",0,"register","fF",0,"recordCustomEvent","hG",0,"addPageAction","k6",0,"addRelease","nb",0,"setApplicationVersion","o5",0,"noticeError"])},1738(e,t,r){"use strict";r.d(t,{U:()=>l,Y:()=>d});var n=r(3241),i=r(9908),a=r(1863),s=r(944),o=r(3969),c=r(8362),u=r(860);function d(e,t,r,a){const d=a||r;!d||d[e]&&d[e]!==c.d.prototype[e]||(d[e]=function(){(0,i.p)(o.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:"api-"+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,s.R)(23,e)}})}function l(e,t,r,n,s){const o=e.info;null===r?delete o.jsAttributes[t]:o.jsAttributes[t]=r,(s||null===r)&&(0,i.p)("api-"+n,[(0,a.t)(),t,r],void 0,"session",e.ee)}},8374(e,t,r){r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860(e,t,r){"use strict";const n="events",i="jserrors",a="browser/blobs",s="browser/logs",o={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},c={[o.pageViewEvent]:1,[o.pageViewTiming]:2,[o.metrics]:3,[o.jserrors]:4,[o.softNav]:5,[o.ajax]:6,[o.sessionTrace]:7,[o.sessionReplay]:8,[o.logging]:9,[o.genericEvents]:10},u={[o.pageViewEvent]:"rum",[o.pageViewTiming]:n,[o.ajax]:n,[o.softNav]:n,[o.metrics]:i,[o.jserrors]:i,[o.sessionTrace]:a,[o.sessionReplay]:a,[o.logging]:s,[o.genericEvents]:"ins"};r.d(t,["$J",0,u,"K7",0,o,"P3",0,c,"XX",0,i,"Yy",0,s,"df",0,a,"hg",0,"connect"])}};const t={};function r(n){const i=t[n];if(void 0!==i)return i.exports;const a=t[n]={exports:{}};return e[n](a,a.exports,r),a.exports}r.m=e,r.d=(e,t)=>{if(Array.isArray(t))for(var n=0;n<t.length;){var i=t[n++],a=t[n++];r.o(e,i)?0===a&&n++:0===a?Object.defineProperty(e,i,{enumerable:!0,value:t[n++]}):Object.defineProperty(e,i,{enumerable:!0,get:a})}else for(var i in t)r.o(t,i)&&!r.o(e,i)&&Object.defineProperty(e,i,{enumerable:!0,get:t[i]})},r.f={},r.e=e=>Promise.all(Object.keys(r.f).reduce((t,n)=>(r.f[n](e,t),t),[])),r.u=e=>"nr-rum-1.321.0.min.js",r.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),(()=>{const e={},t="NRBA-1.321.0.PROD:";r.l=(n,i,a,s)=>{if(e[n])return void e[n].push(i);let o,c;if(void 0!==a){const e=document.getElementsByTagName("script");for(var u=0;u<e.length;u++){const r=e[u];if(r.getAttribute("src")==n||r.getAttribute("data-webpack")==t+a){o=r;break}}}if(!o){c=!0;var d={296:"sha512-auOJN989wXoxmQeiyRE/ZlrR6yqeuq5/WjLH1btsNQ6Iqm/RK+IqmjTuvad7oOBZyozPaWg6y2Uu2qAZy3e0cQ=="};o=document.createElement("script"),o.charset="utf-8",r.nc&&o.setAttribute("nonce",r.nc),o.setAttribute("data-webpack",t+a),o.src=n,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),d[s]&&(o.integrity=d[s])}e[n]=[i];const l=(t,r)=>{o.onerror=o.onload=null,clearTimeout(f);const i=e[n];if(delete e[n],o.parentNode?.removeChild(o),i?.forEach(e=>e(r)),t)return t(r)},f=setTimeout(l.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=l.bind(null,o.onerror),o.onload=l.bind(null,o.onload),c&&document.head.appendChild(o)}})(),r.r=e=>{Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.p="https://js-agent.newrelic.com/",(()=>{const e={374:0,840:0};r.f.j=(t,n)=>{let i=r.o(e,t)?e[t]:void 0;if(0!==i)if(i)n.push(i[2]);else{const a=new Promise((r,n)=>i=e[t]=[r,n]);n.push(i[2]=a);const s=r.p+r.u(t),o=new Error,c=n=>{if(r.o(e,t)&&(i=e[t],0!==i&&(e[t]=void 0),i)){const e=n&&("load"===n.type?"missing":n.type),r=n&&n.target&&n.target.src;o.message="Loading chunk "+t+" failed: ("+e+": "+r+")",o.name="ChunkLoadError",o.type=e,o.request=r,i[1](o)}};r.l(s,c,"chunk-"+t,t)}};const t=(t,n)=>{let[i,a,s]=n;var o,c,u=0;if(i.some(t=>0!==e[t])){for(o in a)r.o(a,o)&&(r.m[o]=a[o]);if(s)s(r)}for(t&&t(n);u<i.length;u++)c=i[u],r.o(e,c)&&e[c]&&e[c][0](),e[c]=0},n=self["webpackChunk:NRBA-1.321.0.PROD"]=self["webpackChunk:NRBA-1.321.0.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{"use strict";r(8374);var e=r(8362),t=r(860);const n=Object.values(t.K7);var i=r(384),a=r(1741);var s=r(2555),o=r(981);t.K7.genericEvents,o.R.PA,o.R.UA,o.R.BP;const c={RESOURCES:"experimental.resources",REGISTER:"register"};var u=r(9300);const d=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var l=r(2614),f=r(944),g=r(8122);const p="[data-nr-mask]",m=e=>(0,g.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1,iframe_bridge:!1,iframe_domains:[]},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0,capture_payloads:u.mo.NONE},api:{register:{get enabled(){return e.feature_flags.includes(c.REGISTER)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1,get allow_iframe_bridge(){return e.feature_flags.includes(c.IFRAME_BRIDGE)||e.experimental.iframe_bridge},set allow_iframe_bridge(t){e.experimental.iframe_bridge=t},get iframe_domains(){return e.experimental.iframe_domains},set iframe_domains(t){Array.isArray(t)?e.experimental.iframe_domains=t:(0,f.R)(1,t)}}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c.RESOURCES)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:l.wk,inactiveMs:l.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){d(t)?e.mask_selector="".concat(t,",").concat(p):""===t||null===t?e.mask_selector=p:(0,f.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){d(t)?e.block_selector+=",".concat(t):""!==t&&(0,f.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,f.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]},web_sockets:{enabled:!1}}})());var h=r(6154),v=r(9324);let b=0;const y={buildEnv:"PROD",distMethod:"CDN",version:v.xv,originTime:h.WN},_={consented:!1},w={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||_.consented},set consented(e){_.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,connector:void 0,harvester:void 0,v2Target:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++b},listeningForIframeMessages:!1},R="BA";var A=r(7836),x=r(3241);const E={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0};var S=r(9908);const k="newrelic-iframe-";function T(e,t={},n,o){let{init:c,info:u,loader_config:d,runtime:l={},exposed:f=!0}=t;if(!u){const e=(0,i.pV)();c=e.init,u=e.info,d=e.loader_config}var p;e.init=m(c||{}),e.loader_config=(p=d||{},(0,g.a)(p,E)),u.jsAttributes??={},h.bv&&(u.jsAttributes.isWorker=!0),e.info=(0,s.D)(u);const v=e.init;e.runtime??=(e=>{const t=(0,g.a)(e,w),r=Object.keys(y).reduce((e,t)=>(e[t]={value:y[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)})(l),e.runtime.v2Target??={type:R,instance:e.agentIdentifier,get id(){return e.runtime.appMetadata?.agents?.[0]?.entityGuid},get attributes(){return{"entity.guid":this.id,appId:e.info.applicationID}}},v.proxy.assets&&(e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e})(v.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,i.pV)();Object.getOwnPropertyNames(a.W.prototype).forEach(r=>{const n=a.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let i=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return i?i(...t):n})})}(e),e.runtime.loaderType=n,e.ee=A.ee.get(e.agentIdentifier),e.exposed=f,(0,x.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.init.api.register.allow_iframe_bridge&&h.gm.addEventListener("message",t=>{"string"==typeof t.data?.type&&t.data.type.startsWith(k)&&(0,S.p)("iframe-message",[t],void 0,"IFRAME",e.ee)}),e.runtime.configured=!0)}var j=r(1863),P=r(4261),N=r(1738);var O=r(1687),M=r(4234),I=r(5289),D=r(7767);function V(e){return!!(0,i.dV)().o.MO&&(0,D.V)(e)&&!0===e?.session_trace.enabled}var W=r(6389),B=r(7699);const C=new WeakSet,K=new WeakMap;class U extends M.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,W.J)(()=>{(0,O.Ak)(e,this.featureName),t()}))}):(0,O.Ak)(e,t)}importAggregator(e,t,n={}){if(this.featAggregate)return;const i=async()=>{if(await this.deferred,this.#t(e),!(0,s.f)(e.info))return(0,f.R)(43),e.ee.abort(),void this.loadedSuccessfully(!1);try{await async function(e,t,n){if(K.has(e))return K.get(e);const i=(async()=>{if((0,D.V)(e.init))try{const{setupAgentSession:t}=await r.e(296).then(r.bind(r,8391));t(e)}catch(e){(0,f.R)(20,e),t.emit("internal-error",[e]),(0,S.p)(B.qh,[e],void 0,n,t)}if(e.init.api.register.allow_iframe_bridge)try{const{setupIframeMFEMessageListener:t}=await Promise.resolve().then(function(){const e=new Error("Cannot find module '../../loaders/configure/iframe-message-handler'");throw e.code="MODULE_NOT_FOUND",e});t(e)}catch(e){(0,f.R)(23,e)}const[{Connector:i},{Harvester:a}]=await Promise.all([r.e(296).then(r.bind(r,6589)),r.e(296).then(r.bind(r,5237))]);e.runtime.connector=new i(e),e.runtime.harvester=new a(e);const s=Object.values(e.features).filter(t=>e.runtime.drainRegistry.has(t.featureName));Promise.all(s.map(e=>e.onAggregateImported)).then(()=>e.runtime.harvester.startTimer())})();K.set(e,i),await i}(e,this.ee,this.featureName)}catch(e){return(0,f.R)(79,e),this.ee.abort(),void this.loadedSuccessfully(!1)}try{if(!this.#r(this.featureName,e.runtime.session,e.init))return this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:r}=await t();this.featAggregate=new r(e,n),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,f.R)(34,e),this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1)}};h.RI?(0,I.GG)(()=>i(),!0):i()}#r(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return V(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}#t(e){if(!C.has(e)&&(C.add(e),!(0,s.f)(e.info))){const t=(0,i.pV)();let r={...t.info?.jsAttributes};try{r={...r,...e.info?.jsAttributes}}catch(e){}T(e,{...t,info:{...t.info,jsAttributes:r},runtime:e.runtime},e.runtime.loaderType)}}}var L=r(6630);class F extends U{static featureName=L.T;constructor(e){var t;super(e,L.T),this.setupInspectionEvents(),t=e,(0,N.Y)(P.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,S.p)("api-"+P.Fw,[(0,j.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>e.init.feature_flags.includes("rum_v2")?r.e(296).then(r.bind(r,908)):r.e(296).then(r.bind(r,7927)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,x.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,I.sB)(t=>{e(t,"DOMContentLoaded")}),(0,I.GG)(t=>{e(t,"load")}),(0,I.Qr)(t=>{e(t,"navigate")}),this.ee.on(l.tS.UPDATE,(e,t)=>{(0,x.W)({type:"lifecycle",name:"session",data:t})})}}class G extends e.d{constructor(e){var t;(super(),h.gm)?(this.features={},(0,i.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(F),T(this,e,e.loaderType||"agent"),t=this,(0,N.Y)(P.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,N.U)(t,e,r,P.cD,n);(0,f.R)(40,typeof r)}else(0,f.R)(39,typeof e)},t),function(e){(0,N.Y)(P.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,f.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,S.p)("api-setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,N.U)(e,"enduser.id",t,P.Dl,!0)},e)}(this),function(e){(0,N.Y)(P.nb,function(t){if("string"==typeof t||null===t)return(0,N.U)(e,"application.version",t,P.nb,!1);(0,f.R)(42,typeof t)},e)}(this),function(e){(0,N.Y)("start",function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,N.Y)(P.Pv,function(t=!0){if("boolean"==typeof t){if((0,S.p)("api-"+P.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum?.()})}}else(0,f.R)(65,typeof t)},e)}(this),this.run()):(0,f.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return n.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),r=[...this.desiredFeatures],i=this.init.feature_flags.includes("rum_v2");r.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),r.forEach(r=>{if(!e[r.featureName]&&(i||r.featureName!==t.K7.pageViewEvent))return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,f.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,f.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,i.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var H=r(2843),z=r(782);class Y extends U{static featureName=z.T;constructor(e){super(e,z.T),h.RI&&((0,H.u)(()=>(0,S.p)("docHidden",[(0,j.t)()],void 0,z.T,this.ee),!0),(0,H.G)(()=>(0,S.p)("winPagehide",[(0,j.t)()],void 0,z.T,this.ee)),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9981))))}}var Z=r(3969);class q extends U{static featureName=Z.TZ;constructor(e){super(e,Z.TZ),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9623)))}}new G({features:[F,Y,q],loaderType:"lite"})})()})();</script>
 	<meta name="theme-color" content="#231F20">
 
 			<meta name="msvalidate.01" content="4F7DAF158EF3A8C47C9D2218FFF0FD40" />
@@ -242,8 +243,8 @@
 
 <!-- twitter: ends here -->
 
-			<link rel="preload" fetchpriority="high" as="image" href="https://globalnews.ca/wp-content/uploads/2026/09/IMG_2653-rotated-e1789136627241.jpeg?quality=65&#038;strip=all&#038;w=336"
-					imagesrcset="https://globalnews.ca/wp-content/uploads/2026/09/IMG_2653-rotated-e1789136627241.jpeg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/IMG_2653-rotated-e1789136627241.jpeg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/IMG_2653-rotated-e1789136627241.jpeg?quality=65&#038;strip=all&#038;w=720 720w,"
+			<link rel="preload" fetchpriority="high" as="image" href="https://globalnews.ca/wp-content/uploads/2026/09/Screenshot-2026-09-11-161736.png?w=336"
+					imagesrcset="https://globalnews.ca/wp-content/uploads/2026/09/Screenshot-2026-09-11-161736.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/Screenshot-2026-09-11-161736.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/Screenshot-2026-09-11-161736.png?w=720 720w,"
 							imagesizes="auto"
 		/>
 	
@@ -460,7 +461,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 
 				
 
-				gnAdSettings = {"adPath":"\/6872\/globalnews\/website","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"22","weatherprec":"x","weathercode":"28","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
+				gnAdSettings = {"adPath":"\/6872\/globalnews\/website","gnLive":false,"isTesting":false,"pageTargeting":{"userregion":"national","contentregion":"national","page":"home","template":"index","weathertemp":"22","weatherprec":"x","weathercode":"26","server":"prod","site":"globalnews","network":"shaw","redesign":"true"}};
 		</script>
 			<script>
 				// Load the APS JavaScript Library
@@ -1511,45 +1512,45 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 											<div>
 														<a
 								class="c-posts__headlineLink"
-								href="https://globalnews.ca/news/12047769/pumpkin-farms-affected-canada/"
+								href="https://globalnews.ca/news/12055709/lake-ontario-trump-fundraiser/"
 								data-analytics="
 								{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:0}								"
 							>
 																		<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Pumpkin farms &#8216;at the mercy of Mother Nature&#8217; after extreme weather in Canada" data-title>Pumpkin farms &#8216;at the mercy of Mother Nature&#8217; after extreme weather in Canada</span>
+					<span class="c-posts__headlineText" title="Lake Ontario merchandise turns Trump order into fundraiser to protect the lake" data-title>Lake Ontario merchandise turns Trump order into fundraiser to protect the lake</span>
 			</div>
 															</a>
 													</div>
 						
-		<div class="c-posts__media  c-posts__media--video c-videoPlay c-videoPlay--standard c-imageContainer" tabindex=0 >
+		<div class="c-posts__media  c-posts__media--video c-videoPlay c-videoPlay--standard" tabindex=0 >
 			<img class="c-posts__thumbnail"
 			fetchpriority="high"
-			src=https://globalnews.ca/wp-content/uploads/2026/09/IMG_2653-rotated-e1789136627241.jpeg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=538 data-ratio=0.67						width="720" height="538" alt="" 
-											srcset="https://globalnews.ca/wp-content/uploads/2026/09/IMG_2653-rotated-e1789136627241.jpeg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/IMG_2653-rotated-e1789136627241.jpeg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/IMG_2653-rotated-e1789136627241.jpeg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"					/>
+			src=https://globalnews.ca/wp-content/uploads/2026/09/Screenshot-2026-09-11-161736.png?w=720									width="720" height="400" alt="" 
+											srcset="https://globalnews.ca/wp-content/uploads/2026/09/Screenshot-2026-09-11-161736.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/Screenshot-2026-09-11-161736.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/Screenshot-2026-09-11-161736.png?w=720 720w,"				sizes="auto"					/>
 							<div class="c-posts__video">
 						    	<div class="c-video c-videoPlay  c-video--contained"
     		data-iframe-receiver
     		data-autoplay=""
 						data-displayinline-featured="false"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_11887933_6aa5ca711e1cf"
-			data-displayinline-video-id="11887933"
+			data-displayinline-player-id="miniplayer_12056699_6aa5e29e2fc9a"
+			data-displayinline-video-id="12056699"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/11887933/#autoplay&#038;stickyiframe=miniplayer_11887933_6aa5ca711e1cf"
+    		data-displayinline="https://globalnews.ca/video/embed/12056699/#autoplay&#038;stickyiframe=miniplayer_12056699_6aa5e29e2fc9a"
     									data-displayinline-container="stories-1-0"
 										data-displayinline-sticky="true"
-													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Ongoing rain halts seeding but farmers are optimistic&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;edmonton&quot;,&quot;weather&quot;],&quot;keywords&quot;:[&quot;edmonton-rain&quot;,&quot;edmonton-videos&quot;,&quot;edmonton-weather&quot;,&quot;prairie-gardens&quot;,&quot;short-clip&quot;,&quot;global-news-hour-at-6-edmonton&quot;]}}"
+													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;&#039;My hydronyms are Lake and Ontario&#039;: Merch takes aim at Trump\u2019s &#039;Lake America&#039;&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;toronto&quot;,&quot;canada&quot;,&quot;politics&quot;,&quot;us-news&quot;],&quot;keywords&quot;:[&quot;donald-trump&quot;,&quot;lake-america&quot;,&quot;lake-ontario&quot;,&quot;short-clip&quot;]}}"
 			    		>
 				<div class="c-video__inner ">
 					<span class="c-video__placeholder">
 						<img class="c-video__image"
-						alt="Click to play video: 'Ongoing rain halts seeding but farmers are optimistic'"
+						alt="Click to play video: '&#8216;My hydronyms are Lake and Ontario&#8217;: Merch takes aim at Trump’s &#8216;Lake America&#8217;'"
 						width="640"
 						height="360"
-													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/ml3984rohr-lxyhvdug8s/5P_RAIN_FOLO-PKG_OM01VOY8_thumbnail_1280x720_.jpg?w=1040&#038;quality=70&#038;strip=all" loading="lazy"
+													data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/a6p1f1gmmy-ytk72nexc2/lake_ontario.jpg?w=1040&#038;quality=70&#038;strip=all" loading="lazy"
 															srcset=""
 								sizes=""
-								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/ml3984rohr-lxyhvdug8s/5P_RAIN_FOLO-PKG_OM01VOY8_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/ml3984rohr-lxyhvdug8s/5P_RAIN_FOLO-PKG_OM01VOY8_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/ml3984rohr-lxyhvdug8s/5P_RAIN_FOLO-PKG_OM01VOY8_thumbnail_1280x720_.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
+								data-srcset="https://i0.wp.com/media.globalnews.ca/videostatic/news/a6p1f1gmmy-ytk72nexc2/lake_ontario.jpg?quality=70&#038;strip=all&#038;w=450 450w,https://i0.wp.com/media.globalnews.ca/videostatic/news/a6p1f1gmmy-ytk72nexc2/lake_ontario.jpg?quality=70&#038;strip=all&#038;w=720 720w,https://i0.wp.com/media.globalnews.ca/videostatic/news/a6p1f1gmmy-ytk72nexc2/lake_ontario.jpg?quality=70&#038;strip=all&#038;w=1040 1040w,"
 								data-sizes="(min-width: 1040px) 1040px,(min-width: 720px) 720px,450px"
 													>
 											</span>
@@ -1568,19 +1569,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						<div class="c-posts__details">
 														<a
 								class="c-posts__detailsLink"
-								href="https://globalnews.ca/news/12047769/pumpkin-farms-affected-canada/"
+								href="https://globalnews.ca/news/12055709/lake-ontario-trump-fundraiser/"
 								data-analytics="
 								{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:0}								"
 							>
 																		<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Pumpkin farms &#8216;at the mercy of Mother Nature&#8217; after extreme weather in Canada" data-title>Pumpkin farms &#8216;at the mercy of Mother Nature&#8217; after extreme weather in Canada</span>
+					<span class="c-posts__headlineText" title="Lake Ontario merchandise turns Trump order into fundraiser to protect the lake" data-title>Lake Ontario merchandise turns Trump order into fundraiser to protect the lake</span>
 			</div>
 																		<div class="c-posts__excerpt">
-									Severe weather, from heavy rain and hail to extreme heat and drought, is making this year&#039;s pumpkin season increasingly unpredictable for Canadian farmers.									</div>
+									A Lake Ontario-inspired phrase is being turned into merchandise, with part of the proceeds going toward protecting and restoring the lake.									</div>
 																<div class="c-posts__about c-posts__about--multiple">
 																		<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">11 hours</div>
-																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
+																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Sep 11</div>
+																											<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 																	</div>
 														</a>
 													</div>
@@ -1592,26 +1593,26 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				>
 					<a
 						class="c-posts__inner"
-						href="https://globalnews.ca/news/12055709/lake-ontario-trump-fundraiser/"
+						href="https://globalnews.ca/news/12047769/pumpkin-farms-affected-canada/"
 						data-analytics="{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:1}"
 					>
 						
-		<div class="c-posts__media "  >
+		<div class="c-posts__media  c-imageContainer"  >
 			<img class="c-posts__thumbnail"
 			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/09/Screenshot-2026-09-11-161736.png?w=720											loading="lazy"
-						width="720" height="400" alt="" 
+			data-src=https://globalnews.ca/wp-content/uploads/2026/09/IMG_2653-rotated-e1789136627241.jpeg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=538 data-ratio=0.67								loading="lazy"
+						width="720" height="538" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/09/Screenshot-2026-09-11-161736.png?w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/Screenshot-2026-09-11-161736.png?w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/Screenshot-2026-09-11-161736.png?w=720 720w,"				data-sizes="auto"					/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/09/IMG_2653-rotated-e1789136627241.jpeg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/IMG_2653-rotated-e1789136627241.jpeg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/IMG_2653-rotated-e1789136627241.jpeg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
 											</div>
 								<div class="c-posts__details">
 										<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Lake Ontario merchandise turns Trump order into fundraiser to protect the lake" data-title>Lake Ontario merchandise turns Trump order into fundraiser to protect the lake</span>
+					<span class="c-posts__headlineText" title="Pumpkin farms &#8216;at the mercy of Mother Nature&#8217; after extreme weather in Canada" data-title>Pumpkin farms &#8216;at the mercy of Mother Nature&#8217; after extreme weather in Canada</span>
 			</div>
 								<div class="c-posts__about c-posts__about--multiple">
 																<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Sep 11</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Sep 12</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">5 min read</div>
 															</div>
 						</div>
 					</a>
@@ -1622,26 +1623,26 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 				>
 					<a
 						class="c-posts__inner"
-						href="https://globalnews.ca/news/12055455/mark-carney-25th-anniversary-9-11/"
+						href="https://globalnews.ca/news/12056858/canada-ukraine-norway-conference/"
 						data-analytics="{&quot;name&quot;:&quot;top-stories&quot;,&quot;position&quot;:2}"
 					>
 						
-		<div class="c-posts__media "  >
+		<div class="c-posts__media  c-imageContainer"  >
 			<img class="c-posts__thumbnail"
 			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/09/Carney-911.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="480" alt="" 
+			data-src=https://globalnews.ca/wp-content/uploads/2026/09/9d67be347e5273d4c676e750b0259711a80abb53dd1867e1e1c8838cebd3b8c4_21627a.jpg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=490 data-ratio=0.67								loading="lazy"
+						width="720" height="490" alt="" 
 												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/09/Carney-911.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/Carney-911.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/Carney-911.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/09/9d67be347e5273d4c676e750b0259711a80abb53dd1867e1e1c8838cebd3b8c4_21627a.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/9d67be347e5273d4c676e750b0259711a80abb53dd1867e1e1c8838cebd3b8c4_21627a.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/9d67be347e5273d4c676e750b0259711a80abb53dd1867e1e1c8838cebd3b8c4_21627a.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
 											</div>
 								<div class="c-posts__details">
 										<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="‘Our grief has not faded,’ Carney says on 25th anniversary of 9/11" data-title>‘Our grief has not faded,’ Carney says on 25th anniversary of 9/11</span>
+					<span class="c-posts__headlineText" title="Canada to co-host conference on returning Ukrainian kids, detainees" data-title>Canada to co-host conference on returning Ukrainian kids, detainees</span>
 			</div>
 								<div class="c-posts__about c-posts__about--multiple">
-																<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Sep 11</div>
-																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+																<div class="c-posts__info c-posts__info--highlight">World</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="control">58 mins</div>
+																								<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">3 min read</div>
 															</div>
 						</div>
 					</a>
@@ -1660,6 +1661,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=12			data-parent-id=home-topStories					>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-1"
+	data-post-id="12055455"
+	data-slide-index=""
+	data-caption="‘Our grief has not faded,’ Carney says on 25th anniversary of 9/11"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/12055455/mark-carney-25th-anniversary-9-11/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media "  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			src=https://globalnews.ca/wp-content/uploads/2026/09/Carney-911.jpg?quality=65&#038;strip=all&#038;w=720									width="720" height="480" alt="" 
+											srcset="https://globalnews.ca/wp-content/uploads/2026/09/Carney-911.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/Carney-911.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/Carney-911.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"					/>
+											</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="‘Our grief has not faded,’ Carney says on 25th anniversary of 9/11" data-title>‘Our grief has not faded,’ Carney says on 25th anniversary of 9/11</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Sep 11</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-2"
 	data-post-id="12056426"
 	data-slide-index=""
 	data-caption="Canadian musician CRi lands &#8216;life-changing&#8217; campaign with Apple"
@@ -1667,14 +1700,16 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/12056426/canadian-musician-cri-apple-campaign/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
 			<img class="c-posts__thumbnail"
 			fetchpriority="high"
-			src=https://globalnews.ca/wp-content/uploads/2026/09/cri.jpg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=720 data-ratio=0.67						width="720" height="720" alt="" 
-											srcset="https://globalnews.ca/wp-content/uploads/2026/09/cri.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/cri.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/cri.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				sizes="auto"					/>
+			data-src=https://globalnews.ca/wp-content/uploads/2026/09/cri.jpg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=720 data-ratio=0.67								loading="lazy"
+						width="720" height="720" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/09/cri.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/cri.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/cri.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
 											</div>
 				<div class="c-posts__details">
 						<div class="c-posts__headline ">
@@ -1685,40 +1720,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 							<div class="c-posts__about c-posts__about--multiple">
 											<div class="c-posts__info c-posts__info--highlight" data-label>Entertainment</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Sep 12</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-2"
-	data-post-id="12055794"
-	data-slide-index=""
-	data-caption="Gas prices are expected to drop soon, but geopolitical risks remain"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/12055794/gas-prices-winter/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/09/gas-prices-winter-blends.jpg-e1789152116646.jpg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=501 data-ratio=0.67								loading="lazy"
-						width="720" height="501" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/09/gas-prices-winter-blends.jpg-e1789152116646.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/gas-prices-winter-blends.jpg-e1789152116646.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/gas-prices-winter-blends.jpg-e1789152116646.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Gas prices are expected to drop soon, but geopolitical risks remain" data-title>Gas prices are expected to drop soon, but geopolitical risks remain</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Consumer</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Sep 11</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
 														</div>
 									</div>
@@ -1748,6 +1749,40 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-3"
+	data-post-id="12055794"
+	data-slide-index=""
+	data-caption="Gas prices are expected to drop soon, but geopolitical risks remain"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/12055794/gas-prices-winter/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/09/gas-prices-winter-blends.jpg-e1789152116646.jpg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=501 data-ratio=0.67								loading="lazy"
+						width="720" height="501" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/09/gas-prices-winter-blends.jpg-e1789152116646.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/gas-prices-winter-blends.jpg-e1789152116646.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/gas-prices-winter-blends.jpg-e1789152116646.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Gas prices are expected to drop soon, but geopolitical risks remain" data-title>Gas prices are expected to drop soon, but geopolitical risks remain</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Consumer</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Sep 11</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-4"
 	data-post-id="12056300"
 	data-slide-index=""
 	data-caption="Mark Carney meets with &#039;Forever Canadian&#039; campaigners in Alberta"
@@ -1755,7 +1790,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/12056300/mark-carney-forever-canadian-banff/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -1781,7 +1816,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-4"
+	data-container-id="stories-item-5"
 	data-post-id="12055939"
 	data-slide-index=""
 	data-caption="&#039;E-dirt bikes are not toys&#039;: E.R. doc fears more injuries after 2 kids hit in Alberta"
@@ -1789,7 +1824,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/12055939/edmonton-electric-dirt-bike-collision-injuries/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:3}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -1815,7 +1850,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-5"
+	data-container-id="stories-item-6"
 	data-post-id="12054493"
 	data-slide-index=""
 	data-caption="A 9/11 victim shared a name with a Global News journalist. Who was he?"
@@ -1823,7 +1858,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/12054493/september-11-michael-j-armstrong/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:4}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -1844,40 +1879,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
 																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Sep 10</div>
 																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">6 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-6"
-	data-post-id="12054110"
-	data-slide-index=""
-	data-caption="25 years after 9/11, Gander&#8217;s message of kindness still resonates"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/12054110/gander-nl-9-11-25th-anniversary/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:5}"
-			>
-			
-		<div class="c-posts__media  c-imageContainer"  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/09/karen-mills.jpeg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=540 data-ratio=0.67								loading="lazy"
-						width="720" height="540" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/09/karen-mills.jpeg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/karen-mills.jpeg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/karen-mills.jpeg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="25 years after 9/11, Gander&#8217;s message of kindness still resonates" data-title>25 years after 9/11, Gander&#8217;s message of kindness still resonates</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Sep 11</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">7 min read</div>
 														</div>
 									</div>
 		</a>
@@ -1906,6 +1907,40 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</div>					</li>
 				<li class="c-posts__item    "
 	data-container-id="stories-item-7"
+	data-post-id="12054110"
+	data-slide-index=""
+	data-caption="25 years after 9/11, Gander&#8217;s message of kindness still resonates"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/12054110/gander-nl-9-11-25th-anniversary/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/09/karen-mills.jpeg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=540 data-ratio=0.67								loading="lazy"
+						width="720" height="540" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/09/karen-mills.jpeg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/karen-mills.jpeg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/karen-mills.jpeg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="25 years after 9/11, Gander&#8217;s message of kindness still resonates" data-title>25 years after 9/11, Gander&#8217;s message of kindness still resonates</span>
+			</div>
+	
+						
+							<div class="c-posts__about c-posts__about--multiple">
+											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
+																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">Sep 11</div>
+																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">7 min read</div>
+														</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-8"
 	data-post-id="12055749"
 	data-slide-index=""
 	data-caption="Princess Diana&#8217;s &#8216;revenge dress&#8217; to go up for auction in New York City"
@@ -1913,7 +1948,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/12055749/princess-diana-revenge-dress-auction/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:6}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -1939,7 +1974,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-8"
+	data-container-id="stories-item-9"
 	data-post-id="12055619"
 	data-slide-index=""
 	data-caption="Health Canada is recalling this generic acetaminophen"
@@ -1947,7 +1982,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/12055619/health-canada-acetaminophin-recall/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:7}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -1973,7 +2008,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-9"
+	data-container-id="stories-item-10"
 	data-post-id="12055560"
 	data-slide-index=""
 	data-caption="Travel between Canada and U.S. was going up before trade talks collapsed"
@@ -1981,7 +2016,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/12055560/travel-canada-us-trade-talks-collapsed/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:8}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -2006,16 +2041,16 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 									</div>
 		</a>
 	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-10"
+<li class="c-posts__item    is-hidden"
+	data-container-id="stories-item-11"
 	data-post-id="12054577"
 	data-slide-index=""
 	data-caption="Drinking &#8216;very hot&#8217; drinks may increase risk of esophageal cancer: study"
-		>
+		data-ad-fallback=false>
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/12054577/esophageal-cancer-hot-drinks-uk-study/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:9}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -2041,7 +2076,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		</a>
 	</li>
 <li class="c-posts__item    is-hidden"
-	data-container-id="stories-item-11"
+	data-container-id="stories-item-12"
 	data-post-id="12056125"
 	data-slide-index=""
 	data-caption="Stellantis signs MOU on Brampton, Ont., plant as talks with union break down"
@@ -2049,7 +2084,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/12056125/stellantis-signs-mou-on-brampton-plant/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:10}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:11}"
 			>
 			
 		<div class="c-posts__media  c-imageContainer"  >
@@ -2074,40 +2109,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 									</div>
 		</a>
 	</li>
-<li class="c-posts__item    is-hidden"
-	data-container-id="stories-item-12"
-	data-post-id="12056852"
-	data-slide-index=""
-	data-caption="Carney to meet UK Prime Minister Andy Burnham for first time"
-		data-ad-fallback=false>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/12056852/carney-burnham-first-meeting/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:11}"
-			>
-			
-		<div class="c-posts__media "  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/09/c7d72213d532e1d1188b6e54a5e0705c7ff0d532dd4567a43d282143bec86f91_b3a1ef.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="481" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/09/c7d72213d532e1d1188b6e54a5e0705c7ff0d532dd4567a43d282143bec86f91_b3a1ef.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/c7d72213d532e1d1188b6e54a5e0705c7ff0d532dd4567a43d282143bec86f91_b3a1ef.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/c7d72213d532e1d1188b6e54a5e0705c7ff0d532dd4567a43d282143bec86f91_b3a1ef.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Carney to meet UK Prime Minister Andy Burnham for first time" data-title>Carney to meet UK Prime Minister Andy Burnham for first time</span>
-			</div>
-	
-						
-							<div class="c-posts__about c-posts__about--multiple">
-											<div class="c-posts__info c-posts__info--highlight" data-label>Canada</div>
-																<div class="c-posts__info" data-date data-gnca-ab-test="read-time" data-gnca-ab-variation="control">46 mins</div>
-																<div class="c-posts__info" data-gnca-ab-test="read-time" data-gnca-ab-variation="test">2 min read</div>
-														</div>
-									</div>
-		</a>
-	</li>
 			</ul>
 						</div>
 			</section>
@@ -2125,10 +2126,10 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     		data-autoplay="true"
 						data-displayinline-featured="true"
     		data-displayinline-type="video"
-			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6aa5ca711fae0"
+			data-displayinline-player-id="miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6aa5e29e31ee5"
 			data-displayinline-video-id="49a91e7f-1023-430f-8d66-561055f3d0f7"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6aa5ca711fae0"
+    		data-displayinline="https://globalnews.ca/video/live/49a91e7f-1023-430f-8d66-561055f3d0f7/#autoplay&#038;stickyiframe=miniplayer_49a91e7f-1023-430f-8d66-561055f3d0f7_6aa5e29e31ee5"
     		    			data-displayinline-playlist="49a91e7f-1023-430f-8d66-561055f3d0f7"
     									data-displayinline-container="mini-ott"
 																data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;&quot;}}"
@@ -2270,7 +2271,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Lake Ontario merchandise turns Trump order into fundraiser to protect the lake" data-title>Lake Ontario merchandise turns Trump order into fundraiser to protect the lake</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">26,886</span>
+							<span class="c-posts__info c-posts__info--highlight">29,324</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2301,38 +2302,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="A one-time $150 Canada disability benefit supplement is going out next week" data-title>A one-time $150 Canada disability benefit supplement is going out next week</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">24,536</span>
-							<span class="c-posts__info">Read</span>
-						</div>
-												
-											</div>
-				</a>
-			</li>
-								<li class="c-posts__item" data-post-id="12055619">
-				<a
-					href="https://globalnews.ca/news/12055619/health-canada-acetaminophin-recall/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
-				>
-					<div class="c-posts__rank">
-							<svg class="c-icon  c-posts__rankIcon" focusable="false" style="width:revert-layer;height:revert-layer;">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=fc5vd2ara#3"></use>
-	</svg>
-						</div>
-					
-		<div class="c-posts__media  c-imageContainer"  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/09/Health-Canada-acetaminophin-recall.jpg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=564 data-ratio=0.67								loading="lazy"
-						width="720" height="564" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/09/Health-Canada-acetaminophin-recall.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/Health-Canada-acetaminophin-recall.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/Health-Canada-acetaminophin-recall.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-							<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Health Canada is recalling this generic acetaminophen" data-title>Health Canada is recalling this generic acetaminophen</span>
-			</div>
-													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">12,658</span>
+							<span class="c-posts__info c-posts__info--highlight">28,231</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2342,11 +2312,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<li class="c-posts__item" data-post-id="12056734">
 				<a
 					href="https://globalnews.ca/news/12056734/eu-trump-ireland/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:3}"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false" style="width:revert-layer;height:revert-layer;">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=fc5vd2ara#4"></use>
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=fc5vd2ara#3"></use>
 	</svg>
 						</div>
 					
@@ -2363,7 +2333,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Trump says Canada ‘wants to make a deal very badly’" data-title>Trump says Canada ‘wants to make a deal very badly’</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">10,661</span>
+							<span class="c-posts__info c-posts__info--highlight">24,160</span>
+							<span class="c-posts__info">Read</span>
+						</div>
+												
+											</div>
+				</a>
+			</li>
+								<li class="c-posts__item" data-post-id="12055619">
+				<a
+					href="https://globalnews.ca/news/12055619/health-canada-acetaminophin-recall/"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:3}"
+				>
+					<div class="c-posts__rank">
+							<svg class="c-icon  c-posts__rankIcon" focusable="false" style="width:revert-layer;height:revert-layer;">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=fc5vd2ara#4"></use>
+	</svg>
+						</div>
+					
+		<div class="c-posts__media  c-imageContainer"  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/09/Health-Canada-acetaminophin-recall.jpg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=564 data-ratio=0.67								loading="lazy"
+						width="720" height="564" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/09/Health-Canada-acetaminophin-recall.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/Health-Canada-acetaminophin-recall.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/Health-Canada-acetaminophin-recall.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+							<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Health Canada is recalling this generic acetaminophen" data-title>Health Canada is recalling this generic acetaminophen</span>
+			</div>
+													<div class="c-posts__about">
+							<span class="c-posts__info c-posts__info--highlight">13,982</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2394,7 +2395,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Mark Carney meets with &#8216;Forever Canadian&#8217; campaigners in Banff" data-title>Mark Carney meets with &#8216;Forever Canadian&#8217; campaigners in Banff</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">8,535</span>
+							<span class="c-posts__info c-posts__info--highlight">8,864</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2509,7 +2510,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Lake Ontario merchandise turns Trump order into fundraiser to protect the lake" data-title>Lake Ontario merchandise turns Trump order into fundraiser to protect the lake</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">26,886</span>
+							<span class="c-posts__info c-posts__info--highlight">29,324</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2540,38 +2541,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="A one-time $150 Canada disability benefit supplement is going out next week" data-title>A one-time $150 Canada disability benefit supplement is going out next week</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">24,536</span>
-							<span class="c-posts__info">Read</span>
-						</div>
-												
-											</div>
-				</a>
-			</li>
-								<li class="c-posts__item" data-post-id="12055619">
-				<a
-					href="https://globalnews.ca/news/12055619/health-canada-acetaminophin-recall/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
-				>
-					<div class="c-posts__rank">
-							<svg class="c-icon  c-posts__rankIcon" focusable="false" style="width:revert-layer;height:revert-layer;">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=fc5vd2ara#3"></use>
-	</svg>
-						</div>
-					
-		<div class="c-posts__media  c-imageContainer"  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/09/Health-Canada-acetaminophin-recall.jpg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=564 data-ratio=0.67								loading="lazy"
-						width="720" height="564" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/09/Health-Canada-acetaminophin-recall.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/Health-Canada-acetaminophin-recall.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/Health-Canada-acetaminophin-recall.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-							<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Health Canada is recalling this generic acetaminophen" data-title>Health Canada is recalling this generic acetaminophen</span>
-			</div>
-													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">12,658</span>
+							<span class="c-posts__info c-posts__info--highlight">28,231</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2581,11 +2551,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<li class="c-posts__item" data-post-id="12056734">
 				<a
 					href="https://globalnews.ca/news/12056734/eu-trump-ireland/"
-					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:3}"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:2}"
 				>
 					<div class="c-posts__rank">
 							<svg class="c-icon  c-posts__rankIcon" focusable="false" style="width:revert-layer;height:revert-layer;">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=fc5vd2ara#4"></use>
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=fc5vd2ara#3"></use>
 	</svg>
 						</div>
 					
@@ -2602,7 +2572,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Trump says Canada ‘wants to make a deal very badly’" data-title>Trump says Canada ‘wants to make a deal very badly’</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">10,661</span>
+							<span class="c-posts__info c-posts__info--highlight">24,160</span>
+							<span class="c-posts__info">Read</span>
+						</div>
+												
+											</div>
+				</a>
+			</li>
+								<li class="c-posts__item" data-post-id="12055619">
+				<a
+					href="https://globalnews.ca/news/12055619/health-canada-acetaminophin-recall/"
+					class="c-posts__inner" 					data-analytics="{&quot;name&quot;:&quot;sidebar-posts&quot;,&quot;position&quot;:3}"
+				>
+					<div class="c-posts__rank">
+							<svg class="c-icon  c-posts__rankIcon" focusable="false" style="width:revert-layer;height:revert-layer;">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=fc5vd2ara#4"></use>
+	</svg>
+						</div>
+					
+		<div class="c-posts__media  c-imageContainer"  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/09/Health-Canada-acetaminophin-recall.jpg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=564 data-ratio=0.67								loading="lazy"
+						width="720" height="564" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/09/Health-Canada-acetaminophin-recall.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/Health-Canada-acetaminophin-recall.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/Health-Canada-acetaminophin-recall.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+							<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Health Canada is recalling this generic acetaminophen" data-title>Health Canada is recalling this generic acetaminophen</span>
+			</div>
+													<div class="c-posts__about">
+							<span class="c-posts__info c-posts__info--highlight">13,982</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -2633,7 +2634,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					<span class="c-posts__headlineText" title="Mark Carney meets with &#8216;Forever Canadian&#8217; campaigners in Banff" data-title>Mark Carney meets with &#8216;Forever Canadian&#8217; campaigners in Banff</span>
 			</div>
 													<div class="c-posts__about">
-							<span class="c-posts__info c-posts__info--highlight">8,535</span>
+							<span class="c-posts__info c-posts__info--highlight">8,864</span>
 							<span class="c-posts__info">Read</span>
 						</div>
 												
@@ -3212,8 +3213,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-miniplayer"
 			data-displayinline-video-id="12056741"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/12056741,12056534,12055799,12054116,12056202/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Ft3m5vvr27m-zv0p84bdfv%2Ftrump.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
-    		    			data-displayinline-playlist="12056741,12056534,12055799,12054116,12056202"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/12056741,12055799,12056534,12054116,12056202/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Ft3m5vvr27m-zv0p84bdfv%2Ftrump.jpg%3Fw%3D1200%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-miniplayer"
+    		    			data-displayinline-playlist="12056741,12055799,12056534,12054116,12056202"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Trump says Canada-U.S. trade deal could come \u2018fairly soon\u2019&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;,&quot;politics&quot;,&quot;us-news&quot;],&quot;keywords&quot;:[&quot;canada-u-s-trade&quot;,&quot;canada-u-s-relations&quot;,&quot;donald-trump&quot;,&quot;short-clip&quot;,&quot;tariffs&quot;,&quot;trade-deal&quot;]}}"
 			    		>
@@ -3281,8 +3282,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="12056741"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/12056741,12056534,12055799,12054116,12056202/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="12056741,12056534,12055799,12054116,12056202"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/12056741,12055799,12056534,12054116,12056202/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="12056741,12055799,12056534,12054116,12056202"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="U.S. President Donald Trump said a trade deal with Canada could be reached “fairly soon,” claiming Ottawa is eager to make an agreement. His comments come amid heightened trade tensions after negotiations collapsed and the two countries imposed tariffs on each other."
 			>
@@ -3303,40 +3304,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Remembering 9/11, 25 years later" data-slide-index="1">
-	<a href="https://globalnews.ca/video/12056534/remembering-9-11-25-years-later/"
-		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
-					data-video-id="12056534"
-			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/12056534,12055799,12054116,12056202,12056741/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="12056534,12055799,12054116,12056202,12056741"
-			data-video-carousel-label="U.S. News"
-			data-video-carousel-content="On this day, Sept. 11, 2001, the world as we knew it was irrevocably changed. Coordinated attacks on the United States claimed thousands of lives. The immediate impact reverberating across the globe. On 9/11, four hijacked passenger planes became weapons, crashing into the iconic Twin Towers in lower Manhattan, the Pentagon near the U.S. Capitol, and in a field near Shanksville, Penn. As Candice Cole reports, ceremonies were held across the United States and Canada on Friday remembering the nearly 3,000 people lost on that fateful day."
-			>
-		<div class="l-videoCarousel__media c-posts__media">
-							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/5mu190cht3-jr9vtiqhgv/FRI_GN_COLE_SITE_THUMB_110926.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
-		<svg class="c-icon  c-button__icon" focusable="false" style="width:revert-layer;height:revert-layer;">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=fc5vd2ara#play"></use>
-	</svg>
-	</div>
-		</div>
-		<div class="l-videoCarousel__details c-posts__details">
-							<div class="l-videoCarousel__info">
-					<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
-				</div>
-						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Remembering 9/11, 25 years later</span></div>
-					</div>
-	</a>
-</li>
-
-<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Generic acetaminophen tablets recalled across Canada" data-slide-index="2">
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Generic acetaminophen tablets recalled across Canada" data-slide-index="1">
 	<a href="https://globalnews.ca/video/12055799/generic-acetaminophen-tablets-recalled-across-canada/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="12055799"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/12055799,12054116,12056202,12056741,12056534/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="12055799,12054116,12056202,12056741,12056534"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/12055799,12056534,12054116,12056202,12056741/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="12055799,12056534,12054116,12056202,12056741"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="Teva Canada has issued a recall for some of its generic acetaminophen tablets. The company says there may be a presence of resin or epoxy in the pills, which, if ingested, could injure a person’s digestive system. Anyone who may have taken the recalled pills and has concerns about their well-being should contact a health care provider."
 			>
@@ -3357,13 +3331,40 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 
+<li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Remembering 9/11, 25 years later" data-slide-index="2">
+	<a href="https://globalnews.ca/video/12056534/remembering-9-11-25-years-later/"
+		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
+					data-video-id="12056534"
+			data-video-player-id="home-miniplayer"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/12056534,12054116,12056202,12056741,12055799/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="12056534,12054116,12056202,12056741,12055799"
+			data-video-carousel-label="U.S. News"
+			data-video-carousel-content="On this day, Sept. 11, 2001, the world as we knew it was irrevocably changed. Coordinated attacks on the United States claimed thousands of lives. The immediate impact reverberating across the globe. On 9/11, four hijacked passenger planes became weapons, crashing into the iconic Twin Towers in lower Manhattan, the Pentagon near the U.S. Capitol, and in a field near Shanksville, Penn. As Candice Cole reports, ceremonies were held across the United States and Canada on Friday remembering the nearly 3,000 people lost on that fateful day."
+			>
+		<div class="l-videoCarousel__media c-posts__media">
+							<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/5mu190cht3-jr9vtiqhgv/FRI_GN_COLE_SITE_THUMB_110926.jpg?w=1200&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+						<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
+		<svg class="c-icon  c-button__icon" focusable="false" style="width:revert-layer;height:revert-layer;">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=fc5vd2ara#play"></use>
+	</svg>
+	</div>
+		</div>
+		<div class="l-videoCarousel__details c-posts__details">
+							<div class="l-videoCarousel__info">
+					<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
+				</div>
+						<div class="l-videoCarousel__headline c-posts__headline"><span class="c-posts__headlineText">Remembering 9/11, 25 years later</span></div>
+					</div>
+	</a>
+</li>
+
 <li class="l-videoCarousel__slide c-posts__item glide__slide" data-caption="Carney’s Trade War Mission: Is It Enough to Stop the Damage?" data-slide-index="3">
 	<a href="https://globalnews.ca/video/12054116/carneys-trade-war-mission-is-it-enough-to-stop-the-damage/"
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="12054116"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/12054116,12056202,12056741,12056534,12055799/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="12054116,12056202,12056741,12056534,12055799"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/12054116,12056202,12056741,12055799,12056534/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="12054116,12056202,12056741,12055799,12056534"
 			data-video-carousel-label="Commentary"
 			data-video-carousel-content="Join us for a critical Canada-U.S. trade war analysis, updates on the BC Conservative Party, and a 9/11 remembrance.
 "
@@ -3390,8 +3391,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		class="l-videoCarousel__link c-posts__inner c-videoPlay c-videoPlay--standard"
 					data-video-id="12056202"
 			data-video-player-id="home-miniplayer"
-			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/12056202,12056741,12056534,12055799,12054116/#autoplay&#038;stickyiframe=home-miniplayer"
-			data-video-carousel-playlist="12056202,12056741,12056534,12055799,12054116"
+			data-video-carousel-url="https://globalnews.ca/video/embed/playlist/12056202,12056741,12055799,12056534,12054116/#autoplay&#038;stickyiframe=home-miniplayer"
+			data-video-carousel-playlist="12056202,12056741,12055799,12056534,12054116"
 			data-video-carousel-label="Canada"
 			data-video-carousel-content="Prime Minister Mark Carney and his ministers are meeting behind closed doors at their Liberal cabinet retreat in Banff, Alberta, to plan their agenda for the fall sitting of Parliament while also discussing escalating trade tensions with the U.S. Carney took some time on Friday to get some fresh air and head outdoors, where he met with local politicians and residents. Amid the contentious trade war with the U.S., Carney could be heard remarking, “Maybe I should remind Donald,” as the crowd smiled and laughed."
 			>
@@ -3444,19 +3445,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/12056534,12055799,12054116,12056202/#autoplay&#038;stickyiframe=home-miniplayer_12056534"
+			href="https://globalnews.ca/video/embed/playlist/12055799,12056534,12054116,12056202/#autoplay&#038;stickyiframe=home-miniplayer_12055799"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_12056534"
+			data-displayinline-player-id="home-miniplayer_12055799"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/12056534,12055799,12054116,12056202/#autoplay&#038;stickyiframe=home-miniplayer_12056534"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/12055799,12056534,12054116,12056202/#autoplay&#038;stickyiframe=home-miniplayer_12055799"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/5mu190cht3-jr9vtiqhgv/FRI_GN_COLE_SITE_THUMB_110926.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/comvo31zjf-r02uizjry0/Teva-canada.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Remembering 9/11, 25 years later'"
+					alt="Click to play video 'Generic acetaminophen tablets recalled across Canada'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false" style="width:revert-layer;height:revert-layer;">
@@ -3465,11 +3466,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/12056534/remembering-9-11-25-years-later/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/12055799/generic-acetaminophen-tablets-recalled-across-canada/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
+					<div class="c-posts__info c-posts__info--highlight">Canada</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Remembering 9/11, 25 years later</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Generic acetaminophen tablets recalled across Canada</span></div>
 		</a>
 	</div>
 </li>
@@ -3499,19 +3500,19 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/12055799,12054116,12056202,12056534/#autoplay&#038;stickyiframe=home-miniplayer_12055799"
+			href="https://globalnews.ca/video/embed/playlist/12056534,12054116,12056202,12055799/#autoplay&#038;stickyiframe=home-miniplayer_12056534"
 			data-displayinline-type="video"
-			data-displayinline-player-id="home-miniplayer_12055799"
+			data-displayinline-player-id="home-miniplayer_12056534"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/12055799,12054116,12056202,12056534/#autoplay&#038;stickyiframe=home-miniplayer_12055799"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/12056534,12054116,12056202,12055799/#autoplay&#038;stickyiframe=home-miniplayer_12056534"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
-				<img data-src="https://i0.wp.com/media.globalnews.ca/videostatic/news/comvo31zjf-r02uizjry0/Teva-canada.jpg?w=384&#038;quality=70&#038;strip=all"
+				<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/5mu190cht3-jr9vtiqhgv/FRI_GN_COLE_SITE_THUMB_110926.jpg?w=384&#038;quality=70&#038;strip=all"
 					width="236"
 					height="133"
 					class="c-posts__thumbnail c-video__image"
-					alt="Click to play video 'Generic acetaminophen tablets recalled across Canada'"
+					alt="Click to play video 'Remembering 9/11, 25 years later'"
 					loading="lazy" />
 				<div class="c-button c-video__icon c-videoPlay__icon c-posts__icon c-button--mini">
 		<svg class="c-icon  c-button__icon" focusable="false" style="width:revert-layer;height:revert-layer;">
@@ -3520,11 +3521,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</div>
 			</div>
 		</a>
-		<a href="https://globalnews.ca/video/12055799/generic-acetaminophen-tablets-recalled-across-canada/" class="c-posts__details">
+		<a href="https://globalnews.ca/video/12056534/remembering-9-11-25-years-later/" class="c-posts__details">
 				<div class="c-posts__about">
-					<div class="c-posts__info c-posts__info--highlight">Canada</div>
+					<div class="c-posts__info c-posts__info--highlight">U.S. News</div>
 				</div>
-			<div class="c-posts__headline"><span class="c-posts__headlineText">Generic acetaminophen tablets recalled across Canada</span></div>
+			<div class="c-posts__headline"><span class="c-posts__headlineText">Remembering 9/11, 25 years later</span></div>
 		</a>
 	</div>
 </li>
@@ -3532,11 +3533,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/12054116,12056202,12056534,12055799/#autoplay&#038;stickyiframe=home-miniplayer_12054116"
+			href="https://globalnews.ca/video/embed/playlist/12054116,12056202,12055799,12056534/#autoplay&#038;stickyiframe=home-miniplayer_12054116"
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_12054116"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/12054116,12056202,12056534,12055799/#autoplay&#038;stickyiframe=home-miniplayer_12054116"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/12054116,12056202,12055799,12056534/#autoplay&#038;stickyiframe=home-miniplayer_12054116"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3565,11 +3566,11 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item">
 	<div class="c-posts__inner">
 		<a class="c-posts__media c-video c-videoPlay c-videoPlay--standard"
-			href="https://globalnews.ca/video/embed/playlist/12056202,12056534,12055799,12054116/#autoplay&#038;stickyiframe=home-miniplayer_12056202"
+			href="https://globalnews.ca/video/embed/playlist/12056202,12055799,12056534,12054116/#autoplay&#038;stickyiframe=home-miniplayer_12056202"
 			data-displayinline-type="video"
 			data-displayinline-player-id="home-miniplayer_12056202"
 			data-displayinline-ratio="16:9"
-			data-displayinline="https://globalnews.ca/video/embed/playlist/12056202,12056534,12055799,12054116/#autoplay&#038;stickyiframe=home-miniplayer_12056202"
+			data-displayinline="https://globalnews.ca/video/embed/playlist/12056202,12055799,12056534,12054116/#autoplay&#038;stickyiframe=home-miniplayer_12056202"
 			data-displayinline-sticky="true"
 			data-displayinline-expand="true">
 			<div class="c-video__placeholder">
@@ -3655,12 +3656,45 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 					>
 					<li 
 				class="c-posts__item c-posts__loadmore" 
+				data-post-id="12056734"
+			>
+								<a
+					class="c-posts__inner"
+					href="https://globalnews.ca/news/12056734/eu-trump-ireland/"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
+				>
+									<div class="c-posts__details">
+									<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Trump says Canada ‘wants to make a deal very badly’" data-title>Trump says Canada ‘wants to make a deal very badly’</span>
+			</div>
+	
+												
+						<div class="c-posts__excerpt">
+						U.S. President Donald Trump says Canada wants a deal with Washington “very badly” and suggested an agreement could come “fairly soon” if trade concerns are resolved.						</div>
+						<div class="c-posts__about c-posts__about--multiple">
+															<div class="c-posts__info c-posts__info--highlight">Canada</div>
+																						<div class="c-posts__info">5 hours</div>
+													</div>
+					</div>
+					
+		<div class="c-posts__media "  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/09/b71b90a745368be7e31d3cadb2fcec82bca0d25ba9f699b13b6a9a49b4fe3741.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
+						width="720" height="480" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/09/b71b90a745368be7e31d3cadb2fcec82bca0d25ba9f699b13b6a9a49b4fe3741.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/b71b90a745368be7e31d3cadb2fcec82bca0d25ba9f699b13b6a9a49b4fe3741.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/b71b90a745368be7e31d3cadb2fcec82bca0d25ba9f699b13b6a9a49b4fe3741.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+										</a>
+							</li>
+					<li 
+				class="c-posts__item c-posts__loadmore" 
 				data-post-id="12056681"
 			>
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/12056681/cancer-children-more-funding/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:0}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3672,7 +3706,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						Childhood Cancer Canada says demand for its financial support programs has risen 40 per cent in two years as families face the long-term costs of a diagnosis.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
 															<div class="c-posts__info c-posts__info--highlight">Health</div>
-																						<div class="c-posts__info">5 hours</div>
+																						<div class="c-posts__info">7 hours</div>
 													</div>
 					</div>
 					
@@ -3693,7 +3727,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/12056672/carney-to-showcase-canadas-capital-agenda-at-first-ever-investment-summit/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:1}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3705,7 +3739,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						Prime Minister Mark Carney will pitch Canada to hundreds of global and domestic investors at the country&#039;s first national investment summit in Toronto next week.						</div>
 						<div class="c-posts__about c-posts__about--multiple">
 															<div class="c-posts__info c-posts__info--highlight">Canada</div>
-																						<div class="c-posts__info">8 hours</div>
+																						<div class="c-posts__info">10 hours</div>
 													</div>
 					</div>
 					
@@ -3726,7 +3760,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/12055782/the-trial-of-alec-baldwin-documentary-trailer/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:2}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3759,7 +3793,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/12055716/judge-judy-sheindlin-retiring-on-camera-work-after-30-years/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:3}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3792,7 +3826,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/12055477/man-threatens-to-behead-teacher-six-months-in-jail-france/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:4}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3825,7 +3859,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/12054283/bond-yields-consumer-impact/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:5}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3858,7 +3892,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 								<a
 					class="c-posts__inner"
 					href="https://globalnews.ca/news/12055629/donald-trump-tariffs-dominic-leblanc-talks/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:6}"
+					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
 				>
 									<div class="c-posts__details">
 									<div class="c-posts__headline ">
@@ -3881,39 +3915,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 						width="720" height="480" alt="" 
 												srcset='' sizes=''
 								data-srcset="https://globalnews.ca/wp-content/uploads/2026/09/Dominic-LeBlanc.jpg-e1789143234955.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/Dominic-LeBlanc.jpg-e1789143234955.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/Dominic-LeBlanc.jpg-e1789143234955.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-										</a>
-							</li>
-					<li 
-				class="c-posts__item c-posts__loadmore" 
-				data-post-id="12055542"
-			>
-								<a
-					class="c-posts__inner"
-					href="https://globalnews.ca/news/12055542/d4vd-sued-by-celeste-rivas-hernandez-parents-wrongful-death/"
-					data-analytics="{&quot;name&quot;:&quot;stream-post&quot;,&quot;position&quot;:7}"
-				>
-									<div class="c-posts__details">
-									<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Singer D4vd sued by parents of murdered teen he is accused of killing" data-title>Singer D4vd sued by parents of murdered teen he is accused of killing</span>
-			</div>
-	
-												
-						<div class="c-posts__excerpt">
-						The 21-year-old singer pleaded not guilty to charges of murder, continuous sexual abuse of a child under the age of 14 and unlawful mutilation of human remains in April.						</div>
-						<div class="c-posts__about c-posts__about--multiple">
-															<div class="c-posts__info c-posts__info--highlight">Crime</div>
-																						<div class="c-posts__info">Sep 11</div>
-													</div>
-					</div>
-					
-		<div class="c-posts__media "  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/09/celeste-rivas-hernandez-parents-sue-d4vd.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="480" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/09/celeste-rivas-hernandez-parents-sue-d4vd.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/celeste-rivas-hernandez-parents-sue-d4vd.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/celeste-rivas-hernandez-parents-sue-d4vd.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
 											</div>
 										</a>
 							</li>
@@ -4000,8 +4001,8 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-displayinline-player-id="home-playlist-miniplayer"
 			data-displayinline-video-id="12056741"
     		data-displayinline-ratio="16:9"
-    		data-displayinline="https://globalnews.ca/video/embed/playlist/12056741,12056534,12055799,12054116,12056202/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Ft3m5vvr27m-zv0p84bdfv%2Ftrump.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
-    		    			data-displayinline-playlist="12056741,12056534,12055799,12054116,12056202"
+    		data-displayinline="https://globalnews.ca/video/embed/playlist/12056741,12055799,12056534,12054116,12056202/?poster=https%3A%2F%2Fi1.wp.com%2Fmedia.globalnews.ca%2Fvideostatic%2Fnews%2Ft3m5vvr27m-zv0p84bdfv%2Ftrump.jpg%3Fw%3D640%26quality%3D70%26strip%3Dall#autoplay&#038;stickyiframe=home-playlist-miniplayer"
+    		    			data-displayinline-playlist="12056741,12055799,12056534,12054116,12056202"
     												data-displayinline-sticky="true"
 													data-permutive-data="{&quot;content&quot;:{&quot;name&quot;:&quot;Trump says Canada-U.S. trade deal could come \u2018fairly soon\u2019&quot;,&quot;type&quot;:&quot;video&quot;,&quot;sections&quot;:[&quot;videos&quot;,&quot;national&quot;,&quot;canada&quot;,&quot;politics&quot;,&quot;us-news&quot;],&quot;keywords&quot;:[&quot;canada-u-s-trade&quot;,&quot;canada-u-s-relations&quot;,&quot;donald-trump&quot;,&quot;short-clip&quot;,&quot;tariffs&quot;,&quot;trade-deal&quot;]}}"
 			    		>
@@ -4048,7 +4049,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/12056741,12056534,12055799,12054116,12056202/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/12056741,12055799,12056534,12054116,12056202/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Trump says Canada-U.S. trade deal could come ‘fairly soon’</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4069,34 +4070,6 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 <li class="c-posts__item l-playlist__item"
 			data-playlist-index="2"
 	>
-	<a href="https://globalnews.ca/video/12056534/remembering-9-11-25-years-later/"
-		title="Remembering 9/11, 25 years later"
-		class="l-playlist__link c-posts__inner c-videoPlay"
-		data-video-id="12056534"
-		data-video-label="U.S. News"
-		data-video-player-id="home-playlist-miniplayer"
-		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/12056534,12055799,12054116,12056202/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
-		<div class="c-posts__details l-playlist__details">
-			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Remembering 9/11, 25 years later</span></div>
-							<div class="c-posts__about l-playlist__about">
-					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
-						U.S. News					</div>
-				</div>
-					</div>
-		<div class="c-posts__media l-playlist__media">
-			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/5mu190cht3-jr9vtiqhgv/FRI_GN_COLE_SITE_THUMB_110926.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
-			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
-		<svg class="c-icon  c-button__icon" focusable="false" style="width:revert-layer;height:revert-layer;">
-		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=fc5vd2ara#play"></use>
-	</svg>
-	</div>
-		</div>
-	</a>
-</li>
-<li class="c-posts__item l-playlist__item"
-			data-playlist-index="3"
-	>
 	<a href="https://globalnews.ca/video/12055799/generic-acetaminophen-tablets-recalled-across-canada/"
 		title="Generic acetaminophen tablets recalled across Canada"
 		class="l-playlist__link c-posts__inner c-videoPlay"
@@ -4104,7 +4077,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/12055799,12054116,12056202,12056534/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/12055799,12056534,12054116,12056202/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Generic acetaminophen tablets recalled across Canada</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4123,6 +4096,34 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	</a>
 </li>
 <li class="c-posts__item l-playlist__item"
+			data-playlist-index="3"
+	>
+	<a href="https://globalnews.ca/video/12056534/remembering-9-11-25-years-later/"
+		title="Remembering 9/11, 25 years later"
+		class="l-playlist__link c-posts__inner c-videoPlay"
+		data-video-id="12056534"
+		data-video-label="U.S. News"
+		data-video-player-id="home-playlist-miniplayer"
+		data-video-playlist-id=""
+		data-embed-url="https://globalnews.ca/video/embed/playlist/12056534,12054116,12056202,12055799/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		<div class="c-posts__details l-playlist__details">
+			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Remembering 9/11, 25 years later</span></div>
+							<div class="c-posts__about l-playlist__about">
+					<div class="c-posts__info l-playlist__info c-posts__info--highlight">
+						U.S. News					</div>
+				</div>
+					</div>
+		<div class="c-posts__media l-playlist__media">
+			<img data-src="https://i1.wp.com/media.globalnews.ca/videostatic/news/5mu190cht3-jr9vtiqhgv/FRI_GN_COLE_SITE_THUMB_110926.jpg?w=384&#038;quality=70&#038;strip=all" width="236" height="133" class="c-posts__thumbnail" loading="lazy" alt="" />
+			<div class="c-button c-video__icon c-videoPlay__icon c-button--mini c-posts__icon ">
+		<svg class="c-icon  c-button__icon" focusable="false" style="width:revert-layer;height:revert-layer;">
+		<use xlink:href="https://globalnews.ca/wp-content/themes/shaw-globalnews/assets/dist/icons/out/symbol/svg/sprite.symbol.svg?v=fc5vd2ara#play"></use>
+	</svg>
+	</div>
+		</div>
+	</a>
+</li>
+<li class="c-posts__item l-playlist__item"
 			data-playlist-index="4"
 	>
 	<a href="https://globalnews.ca/video/12054116/carneys-trade-war-mission-is-it-enough-to-stop-the-damage/"
@@ -4132,7 +4133,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Commentary"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/12054116,12056202,12056534,12055799/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/12054116,12056202,12055799,12056534/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">Carney’s Trade War Mission: Is It Enough to Stop the Damage?</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4160,7 +4161,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		data-video-label="Canada"
 		data-video-player-id="home-playlist-miniplayer"
 		data-video-playlist-id=""
-		data-embed-url="https://globalnews.ca/video/embed/playlist/12056202,12056534,12055799,12054116/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
+		data-embed-url="https://globalnews.ca/video/embed/playlist/12056202,12055799,12056534,12054116/#autoplay&#038;stickyiframe=home-playlist-miniplayer">
 		<div class="c-posts__details l-playlist__details">
 			<div class="c-posts__headline l-playlist__headline"><span class="c-posts__headlineText">&#8216;Maybe I should remind Donald&#8217;: Carney chats with Banff residents</span></div>
 							<div class="c-posts__about l-playlist__about">
@@ -4838,6 +4839,38 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 			data-num-posts=3								>
 	<li class="c-posts__item    "
 	data-container-id="stories-item-34"
+	data-post-id="12056957"
+	data-slide-index=""
+	data-caption="Blue Bombers pick ‘Riders apart in Banjo Bowl"
+		>
+		<a
+		class="c-posts__inner"
+		href="https://globalnews.ca/news/12056957/blue-bombers-pick-riders-apart-in-banjo-bowl/"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+			>
+			
+		<div class="c-posts__media  c-imageContainer"  >
+			<img class="c-posts__thumbnail"
+			fetchpriority="high"
+			data-src=https://globalnews.ca/wp-content/uploads/2026/09/24b6c43fda88f50ea5a30ed6811b7f1ea2e0184e94fe39a461300ab98ab51439.jpg?quality=65&#038;strip=all&#038;w=720			data-width=720 data-height=548 data-ratio=0.67								loading="lazy"
+						width="720" height="548" alt="" 
+												srcset='' sizes=''
+								data-srcset="https://globalnews.ca/wp-content/uploads/2026/09/24b6c43fda88f50ea5a30ed6811b7f1ea2e0184e94fe39a461300ab98ab51439.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/24b6c43fda88f50ea5a30ed6811b7f1ea2e0184e94fe39a461300ab98ab51439.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/24b6c43fda88f50ea5a30ed6811b7f1ea2e0184e94fe39a461300ab98ab51439.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
+											</div>
+				<div class="c-posts__details">
+						<div class="c-posts__headline ">
+					<span class="c-posts__headlineText" title="Blue Bombers pick ‘Riders apart in Banjo Bowl" data-title>Blue Bombers pick ‘Riders apart in Banjo Bowl</span>
+			</div>
+	
+						
+							<div class="c-posts__about ">
+																<div class="c-posts__info" data-date >15 mins</div>
+																			</div>
+									</div>
+		</a>
+	</li>
+<li class="c-posts__item    "
+	data-container-id="stories-item-35"
 	data-post-id="12056827"
 	data-slide-index=""
 	data-caption="Ontario man faces 8 charges for voyeurism, sexual assault at tailor shop"
@@ -4845,7 +4878,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/12056827/ontario-man-tailorshop-assault/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:0}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -4863,13 +4896,13 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >43 mins</div>
+																<div class="c-posts__info" data-date >2 hours</div>
 																			</div>
 									</div>
 		</a>
 	</li>
 <li class="c-posts__item    "
-	data-container-id="stories-item-35"
+	data-container-id="stories-item-36"
 	data-post-id="12056674"
 	data-slide-index=""
 	data-caption="Hamilton man charged with advocating genocide over online content: police"
@@ -4877,7 +4910,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 		<a
 		class="c-posts__inner"
 		href="https://globalnews.ca/news/12056674/hamilton-man-charged-hate-crime/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:1}"
+		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
 			>
 			
 		<div class="c-posts__media "  >
@@ -4895,39 +4928,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >7 hours</div>
-																			</div>
-									</div>
-		</a>
-	</li>
-<li class="c-posts__item    "
-	data-container-id="stories-item-36"
-	data-post-id="12056271"
-	data-slide-index=""
-	data-caption="Lethbridge firefighters honoured at annual memorial: &#8216;What we signed up to do&#8217;"
-		>
-		<a
-		class="c-posts__inner"
-		href="https://globalnews.ca/news/12056271/lethbridge-firefighters-annual-memorial/"
-		data-analytics="{&quot;name&quot;:&quot;stories&quot;,&quot;position&quot;:2}"
-			>
-			
-		<div class="c-posts__media "  >
-			<img class="c-posts__thumbnail"
-			fetchpriority="high"
-			data-src=https://globalnews.ca/wp-content/uploads/2026/09/911-memorial.jpg?quality=65&#038;strip=all&#038;w=720											loading="lazy"
-						width="720" height="405" alt="" 
-												srcset='' sizes=''
-								data-srcset="https://globalnews.ca/wp-content/uploads/2026/09/911-memorial.jpg?quality=65&#038;strip=all&#038;w=336 336w,https://globalnews.ca/wp-content/uploads/2026/09/911-memorial.jpg?quality=65&#038;strip=all&#038;w=560 560w,https://globalnews.ca/wp-content/uploads/2026/09/911-memorial.jpg?quality=65&#038;strip=all&#038;w=720 720w,"				data-sizes="auto"					/>
-											</div>
-				<div class="c-posts__details">
-						<div class="c-posts__headline ">
-					<span class="c-posts__headlineText" title="Lethbridge firefighters honoured at annual memorial: &#8216;What we signed up to do&#8217;" data-title>Lethbridge firefighters honoured at annual memorial: &#8216;What we signed up to do&#8217;</span>
-			</div>
-	
-						
-							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >Sep 11</div>
+																<div class="c-posts__info" data-date >8 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -6018,7 +6019,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
 	
 						
 							<div class="c-posts__about ">
-																<div class="c-posts__info" data-date >1 hour</div>
+																<div class="c-posts__info" data-date >3 hours</div>
 																			</div>
 									</div>
 		</a>
@@ -6420,7 +6421,7 @@ var gnca_settings = {"video_settings":{"sticky_enabled":true,"anchor_enabled":fa
     </script>
     		<!-- Adobe Analytics code version: JS-2.6.0. -->
 		<script type="text/javascript">
-			var gnPageData = {"context_data":{"hourofday":"17","dayofweek":"Saturday","weekdayweekend":"Weekend","userregion":"national","region":"national"},"sections":["home"],"props":[]};
+			var gnPageData = {"context_data":{"hourofday":"19","dayofweek":"Saturday","weekdayweekend":"Weekend","userregion":"national","region":"national"},"sections":["home"],"props":[]};
 		</script>
 				<!-- End Adobe Analytics code -->
 			<script>
@@ -6470,5 +6471,5 @@ var GN_OneSignalSettings = {"isCurator":"","appId":"8beb7996-b996-4ce8-a474-d488
 		
 		<div class="l-dynamicElement"></div>
 
-			</body>
+			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75660ba8f4","applicationID":"418684855","transactionName":"Z1BWZxdTWkAHVExRXF4adVARW1tdSV9XVVY=","queueTime":0,"applicationTime":381,"atts":"SxdBEV9JSR9EVhoCSE1I","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
